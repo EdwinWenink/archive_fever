@@ -14,6 +14,20 @@
 		  margin: 0;
 		}
 		
+		body {	  
+		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+		  background-color: #333;
+		  background-color: #141E30;
+		  min-height:100%;
+		  padding: 0;
+		  margin: 0;
+		  display: flex;
+		  flex-direction: column;		  
+		  /*align-items: center; 
+		   
+		  justify-content: space-around;*/
+		 }	
+		
 		h1 {
 		  color: #FFF;
           font-family: 'Playfair Display', sans-serif;
@@ -44,12 +58,23 @@
 		  text-align:left;
 		  text-decoration:none;
 		  font-weight:100;	
+		  text-shadow: 1px 1px #000;
 		}
 		
 		a:hover {
 		  color: #BBB;
 		}
 		
+		p {
+		  color: rgba(255, 255, 255, 1);
+		  line-height: 1.2em;
+		  letter-spacing: 0.12em;
+		  text-align: left;
+		  font-weight=normal;
+		}
+		
+		
+		<!--
 		main ul {
 		  display: flex;
 		  flex-direction: column;
@@ -67,12 +92,94 @@
 		  justify-content: center;
 		  align-items: center;
 		}
+		-->
 		
-		.content {
-		  padding-bottom: 200px;
-		  padding-left: 100px;
+		.nav {
+		  
+		  flex-direction: row;
+		  width: 100%;
+		  height: 100%;
+		  padding: 0;
+		  margin: 0;
+		  list-style-type: none;
+		  justify-content: center;
+		  text-align:center;
+		  word-spacing: 60px;
+		  border-bottom-style: solid;
+		  border-width: 1px;
+		  border-color: rgba(255, 255, 255, 0.5);
 		}
 		
+		.nav ul li {
+		display: inline;
+		letter-spacing: 2px;
+		line-height: 1.5em;
+		
+		}
+		
+		.page1 {
+		  display: flex;
+		  flex-direction: column;
+		  width: 100%;
+		  height: 1000px;
+		  margin: 0;
+		  padding: 0;
+		  
+		  justify-content: center;
+		  align-items: center;
+		  
+		  background: url("images/MoonDog.jpg") no-repeat;
+		  <!-- -webkit-background-size: cover; -->
+		  <!-- -moz-background-size: cover; -->
+		  <!-- -o-background-size: cover; -->
+		  background-size:cover;
+		  border-bottom-style: solid;
+		  border-width: 1px;
+		  border-color: rgba(255, 255, 255, 0.5);
+		}
+		
+		.page1 li {
+		  list-style-type: none;
+		}
+		
+		.page1 .content1 {
+		text-align: left;
+		}
+		
+		.page2 {
+		  display: flex;
+		  flex-direction: column;
+		  width: 100%;
+		  height: 100%;
+		  padding: 0;
+		 
+		  list-style: none;
+		  justify-content: center;
+		  align-items:center;
+		  text-align:left;
+		  border-bottom-style: solid;
+		  border-width: 1px;
+		  border-color: rgba(255, 255, 255, 0.5);
+		}
+		
+		.page2 .content2 {
+		 margin: 50px;
+		}
+		
+		.page3 {
+		  width: 100%;
+		  height: 800px;
+		  padding: 0;
+		  margin:0;
+		  justify-content: center;
+		  text-align:left;
+		  background: url("images/trees.jpg") no-repeat;
+		  background-size: cover;
+		}
+		
+		
+		
+		<!--
 		.nav2 {
 		  display: none;
 		  background-color: #161616;
@@ -113,33 +220,7 @@
 		  color: #BBB;
 		}
 		
-		p {
-		  line-height: 1.5em;
-		  word-spacing: 0.25em;
-		  letter-spacing: 0.12em;
-		  text-align: left;
-		  font-weight=normal;
-		}
-		
-		body {	  
-		  font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-		  background-color: #141E30;
-		  background: url("images/MoonDog.jpg") no-repeat center center fixed;
-		  
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size:cover;
-	  
-		  min-height:100%;
-		  padding: 0;
-		  margin: 0;
-		  display: flex;
-		  flex-direction: row;
-		  
-		  <!-- align-items: center; -->
-		  justify-content: space-around;
-		 }	
+		-->
 		
 		
 		
@@ -147,10 +228,19 @@
 </head>
 
 <body>
-	<main>
+	<div class="nav" id="nav">
+		<ul>
+			<li><a href="#main">Home</a></li>
+			<li><a href="#cv">C.V.</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+	
+	<!-- <main> -->
 	  <!--<img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/15350628_10209906167123471_8100063072960897270_n.jpg?oh=72df718aa87cb77f70357d5ba6d08680&oe=59F3CA2F" class="profile-img">
 		-->
-	    <div class="content">
+	<div class="page1" id="main">
+		<div class="content1">
 		  <h1> Edwin Wenink </h1>
 		  <h2> Philosophy | Artificial Intelligence | Music </h2>
 		  <ul>
@@ -161,22 +251,19 @@
 			<li><a href="https://open.spotify.com/user/11132628344"> Spotify </a></li>
 			</ul>
 		</div>
-	</main>
-	
-	<div class="nav2">	
-		<ul>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		  <li><a href="/test.html"> Test </a></li>
-		</ul>		
 	</div>
-	
-	
-		`
+		
+	<div class="page2" id="cv">
+		<div class="content2">
+			<h1> About Me </h1>
+			<p> This is a test. Hello World! </p>
+		</div>
+	</div>
+		
+	<div class="page3">
+		
+	</div>
+	<!-- </main> -->
+	`
 </body>
 </html>
