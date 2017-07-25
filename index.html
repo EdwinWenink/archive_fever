@@ -15,8 +15,7 @@
 		}
 		
 		body {	  
-		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-		  
+		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;  
 		  background-color: #D0CDCD
 		  background-color: #333;
 		  background-color: #141E30;
@@ -86,28 +85,9 @@
 		  text-align: justify;
 		  font-weight:600;
 		}
-
-		<!--
-		main ul {
-		  display: flex;
-		  flex-direction: column;
-		  width: 100%;
-		  padding: 0;
-		  list-style: none;
-		  text-align:left;
-		  flex-grow: 1;
-		}
-		
-		main {
-		  display: flex;
-		  flex-direction: column;
-		  flex: 4;
-		  justify-content: center;
-		  align-items: center;
-		}
-		-->
 		
 		.nav {
+		
 		  position: fixed; 
 		  width: 100%;
 		  height: 50px;
@@ -122,10 +102,26 @@
 		  background-color: rgba(240,248,255,1);		  
 		}
 		
+		.nav p.time{
+		color: rgba(0, 0, 0, 1);
+		text-shadow: none;
+		text-align: right;
+		font-weight: 500;
+		}
+		
 		.nav ul li {
 		display: inline;
 		letter-spacing: 2px;
 		line-height: 1.5em;
+		}
+		
+		#time {
+		color: rgba(0, 0, 0, 1);
+		text-shadow: none;
+		font-weight: 500;
+		text-align: right;
+		float: right;
+		padding-right: 20px;
 		}
 		
 		.nav a{
@@ -223,8 +219,10 @@
 		<ul>
 			<li><a href="#main">Home</a></li>
 			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="#contact">Contact</a></li>		
+			<li id="time"></li>
 		</ul>
+
 	</div>
 	
 	<!-- <main> -->
@@ -273,13 +271,39 @@
 		<div class="content4">
 			<h1> Contact </h1>
 			<p><a href="mailto:edwinwenink@hotmail.com"> edwinwenink@hotmail.com </a></p>
-		</div>
+		</div>	
+		
 	</div>
 	
 	<div class="page5">
-	
 	</div>
-	<!-- </main> -->
+	
+	<script type="text/javascript">
+	
+	function checkTime(i) {
+	  if (i < 10) {
+		i = "0" + i;
+	  }
+	  return i;
+	}
+
+	function startTime() {
+	  var today = new Date();
+	  var h = today.getHours();
+	  var m = today.getMinutes();
+	  var s = today.getSeconds();
+	  // add a zero in front of numbers<10
+	  m = checkTime(m);
+	  s = checkTime(s);
+	  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+	  t = setTimeout(function() {
+		startTime()
+	  }, 500);
+	}
+	startTime();
+	</script>
+	
+	
 	`
 </body>
 
