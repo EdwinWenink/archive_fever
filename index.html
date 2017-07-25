@@ -262,7 +262,12 @@
 		font-weight: 600;
 		{
 		
-		
+		 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 600px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} 
 		
 		
 	</style>
