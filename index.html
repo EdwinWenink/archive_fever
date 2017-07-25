@@ -139,6 +139,37 @@
 		.nav a:hover{
 		color: #4C4C4C;
 		}
+		/*
+		..................
+		RULES FOR PARALLAX
+		..................
+		*/
+		
+		.parallax1 {
+		background: url("images/adams1.jpg") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;
+		}
+		
+		.parallax3 {
+		background: url("images/pines3b.png") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;
+		}
+		
+		
 		
 		.page1 {
 		  display: flex;
@@ -150,7 +181,7 @@
 		  float: left;
 		  
 		  align-items: center;
-		  
+		  /*
 		  background: url("images/adams1.jpg") no-repeat;
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover; 
@@ -158,6 +189,7 @@
 		  background-size:cover;
 		  background-position: center;
 		  background-attachment: scroll;
+		  */
 		  border-bottom-style: solid;
 		  border-width: 1px;
 		  border-color: rgba(255, 255, 255, 0.5);
@@ -219,9 +251,9 @@
 		  margin:0;
 		  justify-content: center;
 		  text-align:left;
-		  background: url("images/pines3b.png") no-repeat;
-		  background-size: cover;
 		  float: left;
+		  /*background: url("images/pines3b.png") no-repeat;
+		  background-size: cover;*/
 		}
 		
 		.content4 a {
@@ -229,7 +261,10 @@
 		text-shadow: none;
 		font-weight: 600;
 		{
-			
+		
+		
+		
+		
 	</style>
 </head>
 
@@ -246,8 +281,8 @@
 	
 	<!-- <main> -->
 	  <!--<img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/15350628_10209906167123471_8100063072960897270_n.jpg?oh=72df718aa87cb77f70357d5ba6d08680&oe=59F3CA2F" class="profile-img">
-		-->
-	<div class="page1" id="main">
+		-->	
+	<div class="page1 parallax1" id="main">
 		<div class="content1">
 		  <h1> Edwin Wenink </h1>
 		  <h2> Philosophy | Artificial Intelligence | Music </h2>
@@ -259,6 +294,8 @@
 			<li><a href="https://open.spotify.com/user/11132628344"> Spotify </a></li>
 			</ul>
 		</div>
+		
+	</div>
 	</div>
 		
 	<div class="page2" id="about">
@@ -282,7 +319,7 @@
 		</div>
 	</div>
 		
-	<div class="page3">
+	<div class="page3 parallax3">
 		
 	</div>
 	
