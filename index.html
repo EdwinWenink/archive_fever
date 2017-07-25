@@ -4,7 +4,9 @@
 	<title> Edwin Wenink </title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:100" rel="stylesheet" type=text/css>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+	<link href="style.css" type="text/css" rel="stylesheet">
+	
 	
 	<!--<base target="_blank">-->
 	<style>
@@ -21,21 +23,19 @@
 		
 		body {	  
 		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;  
+		  font-family: 'Inconsolata', monospace;
+		  font-weight: 500;
 		  -webkit-font-smoothing: antialiased;
 		  background-color: #D0CDCD
 		  background-color: #333;
 		  background-color: #141E30;
-		  background-color: #F0F8FF;
-		  
+		  background-color: #F0F8FF;  
 		  min-height:100%;
 		  max-width: 100%;
 		  padding: 0;
 		  margin: 0;
 		  display: flex;
-		  flex-direction: column;		  
-		  /*align-items: center; 
-		   
-		  justify-content: space-around;*/
+		  flex-direction: column;		  	  
 		 }	
 		
 		h1 {
@@ -45,9 +45,7 @@
 		  font-size: 32px;
 	      text-align: left;
 		  max-width: 100%;
-		  /*
-		  
-		  text-shadow: 1px 1px #000;*/
+		  text-shadow: 1px 1px #000;
 		}
 		
 		h2 {
@@ -57,8 +55,8 @@
 		  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 		  color: rgba(0, 0, 0, 1);
 		  
-		  font-family: 'Roboto', sans-serif;
-		  font-weight: bold;
+		  <!--font-family: 'Roboto', sans-serif;-->
+		  font-weight: 200;
 		  font-size: 22px;
 		  line-height: 24px;
 		  padding-bottom: 30px;
@@ -68,14 +66,13 @@
 		}
 		
 		a {
-		  color: #FFF;
-		  
-          font-family: 'Roboto', sans-serif;
+		  color: #FFF;	  
+          <!--font-family: 'Roboto', sans-serif;-->
 		  font-size:1em;
 		  line-height: 1.5em;
 		  text-align:left;
 		  text-decoration:none;
-		  font-weight:100;
+		  font-weight:500;
 		  color: rgba(0, 0, 0, 1);		  
 		}
 		
@@ -185,8 +182,7 @@
 		text-align: left;
 		}
 		
-		.page2, .page4 {
-		  
+		.page2, .page4 {	   
 		  max-width: 100%;
 		  padding: 0;
 		  list-style: none;
