@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Edwin Wenink </title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:100" rel="stylesheet" type=text/css>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="images/phi-icon.jpg"/>
+	
+	
+	<!--<base target="_blank">-->
+	<style>
+	
+
+		
+		html {
+		  height: 100%;
+		  max-width: 100%;
+		  min-height: 100%;  
+		  padding: 0;
+		  margin: 0;
+		}
+		
+		body {	  
+		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;  
+		  font-family: 'Inconsolata', monospace;
+		  font-weight: 500;
+		  -webkit-font-smoothing: antialiased;
+		  background-color: #D0CDCD
+		  background-color: #333;
+		  background-color: #141E30;
+		  background-color: #F0F8FF;  
+		  min-height:100%;
+		  max-width: 100%;
+		  padding: 0;
+		  margin: 0;
+		  display: flex;
+		  flex-direction: column;		  	  
+		 }	
+		
+		h1 {
+		  color: #FFF;
+		  color: #000;
+          font-family: 'Playfair Display', sans-serif;
+		  font-size: 40px;
+	      text-align: left;
+		  max-width: 100%;
+		  text-shadow: 1px 1px #000;
+		}
+		
+		h2 {
+		  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		  color: rgba(255, 255, 255, 1);
+		  
+		  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+		  color: rgba(0, 0, 0, 1);
+		  
+		  <!--font-family: 'Roboto', sans-serif;-->
+		  font-weight: 200;
+		  font-size: 22px;
+		  line-height: 24px;
+		  padding-bottom: 30px;
+		  text-align: left;
+		  max-width: 70%;
+		  /*text-shadow: 1px 1px #000;*/
+		}
+		
+		a {
+		  color: #FFF;	  
+          <!--font-family: 'Roboto', sans-serif;-->
+		  font-size:1em;
+		  line-height: 1.5em;
+		  text-align:left;
+		  text-decoration:none;
+		  font-weight:500;
+		  color: rgba(0, 0, 0, 1);		  
+		}
+		
+		a:hover {
+		  color: #BBB;
+		}
+		
+		p {
+		  color: rgba(255, 255, 255, 1);
+		  color: rgba(0, 0, 0, 1);
+		  line-height: 1,5em;
+		  letter-spacing: 0.12em;
+		  font-size:100%;
+		  text-align: justify;
+		  font-weight:600;
+		  margin:0;
+		  max-width:100%;
+		  
+		}
+		
+		.nav {
+		  position: fixed; 
+		  width: 100%;
+		  height: 50px;
+		  /*background-color: #141E30*/;
+		  padding: 0;
+		  margin: 0;
+		  list-style-type: none;
+		  justify-content: center;
+		  text-align:center;
+		  word-spacing: 60px;		  
+		  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+		  background-color: rgba(240,248,255,1);		  
+		}
+		
+		.nav p.time{
+		color: rgba(0, 0, 0, 1);
+		text-shadow: none;
+		text-align: right;
+		font-weight: 500;
+		}
+		
+		.nav ul li {
+		display: inline;
+		letter-spacing: 2px;
+		line-height: 1.5em;
+		}
+		
+		#time {
+		color: rgba(0, 0, 0, 1);
+		text-shadow: none;
+		font-weight: 500;
+		text-align: right;
+		float: right;
+		padding-right: 20px;
+		}
+		
+		.nav a{
+		color: rgba(0, 0, 0, 1);
+		text-shadow: none;
+		font-weight: 500;
+		}
+		
+		.nav a:hover{
+		color: #4C4C4C;
+		}
+		/*
+		..................
+		RULES FOR PARALLAX
+		..................
+		*/
+		
+		.parallax1 {
+		background: url("images/adams1.jpg") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;
+		}
+		
+		.parallax3 {
+		background: url("images/pines3b.png") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover;
+		}
+		
+		
+		
+		.page1 {
+		  display: flex;
+		  flex-direction: column;
+		  max-width: 100%;
+		  height: 1000px;
+		  margin: 0;
+		  padding: 0;
+		  float: left;
+		  
+		  align-items: center;
+		  /*
+		  background: url("images/adams1.jpg") no-repeat;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover; 
+		  -o-background-size: cover; 
+		  background-size:cover;
+		  background-position: center;
+		  background-attachment: scroll;
+		  */
+		  border-bottom-style: solid;
+		  border-width: 1px;
+		  border-color: rgba(255, 255, 255, 0.5);
+		  border-color: rgba(0, 0, 0, 0.5);
+		  
+		  justify-content: center;
+		}
+		
+		.page1 h1, li, a {
+		color: rgba(255, 255, 255, 1);
+		text-shadow: 1px 1px #000;
+		
+		}
+		
+		.page1 h2 {
+		  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		  color: rgba(255, 255, 255, 1);
+		  text-shadow: 1px 1px #000;
+		}
+		
+		.page1 li {
+		  list-style-type: none;
+		}
+		
+		.page1 .content1 {
+		text-align: left;
+		}
+		
+		.page2, .page4 {	   
+		  max-width: 100%;
+		  padding: 0;
+		  list-style: none;
+		  justify-content: center;
+		  align-items:center;
+		  text-align:left;
+		  border-bottom-style: solid;
+		  border-width: 1px;
+		  border-color: rgba(255, 255, 255, 0.5);
+		  float: left;
+		}
+		
+		.page2 .content2, .page4 .content4 {
+		margin: 50px;	
+		}
+		
+		.content2 {
+		max-width: 90%;
+		}
+		
+		.content4 a:hover{
+		color: #4C4C4C;
+		}
+		
+		.page3 {
+		  max-width: 100%;
+		  height: 800px;
+		  height: 500px;
+		  padding: 0;
+		  margin:0;
+		  justify-content: center;
+		  text-align:left;
+		  float: left;
+		  /*background: url("images/pines3b.png") no-repeat;
+		  background-size: cover;*/
+		}
+		
+		.content4 a {
+		color:rgba(0,0,0,1);
+		text-shadow: none;
+		font-weight: 600;
+		}
+		
+		 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+	@media only screen and (max-device-width: 480px) {
+    .parallax1 {
+        background-attachment: scroll;
+		}
+	}
+	
+	@media only screen and (max-device-width: 480px) {
+    .parallax3 {
+        background-attachment: scroll;
+		}
+	}
+} 
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="nav" id="nav">
+		<ul>
+			<li><a href="#main">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>		
+			<li id="time"></li>
+		</ul>
+
+	</div>
+	
+	<!-- <main> -->
+	  <!--<img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/15350628_10209906167123471_8100063072960897270_n.jpg?oh=72df718aa87cb77f70357d5ba6d08680&oe=59F3CA2F" class="profile-img">
+		-->	
+	<div class="page1 parallax1" id="main">
+		<div class="content1">
+		  <h1> Edwin Wenink </h1>
+		  <h2> Philosophy | Artificial Intelligence | Music </h2>
+		  <ul>
+			<li><a href="https://www.linkedin.com/in/ejwenink/"> LinkedIn</a></li>
+			<li><a href="https://radboud.academia.edu/EdwinWenink"> Academia </a></li>
+			<li><a href="https://www.last.fm/user/EdwinW/"> LastFM </a></li>
+			<li><a href="https://www.discogs.com/user/EJWenink/collection"> Discogs </a></li>
+			<li><a href="https://open.spotify.com/user/11132628344"> Spotify </a></li>
+			</ul>
+		</div>
+		
+	</div>
+	</div>
+		
+	<div class="page2" id="about">
+		<div class="content2">
+			<h1> About Me </h1>
+			<h2> Philosophy </h2>
+			<p> I studied philosophy (bachelor and research master) at the Radboud University, Nijmegen.
+			The philosophical approaches that are dominantly represented in the papers I have written during my research master are deconstruction, hermeneutical philosophy, and phenomenology.
+			Examples of paper topics are 1) critical evaluations of the so-called hermeneutical circularity in the thought of Heidegger and Gadamer 
+			2) the introduction of historicity into Husserl’s phenomenological method in his late thought 
+			3) considerations about the tension between philosophy’s commitment to truth and its use of metaphorical language (both in the work of Heidegger, Derrida and Deleuze) 
+			4) a discussion of the question whether Wittgenstein’s thought on certainty should be understood as being epistemologically foundationalist or non-foundationalist. 
+			Besides from those approaches, the research master in Nijmegen includes a two-semester course on a variety of philosophical methods and as well on the writing and oral skills necessary for doing scientific research.  </p>
+			<br />
+			<h2> Artificial Intelligence </h2>
+			<p>
+			I am currently doing a bachelor programme in Artificial Intelligence at the Radboud University.
+			I decided to do a second study because I want to acquire a set of practical skills (programming, mathematics, logic)
+			in a field that is highly interdisciplinary and also interesting from a philosophical point of view.
+			</p>
+		</div>
+	</div>
+		
+	<div class="page3 parallax3">
+		
+	</div>
+	
+	<div class="page4" id="contact">
+		<div class="content4">
+			<h1> Contact </h1>
+			<a href="mailto:edwinwenink@hotmail.com"> edwinwenink@hotmail.com </a>
+		</div>	
+		
+	</div>
+	
+	<div class="page5">
+	</div>
+	
+	<script type="text/javascript">
+	
+	function checkTime(i) {
+	  if (i < 10) {
+		i = "0" + i;
+	  }
+	  return i;
+	}
+
+	function startTime() {
+	  var today = new Date();
+	  var h = today.getHours();
+	  var m = today.getMinutes();
+	  var s = today.getSeconds();
+	  // add a zero in front of numbers<10
+	  m = checkTime(m);
+	  s = checkTime(s);
+	  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+	  t = setTimeout(function() {
+		startTime()
+	  }, 500);
+	}
+	startTime();
+	</script>
+	
+	
+	`
+</body>
+
+</html>
