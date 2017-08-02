@@ -1,4 +1,4 @@
 AuthType Basic  
 AuthName "Restricted Area"  
-AuthUserFile www.edwinwenink.xyz/protected/.htpasswd  
+AuthUserFile /protected/.htpasswd  
 require valid-user
