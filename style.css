@@ -8,8 +8,7 @@
 		}
 		
 		body {	  
-		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;  
-		  font-family: 'Inconsolata', monospace;
+		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif
 		  font-weight: 500;
 		  -webkit-font-smoothing: antialiased;
 		  background-color: #D0CDCD
@@ -37,11 +36,11 @@
 		h2 {
 		  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 		  color: rgba(255, 255, 255, 1);
-		  
+		  font-family: 'Inconsolata', monospace;
 		  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
 		  color: rgba(0, 0, 0, 1);
 		  
-		  <!--font-family: 'Roboto', sans-serif;-->
+		  font-family: 'Inconsolata', sans-serif;
 		  font-weight: 200;
 		  font-size: 22px;
 		  line-height: 24px;
@@ -67,19 +66,19 @@
 		}
 		
 		p {
-		  color: rgba(255, 255, 255, 1);
+		  font-family: 'Roboto' , 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif
 		  color: rgba(0, 0, 0, 1);
 		  line-height: 1,5em;
 		  letter-spacing: 0.12em;
 		  font-size:100%;
 		  text-align: justify;
-		  font-weight:600;
+		  font-weight:500;
 		  margin:0;
-		  max-width:100%;
-		  
+		  max-width:100%;  
 		}
 		
 		.nav {
+		  font-family: 'Inconsolata', monospace;
 		  position: fixed; 
 		  width: 100%;
 		  height: 50px;
@@ -155,8 +154,6 @@
 		background-size: cover;
 		}
 		
-		
-		
 		.page1 {
 		  display: flex;
 		  flex-direction: column;
@@ -164,44 +161,39 @@
 		  height: 1000px;
 		  margin: 0;
 		  padding: 0;
-		  float: left;
-		  
+		  float: left;	  
 		  align-items: center;
-		  /*
-		  background: url("images/adams1.jpg") no-repeat;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover; 
-		  -o-background-size: cover; 
-		  background-size:cover;
-		  background-position: center;
-		  background-attachment: scroll;
-		  */
 		  border-bottom-style: solid;
 		  border-width: 1px;
 		  border-color: rgba(255, 255, 255, 0.5);
-		  border-color: rgba(0, 0, 0, 0.5);
-		  
+		  border-color: rgba(0, 0, 0, 0.5);	  
 		  justify-content: center;
 		}
 		
-		.page1 h1, li, a {
-		color: rgba(255, 255, 255, 1);
-		text-shadow: 1px 1px #000;
-		
+		.page1 h1, .page1 h2, .page1 p, .page1 li, .page1 a{
+		color: rgba(255, 255, 255, 1);	
+		text-shadow: 1px 1px #000;	
 		}
 		
-		.page1 h2 {
-		  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-		  color: rgba(255, 255, 255, 1);
-		  text-shadow: 1px 1px #000;
+		.page1 p{
+		text-align: left;
+		}
+		
+		.page1 h2{
+		border-bottom: 1px solid rgba(255,255,255, 0.7);	
+		color: rgba(255, 255, 255, 1);	
 		}
 		
 		.page1 li {
 		  list-style-type: none;
 		}
 		
-		.page1 .content1 {
-		text-align: left;
+		.content1{
+		justify-content: center;
+		max-width: 25%; 
+		/*
+		SET HOW SMALL BLOCK ON PAGE 1 MUST BE
+		*/
 		}
 		
 		.page2, .page4 {	   
@@ -215,6 +207,7 @@
 		  border-width: 1px;
 		  border-color: rgba(255, 255, 255, 0.5);
 		  float: left;
+		  color: rgba(0, 0, 0, 1);
 		}
 		
 		.page2 .content2, .page4 .content4 {
@@ -224,11 +217,7 @@
 		.content2 {
 		max-width: 90%;
 		}
-		
-		.content4 a:hover{
-		color: #4C4C4C;
-		}
-		
+	
 		.page3 {
 		  max-width: 100%;
 		  height: 800px;
@@ -238,8 +227,24 @@
 		  justify-content: center;
 		  text-align:left;
 		  float: left;
-		  /*background: url("images/pines3b.png") no-repeat;
-		  background-size: cover;*/
+		}
+		
+		.page4 {
+		align-items: left;	
+		}
+		
+		.icons {
+		width: 100%;
+		}
+		/* KRIJG ICONEN NAAR LINKS */
+		
+		.icons li {
+		display: inline;
+		padding-right: 1%;
+		}
+		
+		.content4 a:hover{
+		color: #4C4C4C;
 		}
 		
 		.content4 a {
@@ -249,15 +254,15 @@
 		}
 		
 		 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-	@media only screen and (max-device-width: 480px) {
-    .parallax1 {
-        background-attachment: scroll;
+		@media only screen and (max-device-width: 480px) {
+		.parallax1 {
+			background-attachment: scroll;
+			}
 		}
-	}
-	
-	@media only screen and (max-device-width: 480px) {
-    .parallax3 {
-        background-attachment: scroll;
+		
+		@media only screen and (max-device-width: 480px) {
+		.parallax3 {
+			background-attachment: scroll;
+			}
 		}
-	}
 } 

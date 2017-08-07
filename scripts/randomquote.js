@@ -10,7 +10,6 @@
 		quotes[4] = "&quotThe human body is the best picture of the human soul.&quot - Ludwig Wittgenstein";
 		var rand = Math.floor(Math.random()*quotes.length);
 		document.write(quotes[rand]);
-		
   }
 
   writeRandomQuote();
