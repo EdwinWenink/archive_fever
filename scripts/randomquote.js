@@ -14,9 +14,10 @@
 		quotes[11]= "&quotGenerally speaking, the errors in religion are dangerous; those in philosophy only ridiculous.&quot - David Hume";
 		quotes[12]= "&quotScience is what you know, philosophy is what you don't know.&quot - Bertrand Russell";
 		quotes[13]= "&quotEvery man is born as many men and dies as a single one.&quot - Martin Heidegger";
-		
-		
-		
+		quotes[14]= "&quotLanguage is the house of the truth of Being&quot - Martin Heidegger";
+		quotes[15]= "&quotWhy are there beings at all, instead of Nothing?&quot - Martin Heidegger";
+		quotes[16]= "&quotPhilosophy begins in wonder. And, at the end, when philosophic thought has done its best, the wonder remains.&quot - Alfred North Whitehead";
+		quotes[17]= "&quotWords are never &#39only words&#39;; they matter because they define the contours of what we can do.&quot - Slavoj Zizek";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
