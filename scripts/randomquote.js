@@ -18,6 +18,15 @@
 		quotes[15]= "&quotWhy are there beings at all, instead of Nothing?&quot - Martin Heidegger";
 		quotes[16]= "&quotPhilosophy begins in wonder. And, at the end, when philosophic thought has done its best, the wonder remains.&quot - Alfred North Whitehead";
 		quotes[17]= "&quotWords are never &#39only words&#39;; they matter because they define the contours of what we can do.&quot - Slavoj Zizek";
+		quotes[18]= "&quotA concept is a brick. It can be used to build a courthouse of reason. Or it can be thrown through the window.&quot - Gilles Deleuze";
+		quotes[19]= "&quotThe shame of being a man - is there any better reason to write?&quot - Gilles Deleuze";
+		quotes[20]= "&quotThe more clearly you understand yourself and your emotions, the more you become a lover of what is.&quot - Baruch de Spinoza";
+		quotes[21]= "&quotThe length of the journey has to be borne with, for every moment is necessary.&quot - Georg Wilhelm Friedrich Hegel";
+		quotes[22]= "&quotWe learn from history that we do not learn from history&quot - Georg Wilhelm Friedrich Hegel";
+		
+		
+		
+		
 		/*
 		quotes[x]= "&quot &quot";
 		*/
