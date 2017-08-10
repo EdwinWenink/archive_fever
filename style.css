@@ -197,13 +197,16 @@
 		}
 		
 		.page2, .page4 {	   
+		  display: flex;
+		  flex-direction: column;
 		  max-width: 100%;
 		  height: auto;
-		  padding: 0;
+		  padding: 0px;
 		  list-style: none;
 		  justify-content: center;
 		  align-items:center;
-		  text-align:left;
+		  text-align:center;
+		  margin: 0px;	
 		  /*
 		  border-bottom-style: solid;
 		  border-width: 1px;
@@ -213,9 +216,7 @@
 		  color: rgba(0, 0, 0, 1);
 		}
 		
-		.page2, .page4 {		
-		margin: 50px;		
-		}
+		
 		
 		.content2 {
 		max-width: 90%;
@@ -233,7 +234,7 @@
 		}
 		
 		.page4 {
-		align-items: left;	
+		align-items: justify;	
 		}
 		
 		.icons {
@@ -243,8 +244,13 @@
 		
 		.icons li {
 		display: inline;
-		padding-right: 1%;
 		}
+		
+		.content4 , .content4 h1{
+		display: flex;
+		align-items: center;	
+		}
+		
 		
 		.content4 a:hover{
 		color: #4C4C4C;
