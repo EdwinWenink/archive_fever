@@ -25,8 +25,6 @@
 		quotes[22]= "&quotWe learn from history that we do not learn from history&quot - Georg Wilhelm Friedrich Hegel";
 		
 		
-		
-		
 		/*
 		quotes[x]= "&quot &quot";
 		*/

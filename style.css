@@ -34,20 +34,19 @@
 		}
 		
 		h2 {
-		  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-		  color: rgba(255, 255, 255, 1);
 		  font-family: 'Inconsolata', monospace;
+		  /*
 		  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+		  */
 		  color: rgba(0, 0, 0, 1);
 		  
 		  font-family: 'Inconsolata', sans-serif;
 		  font-weight: 200;
 		  font-size: 22px;
 		  line-height: 24px;
-		  padding-bottom: 30px;
+		  padding-bottom: 12px;
 		  text-align: left;
-		  max-width: 70%;
-		  /*text-shadow: 1px 1px #000;*/
+		  max-width: 30%;
 		}
 		
 		a {
@@ -166,7 +165,6 @@
 		  align-items: center;
 		  border-bottom-style: solid;
 		  border-width: 1px;
-		  border-color: rgba(255, 255, 255, 0.5);
 		  border-color: rgba(0, 0, 0, 0.5);	  
 		  justify-content: center;
 		}
@@ -183,6 +181,7 @@
 		.page1 h2{
 		border-bottom: 1px solid rgba(255,255,255, 0.7);	
 		color: rgba(255, 255, 255, 1);	
+		max-width: 70%;
 		}
 		
 		.page1 li {
@@ -199,20 +198,23 @@
 		
 		.page2, .page4 {	   
 		  max-width: 100%;
+		  height: auto;
 		  padding: 0;
 		  list-style: none;
 		  justify-content: center;
 		  align-items:center;
 		  text-align:left;
+		  /*
 		  border-bottom-style: solid;
 		  border-width: 1px;
 		  border-color: rgba(255, 255, 255, 0.5);
-		  float: left;
+		  */
+		  float: left; 	/*added for icons */
 		  color: rgba(0, 0, 0, 1);
 		}
 		
-		.page2 .content2, .page4 .content4 {
-		margin: 50px;	
+		.page2, .page4 {		
+		margin: 50px;		
 		}
 		
 		.content2 {
@@ -252,6 +254,35 @@
 		color:rgba(0,0,0,1);
 		text-shadow: none;
 		font-weight: 600;
+		}
+		
+		.unfold {
+		  max-height: 70px;
+		  width: 100%;
+		  /*position: relative;*/
+		  
+		  transition-timing-function: ease;  
+		  -webkit-transition: max-height 1.5s;
+		  -o-transition: max-height 1.5s;
+		  -moz-transition: max-height 1.5s;
+		  transition: max-height 1.5s;
+		  
+		  text-align: center;
+		  overflow: hidden;	
+		}
+		
+		.highlight:hover {
+		color: #4C4C4C;	
+		}
+		
+		.highlight:focus {
+		border-bottom-style: solid;
+		border-width: 1px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.7);	
+		}
+		
+		.unfold:focus {
+		  max-height: 1000px;
 		}
 		
 		 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
