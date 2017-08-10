@@ -74,6 +74,7 @@
 		  margin:0;
 		  max-width:100%;  
 		  font-size: 18px;
+		  padding-bottom: 25px;
 		  /* FONT SIZE GAAT MIS OP MOBIEL */
 		}
 		
@@ -161,7 +162,7 @@
 		  height: 1000px;
 		  margin: 0;
 		  padding: 0;
-		  float: left;	  
+		  float: center;	  
 		  align-items: center;
 		  border-bottom-style: solid;
 		  border-width: 1px;
@@ -189,7 +190,7 @@
 		}
 		
 		.content1{
-		justify-content: center;
+		
 		max-width: 25%; 
 		/*
 		SET HOW SMALL BLOCK ON PAGE 1 MUST BE
@@ -197,15 +198,15 @@
 		}
 		
 		.page2, .page4 {	   
-		  display: flex;
-		  flex-direction: column;
+		  
 		  max-width: 100%;
 		  height: auto;
 		  padding: 0px;
 		  list-style: none;
-		  justify-content: center;
+		  /*justify-content: center;
 		  align-items:center;
 		  text-align:center;
+		  */
 		  margin: 0px;	
 		  /*
 		  border-bottom-style: solid;
@@ -219,7 +220,10 @@
 		
 		
 		.content2 {
-		max-width: 90%;
+		max-width: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: right;
 		}
 	
 		.page3 {
@@ -232,13 +236,10 @@
 		  text-align:left;
 		  float: left;
 		}
-		
-		.page4 {
-		align-items: justify;	
-		}
-		
+
 		.icons {
 		width: 100%;
+		max-width: 100%;
 		}
 		/* KRIJG ICONEN NAAR LINKS */
 		
@@ -246,9 +247,10 @@
 		display: inline;
 		}
 		
-		.content4 , .content4 h1{
+		.content4 {
 		display: flex;
-		align-items: center;	
+		flex-direction: column;
+		align-items: left;	
 		}
 		
 		
