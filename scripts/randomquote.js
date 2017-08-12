@@ -23,6 +23,7 @@
 		quotes[20]= "&quotThe more clearly you understand yourself and your emotions, the more you become a lover of what is.&quot - Baruch de Spinoza";
 		quotes[21]= "&quotThe length of the journey has to be borne with, for every moment is necessary.&quot - Georg Wilhelm Friedrich Hegel";
 		quotes[22]= "&quotWe learn from history that we do not learn from history&quot - Georg Wilhelm Friedrich Hegel";
+		quotes[23]= "&quotAnd those who were seen dancing were thought to be insane by those who could not hear the music.&quot - Friedrich Nietzsche";
 		
 		
 		/*
