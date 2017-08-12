@@ -9,15 +9,15 @@
 // - Include this script and enjoy.
 //
 // last.fm API documentation for the method we're using:
-// http://www.last.fm/api/show/user.getRecentTracks
+// https://www.last.fm/api/show/user.getRecentTracks
 
 $(function(){
-  // Create a new API Key here: http://www.last.fm/api/account/create
+  // Create a new API Key here: https://www.last.fm/api/account/create
   var api_key = '7fa8736b6bff6464bc7cf056797ebcf1';
   // Your last.fm username. We'll use this to fetch your tracks and link to your profile.
   var username = 'EdwinW';
   // This is the URL of the API we're calling.
-  var base_url = 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
+  var base_url = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
   $.getJSON(base_url, function(data){
     // Check to see if we're getting an Array or Object.
     // If we're listening to something right now, the API returns the song we're currently listening to as well as the last song we listened to, which would be an Array.
