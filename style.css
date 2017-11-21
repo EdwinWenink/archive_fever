@@ -142,8 +142,44 @@
 		background-size: cover;
 		}
 
-		.parallax3 {
+		.parallax2 {
 		background: url("images/pines3b.png") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+
+		.parallax3 {
+		background: url("images/b17_2.jpg") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+
+		.parallax4 {
+		background: url("images/b17.jpg") no-repeat;
+		height: 100%;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+
+		.parallax5 {
+		background: url("images/trees.jpg") no-repeat;
 		height: 100%;
 		background-attachment: fixed;
 		background-position: center;
@@ -229,7 +265,7 @@
 		}
 
 		.inline {
-		display: inline;
+		display: inline-block;
 		float: left;
 		}
 
@@ -242,10 +278,10 @@
 		max-height: 250px;
 		float: left;
 		padding-right: 40px;
-		display: inline;
+		display: inline-block;
 		}
 
-		.page3 {
+		.background {
 		  max-width: 100%;
 		  height: 800px;
 		  height: 500px;
@@ -317,9 +353,28 @@
 		}
 
 		@media only screen and (max-device-width: 480px) {
+		.parallax2 {
+			background-attachment: scroll;
+			}
+		}
+
+		@media only screen and (max-device-width: 480px) {
 		.parallax3 {
 			background-attachment: scroll;
 			}
 		}
+
+		@media only screen and (max-device-width: 480px) {
+		.parallax4 {
+			background-attachment: scroll;
+			}
+		}
+
+		@media only screen and (max-device-width: 480px) {
+		.parallax5 {
+			background-attachment: scroll;
+			}
+		}
+		
 
 }
