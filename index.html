@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 	<link href="style.css" type="text/css" rel="stylesheet"/>
 	<link rel="shortcut icon" href="icons/phi-icon.jpg"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- JQuery -->
-    <script type="text/javascript" src="/scripts/preloadimages.js"></script>
-	<script type="text/javascript" src="/scripts/lastfm_now_playing.js"></script>
+	<!-- look scripts asynchronously to not delay html loading -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script> <!-- JQuery -->
+    <script type="text/javascript" src="/scripts/preloadimages.js" async></script>
+	<script type="text/javascript" src="/scripts/lastfm_now_playing.js" async></script>
 </head>
 
 <body>
