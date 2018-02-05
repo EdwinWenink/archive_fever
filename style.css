@@ -352,8 +352,12 @@ width: 480px;
 }
 
 .nav{
-height: 0px;
 display: none
+}
+
+.content1 {
+  justify-content: center;
+  max-width: 100%;
 }
 
 }
