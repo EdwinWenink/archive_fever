@@ -115,9 +115,6 @@ p {
   color: #4C4C4C;
 }
 
-
-@media only screen and (min-device-width:480px) {
-
 .parallax1 {
   background: url("/images/8923d3e78d349439c76218417778315a4be7787c/adams1.jpg") no-repeat;
   height: 100%;
@@ -130,6 +127,7 @@ p {
   background-size: cover;
 }
 
+@media only screen and (min-device-width:480px) {
 .parallax2 {
   background: url("/aa243873ed33dbf80134d0a0ce81072f4632f2a7/bd4b7/images/pines3b.png") no-repeat;
   height: 100%;
@@ -321,6 +319,17 @@ p {
 
 .unfold:focus {
   max-height: 1000px;
+}
+
+@media only screen and (max-device-width:480px) {
+.background{
+  height: 0px;
+}
+
+.parallax1{
+background-attachment: scroll;
+height: auto;
+width: auto;
 }
 
 
