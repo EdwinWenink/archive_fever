@@ -325,6 +325,11 @@ p {
 }
 
 @media only screen and (max-device-width:480px) {
+
+  html {
+    max-width: 480px;
+  }
+
 .background{
   height: 0px;
 }
