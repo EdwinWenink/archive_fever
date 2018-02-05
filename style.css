@@ -335,7 +335,7 @@ p {
   max-width: 100%;
   width: auto;
   height: auto;
-  margin: 0;
+  margin: 50px;
   padding: 0;
   float: left;
   align-items: left;
@@ -348,8 +348,13 @@ p {
 .parallax1{
 background-attachment: scroll;
 height: auto;
-width: auto;
+width: 480px;
 }
+
+.nav{
+height: 0px;
+}
+
 }
 
 }
