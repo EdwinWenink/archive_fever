@@ -318,6 +318,15 @@ p {
 }
 
 @media only screen and (max-device-width:480px) {
+
+  .page1{
+    height:auto;
+  }
+
+  .background{
+    height:auto;
+  }
+
   .parallax1 {
     background-attachment: scroll;
   }
