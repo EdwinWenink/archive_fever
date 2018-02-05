@@ -262,6 +262,7 @@ p {
   display: inline-block;
 }
 
+@media only screen and (min-device-width:480px) {
 .background {
   max-width: 100%;
   height: 800px;
@@ -271,6 +272,7 @@ p {
   justify-content: center;
   text-align: left;
   float: left;
+}
 }
 
 .page4 {
