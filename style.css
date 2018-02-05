@@ -115,6 +115,9 @@ p {
   color: #4C4C4C;
 }
 
+
+@media only screen and (min-device-width:480px) {
+
 .parallax1 {
   background: url("/images/8923d3e78d349439c76218417778315a4be7787c/adams1.jpg") no-repeat;
   height: 100%;
@@ -173,6 +176,7 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
 }
 
 .page1 {
@@ -317,35 +321,5 @@ p {
   max-height: 1000px;
 }
 
-@media only screen and (max-device-width:480px) {
-
-  .page1{
-    height:auto;
-  }
-
-  .background{
-    height:auto;
-  }
-
-  .parallax1 {
-    background-attachment: scroll;
-  }
-
-  .parallax2 {
-    background-attachment: scroll;
-  }
-
-  .parallax3 {
-    background-attachment: scroll;
-  }
-
-  .parallax4 {
-    background-attachment: scroll;
-  }
-
-  .parallax5 {
-    background-attachment: scroll;
-  }
-}
 
 }
