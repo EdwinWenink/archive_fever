@@ -67,7 +67,7 @@ p {
   font-size: 18px;
 }
 
-@media only screen and (min-device-width:480px) {
+
 .nav {
   font-family: 'Inconsolata', monospace;
   position: fixed;
@@ -113,8 +113,6 @@ p {
 
 .nav a:hover {
   color: #4C4C4C;
-}
-
 }
 
 .parallax1 {
@@ -342,37 +340,47 @@ p {
   justify-content: center;
 }
 
-.parallax1{
+.background {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  text-align: left;
+  float: left;
+}
+
+.parallax1 {
 background-attachment: scroll;
 height: auto;
 max-width: 480px;
 }
 
-.parallax2{
+.parallax2 {
 background-attachment: scroll;
 height: auto;
 max-width: 480px;
 }
 
-.parallax3{
+.parallax3 {
 background-attachment: scroll;
 height: auto;
 max-width: 480px;
 }
 
-.parallax4{
+.parallax4 {
 background-attachment: scroll;
 height: auto;
 max-width: 480px;
 }
 
-.parallax5{
+.parallax5 {
 background-attachment: scroll;
 height: auto;
 max-width: 480px;
 }
 
-.nav{
+.nav {
 display: none
 }
 
@@ -399,7 +407,6 @@ display: none
   text-align: center;
   overflow:visible;
 }
-
 
 }
 
