@@ -328,6 +328,7 @@ p {
 
   html {
     max-width: 480px;
+    width: 480px;
   }
 
 .background{
@@ -353,7 +354,7 @@ p {
 .parallax1{
 background-attachment: scroll;
 height: auto;
-width: 480px;
+max-width: 480px;
 }
 
 .nav{
@@ -369,6 +370,12 @@ display: none
 .desktop {
   display: none;
 }
+
+.content2 {
+  max-width: 100%;
+}
+
+
 
 }
 
