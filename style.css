@@ -361,8 +361,13 @@ display: none
 }
 
 .content1 {
+  margin: 50px;
   justify-content: center;
-  max-width: 100%;
+  max-width: 90%;
+}
+
+.desktop {
+  display: none;
 }
 
 }
