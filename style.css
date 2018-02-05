@@ -130,7 +130,6 @@ p {
   background-size: cover;
 }
 
-@media only screen and (min-device-width:480px) {
 .parallax2 {
   background: url("/aa243873ed33dbf80134d0a0ce81072f4632f2a7/bd4b7/images/pines3b.png") no-repeat;
   height: 100%;
@@ -177,7 +176,6 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
 }
 
 .page1 {
@@ -352,6 +350,30 @@ p {
 }
 
 .parallax1{
+background-attachment: scroll;
+height: auto;
+max-width: 480px;
+}
+
+.parallax2{
+background-attachment: scroll;
+height: auto;
+max-width: 480px;
+}
+
+.parallax3{
+background-attachment: scroll;
+height: auto;
+max-width: 480px;
+}
+
+.parallax4{
+background-attachment: scroll;
+height: auto;
+max-width: 480px;
+}
+
+.parallax5{
 background-attachment: scroll;
 height: auto;
 max-width: 480px;
