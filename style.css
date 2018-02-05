@@ -335,24 +335,25 @@ p {
   max-width: 100%;
   width: auto;
   height: auto;
-  margin: 50px;
+  margin: 0px;
   padding: 0;
   float: left;
   align-items: left;
   border-bottom-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.5);
-  justify-content: left;
+  justify-content: center;
 }
 
 .parallax1{
 background-attachment: scroll;
-height: auto;
+height: 200px;
 width: 480px;
 }
 
 .nav{
 height: 0px;
+display: none
 }
 
 }
