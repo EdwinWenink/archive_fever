@@ -328,7 +328,7 @@ p {
   flex-direction: column;
   max-width: 100%;
   width: auto;
-  height: auto;
+  height: 100px;
   margin: 0px;
   padding: 0;
   float: left;
