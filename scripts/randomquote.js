@@ -25,11 +25,15 @@
 		quotes[22]= "&quotWe learn from history that we do not learn from history&quot - Georg Wilhelm Friedrich Hegel";
 		quotes[23]= "&quotAnd those who were seen dancing were thought to be insane by those who could not hear the music.&quot - Friedrich Nietzsche";
 		quotes[24]= "&quotNihilism is inseparable from a great love for life, because a great love for life is inseparable from a more desperate disappointment.&quot - Sergio Quinzio";
-		
+		quotes[25]= "&quotOne cannot step twice in the same river&quot - Heraclitus";
+		quotes[26]= "&quotThere is only one thing a philosopher can be relied upon to do, and that is to contradict other philosophers&quot - William James";
+		quotes[27]= "&quotIs man merely a mistake of God's? Or God merely a mistake of man's?&quot - Friedrich Nietzsche";
+		quotes[28]= "&quotWe are what we repeatedly do. Greatness then, is not an act, but a habit&quot - Will Durant";
+		quotes[29]= "&quotDon't be afraid of death so much as an inadequate life&quot - Bertolt Brecht";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
-		
+
 		var rand = Math.floor(Math.random()*quotes.length);
 		document.write(quotes[rand]);
   }
