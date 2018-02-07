@@ -30,6 +30,8 @@
 		quotes[27]= "&quotIs man merely a mistake of God's? Or God merely a mistake of man's?&quot - Friedrich Nietzsche";
 		quotes[28]= "&quotWe are what we repeatedly do. Greatness then, is not an act, but a habit&quot - Will Durant";
 		quotes[29]= "&quotDon't be afraid of death so much as an inadequate life&quot - Bertolt Brecht";
+		quotes[30]= "&quotWe must let go of the life we have planned, so as to accept the one that is waiting for us&quot - Joseph Campbell";
+		quotes[31]= "&quotIf the path before you is clear, you're probably on someone else's&quot - Joseph Campbell";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
