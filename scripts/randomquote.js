@@ -32,7 +32,7 @@
 		quotes[29]= "&quotDon't be afraid of death so much as an inadequate life&quot - Bertolt Brecht";
 		quotes[30]= "&quotWe must let go of the life we have planned, so as to accept the one that is waiting for us&quot - Joseph Campbell";
 		quotes[31]= "&quotIf the path before you is clear, you're probably on someone else's&quot - Joseph Campbell";
-		quotes[32]= "&quotConsensus is the enemy of thought, for it claims that we share existence. In the most intimate dimension of thought, however, existence is precisely what is not shared &quot - Alain Badiou"; //OaA p.43
+		quotes[32]= "&quotConsensus is the enemy of thought, for it claims that we share existence. In the most intimate dimension of thought, however, existence is precisely what is not shared&quot - Alain Badiou"; //OaA p.43
 		/*
 		quotes[x]= "&quot &quot";
 		*/
