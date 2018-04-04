@@ -35,11 +35,10 @@
 	</div>
 
 	<div class="page2" id="about">
-		<div>
 		<div class="inline"><img src="/images/gent.jpg" class="author-picture"></img></div> 
 		<div class="inline">
 			<h2> Recent posts: </h2>
-			<div class="content">
+			<div class="inline content">
 				
 			    {{ range first 3 .Pages }}
 			    {{ if eq .Type "posts"}}
@@ -73,7 +72,6 @@
 					</a>
 				</div>
 				-->
-			</div>
 		</div>
 	</div>
 <!--
