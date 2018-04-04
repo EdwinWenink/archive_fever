@@ -1,0 +1,6 @@
+baseURL = "http://www.edwinwenink.xyz/"
+languageCode = "en-us"
+title = "Edwin Wenink"
+theme = "one"
+[params]
+    navigation = ["archives.md", "about.md"]

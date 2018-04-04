@@ -4,17 +4,17 @@
 	<title> Edwin Wenink </title>
 	<!-- look scripts asynchronously to not delay html loading -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:100" async rel="stylesheet" type=text/css>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" async rel="stylesheet">
-	<link href="style.css" async type="text/css" rel="stylesheet"/>
+  	<link href="https://fonts.googleapis.com/css?family=Inconsolata" async rel="stylesheet">
+	<link href="/css/styleHome.css" async type="text/css" rel="stylesheet"/>
 	<link rel="shortcut icon" href="icons/phi-icon.jpg"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script><!-- JQuery -->
-  <script type="text/javascript" src="/scripts/preloadimages.js" async></script>
+	 <script type="text/javascript" src="/scripts/preloadimages.js" async></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-	<div class="nav" id="nav">
+<!--	<div class="nav" id="nav">
 		<ul>
 			<li><a href="#main">Home</a></li>
 			<li><a href="#about">Index</a></li>
@@ -23,39 +23,41 @@
 		</ul>
 
 	</div>
+-->
 
-	<!-- <main> -->
-	  <!--<img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/15350628_10209906167123471_8100063072960897270_n.jpg?oh=72df718aa87cb77f70357d5ba6d08680&oe=59F3CA2F" class="profile-img">
-		-->
 	<div class="page1 parallax1" id="main">
 		<div class="content1">
 		  <h1> Edwin Wenink </h1>
 		  <h2> Philosophy | Artificial Intelligence | etcetera </h2>
-		  <div class="desktop"><p><script type="text/javascript" src="/scripts/randomquote.js"></script></p></div>
-		  <!--<ul>
-			<li><a href="https://www.linkedin.com/in/ejwenink/"> LinkedIn</a></li>
-			<li><a href="https://radboud.academia.edu/EdwinWenink"> Academia </a></li>
-			<li><a href="https://www.last.fm/user/EdwinW/"> LastFM </a></li>
-			<li><a href="https://www.discogs.com/user/EJWenink/collection"> Discogs </a></li>
-			<li><a href="https://open.spotify.com/user/11132628344"> Spotify </a></li>
-		  </ul> -->
-
+		     <div class="desktop"><p><script type="text/javascript" src="/scripts/randomquote.js"></script></p></div> 
 		</div>
-
 	</div>
 	</div>
 
 	<div class="page2" id="about">
-
-		<div class="content2">
-			<h1> Index </h1>
-		</div>
-
 		<div>
-			<div class="inline"><img src="images/edwinicon.jpg" class="author-picture"></img></div>
-			<div class="narrow inline">
+		<div class="inline"><img src="/images/gent.jpg" class="author-picture"></img></div> 
+		<div class="inline">
+			<h2> Recent posts: </h2>
+			<div class="content">
+				
+			    {{ range first 3 .Pages }}
+			    {{ if eq .Type "posts"}}
+				<p>
+				<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+				<a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
+				</p>
+			    {{ end }}
+			    {{ end }}
+			</div>
+				 <!-- <ul>
+					  <li><a href="blog/index.html"> Blog </a> </li>
+				  </ul>
+				 -->
+				</div>
+				<!--
 				<div class="content2">
-					<a href="#philosophy">
+	    				<a href="#philosophy">
 					<h2 class="highlight"> Philosophy </h2>
 					</a>
 				</div>
@@ -70,10 +72,11 @@
 					</br>
 					</a>
 				</div>
+				-->
 			</div>
 		</div>
 	</div>
-
+<!--
 	<div class="background page1 parallax2"></div>
 
 	<div class="page2" id="philosophy">
@@ -198,21 +201,24 @@
 		</div>
 		</div>
 	</div>
+	
+-->
 
-	<div class="background page1 parallax5"></div>
+	<div class="background page1 parallax2"></div>
+
 
 	<div class="page4" id="contact">
 		<div class="content4">
-			<h1> Contact </h1>
+			<!--<h1> Contact </h1>-->
 			<div class="icons">
 				<ul>
-					<li><a href="mailto:edwinwenink@hotmail.com"> <img src="/icons/mail.png" alt="Mail me" width="42" height="42" border="0" </a></li>
-					<li><a href="https://www.linkedin.com/in/ejwenink/"> <img src="/icons/linkedin.png" alt="LinkedIn" width="42" height="42" border="0" </a></li>
-					<li><a href="https://www.facebook.com/edwinwenink"> <img src="/icons/facebook.png" alt="Facebook" width="42" height="42" border="0" </a></li>
-					<li><a href="https://open.spotify.com/user/11132628344"> <img src="/icons/spotify.png" alt="Spotify" width="42" height="42" border="0" </a></li>
-					<li><a href="https://www.last.fm/user/EdwinW/"> <img src="/icons/lastFM.png" alt="LastFM" width="42" height="42" border="0" </a></li>
-					<li><a href="https://www.discogs.com/user/EJWenink/collection"> <img src="/icons/discogs.png" alt="Discogs" width="42" height="42" border="0" </a></li>
-					<li><a href="https://radboud.academia.edu/EdwinWenink"> <img src="/icons/academia.png" alt="Academia" width="42" height="42" border="0" </a></li>
+					<li><a href="mailto:edwinwenink@hotmail.com"> <img src="/icons/mail.png" alt="Mail me" width="42" height="42" border="0"> </a></li>
+					<li><a href="https://www.linkedin.com/in/ejwenink/"> <img src="/icons/linkedin.png" alt="LinkedIn" width="42" height="42" border="0"> </a></li>
+					<li><a href="https://www.facebook.com/edwinwenink"> <img src="/icons/facebook.png" alt="Facebook" width="42" height="42" border="0"> </a></li>
+					<li><a href="https://open.spotify.com/user/11132628344"> <img src="/icons/spotify.png" alt="Spotify" width="42" height="42" border="0"> </a></li>
+					<li><a href="https://www.last.fm/user/EdwinW/"> <img src="/icons/lastFM.png" alt="LastFM" width="42" height="42" border="0"> </a></li>
+					<li><a href="https://www.discogs.com/user/EJWenink/collection"> <img src="/icons/discogs.png" alt="Discogs" width="42" height="42" border="0"> </a></li>
+					<li><a href="https://radboud.academia.edu/EdwinWenink"> <img src="/icons/academia.png" alt="Academia" width="42" height="42" border="0"> </a></li>
 				</ul>
 			</div>
 		</div>
