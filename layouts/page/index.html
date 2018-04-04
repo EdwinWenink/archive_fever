@@ -36,9 +36,10 @@
 
 	<div class="page2" id="about">
 		<div class="inline"><img src="/images/gent.jpg" class="author-picture"></img></div> 
-		<div class="inline">
-			<h2> Recent posts: </h2>
-			<div class="inline content">
+		<div class="content2 inline">
+			<h2> Recent posts: </h2></div>
+		
+			<div class="content">
 				
 			    {{ range first 3 .Pages }}
 			    {{ if eq .Type "posts"}}
@@ -53,7 +54,6 @@
 					  <li><a href="blog/index.html"> Blog </a> </li>
 				  </ul>
 				 -->
-				</div>
 				<!--
 				<div class="content2">
 	    				<a href="#philosophy">
