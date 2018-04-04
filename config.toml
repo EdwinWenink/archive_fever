@@ -1,4 +1,4 @@
-baseURL = "http://www.edwinwenink.xyz/"
+baseURL = "https://www.edwinwenink.xyz/"
 languageCode = "en-us"
 title = "Edwin Wenink"
 theme = "one"
