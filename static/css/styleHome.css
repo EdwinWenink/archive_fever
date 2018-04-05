@@ -281,6 +281,11 @@ aside {
   font-size=20px;
 }
 
+.underline {
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
 .inline {
   display: inline-block;
   float: left;
