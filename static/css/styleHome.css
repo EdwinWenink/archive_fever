@@ -273,6 +273,14 @@ aside {
   font-size=30px;
 }
 
+.content2 h2 {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.5);
+  max-width: 40%;
+  font-size=20px;
+}
+
 .inline {
   display: inline-block;
   float: left;
