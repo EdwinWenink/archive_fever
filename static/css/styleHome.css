@@ -232,7 +232,7 @@ p {
 div.content {
 	padding: 1rem 0 1rem 0;
 	min-width: 60%;
-	display: inline-block;
+	display: inline;
 }
 
 .content p {
