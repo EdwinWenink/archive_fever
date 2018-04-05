@@ -29,30 +29,37 @@
 		<div class="content1">
 		  <h1> Edwin Wenink </h1>
 		  <h2> Philosophy | Artificial Intelligence | etcetera </h2>
-		     <div class="desktop"><p><script type="text/javascript" src="/scripts/randomquote.js"></script></p></div> 
+		     <div class="desktop"><p><script type="text/javascript" src="/scripts/randomquote.js"></script></p>
+		     </div> 
 		</div>
 	</div>
-	</div>
+
+	<!-- Page 2 -->
 
 	<div class="page2" id="about">
-		<div class="inline"><img src="/images/gent.jpg" class="author-picture"></img></div> 
+	    <div class="inline">
+	        <img src="/images/gent.jpg" class="author-picture"></img>
+   	    </div> 
 
-		<div class ="narrow inline">
-
-		<div class="content2">
-			<h2> Recent posts: </h2></div>
+	    <div class ="narrow inline">
+	        <!-- <div class="content2">
+		     <h2> Recent posts: </h2>
+		</div> -->
 		
-			<div class="content">
-				
-			    {{ range first 3 .Pages }}
-			    {{ if eq .Type "posts"}}
-				<p>
-				<aside>{{ .Date.Format "January 2, 2006"}}</aside>
-				<a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
-				</p>
-			    {{ end }}
-			    {{ end }}
-			</div>
+		 <div class="content2">
+		    {{ range first 3 .Pages }}
+		    {{ if eq .Type "posts"}}
+			<p>
+			<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+			<a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a> 
+			{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
+			</p>
+		    {{ end }}
+		    {{ end }}
+		</div>
+	    </div>
+	</div>
+
 				 <!-- <ul>
 					  <li><a href="blog/index.html"> Blog </a> </li>
 				  </ul>
@@ -75,8 +82,6 @@
 					</a>
 				</div>
 				-->
-		</div>
-	</div>
 <!--
 	<div class="background page1 parallax2"></div>
 
