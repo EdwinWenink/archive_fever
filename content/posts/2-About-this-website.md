@@ -4,7 +4,7 @@ date: 2018-04-05
 tags: ["website","DIY"]
 draft: false
 ---
-
+<div style="text-align: justify">
 This website emerged from a DIY attitude, which translates as: I have been working with raw material, without having pre-existing knowledge about proper style for either html, css, or javascript etc. 
 I could also not be bothered to read up on theory first, since this was a project for leisure time (to avoid working on other things, basically).
 I started with a single page website with some html and css, and over the course of a half year I kept adding features and something resembling actual content to the page. In the meantime I was building forth on questionable and quite intractable css classes of course, often resulting in me losing oversight. The maniacal stream of git commits in the repository of this website testify to this. 
@@ -16,6 +16,8 @@ I decided to opt for a compromis: a static website generator (Hugo, in my case) 
 
 **Summary of current workflow**:\
 Markdown + vim --> pushing to a git repository --> automatic deployment on netlify. Netlify takes the "public" directory in which the hugo server publishes the site locally, and builds it with the hugo command. In other words, I can simply write everything in markdown, and I never have to leave my terminal again when maintaining my website!
+
+</div>
 
 ```
 EOF
