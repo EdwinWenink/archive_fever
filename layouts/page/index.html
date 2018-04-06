@@ -45,7 +45,7 @@
 		     <h2 class="underline"> Recent posts: </h2>
 		
 		 <div class="content2">
-		    {{ range first 3 .Pages }}
+		    {{ range first 6 .Pages }}
 		    {{ if eq .Type "posts"}}
 			<p>
 			<aside>{{ .Date.Format "January 2, 2006"}}</aside>
