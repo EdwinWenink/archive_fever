@@ -10,7 +10,7 @@ Ingredients:
 
 * ssh: the client command
 * sshd: the server component
-* scp: a tool to securely copy files
+* scp and sshfs: tools to securely copy files
 * ssh-keygen
 * tmux
 
@@ -116,7 +116,7 @@ The establishment of a ssh connection should now be straightforward. Run:
 ssh -p port remoteip
 ```
 
-After running the above command, you find yourself in a single terminal logged in on the remote server. Now what? Your options are somewhat limited. If you are interested in transferring files, check out the 'scp' command. Other than that, you can do what you would also normally do with the limitation that per ssh connection you open one single terminal. Another disadvantage is that when the ssh connection is broken, any process running in that single terminal is interrupted. 
+After running the above command, you find yourself in a single terminal logged in on the remote server. Now what? Your options are somewhat limited. If you are interested in transferring files, check out the 'scp' or 'sshfs' command (I expect to make another post about this topic later). Other than that, you can do what you would also normally do with the limitation that per ssh connection you open one single terminal. Another disadvantage is that when the ssh connection is broken, any process running in that single terminal is interrupted. 
 
 ## Using Tmux
 
