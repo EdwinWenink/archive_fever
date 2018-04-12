@@ -95,7 +95,8 @@ Conversely, since we do have the intuition that P $\neq$ NP, proving membership 
 
 ## All or nothing!
 
-To recap shortly: there are some problems that we can verify quite easily in polynomial time, but for which we do not have a polynomial time algorithm for actually finding a solution. Do we not have an algorithm for deciding that problem because we simply have not found it yet (so possibly P=NP), or because the problem is so hard that there simply cannot be any efficient algorithms (P$\neq$NP)?
+To recap shortly: there are some problems that we can verify quite easily in polynomial time, but for which we do not have a polynomial time algorithm for actually finding a solution. An example was the graph 3-colouring problem. 
+Do we not have an algorithm for deciding that problem because we simply have not found it yet (so possibly P=NP), or because the problem is so hard that there simply cannot be any efficient algorithms (P$\neq$NP)?
 
 We have also considered that proving that a P algorithm exists is doable by actually providing such an algorithm, while proving that it does not exist is extremely hard. What could be a tactic?
 
@@ -104,19 +105,20 @@ Consider the following figure, taken from wikipedia:\
 {{< figure src="/images/p-np.png" title="Diagram of P and NP under two different assumptions" >}}
 \
 
-Let's say that we suspect that there is no polynomial time algorithm for a given problem. And let's *assume* I have some problem in NP of which I already know that no polynomial-time algorithm exists for deciding it. If we could somehow show that 
-this problem without efficient solution can be reduced to the problem we are considering, then we also know that the problem under consideration is not in P. If we keep on reducing problems like this, we end up with an all or nothing issue: once we can show for one of those problems that it is not in P, then we can show it for all problems in NP that were reduced from it. Conversely, if we find that one of the NP-hard problems, to which all other NP problems can be reduced, is in P, then we have shown it for all problems in NP. To understand why, we have to carefully look at what this reduction precisely means.
+Let's say that we suspect that there is no polynomial time algorithm for a given problem. And let's *assume* I have some problem in NP of which I already know that no polynomial-time algorithm exists for deciding it. If we could somehow show that this problem without efficient solution can be reduced to the problem we are considering, then we also know that the problem under consideration is not in P.
+
+If we keep on reducing problems like this, we end up with an all or nothing issue: once we can show for one of those problems that it is not in P, then we can show it for all problems in NP that were reduced from it. Conversely, if we find that one of the NP-hard problems, to which all other NP problems can be reduced, is in P, then we have shown it for all problems in NP. To understand why, we have to carefully look at what this reduction precisely means.
 
 ### What can we conclude from a reduction?
 In order to preform a reduction, we need to find an algorithm that translates every instance of decision problem $D_1$ to an instance of $D_2$ such that every yes-instance still is a yes-instance, and every no-instance is still a no-instance in the other decision problem. In particular, we need these reductions to be possible in polynomial time.
 
 Assume we reduce $D_1$ to $D_2$. Then every found solution to $D_2$ in polynomial time can be translated back in polynomial time to the original domain, meaning that also in that domain there must be a polynomial time algorithm. 
 
-The notation $D_1$ $\leq$ $D_2$ means that $D_1$ is reducible in polynomial time to $D_2$. Read the smaller or equal sign as: $D_2$ is **harder** than $D_1$. (The notation is incomplete though, a P and m are missing, could not be bothered to find how to write it). 
+The notation $D_1$ $\leq$ $D_2$ means that $D_1$ is reducible in polynomial time to $D_2$ (The notation is incomplete though but I could not be bothered to find how to write it properly). We could read the smaller or equal sign also more informally as: $D_2$ is equally hard or harder than $D_1$ . 
 
 We have $D_1$ $\leq$ $D_2$. Two conclusions are possible:
 
-1 - If $D_2$ can be decided in polynomial time, then so can $D+1$, since $D_2$ is at least as hard.
+1 - If $D_2$ can be decided in polynomial time, then so can $D_1$, since $D_2$ is at least as hard.
 2) If $D_1$ *cannot* be decided in polynomial time, then $D_2$ also cannot (since $D_2$ is at least as hard, and has the exact same solutions due to the possible reduction).
 
 If the above reduction holds, we can **not** conclude that if $D_1$ can be decided in polynomial time, that $D_2$ also can. The reduction only works in one direction. It shows that any solution to $D_2$ must also be a solution to $D_1$. So let's say we find a solution for $D_1$... Then we cannot say anything about a solution to $D_2$. This is also intuitive, since $D_2$ can be way harder! A solution would of course be to show that the reduction is symmetrical.  
