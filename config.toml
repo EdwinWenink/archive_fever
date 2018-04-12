@@ -2,5 +2,7 @@ baseURL = "https://www.edwinwenink.xyz/"
 languageCode = "en-us"
 title = "Edwin Wenink"
 theme = "one"
+googleAnalytics = "UA-117420879-1"
+
 [params]
     navigation = ["archives.md", "about.md"]
