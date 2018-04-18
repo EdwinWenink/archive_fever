@@ -32,19 +32,19 @@ So let's assume we have some input with size n to feed our algorithm, which requ
 To illustrate point 1, let's build forth on the same example. If we have some algorithm that combines multiple operations, of which one is linear (O(n)) and one is quadratic (O($n^2$)), then the complexity of the algorithm is dominated by the highest-order relation, which is quadratic in this case. So in this case, we still speak of O($n^2$).
 
 In general, we speak of polynomial time algorithms if we have, for input size n and some constant exponent c, O($n^c$). 
-For c=1,2,3 respectively, we speak of linear, quadratic and cubic running times. If we have a algorithm in cubic time that is not the best, but at least we can make a pretty good assessment about it's feasibility in practice. 
+For c=1,2,3 respectively, we speak of linear, quadratic and cubic running times. If we have a algorithm in cubic time that is not the best, but at least we can make a pretty good assessment about its feasibility in practice. 
 
 But then there are the true monstrosities of complexity: exponential time algorithms that are exponential in input size: O($c^n$), where c > 1.
 
-Problems for which no polynomial time algorithm exists are considered to be intractable, where intractability means there exists no efficient (i.e. in some polynomial-time) algorithm to solve them.
+Problems for which no polynomial time algorithm exists are considered to be intractable, where intractability means there exists no efficient (i.e. in polynomial time) algorithm to solve them.
 
 # Decision problems
 
 Our main question concerned the hardness of *problems*. The most basic question we can ask here is whether any given problem can be solved. A second question is how hard it is to *verify* that a solution is correct, if someone were to come to us with a proposed solution.
 
-Let's say we have the following situation: we have a graph with weighted connections, and some start S and some goal G. Now our problem is that we want to find the cheapest path from S to G. We could of course go ahead and simply try to solve it. But let's say that unfortunately does not work out... You are scratching your head and then ask: did I not find an efficient algorithm for solving my problem, *or does such an algorithm not exist?*.
+Let's say we have the following situation: we have a graph with weighted connections, and some start S and some goal G. Now our problem is that we want to find the cheapest path from S to G. We could of course go ahead and simply try to solve it. But let's say that unfortunately that does not work out... You are scratching your head and then ask: did I not find an efficient algorithm for solving my problem, *or does such an algorithm not exist?*.
 
-In other words, you would want a systematic approach for *deciding* whether a problem is solvable. In this case you would need to ask: does there exist a path suck that the path cost is at most k? Significantly, this question is answered either by yes or no, and does not yield a solution (a shortest path). This is called a *decision problem*. But although this type of problem does not provide us with a solution to our original search problem, it does indicate is how hard the problem is to solve!
+In other words, you would want a systematic approach for *deciding* whether a problem is solvable. In this case you would need to ask: does there exist a path such that the path cost is at most k? Significantly, this question is answered either by yes or no, and does not yield a solution (a shortest path). This is called a *decision problem*. But although this type of problem does not provide us with a solution to our original search problem, it does indicate is how hard the problem is to solve!
 
 The basic insight here is that if a decision problem is hard to decide, then the corresponding problem (a search problem in this example) is hard to solve!
 
@@ -61,9 +61,9 @@ P is the class of decision problems that are **solvable** in polynomial time, i.
 NP is the class of decision problems D for which yes instances (D($i_{yes}$)) are **verifiable** in polynomial time.
 
 In other words, if someone where to come to you with a solution to your problem, how hard is it for you to verify that this solution is indeed correct? 
-This definition of NP is slightly more tricky, because it is only defined on "yes-instances", a solution that claims to be correct.  
+This definition of NP is slightly tricky, because it is only defined on "yes-instances", i.e. a solution that claims to be correct.  
 
-Take a graph 3-Colourability problem, taken from a lecture I followed on complexity. This means that we have some graph, and we ask whether we can colour the nodes of the graph with only three colours in such a way that none of the same coloured nodes are directly connected to each other.
+Take a graph 3-colourability problem, taken from a lecture I followed on complexity. This means that we have some graph, and we ask whether we can colour the nodes of the graph with only three colours in such a way that none of the same coloured nodes are directly connected to each other.
 So the decision problem at hand here is: is there a colouring of this graph such that none of the vertices sharing an edge have the same colour?
 
 ### Example
@@ -96,7 +96,7 @@ Conversely, since we do have the intuition that P $\neq$ NP, proving membership 
 ## All or nothing!
 
 To recap shortly: there are some problems that we can verify quite easily in polynomial time, but for which we do not have a polynomial time algorithm for actually finding a solution. An example was the graph 3-colouring problem. 
-Do we not have an algorithm for deciding that problem because we simply have not found it yet (so possibly P=NP), or because the problem is so hard that there simply cannot be any efficient algorithms (P$\neq$NP)?
+We ask ourselves: do we not have an algorithm for deciding that problem because we simply have not found it yet (so possibly P=NP), or because the problem is so hard that there simply cannot be any efficient algorithms (P$\neq$NP)?
 
 We have also considered that proving that a P algorithm exists is doable by actually providing such an algorithm, while proving that it does not exist is extremely hard. What could be a tactic?
 
@@ -105,7 +105,7 @@ Consider the following figure, taken from wikipedia:\
 {{< figure src="/images/p-np.png" title="Diagram of P and NP under two different assumptions" >}}
 \
 
-Let's say that we suspect that there is no polynomial time algorithm for a given problem. And let's *assume* I have some problem in NP of which I already know that no polynomial-time algorithm exists for deciding it. If we could somehow show that this problem without efficient solution can be reduced to the problem we are considering, then we also know that the problem under consideration is not in P.
+Let's say that we suspect that there is no polynomial time algorithm for a given problem. And let's *assume* I have some problem in NP of which I already know that no polynomial time algorithm exists for deciding it. If we could somehow show that this problem without efficient solution can be reduced to the problem we are considering, then we also know that the problem under consideration is not in P.
 
 If we keep on reducing problems like this, we end up with an all or nothing issue: once we can show for one of those problems that it is not in P, then we can show it for all problems in NP that were reduced from it. Conversely, if we find that one of the NP-hard problems, to which all other NP problems can be reduced, is in P, then we have shown it for all problems in NP. To understand why, we have to carefully look at what this reduction precisely means.
 
@@ -114,12 +114,13 @@ In order to preform a reduction, we need to find an algorithm that translates ev
 
 Assume we reduce $D_1$ to $D_2$. Then every found solution to $D_2$ in polynomial time can be translated back in polynomial time to the original domain, meaning that also in that domain there must be a polynomial time algorithm. 
 
-The notation $D_1$ $\leq$ $D_2$ means that $D_1$ is reducible in polynomial time to $D_2$ (The notation is incomplete though but I could not be bothered to find how to write it properly). We could read the smaller or equal sign also more informally as: $D_2$ is equally hard or harder than $D_1$ . 
+The notation $D_1$ $\leq$ $D_2$ means that $D_1$ is reducible in polynomial time to $D_2$ (The notation is incomplete but suffices for now). We could read the smaller or equal sign also more informally as: $D_2$ is equally hard or harder than $D_1$ . 
 
 We have $D_1$ $\leq$ $D_2$. Two conclusions are possible:
 
 1 - If $D_2$ can be decided in polynomial time, then so can $D_1$, since $D_2$ is at least as hard.
-2) If $D_1$ *cannot* be decided in polynomial time, then $D_2$ also cannot (since $D_2$ is at least as hard, and has the exact same solutions due to the possible reduction).
+
+2 - If $D_1$ *cannot* be decided in polynomial time, then $D_2$ also cannot (since $D_2$ is at least as hard, and has the exact same solutions due to the possible reduction).
 
 If the above reduction holds, we can **not** conclude that if $D_1$ can be decided in polynomial time, that $D_2$ also can. The reduction only works in one direction. It shows that any solution to $D_2$ must also be a solution to $D_1$. So let's say we find a solution for $D_1$... Then we cannot say anything about a solution to $D_2$. This is also intuitive, since $D_2$ can be way harder! A solution would of course be to show that the reduction is symmetrical.  
 
@@ -136,6 +137,6 @@ To conclude, two potential tactics for deciding this question are:
 
 1 - P=NP. Show for a NP-hard problem that there is a polynomial-time decision possible. Since all other problems in NP are at least as hard, we have effectively proven P=NP.
 
-2 - P$\neq$NP. Somehow show that there is a problem for which a polynomial-time decision is not possible, but that is verifiable. In other words, that it is in NP but not in P. (This is the only option, since P definitely is a strict subset of NP).
+2 - P$\neq$NP. Somehow show that there is a problem for which a polynomial-time decision is not possible, but that is verifiable. In other words, that it is in NP but not in P (This is the only option, since P definitely is a strict subset of NP).
 
 Credits: *This post contains my proceedings from a lecture given by Johan Kwisthout, attended at the Radboud University Nijmegen.*
