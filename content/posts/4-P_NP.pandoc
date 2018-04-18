@@ -42,11 +42,9 @@ Problems for which no polynomial time algorithm exists are considered to be intr
 
 Our main question concerned the hardness of *problems*. The most basic question we can ask here is whether any given problem can be solved. A second question is how hard it is to *verify* that a solution is correct, if someone were to come to us with a proposed solution.
 
-Let's say we have the following situation: we have a graph with weighted connections, and some start S and some goal G. Now our problem is that we want to find the cheapest path from S to G. We could of course go ahead and simply try to solve it. But let's say that unfortunately that does not work out... You are scratching your head and then ask: did I not find an efficient algorithm for solving my problem, *or does such an algorithm not exist?*.
+Let's say we have the following situation: we have a graph with weighted connections, and some start S and some goal G. Now our problem is that we want to find the cheapest path from S to G. We could of course go ahead and simply try to solve it. But let's say that unfortunately does not work out... You are scratching your head and then ask: did I not find an efficient algorithm for solving my problem, *or does such an algorithm not exist?*
 
-In other words, you would want a systematic approach for *deciding* whether a problem is solvable. In this case you would need to ask: does there exist a path such that the path cost is at most k? Significantly, this question is answered either by yes or no, and does not yield a solution (a shortest path). This is called a *decision problem*. But although this type of problem does not provide us with a solution to our original search problem, it does indicate is how hard the problem is to solve!
-
-The basic insight here is that if a decision problem is hard to decide, then the corresponding problem (a search problem in this example) is hard to solve!
+In other words, you would want a systematic approach for *deciding* whether a problem is solvable. In this case you would need to ask: does there exist a path suck that the path cost is at most k? Significantly, this question is answered either by yes or no, and does not yield a solution (a shortest path). This is called a *decision problem*. But although this type of problem does not provide us with a solution to our original search problem, it does indicate is how hard the corresponding problem is to solve!
 
 # Classes P and NP
 
@@ -71,7 +69,7 @@ So the decision problem at hand here is: is there a colouring of this graph such
 
 2 - Given a colouring, it is easy to verify that it is correct.
 
-3 - Given a **wrong** colouring (a no-instance), it is hard to determine if the graph is not 3-colourable in general, or if the current colouring just happens to be wrong.
+3 - Given a *wrong* colouring (a no-instance), it is hard to determine if the graph is not 3-colourable in general, or if the current colouring just happens to be wrong.
 
 The third point illustrates why NP is defined on yes-instances of the decision problem, because verifying yes instances is not the same as verifying no-instances.
 
