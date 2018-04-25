@@ -3,7 +3,7 @@ author: "Edwin Wenink"
 title: "Terminal sharing with tmux"
 date: 2018-04-24
 draft: false
-tags: ["tmux","ssh","partner","programming"]
+tags: ["tmux","ssh","partner","programming", "linux"]
 ---
 
 For a while now I have been wondering how to share my terminal with others, for two reasons.
@@ -67,6 +67,73 @@ If you now run " tmux -ls ", a short-hand for tmux list-sessions, we see that we
 
 You can now take turns writing code, conquering *Zeit-Raum*.
 
-#### A more secure setup: creating a guest user
+#### Towards a more secure setup: creating a guest user and connecting with it
 
+If you do not use a server but your machine to ssh into, then you probably want to prevent someone gaining full access to your files. One option is to create a separate user account on your system for guests, that has restricted permissions and do not have access to your precious home folder, nor permission to change any essential files. Let's say we make a user called 'pair':
 
+```bash
+useradd -m pair
+```
+
+This creates a user 'pair' on your system. The -m flag creates a home directory for this user. I assume here that by default a new user does not have sudo rights, but make sure to double check this. You also want to set a password for this user:
+
+```bash
+passwd pair
+```
+
+Once we have the user set up as we want to, we have another challenge. When we run a tmux server on our own account, that server is not visible to the new user 'pair' when we check the available sessions with "tmux -ls", because that only shows the sessions running in the terminal of one particular user. 
+Somehow, we need a way to let tmux communicate between users. We can achieve this by opening a socket:
+
+```
+tmux -S /tmp/socket
+```
+
+As far as I'm currently aware of, this creates a temporary soft link through which other users can link to the tmux session. I placed it in the /tmp/ folder because our newly created 'pair' user can read that file. However, the 'pair' user does not yet have the right permissions. A quick way to fix this is to run:
+
+```
+chmod 777 /tmp/socket
+```
+
+Another tactic could be to create a custom group with the right permissions, to which only your main account and the guest account belong.
+The 'pair' user can now connect to your session through the socket using:
+
+```
+tmux -S /tmp/socket attach
+```
+
+Note however that if you let the guest user connect through the socket to your main user, that user gains access to the terminal as you, which means: it gets the permissions we denied it in the first place. Since you have sudo rights, a safer option would instead be to create the session on the 'pair' account and join that session. I guess everyone has to make the decision to what extent the programming partner is trusted not to engage in "funny business" on your home account. As long as the guest does not know your sudo password, the risks are still somewhat limited, but the guest does have acccess to your home folder, which is something to consider. I do not have actual working experience with both setups, and am not aware of the usual standards for remote pair programming, so perhaps I update this post later. I assume the standard is to use a server in the cloud, which circumvents all problems I pose here in the first place. As of now, I do not have such a server myself though.
+
+If your intent is not pair programming, but *only* sharing your terminal, then there is a solution though. If you force a guest user to enter the tmux session in read-only mode immediately upon connecting over ssh, then there is no way to exit the tmux session and gain access to your home account. Of course the guest can decide to detach from the tmux session, but in that case is simply returned to its own home folder. So unless a malicious user detaches, finds the socket to connect, and also knows your sudo password, you should be fine in this case.
+
+To enter in read-only mode, attach the -r flag:
+
+```
+tmux -S /tmp/socket attach -r
+```
+
+#### Mixing it all up
+
+Let's apply the previous and combine it with the possibility of having independent windows. Run:
+
+```
+tmux -S /tmp/socket new-session -t sessionnameorid
+```
+
+#### Making the guest automatically connect to the socket session
+
+Since we made the guest account 'pair' solely for sharing our terminal, it makes sense to let anyone who connects to it over ssh automatically connect to our tmux session through the designated socket. To achieve this, we can edit our /etc/ssh/sshd_config file (solution found [here](http://consileonpl.github.io/2014/04/25/sharing-tmux-sessions)). Add the following for pair programming: 
+
+```
+Match User pair
+  ForceCommand /usr/local/bin/tmux -S /tmp/socket new-session -t shared
+```
+
+We assume here the session we created over the socket is named "shared", which is convenient if we want to automate this process. 
+Again, if we always want the guest user to connect in read-only mode for simple terminal screen sharing, instead enter:
+
+```
+Match User pair
+  ForceCommand /usr/local/bin/tmux -S /tmp/socket attach -t shared -r
+```
+
+Have fun!
