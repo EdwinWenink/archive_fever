@@ -54,7 +54,16 @@ You are now both working in the same session. Changes can be made by both partne
 Only the last step differs. Instead of joining the same sessions, the user connecting to the tmux server makes a new session and assigns it to the same window group as the session we just called shared.
 
 ```bash
-tmux new -s newsession -t shared
+tmux new -s newsessionname -t shared
 ```
 
+Or achieve the same effect with:
+
+```
+tmux new-session -t 'original session name'
+```
+
+If you now run " tmux -ls ", a short-hand for tmux list-sessions, we see that we have two sessions belonging to the same group. If we only have one window, we do not notice any difference with a setup not sharing a group. However, if we make a new window with "<C-b> c", and then select it with "<C-b> windownumber", we are able to switch to another window where we do not share a cursor with our programming partner. However, at any time we can come back to the original window, or conversely our partner can come visit our window to cooperate.
+
 You can now take turns writing code, conquering *Zeit-Raum*.
+
