@@ -25,7 +25,7 @@ Consider reading [this post](https://edwinwenink.xyz/posts/3-ssh+tmux/).
 
 ## Basic idea
 
-*This basic idea gives another user access to your system. Make sure to take the necessary precautions. For example, making a separate user in your system for pair programming*
+*This basic idea gives another user access to your system. Make sure to take the necessary precautions. For example, make a separate user in your system with restricted rights for pair programming.*
 
 On your host/server, create a tmux session and attach to it:
 
