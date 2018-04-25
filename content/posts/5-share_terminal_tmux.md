@@ -67,7 +67,7 @@ If you now run " tmux -ls ", a short-hand for tmux list-sessions, we see that we
 
 You can now take turns writing code, conquering *Zeit-Raum*.
 
-#### Towards a more secure setup: creating a guest user and connecting with it
+## Towards a more secure setup: creating a guest user and connecting with it
 
 If you do not use a server but your machine to ssh into, then you probably want to prevent someone gaining full access to your files. One option is to create a separate user account on your system for guests, that has restricted permissions and do not have access to your precious home folder, nor permission to change any essential files. Let's say we make a user called 'pair':
 
@@ -84,20 +84,20 @@ passwd pair
 Once we have the user set up as we want to, we have another challenge. When we run a tmux server on our own account, that server is not visible to the new user 'pair' when we check the available sessions with "tmux -ls", because that only shows the sessions running in the terminal of one particular user. 
 Somehow, we need a way to let tmux communicate between users. We can achieve this by opening a socket:
 
-```
+```bash
 tmux -S /tmp/socket
 ```
 
 As far as I'm currently aware of, this creates a temporary soft link through which other users can link to the tmux session. I placed it in the /tmp/ folder because our newly created 'pair' user can read that file. However, the 'pair' user does not yet have the right permissions. A quick way to fix this is to run:
 
-```
+```bash
 chmod 777 /tmp/socket
 ```
 
 Another tactic could be to create a custom group with the right permissions, to which only your main account and the guest account belong.
 The 'pair' user can now connect to your session through the socket using:
 
-```
+```bash
 tmux -S /tmp/socket attach
 ```
 
@@ -107,33 +107,33 @@ If your intent is not pair programming, but *only* sharing your terminal, then t
 
 To enter in read-only mode, attach the -r flag:
 
-```
+```bash
 tmux -S /tmp/socket attach -r
 ```
 
-#### Mixing it all up
+## Mixing it all up
 
 Let's apply the previous and combine it with the possibility of having independent windows. Run:
 
-```
+```bash
 tmux -S /tmp/socket new-session -t sessionnameorid
 ```
 
-#### Making the guest automatically connect to the socket session
+## Making the guest automatically connect to the socket session
 
 Since we made the guest account 'pair' solely for sharing our terminal, it makes sense to let anyone who connects to it over ssh automatically connect to our tmux session through the designated socket. To achieve this, we can edit our /etc/ssh/sshd_config file (solution found [here](http://consileonpl.github.io/2014/04/25/sharing-tmux-sessions)). Add the following for pair programming: 
 
-```
+```bash
 Match User pair
-  ForceCommand /usr/local/bin/tmux -S /tmp/socket new-session -t shared
+  ForceCommand /usr/local/bin/tmux -S /tmp/socket new-session -t 0
 ```
 
-We assume here the session we created over the socket is named "shared", which is convenient if we want to automate this process. 
+We assume here the session we created over the socket is named "0", which is the session id if you don't give it a name (which I did not).
 Again, if we always want the guest user to connect in read-only mode for simple terminal screen sharing, instead enter:
 
-```
+```bash
 Match User pair
-  ForceCommand /usr/local/bin/tmux -S /tmp/socket attach -t shared -r
+  ForceCommand /usr/local/bin/tmux -S /tmp/socket attach -t 0 -r
 ```
 
 Have fun!
