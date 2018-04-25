@@ -25,7 +25,7 @@ Consider reading [this post](https://edwinwenink.xyz/posts/3-ssh+tmux/).
 
 ## Basic idea
 
-*This basic idea gives another user access to your system. Make sure to take the necessary precautions. For example, make a separate user in your system with restricted rights for pair programming.*
+*This basic idea gives another user access to your system. Make sure to take the necessary precautions. For example, make a separate user in your system with restricted rights for pair programming. I discuss this option below.*
 
 On your host/server, create a tmux session and attach to it:
 
@@ -59,11 +59,14 @@ tmux new -s newsessionname -t shared
 
 Or achieve the same effect with:
 
-```
+```bash
 tmux new-session -t 'original session name'
 ```
 
-If you now run " tmux -ls ", a short-hand for tmux list-sessions, we see that we have two sessions belonging to the same group. If we only have one window, we do not notice any difference with a setup not sharing a group. However, if we make a new window with "<C-b> c", and then select it with "<C-b> windownumber", we are able to switch to another window where we do not share a cursor with our programming partner. However, at any time we can come back to the original window, or conversely our partner can come visit our window to cooperate.
+If you now run " tmux -ls ", a short-hand for tmux list-sessions, we see that we have two sessions belonging to the same group. If we only have one window, we do not notice any difference with a setup not sharing a group. However, if we make a new window with "Control-b c", and then select it with "Control-b windownumber", we are able to switch to another window where we do not share a cursor with our programming partner. However, at any time we can come back to the original window, or conversely our partner can come visit our window to cooperate.
 
 You can now take turns writing code, conquering *Zeit-Raum*.
+
+#### A more secure setup: creating a guest user
+
 
