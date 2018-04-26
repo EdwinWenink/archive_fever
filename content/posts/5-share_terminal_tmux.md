@@ -18,7 +18,7 @@ An obvious drawback of sharing a terminal session is that we are locked in the t
 However, lately I have been using vim more intensively, and this drawback perhaps motivates me to try and turn vim into a nice IDE that is usable in any terminal.
 The chances that I will actually use this are probably fairly slim, but I like the idea that I *could*.
 
-A second and somewhat trivial reason for me to share my terminal, is that a friend recommended a game for in the terminal which I wanted to try out. He asked me if he could watch along as I played, to help me get started (the game is called 'cataclysm' by the way). 
+A second and somewhat trivial reason for me to share my terminal, is that a [friend](https://www.alextes.me/) recommended a game for in the terminal which I wanted to try out. He asked me if he could watch along as I played, to help me get started (the game is called 'cataclysm' by the way). 
 What follows is a guide how to share a terminal session with minimal means: only tmux is required.
 I am assuming ssh is properly and safely set up.
 Consider reading [this post](https://edwinwenink.xyz/posts/3-ssh+tmux/).
@@ -69,7 +69,7 @@ You can now take turns writing code, conquering *Zeit-Raum*.
 
 ## Towards a more secure setup: creating a guest user and connecting with it
 
-If you do not use a server but your machine to ssh into, then you probably want to prevent someone gaining full access to your files. One option is to create a separate user account on your system for guests, that has restricted permissions and do not have access to your precious home folder, nor permission to change any essential files. Let's say we make a user called 'pair':
+If you do not use a server but your machine to ssh into, then you probably want to prevent someone gaining full access to your files. One option is to create a separate user account on your system for guests, that has restricted permissions and does not have access to your precious home folder, nor permission to change any essential files. Let's say we make a user called 'pair':
 
 ```bash
 useradd -m pair
@@ -81,7 +81,7 @@ This creates a user 'pair' on your system. The -m flag creates a home directory 
 passwd pair
 ```
 
-Once we have the user set up as we want to, we have another challenge. When we run a tmux server on our own account, that server is not visible to the new user 'pair' when we check the available sessions with "tmux -ls", because that only shows the sessions running in the terminal of one particular user. 
+Once we have the user set up as we want to, we have another challenge. When we run a tmux server on our own account, that server is not visible to the new user 'pair' when we check the available sessions with "tmux -ls", because that only shows the sessions running of the current user. 
 Somehow, we need a way to let tmux communicate between users. We can achieve this by opening a socket:
 
 ```bash
