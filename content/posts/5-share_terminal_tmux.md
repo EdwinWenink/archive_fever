@@ -67,7 +67,7 @@ If you now run " tmux -ls ", a short-hand for tmux list-sessions, we see that we
 
 You can now take turns writing code, conquering *Zeit-Raum*.
 
-## Towards a more secure setup: creating a guest user and connecting with it
+## Creating a guest user for pair programming
 
 If you do not use a server but your machine to ssh into, then you probably want to prevent someone gaining full access to your files. One option is to create a separate user account on your system for guests, that has restricted permissions and do not have access to your precious home folder, nor permission to change any essential files. Let's say we make a user called 'pair':
 
