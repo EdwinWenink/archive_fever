@@ -33,7 +33,7 @@
 		quotes[30]= "&quotWe must let go of the life we have planned, so as to accept the one that is waiting for us&quot - Joseph Campbell";
 		quotes[31]= "&quotIf the path before you is clear, you're probably on someone else's&quot - Joseph Campbell";
 		quotes[32]= "&quotConsensus is the enemy of thought, for it claims that we share existence. In the most intimate dimension of thought, however, existence is precisely what is not shared&quot - Alain Badiou"; //OaA p.43
-		quotes[33]= "&quotHet meest elementaire is maar in zeer geringe mate ons bezit en ons recht; het is even onmogelijk het te geven als het te veroveren&quote - Cornelis Verhoeven";
+		quotes[33]= "&quotHet meest elementaire is maar in zeer geringe mate ons bezit en ons recht; het is even onmogelijk het te geven als het te veroveren&quot - Cornelis Verhoeven";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
