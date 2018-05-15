@@ -29,7 +29,7 @@ The basic procedure is as follows:
 Now we ask: what is the probability that any randomly sampled point within the square lands in the circle? This probability is the proportion of the area of the circle with respect to the total area (i.e. that of the square).
 We don't want the sampling itself to influence the results, so having a uniform distribution to sample from is important.
 
-Thus the probability that a randomly generated point lands in the circle is: $$\frac{\pi r^2}{4\pi r^2} = \frac{\pi}{4}$$
+Thus the probability that a randomly generated point lands in the circle is: $$\frac{\pi r^2}{4r^2} = \frac{\pi}{4}$$
 
 This means that if we accurately approach the probability of a random point landing in the circle, we end up with a fourth of $\pi$. The law of large numbers states that if we repeat this experiment often enough the average of the results approaches the expected value, which is a fourth of $\pi$ in this case. It is no wonder that this method is called Monte Carlo: you might win a few games, but on average the casino always wins in the long run.
 
