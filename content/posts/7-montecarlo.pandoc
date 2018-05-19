@@ -22,7 +22,7 @@ The basic procedure is as follows:
 * Sample points randomly within the square, and count how many fall within the circle
 * Calculate the proportion of samples within the circle to the total amount of samples, and multiply by 4 to approximate $\pi$.
 
-<img align="right" style="width:30%" src="/images/montecarlo1.png" />
+<img align="right" style="width:30%" src="/images/7-blog/montecarlo1.png" />
 
 ## How does it work?
 
