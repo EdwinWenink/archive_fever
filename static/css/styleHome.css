@@ -12,6 +12,7 @@ body {
   background-color: #D0CDCD background-color:#333;
   background-color: #141E30;
   background-color: #F0F8FF;
+  background-color: #FFFFFF;
   min-height: 100%;
   max-width: 100%;
   padding: 0;
@@ -117,6 +118,7 @@ p {
 .parallax1 {
   background: url("/images/adams2.jpg") no-repeat;
   height: 100%;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,7 +129,7 @@ p {
 }
 
 .parallax2 {
-  background: url("/images/adams2.jpg") no-repeat;
+  background: url("/images/zigzag.png") no-repeat;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -178,6 +180,7 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  max-height: 100%;
   height: 1000px;
   margin: 0;
   padding: 0;
@@ -270,7 +273,7 @@ aside {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.5);
   max-width: 40%;
-  font-size=30px;
+  font-size:30px;
 }
 
 .content2 h2 {
@@ -278,7 +281,7 @@ aside {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.5);
   max-width: 40%;
-  font-size=20px;
+  font-size:20px;
 }
 
 .underline {
@@ -305,7 +308,9 @@ aside {
 
 .background {
   max-width: 100%;
-  height: 500px;
+  max-width: 100%;
+  height: 200px;
+  width: 100%;
   padding: 0;
   margin: 0;
   justify-content: center;
@@ -315,9 +320,12 @@ aside {
 
 .page4 {
   align-items: center;
+  max-width:100%;
+  width:100%;
 }
 
 .icons {
+  max-width: 100%;
   width: 100%;
 }
 
@@ -329,6 +337,7 @@ aside {
 
 .content4 {
   text-align: center;
+  max-width:100%;
 }
 
 .content4 a:hover {
@@ -366,6 +375,39 @@ aside {
   max-height: 1000px;
 }
 
+@media only screen and (min-device-width:480px) {
+
+	.column {
+		float: left;
+		padding: 0px;
+		box-sizing: border-box;
+		
+	}
+	.left, .right {
+		border:1px solid black;
+		height: 100%;
+		width: 10%;
+		box-sizing: border-box;
+		background-color: #F5F5F5;
+		background-repeat;
+		background-attachment:cover;
+		background-position:center;
+		background: url("/images/column8.png");
+	}
+
+	.middle {
+		width: 80%;
+		box-sizing: border-box;
+	}
+
+	.row:after {
+		box-sizing: border-box;
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
 @media only screen and (max-device-width:480px) {
 
   html {
@@ -377,6 +419,7 @@ aside {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  width: 100%;
   width: auto;
   height: 500px;
   margin: 0px;
