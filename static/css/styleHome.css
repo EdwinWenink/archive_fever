@@ -384,7 +384,7 @@ aside {
 		
 	}
 	.left, .right {
-		border:1px solid black;
+		/*border:1px solid black;*/
 		height: 100%;
 		width: 10%;
 		box-sizing: border-box;
@@ -392,7 +392,8 @@ aside {
 		background-repeat;
 		background-attachment:cover;
 		background-position:center;
-		background: url("/images/column8.png");
+		/*background: url("/images/column8.png");*/
+		background-color: #202020;
 	}
 
 	.middle {
