@@ -445,6 +445,7 @@ aside {
   .left p, .right p {
 	  height: 0px;
 	  max-height: 0px;
+	  overflow: hidden;
   }
 
 .page1 {
