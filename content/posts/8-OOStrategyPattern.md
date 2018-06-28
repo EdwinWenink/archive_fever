@@ -1,12 +1,10 @@
 ---
 author: "Edwin Wenink"
 title: "Object Orientation: Strategy Pattern"
-date: 2018-05-15
+date: 2018-06-28
 draft: false
 tags: [Object Orientation, Design Pattern, Strategy, Programming]
 ---
-
-# Strategy Pattern
 
 In object-oriented programming classes tend to multiply quickly. Luckily, some design patterns are available to solve commonly occurring issues. In this post I want to quickly illustrate the strategy pattern with an easy example written in Java. To make it intuitively clear why this pattern is called the 'strategy' pattern, let's sketch a situation in which the application of different strategies is important: a game. 
 
@@ -51,7 +49,7 @@ public class Player {
 }
 ```
 
-This class definition requires us to define at least two other classes, one for defining what a team is and another for determining the player strategy. Let us assume that for this particular imaginary game we are playing (we haven't defined any actual rules), there are only two teams per game: a blue and a red team. Since blue and red are the only possible team instances, we can use an enumeration type. For some reason each team has an incredibly silly yell:
+This class definition requires us to define at least two other classes, one for defining what a team is and another for determining the player strategy. Let us assume that for this particular imaginary game (we haven't defined any actual rules), there are only two teams per game: a blue and a red team. Since blue and red are the only possible team instances, we can use an enumeration type. For some reason each team has an incredibly silly yell:
 
 ```[Java]
 public enum Team {
@@ -66,9 +64,9 @@ public enum Team {
 }
 ```
 
-Now the strategy pattern comes into play. We want each player to potentially have a different game strategy. A naive solution would be to create different player classes. We could have one class called "CheatingPlayer" and one class called "FairPlayer" and so on for all potential strategies. However, each of these classes will have the exact same code except for the code defining the strategy. Unnecessary code duplication must always be avoided. If you for example want to change some characteristic of the player, you would have to edit all duplicate code in all these classes. The strategy pattern solves this issue. 
+Now the strategy pattern comes into play. We want each player to potentially have a different game strategy. A naive solution would be to create different player classes. We could have one class called *CheatingPlayer* and one class called *FairPlayer* and so on for all potential strategies. However, each of these classes will have the exact same code except for the code defining the strategy. Unnecessary code duplication must always be avoided. If you for example want to change some characteristic of the player, you would have to edit all duplicate code in all these classes. The strategy pattern solves this issue. 
 
-As we saw, we have a single "Player" class that has a Strategy as an attribute, but other than this we do not specify yet what particular strategy: the player could have whatever strategy, the only obligation we make now is that is just has one. The solution is to make "Strategy" and interface defining what obligations each particular strategy should fulfill. Normally a strategy should have some influence on the players behavior in the game, but since we don't program the game itself to keep it simple, we just want players to state their strategy when asked:
+As we saw, we have a single *Player* class that has a *Strategy* as an attribute, but other than this we do not specify yet what particular strategy. The player could have whatever strategy, the only obligation we make now is that it has one. The solution is to make *Strategy* an interface defining what obligations each particular strategy should fulfill. Normally a strategy should have some influence on the player's behavior in the game, but since we don't program the game itself to keep it simple, we just want players to state their strategy when asked:
 
 ```[Java]
 public interface Strategy {
@@ -76,7 +74,7 @@ public interface Strategy {
 }
 ```
 
-Each particular strategy has to define which String this function returns. For simplicity, let's assume for now there are two particular strategies implementing the Strategy interface, one where we intend to cheat, and one where we will play fairly (whatever that means):
+Each particular strategy has to define which String this function returns. For simplicity, let's assume for now there are two particular strategies implementing the *Strategy* interface, one where we intend to cheat, and one where we will play fairly (whatever that means):
 
 ```[Java]
 public class CheatingStrategy implements Strategy {
@@ -98,7 +96,7 @@ public class FairStrategy implements Strategy {
 }
 ```
 
-We can create as many strategies as we see fit, and that our problem is solved: each player can have a different strategy without having to define multiple player classes with duplicate code. Let's see how it works:
+We can create as many strategies as we see fit, and our problem is solved: each player can have a different strategy without having to define multiple player classes with duplicate code. Let's see how it works:
 
 ```[Java]
 public class StrategyPattern {
@@ -118,7 +116,7 @@ public class StrategyPattern {
 
 The console output is:
 
->Edwin yells: Blue is the color of righteousness!
->Diablo yells: We are the red devils!
->Edwin's strategy: Shaking hands, wishing the opponent good luck (because they need it)
->Diablo's strategy: Sedating the enemy team with horse tranquilizer
+>Edwin yells: Blue is the color of righteousness!\
+>Diablo yells: We are the red devils!\
+>Edwin's strategy: Shaking hands, wishing the opponent good luck (because they need it)\
+>Diablo's strategy: Sedating the enemy team with horse tranquilizer\
