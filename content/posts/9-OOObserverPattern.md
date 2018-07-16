@@ -1,7 +1,7 @@
 ---
 author: "Edwin Wenink"
 title: "Object Orientation: Observer Pattern"
-date: 2018-7-16
+date: 2018-07-16
 draft: false
 tags: [Object Orientation, Design Pattern, Observer, Programming]
 ---
@@ -46,7 +46,7 @@ public class Alcoholic extends Observable {
 }
 ```
 
-We are speaking here of the cheap kind of alcoholic that only drinks beers. An alcoholic has some name that the therapist can ask for with a getter. Moreover, we keep track of how much beers the alcoholic drank. The Observer pattern is natively implemented in Java, so to use it we import the Observable class and extend it. Within the Observer pattern, this alcoholic is defined as the observable "subject" class. As said before, it only needs to keep track of its observers so it can notify when a relevant change has been made. In this case, we add a Therapist as an observer with `addObserver(new Therapist())`[Java]. A change to the internals of the alcoholic is made every time a beer is drank (poor liver), so that is the situation in which we notify the observers with `notifyObservers()`. Now we only need to define the observing Therapist:
+We are speaking here of the cheap kind of alcoholic that only drinks beers. An alcoholic has some name that the therapist can ask for with a getter. Moreover, we keep track of how much beers the alcoholic drank. The Observer pattern is natively implemented in Java, so to use it we import the Observable class and extend it. Within the Observer pattern, this alcoholic is defined as the observable "subject" class. As said before, it only needs to keep track of its observers so it can notify when a relevant change has been made. In this case, we add a Therapist as an observer with `addObserver(new Therapist())`. A change to the internals of the alcoholic is made every time a beer is drank (poor liver), so that is the situation in which we notify the observers with `notifyObservers()`. Now we only need to define the observing Therapist:
 
 ```[Java]
 
@@ -75,7 +75,7 @@ public class Therapist implements Observer {
 }
 ```
 
-The therapist can observe multiple alcoholics in parallel and keeps track of the total amount of beers it has observed. Whenever an observed alcoholic drinks a beer and notifies its observer (the therapist in this case), the therapist knows it has to update its knowledge of the observed class. The Observer interface provides the update function that is called whenever the alcoholic calls the `notifyObservers()`[Java]  function. It is possible that the therapist also observes other kinds of patients that are not alcoholics, so we need to distinguish what the therapist does for what kind of patient. In our case, we only care about alcoholics, but to be complete we still check the class of the object we observe to take the appropriate action. In this case we simply give the alcoholic a small preach every time he or she has a beer (probably not so effective, but hey I'm not a therapist myself). 
+The therapist can observe multiple alcoholics in parallel and keeps track of the total amount of beers it has observed. Whenever an observed alcoholic drinks a beer and notifies its observer (the therapist in this case), the therapist knows it has to update its knowledge of the observed class. The Observer interface provides the update function that is called whenever the alcoholic calls the `notifyObservers()` function. It is possible that the therapist also observes other kinds of patients that are not alcoholics, so we need to distinguish what the therapist does for what kind of patient. In our case, we only care about alcoholics, but to be complete we still check the class of the object we observe to take the appropriate action. In this case we simply give the alcoholic a small preach every time he or she has a beer (probably not so effective, but hey I'm not a therapist myself). 
 
 Let's test our code:
 
