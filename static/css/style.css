@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body, li p {
-	font-family: 'Merriweather', serif;
+	/*font-family: 'Merriweather', serif;*/
+	font-family: 'Inconsolata', monospace;
 }
 
 h1,h2,h3,h4,h5,h6,header,header.a {
@@ -132,6 +134,7 @@ aside em {
 p {
 	margin-bottom: 1em;
 	line-height: 1.45;
+	text-align: justify;
 }
 
 ul,ol {
