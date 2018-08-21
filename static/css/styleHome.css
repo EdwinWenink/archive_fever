@@ -117,7 +117,7 @@ p {
 }
 
 .parallax1 {
-  background: url("/images/adams2.jpg") no-repeat;
+  background: url("/images/adams1.jpg") no-repeat;
   height: 100%;
   width: 100%;
   background-attachment: fixed;
@@ -399,7 +399,7 @@ aside {
 		margin-right: auto;
 		height: 100%;
 		min-height: 2050px; 
-		width: 10%;
+		width: 15%;
 		box-sizing: border-box;
 		background-color: #F5F5F5;
 		background-repeat;
@@ -423,7 +423,7 @@ aside {
 	}
 
 	.middle {
-		width: 80%;
+		width: 70%;
 		box-sizing: border-box;
 	}
 
