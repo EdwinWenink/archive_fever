@@ -37,6 +37,7 @@
 -->
 <div class="row">
 	<div class="column left">
+		<!--
 		<p>
 	This is the homepage of Edwin, student of philosophy and AI, living in Nijmegen, Netherlands.
 	You can contact me <a href="#contact">here</a>.
@@ -47,13 +48,14 @@
 - @win
 	<ul style="list-style-type:none;font-family:'Inconsalata';line-height:1em;color:#FFFFFF"><a href="https://edwinwenink.xyz/mementomori.html"><li id="time"></li></a><ul>
 	</p>
+		-->
 	
 
 	</div>
 
 	<div class="column middle">
 
-	<div class="page1 parallax1" id="main">
+	<div class="page1 " id="main">
 		<div class="content1">
 		  <h1> Edwin Wenink </h1>
 		  <h2> Philosophy | Artificial Intelligence | etcetera </h2>
@@ -63,29 +65,34 @@
 			</div>
 		</div>
 
+	<div class="background page1 parallax1">
+
+	</div>
+	
+
 		<!-- Page 2 -->
 
-		<div class="page2" id="about">
-			<div class="inline">
-				<img src="/images/gent.jpg" class="author-picture"></img>
-			</div> 
+	<div class="page2" id="about">
+		<div class="inline">
+			<img src="/images/gent.jpg" class="author-picture"></img>
+		</div> 
 
-			<div class ="narrow inline">
-				 <h2 class="underline"> Recent posts: </h2>
-			
-			 <div class="content2">
-				{{ range first 6 .Pages }}
-				{{ if eq .Type "posts"}}
-				<p>
-				<aside>{{ .Date.Format "January 2, 2006"}}</aside>
-				<a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a> 
-				{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
-				</p>
-				{{ end }}
-				{{ end }}
-			</div>
-			</div>
+		<div class ="narrow inline">
+			 <h2 class="underline"> Recent posts: </h2>
+		
+		 <div class="content2">
+			{{ range first 6 .Pages }}
+			{{ if eq .Type "posts"}}
+			<p>
+			<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+			<a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a> 
+			{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
+			</p>
+			{{ end }}
+			{{ end }}
 		</div>
+		</div>
+	</div>
 
 	<!-- 
 
@@ -157,21 +164,21 @@
 		<script type="text/javascript" src="/scripts/lastfm_now_playing.js" async></script>
 		<p id="now_playing">  </p>
 
+<!--
 		<p>
 			<br>
 			------------------
 			<br><br>
 		</p>
-
 		<p>My interests are very broad. In philosophy I've mostly occupied myself with studying metaphysics, deconstruction and hermeneutical ontology. My second study of artificial intelligence is highly interdisciplinary and combines concrete programming and mathematics skills with neuroscience and philosophy. I work mostly in Python and Java.
 
 	<!--I designed this website myself not because I think webdesign is a good way to spend my time, but because I try to do everything myself in the spirit of the homo universalis. 
 	Although the code is surely far from perfect because I learned on-the-go, there is a bit of joy in having written every line of code myself, and knowing why it is where it is. 
-	-->
 	<br><br>
 	You can find the repository of this website <a href=https://github.com/EdwinWenink/personal_website>here</a>. 
 
 		</p>
+-->
 		</div>
 </div>
 

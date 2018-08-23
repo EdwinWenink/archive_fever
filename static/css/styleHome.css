@@ -25,13 +25,11 @@ body {
 }
 
 h1 {
-  color: #FFF;
   color: #000;
   font-family: 'Playfair Display', sans-serif;
   font-size: 40px;
   text-align: left;
   max-width: 100%;
-  text-shadow: 1px 1px #000;
 }
 
 h2 {
@@ -42,7 +40,8 @@ h2 {
   line-height: 24px;
   padding-bottom: 12px;
   text-align: left;
-  max-width: 30%;
+  border-bottom: 1px solid rgba(0,0,0, 0.7);
+  max-width: 70%;
 }
 
 a {
@@ -60,14 +59,14 @@ a:hover {
 }
 
 p {
-  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif color:rgba(0, 0, 0, 1);
-  line-height: 1, 5em;
+  font-family: 'Bistream Vera', serif;
+  line-height: 1.5em;
   letter-spacing: 0.1em;
   text-align: justify;
   font-weight: 500;
   margin: 0;
   max-width: 100%;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 
@@ -184,31 +183,19 @@ p {
   flex-direction: column;
   max-width: 100%;
   max-height: 100%;
-  height: 1200px;
-  margin: 0;
-  padding: 0;
-  float: left;
+  height: auto;
+  margin: 5em;
+  float: middle;
   align-items: center;
-  border-bottom-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
 }
 
 .page1 h1, .page1 h2, .page1 p, .page1 li, .page1 a {
-  color: rgba(255, 255, 255, 1);
-  text-shadow: 2px 2px #000;
+  color: rgba(0,0,0, 1);
 }
 
-.page1 p {
-  text-align: left;
-}
-
-.page1 h2 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-  color: rgba(255, 255, 255, 1);
-  max-width: 70%;
-}
 
 .page1 li {
   list-style-type: none;
@@ -216,7 +203,9 @@ p {
 
 .content1 {
   justify-content: center;
-  max-width: 25%;
+  max-width: 50%;
+  border-style: solid;
+  padding: 5em;
 }
 
 .page2, .page4 {
@@ -277,14 +266,6 @@ aside {
   border-color: rgba(0, 0, 0, 0.5);
   max-width: 40%;
   font-size:30px;
-}
-
-.content2 h2 {
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.5);
-  max-width: 40%;
-  font-size:20px;
 }
 
 .underline {
@@ -400,7 +381,7 @@ aside {
 		margin-left: auto;
 		margin-right: auto;
 		height: 100%;
-		min-height: 2050px; 
+		min-height: 1050px; 
 		width: 15%;
 		box-sizing: border-box;
 		background-color: #F5F5F5;
@@ -420,7 +401,7 @@ aside {
 		font-weight: 500;
 		margin: 0;
 		max-width: 100%;
-		font-size: 20px;
+		font-size: 17px;
 		color:#FFFFFF;
 		text-align:left;
 	}
