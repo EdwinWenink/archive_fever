@@ -443,21 +443,16 @@ aside {
   max-width: 100%;
   width: 100%;
   height: auto;
-  /*height: 500px;*/
   margin: 0px;
   padding: 0;
   float: left;
   align-items: left;
   border-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
-  height: 0px;
-  max-height: 0px;
   overflow: hidden;
 }
 
 .content1 {
-	height: 0px;
-	max-height: 0px;
 	overflow: hidden;
 }
 
