@@ -206,6 +206,9 @@ p {
   max-width: 50%;
   border-style: solid;
   padding: 5em;
+  margin: 50px;
+  justify-content: center;
+  max-width: 90%;
 }
 
 .page2, .page4 {
@@ -454,6 +457,9 @@ aside {
 
 .content1 {
 	overflow: hidden;
+	margin: 1px;
+	padding: 0px;
+	border-style: none;
 }
 
 .background {
@@ -517,11 +523,6 @@ max-width: 480px;
 display: none
 }
 
-.content1 {
-  margin: 50px;
-  justify-content: center;
-  max-width: 90%;
-}
 
 .desktop {
   display: none;
