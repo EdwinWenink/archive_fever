@@ -35,8 +35,9 @@ If God is truly *intimate*, that is, concealed, defenseless, then his meaning ca
    <img align="center" style="width:100%" src="/images/11-blog/Reve.jpg" />
    <figcaption> Rights reserved by Eddy Posthuma De Boer
 </figure>
+<br>
 
-Because Reve defines God as the utmost intimacy of human being, God itself is not omnipotent, but *a priori* this passive openness to suffering itself. "God is Eenzaam, en Hij is een Lijdende God" (God is Lonely, and He is a Suffering God), says Reve in 'Het Boek van Violet en Dood', and "Als God drinkt, dan is dat niet zonder reden." (And if God drinks, it is not without reason)". 
+Because Reve defines God as the utmost intimacy of human being, God itself is not omnipotent, but *a priori* this passive openness to suffering itself. "God is Eenzaam, en Hij is een Lijdende God" (God is Lonely, and He is a Suffering God), says Reve in 'Het Boek van Violet en Dood', and "Als God drinkt, dan is dat niet zonder reden." (And if God drinks, it is not without reason). 
 That is why Reve's God is so tragic: in this intimate relation, God desperately requires redemption by the human just as much as the human requires redemption from God ("But sometimes, when I think that You live truthfully, / then I think, that You are Love, and lonely / and that, in similar despair, You seek me / as I seek You").
 That Reve often identifies God as Love with a capital 'L' is yet another indication that God is the imperfect, all too human, two-unity of desiring and suffering. God and human are essentially interchangeable in their sin and longing for redemption. Because Reve's imagination of Love is sadomasochistic, the intimacy I speak of here does not presuppose God's comfortable presence, or a peaceful dialogue. Instead, the sadomasochistic nature of this religious intimacy includes a certain cruelness and silence of God.
 
