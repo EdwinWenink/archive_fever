@@ -3,7 +3,7 @@ author: "Edwin Wenink"
 title: "Writing a letter the cool way... for free"
 date: 2018-08-21
 draft: false
-tags: [Markdown, Pandoc, Latex, Linux, Writing]
+tags: [Markdown, Pandoc, Latex, Linux, Workflow, Writing]
 ---
 
 Markdown and Pandoc are the preferred tools around which I design my workflow. For practically all writing I do, they get the job done properly, quickly and for free. For some applications with more delicate layout requirements, such as for example a letter or a resume, writing in Markdown is a bit limited. In those cases, if you subscribe to the philosophy that content and layout should be separated, you end up with writing in LaTeX. However rewarding the results of writing in LaTeX are, when you are used to writing in Markdown it just feels cumbersome. When I write something, I want to focus on the text with as little distraction as possible. In LaTeX I always end up googling because I made a small syntax error somewhere that prevents my document from compiling.
