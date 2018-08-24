@@ -450,6 +450,13 @@ aside {
   align-items: left;
   border-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
+
+
+}
+
+.content1 {
+	height: 0px;
+	max-height: 0px;
 }
 
 .background {
@@ -471,6 +478,11 @@ aside {
 .page4 {
 	max-height: 0px;
 	height: 0px;
+}
+
+.page4 ul {
+	max-height: 0px;
+	height:0px;
 }
 
 .parallax1 {
