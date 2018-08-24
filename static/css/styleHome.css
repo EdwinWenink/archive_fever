@@ -430,7 +430,6 @@ aside {
 	  max-height: 0px;
 	  height: 0px;
   }
-  
 
   .left p, .right p {
 	  height: 0px;
@@ -443,6 +442,7 @@ aside {
   flex-direction: column;
   max-width: 100%;
   width: 100%;
+  height: auto;
   /*height: 500px;*/
   margin: 0px;
   padding: 0;
@@ -450,8 +450,6 @@ aside {
   align-items: left;
   border-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
-  max-height: 0px;
-  height: 0px;
 }
 
 .background {
