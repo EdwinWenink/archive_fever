@@ -34,6 +34,10 @@
 		quotes[31]= "&quotIf the path before you is clear, you're probably on someone else's&quot - Joseph Campbell";
 		quotes[32]= "&quotConsensus is the enemy of thought, for it claims that we share existence. In the most intimate dimension of thought, however, existence is precisely what is not shared&quot - Alain Badiou"; //OaA p.43
 		quotes[33]= "&quotHet meest elementaire is maar in zeer geringe mate ons bezit en ons recht; het is even onmogelijk het te geven als het te veroveren&quot - Cornelis Verhoeven";
+		quotes[34]= "&quotHermeneutics is capable of nothing other than positing a horizon of infinite tradition and interpretation whose final meaning and foundation must remain unsaid&quot - Giorgio Agamben";
+		quotes[35]= "&quotThe fact that life has no meaning is a reason to live - moreover, the only one&quot - Emil Cioran";
+		quotes[36]= "&quotExistence is plagiarism&quot - Emil Cioran";
+		quotes[37]= "&quotWhat can be said, lacks reality. Only what fails to make its way into words exists and counts&quot - Emil Cioran";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
