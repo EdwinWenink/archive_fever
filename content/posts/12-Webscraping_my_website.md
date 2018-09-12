@@ -1,9 +1,9 @@
 ---
 author: "Edwin Wenink"
-title: "Webscraping my own website in Python"
+title: "Web scraping my own website in Python"
 date: 2018-09-12
 draft: false
-tags: [Webscraping,Python, BeautifulSoup]
+tags: [Web scraping,Python, BeautifulSoup]
 ---
 
 Required:
