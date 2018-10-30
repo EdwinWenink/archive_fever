@@ -368,6 +368,7 @@ aside {
 		height:100%;
 		min-height: 100%;
 	}
+
 	.column {
 		height: 100%;
 		min-height: 100%;
@@ -375,7 +376,6 @@ aside {
 		padding: 0px;
 		box-sizing: border-box;
 		height: auto !important;
-		
 	}
 	.left, .right {
 		/*border:1px solid black;*/
@@ -384,8 +384,8 @@ aside {
 		margin-left: auto;
 		margin-right: auto;
 		height: 100%;
-		min-height: 1050px; 
-		width: 15%;
+		min-height: 1450px;
+		width: 20%;
 		box-sizing: border-box;
 		background-color: #F5F5F5;
 		background-repeat;
@@ -410,7 +410,7 @@ aside {
 	}
 
 	.middle {
-		width: 70%;
+		width: 60%;
 		box-sizing: border-box;
 	}
 
