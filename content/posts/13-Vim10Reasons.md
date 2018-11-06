@@ -2,7 +2,7 @@
 author: "Edwin Wenink"
 title: "Ten reasons for using Vim"
 date: 2018-11-06
-draft: true
+draft: false
 tags: [Vim, Workflow, Text editing, Efficiency]
 ---
 
