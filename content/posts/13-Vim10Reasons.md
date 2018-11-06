@@ -20,7 +20,7 @@ But one painful remainder in this workflow optimization was my philosophy work: 
 In the meantime I was figuring out how to give shape to my remaining philosophy work next to a full-time study in AI.
 The activity of writing and text-editing was still secretly the thing I liked the most, but I didn't get around to it anymore that often.
 So I thought: why not also have a programmer's approach to text-editing as well?
-Exploring Vim was my way of mediating desire to write with my newfound daily life.
+Exploring Vim was my way of mediating my desire to write with my newfound daily life.
 
 The main goal of this blog post is to convince you that Vim is not only useful for programmers and coding, but also for text editing of all sorts: from making notes, writing proza, to producing papers. 
 It only requires familiarity with some basic concepts that might be unfamiliar to you, and a willingness to learn.
@@ -63,7 +63,7 @@ It is not hard to remember those basic operations, because they make sense.
 
 **2) Focus on the content (and think about the view later)**
 
-Vim (and Vim plugins) offer practically all the functionality you can dream of, but without unnecessary bells and whistles. 
+Vim and its ecosystem of plugins offers practically all the functionality you need, but without unnecessary bells and whistles. 
 Traditional text editors such as MS Word have many menu's, tabs and buttons. 
 It usually takes me a while to find what I need exactly, but what annoys me more is that all these menu's are distracting and take up a lot of screen space.
 
