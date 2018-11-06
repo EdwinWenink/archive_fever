@@ -14,8 +14,8 @@ That is a very interesting fact to me, because as a philosophy student I spent y
 It feels like I lived in the stone age. 
 By starting a second bachelor in Artificial Intelligence, a significant dose of programming entered my daily life. 
 But, being a caveman, I followed all my programming courses *without owning a laptop*. 
-After a year of working on other people's computers and emailing myself code (ouch...), I bought a second (or 3rd, 4th) hand Thinkpad T420 from a [friend](https://www.alextes.me), which had Antergos, an Arch Linux distro, installed on it.
-Over time I fell more and more in love with customizing every part of my workflow, and soon I saw myself disposing of my desktop environment and getting into the business of terminal multiplexing.
+After a year of working on other people's computers and emailing myself code (ouch...), I bought a second (or 3rd, 4th) hand Thinkpad T420 from a [friend](https://www.alextes.me), with Antergos, an Arch Linux distro, installed on it.
+Over time I increasingly enjoyed customizing my workflow, and soon I saw myself disposing of my desktop environment and getting into the business of terminal multiplexing.
 But one painful remainder in this workflow optimization was my philosophy work: for text editing, MS Word on my Windows desktop was still my go-to program.
 In the meantime I was figuring out how to give shape to my remaining philosophy work next to a full-time study in AI.
 The activity of writing and text-editing was still secretly the thing I liked the most, but I didn't get around to it anymore that often.
