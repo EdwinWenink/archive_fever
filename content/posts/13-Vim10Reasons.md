@@ -13,23 +13,24 @@ That is a very interesting fact to me, because as a philosophy student I spent y
 
 It feels like I lived in the stone age. 
 By starting a second bachelor in Artificial Intelligence, a significant dose of programming entered my daily life. 
-But, being a caveman, I followed all my programming courses *without owning a laptop*. 
-After a year of working on other people's computers and emailing myself code (ouch...), I bought a second (or 3rd, 4th) hand Thinkpad T420 from a [friend](https://www.alextes.me), with Antergos, an Arch Linux distro, installed on it.
+But, being a caveman, I initially followed all my programming courses *without owning a laptop*. 
+After a fair bit of working on other people's computers and emailing myself code (ouch...), I bought a second (or 3rd, 4th) hand Thinkpad T420 from a [friend](https://www.alextes.me), with Antergos, an Arch Linux distro, installed on it.
 Over time I increasingly enjoyed customizing my workflow, and soon I saw myself disposing of my desktop environment and getting into the business of terminal multiplexing.
 But one painful remainder in this workflow optimization was my philosophy work: for text editing, MS Word on my Windows desktop was still my go-to program.
 In the meantime I was figuring out how to give shape to my remaining philosophy work next to a full-time study in AI.
 The activity of writing and text-editing was still secretly the thing I liked the most, but I didn't get around to it anymore that often.
-And in hindsight I think it's a shame that all courses I followed on professional academic skills are so agnostic about computer-related skills, while all aspects of writing a paper are digitalized.
 So I thought: why not also have a programmer's approach to text-editing as well?
-Exploring Vim was the perfect excuse.
+Exploring Vim was my way of mediating desire to write with my newfound daily life.
 
 The main goal of this blog post is to convince you that Vim is not only useful for programmers and coding, but also for text editing of all sorts: from making notes, writing proza, to producing papers. 
 It only requires familiarity with some basic concepts that might be unfamiliar to you, and a willingness to learn.
 
 ## Vim's basic philosophy
 
+
 Before I give you my ten reasons to use Vim, I want to explain how Vim effects what you could call a paradigm shift, and how this leads to confusion. The first experience that developers often have with Vim is that they enter it by accident, and then have no clue how to exit it. The popular platform Stack Overflow even wrote a [blog post](https://stackoverflow.blog/2017/05/23/stack-overflow-helping-one-million-developers-exit-vim/) about how a million developers visited a popular thread on how to exit Vim.
 I was one of those people. After having used Vim for a while now, I would summarize the paradigm shift creating all this confusion as follows:
+
 
 > In Vim inserting text is of secondary importance to efficiently navigating your text
 
@@ -38,11 +39,17 @@ As trivial as this may seem, this does not hold for Vim. Vim has different modes
 In order to make letters appear in your text, you first need to enter Insert mode. 
 And here is the trouble: in order to exit Vim, you first need to exit this Insert mode, and enter Command mode to give the `q(uit)` command.
 
+<figure>
+	<img align="right" style="width:40%; margin: 10px 20px" src="/images/13-blog/exitvim.jpg" />
+</figure>
+
 Inserting characters is a very straightforward operation where each keystroke corresponds to the inserting of a character on the screen. But by making this a secondary mode, Vim opens up the whole keyboard for highly efficient text navigation and manipulation. Think about this: when you write a document in MS Word, how much of your time do you actually spend typing, and how much time do you spend clicking, scrolling, dragging, and going through menu's with your mouse? You'd be surprised.
+
 
 But this different paradigm takes a while to get used to, and initially you wonder why something so simple as editing a text has to be so seemingly complex.
 But once you get comfortable with the basic logic behind Vim, you will never cease to be surprised how Vim can do things of which you did not even realize they were inefficient, more efficiently.
-I will try give examples of that in a follow-up post.
+I will try to give examples of that in a follow-up post.
+
 
 ## My ten reasons for using Vim
 
@@ -119,6 +126,6 @@ I spent quite some time behind my computer, and not having my hand on the mouse 
 
 Perhaps the best influence vim has on my workflow, is that *whatever* I do with Vim, it will indirectly be part of the bigger learning experience that Vim is. So Vim actually is a strong motivational factor for me. For example, taking notes is tedious, but now I see it as an opportunity to improve on my skills, and most importantly, enjoy the skills I have gathered so far.
 
-The only downside is that sometimes you go down the rabbit hole looking for new Vim trick.
+The only downside is that sometimes you go down the rabbit hole looking for new Vim tricks.
 
 I will write a follow-up post for some examples of how Vim helps me improve my efficiency.
