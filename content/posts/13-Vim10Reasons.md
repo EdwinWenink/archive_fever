@@ -94,7 +94,10 @@ And there are some more advantages to this:
 
 **4) Version control on your texts**
 
-Using plain text for your writing opens up the possibility to use adequate version control on your documents, for example using git. Programmers are already used to this, but why do people in the social sciences not exploit the amazing tools available nowadays? How most people do version control (if at all) is by simply having various different versions of the same document, and numbering them. Have fun keeping track of which of the numerous versions had all the correct changes in it!
+Using plain text for your writing opens up the possibility to use adequate version control on your documents, for example using git. 
+You can integrate git in Vim by using plugins, for example [gitgutter](https://github.com/airblade/vim-gitgutter) which indicates all changes in your text. 
+On top of that, since you can run shell commands from within vim with the `!` operator, you don't even have to leave vim to run your git commands.
+Programmers are already used to using tools like git, but why do people in the social sciences not exploit the amazing tools available nowadays? How most people do version control (if at all) is by simply having various different versions of the same document, and numbering them. Have fun keeping track of which of the numerous versions had all the correct changes in it!
 
 Also, git is free. Which brings me to the next advantage of Vim.
 
