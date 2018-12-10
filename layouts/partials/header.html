@@ -35,8 +35,7 @@
 
 <header>
 	<!-- Homepage Title -->
-	<a href="blog/index.html" style="float: left;color:#777;"><strong>{{ $.Site.Title }}</strong></a>
-	<!--<a href="{{ .Site.BaseURL }}" style="float: left;color:#777;"><strong>{{ $.Site.Title }}</strong></a>-->
+	<a href="{{ .Site.BaseURL }}" style="float: left;color:#777;"><strong>{{ $.Site.Title }}</strong></a>
 	<!-- Navigation Pages -->
 	{{ range $i, $e:= $.Site.Params.navigation }}&nbsp;&nbsp;{{ if eq $i 0}}{{else}}{{end}}{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}" style="color:#777;"><strong>{{ title .Title }}</strong></a>{{ end }}{{ end }}
 	<!-- Draft Posts  -->

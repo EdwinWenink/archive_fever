@@ -1,0 +1,28 @@
+
+
+
+<div class="content">
+
+	<div class="page1 " id="main">
+		<div class="content1">
+		  <h1> Edwin Wenink </h1>
+		  <a href="/archives"><h2> Philosophy | Artificial Intelligence | etcetera </a></h2>
+			---------------------------------------------------------
+		     <div class="desktop">
+				 <p><script type="text/javascript" src="/scripts/randomquote.js"></script></p>
+				 </div> 
+			</div>
+		</div>
+
+    <h1>{{ title .Data.Term  }} Memory traces ... </h1>
+    {{ range first 20 .Pages }}
+    {{ if eq .Type "posts"}}
+        <p>
+        <aside>{{ .Date.Format "January 2, 2006"}}</aside>
+        <a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
+        </p>
+    {{ end }}
+    {{ end }}
+	<p> See archives for more </p>
+</div>
+
