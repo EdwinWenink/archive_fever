@@ -132,4 +132,4 @@ Perhaps the best influence vim has on my workflow, is that *whatever* I do with 
 
 The only downside is that sometimes you go down the rabbit hole looking for new Vim tricks.
 
-I will write a [follow-up post](https://edwinwenink/xyz/posts/14-VimUseCasesI) for some examples of how Vim helps me improve my efficiency.
+I will write a [follow-up post](https://edwinwenink/xyz/posts/14-VimUseCasesi) for some examples of how Vim helps me improve my efficiency.
