@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body, li p {
-	font-family: 'Merriweather', serif;
+	font-family: 'Inconsolata', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,header,header.a {
 	text-transform: lowercase;
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
+}
+
+h2 {
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.5);
 }
 
 header,header.a{
@@ -248,3 +255,7 @@ blockquote p {
 	display: inline;
 }
 
+h2 {
+	border-bottom-style: solid;
+	border-width: 1px;
+}
