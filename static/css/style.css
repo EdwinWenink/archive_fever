@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
@@ -8,7 +7,7 @@ body, li p {
 
 h1,h2,h3,h4,h5,h6,header,header.a {
 	text-transform: lowercase;
-	font-family: 'Inconsolata', sans-serif;
+	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 h2 {
