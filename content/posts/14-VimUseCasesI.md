@@ -42,7 +42,7 @@ In long sentences this can still feel a bit inefficient, but you do have some op
 
 2) Quickly find and jump to a character. If your cursor is on "Repeat" in the previous sentence, and you want to jump to the middle of the sentence, you could find 'w' with `fw` to end up at the beginning of the word "words". If you want to end up before that word, jump "to" or "till" it with the `t` command.
 
-3) You can also quickly search and move to a word in a sentence if more convenient, for example when a sentence is long. Quickly type `/wo` and pressing enter is enough to jump to "words". For backward search, use `?` instead.
+3) You can also quickly search and move to a word in a sentence if more convenient, for example when a sentence is long. Quickly typing `/wo` and pressing enter is enough to jump to "words". For backward search, use `?` instead.
 
 If you want to jump to the beginning of the line, press `0`. Surprising?
 This one is less obvious, but `$` moves towards the end of the line.
