@@ -2,7 +2,7 @@
 author: "Edwin Wenink"
 title: "Creating a PGP key, sending mail with GPG"
 date: 2018-12-16
-draft: true
+draft: false
 tags: [Security, Encryption, Privacy, Pgp, Gpg, Neomutt]
 ---
 
