@@ -13,7 +13,9 @@ This causes the unwanted behavior that new emails that belong to a thread to not
 I did not quickly find people with similar wishes (and solution) on the internet, so I considered it potentially helpful to write down my solution here.
 
 To solve this behavior, I defined a secondary sorting method. 
-The primary sorting method is on threads, but I want threads themselves to be sorted based on the date of the newest message. I achieved this by setting these variables in my `neomuttrc`:
+The primary sorting method is on threads, but I want threads themselves to be sorted based on the date of the newest message. 
+Also, I still want to ensure that newest messages show up on top, and not on the bottom (this is the reverse of the default setting in NeoMutt).
+I achieved this by setting these variables in my `neomuttrc`:
 
 ```Bash
 set sort = threads 
