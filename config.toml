@@ -6,4 +6,6 @@ pygmentuseclasses = true
 
 [params]
     navigation = ["archives.md", "about.md"]
+	archive = "archives.md"
+	about = "about.md"
 
