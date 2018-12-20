@@ -25,19 +25,24 @@ def read_cmd(input):
             "say": lambda x: banner_say(" ".join(x)),
             "exit": lambda x: banner_say("Bye cruel world!")
             }
-    try:
-        command[cmd](args)
-    except:
-        print("""
-        '%s' was an example of an incorrect command
-        """ % input)
 
+    command.get(cmd, lambda x: error(input))(args)
 
 # Fabricate some fake user inputs for testing
 user_inputs = ["help", "Incorrect command", "say Welcome to the mean poem machine", "poem reader", "exit"]
 
 for user_input in user_inputs:
     read_cmd(user_input)
+```
+
+The get function of a dictionary deals with wrong commands by returning a default value, which in our case also has to be a function, as we pass `args` to it.
+The one-liner `command.get(cmd, lambda x: error(input))(args)` therefore does the same (but is written more compact) as: 
+
+```python
+    try:
+        command[cmd](args)
+    except:
+		error(input)
 ```
 
 To run the code for yourself, you could use these silly functions.
@@ -70,6 +75,12 @@ def say_poem_for(muse):
         Whatever you do
         It trumps being dead
         """ % muse)
+
+
+def error(incorrect_input):
+    print("""
+    '%s' was an example of an incorrect command
+    """ % incorrect_input)
 ```
 
 Which together produces the following output:
