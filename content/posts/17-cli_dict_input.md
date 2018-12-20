@@ -8,7 +8,7 @@ tags: [Programming, Python, Dictionary, CLI]
 
 If you write an interactive program that takes user commands as an input, you can select the appropriate action for a given command by going through a sequence of `if... else if` statements. 
 But if you write in Python, there's always a cooler way to do things. A method I like personally in this situation is defining a dictionary where the keys are the command strings, and the corresponding values are lambda expressions. 
-In the following definition, all commands are called with `command[cmd](args)`.
+In the following definition, all commands are called with `command[cmd](args)`. When we want to deal with faulty commands immediately in a single line we can write `command.get(cmd, lambda x: error(input))(args)`.
 By passing a command string to the dictionary as a key, the lambda expression corresponding to that command key is selected. 
 But in order to be fully applied, the lambda function still required an argument, which we can simply pass behind the call to the dictionary.
 Although this method is maybe not more efficient... I would say it wins when scored on style.
@@ -35,8 +35,8 @@ for user_input in user_inputs:
     read_cmd(user_input)
 ```
 
-The get function of a dictionary deals with wrong commands by returning a default value, which in our case also has to be a function, as we pass `args` to it.
-The one-liner `command.get(cmd, lambda x: error(input))(args)` therefore does the same (but is written more compact) as: 
+The `get` function of a dictionary deals with wrong commands by returning a default value, which in our case also has to be a function, as we pass `args` to it.
+The one-liner `command.get(cmd, lambda x: error(input))(args)` therefore does the same as: 
 
 ```python
     try:
