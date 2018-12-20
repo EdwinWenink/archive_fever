@@ -8,7 +8,7 @@ tags: [Programming, Python, Lambda, Dictionary, CLI]
 
 If you write an interactive program that takes user commands as an input, you can select the appropriate action for a given command by going through a sequence of `if... else if` statements. 
 But if you write in Python, there's always a cooler way to do things. A method I like personally in this situation is defining a dictionary where the keys are the command strings, and the corresponding values are lambda expressions. 
-In the following definition, all commands are called with `command[cmd](args)`. When we want to deal with faulty commands immediately in a single line we can write `command.get(cmd, lambda x: error(input))(args)`.
+In the following definition, all commands are called with `command[cmd](args)`. When we want to deal with faulty commands immediately in a single line we can write `command.get(cmd, lambda x: (error(input), help_message()))(args)`.
 By passing a command string to the dictionary as a key, the lambda expression corresponding to that command key is selected. 
 But in order to be fully applied, the lambda function still required an argument, which we can simply pass behind the call to the dictionary.
 Although this method is maybe not more efficient... I would say it wins when scored on style.
@@ -19,30 +19,31 @@ def read_cmd(input):
     cmd = inputs[0]
     args = inputs[1:]
 
-    command = {
+    commands = {
             "help": lambda x: help_message(),
             "poem": lambda x: say_poem_for(x[0]),
             "say": lambda x: banner_say(" ".join(x)),
             "exit": lambda x: banner_say("Bye cruel world!")
             }
 
-    command.get(cmd, lambda x: error(input))(args)
+    commands.get(cmd, lambda x: (error(input), help_message()))(args)
 
 # Fabricate some fake user inputs for testing
-user_inputs = ["help", "Incorrect command", "say Welcome to the mean poem machine", "poem reader", "exit"]
+user_inputs = ["Incorrect command", "say Welcome to the mean poem machine", "poem reader", "exit"]
 
 for user_input in user_inputs:
     read_cmd(user_input)
 ```
 
 The `get` function of a dictionary deals with wrong commands by returning a default value, which in our case also has to be a function, as we pass `args` to it.
-The one-liner `command.get(cmd, lambda x: error(input))(args)` therefore does the same as: 
+The one-liner `command.get(cmd, lambda x: (error(input), help_message()))(args)` therefore does the same as: 
 
 ```python
     try:
         command[cmd](args)
     except:
 		error(input)
+		help_message()
 ```
 
 To run the code for yourself, you could use these silly functions.
@@ -85,14 +86,13 @@ def error(incorrect_input):
 
 Which together produces the following output:
 
+   'Incorrect command' was an example of an incorrect command
+
 
         help        see this menu, obviously
         say         say some text placed in a ascii banner
         poem        say a little poem for your muse
         exit        say bye!
-        
-
-        'Incorrect command' was an example of an incorrect command
         
 
     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
