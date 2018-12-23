@@ -1,15 +1,43 @@
-<h3> Leave a comment </h3>
+<h1> Leave a comment </h1>
 
 <form class="post-new-comment" method="POST" action="https://dev.staticman.net/v2/entry/eduardoboucas/hugo-plus-staticman/master/posts">
   <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
+  <input type="hidden" name="option[redirectError]" value="{{ .Permalink }}#post-error">
   <input name="fields[title]" type="text" class="post-comment-field" placeholder="Title">
+  <input name="fields[email]" type="text" class="post-comment-field" placeholder="Your email (will remain private)">
   <textarea name="fields[body]" class="post-comment-field" placeholder="The content. Feel free to use Markdown." rows="10"></textarea>
-  <input type="submit" class="post-comment-field btn" value="Submit">
+	<!--
+	 recaptcaha still needs to be set :-)
+	-->
+	
+	<div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_sitekey }}" data-callback="enableBtn"></div>
+	<!--
+	<input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
+	-->
+	<input type="submit" class="post-comment-field btn" value="Submit">
 </form>
+
+<script async src="https://www.google.com/recaptcha/api.js"></script>
+
+<script type="text/javascript">
+	document.getElementById("submit_button").disabled = true;
+</script>
+
+<script type="text/javascript">
+	function enableBtn(){
+		document.getElementById("submit_button").disabled = false;
+	}
+</script>
 
 <div id="post-submitted" class="dialog">
 <h3>Thank you</h3>
   <p>Your post has been submitted and will be published once it has been approved.</p>
   <p><a href="https://github.com/eduardoboucas/hugo-plus-staticman/pulls">Click here</a> to see the pull request you generated.</p>
   <p><a href="#" class="btn">OK</a></p>
+</div>
+
+<div id="post-error" class="dialog">
+	<h3> Something went wrong! </h3>
+	<p> Your comment has not been submitted. Return to the page by clicking OK. </p>
+	<p><a href="#" class="btn">OK</a></p>
 </div>
