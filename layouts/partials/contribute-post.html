@@ -1,6 +1,6 @@
 <h2> Leave a comment </h2>
 
-<form class="post-new-comment" method="POST" action="https://dev.staticman.net/v2/entry/eduardoboucas/hugo-plus-staticman/master/posts">
+<form class="post-new-comment" id="comment-form" method="POST" action="https://dev.staticman.net/v2/entry/eduardoboucas/hugo-plus-staticman/master/posts">
   <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
   <input type="hidden" name="option[redirectError]" value="{{ .Permalink }}#post-error">
   <input name="fields[title]" type="text" class="post-comment-field" placeholder="Title">
