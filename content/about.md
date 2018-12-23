@@ -25,8 +25,7 @@ If you want to encrypt it, <a href="https://www.edwinwenink.xyz/page/pgp.html"> 
 	<div>
 		<p> 
 		When I meet new people I often ask them about their music taste.
-		At the same time, I still have trouble answering this question myself. 
-		I often spin my music taste in a particular direction depending on the context of the conversation. But what is more honest than just listing the statistics of what I *actually* listen to?
+		When people return the favor and ask me what I listen to, I often spin my music taste in a particular direction depending on the context of the conversation. But what is more honest than just listing what I *actually* listen to?
 		These musical statistics are generated automatically
 		through interacting with the LastFM API. 
 		See the scripts I wrote for this <a href="https://github.com/EdwinWenink/personal_website/tree/master/static/scripts">here</a>.
