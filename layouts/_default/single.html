@@ -56,5 +56,7 @@ window.onload = ready;
   <p><small><em>Written on {{ .Date.Format "January 2, 2006"}} </em></small></p>
 {{ end }} -->
 
+{{ partial "post-comments" . }}
+{{ partial "contribute-post" . }}
 
 {{ partial "footer.html" . }}
