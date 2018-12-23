@@ -2,23 +2,28 @@
 	
   {{ $postId := .File.BaseFileName }}
 
-  <h3>Comments</h3>
+  <h2>Comments</h2>
 
   {{ $comments := readDir "data/comments" }}
   {{ $.Scratch.Add "hasComments" 0 }}
   {{ range $comments }}
 		{{ if eq .Name $postId }}
 			{{ $.Scratch.Add "hasComments" 1 }}
-			<p> A comment for this post has been found, with name "{{ .Name }}" </p>
 			{{ $entry := .Name }}
 			{{ range $.Site.Data.comments.comment_test}}
+				{{ if not .reply_to }}
 				<div class="post-comment" >
 				  <div class="post-comment-header">
-					<p class="post-comment-info" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{ dateFormat "02/01/2006" .date }}:</p>
+					<p class="post-comment-info" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}:</p>
 				  </div>
 				  {{ .body | markdownify }}
+				  <div class="comment_reply">
+					  <br>
+					<a id="{{ .id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ .id }}')"> Reply to {{ .name }}</a>
 				</div>
-				<br>
+				</div>
+				{{ end }}
+				{{ partial "comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" $.Site.Data.comments "parentId" .id "parentName" .name "context" .) }}
 			{{ end }}
 		{{ end }}
   {{ end }}

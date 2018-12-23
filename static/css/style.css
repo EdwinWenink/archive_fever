@@ -32,6 +32,13 @@ header,header.a{
   margin-top: 20px;
 }
 
+.post-comment-reply {
+  background-color: #eee;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 4em;
+}
+
 .post-comment-header {
   margin-bottom: 20px;
 }
