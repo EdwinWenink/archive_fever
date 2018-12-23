@@ -8,4 +8,6 @@ pygmentuseclasses = true
     navigation = ["archives.md", "about.md"]
 	archive = "archives.md"
 	about = "about.md"
+	recaptcha_sitekey = "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
+
 

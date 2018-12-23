@@ -45,6 +45,10 @@ comments:
   # Otherwise, entries will be published to the main branch automatically.
   moderation: true
 
+  # Recaptcha
+  reCaptcha.enabled: true
+  reCaptcha.siteKey: "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
+
   # Name of the site. Used in notification emails.
   name: "edwinwenink.xyz"
 

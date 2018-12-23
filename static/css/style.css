@@ -63,7 +63,11 @@ header,header.a{
   padding: 10px;
   margin-top: 20px;
   outline-color: #F76C5E;
-  width: 100%;
+  width: 95%;
+}
+
+.post-new-comment {
+	padding: 10px;
 }
 
 .btn {

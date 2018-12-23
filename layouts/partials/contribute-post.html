@@ -6,18 +6,11 @@
   <input name="fields[title]" type="text" class="post-comment-field" placeholder="Title">
   <input name="fields[email]" type="text" class="post-comment-field" placeholder="Your email (will remain private)">
   <textarea name="fields[body]" class="post-comment-field" placeholder="The content. Feel free to use Markdown." rows="10"></textarea>
-	<!--
-	 recaptcaha still needs to be set :-)
-	-->
-	
+
 	<div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_sitekey }}" data-callback="enableBtn"></div>
-	<!--
 	<input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
-	-->
-	<input type="submit" class="post-comment-field btn" value="Submit">
 </form>
 
-<script async src="https://www.google.com/recaptcha/api.js"></script>
 
 <script type="text/javascript">
 	document.getElementById("submit_button").disabled = true;
