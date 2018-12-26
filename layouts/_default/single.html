@@ -49,9 +49,6 @@ window.onload = ready;
 
 <div class="content">
   <h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}</aside></h1>
-  <p>
-  {{ .Title }}
-  </p>
   {{ .Content }}
 </div>
 

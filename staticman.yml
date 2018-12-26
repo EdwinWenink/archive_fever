@@ -70,7 +70,7 @@ comments:
   #
   # Destination path (directory) for the data files. Accepts placeholders.
   # path: "data/comments/{options.entryId}"
-  path: "data/comments/{{ .Page }}"
+  path: "data/comments/{options.slug}"
   filename: "comment{@id}"
 
   # Names of required fields. If any of these isn't in the request or is empty,
