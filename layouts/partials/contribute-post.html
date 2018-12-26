@@ -3,8 +3,8 @@
 <form class="post-new-comment" id="comment-form" method="POST" action="{{ .Site.Params.staticman_api }}">
   <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
   <input type="hidden" name="option[redirectError]" value="{{ .Permalink }}#post-error">
-  <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name">
-  <input name="fields[email]" type="text" class="post-comment-field" placeholder="Your email (will remain private)">
+  <input name="fields[name]" type="text" class="post-comment-field" placeholder="Name"> 
+  <!--<input name="fields[email]" type="text" class="post-comment-field" placeholder="Your email (will remain private)">-->
   <input name="options[slug]" type="hidden" value="{{ .File.BaseFileName }}">
   <textarea name="fields[body]" class="post-comment-field" placeholder="The content. Feel free to use Markdown." rows="10"></textarea>
 	<div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_sitekey }}" data-callback="enableBtn"></div>
