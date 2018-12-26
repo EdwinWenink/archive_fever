@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Edwin Wenink"
 googleAnalytics = "UA-117420879-1"
 pygmentuseclasses = true
-github_username: EdwinWenink
+github_username = "EdwinWenink"
 
 [params]
     navigation = ["archives.md", "about.md"]
