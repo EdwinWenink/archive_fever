@@ -1,4 +1,5 @@
 {{ range $index, $comments := (index $.SiteDataComments_parent $.entryId_parent ) }}
+{{ if ne $.parentId nil }}
   {{ if eq .reply_to $.parentId }}
     <div class="post-comment-reply">
       <div class="post-comment-header">
@@ -7,4 +8,5 @@
       {{ .body | markdownify }}
     </div>
   {{ end }}
+{{ end }}
 {{ end }}
