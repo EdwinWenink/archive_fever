@@ -10,5 +10,5 @@ github_username = "EdwinWenink"
 	archive = "archives.md"
 	about = "about.md"
 	recaptcha_sitekey = "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
-	staticman_api = "http://192.168.2.163:1234/v2/entry/EdwinWenink/personal_website/staticman-comments/comments"
+	staticman_api = "http://77.249.145.182:2223/v2/entry/EdwinWenink/personal_website/staticman-comments/comments"
 
