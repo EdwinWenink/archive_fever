@@ -26,8 +26,6 @@
 	{{ end }}
 
   {{ if eq ($.Scratch.Get "hasComments") 0 }}
-	{{ range $comments }}
-		<p>Nothing yet.</p>
-	{{ end }}
+		<p>Nothing yet. Be the first!</p>
   {{ end }}
 </section>
