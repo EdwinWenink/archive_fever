@@ -3,9 +3,12 @@ languageCode = "en-us"
 title = "Edwin Wenink"
 googleAnalytics = "UA-117420879-1"
 pygmentuseclasses = true
+github_username = "EdwinWenink"
 
 [params]
     navigation = ["archives.md", "about.md"]
 	archive = "archives.md"
 	about = "about.md"
+	recaptcha_sitekey = "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
+	staticman_api = "http://77.249.145.182:1234/v2/entry/EdwinWenink/personal_website/master/comments"
 

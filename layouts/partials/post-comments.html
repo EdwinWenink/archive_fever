@@ -1,0 +1,31 @@
+<script src="{{ .Site.BaseURL }}/scripts/changevalue.js"></script>
+<section class="post-comments">
+	
+  {{ $postId := .File.BaseFileName }}
+
+  <h2>Comments</h2>
+
+  {{ $comments := readDir "data/comments" }}
+  {{ $.Scratch.Add "hasComments" 0 }}
+
+  {{ range $index, $comments := (index $.Site.Data.comments $postId) }}
+		{{ $.Scratch.Add "hasComments" 1 }}
+			{{ if not .reply_to }}
+				<div class="post-comment" >
+				  <div class="post-comment-header">
+					<p class="post-comment-info" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}:</p>
+				  </div>
+				  {{ .body | markdownify }}
+				  <div class="comment_reply">
+					  <br>
+	<a id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')"> Reply to {{ .name }}</a>
+				</div>
+				</div>
+				{{ partial "comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name "context" .) }}
+			{{ end }}
+	{{ end }}
+
+  {{ if eq ($.Scratch.Get "hasComments") 0 }}
+		<p>Nothing yet. Be the first!</p>
+  {{ end }}
+</section>
