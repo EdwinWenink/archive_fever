@@ -10,9 +10,11 @@ type: about
 	<script src ="/scripts/lastfm_query.js"> </script>
 </head>
 
-This is the blog of Edwin Wenink, a student of philosophy and artificial intelligence. 
+This is the website of Edwin Wenink, a student of philosophy and artificial intelligence. 
+I wrote this static website (<a href="https://github.com/EdwinWenink/personal_website">source</a>) not because I'm into writing websites, but because I like to do things myself in general for the learning experience.
+I live in Nijmegen, the Netherlands.
 
-I intend to use this blog as a mnemonic device.
+I intend to use my blog as a mnemonic device.
 Over the years I have occupied myself with studying such [diverse topics](https://edwinwenink.xyz/page/courses.html), only to realize that I can barely recollect half of it.
 So as a rule of thumb for this blog: if I spend a considerable amount of time on one topic, I should record it in this elaborate and weirdly public note-taking system.
 My best guess at the moment is that those notes are likely to be related     either to philosophy, artificial intelligence, or the ongoing discovery of (Arch) Linux and the design of a nice workflow.
