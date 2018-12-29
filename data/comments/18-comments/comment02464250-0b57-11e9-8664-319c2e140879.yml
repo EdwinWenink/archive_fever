@@ -1,0 +1,9 @@
+_id: 02464250-0b57-11e9-8664-319c2e140879
+_parent: 18-comments
+name: Edo
+reply_to: a0f20c70-0afa-11e9-8664-319c2e140879
+body: >-
+  I'm not sure I understand your problem completely. As far as I know I receive
+  email from GitHub whenever there is some interaction on a repo I own. This
+  goes for PRs, as well as issues etc...
+date: 1546080394
