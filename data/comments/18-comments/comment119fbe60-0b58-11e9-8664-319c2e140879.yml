@@ -1,0 +1,12 @@
+_id: 119fbe60-0b58-11e9-8664-319c2e140879
+_parent: 18-comments
+name: Edwin
+reply_to: a0f20c70-0afa-11e9-8664-319c2e140879
+body: >-
+  I get your confusion. What I meant is that there used to be an email service
+  that allowed you to get emails for a very specific purpose only, such as merge
+  requests. That service is deprecated now. In my general settings I had email
+  notifications enabled, but still did not receive any emails... The problem was
+  that I had to "watch" my own repository first. That was a bit unintuitive for
+  me. TLDR; never mind and thanks for the reply!
+date: 1546080849
