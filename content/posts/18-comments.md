@@ -18,7 +18,7 @@ I wasn't willing to give up the advantages of a static website just yet: it's su
 But worst of all, in both those scenarios I do not have any control over the storing of the comments, as they are not part of my website! 
 
 But then I found a really cool option. This nice guy wrote a bot called <a href="https://github.com/eduardoboucas/staticman">staticman</a>. The bot takes input from the form under this blog post, creates an appropriate .yml file for the comment, connects to its very own GitHub account, and then makes a merge request for adding the comment to the appropriate blog post. It is also possible to automatically push to my live master branch, but I preferred to have an extra check to guard against spam.
-This is awesome for static website with auto-deployment, such as mine, which is hosted on netlify. It literally solves all problems I had with other options: I have no external widgets on my website, yet all comments are visible on the same webpage as the blog. 
+This is awesome for static websites with auto-deployment, such as mine, which is hosted on Netlify. It literally solves all problems I had with other options: I have no external widgets on my website, yet all comments are visible on the same webpage as the blog. 
 Most importantly, all comments are stored together with my website, and they are under my version control.
 
 The writer of staticman created a public staticman GitHub account, but I found that it was horribly overloaded and being blocked by GitHub restrictions on the maximum amount of merge requests that are allowed per hour, as many people started using it. But the idea of staticman was too cool to give up immediately, so I decided to set up a raspberry pi that I borrowed from a friend with the GitHub bot. 
@@ -39,4 +39,4 @@ We'll see how it goes! Feel free to respond, leave ideas, suggestions etc.
 Be aware that your comment will not automatically show since I need to approve them first. 
 I might change that if it turns out the spam is not too bad.
 A thing I'll consider adding later is the option to receive emails when people reply on your comment, but for now I'll test the current setup first. 
-We'll see how the raspberry pi holds up. It will be a bit slow, and the connection not secured. If it's broken please let me know over email!
+We'll see how the raspberry pi holds up. It will be a bit slow, and the connection is not secured. If it's broken please let me know over email!
