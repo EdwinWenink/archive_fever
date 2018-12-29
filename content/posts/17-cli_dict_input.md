@@ -12,7 +12,7 @@ In the following definition, all commands are called with `command[cmd](args)`. 
 By passing a command string to the dictionary as a key, the lambda expression corresponding to that command key is selected. 
 But in order to be fully applied, the lambda function still required an argument, which we can simply pass behind the call to the dictionary.
 Although this method is maybe not more efficient... I would say it wins when scored on style.
-
+ 
 ```python
 def read_cmd(input):
     inputs = input.split()
@@ -86,8 +86,8 @@ def error(incorrect_input):
 
 Which together produces the following output:
 
-   'Incorrect command' was an example of an incorrect command
-
+```
+'Incorrect command' was an example of an incorrect command
 
         help        see this menu, obviously
         say         say some text placed in a ascii banner
@@ -110,4 +110,5 @@ Which together produces the following output:
 
     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     Bye cruel world!
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+```
