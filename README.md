@@ -1,3 +1,5 @@
-# Personal website.
+# Personal website and blog | https://www.edwinwenink.xyz
 
-Uses the format as described by HUGO. Published on Netlify.
+- Uses Hugo as a static website generator. 
+- Auto-deployed from GitHub through Netlify.
+- Uses staticman for integrating comment functionality
