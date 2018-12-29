@@ -1,0 +1,15 @@
+_id: d8c74680-0b48-11e9-8664-319c2e140879
+_parent: 18-comments
+name: Edwin
+reply_to: a0f20c70-0afa-11e9-8664-319c2e140879
+body: >-
+  Sort of! One thing I noticed immediately is that it is a pain to delete all
+  branches the bot creates for merge requests manually.  But luckily I could set
+  up a webhook on GitHub that asks the staticman bot to remove the branch
+  immediately after I merge it, and that seems to work now. A seemingly trivial
+  problem I have left is that I do not get email notifications when the bot
+  makes a merge request, so users might have to wait a fair bit before their
+  comments show up. It seems the regular email service of GitHub is now
+  deprecated. Did you ever do something like that with a webhook, or is there an
+  easier way?
+date: 1546074312
