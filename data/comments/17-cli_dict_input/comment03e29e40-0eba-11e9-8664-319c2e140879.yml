@@ -1,0 +1,20 @@
+_id: 03e29e40-0eba-11e9-8664-319c2e140879
+_parent: 17-cli_dict_input
+name: Edwin
+reply_to: 97eaa420-0d07-11e9-8664-319c2e140879
+body: >-
+  Haha, now we finally get to the important stuff: squabbling about markdown
+  syntax! There is no such thing as "the" ultimate specification of Markdown, as
+  there are a lot of flavours, so I'm not sure what specification you are
+  referring to. Perhaps something John Gruber wrote, since your Haskell
+  scripting betrays you are pretty hardcore, but otherwise my guess would be you
+  are mostly using GitHub flavoured markdown. I pretty much daily use
+  pandoc-markdown myself. But notice that a complete blank line is needed to
+  separate paragraphs, and that therefore a '*' without a preceding blank line
+  is by most markdown flavours recognized as being part of the preceding
+  paragaph, i.e. regular text. [Check this link for an example of the
+  difference](https://github.com/gjtorikian/markdowntutorial.com/issues/46), or 
+  [consider this standard example on
+  Wikipedia](https://en.wikipedia.org/wiki/Markdown). But you don't have to
+  believe me, try it out for yourself ;-)
+date: 1546452771
