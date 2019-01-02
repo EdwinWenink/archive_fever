@@ -8,7 +8,7 @@
   {{ $comments := readDir "data/comments" }}
   {{ $.Scratch.Add "hasComments" 0 }}
 
-  {{ range $index, $comments := (index $.Site.Data.comments $postId) }}
+  {{ range $comments := index $.Site.Data.comments $postId }}
 		{{ $.Scratch.Add "hasComments" 1 }}
 			{{ if not .reply_to }}
 				<div class="post-comment" >
