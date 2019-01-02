@@ -47,6 +47,7 @@
 		quotes[44]= "&quotThe man who fears suffering is already suffering from what he fears&quot - Michel de Montaigne";
 		quotes[45]= "&quotCuriosity is insubordination in its purest form&quot - Vladimir Nabokov";
 		quotes[46]= "&quotThe more we love our friends, the less we flatter them; it is by excusing nothing that pure love shows itself&quot - Moliere";
+		quotes[47]= "&quotWhen it comes to metaphysics, a little bit of Platonism is like a little bit of pregnancy. The hymen is gone, the undecidability dissolved&quot - Thomas Sheehan";
   
 		/*
 		quotes[x]= "&quot &quot";
