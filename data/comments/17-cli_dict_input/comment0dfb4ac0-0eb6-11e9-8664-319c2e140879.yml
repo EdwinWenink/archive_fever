@@ -1,0 +1,6 @@
+_id: 0dfb4ac0-0eb6-11e9-8664-319c2e140879
+_parent: 17-cli_dict_input
+name: alex
+reply_to: 97eaa420-0d07-11e9-8664-319c2e140879
+body: "blank line before lists? No such requirement in the markdown spec. I think your parser is simply misbehaving or one of the tools in your magic comment toolchain is mangling the text \U0001F61B."
+date: 1546451070
