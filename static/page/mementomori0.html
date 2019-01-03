@@ -7,6 +7,7 @@
 	<link href="style.css" type="text/css" rel="stylesheet"/>
 	<link rel="shortcut icon" href="images/phi-icon.jpg"/>
 	<meta charset="UTF-8">
+	<script src="{{ .Site.BaseURL }}/scripts/scrolldown.js"></script>
 	
 	<style>
 	
@@ -56,9 +57,21 @@
 	}
 
 	</style>
+
+	<script>setTimeout(function(){
+		window.location.href = "mementomori1.html";
+		}, 10000);
+	</script>
+	<script>
+		function scrollDown() {
+			window.scrollBy(0,1);
+			scrolldelay = setTimeout(scrollDown, 10);
+		}
+	</script>
 </head>
 <body>	
-	<h1 class="title"> Memento Mori</h1>
+	<script> scrollDown() </script>
+	<h1 class="title"><a href="{{ .Site.BaseURL }}/page/mementomori1.html">Memento Mori</a></h1>
 
 	<p>
 @@@@@@@  @@@@@@@   @@@  @@@  @@@       @@@ @@@  
