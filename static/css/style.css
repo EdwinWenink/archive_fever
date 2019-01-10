@@ -20,6 +20,13 @@ header,header.a{
 	font-weight: bold;
 }
 
+.footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-color: black;
+	padding-top: 12px;
+}
+
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
 
 .post-comments {
