@@ -300,13 +300,15 @@ a:active {
 }
 
 a:hover {
-	background: #F3F4F4;
-	-moz-transition-property: background;
-	-webkit-transition-property: background;
-	transition-property: background;
-	-moz-transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
-	transition-duration: 0.2s;
+	/*background: #F3F4F4;*/
+	color: #0366d6!important;
+	color: white!important;
+	-moz-transition-property: color;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-moz-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 p a {
