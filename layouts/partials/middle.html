@@ -11,6 +11,7 @@
 	</div>
 
     <h2>{{ title .Data.Term  }} ENGRAMS </h2>
+	<div class="preview">
     {{ range first 10 .Pages }}
     {{ if eq .Type "posts"}}
         <p>
@@ -20,9 +21,10 @@
     {{ end }}
     {{ end }}
 	<p> See <a href="{{ .Site.BaseURL }}/archives"> archives </a> for more ... </p>
+	</div>
 
 	<h2> Tag roulette </h2>
-
+	<div class="tags">
 	{{ range .Site.Pages }} 
 	{{ if eq .Type "posts"}}
 		{{ range .Params.tags }}
@@ -31,5 +33,6 @@
 		{{end}}
 	{{ end }}
 	{{ end }}
+	</div>
 
 </div>
