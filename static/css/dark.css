@@ -1,0 +1,100 @@
+html {
+	background: black;
+	color: grey;
+}
+
+h1, h2 {
+	text-decoration: overline;
+	text-decoration-color: red;
+}
+
+h2 a {
+	color: grey!important;
+	
+}
+
+h3 {
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+
+ul {
+	list-style-type: '+ ';
+}
+
+a {
+	color: red!important;
+}
+
+
+h1 aside {
+	text-decoration: none!important;
+	text-decoration-color: grey;
+	text-decoration-style: none;
+}
+
+aside a {
+	line-height: 2.5em;
+}
+
+code {
+	background-color: red;
+	color: black;
+}
+
+blockquote {
+	background-color: black;
+	border-bottom: 1px;
+	border-bottom-color: red;
+	color: lightblue;
+}
+
+header a {
+	color: grey!important;
+}
+
+.hljs {
+	background-color: lightgray!important;
+}
+
+.preview a {
+	color: grey!important;
+}
+
+.tags a {
+	color: grey!important;
+}
+
+aside {
+	color: red;
+}
+
+.footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-color: red;
+	padding-top: 12px;
+}
+
+.footer a {
+	color: grey!important;
+}
+
+.post-comment, .post-comment-reply {
+	background: rgba(238, 238, 238, 1);
+	background: black;
+	color: grey;
+	border-style: solid!important;
+	border-width: 1px;
+	border: red;
+}
+
+.btn {
+	background-color: red;
+	border: 0px;
+}
+
+a:hover {
+	color: red!important;
+	background: black;
+}
