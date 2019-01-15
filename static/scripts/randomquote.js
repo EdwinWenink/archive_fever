@@ -48,6 +48,7 @@
 		quotes[45]= "&quotCuriosity is insubordination in its purest form&quot - Vladimir Nabokov";
 		quotes[46]= "&quotThe more we love our friends, the less we flatter them; it is by excusing nothing that pure love shows itself&quot - Moliere";
 		quotes[47]= "&quotWhen it comes to metaphysics, a little bit of Platonism is like a little bit of pregnancy. The hymen is gone, the undecidability dissolved&quot - Thomas Sheehan";
+		quotes[48]= "&quotMany people claim coffee inspires them; but as everybody likewise knows, coffee only makes boring people more boring&quot - Honoré de Balzac";
   
 		/*
 		quotes[x]= "&quot &quot";
