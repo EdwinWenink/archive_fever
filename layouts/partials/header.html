@@ -31,6 +31,8 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script async src="https://www.google.com/recaptcha/api.js"></script>
+<script src="{{ .Site.BaseURL }}scripts/changetheme.js"></script>
+<script>set_style_from_cookie()</script>
 </head>
 
 <body>
@@ -50,7 +52,7 @@
 
 	<!-- Button to toggle dark theme -->
 	<label class="switch" style="float: right;">
-		<input type="checkbox">
+		<input type="checkbox" onclick="switch_style();" name="theme" id="Dark theme">
 		<span class="slider"></span>
 	</label>
 </header>
