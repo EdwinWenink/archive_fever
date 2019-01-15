@@ -1,5 +1,5 @@
 var style_cookie_name = "style";
-var style_domain = "localhost";
+var style_domain = "www.edwinwenink.xyz";
 var count = 0;
 
 function switch_style ()
@@ -15,13 +15,11 @@ function switch_style ()
         link_tag[i].disabled = false ;
 		count = count + 1;
 		set_cookie( style_cookie_name, "Dark theme", style_domain );
-		console.log("cookie set")
       }
 	  else {
 		link_tag[i].disabled = true;
 		count = count + 1;
 		set_cookie( style_cookie_name, "unset", style_domain );
-		console.log("cookie unset")
 	  }
     }
   }
