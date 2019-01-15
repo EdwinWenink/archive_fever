@@ -1,34 +1,10 @@
-<head>
-	<title> Web Paleontology </title>
-
-<style>
-	html {
-		background: black;
-		color: grey;
-	}
-	
-	h1, h2 {
-		text-decoration: overline;
-		text-decoration-color: red;
-	}
-
-	ul {
-		list-style-type: georgian;
-		list-style-type: cjk-ideographic;
-		list-style-type: '+ ';
-		list-style-type: kannada;
-	}
-	
-	a {
-		color: red;
-	}
-
-</style>
-</head>
-
+---
+title: Web Paleontology
+style: etc
+---
 <h1><u> Web Paleontology &#8623  An Ode to the Hyperlink </u></h1>
 
-<p><q> UX covers holes in Moore's Law; when computers are still bigger than expected, it can help to shrink them in your head. </q> - Olia Lialina <br></p>
+<p><q>UX covers holes in Moore's Law; when computers are still bigger than expected, it can help to shrink them in your head.</q> - Olia Lialina <br></p>
 
 <p>
 But these web pages blow up in your head.

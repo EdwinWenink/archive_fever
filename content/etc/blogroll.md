@@ -3,18 +3,28 @@ title: Blogroll
 type: etc
 ---
 
-# Philosophy
+# Blogroll
 
-- Boris
-- Martijn?
-- die ene filosofie blog
+This is a page where I store all kinds of links.<br>
+Intended to be permanently under construction.
 
-# AI / Programming 
+## Philosophy
 
-- https://callingbullshit.org/index.html
+- [De Klos](https://deklos.wordpress.com/): blog of my friend Boris on the challenges of the Antrophocene
+- [Conscious Entities](www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
+
+## AI / Programming 
+
+- [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 
 
-# Miscellaneous
+## Miscellaneous
 
-- Joran geitjes
-- https://urbigenous.net/library/
+- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
+
+## Random
+
+Not to be confused with miscellaneous.
+These are *really quite random*.
+
+- [Q: What is the connection between goats and Justin Bieber?](https://www.geitjesenbieber.xyz) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
