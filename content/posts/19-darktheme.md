@@ -1,6 +1,6 @@
 ---
 author: "Edwin Wenink"
-title: "Website Update: Dark Theme and Etc section"
+title: "Website Update: Dark Theme and Etc. section"
 date: 2019-01-16
 draft: false
 tags: [Website, Theme, Etc]
