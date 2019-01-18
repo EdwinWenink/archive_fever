@@ -1,0 +1,12 @@
+_id: 2331bfa0-1b4f-11e9-8664-319c2e140879
+_parent: 19-darktheme
+name: Edwin (aka Eddie)
+reply_to: 4a3aba90-1b2a-11e9-8664-319c2e140879
+body: >-
+  I'm aware of that but currently do not have time to fix it. The reason is that
+  I never bothered to write css for the style of this comment box, so it uses
+  whatever theme you have in your browser. In my case that is actually a dark
+  color, so I did not notice this issue immediately, but for most people that is
+  a *very white* text box, which indeed is ugly for the dark theme. I will fix
+  it when I have time, but thanks for the feedback! Always appreciated.
+date: 1547836232
