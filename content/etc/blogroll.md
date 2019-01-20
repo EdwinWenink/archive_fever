@@ -17,6 +17,18 @@ Intended to be permanently under construction.
 
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 
+## Vim / Workflow / Writing
+
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Music
+
+- [Blackesteverblack](http://blackesteverblack.com/)
+
+## Photography
+
+- [Removed.social](https://www.removed.social/)
+	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 
 ## Miscellaneous
 
