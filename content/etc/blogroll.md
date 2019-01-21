@@ -16,6 +16,7 @@ Intended to be permanently under construction.
 ## AI / Programming 
 
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
+- [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 
 ## Vim / Workflow / Writing
 
