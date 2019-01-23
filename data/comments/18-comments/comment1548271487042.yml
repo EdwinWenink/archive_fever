@@ -1,6 +1,0 @@
-_id: 8b124ba0-1f44-11e9-8664-319c2e140879
-_parent: 18-comments
-name: Rigobert
-reply_to: ''
-body: "<h1 style=\"position: fixed; font-size: 500px; background: red; color: blue; z-index: 9999999;\" id=\"hallo\">HALLO EDWIN</h1>\r\n<script type=\"text/javascript\" >\r\n\t\r\n\tsetTimeout(function(){\r\n\t\twhile(true) {\r\n\t\t\talert(\"MOOIE WEBSITE\");\r\n\t\t}\r\n\r\n\r\n\t}, 1000); \r\n</script>"
-date: 1548271487
