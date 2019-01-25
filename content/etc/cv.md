@@ -33,7 +33,7 @@ For an extensive overview of university courses I followed, see [here]({{<baseur
 
 ||
 |-----------------------------------|-----------------------------------|
-| 2016-present                      | Radboud University Nijmegen: **Bachelor Artificial Intelligence**. *Propedeutic year graduated cum laude, 8.4 avg.*	       |
+| 2016-present                      | Radboud University Nijmegen: **Bachelor Artificial Intelligence**. Propaedeutic year graduated *cum laude*, 8.4 avg.       |
 | 2014-present                      | Radboud University Nijmegen: **Research Master Philosophy**. Specialization: Metaphysics and Epistemology.
 |									| Thesis title: "The Sending of the Destiny of Being in Derrida, Heidegger and Agamben: *Explorations of Postal   Ontology*". Supervisor: prof. dr. Gert-Jan van der Heiden. Current average grade: 8,6.|
 | 2012-2014                         | Radboud University Nijmegen: **Bachelor Philosophy**, *Cum laude*, average grade: 8,7	   |

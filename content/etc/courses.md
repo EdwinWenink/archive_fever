@@ -5,7 +5,7 @@ style: etc
 
 <h1><u> Course Overview Philosophy Bachelor </u></h1>
 
-<h3>Propedeutic Year | Introductory courses... </h3>
+<h3>Propaedeutic Year | Introductory courses... </h3>
 <p>
 ... to social and political philosophy, epistemology, philosophy of science, metaphysics, logic, rhetorics, philosophy of cognition, philosophical ethics, philosophy of language, and courses on the history of both antique, medieval, modern and contemporary philosophy. 
 </p>
@@ -59,7 +59,7 @@ I am currently also working on a PhD-proposal
 
 <h1><u>Course Overview Bachelor Artifical Intelligence</u></h1>
 
-<h3><b>Propedeutic Year</b> | courses on ... </h3>
+<h3><b>Propaedeutic Year</b> | courses on ... </h3>
 <ul>
 	<li> Mathematics (basic calculus and probability theory)
 	<li> Frequentist Statistics
