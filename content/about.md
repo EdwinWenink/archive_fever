@@ -11,8 +11,8 @@ type: about
 </head>
 
 This is the website of Edwin Wenink, a student of philosophy and artificial intelligence. 
-I wrote this static website (<a href="https://github.com/EdwinWenink/personal_website">source</a>) not because I'm into writing websites, but because I like to do things myself in general for the learning experience.
-I live in Nijmegen, the Netherlands.
+I wrote this static website (<a href="https://github.com/EdwinWenink/personal_website">source</a>) not because I'm into writing websites, but because I like to do things myself for the learning experience.
+I live in Nijmegen, the Netherlands. Click [here]({{<baseurl>}}etc/cv) for a very brief C.V.
 
 I intend to use my blog as a mnemonic device.
 Over the years I have occupied myself with studying such [diverse topics]({{<baseurl>}}etc/courses), only to realize that I can barely recollect half of it.
