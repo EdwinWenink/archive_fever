@@ -3,7 +3,10 @@ title: Course Overview
 style: etc
 ---
 
+
 <h1><u> Course Overview Philosophy Bachelor </u></h1>
+
+Last updated: January 2019.
 
 <h3>Propaedeutic Year | Introductory courses... </h3>
 <p>
@@ -75,7 +78,7 @@ I am currently also working on a PhD-proposal
 	<li> Functional Programming
 </ul>
 
-<h3><b>Bachelor</b> | courses on... </h3>
+<h3><b>Bachelor</b> | major courses on... </h3>
 <ul>
 	<li> Bayesian Statistics
 	<li> Data Mining
@@ -86,6 +89,15 @@ I am currently also working on a PhD-proposal
 	<li> Cognitive Robotics
 	<li> Search- and Planning algorithms, Bayesian Networks, Machine Learning
 	<li> Academic Skills for quantative research
+	<li> Professional Skills (application of science and pitch training) 
+	<li> Brain-computer interfacing (BCI)
+	<li> Modern Software Development Techniques (including semester software project with Agile/Scrum)
+	<li> Computational and Formal Modeling
+	<li> Neurophysiology of Cognition and Behavior
 </ul>
 
-<h3><b>IN PROGRESS... UPDATE REQUIRED<b></h3>
+<h3>Bachelor | Minor courses on...</h3>
+<ul>
+	<li> Computer security
+</ul>
+
