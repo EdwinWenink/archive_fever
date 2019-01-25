@@ -11,12 +11,25 @@ Intended to be permanently under construction.
 ## Philosophy
 
 - [De Klos](https://deklos.wordpress.com/): blog of my friend Boris on the challenges of the Antrophocene
-- [Conscious Entities](www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
+- [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
 
 ## AI / Programming 
 
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
+- [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 
+## Vim / Workflow / Writing
+
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Music
+
+- [Blackesteverblack](http://blackesteverblack.com/)
+
+## Photography
+
+- [Removed.social](https://www.removed.social/)
+	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 
 ## Miscellaneous
 
