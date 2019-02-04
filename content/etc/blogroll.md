@@ -17,6 +17,7 @@ Intended to be permanently under construction.
 
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 - [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
+- [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 
 ## Vim / Workflow / Writing
 
