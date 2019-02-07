@@ -21,9 +21,9 @@ Security relates to the regulation of access to some system.
 In a digital context these would be computer systems, from the servers of a secret agency to the personal computer of your grandma, if she has one.
 This is not the same as privacy, which can mean many things but in general essentially relates to persons or individuals. So a first basic distinction perhaps is that digital security pertains to various aspects of a communication channel itself, whereas privacy relates to the individuals involved in this communicative process, mediated by some technology.
 
-Nevertheless security is a relevant topic for privacy. For a significant part, the security of communication between persons is a preconditions for guaranteeing privacy. 
+Nevertheless security is a relevant topic for privacy. For a significant part, the security of communication between persons is a precondition for guaranteeing privacy. 
 But it surely is not a sufficient condition. 
-For example, with good cryptography one can make sure that third parties do not read the content of your communications. But the very *fact* of your communication may contain information that intrudes your privacy, e.g. it contains information about who you know, or about your location (e.g. where you work or live); which is all information that you perhaps did not intend to share and which might be very sensitive.
+For example, with good cryptography one can make sure that third parties do not read the content of your communications. But the very *fact* of your communication may contain information that intrudes your privacy, e.g. it contains information about who you know, or about your location (e.g. where you work or live); which is information that you perhaps did not intend to share and which might be very sensitive.
 In that sense, cryptography, or computer security in general, solves problems only by moving them to another domain.
 
 In some discussions security and privacy seem to exclude each other.
@@ -43,11 +43,11 @@ The notion of such an "absolute" security is meaningless, as it arguably require
 However, the point of securing real systems is not to block access as such, but to *regulate* access to whatever assets or capabilities that system has.
 That is, it needs to *allow* access, but only to the right people.
 
-So the concept of security only makes sense against against the background of a potential attacker.
+So the concept of security only makes sense against against the backdrop of a potential attacker.
 But on top of that, whether something can be called secure depends on the context of the system, its purpose and the needs of its users. 
 The security goals of various systems might differ. 
-In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information your blood type in the medical system, i.e. its *integrity* has been breached, with potential lethal consequences.
-But to for example reliably transfer money using online banking, confidentiality is less of an issue than the *authenticity* of the sender, bank, and recipient. E.g. when you transfer money to the bank you want to be sure you do not in fact transfer money to a criminal "man in the middle". 
+In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information on your blood type in the medical system, i.e. its *integrity* has been breached, with potential lethal consequences.
+In another example, to reliably transfer money using online banking, confidentiality is less of an issue than the *authenticity* of the sender, bank, and recipient. E.g. when you transfer money to the bank you want to be sure you do not in fact transfer money to a criminal "man in the middle". 
 More easily overlooked is the principle of *non-repudiation*: after you have transferred your money, you cannot later deny you did so.
 
 In other words, in different contexts "security" means different things. 
@@ -57,10 +57,10 @@ There are various security goals: confidentiality, integrity, authenticity, non-
 
 But even if the communication is secure, what information do you give to these systems? 
 How are they stored, and how are they used? Do you keep any control over this?
-Imagine the aforementioned hospital leaking your medical information to your health insurance: you can bet your fees to go up. But in the case of the hospital you at least know why it was important to share your information (you might die otherwise). Now imagine a fitness app doing the same after storing information about your health and condition (e.g. hearth rates during running, or weight etc.). The people installing that fitness app, when accepting the "terms and conditions" that they quite reasonably did not read, might potentially sell their data for such usage without being aware of it.
+Imagine the aforementioned hospital leaking your medical information to your health insurance: you can bet your fees to go up. But in the case of the hospital you at least know why it was important to share your information (you might die otherwise). Now imagine a fitness app doing the same after storing information about your health and condition (e.g. hearth rates during running, or weight etc.). The people installing that fitness app, after accepting the "terms and conditions" that they quite reasonably did not read, might potentially sell their data for such usage without being aware of it.
 
 Privacy as a concept seems tightly entwined with the idea of an individual. 
-The above example concerns sensitive *information* about individuals, and indeed most discussions about privacy nowadays concern the use of personal data by various companies, and the *control* individuals keep over that use. Privacy in these contemporary discussions thus means something like "control over your data", and is a unique issue that occurs in the digital era. It is interesting that most people would probably not bother to hide their shopping cart when doing groceries, whereas knowledge of your online shopping behavior more quickly becomes a privacy issue. 
+The above example concerns sensitive *information about individuals*, and indeed most discussions about privacy nowadays concern the use of personal data by various companies and the *control* individuals keep over that use. Privacy in these contemporary discussions thus means something like "control over your data", and is a unique issue that occurs in the digital era. It is interesting that most people would probably not bother to hide their shopping cart when doing groceries, whereas knowledge of your online shopping behavior more quickly becomes a privacy issue. 
 Privacy can thus mean something different online and offline.
 
 Perhaps that also has something to do with a perceived sense of *anonymity* you have when sitting at home browsing the internet. In the domestic sphere of the house, you act from within a relatively protected and secluded situation, which suggests privacy in the "old fashioned" sense of "being left alone" (as defined by Warren and Brandeis already in 1890). 
