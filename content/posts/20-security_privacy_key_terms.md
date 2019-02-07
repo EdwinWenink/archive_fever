@@ -2,24 +2,24 @@
 author: "Edwin Wenink"
 title: "Security and privacy: some key concepts"
 date: 2019-02-07
-draft: true
+draft: false
 tags: [Security, Privacy, Identity]
 ---
 
-Discussions about privacy and security-issues are in the news daily; related to some scandal, data leaks, new regulations (GDPR), increased surveillance in response to terrorism, etc. 
+Discussions about privacy and security-issues are in the news daily, related to some scandal, data leaks, new regulations (GDPR), increased surveillance in response to terrorism, etc. 
 But what do these concepts actually mean, and how do they relate to each other? 
-Everyone probably has some intuitive notion of what these concepts mean.
-But on a closer look, very little is clear, and discussions about privacy and security should begin with: what privacy, what security?
+Everyone probably has some intuitive notion of these concepts, but on a closer look, very little is clear.
+Discussions about privacy and security should begin with: *what* privacy, *what* security?
 These questions, despite their perhaps "dry" conceptual nature, are important for anyone interested in what is at stake in privacy- and security-related discussions going on now. 
-In fact it is also important for those that do not share the interest, because the results of these discussions will affect them nevertheless.
-The goal of this blog post is to provide some pointers, distinctions, and questions; not answers. I have only relatively recently begun to engage with these topics myself and write this post to test and develop my current understanding that is very much in progress, perhaps even infantile.
+In fact it is also important for those that do not share this interest, because the results of these discussions will affect them nevertheless.
+The goal of this blog post is to provide some pointers, distinctions, and questions; not answers. I have only relatively recently begun to engage with these topics myself and by writing this post I hope to test and develop my current understanding of the topic, which is very much in progress, perhaps even infantile.
 
 ## Security and privacy
 
 A first distinction need to be made between "security" and "privacy".
 Security relates to the regulation of access to some system. 
 In a digital context these would be computer systems, from the servers of a secret agency to the personal computer of your grandma, if she has one.
-This is not the same as privacy, which can mean many things but in general essentially relates to persons or individuals. So a first basic distinction perhaps is that digital security pertains to various aspects of a communication channel itself, whereas privacy relates to the individuals between which this communicative process, mediated by some technology, occurs.
+This is not the same as privacy, which can mean many things but in general essentially relates to persons or individuals. So a first basic distinction perhaps is that digital security pertains to various aspects of a communication channel itself, whereas privacy relates to the individuals between which this communicative process occurs, mediated by some technology.
 
 But security is a relevant topic for privacy. For a significant part, the security of communication between persons is a preconditions for guaranteeing privacy. 
 But it surely is not a sufficient condition. 
@@ -40,13 +40,13 @@ But in reality, security is a fluid concept that should be understood relative t
 At the border case, absolute security requires resistance against an attacker with infinite resources. 
 The notion of such an "absolute" security is meaningless, as it arguably requires a complete blockage of access. 
 However, the point of securing real systems is not to block access as such, but to *regulate* access to whatever assets or capabilities that system has.
-That is, it needs to *allow* access, to the right people.
+That is, it needs to *allow* access, but only to the right people.
 
 So the concept of security only makes sense against against the background of a potential attacker.
 But on top of that, whether something can be called secure depends on the context of the system, its purpose and the needs of its users. 
 The security goals of various systems might differ. 
-In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information your blood type in the medical system, i.e. its *integrity* has been breached. 
-But to reliably transfer money using online banking, confidentiality is less of an issue than the *authenticity* of the sender, bank, and recipient. E.g. when you transfer money to the bank you want to be sure you do not in fact transfer money to a criminal "man in the middle". 
+In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information your blood type in the medical system, i.e. its *integrity* has been breached, with potential lethal consequences.
+But to for example reliably transfer money using online banking, confidentiality is less of an issue than the *authenticity* of the sender, bank, and recipient. E.g. when you transfer money to the bank you want to be sure you do not in fact transfer money to a criminal "man in the middle". 
 More easily overlooked is the principle of *non-repudiation*: after you have transferred your money, you cannot later deny you did so.
 
 In other words, in different contexts "security" means different things. 
@@ -62,12 +62,16 @@ Privacy as a concept seems tightly entwined with the idea of an individual.
 The above example concerns sensitive *information* about individuals, and indeed most discussions about privacy nowadays concern the use of personal data by various companies, and the *control* individuals keep over that use. Privacy in these contemporary discussions thus means something like "control over your data", and is a unique issue that occurs in the digital era. It is interesting that most people would probably not bother to hide their shopping cart when doing groceries, whereas knowledge of your online shopping behavior more quickly becomes a privacy issue. 
 Privacy can thus mean something different online and offline.
 
-Perhaps that also has something to do with a perceived sense of *anonymity* you have when sitting at home browsing the internet. In the domestic sphere of the house, you act from within a relatively protected and secluded situation, which suggests privacy in the "old fashioned" sense of "being left alone" (as defined by **X and X** already in 1890). 
+Perhaps that also has something to do with a perceived sense of *anonymity* you have when sitting at home browsing the internet. In the domestic sphere of the house, you act from within a relatively protected and secluded situation, which suggests privacy in the "old fashioned" sense of "being left alone" (as defined by Warren and Brandeis already in 1890). 
 
-This situation shows a clear incongruency between different conceptions of privacy: you are indeed left alone, but simultaneously you are not in full control of your own personal data, and moreover this data is used to manipulate you without you realizing it, e.g. in the results you see for internet searches (cf. the "filter bubble"), or in targeted advertising. You do not only lose control over the information you expose to the internet, but also lose control over what information is shown to you. Perhaps the net is neutral, but the information you "find" (or: is presented to you), certainly is not. 
+This situation shows a clear incongruency between different conceptions of privacy: you are indeed left alone, but simultaneously you are not in full control of your own personal data, and moreover this data is used to manipulate you without you realizing it, for example in the results you see for internet searches (cf. the "filter bubble"), or in targeted advertising. You do not only lose control over the information you expose to the internet, but also lose control over what information is shown to you. Perhaps the net is neutral, but the information you "find" (or: is presented to you), certainly is not. 
 The famous meme "on the internet, no one knows you're a dog", was valid years back, but over time changed into the description of a comfortable illusion.
 
-![Strip by Peter Steiner](../../static/images/20-blog/internet_dog.jpg)
+<figure>
+   <img align="center" style="width:100%" src="/images/20-blog/internet_dog.jpg" />
+   <figcaption> Strip by Peter Steiner, 1993.
+</figure>
+<br>
 
 It depends on your definition of privacy whether it is violated or not in the scenario I just sketched.
 But most interestingly, what it shows is that the digital era effectively initiated a transformation in the concept of privacy that is occurring as we speak.
@@ -76,11 +80,10 @@ A digital-savvy portion of the population is constantly sounding alarms left and
 ## On the way to privacy...
 
 These initial considerations barely scratch the surface.
-The concept of identity is equally complicated when it comes to the internet.
-I am curious to think more about privacy in the coming months in all its nuance and complications. For example, what is the relationship between privacy and intimacy both in the "analogue" and digital domain? What are the links between surrounding concepts, such as secrecy and confidentiality, which are all partly overlapping but not the same?
+I want to think more about privacy in the coming months in all its nuance and complications. For example, what is the relationship between privacy and intimacy both in the "analogue" and digital domain? What are the links between related concepts such as secrecy and confidentiality, which are all partly overlapping but not the same?
 
 A philosophical discussion that takes a step back before being activistic is relevant, because how can we really guarantee privacy in the applications we implement, or protect it by law, without having a clear view of what it is? Is it even possible?
-That is not a plea for passivity, as it is unreasonable to think of anything worthwhile that it can be captured in a few clear concepts. 
-Neither does it invalidate raising your voice before being completely informed, because a certain degree of "conceptual entropy" (trying out a new term here), is unavoidable in a debate that is very much alive and in progress.
-Instead, I would say that conceptual reflections can contribute to *informed* action, which in my opinion always includes expressions of doubt rather than offering a false certainty.
-A bit of reflection is needed to be a successful user of the internet, consciously shaping our pluralistic digital identities in all the systems we interact with, *rather then becoming its victims*.
+That is not a plea for passivity, as it is unreasonable to expect of anything worthwhile that it can be captured in a few clear concepts. 
+Neither does it invalidate raising your voice before being completely informed, because a certain degree of "conceptual entropy" (trying out a new term here) is unavoidable in a debate that is very much alive and in progress.
+Instead, I would say that conceptual reflections can contribute to *informed* action, which in my opinion always includes expressions of doubt rather than offering false certainties.
+A bit of reflection is needed to be a successful user of the internet, consciously shaping our pluralistic digital identities in all the systems we interact with, *rather then becoming its victim*.
