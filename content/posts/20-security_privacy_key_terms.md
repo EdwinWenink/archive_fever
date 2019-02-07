@@ -6,11 +6,11 @@ draft: false
 tags: [Security, Privacy, Identity]
 ---
 
-Discussions about privacy and security-issues are in the news daily, related to some scandal, data leaks, new regulations (GDPR), increased surveillance in response to terrorism, etc. 
-But what do these concepts actually mean, and how do they relate to each other? 
-Everyone probably has some intuitive notion of these concepts, but on a closer look, very little is clear.
+Discussions about privacy- and security issues are in the news daily, related to some scandal, data leaks, new regulations (GDPR), increased surveillance in response to terrorism, etc. 
+But what do these concepts of privacy and security actually mean, and how do they relate to each other? 
+Everyone probably has some intuitive notion of these concepts, but on a closer look, they are more complex than one would expect.
 Discussions about privacy and security should begin with: *what* privacy, *what* security?
-These questions, despite their perhaps "dry" conceptual nature, are important for anyone interested in what is at stake in privacy- and security-related discussions going on now. 
+These questions, despite their perhaps "dry" conceptual nature, are important for anyone interested in what is at stake in the privacy- and security-related discussions going on right now. 
 In fact it is also important for those that do not share this interest, because the results of these discussions will affect them nevertheless.
 The goal of this blog post is to provide some pointers, distinctions, and questions; not answers. I have only relatively recently begun to engage with these topics myself and by writing this post I hope to test and develop my current understanding of the topic, which is very much in progress, perhaps even infantile.
 
@@ -19,23 +19,24 @@ The goal of this blog post is to provide some pointers, distinctions, and questi
 A first distinction need to be made between "security" and "privacy".
 Security relates to the regulation of access to some system. 
 In a digital context these would be computer systems, from the servers of a secret agency to the personal computer of your grandma, if she has one.
-This is not the same as privacy, which can mean many things but in general essentially relates to persons or individuals. So a first basic distinction perhaps is that digital security pertains to various aspects of a communication channel itself, whereas privacy relates to the individuals between which this communicative process occurs, mediated by some technology.
+This is not the same as privacy, which can mean many things but in general essentially relates to persons or individuals. So a first basic distinction perhaps is that digital security pertains to various aspects of a communication channel itself, whereas privacy relates to the individuals involved in this communicative process, mediated by some technology.
 
-But security is a relevant topic for privacy. For a significant part, the security of communication between persons is a preconditions for guaranteeing privacy. 
+Nevertheless security is a relevant topic for privacy. For a significant part, the security of communication between persons is a preconditions for guaranteeing privacy. 
 But it surely is not a sufficient condition. 
-For example, with good cryptography one can make sure that third parties do not read the content of your communications. But the very *fact* of your communication may contain information that intrudes your privacy, e.g. it contains information about who you know, about your location (e.g. where you work or live); which is all information that you perhaps did not intend to share and might be very sensitive.
+For example, with good cryptography one can make sure that third parties do not read the content of your communications. But the very *fact* of your communication may contain information that intrudes your privacy, e.g. it contains information about who you know, or about your location (e.g. where you work or live); which is all information that you perhaps did not intend to share and which might be very sensitive.
 In that sense, cryptography, or computer security in general, solves problems only by moving them to another domain.
 
-Security and privacy can also be seen to exclude each other.
+In some discussions security and privacy seem to exclude each other.
 Acts of terrorism never fail to spark debate on whether to give surveillance agencies more power to snoop on civilians, i.e. reduce their privacy, under the banner of increasing security against people with malicious intent. 
 In that sense, the question becomes: security **or** privacy?
+But what we need is security **and** privacy.
 
 In the following I want to map out some useful concepts related to security and privacy that I encountered so far when reading on this topic.
 
 
 ## Security
 
-Considered naively, computer security can be easily thought of as a monolith stating "here and no further".
+Considered naively, computer security can be easily thought of as some monolith stating "here and no further".
 But in reality, security is a fluid concept that should be understood relative to an attacker with a given amount of resources. 
 At the border case, absolute security requires resistance against an attacker with infinite resources. 
 The notion of such an "absolute" security is meaningless, as it arguably requires a complete blockage of access. 
