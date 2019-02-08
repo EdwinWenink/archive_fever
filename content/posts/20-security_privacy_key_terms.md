@@ -42,7 +42,7 @@ The notion of such an "absolute" security is meaningless, as it arguably require
 However, the point of securing real systems is not to block access as such, but to *regulate* access to whatever assets or capabilities that system has.
 That is, it needs to *allow* access, but only to the right people.
 
-So the concept of security only makes sense against against the backdrop of a potential attacker.
+So the concept of security only makes sense against the backdrop of a potential attacker.
 But on top of that, whether something can be called secure depends on the context of the system, its purpose and the needs of its users. 
 The security goals of various systems might differ. 
 In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information on your blood type in the medical system, i.e. its *integrity* has been breached, with potential lethal consequences.
