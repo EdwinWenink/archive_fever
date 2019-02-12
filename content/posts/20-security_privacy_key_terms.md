@@ -33,7 +33,6 @@ But what we need is security **and** privacy.
 
 In the following I want to map out some useful concepts related to security and privacy that I encountered so far when reading on this topic.
 
-
 ## Security
 
 Considered naively, computer security can be easily thought of as some monolith stating "here and no further".
@@ -43,7 +42,7 @@ The notion of such an "absolute" security is meaningless, as it arguably require
 However, the point of securing real systems is not to block access as such, but to *regulate* access to whatever assets or capabilities that system has.
 That is, it needs to *allow* access, but only to the right people.
 
-So the concept of security only makes sense against against the backdrop of a potential attacker.
+So the concept of security only makes sense against the backdrop of a potential attacker.
 But on top of that, whether something can be called secure depends on the context of the system, its purpose and the needs of its users. 
 The security goals of various systems might differ. 
 In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information on your blood type in the medical system, i.e. its *integrity* has been breached, with potential lethal consequences.
@@ -63,10 +62,12 @@ But now imagine a free fitness app doing the same after storing information abou
 So although that app would be "free" in the sense of gratis, it does come at a cost.
 
 Privacy as a concept seems tightly entwined with the idea of an individual. 
-The above example concerns sensitive *information about individuals*, and indeed most discussions about privacy nowadays concern the use of personal data by various companies and the *control* individuals keep over that use. Privacy in these contemporary discussions thus means something like "control over your data", and is a unique issue that occurs in the digital era. It is interesting that most people would probably not bother to hide their shopping cart when doing groceries, whereas knowledge of your online shopping behavior more quickly becomes a privacy issue. 
-Privacy can thus mean something different online and offline.
+The above example concerns sensitive *information about individuals*, and indeed most discussions about privacy nowadays concern the use of personal data by various companies and the *control* individuals keep over that use. 
+This sense of privacy can be traced back to Westin's definition of privacy in 1967 as "the claim of individuals [...] to determine for themselves when, how, and to what extent information about them is communicated to others."
+Privacy in these contemporary discussions thus means something like "control over your data", and is a unique issue that occurs in the digital era. It is interesting that most people would probably not bother to hide their shopping cart when doing groceries, whereas knowledge of your online shopping behavior more quickly becomes a privacy issue. 
+Privacy can thus mean something different online and offline. Simultaneously, the integration of digital devices into our lives increasingly blurs the line between online and offline, and also between public and private.
 
-Perhaps that also has something to do with a perceived sense of *anonymity* you have when sitting at home browsing the internet. In the domestic sphere of the house, you act from within a relatively protected and secluded situation, which suggests privacy in the "old fashioned" sense of "being left alone" (as defined by Warren and Brandeis already in 1890). 
+Perhaps this difference has something to do with a perceived sense of *anonymity* you have when sitting at home browsing the internet. In the domestic sphere of the house, you act from within a relatively protected and secluded situation, which suggests privacy in the "old fashioned" sense of "being left alone" (as defined by Warren and Brandeis already in 1890). 
 
 This situation shows a clear incongruency between different conceptions of privacy: you are indeed left alone, but simultaneously you are not in full control of your own personal data, and moreover this data is used to manipulate you without you realizing it, for example in the results you see for internet searches (cf. the "filter bubble"), or in targeted advertising. You do not only lose control over the information you expose to the internet, but also lose control over what information is shown to you. Perhaps the net is neutral, but the information you "find" (or: is presented to you), certainly is not. 
 The famous meme "on the internet, no one knows you're a dog", was valid years back, but over time changed into the description of a comfortable illusion.
@@ -84,9 +85,11 @@ A digital-savvy portion of the population is constantly sounding alarms left and
 ## On the way to privacy...
 
 These initial considerations barely scratch the surface.
-I want to think more about privacy in the coming months in all its nuance and complications. For example, what is the relationship between privacy and intimacy both in the "analogue" and digital domain? What are the links between related concepts such as secrecy and confidentiality, which are all partly overlapping but not the same?
+I want to think more about privacy in the coming months in all its nuance and complications. For example, what is the relationship between privacy and intimacy both in the "analogue" and digital domain? What are the links between related concepts such as secrecy or confidentiality, which are all partly overlapping but not the same? How does privacy relate to an individual's freedom? 
+It is also possible to develop perspectives that rely less on the individual, as I did here.
+How does privacy take shape in negotiations between individuals in communities, i.e. how is privacy also essentially a social process? And how can such a multi-faceted dynamic concept be adequately represented in law, which seems primarily concerned with regulating data processes?
 
-A philosophical discussion that takes a step back before being activistic is relevant, because how can we really guarantee privacy in the applications we implement, or protect it by law, without having a clear view of what it is? Is it even possible?
+A philosophical discussion that takes a step back before being activistic is relevant, because how can we really guarantee privacy in the applications we implement, or protect it by law, without having a clear view of what it is? 
 That is not a plea for passivity, as it is unreasonable to expect of anything worthwhile that it can be captured in a few clear concepts. 
 Neither does it invalidate raising your voice before being completely informed, because a certain degree of "conceptual entropy" (trying out a new term here) is unavoidable in a debate that is very much alive and in progress.
 Instead, I would say that conceptual reflections can contribute to *informed* action, which in my opinion always includes expressions of doubt rather than offering false certainties.
