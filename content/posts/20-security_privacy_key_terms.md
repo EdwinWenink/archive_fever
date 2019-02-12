@@ -57,7 +57,10 @@ There are various security goals: confidentiality, integrity, authenticity, non-
 
 But even if the communication is secure, what information do you give to these systems? 
 How are they stored, and how are they used? Do you keep any control over this?
-Imagine the aforementioned hospital leaking your medical information to your health insurance: you can bet your fees to go up. But in the case of the hospital you at least know why it was important to share your information (you might die otherwise). Now imagine a fitness app doing the same after storing information about your health and condition (e.g. hearth rates during running, or weight etc.). The people installing that fitness app, after accepting the "terms and conditions" that they quite reasonably did not read, might potentially sell their data for such usage without being aware of it.
+Imagine the aforementioned hospital leaking your medical information to your health insurance: you can bet your fees to go up. 
+A hospital doing so would be an extreme case.
+But now imagine a free fitness app doing the same after storing information about your health and condition (e.g. hearth rates during running, or weight etc.). The people installing that fitness app, after accepting the "terms and conditions" that they quite reasonably did not read, might potentially sell their data for such usage without being aware of it.
+So although that app would be "free" in the sense of gratis, it does come at a cost.
 
 Privacy as a concept seems tightly entwined with the idea of an individual. 
 The above example concerns sensitive *information about individuals*, and indeed most discussions about privacy nowadays concern the use of personal data by various companies and the *control* individuals keep over that use. Privacy in these contemporary discussions thus means something like "control over your data", and is a unique issue that occurs in the digital era. It is interesting that most people would probably not bother to hide their shopping cart when doing groceries, whereas knowledge of your online shopping behavior more quickly becomes a privacy issue. 
