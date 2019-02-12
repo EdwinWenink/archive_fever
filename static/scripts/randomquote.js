@@ -49,6 +49,7 @@
 		quotes[46]= "&quotThe more we love our friends, the less we flatter them; it is by excusing nothing that pure love shows itself&quot - Moliere";
 		quotes[47]= "&quotWhen it comes to metaphysics, a little bit of Platonism is like a little bit of pregnancy. The hymen is gone, the undecidability dissolved&quot - Thomas Sheehan";
 		quotes[48]= "&quotMany people claim coffee inspires them; but as everybody likewise knows, coffee only makes boring people more boring&quot - Honoré de Balzac";
+		quotes[49]="&quotA life spent entirely in public, in the presence of others, becomes, as we would say, shallow&quot- Hannah Arendt";
   
 		/*
 		quotes[x]= "&quot &quot";
