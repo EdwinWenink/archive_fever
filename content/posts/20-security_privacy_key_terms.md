@@ -44,13 +44,15 @@ That is, it needs to *allow* access, but only to the right people.
 
 So the concept of security only makes sense against the backdrop of a potential attacker.
 But on top of that, whether something can be called secure depends on the context of the system, its purpose and the needs of its users. 
-The security goals of various systems might differ. 
+The security goals of various systems might differ, and the way in which we call system A secure can be different from the way we call system B secure.
+Let's look at some examples of different security goals in different contexts.
 In order for critical systems in hospitals to be secure, their *availability* needs to be guaranteed at all times. If in that same hospital medical information is stored about you, its *confidentiality* is strictly required. Now imagine you need a blood transfusion, but someone changed the information on your blood type in the medical system, i.e. its *integrity* has been breached, with potential lethal consequences.
 In another example, to reliably transfer money using online banking, confidentiality is less of an issue than the *authenticity* of the sender, bank, and recipient. E.g. when you transfer money to the bank you want to be sure you do not in fact transfer money to a criminal "man in the middle". 
 More easily overlooked is the principle of *non-repudiation*: after you have transferred your money, you cannot later deny you did so.
 
-In other words, in different contexts "security" means different things. 
-There are various security goals: confidentiality, integrity, authenticity, non-repudiation, availability.
+You can think of many contexts where one security goal is absolutely required, whereas another may be less relevant.
+In other words, in different contexts "security" means different things, depending on the relative importance of the aforementioned security goals: confidentiality, integrity, authenticity, non-repudiation, availability.
+The goal of this section was merely to transmit the basic intuition that the concept of security is less univocal than it may seem, and provide some first differentiations.
 
 ## Privacy
 
@@ -74,7 +76,7 @@ The famous meme "on the internet, no one knows you're a dog", was valid years ba
 
 <figure>
    <img align="center" style="width:100%" src="/images/20-blog/internet_dog.jpg" />
-   <figcaption> Strip by Peter Steiner, 1993.
+   <figcaption> Comic by Peter Steiner, 1993.
 </figure>
 <br>
 
