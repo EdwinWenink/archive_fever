@@ -11,6 +11,7 @@ Intended to be permanently under construction.
 ## Philosophy
 
 - [De Klos](https://deklos.wordpress.com/): blog of my friend Boris on the challenges of the Antrophocene
+- [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
 - [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
 
 ## AI / Programming 
