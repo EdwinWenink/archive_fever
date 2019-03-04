@@ -27,14 +27,16 @@ Intended to be permanently under construction.
 
 - [Blackesteverblack](http://blackesteverblack.com/)
 
-## Photography
+## Art
 
 - [Removed.social](https://www.removed.social/)
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
+- [Uno Moralez GIF art](https://unomoralez.com)
 
 ## Miscellaneous
 
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
+- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
 
 ## Random
 
