@@ -51,6 +51,7 @@
 		quotes[48]= "&quotMany people claim coffee inspires them; but as everybody likewise knows, coffee only makes boring people more boring&quot - Honoré de Balzac";
 		quotes[49]="&quotA life spent entirely in public, in the presence of others, becomes, as we would say, shallow&quot- Hannah Arendt";
 		quotes[50]= "&quotAny man who was the same in both public and intimate life would be a monster. He would be without spontaneity in his private life and without responsibility in his public life&quot - Milan Kundera";
+		quotes[51]="&quotAll distances in time and space are shrinking. Yet the hasty setting aside of all distances brings no nearness; for nearness does not consist in a small amount of distance&quot - Martin Heidegger";
   
 		/*
 		quotes[x]= "&quot &quot";

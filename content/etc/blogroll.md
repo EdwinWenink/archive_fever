@@ -36,8 +36,10 @@ Intended to be permanently under construction.
 
 ## Miscellaneous
 
-- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 - ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
+- [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
+- [How to disagree](http://www.paulgraham.com/disagree.html)
+- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 
 ## Random
 
