@@ -20,6 +20,10 @@ Intended to be permanently under construction.
 - [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 
+## Technology (and society)
+
+- [Public-Interest Technology Resources](https://public-interest-tech.com/)
+
 ## Vim / Workflow / Writing
 
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
