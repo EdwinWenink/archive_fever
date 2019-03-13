@@ -5,13 +5,14 @@ date: 2019-03-13
 tags: ["big data","Google", "PageRank"]
 ---
 
-A few days ago (Djoerd Hiemstra)[https://djoerdhiemstra.com/] gave a guest lecture on estimating the size of big data problems, within the context of a Big Data course I am currently following. 
-As a preparation, we read the paper of Sergey Brin and Lawrence Page from 1998 (read it (here)[http://ilpubs.stanford.edu:8090/361/]) where they introduced the anatomy of their search engine called "Google".
+A few days ago [Djoerd Hiemstra](https://djoerdhiemstra.com/) gave a guest lecture on estimating the size of big data problems, within the context of a Big Data course I am currently following. 
+As a preparation, we read the paper of Sergey Brin and Lawrence Page from 1998 (read it [here](http://ilpubs.stanford.edu:8090/361/)) where they introduced the anatomy of their search engine called "Google".
 We did so in particular because it is interesting to compare their estimations on the size and scalability of Google with the colossus it has become today.
 
 However, at the end of his guest lecture he pointed out two "fun facts" that I'd like to quickly share here.
 
 1) The original paper on PageRank that fundamentally changed how the web looks today was rejected by the SIGIR 1998 conference.
+
 2) In Appendix A of the paper mentioned above the authors discuss the dangers of advertising for search machines.
 
 The first point is awkward and warrants a discussion of how valuable it is to be accepted at an academic conference.
