@@ -26,7 +26,6 @@ a {
 	color: red!important;
 }
 
-
 h1 aside {
 	text-decoration: none!important;
 	text-decoration-color: grey;
@@ -45,8 +44,7 @@ code {
 blockquote {
 	background-color: black;
 	border-bottom: 1px;
-	border-bottom-color: red;
-	color: lightblue;
+	border-left-color: red;
 }
 
 header a {
@@ -67,6 +65,14 @@ header a {
 
 aside {
 	color: red;
+}
+
+#portret_normal {
+	display: none;
+}
+
+#portret_dark {
+	display: inline;
 }
 
 .footer {
