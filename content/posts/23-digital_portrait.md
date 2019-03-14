@@ -13,7 +13,6 @@ While doing me a favour, Rits made sure that he enjoyed himself.
 <figure>
    <img align="right" style="width:25%" src="/images/23-blog/sketch.jpg" />
 </figure>
-<br>
 
 See right for a first proof of concept. After seeing this sketch, I had complete faith in the end result.
 
@@ -28,13 +27,13 @@ Here are some of the other variations Rits proposed before we settled on the fin
 
 <figure>
    <img align="left" style="width:50%" src="/images/23-blog/schnurrbart.jpg" />
-   <figcaption> Schnurrbart
+   <figcaption> Cross-eyed
 </figure>
 <br>
 
 
 <figure>
    <img align="right" style="width:50%" src="/images/23-blog/cross-eyed.jpg" />
-   <figcaption> Cross-eyed
+   <figcaption> Schnurrbart
 </figure>
 <br>
