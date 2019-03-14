@@ -1,9 +1,9 @@
 ---
 author: "Edwin Wenink"
-title: "Digital portrets"
+title: "Digital portraits"
 date: 2019-03-14
 draft: false
-tags: [portret, digital art]
+tags: [portrait, digital art]
 ---
 
 My friend [Rits](https://www.ritsjoosten.nl) did me a big favor my making some digital portraits of me.
