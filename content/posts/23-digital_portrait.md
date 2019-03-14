@@ -1,19 +1,18 @@
 ---
 author: "Edwin Wenink"
-title: "Digital portrets"
+title: "Digital portraits"
 date: 2019-03-14
 draft: false
-tags: [portret, digital art]
+tags: [portrait, digital art]
 ---
 
-My friend [Rits](https://www.ritsjoosten.nl) did me a big favor my making some digital portraits of me.
-His website is currently in quarantine because he was too late with re-registering his domain name, but if you read this post after sunday 17 march you can check out his web site.
+My friend [Rits](https://www.ritsjoosten.nl) did me a big favor by making some digital portraits of me.
+His website is currently in quarantine because he was too late with re-registering his domain name, but if you read this post after sunday 17 March you can check out his web site.
 While doing me a favour, Rits made sure that he enjoyed himself.
 
 <figure>
    <img align="right" style="width:25%" src="/images/23-blog/sketch.jpg" />
 </figure>
-<br>
 
 See right for a first proof of concept. After seeing this sketch, I had complete faith in the end result.
 
@@ -28,13 +27,13 @@ Here are some of the other variations Rits proposed before we settled on the fin
 
 <figure>
    <img align="left" style="width:50%" src="/images/23-blog/schnurrbart.jpg" />
-   <figcaption> Schnurrbart
+   <figcaption> Cross-eyed
 </figure>
 <br>
 
 
 <figure>
    <img align="right" style="width:50%" src="/images/23-blog/cross-eyed.jpg" />
-   <figcaption> Cross-eyed
+   <figcaption> Schnurrbart
 </figure>
 <br>
