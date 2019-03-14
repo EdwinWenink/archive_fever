@@ -41,7 +41,7 @@
 		quotes[38]= "&quotGod did not die; he was transformed into money&quot - Giorgio Agamben";
 		quotes[39]= "&quotA thinker sees his own actions as experiments and questions-as attempts to find out something. Success and failure are for him answers above all&quot - Friedrich Nietzsche";
 		quotes[40]= "&quotInsanity in individuals is something rare - but in groups, parties, nations and epochs, it is the rule&quot - Friedrich Nietzsche";
-		quotes[41]= "&quotInspiration does exist, but it must find you working - Pablo Picasso&quot";
+		quotes[41]= "&quotInspiration does exist, but it must find you working&quot - Pablo Picasso";
 		quotes[42]= "&quotThe power of accurate observation is often called cynicism by those who have not got it&quot - George Bernard Shaw";
 		quotes[43]= "&quotThe trouble with the world is that the stupid are cocksure and the intelligent full of doubt&quot - Bertrand Russell";
 		quotes[44]= "&quotThe man who fears suffering is already suffering from what he fears&quot - Michel de Montaigne";
