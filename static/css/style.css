@@ -404,3 +404,18 @@ h2 {
 	border-bottom-style: solid;
 	border-width: 1px;
 }
+
+.author-portret {
+	padding: 10px;
+	max-width: 150px;
+	display: inline;
+	float: right;
+	text-align: center;
+	font-weight: 400;
+	font-style: italic;
+	color: #666665;
+	outline: 0;
+	z-index: 300;
+	font-size: 70%;
+
+}
