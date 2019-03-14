@@ -6,8 +6,8 @@ draft: false
 tags: [portrait, digital art]
 ---
 
-My friend [Rits](https://www.ritsjoosten.nl) did me a big favor my making some digital portraits of me.
-His website is currently in quarantine because he was too late with re-registering his domain name, but if you read this post after sunday 17 march you can check out his web site.
+My friend [Rits](https://www.ritsjoosten.nl) did me a big favor by making some digital portraits of me.
+His website is currently in quarantine because he was too late with re-registering his domain name, but if you read this post after sunday 17 March you can check out his web site.
 While doing me a favour, Rits made sure that he enjoyed himself.
 
 <figure>
