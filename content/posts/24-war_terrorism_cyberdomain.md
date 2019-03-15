@@ -1,6 +1,6 @@
 ---
 author: "Edwin Wenink"
-title: "War and terrorism in the cyber domain"
+title: "Warlike acts in the cyber domain"
 date: 2019-03-15
 draft: false
 tags: [hack, ransomware, war, terrorism, cyber, security, philosophy]
