@@ -37,6 +37,7 @@ Intended to be permanently under construction.
 - [Removed.social](https://www.removed.social/)
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 - [Uno Moralez GIF art](https://unomoralez.com)
+- See [this page]({{<parenturl>}}groen_art) for art that my mother makes
 
 ## Miscellaneous
 
