@@ -14,11 +14,15 @@ In its classical form, the trolley problem situates an observer near a switch, o
 
 Two cases sketched in Autonomous Driving, let’s say A and B, are particularly interesting in this regard. Case A concerns fully automated driving with the extension of a human driver that is able to take over drive control at any moment. In Case B, the driving task is performed completely independent of the passenger, which also entails that the passenger cannot take over driving control (Wachenfeld et al. 2016, 19). In case A, the trolley problem arguably maintains its original form: when a human is able to take over control, the switching decision also remains the responsibility of the human driver, but only as long as we ignore the practical issue that the handing over of control to the human driver is unlikely to be fast enough (Lin 2016, 71). In case B however, it cannot in any case simply be the human driver that is responsible for the life-death decision, and thus case B extends beyond the scope of the original trolley problem. 
 
+![Trolley problem](../../static/images/25-blog/trolley-problem.jpg)
+
 The AV would make such life-death decisions based on programmed algorithms and cost functions. I would say that therefore the real ethical decisions are no longer made split-second, as in the trolley problem, but instead are moved to the design stage where such time-constraints do not apply (Nyholm and Smids 2016, 1280-2). A particular difference with the trolley problem thus is that responsibility for possible deaths is distributed over a set of stakeholders. The possible answer to the question who is to blame has large consequences for example for producers of AVs (vulnerability to lawsuits) or insurance companies (dealing with damage claims). I agree with Lin that regardless of the answer, transparency of the decision-making should be central to AV ethics (Lin 2016, 79).
 
 In that sense, one recent suggestion is particularly interesting as an addition to Lin’s deliberations in the context of the defined use cases. In case B, a way to again involve the user in the design process is to use an ‘ethical knob’ that makes the preference for the survival of passengers or third parties explicit in moral modes ranging from altruistic, to impartial and egoistic (Contissa, Lagioia, and Sartor 2017). These modes determine the “autonomous” decision-making of the AV, but are deliberately set by the user. In this manner, the moral load of using the AV becomes transparent to the user, which in turn may be a decisive factor for quantifying guilt in case of lawsuits and insurance claims. To conclude, in designing AVs robot ethics and machine morality can be connected by fine-tuning the moral competences AVs have with respect to a dynamic set of situations and preferences (cf. Malle 2016). 
 
 672 words.
+
+N.B. [click here](https://www.youtube.com/watch?v=-N_RZJUAQY4) for an alternative solution to the trolley problem.
 
 ## References
 
