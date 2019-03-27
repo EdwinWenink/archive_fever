@@ -1,6 +1,6 @@
 ---
-title: "War and terrorism in the cyber domain"
 author: "Edwin Wenink"
+title: "Warlike acts in the cyber domain"
 date: 2019-03-15
 draft: false
 tags: [hack, ransomware, war, terrorism, cyber, security, philosophy]
@@ -10,7 +10,7 @@ tags: [hack, ransomware, war, terrorism, cyber, security, philosophy]
 
 One paragraph in particular caught my eye:
 
-> To complicate matters, having cyber insurance might not cover everyone’s losses. Zurich American Insurance Company refused to pay out a \$100 million claim from Mondelez, saying that since the U.S. and other governments labeled the NotPetya attack as an action by the Russian military their claim was excluded under the “hostile or warlike action in time of peace or war” exemption.
+> To complicate matters, having cyber insurance might not cover everyone’s losses. Zurich American Insurance Company refused to pay out a $100 million claim from Mondelez, saying that since the U.S. and other governments labeled the NotPetya attack as an action by the Russian military their claim was excluded under the “hostile or warlike action in time of peace or war” exemption.
 
 You can read the official U.S. press release [here](https://www.whitehouse.gov/briefings-statements/statement-press-secretary-25/). 
 What interests me is not just the small letters of insurances policies, although they can have huge financial consequences for companies in this case.
@@ -52,7 +52,8 @@ In accordance, those with the knowledge and capabilities to work and influence c
 And when the relevant parties of "warlike" acts in the digital domain cannot be identified anymore as government parties, the distinction between war and terrorism blurs, as the distinction heavily relies on the violence of the former being warranted *by* a nation, whereas that of the latter is *against* a state or nation.
 
 This made me remember a reflection of Derrida on how technoscience blurs the rigorous distinction between war and terrorism, in a book I have read about five years ago (it made an impression apparently). 
-I looked it up again, this passage is from the book "Philosophy in a Time of Terror" (2003) by Giovanna Borradori. 
+I looked it up again. 
+The following passage is from the book "Philosophy in a Time of Terror" (2003) by Giovanna Borradori. 
 In the words of Jacques Derrida:
 
 > No geography, no "territorial" determination, is thus pertinent any longer for locating the seat of these new technolgies of transmission or aggression. To say it all too quickly and in passing, to amplify and clarify just a bit what I said earlier about an absolute threat whose origin is anonymous and not related to any state, such "terrorist" attacks already no longer need planes, bombs, or kamikazes: it is enough to infiltrate a strategically important computer system and introduce a virus or some other disruptive element to paralyze the economic, military, and political resources of an entire country or continent. And this can be attempted from just about anywhere on earth, at very little expense and with minimal means. The relationship between earth, *terra*, territory, and terror has changed, and it is necessary to know that this is because of knowledge, that is, because of technoscience. It is technoscience that blurs the distinction between war and terrorism. (p. 101)
