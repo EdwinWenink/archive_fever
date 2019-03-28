@@ -57,5 +57,6 @@ Surf instead of search: click away and follow that hyperlink.
 	<li> <a href=" http://thefirstdayoftherestofyourlife.org/ " target="_blank"> http://thefirstdayoftherestofyourlife.org/ </a></li>
 	<li> <a href=" http://floatingform.com/ " target="_blank"> http://floatingform.com/ </a></li>
 	<li> <a href=" http://www.arngren.net/ " target="_blank"> http://www.arngren.net/ </a></li>
-	<li> <a href=" http://webenact.rhizome.org/keeping-up-appearances/20151029152713/http://blacknetart.com/keepingupappearances.html" target="_blank"> http://webenact.rhizome.org/keeping-up-appearances/20151029152713/http://blacknetart.com/keepingupappearances.html </a></li>
+	<li> <a href=" http://webenact.rhizome.org/keeping-up-appearances/20151029152713/http://blacknetart.com/keepingupappearances.html" target="_blank"> Keeping up appearances </a></li>
+	<li> <a href="https://gifcities.org/" target="_blank"> GifCities </a></li>
 </ul>
