@@ -4,6 +4,7 @@ author: "Edwin Wenink"
 tags: ["ssh","tmux","arch","linux"]
 date: 2018-04-08
 draft: false
+toc: true
 ---
 
 Ingredients: 
