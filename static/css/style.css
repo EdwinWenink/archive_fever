@@ -10,6 +10,14 @@ h1,h2,h3,h4,h5,h6,header,header.a {
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+h1 {
+	display: inline-block;
+	border: solid;
+	border-width: 4px;
+	border-color: black; 
+	padding: 0.8em;
+}
+
 h2 {
 	border-bottom-style: solid;
 	border-width: 1px;
@@ -339,12 +347,12 @@ footer {
 }
 
 h1 {
-	display: block;
+	/* display: block; */
 	font-size: 170%;
 	line-height: 1.1;
 	margin-top: 1rem;
 	margin-bottom: 1.5rem;
-	padding-top: 0.02em;
+	/*padding-top: 0.02em;*/
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	-o-hyphens: none;
