@@ -39,12 +39,22 @@ Intended to be permanently under construction.
 - [Uno Moralez GIF art](https://unomoralez.com)
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
 
+
 ## Miscellaneous
 
 - ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
+
+## Minimalist websites
+
+- [greaterthanorequalto.net](http://greaterthanorequalto.net/)
+- [motherfuckingwebsite](http://motherfuckingwebsite.com/)
+- [txti](http://txti.es/)
+- [personal site of emile sadria](http://emilesadria.com/)
+- [mariouher](https://mariouher.com/)
+- [brutalistwebsites](https://brutalistwebsites.com/)
 
 ## Random
 
