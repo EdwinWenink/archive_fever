@@ -48,7 +48,13 @@ window.onload = ready;
 </script>
 
 <div class="content">
-  <h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}</aside></h1>
+  <h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}
+	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read </aside></h1>
+  {{ if .Params.toc }}
+	<div id="toc">
+		{{ .TableOfContents }}
+	</div>
+  {{ end }}
   {{ .Content }}
 </div>
 
