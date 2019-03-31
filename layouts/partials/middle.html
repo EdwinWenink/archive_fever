@@ -23,8 +23,8 @@
 				 1. Engrams are memory traces of whatever interests me <br> 
 				 2. Trace your own path through these engrams by clicking on tags <br>
 				 3. Leave a comment! They will not appear instantly as I moderate them <br>
-				 4. The <u><a href="{{ .Site.BaseURL }}/etc/etc">etc</a></u> section contains more static content, e.g. <u><a href="{{ .Site.BaseURL }}/etc/cv"> a short c.v. </a></u><br>
-				 5. No regular posting schedule. Subscribe to the <u><a href="{{ .Site.BaseURL }}/index.xml">RSS feed</a></u>!
+				 4. The <a href="{{ .Site.BaseURL }}/etc/etc">etc</a> section contains more static content, e.g. <a href="{{ .Site.BaseURL }}/etc/cv"> a short c.v. </a><br>
+				 5. No regular posting schedule. Subscribe to the <a href="{{ .Site.BaseURL }}/index.xml">RSS feed</a>!
 			 </blockquote>
 
 			 For more info on me and this website, see the <u><a href="{{ .Site.BaseURL }}/about">about</a></u> section. <br>
@@ -40,7 +40,7 @@
     {{ if eq .Type "posts"}}
         <p>
         <aside>{{ .Date.Format "January 2, 2006"}}</aside>
-        <a href="{{ .Permalink }}" style="color:black;">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}
         </p>
     {{ end }}
     {{ end }}
