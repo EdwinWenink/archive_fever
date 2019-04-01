@@ -1,5 +1,5 @@
 ---
-title: "Ethics of Autonomous Vehicles: beyond the trolley dillema"
+title: "Ethics of Autonomous Vehicles: beyond the trolley dilemma"
 author: "Edwin Wenink"
 date: 2019-03-27
 draft: false
