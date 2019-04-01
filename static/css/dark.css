@@ -8,6 +8,10 @@ h1, h2 {
 	text-decoration-color: red;
 }
 
+h1 {
+	border-color: red;
+}
+
 h2 a {
 	color: grey!important;
 	
