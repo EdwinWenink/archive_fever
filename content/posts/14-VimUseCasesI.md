@@ -10,7 +10,7 @@ As promised in a [previous post](https://edwinwenink.xyz/posts/13-Vim10Reasons/)
 These are intended to be basic, i.e. they do not depend on plugins, and they are not geared towards programming but towards basic text editing and -navigation.
 Vim can be customized and extended seemingly indefinitely, but sticks and stones Vim can actually already do surprisingly much! 
 
-# Basic navigation
+## Basic navigation
 
 I stated before that the main innovation of Vim is making insertion of text secondary to navigation.
 Let's put my money where my mouth is. The following assumes you are in normal mode.
