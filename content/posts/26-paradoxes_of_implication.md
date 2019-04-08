@@ -6,9 +6,8 @@ draft: false
 tags: [logic, implication, paradox]
 ---
 
-When one starts studying logic one is inevitably to be slightly surprised by the workings of the so-called *material* implication, p --> q (if p, then q). 
+When one starts studying logic one is likely to be surprised by the workings of the so-called *material* implication, p --> q (if p, then q). 
 Unlike the implication used in natural language, which can for example indicate causation, the material implication has a more restricted meaning.
-
 The material implication is true unless p is true and q is false. 
 This is ultimately a matter of *definition* to resolve ambiguities present in natural language. 
 A very simple and short sentence such as "visiting relatives can be boring" can already have two very different meanings. Either it is boring to visit relatives, or relatives that are visiting can be boring.
