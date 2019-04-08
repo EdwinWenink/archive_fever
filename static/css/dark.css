@@ -3,7 +3,7 @@ html {
 	color: grey;
 }
 
-h1, h2 {
+h2 {
 	text-decoration: overline;
 	text-decoration-color: red;
 }

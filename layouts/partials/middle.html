@@ -5,13 +5,7 @@
 		  <h1> Edwin Wenink </h1>
 		  <a href="/archives"><h2> Philosophy | Artificial Intelligence | etcetera </a></h2>
 			 <br>
-		     <div class="desktop">
-				 <p><script type="text/javascript" src="/scripts/randomquote.js"></script></p>
-			 </div> 
-			 <p>
-			 Welcome to my personal space on the web.
-		     &#8623 
-			 Here is a quickstart guide:
+
 
 			<div class="author-portret">
 			<a href="https://www.ritsjoosten.nl">
@@ -20,22 +14,26 @@
 			<a href="https://www.ritsjoosten.nl"> by Rits Joosten </a>
 			</div>
 
-			 <blockquote>
-				 1. Engrams are memory traces of whatever interests me <br> 
-				 2. Trace your own path through these engrams by clicking on tags <br>
-				 3. Leave a comment! They will not appear instantly as I moderate them <br>
-				 4. The <a href="{{ .Site.BaseURL }}/etc/etc">etc</a> section contains more static content, e.g. <a href="{{ .Site.BaseURL }}/etc/cv"> a short c.v. </a><br>
-				 5. No regular posting schedule. Subscribe to the <a href="{{ .Site.BaseURL }}/index.xml">RSS feed</a>!
-			 </blockquote>
+		     <div class="desktop">
+				 <p><script type="text/javascript" src="/scripts/randomquote.js"></script></p>
+			 </div> 
 
-			 For more info on me and this website, see the <u><a href="{{ .Site.BaseURL }}/about">about</a></u> section. <br>
+			 <p> Welcome to my personal space on the web &#8623.</p>
+
+			 <p>
+			 <u><a href="#engrams">Engrams</a></u> are memory traces of whatever interests me.
+			 Trace your own path through these engrams by clicking on <u><a href="#tags">tags</a></u>.
+			 For more info on me and this website, see the <u><a href="{{ .Site.BaseURL }}/about">about</a></u> section.
+			 The <u><a href="{{ .Site.BaseURL }}/etc/etc">etc</a></u> section contains more static content, e.g. <u><a href="{{ .Site.BaseURL }}/etc/cv"> a short c.v.</a></u>
+			 There is no regular posting schedule. Subscribe to the <u><a href="{{ .Site.BaseURL }}/index.xml">RSS feed</a></u>!
+
 			 Feedback? An idea for cooperation? 
 			 Please feel free to contact me.
 			 </p>
 		</div>
 	</div>
 
-    <h2>{{ title .Data.Term  }} ENGRAMS </h2>
+    <h2 id="engrams">{{ title .Data.Term  }} ENGRAMS </h2>
 	<div class="preview">
 
 	{{ range first 10 .Pages }}
@@ -58,7 +56,7 @@
 	<p> See <a href="{{ .Site.BaseURL }}/archives"> archives </a> for more ... </p>
 	</div>
 
-	<h2> Tag roulette </h2>
+	<h2 id="tags"> Tag roulette </h2>
 	<div class="tags">
 	{{ range .Site.Pages }} 
 	{{ if eq .Type "posts"}}
