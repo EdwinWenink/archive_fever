@@ -258,6 +258,19 @@ input:checked + .slider:before {
 	display: none;
 }
 
+.unfold {
+	max-height: 60px;
+	overflow: hidden;
+	-webkit-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+	transition-timing-function: ease-in-out;
+
+}
+
+.unfold:hover {
+	max-height: 500px; 
+}
+
 @media all {
 	html {
 		font-size: 18px;

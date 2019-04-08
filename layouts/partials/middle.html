@@ -37,32 +37,24 @@
 
     <h2>{{ title .Data.Term  }} ENGRAMS </h2>
 	<div class="preview">
-    {{ range first 1 .Pages }}
-    {{ if eq .Type "posts"}}
-		{{ .Scratch.Set "lastPost" .Params.title }}
-        <p>
-		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
-		{{ end }}
-        </p>
-		<blockquote>{{ truncate 300 .Summary }}
-		<p><a href="{{ .RelPermalink }}">Read more</a><p>
-		</blockquote>
-    {{ end }}
-    {{ end }}
 
 	{{ range first 10 .Pages }}
-    {{ if and ( eq .Type "posts" ) (ne .Params.Title (.Scratch.Get "lastPost"))}}
+    {{ if eq .Type "posts" }}
 		{{ .Scratch.Get "lastPost" }}
+		<div class="unfold">
         <p>
 		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
         <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
 		{{ end }}
         </p>
+		<blockquote>{{ truncate 500 .Summary }}
+		<p><a href="{{ .RelPermalink }}">Read more</a><p>
+		</blockquote>
+		</div>
 	{{ end }}
 	{{ end }}
 
-
+	<br>
 	<p> See <a href="{{ .Site.BaseURL }}/archives"> archives </a> for more ... </p>
 	</div>
 
