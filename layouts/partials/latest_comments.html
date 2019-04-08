@@ -1,0 +1,13 @@
+<h2> Latest comments</h2>
+
+{{ $comments := readDir "data/comments" }}
+
+{{ range $.Site.Data.comments }}
+	{{ .name }}
+	{{ .Title }}
+	{{ range sort . "date" "desc"}}
+		<p>
+		By {{ .name }} on {{ .date }} {{ dateFormat "Monday, Jan 2, 2006" .date }}
+		</p>
+	{{ end }}
+{{ end }}
