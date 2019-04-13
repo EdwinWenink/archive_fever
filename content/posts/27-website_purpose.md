@@ -2,8 +2,8 @@
 title: "What is the purpose of this website?"
 author: "Edwin Wenink"
 date: 2019-04-13
-draft: true
-tags: [blog, indieweb, essay]
+draft: false
+tags: [blog, philosophy, indieweb, essay]
 ---
 
 I largely quit social media because it transferred from being a medium that helped me keep in touch with people and that stimulated social interaction, to a endless stream of promoted clickbait content. 
@@ -60,5 +60,5 @@ For me personally, perfectionism has in the past prevented me from daring to pub
 These blog posts are a good exercise in *letting go*.
 I write them as quick as possible and then immediately publish them, to avoid that they stay on the shelf. 
 There is another bonus: I have struggled the last years with formulating the *relevance* of philosophy. 
-After starting a second university education, I have come to the belief that philosophy is at its best when it does not only engage with other philosophers, but (also) works from within another discipline, shaping and enriching it from within. 
+After starting a second university education, I have come to the belief that philosophy is at its best when it does not only engage with other philosophers, but (also) engages with other disciplines, shaping and enriching them from within. 
 I hope that as this blog develops, it will be a testimony to this thought.
