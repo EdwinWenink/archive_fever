@@ -6,13 +6,13 @@ draft: false
 tags: [blog, philosophy, indieweb, essay]
 ---
 
-I largely quit social media because it transferred from being a medium that helped me keep in touch with people and that stimulated social interaction, to a endless stream of promoted clickbait content. 
+I largely quit social media because it transformed from being something that helps me keep in touch with people and that stimulates social interaction, to an endless stream of promoted clickbait content. 
 The little "real" personal content that made it to my feed, was usually dull and did not facilitate any interesting conversations.
 With the creation of this website I'm trying to take control of my online identity, making this domain a main hub for various dispersed identities, somewhat along the lines of [these principles](https://indieweb.org/).
 
 Being free to do with this website what I want in a way that is meaningful for me, gives me joy.
 In addition, this website really is personal because I built it myself, which comes with a sense of pride (in the positive sense of the word).
-It is my first website, and I had no idea what I was doing when I started out.
+This is my first website, and I had no idea what I was doing when I started out.
 I had never written any html or css, but with the help of a friend during a nightly Skype-session (during which he fell asleep) I had a very simple one page site online within a few days.
 It was really, really bad. 
 But it was out there, and it was mine. 
