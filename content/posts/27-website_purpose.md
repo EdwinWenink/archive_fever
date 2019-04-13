@@ -33,12 +33,11 @@ Everyone needs some help starting up, and I'm sure Boris will help someone else 
 He published his new website last week, and I'm convinced it's the beginning of a nice digital journey where a lot will be learned.
 Check it out [here](http://de-klos.net/).
 
-The bottom-line is: what makes this website personal for me is not that it contains personal content, but that it is way more effective in creating *real interaction* with people than so-called "social media".
-This interaction is *meaningful* for me, whereas a major portion of other online activity can feel like a waste of time.
+The bottom-line is: what makes this website personal for me is not that it contains personal content, but that it is way more effective in creating *meaningful interaction* with people than so-called "social media".
 This website helps me formulate thoughts, be more creative, more productive, stimulates nice discussion amongst my friends, reinforces existing relationships, and perhaps helps making new ones.
-**In that spirit, I want to offer digital residence to friends on my domain.**
 The point of my blogs is to formulate thoughts on my own interests, but in such a way that they enable dialogue with other people.
-I play with the idea to spark more dialogue by allowing others to post on this domain as well.
+I play with the idea to represent some of this dialogue directly on the website itself, by also allowing others to post on my domain.
+**In that spirit, I want to offer digital residence to friends on my domain.**
 I do not yet completely know how this will work out, but my current experimental idea is this:
 
 1. Friends/acquaintances can write a post on a topic reflecting a shared interest. My interests are very broad, so finding such a common interest should not be too hard.
