@@ -259,10 +259,10 @@ input:checked + .slider:before {
 }
 
 .unfold {
-	max-height: 60px;
+	max-height: 25px;
 	overflow: hidden;
-	-webkit-transition: max-height 0.8s;
-	transition: max-height 0.8s;
+	-webkit-transition: max-height 1.2s;
+	transition: max-height 1.2s;
 	transition-timing-function: ease-in-out;
 
 }

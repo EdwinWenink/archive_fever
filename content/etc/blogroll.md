@@ -19,6 +19,8 @@ Intended to be permanently under construction.
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 - [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
+- [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
+
 
 ## Technology (and society)
 
@@ -62,3 +64,4 @@ Not to be confused with miscellaneous.
 These are *really quite random*.
 
 - [Q: What is the connection between goats and Justin Bieber?](https://www.geitjesenbieber.xyz) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
+- [Hyper Text Coffee Pot Control Protocol](https://tools.ietf.org/html/rfc2324)

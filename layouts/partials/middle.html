@@ -39,9 +39,9 @@
 	{{ range first 10 .Pages }}
     {{ if eq .Type "posts" }}
 		{{ .Scratch.Get "lastPost" }}
-		<div class="unfold">
         <p>
 		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+		<div class="unfold">
         <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
 		{{ end }}
         </p>
