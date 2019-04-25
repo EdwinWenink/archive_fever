@@ -13,13 +13,14 @@ Intended to be permanently under construction.
 - [De Klos](http://www.de-klos.net/): blog of my friend Boris on the challenges of the Antrophocene [(old version)](https://deklos.wordpress.com/) 
 - [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
 - [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
-- [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
 
 ## AI / Programming 
 
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 - [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
+- [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
+
 
 ## Technology (and society)
 
