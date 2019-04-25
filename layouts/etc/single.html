@@ -2,4 +2,13 @@
 
 {{ .Content }}
 
+<h1> ... and a dynamic Blogroll </h1>
+
+{{ range (.Site.Pages).ByDate.Reverse }}
+	{{ if eq .Type "links" }}
+		<h2>{{ .Date.Format "January, 2006"}}</h2>
+		{{ .Content }}
+	{{ end }}
+{{ end }}
+
 {{ partial "footer.html" . }}

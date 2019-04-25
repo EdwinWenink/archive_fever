@@ -2,7 +2,7 @@
 title: Automation and the ethics of work
 author: Edwin
 date: 2019-04-25
-draft: true
+draft: false
 tags: ["ai", "ethics", "automation", "philosophy"]
 ---
 
