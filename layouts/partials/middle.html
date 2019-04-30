@@ -26,7 +26,9 @@
 			 For more info on me and this website, see the <u><a href="{{ .Site.BaseURL }}/about">about</a></u> section.
 			 The <u><a href="{{ .Site.BaseURL }}/etc/etc">etc</a></u> section contains more static content, e.g. <u><a href="{{ .Site.BaseURL }}/etc/cv"> a short c.v.</a></u>
 			 There is no regular posting schedule. Subscribe to the <u><a href="{{ .Site.BaseURL }}/index.xml">RSS feed</a></u>!
-
+			 <br><br>
+			 I accept guest contributions, see <u><a href="{{ .Site.BaseURL }}/posts/27-website_purpose/">here why</a></u>.
+			 <br>
 			 Feedback? An idea for cooperation? 
 			 Please feel free to contact me.
 			 </p>
@@ -42,7 +44,9 @@
         <p>
 		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
 		<div class="unfold">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+		{{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
+		{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
 		{{ end }}
         </p>
 		<blockquote>{{ truncate 500 .Summary }}

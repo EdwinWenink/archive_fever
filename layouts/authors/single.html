@@ -48,28 +48,22 @@ window.onload = ready;
 </script>
 
 <div class="content">
-  <h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}
-	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read </aside></h1>
-  <div style="margin-left: 50px; display: inline-block">
-  {{ if .Params.guest }}
-  <i>Guest contribution by <br>
-	  <u><a href="{{ .Site.BaseURL }}guests/{{ urlize .Params.author }}"> {{ .Params.author }} </a></u></i>
-  {{ end }}
-  <br><br>
-  </div>
-  {{ if .Params.toc }}
-	<div id="toc">
-		{{ .TableOfContents }}
-	</div>
-  {{ end }}
+  <h1>{{ .Title }}</h1>
   {{ .Content }}
+
+  <h2>Contributors</h2>
+  <br><br>
+  {{ with .Site.GetPage "section" "guests" }}
+    <ol>
+	{{ range .Pages }}
+		<li><a href="{{ .Permalink }}">{{ .Params.author }}</a></li>
+	{{ end }}
+	</ol>
+  {{ end }}
+
 </div>
 
-<!-- {{ if (eq .Type "posts") }}
-  <p><small><em>Written on {{ .Date.Format "January 2, 2006"}} </em></small></p>
-{{ end }} -->
+<!--
+{{ partial "latest_comments" . }}
+-->
 
-{{ partial "post-comments" . }}
-{{ partial "contribute-post" . }}
-
-{{ partial "footer.html" . }}

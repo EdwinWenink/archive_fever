@@ -12,7 +12,8 @@
       <ul>
         {{ range .Pages }}
 		  <aside> {{ .Date.Format "January 2" }} </aside>
-          <li><a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a></li>
+          <li><a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
+		  {{ if .Params.guest }}(by {{ .Params.author }}) {{ end }}</li>
         {{ end }}
       </ul>
 	  </div>

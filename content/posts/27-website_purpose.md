@@ -41,7 +41,7 @@ I do not yet completely know how this will work out, but my current experimental
 3. My role in the process ranges somewhere between a minimal form of redaction, and full cooperation in writing the post.
 4. In return, each contributor gets their own home page on this domain. This homepage lists all their contributions, and apart from that they are free to do with it as they please. (Technically, this amounts to giving them their own branch on the Github repo of this site)
 
-I made an example of such a homepage [here](https://www.edwinwenink.xyz/~guest/).
+I made an example of such a homepage [here](https://www.edwinwenink.xyz/guests/edwin-wenink).
 
 As for the content of the blogs, I consider them to be an exercise in imperfection.
 They are not as unstructured as notes, but neither are they fully developed like articles. 

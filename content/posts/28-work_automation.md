@@ -1,6 +1,6 @@
 ---
 title: Automation and the ethics of work
-author: Edwin
+author: Edwin Wenink
 date: 2019-04-25
 draft: false
 tags: ["ai", "ethics", "automation", "philosophy"]

@@ -1,8 +1,10 @@
 ---
 title: Digital residence of
-author: Edwin
-type: guest
+author: Edwin Wenink
+type: guests
 ---
+
+Hi, I'm the author of this website.
 
 Would you like to be a digital resident at this url?
 
