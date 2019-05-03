@@ -1,5 +1,5 @@
 ---
-title: Digital residence of
+title: Digital residence of Edwin Wenink
 author: Edwin Wenink
 type: guests
 ---

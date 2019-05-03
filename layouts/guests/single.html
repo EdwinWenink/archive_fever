@@ -48,7 +48,7 @@ window.onload = ready;
 </script>
 
 <div class="content">
-	<h1>{{ .Title }} {{ .Params.author }}</h1>
+	<h1>{{ .Title }} </h1>
   {{ $guest := .Page.Params.author }}
   {{ .Content }}
   <h2> Contributions by {{ $guest }}: </h2><br>

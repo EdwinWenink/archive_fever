@@ -1,5 +1,5 @@
 ---
-title: Digital residence of
+title: Digital residence of Joran Welling
 author: Joran Welling
 type: guests
 ---
