@@ -2,6 +2,7 @@
 
 {{ .Content }}
 
+<!--
 <h1> ... and a dynamic Blogroll </h1>
 
 {{ range (.Site.Pages).ByDate.Reverse }}
@@ -10,5 +11,6 @@
 		{{ .Content }}
 	{{ end }}
 {{ end }}
+-->
 
 {{ partial "footer.html" . }}
