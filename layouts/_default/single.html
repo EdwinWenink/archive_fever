@@ -49,10 +49,11 @@ window.onload = ready;
 
 <div class="content">
   <h1>{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}
-	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read </aside></h1>
-  <div style="margin-left: 50px; display: inline-block">
+	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read</aside></h1>
+
+  <div style="margin-left: 10px; display: inline-block">
   {{ if .Params.guest }}
-  <i>Guest contribution by <br>
+  <i>Guest contribution by
 	  <u><a href="{{ .Site.BaseURL }}guests/{{ urlize .Params.author }}"> {{ .Params.author }} </a></u></i>
   {{ end }}
   <br><br>
