@@ -11,3 +11,18 @@ type: guests
 </head>
 
 Info about Joran goes here!
+
+In the meantime, this cute goat is a welcome gift from Edwin:
+
+
+<pre>
+            _))
+Welcome    > *\     _~
+Joran      `;'\\__-' \_
+              | )  _ \ \
+             / / ``   w w
+            w w
+~```~~~~```~~```~~~~```~```~~~~```
+
+</pre>
+
