@@ -23,6 +23,7 @@ Intended to be permanently under construction.
 
 ## Information retrieval
 
+- [Djoerd Hiemstraq homepage](https://djoerdhiemstra.com/)
 - [Maarten de Rijke homepage](https://staff.fnwi.uva.nl/m.derijke/)
 
 ## Technology (and society)
