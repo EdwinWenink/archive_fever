@@ -34,9 +34,12 @@ There are two basic ingredients for this type of recommendation systems:
 1) We have some data of users using some items, e.g. buying products in a supermarket. We can represent this in a user-item matrix.
 However, most users do not buy all items, and most items are not bought by all users, so this matrix is sparse, i.e. mostly filled with zero-entries.
 
-2) We thus need some way to associate users with products they didn't buy yet so we can potentially recommend those products, based on the knowledge we already have of user preferences for particular products.
-The Collaborative Filtering with ALS technique does this through factorizing the user-item matrix into two matrices with lower dimensions, that map users onto a number of latent factors, and these latent factors back unto the items.
-Based on these latent factors, it is possible to compute user-item preferences for items that previously had zero-entries.
+2) We thus need some way to associate users with products they didn't buy yet so we can potentially recommend those products, based on the knowledge we already have of user preferences for particular products. 
+In other words, zero-entries need to be filled in with a preference estimation.
+The Collaborative Filtering with ALS technique does this through finding a factorization of the user-item matrix into two matrices with lower dimensions, that map users onto a number of latent factors (a "user profile"), and these latent factors back unto the items (an "item profile").
+With ALS one tries to find two matrices that approximate the bigger input matrix when they are multiplied with each other.
+Based on these smaller estimated matrices with latent factors, it is possible to re-compute the user-item association matrix, which now has 
+preference scores for items that previously had zero-entries.
 
 To implement this model in Spark, there are two major things to take into consideration:
 
