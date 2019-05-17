@@ -64,7 +64,7 @@ header,header.a{
   overflow-x: auto;
   word-wrap: normal;
   word-break: break-all;
-  white-space: nowrap;
+  #white-space: nowrap;
 }
 
 #TableOfContents ul {
