@@ -48,6 +48,7 @@ Surf instead of search: click away and follow that hyperlink.
 	<li> <a href=" http://www.teleportacia.org/war/ " target="_blank"> http://www.teleportacia.org/war/ </a></li>
 		&#8627 "My boyfriend came back from the war" - A html narrative
 	<li> <a href=" http://rhizome.org/community/32767/ " target="_blank"> http://rhizome.org/community/32767/ </a></li>
+	<li> <a href=" http://thewebthatwas.net/ " target="_blank"> Research Infrastructure for the Study of Archived Web Materials conference </a></li>
 	<li> <a href=" http://llizard.etherwork.net/ascii-animation/ " target="_blank"> http://llizard.etherwork.net/ascii-animation/ </a></li>
 	<li> <a href=" http://0100101110101101.org/works/ " target="_blank"> http://0100101110101101.org/works/ </a></li>
 	<li> <a href=" http://toastytech.com/evil/ " target="_blank"> http://toastytech.com/evil/ </a></li>

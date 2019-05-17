@@ -21,6 +21,9 @@ Intended to be permanently under construction.
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 - [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
 
+## Information retrieval
+
+- [Maarten de Rijke homepage](https://staff.fnwi.uva.nl/m.derijke/)
 
 ## Technology (and society)
 
@@ -49,12 +52,13 @@ Intended to be permanently under construction.
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 
-## Minimalist websites
+## Minimalist websites / Web Nostalgia
 
 - [greaterthanorequalto.net](http://greaterthanorequalto.net/)
 - [motherfuckingwebsite](http://motherfuckingwebsite.com/)
 - [txti](http://txti.es/)
 - [personal site of emile sadria](http://emilesadria.com/)
+- [thewebthatwas](http://thewebthatwas.net/)
 - [mariouher](https://mariouher.com/)
 - [brutalistwebsites](https://brutalistwebsites.com/)
 
