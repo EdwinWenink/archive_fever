@@ -21,18 +21,23 @@ Intended to be permanently under construction.
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 - [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
 
-## Information retrieval
-
-- [Djoerd Hiemstraq homepage](https://djoerdhiemstra.com/)
-- [Maarten de Rijke homepage](https://staff.fnwi.uva.nl/m.derijke/)
-
 ## Technology (and society)
 
 - [Public-Interest Technology Resources](https://public-interest-tech.com/)
 
+## Decentralized Internet / Indieweb / Federated Networks
+
+- [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
+- [Indiewebify.me](https://indiewebify.me/)
+
 ## Vim / Workflow / Writing
 
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Information retrieval
+
+- [Djoerd Hiemstraq homepage](https://djoerdhiemstra.com/)
+- [Maarten de Rijke homepage](https://staff.fnwi.uva.nl/m.derijke/)
 
 ## Music
 
@@ -46,13 +51,6 @@ Intended to be permanently under construction.
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
 
 
-## Miscellaneous
-
-- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
-- [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
-- [How to disagree](http://www.paulgraham.com/disagree.html)
-- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
-
 ## Minimalist websites / Web Nostalgia
 
 - [greaterthanorequalto.net](http://greaterthanorequalto.net/)
@@ -62,6 +60,13 @@ Intended to be permanently under construction.
 - [thewebthatwas](http://thewebthatwas.net/)
 - [mariouher](https://mariouher.com/)
 - [brutalistwebsites](https://brutalistwebsites.com/)
+
+## Miscellaneous
+
+- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
+- [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
+- [How to disagree](http://www.paulgraham.com/disagree.html)
+- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 
 ## Random
 
