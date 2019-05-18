@@ -48,6 +48,7 @@ window.onload = ready;
 </script>
 
 <div class="content">
+  <article class="h-entry">
   <h1 class="p-name">{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}
 	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read</aside></h1>
 
@@ -63,15 +64,15 @@ window.onload = ready;
 		{{ .TableOfContents }}
 	</div>
   {{ end }}
-  <div class="e-content p-name">
+  <div class="e-content">
   {{ .Content }}
   </div>
-  
   <aside>
   <a class="u-url" href="{{ .Permalink }}">
       Published <time class="dt-published">{{ .Params.date }}</time>
   </a>
   </aside>
+  </article>
 </div>
 
 <!-- {{ if (eq .Type "posts") }}
