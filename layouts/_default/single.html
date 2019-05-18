@@ -55,7 +55,7 @@ window.onload = ready;
   <div style="margin-left: 10px; display: inline-block">
   {{ if .Params.guest }}
   <i>Guest contribution by
-	  <u><a href="{{ .Site.BaseURL }}guests/{{ urlize .Params.author }}"> {{ .Params.author }} </a></u></i>
+	  <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}"> {{ .Params.author }} </a></u></i>
   {{ end }}
   <br><br>
   </div>
@@ -70,6 +70,7 @@ window.onload = ready;
   <aside>
   <a class="u-url" href="{{ .Permalink }}">
       Published <time class="dt-published">{{ .Params.date }}</time>
+      by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
   </a>
   </aside>
   </article>

@@ -53,7 +53,7 @@ window.onload = ready;
 
   <h2>Contributors</h2>
   <br><br>
-  {{ with .Site.GetPage "section" "guests" }}
+  {{ with .Site.GetPage "section" "author" }}
     <ol>
 	{{ range .Pages }}
 		<li><a href="{{ .Permalink }}">{{ .Params.author }}</a></li>
