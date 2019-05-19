@@ -2,9 +2,13 @@
 
 var post_url = window.location.href;
 
+
+//https://webmention.io/api/mentions.jf2?
+// ORIGINAl
+//https://webmention.io/api/mentions?per-page=50&page=0&jsonp=?
 $(document).ready(function(){	
 	$("ul#mentions-list").empty();
-  $.getJSON("https://webmention.io/api/mentions?per-page=50&page=0&jsonp=?", {
+  $.getJSON("https://webmention.io/api/mentions.jf2?domain=indiewebcamp.com&token=I5QSyPcfY5uPRzrmuznRxQ", {
     target: post_url
   }, function(data){
 	var social_media_likes = "";
@@ -12,7 +16,12 @@ $(document).ready(function(){
 	var social_media_post = "";
 	if(data.links.length !== 0){
 		$("#post-mentions").show();
+        console.log("DATA")
 	}
+      else{
+          console.log("No Data!")
+      }
+
   	$.each(data.links, function(i, v){
 		var activity_type = data.links[i].activity.type;
 		  
@@ -76,3 +85,5 @@ $(document).ready(function(){
     }
   });
 });
+
+console.log(post_url)
