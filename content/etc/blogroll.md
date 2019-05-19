@@ -30,6 +30,7 @@ Intended to be permanently under construction.
 - [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
 - [Indiewebify.me](https://indiewebify.me/)
 - [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
+- [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
 
 ## Vim / Workflow / Writing
 
