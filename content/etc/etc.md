@@ -11,3 +11,4 @@ type: "etc"
 - [Music statistics]({{<parenturl>}}music )
 - [Web paleontology: An Ode to the Hyperlink]({{<parenturl>}}web_paleontology)
 - [Groen-art]({{<parenturl>}}groen_art)
+- [Plants]({{<parenturl>}}plants)
