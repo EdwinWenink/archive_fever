@@ -80,9 +80,8 @@ window.onload = ready;
   <p><small><em>Written on {{ .Date.Format "January 2, 2006"}} </em></small></p>
 {{ end }} -->
 
-{{ partial "post-comments" . }}
 
-<h2> Webmentions (W.I.P.) </h2>
+<h2> Webmentions </h2>
 
 <div class="post-mentions" id="post-mentions" style="display:none">
     <ul class="mentions-list" id="mentions-list"></ul>
@@ -99,6 +98,8 @@ window.onload = ready;
         </div>
         <input type="hidden" name="target" value="{{ .Permalink }}">
 </form>
+
+{{ partial "post-comments" . }}
 
 {{ partial "contribute-post" . }}
 

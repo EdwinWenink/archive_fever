@@ -10,10 +10,9 @@ type: author
 </style>
 </head>
 
-Info about Joran goes here!
+[Joran](https://www.joranwelling.nl/) makes theater, and is currently a Java programmer trainee.
 
-In the meantime, this cute goat is a welcome gift from Edwin:
-
+This cute goat is a welcome gift from Edwin:
 
 <pre>
             _))
