@@ -56,7 +56,7 @@ Their leaves dance and sing.
 
 ## Asparagaceae
 
-- Chlorophytum comosum ("Spider plant")
+- Chlorophytum comosum Variegatum ("Spider plant")
 
 ## Davalliaceae (a family of ferns)
 
