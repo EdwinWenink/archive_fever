@@ -12,6 +12,7 @@ $(document).ready(function(){
   $.getJSON("https://webmention.io/api/mentions?token=I5QSyPcfY5uPRzrmuznRxQ&jsonp=?", {
     target: post_url
   }, function(data){
+      console.log(data.links)
 	var social_media_likes = "";
 	var social_media_repost = "";
 	var social_media_post = "";
@@ -56,7 +57,7 @@ $(document).ready(function(){
 		    }
 		  $("ul#mentions-list").prepend( "<li class=\"mention\">"
 		    + "<div class=\"mention-author u-author\">" 
-		    + "<img src=\"" + data.links[i].data.author.photo + "\" class=\"u-photo\"" 
+		    //+ "<img src=\"" + data.links[i].data.author.photo + "\" class=\"u-photo\"" 
 		    + "title=\"" + data.links[i].data.author.name + "\" width=\"40\" >" 
 		    + "<a href=\"" + data.links[i].data.author.url + "\" >"
 		    + data.links[i].data.author.name + "</a> replied:</div>"
