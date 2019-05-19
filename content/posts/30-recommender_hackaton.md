@@ -122,7 +122,7 @@ A baseline performance of 2.9% for comparison was calculated by always predictin
 I thought my score was pretty low (and I'm sure it is) so I was very surprised to win, but given that all competitors were beginners and faced similar hardware issues as I did, the playing field of recall scores was more or less between 13-17%.
 People with more interesting ideas about parameter optimization where probably not successful in their efforts due to serious hardware limitations.
 Perhaps people also put more effort in optimizing their ALS model, only to see it overfit on the training data and really drop in score on the test data.
-The overall impression I am left with, is that "real" data science is extremely hard to do properly, 
+The overall impression I am left with, is that real data *science* is extremely hard to do properly.
 For the mortals not designing the algorithms and data structures themselves, the most intelligence is required for choosing the right methods for the problem at hand, and making smart design decisions on what information to exploit. 
 But apart from that, I have the feeling that the average attitude is: please don't ask too about the internals of the algorithms or the *meaning* of a parameter setting.
 I suspect that for many people in the data business "data science/engineering" is mostly slapping together pre-existing models and making computers crunch a lot on optimizing them. 
