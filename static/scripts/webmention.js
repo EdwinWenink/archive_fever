@@ -2,11 +2,6 @@
 
 var post_url = window.location.href;
 
-// ORIGINAl
-//https://webmention.io/api/mentions?per-page=50&page=0&jsonp=?
-
-//https://webmention.io/api/mentions?token=I5QSyPcfY5uPRzrmuznRxQ
-
 $(document).ready(function(){	
 	$("ul#mentions-list").empty();
   $.getJSON("https://webmention.io/api/mentions?token=I5QSyPcfY5uPRzrmuznRxQ&jsonp=?", {
