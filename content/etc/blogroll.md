@@ -31,6 +31,7 @@ Intended to be permanently under construction.
 - [Indiewebify.me](https://indiewebify.me/)
 - [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
 - [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
+- [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
 
 ## Vim / Workflow / Writing
 
