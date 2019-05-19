@@ -57,7 +57,6 @@ $(document).ready(function(){
 		    }
 		  $("ul#mentions-list").prepend( "<li class=\"mention\">"
 		    + "<div class=\"mention-author u-author\">" 
-		    //+ "<img src=\"" + data.links[i].data.author.photo + "\" class=\"u-photo\"" 
 		    + "title=\"" + data.links[i].data.author.name + "\" width=\"40\" >" 
 		    + "<a href=\"" + data.links[i].data.author.url + "\" >"
 		    + data.links[i].data.author.name + "</a> replied:</div>"
@@ -70,6 +69,8 @@ $(document).ready(function(){
 		}
 	   }	
     });
+    // Insert above if I want picture again
+	//+ "<img src=\"" + data.links[i].data.author.photo + "\" class=\"u-photo\"" 
     if(social_media_post){
 		social_media_post = social_media_post.substr(0, social_media_post.length - 2);
 		social_media_post = social_media_post + " <span class=\"commented\">linked to this.</span></li>";
