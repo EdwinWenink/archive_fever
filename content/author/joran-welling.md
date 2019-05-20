@@ -6,22 +6,27 @@ type: author
 
 <head>
 <style>
-	/* You can overwrite style here */
 </style>
 </head>
 
-[Joran](https://www.joranwelling.nl/) makes theater, and is currently a Java programmer trainee.
+[Joran Welling](https://www.joranwelling.nl/) 
 
-This cute goat is a welcome gift from Edwin:
+Besides occasionally busying myself with the noble art of theatre, I'm also working as an IT trainee.
+My contributions to this site will mainly involve keeping you posted about what that is like.
 
-<pre>
-            _))
-Welcome    > *\     _~
-Joran      `;'\\__-' \_
-              | )  _ \ \
-             / / ``   w w
-            w w
-~```~~~~```~~```~~~~```~```~~~~```
+Because I made the mistake of showing Edwin this well-crafted and very necessary [website](https://www.geitjesenbieber.xyz/) 
+about goats en Bieber he now insists I include an ASCII art goat in this profile page, so here you go:   
+
+
+                                      ,,~~--___---,
+                                     /            .~,
+                               /  _,~             )
+                              (_-(~)   ~, ),,,(  /'
+                               Z6  .~`' ||     \ |
+                               /_,/     ||      ||
+                         ~~~~~~~~~~~~~~~W`~~~~~~W`~~~~~~~~~
+
 
 </pre>
+
 
