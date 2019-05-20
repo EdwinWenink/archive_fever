@@ -28,17 +28,17 @@ As a result, you can see my domain with a green check mark [on my profile](https
 
 3) I can [POSSE](https://indieweb.org/POSSE) content to other sites if I want to, and feed responses back into my own website using [webmention.io](https://webmention.io). 
 POSSE simply means that you publish everything on your own website, and "syndicate" a linked copy to other places.
-This can be done in such a way that the responses on your copied post on that other website are fed back into your own website again through ["webmentions"](https://indieweb.org/Webmention).
-This thus facilitates all kinds of interaction e.g. with social platforms or other blogs without leaving my own website. 
-Most importantly, contra usual social networks, all data of this interaction is controlled through my own domain, collected in one place, shaping a sensible online identity.
+This can be done in such a way that the responses to your copied post on that other website are fed back into your own website again through ["webmentions"](https://indieweb.org/Webmention).
+This thus facilitates all kinds of interaction with social platforms or other blogs without leaving my own website. 
+Most importantly, contra usual social networks, all data of this interaction is controlled through my own domain, collected in one place, belonging to and shaping a sensible online identity.
 
 In principle this interaction requires that other services also follow IndieWeb standards, but luckily there are services such as [bridgy](https://brid.gy/) that are able to translate e.g. tweets into "webmentions" following the microformats2 format. 
 You can either handle these webmentions yourself in order to display them on your website, or let another service handle the webmentions. 
 I do the latter since I have a static website.
 
 So for example, let's assume there exists a possible world in which I would tweet. 
-Then I could post tweets from my own website by POSSEing the tweets, feeding back the responses to webmentions.io with bridgy, *and maintain all my tweets even if Twitter goes bankrupt or becomes super evil*. 
-I could for example also post comment on pull requests on GitHub on my own website, and then syndicate them to the appropriate place on GitHub. 
+Then I could post tweets from my own website by POSSEing the tweets, feeding back the responses to webmentions.io with bridgy, *and maintain all my tweets including responses, even if Twitter goes bankrupt or becomes super evil*. 
+I could for example also post comments on GitHub pull requests on my own website, and then syndicate them to the appropriate place on GitHub. 
 There is even a [bridgy for federated networks](https://fed.brid.gy/). 
 
 To setup everything, I simply followed the steps of [indiewebify.me](https://indiewebify.me/), the sole purpose of which is to help you make the transition easily.
@@ -64,5 +64,5 @@ Isn't that how the web was supposed to be? Really a *web*.
 If you make your website IndieWeb compatible, let me know below through a "webmention".
 You can submit your reaction to be displayed by filling in the URL of your reaction (again: look at microformats2).
 You can see an example reaction [here](https://www.edwinwenink.xyz/page/webmention.html), which is linked below in the brand new "Webmentions" section.
-To conclude, I added some useful links on my [blogroll](https://www.edwinwenink.xyz/etc/blogroll)
+To conclude, I added some useful links on my [blogroll](https://www.edwinwenink.xyz/etc/blogroll).
 
