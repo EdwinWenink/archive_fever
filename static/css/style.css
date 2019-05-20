@@ -284,6 +284,10 @@ input:checked + .slider:before {
     margin-left: 0;
 }
 
+.webring {
+    text-align: center;
+}
+
 
 @media all {
 	html {
