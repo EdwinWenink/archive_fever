@@ -1,0 +1,6 @@
+_id: 3968ded0-7aee-11e9-9871-2542bee5708c
+_parent: 30-recommender_hackaton
+name: Edo
+reply_to: ''
+body: "Really cool post. As a web developer it's really cool to read an approachable article from the trenches. From my perspective, I see a lot of people being interested in ML, but I see very few practical applications in the wild.\r\n\r\nThe roadblocks that you describe hitting remind me of my early programming days. It's hard to explain to outsiders what kind of problems you're experiencing day-to-day, when all they really understand is that you \"write code\" or \"build websites\". Good luck explaining how you're debugging \"Undefined is not a function\" on a daily basis.\r\n\r\nOne question that I have is whether these \"function names\" that you're learning against, are these a fixed set of predefined names, or were they free form text?"
+date: 1558349920
