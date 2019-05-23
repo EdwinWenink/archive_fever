@@ -1,0 +1,18 @@
+
+<h2> Webmentions </h2>
+
+<div class="post-mentions" id="post-mentions" style="display:none">
+    <ul class="mentions-list" id="mentions-list"></ul>
+</div>
+<br>
+
+<form  class="webmention-form" action="https://webmention.io/www.edwinwenink.xyz/webmention" method="post">
+     <div class="wm-form-label">Do you want to link a <a href="https://indieweb.org/Webmention" target="_blank">webmention</a> to this post? <br>
+            Provide the URL of your response for it to show up here.</div>
+        <br> 
+        <div class="form-fields">
+          <input type="url" name="source" placeholder="Your Post URL">
+          <input type="submit" value="Send Webmention">
+        </div>
+        <input type="hidden" name="target" value="{{ .Permalink }}">
+</form>
