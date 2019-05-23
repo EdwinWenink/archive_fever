@@ -5,8 +5,9 @@
 	</div>
 	<br>
 
+	<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+
 	{{ if .Params.replyName }}
-		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
 		<p><a class="u-in-reply-to" href="{{ .Params.target}}">In reply to {{ .Params.replyName }}:</a></p>
 		<p class="e-content">
 		{{ .Content | markdownify }}
@@ -14,7 +15,6 @@
 	{{ end }}
 
 	{{ if .Params.like }}
-	<aside>{{ .Date.Format "January 2, 2006"}}</aside>
 	<p>Edwin &#10084 <a class="u-like" href="{{ .Params.target }}">this</a></p>
 	<p class="e-content">
 	{{ .Content | markdownify }}
