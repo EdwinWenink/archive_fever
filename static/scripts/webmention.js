@@ -52,10 +52,10 @@ $(document).ready(function(){
 		    }
 		  $("ul#mentions-list").prepend( "<li class=\"mention\">"
 		    + "<div class=\"mention-author u-author\">" 
-		    + "<a href=\"" + data.links[i].data.author.url + "\" >"
-		    + data.links[i].data.author.name + "</a> replied at "
+		    + "<u><a href=\"" + data.links[i].data.author.url + "\" >"
+		    + data.links[i].data.author.name + "</a></u>"
 		    + "<a href=\"" + data.links[i].data.url + "\">"
-		    + "<time>" + mention_date.getUTCDate() + "/" + (mention_date.getUTCMonth() + 1) 
+		    + "replied at <time>" + mention_date.getUTCDate() + "/" + (mention_date.getUTCMonth() + 1) 
 		    + "/" + mention_date.getUTCFullYear()
 			+ "</time></a>:</div>"
 		    + "<div class=\"mention-text\">" + men_content + "</div>"
