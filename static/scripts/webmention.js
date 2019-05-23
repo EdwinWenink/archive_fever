@@ -68,17 +68,17 @@ $(document).ready(function(){
 	//+ "<img src=\"" + data.links[i].data.author.photo + "\" class=\"u-photo\"" 
     if(social_media_post){
 		social_media_post = social_media_post.substr(0, social_media_post.length - 2);
-		social_media_post = "<u>" + social_media_post + "</u><span class=\"commented\">linked to this.</span></li>";
+		social_media_post = "<u>" + social_media_post + "</u> <span class=\"commented\">linked to this.</span></li>";
 		$("ul#mentions-list").prepend(social_media_post);
     }			
     if(social_media_repost){
 		social_media_repost = social_media_repost.substr(0, social_media_repost.length - 2);
-    	social_media_repost = "<u>" + social_media_repost + "</u><span class=\"commented\">reposted this.</span></li>";
+    	social_media_repost = "<u>" + social_media_repost + "</u> <span class=\"commented\">reposted this.</span></li>";
 		$("ul#mentions-list").prepend(social_media_repost);
     }
     if(social_media_likes){
 		social_media_likes = social_media_likes.substr(0, social_media_likes.length - 2);
-		social_media_likes = "<u>" + social_media_likes  + "</u><span class=\"commented\">&#10084 this.</span></li>";
+		social_media_likes = "<u>" + social_media_likes  + "</u> <span class=\"commented\">&#10084 this.</span></li>";
 		$("ul#mentions-list").prepend(social_media_likes);
     }
   });
