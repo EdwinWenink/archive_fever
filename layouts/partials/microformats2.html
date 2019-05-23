@@ -3,12 +3,24 @@
     <div class="u-author h-card" style="display:none">
 		<a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
 	</div>
-	{{ if .Params.replyTo }}
-		<p><a class="u-in-reply-to" href="{{ .Params.replyTo}}">In reply to {{ .Params.replyName }}:</a></p>
+	<br>
+
+	{{ if .Params.replyName }}
+		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+		<p><a class="u-in-reply-to" href="{{ .Params.target}}">In reply to {{ .Params.replyName }}:</a></p>
 		<p class="e-content">
 		{{ .Content | markdownify }}
 		</p>
 	{{ end }}
+
+	{{ if .Params.like }}
+	<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+	<p>Edwin &#10084 <a class="u-like" href="{{ .Params.target }}">this</a></p>
+	<p class="e-content">
+	{{ .Content | markdownify }}
+	</p>
+	{{ end }}
+
   </div>
 </body>
 
