@@ -1,7 +1,7 @@
 ---
 title: Test
 target: "https://www.edwinwenink.xyz/posts/1-incipit/"
-replyName: Edwin
+reply: true
 type: micro
 date: 2019-05-23
 ---

@@ -1,3 +1,10 @@
+<!--
+	**	TODO: Maybe do not duplicate dates when multiple posts where on the same date?
+	Requires "date" to move up to the "microblog" template and to be handled differntly in these posts
+
+	** Discovered music!
+--> 
+
 <body>
   <div class="h-entry">
     <div class="u-author h-card" style="display:none">
@@ -6,19 +13,24 @@
 
 	<aside><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006"}}</a></aside>
 
-	{{ if .Params.replyName }}
+	{{ if .Params.reply }}
 		<p>In reply to &#8594 <a class="u-in-reply-to" href="{{ .Params.target}}">{{ .Params.target }}</a></p>
-		<p class="e-content">
-		&#8620 {{ .Content | markdownify }}
-		</p>
 	{{ end }}
 
 	{{ if .Params.like }}
-	<p>Edwin &#10084 <a class="u-like-of" href="{{ .Params.target }}"> {{ .Params.target }}</a></p>
+		<p>Edwin &#10084 <a class="u-like-of" href="{{ .Params.target }}"> {{ .Params.target }}</a></p>
+	{{ end }}
+
+	{{ if .Params.bookmark }}
+		<p>&#128214 <a class="u-url u-uid" href="{{ .Params.target }}">{{ .Params.target }}</a></p>
+	{{ end }}
+
 	<p class="e-content">
+	{{ if .Content }}
 	 &#8620 {{ .Content | markdownify }}
 	</p>
 	{{ end }}
+
   </div>
 </body>
 
