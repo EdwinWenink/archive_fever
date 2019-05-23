@@ -1,0 +1,15 @@
+{{ partial "header" . }}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+{{ range .Site.RegularPages }}
+{{ if eq .Type "micro" }}
+<div class="hover-box">
+	<p>{{ .Render "content_only" }}</p>
+</div>
+{{ end }}
+{{ end }}
+
+{{ partial "footer" . }}

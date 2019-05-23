@@ -288,6 +288,19 @@ input:checked + .slider:before {
     text-align: center;
 }
 
+.hover-box {
+	padding-left: 25px;
+	/*
+	margin: 0.7em 10px;
+	padding: 0.7em 20px;
+	*/
+}
+
+.hover-box:hover {
+	border-left: 3.5px solid #0594cb;
+	border-left: 3px solid black;
+}
+
 
 @media all {
 	html {
