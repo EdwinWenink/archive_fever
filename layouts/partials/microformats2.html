@@ -1,0 +1,10 @@
+<body>
+  <div class="h-entry">
+    <div class="u-author h-card">
+		<a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
+    </div>
+	<p>in reply to: <a class="u-in-reply-to" href="{{ .Params.replyTo}}">@ {{ .Params.replyName }}</a></p>
+	<p class="e-content">{{ .Content }}</p>
+  </div>
+</body>
+
