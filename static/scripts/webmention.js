@@ -55,7 +55,7 @@ $(document).ready(function(){
 		    + "<u><a href=\"" + data.links[i].data.author.url + "\" >"
 		    + data.links[i].data.author.name + "</a></u>"
 		    + "<a href=\"" + data.links[i].data.url + "\">"
-		    + "replied at <time>" + mention_date.getUTCDate() + "/" + (mention_date.getUTCMonth() + 1) 
+		    + " replied at <time>" + mention_date.getUTCDate() + "/" + (mention_date.getUTCMonth() + 1) 
 		    + "/" + mention_date.getUTCFullYear()
 			+ "</time></a>:</div>"
 		    + "<div class=\"mention-text\">" + men_content + "</div>"

@@ -6,7 +6,7 @@
 	{{ if .Params.replyTo }}
 		<p><a class="u-in-reply-to" href="{{ .Params.replyTo}}">In reply to {{ .Params.replyName }}:</a></p>
 		<p class="e-content">
-		{{ .Content }}
+		{{ .Title | markdownify }}
 		</p>
 	{{ end }}
   </div>
