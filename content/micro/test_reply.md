@@ -6,6 +6,6 @@ type: micro
 date: 2019-05-23
 ---
 
-This is a reply test!
+This is a test reply for trying out sending webmentions!
 
 

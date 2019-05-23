@@ -13,7 +13,7 @@ $(document).ready(function(){
 	var social_media_post = "";
 	if(data.links.length !== 0){
 		$("#post-mentions").show();
-        console.log("DATA")
+        console.log("Read out webmentions")
 	}
       else{
           console.log("No Data!")
