@@ -78,7 +78,7 @@ $(document).ready(function(){
     }
     if(social_media_likes){
 		social_media_likes = social_media_likes.substr(0, social_media_likes.length - 2);
-		social_media_likes = social_media_likes  + " <span class=\"commented\">liked this.</span></li>";
+		social_media_likes = social_media_likes  + " <span class=\"commented\">&#10084 this.</span></li>";
 		$("ul#mentions-list").prepend(social_media_likes);
     }
   });
