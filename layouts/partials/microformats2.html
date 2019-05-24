@@ -11,8 +11,10 @@
 		<a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
 	</div>
 	<div class="micro">
-		<h4>{{ .Title}}</h4>
-		<aside><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006"}}</a></aside>
+		<a href="{{ .Permalink }}">
+			<h4>{{ .Title}}</h4>
+			<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+		</a>
 		{{ if .Params.reply }}
 			<p>In reply to &#8594 <a class="u-in-reply-to" href="{{ .Params.target}}">{{ .Params.target }}</a></p>
 		{{ end }}
@@ -31,7 +33,6 @@
 		</p>
 		{{ end }}
 	</div>
-
   </div>
 </body>
 

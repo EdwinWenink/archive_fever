@@ -512,7 +512,7 @@ a:active {
 }
 */
 
-a:hover {
+a:hover, a:hover h4 {
 	/*background: #F3F4F4;
 	color: #0366d6!important;
 	/*color: white!important;
