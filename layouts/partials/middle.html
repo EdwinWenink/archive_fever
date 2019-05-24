@@ -38,8 +38,7 @@
     <h2 id="engrams">{{ title .Data.Term  }} ENGRAMS </h2>
 	<div class="preview">
 
-	{{ range first 10 .Pages }}
-    {{ if eq .Type "posts" }}
+	{{ range first 10 (where .Site.RegularPages ".Type" "posts") }}
 		{{ .Scratch.Get "lastPost" }}
         <p>
 		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
@@ -53,7 +52,6 @@
 		<p><a href="{{ .RelPermalink }}">Read more</a><p>
 		</blockquote>
 		</div>
-	{{ end }}
 	{{ end }}
 
 	<br>
@@ -71,6 +69,13 @@
 	{{ end }}
 	{{ end }}
 	</div>
+	<br>
+	<h2 > Latest micro </h2>
+	{{ range first 1 (where .Site.RegularPages ".Type" "micro") }}
+	<div class="hover-box">
+		<p>{{ .Render "content_only" }}</p>
+	</div>
+	{{ end }}
 
     <br>
     <div class="webring">
