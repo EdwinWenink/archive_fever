@@ -301,6 +301,9 @@ input:checked + .slider:before {
 	border-left: 3px solid black;
 }
 
+.micro {
+	text-align: left;
+}
 
 @media all {
 	html {
