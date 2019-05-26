@@ -70,8 +70,8 @@
 	{{ end }}
 	</div>
 	<br>
-	<h2 > Latest micro </h2>
-	{{ range first 1 (where .Site.RegularPages ".Type" "micro") }}
+	<h2 > Latest micros </h2>
+	{{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
 	<div class="hover-box">
 		<p>{{ .Render "content_only" }}</p>
 	</div>
