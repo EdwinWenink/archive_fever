@@ -18,6 +18,8 @@ print(""""
     1: reply
     2: bookmark
     3: event
+    4: like
+    5: note
     """)
 
 ready = False
@@ -38,6 +40,8 @@ while not ready:
         if int(category) == 1:
             metainfo['category'] = "music"
     elif int(cmd) == 4:
+        metainfo["like"] = "true"
+    elif int(cmd) == 5:
         metainfo["note"] = "true"
     else:
         print("Enter a valid option")
