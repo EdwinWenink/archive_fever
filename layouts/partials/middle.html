@@ -38,7 +38,7 @@
     <h2 id="engrams">{{ title .Data.Term  }} ENGRAMS </h2>
 	<div class="preview">
 
-	{{ range first 10 (where .Site.RegularPages ".Type" "posts") }}
+	{{ range first 10 (where .Pages ".Type" "posts") }}
 		{{ .Scratch.Get "lastPost" }}
         <p>
 		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
