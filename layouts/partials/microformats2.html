@@ -31,6 +31,7 @@
 
 		{{ else }}
 		<div class="h-event">
+		<div class="micro">
 			<h4 class="p-name"> 
 				<a class="u-url" href={{ .Params.target }}>
 				{{ if eq .Params.category "music" }}
@@ -42,7 +43,6 @@
 				<a href="{{ .Permalink }}">
 					<aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
 				</a>
-		</div>
 		{{ end }}
 
 		<p class="e-content">
@@ -50,7 +50,6 @@
 		 &#8620 {{ .Content | markdownify }}
 		{{ end }}
 		</p>
-
 	</div>
   </div>
 </body>
