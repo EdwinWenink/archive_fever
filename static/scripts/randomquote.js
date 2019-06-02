@@ -54,7 +54,9 @@
 		quotes[51]="&quotAll distances in time and space are shrinking. Yet the hasty setting aside of all distances brings no nearness; for nearness does not consist in a small amount of distance&quot - Martin Heidegger";
 		quotes[52]="&quotThoughts without content are empty, intuitions without concepts are blind. It is, therefore, just as necessary to make our concepts sensible, that is, to add the object to them in intuition, as to make our intuitions intelligible, that is, to bring them under concepts&quot - Immanuel Kant";
 		quotes[53]="&quotPeople worry that computers will get too smart and take over the world, but the real problem is that they're too stupid and they've already taken over the world&quot - Pedro Domingos";
-    quotes[54]="&quotWhat we agree with leaves us inactive, but contradiction makes us productive&quot - Johann Wolfgang von Goethe";
+		quotes[54]="&quotWhat we agree with leaves us inactive, but contradiction makes us productive&quot - Johann Wolfgang von Goethe";
+		quotes[55]="&quotWe have become the tool of our tools&quot - Henry David Thoreau";
+		quotes[56]="&quotOur tools are better than we are, and grow better faster than we do. They suffice to crack the atom, to command the tides, but they do not suffice for the oldest task in human history, to live on a piece of land without spoiling it&quot - Aldo Leopold";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
