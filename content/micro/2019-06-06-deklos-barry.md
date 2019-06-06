@@ -6,4 +6,4 @@ target: https://www.de-klos.net/posts/berry/
 type: micro
 reply: true
 ---
-Nice reflection on the tension between the local and the global in the Antropoceen. I appreciate Boris' attempt to ground thinking on global issues in local practice.
+Nice reflection on the tension between the local and the global in the Anthropocene. I appreciate Boris' attempt to ground thinking on global issues in local practice.
