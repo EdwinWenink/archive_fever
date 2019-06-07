@@ -16,9 +16,9 @@ My bibliography file is also saved in that repo, so loading the bibliography fil
 
 **However**...
 
-I'm using Mendeley as my reference manager, and in the past exported a group of references automatically to a `bib` file. 
+I'm using Mendeley as my reference manager, and in the past exported a group of references manually to a `bib` file. 
 However, currently I'm updating my references very frequently so that manual copying becomes an annoyance.
-It turns out that Mendeley has a BibTeX synchronization option that keeps `bib` files up to date.
+It turns out that Mendeley has a BibTeX synchronization option that keeps `bib` files up to date automatically.
 You can either synchronize one `bib` file for your whole bibliography, or create a `bib` file per group of references.
 The latter option is appropriate for me, because I grouped together all references for my thesis.
 Unfortunately, you cannot choose an export folder per group.
@@ -63,10 +63,9 @@ Combining these two fixes produced the following solution:
 \fi
 ```
 
-The Windows-style path was `C:\Users\Edwin Wenink\Bib\Artificial Intelligence-Bachelor Thesis`.
-(Note how that also uses `\` instead, which is annoying because that is an escape sequence in LaTeX.
+The Windows-style corresponding path was `C:\Users\Edwin Wenink\Bib\Artificial Intelligence-Bachelor Thesis`.
+(Note how that also uses '\' instead, which is annoying because that is an escape sequence in LaTeX.
 
 Okay granted, the easier solution would have been to go for option 1 by making Mendeley not export any spaces and then still go for relative paths... But that is a statement by Captain hindsight.
-
-What I would do ideally, is simply make a reference to my home folder with `~` like you would do on Unix based systems, but LaTeX doesn't support that feature and I could not find a quick hack.
+What I would have done ideally, is simply make a reference to my home folder with `~` like you would do on Unix based systems, but LaTeX doesn't support that feature and I could not find a quick hack.
 Let me know if you do!
