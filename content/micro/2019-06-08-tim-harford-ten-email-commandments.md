@@ -2,7 +2,7 @@
 title: Tim Harford — Ten email commandments
 date: 2019-06-08T08:50:55+00:00
 slug: tim-harford-ten-email-commandments
-target: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+target: http://timharford.com/2013/09/3180/
 type: micro
 bookmark: true
 ---
