@@ -1,7 +1,7 @@
 ---
 title: Dynamic BibTeX bibliography paths with spaces
 author: Edwin
-date: 2019-05-19
+date: 2019-06-07
 tags: [LaTeX, BibTeX, bibliography]
 ---
 
