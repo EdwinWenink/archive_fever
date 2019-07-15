@@ -1,0 +1,6 @@
+_id: 7cc7db20-a575-11e9-9871-2542bee5708c
+_parent: 18-comments
+name: Vincent Tam
+reply_to: ''
+body: "Network Hobo's guide has a logic error described in https://github.com/dancwilliams/networkhobo/issues/373.\r\n\r\n> Edo on Saturday, Dec 29, 2018  \r\n> In reply to Edo\r\n\r\nYou may see the [Huginn](https://staticman-gitlab-pages.frama.io/huginn/posts/seconde-post/#comment-form) theme as an example of nested comments without such problem."
+date: 1563025963
