@@ -57,6 +57,7 @@
 		quotes[54]="&quotWhat we agree with leaves us inactive, but contradiction makes us productive&quot - Johann Wolfgang von Goethe";
 		quotes[55]="&quotWe have become the tool of our tools&quot - Henry David Thoreau";
 		quotes[56]="&quotOur tools are better than we are, and grow better faster than we do. They suffice to crack the atom, to command the tides, but they do not suffice for the oldest task in human history, to live on a piece of land without spoiling it&quot - Aldo Leopold";
+		quotes[57]="&quotOne should not forget that philosophy is the art of masking inner torments&quot - Emil Cioran";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
