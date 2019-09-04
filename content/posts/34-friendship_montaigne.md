@@ -3,6 +3,7 @@ author: Edwin Wenink
 title: Friendship, death, and writing in Michel de Montaigne's Essays
 draft: False
 date: 2019-09-03
+tags: [philosophy, friendship, death, writing, Michel de Montaigne, Derrida]
 ---
 
 # Introduction
@@ -38,10 +39,10 @@ What else is friendship rather than a particular form of loving - as an *activit
 According to Aristotle friendship does not primarily exist in a particular event that is passively endured, but instead in the activity of loving even before any situation of being loved arises.
 Derrida summarizes this position on the passivity of being loved:
 
-> 'It says nothing of friendship *itself* which implies *in itself, properly,*
+> It says nothing of friendship *itself* which implies *in itself, properly,*
 essentially, the act and the activity: someone must love in order to know
 what loving means; then, and only then, can one know what being loved
-means.' (Derrida 2005, 8) 
+means. (Derrida 2005, 8) 
 
 This privileging of the act has everything to do with knowledge. 
 According to Aristotle the highest friendship is for the sake of what is good,
@@ -58,9 +59,9 @@ As a result, Derrida argues that Aristotle's view on friendship is embedded in a
 of contrapositions and preferences for one over the other. 
 Indeed, these preferences are traditional preferences of philosophy itself:
 
-> 'Loving will always be preferable to being-loved, as acting is preferable to suffering, act to
+> Loving will always be preferable to being-loved, as acting is preferable to suffering, act to
 potentiality, essence to accident, knowledge to non-knowledge. It is the
-reference, the preference itself.' (Derrida 2005, 11). 
+reference, the preference itself. (Derrida 2005, 11). 
 
 Aristotle would accordingly claim that if a friend should choose between knowing and being known,
 he would choose knowing, precisely because knowing characterizes true friendship. 
@@ -69,18 +70,18 @@ The object of knowing can thus *potentially* be a dead friend or a lifeless obje
 Considering an object of knowing, there is thus always already the possibility of that object being dead. 
 This holds accordingly in the act of friendship, which is necessarily accompanied by the (self-)knowledge of this love:
 
-> 'Friendship for the deceased thus carries this *philía* to the limit of its possibility.
+> Friendship for the deceased thus carries this *philía* to the limit of its possibility.
 But at the same time, it uncovers the ultimate spring of its possibility: I could not
-love friendship without projecting its impetus towards the horizon of this death.' (Derrida 2005, 12). 
+love friendship without projecting its impetus towards the horizon of this death. (Derrida 2005, 12). 
 
 The limit case of loving the dead friend thus shows that in Aristotle's view the object of love does not essentially have to exist. 
 In other words, true friendship anticipates the death of the other. 
 The possibility of loving a friend and possibility of the death of the loved one emerge from the very same origin: 
 
-> 'I could not love friendship without engaging myself, *without feeling myself in advance*
+> I could not love friendship without engaging myself, *without feeling myself in advance*
 engaged to love the other beyond death. Therefore, beyond life. 
 I feel myself -- and in advance, before any contract -- *borne* to love the
-dead other.' (Derrida 2005, 12). 
+dead other. (Derrida 2005, 12). 
 
 We thus see that that together with the heterogeneity between activity and passivity, act and potentiality, knowing and not knowing etc., an invisible line between life and death at the same time.  
 It is inherent to every friendship that one friend survives the other. 
@@ -157,28 +158,28 @@ also Horace, Catullus, Ariosto, Cicero, Terence, and so on (Epps 1995,
 
 Montaigne's autobiography is thus simultaneously a biography of his dead friends, and in particular of his dead friend (in the singular), Etienne de la Boétie. 
 In his article *Grotesque Identities* Brad Epps considers the grotesque as a method of self-portraiture. 
-The strangeness and even the monstrosity (a term that Montaigne himself uses in essay 28 with emphasis) of the grotesque thus becomes more insightfull:
+The strangeness and even the monstrosity (a term that Montaigne himself uses in essay 28 with emphasis) of the grotesque thus becomes more insightful:
 
-> 'For if the grotesque is strange, even monstrous, it is in part because it styles the self as twisted round and shot through with otherness.' (Epps 1995, 41). 
+> For if the grotesque is strange, even monstrous, it is in part because it styles the self as twisted round and shot through with otherness. (Epps 1995, 41). 
 
 This fascinates me because the blending in of the other in the self - an otherness so radical that it becomes a monstrosity - is a crucial element of how Montaigne describes the true friendship:
 
-> 'In the friendship I speak of, our souls mingle and blend
+> In the friendship I speak of, our souls mingle and blend
 with each other so completely that they efface the seam that joined
 them, and cannot find it again. If you press me to tell why I loved him,
 I feel that this cannot be expressed, except by answering: Because it
-was he, because it was I.' (Montaigne 2010, 192).
+was he, because it was I. (Montaigne 2010, 192).
 
 So according to Montaigne, he and La Boétie where such good friends that one could no longer discern a rigid difference between 'I' and 'you', between 'you' and 'I'. 
-This is radically different than the reciprocity that is central to the Greek-Roman thinking on friendship, in which the otherness of the friend is from the onset considered to be a mirror of the self, that stands on equal footing, and in which the otherness of the friend is thus immediately assimilated in the economy of the self.
-The equality and reciprocity of the Greek-Roman model of friendship is replaced by Montaigne by the 'heteronomy, transcendence and infinity' (Berns 2013, 220, my translation) that is so typical of the Christian idea of friendship[^4].
+This is different than the reciprocity that is central to the Greek-Roman thinking on friendship, in which the otherness of the friend is from the onset considered to be a mirror of the self, on equal footing, and in which the otherness of the friend is thus immediately assimilated in the economy of the self.
+The equality and reciprocity of the Greek-Roman model of friendship are replaced by Montaigne by the 'heteronomy, transcendence and infinity' (Berns 2013, 220, my translation) that is so typical of the Christian idea of friendship[^4].
 That transcendence and infinity are illustrated clearly when Montaigne says about his friend:
 
-> 'he surpassed me infinitely in every other ability and virtue, so he did in
-the duty of friendship.' (Montaigne 2010, 198). 
+> he surpassed me infinitely in every other ability and virtue, so he did in
+the duty of friendship. (Montaigne 2010, 198). 
 
-By speaking of this infinite transcendence Montaignes praises his friend quite literally into heaven; almost as if the friend here replaces the position of God. 
-What thus takes shape is some sort of negative theology through which Montaigne strictly distinguishes his friendship with La Boétie from 'normal' friendships, family ties, seksual relations with women (and from the 'Greek love').
+By speaking of this infinite transcendence Montaigne's praises his friend quite literally into heaven; almost as if the friend here replaces the position of God. 
+What thus takes shape is some sort of negative theology through which Montaigne strictly distinguishes his friendship with La Boétie from 'normal' friendships, family ties, sexual relations with women (and from the 'Greek love').
 What is left after the negation of these expressions is beyond words. 
 The only utterance that is left for Montaigne to express this friendship is "Because it was he, because it was I."
 In this mystical experience - I think you can call it that - he can find no reason for the friendship outside of the singularity of the other. 
@@ -201,13 +202,13 @@ His writings are grotesque in sofar as they are scribbles in the margin of a cen
 It is this central emptiness, the death of the friend, that perhaps inspired the writing of the *Essais* and the writing on friendship.
 Kuisma Korvonon states:
 
-> 'One important story about the *Essais* (...) is the one where Montaigne starts to write his book after the death of his friend Etienne de la Boétie -- the story of an ideal friendship, with the text serving as its memorial.' (Korvonen 2006, 78).
+> One important story about the *Essais* (...) is the one where Montaigne starts to write his book after the death of his friend Etienne de la Boétie -- the story of an ideal friendship, with the text serving as its memorial. (Korvonen 2006, 78).
 
 Montaigne's friendship has a testamentary character, it exists by the grace of an epitaph, a series of testamentary signs that summon a 'living' image of the friend, while inevitably it is the very death of this friend that is its possibility and inspiration[^5]. 
 The form of the grotesque is appropriate for this structure of friendship. 
 Epps states about this form: 
 
-> 'The ornamental flourish of figures neither fish nor flow, the reticular profusion of cryptic signs and images, is the most visible stuff of the grotesque, but so too are death, burial, emptiness, creativity, excess, and exuberance: an entire thematics of mortality and vitality that heightens, and is heightened by, the significance of form' (Epps 1995, 44). 
+> The ornamental flourish of figures neither fish nor flow, the reticular profusion of cryptic signs and images, is the most visible stuff of the grotesque, but so too are death, burial, emptiness, creativity, excess, and exuberance: an entire thematics of mortality and vitality that heightens, and is heightened by, the significance of form (Epps 1995, 44). 
 
 In this regard the form of the 28th essay itself highly meaningful: its profusion of signs results from a central lack and emptiness, namely the strange and plural absence of the announced text from La Boétie. 
 I say plural, because at the end of the 28th essay Montaigne first of all excuses himself for not placing the text of his friend that he promised, due to the controversial and unintended role it had started to play in its use by protestants under the name *Le Contre Un*[^6].
@@ -253,8 +254,6 @@ Cohen. London: Penguin Books.
 Schlossman, Beryl. 1983. "From La Boétie to Montaigne: The Place of the
 Text." *MLN* 98: 891-909.
 
-
-FOOTNOTES:
 
 [^1]: I consider friendship here as a specific form of love. This essay does not go into further detail about the relation between concepts of friendship and love.
 
