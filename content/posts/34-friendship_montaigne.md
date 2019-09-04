@@ -30,7 +30,7 @@ How do the motives of friendship, death and writing coincide in Montaigne's essa
 
 # Derrida on the love that mourns
 
-The testamentary character of friendship is emphasized by Jacques Derrida in his book *Politics of Friendship*.
+The testamentary character of friendship is emphasized by Jacques Derrida in his book *The Politics of Friendship*.
 Although Derrida distinguishes historical periods in the writing and thinking on friendship - namely: the Greek-Roman model, the Christian model, and "Nietzschean" thought on friendship (Berns 2013, 218) - he observes that the relation between friendship and the death of the friend is a recurrent theme, parallel to or *throughout* those periods.
 Derrida remarks that already in Aristotle the relation between friendship and survival is present - and with that the mourning of the other, the friend (even though in the Greek-Roman model the friend still circulates in the economy of the self).
 That connection between friendship and death concerns the durability and stability (*bébaios*: 'stable, established, certain, assured' (Derrida 2005, 15)) of the friendship, and in particular Aristotle's preference for the activity of loving rather than the passivity of being loved.
