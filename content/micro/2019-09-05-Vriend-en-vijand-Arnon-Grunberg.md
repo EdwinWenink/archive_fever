@@ -6,4 +6,6 @@ type: micro
 event: true
 ---
 
+"Is politics possible without an image of the enemy?"
+
 Interesting lecture about the legacy and relevance of Carl Schmitt by well known Dutch writer Arnon Grunberg. The lecture was a continuation of his essay ["Vriend en vijand"](https://webwinkel.uitgeverijprometheus.nl/book/arnon-grunberg).
