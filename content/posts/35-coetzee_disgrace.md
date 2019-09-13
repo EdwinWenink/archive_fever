@@ -10,7 +10,7 @@ tags: [Literature, Philosophy, Coetzee, South-Africa, Hermeneutics]
 *‘I don’t know what the question is any more. Between Lucy’s generation and mine a curtain seems to have fallen.’ (Coetzee 2000, 210).*
 
 
-In het boek ‘Disgrace’ van J.M. Coetzee
+In het boek *Disgrace* van J.M. Coetzee
 wordt het leven van de academicus David Lurie en zijn dochter Lucy
 overhoop gegooid door een aanval op de boerderij van Lucy, op het
 platteland van Zuid-Afrika, waar David na zijn ontslag vanwege een ongepaste 
