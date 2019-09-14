@@ -34,7 +34,7 @@ Lucy kan de gebeurtenis hoogtens verwoorden met een geweldadige metafoor:
 ‘Pushing the knife in; exiting afterwards, leaving the
 body behind covered in blood’ (Coetzee 2000, 158). 
 Tegelijkertijd is die letterlijke insnijding in haar lichaam 
-een demarcatielijn tussen David en Lucy, dat hen van elkaar vervreemdt. 
+een demarcatielijn tussen David en Lucy, die hen van elkaar vervreemdt. 
 Tot aan de verkrachting hebben David en Lucy een goede verstandhouding, maar
 daarna vormt de verkrachting steeds dat punt waarop het gesprek tussen
 David en Lucy stokt. 
@@ -47,7 +47,7 @@ myself before you. *You don’t know what* happened. (Coetzee 2000, 134).
 
 Ondanks de dreiging van een nieuwe aanval is Lucy vastberaden op het platteland te blijven wonen, 
 terwijl voor David vaststaat dat ze het beste kan vertrekken naar een veiligere plek. 
-De volstrekte singuliere gebeurtenis van de verkrachting ontwricht
+De volstrekt singuliere gebeurtenis van de verkrachting ontwricht
 de relatie tussen vader en dochter.
 Het is niet een gebrek aan rationaliteit of simpelweg onwilligheid 
 waardoor David en Lucy niet nader tot elkaar kunnen komen, maar een
@@ -66,13 +66,13 @@ Op zeer geweldadige wijze wordt Lucy ingevoegd in een historisch gesprek
 dat al gaande was voordat zij er deel aan ging nemen: een Zuid-Afrikaans gesprek
 tussen wit en zwart, tussen een geschiedenis van overheersing en
 slavernij, van discriminatie en apartheid. 
-Dit geen onschuldig gesprek, maar een gesprek dat gaat
+Dit is geen onschuldig gesprek, maar een gesprek dat gaat
 over de toekomst van Zuid-Afrika, dat cirkelt om de vraag: hoe moeten we,
 met in ons achterhoofd de herinnering aan een geschiedenis van
 apartheid, samenleven? 
 Daaronder gaat een andere vraag schuil: hoe kunnen we ons vanuit de
 vooroordelen die onze verschillende tradities meebrengen, ons openstellen voor de ander, in het bijzonder wanneer dat ook gevaren met zich meebrengt?
-Dit is één van de meest fundamentele problemen van de hermeneutische filosofie.
+Dit is één van de meest fundamentele problemen van de hermeneutische filosofie, die alleen maar aan maatschappelijke relevantie wint met de opkomst van identiteitspolitiek.
 
 Na de verkrachting van Lucy begint de discussie over wat ze nu moet doen. 
 David meent dat Lucy weg moet vluchten
@@ -92,7 +92,7 @@ de keuze van Lucy begrijpen om op dezelfde plek te blijven wonen. David
 gaat het gesprek over de toekomst niet aan zoals Lucy dat doet. Want:
 ‘he is too old to heed, too old to change.’ (Coetzee 2000, 209). 
 David is niet meer bereid zijn vooroordelen te overstijgen en zich te openen
-voor de ander in het gesprek.
+voor de ander.
 De verkrachting heeft hem in de positie van een buitenstaander geplaatst, 
 wat een fundamenteel thema is dat terugkeert in Coetzee's romans en een belangrijke reden waarom hij de [Nobelprijs voor literatuur](https://www.nobelprize.org/prizes/literature/2003/summary/) gewonnen heeft.
 
