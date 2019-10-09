@@ -16,7 +16,7 @@ on Disclosure and Displacement
 </pre>
 <br>
 
-In philosophy equivocal language can count on resistance and criticism. It is often considered as unnecessary and striving against philosophy’s main imperative to be *clair et distinct*, if I may borrow Descartes famous phrase here. The unnecessary use of unclear and equivocal language is a point of criticism often uttered against some philosophers that are known to be difficult to read and understand, such as Martin Heidegger and Jacques Derrida, who happen to be two main protagonists of Gert-Jan van der Heiden’s reworked edition of his doctoral thesis. 
+In philosophy equivocal language can count on resistance and criticism. It is often considered as unnecessary and striving against philosophy’s main imperative to be *clair et distinct*, if I may borrow Descartes famous phrase here. The unnecessary use of unclear and equivocal language is a point of criticism often uttered against some philosophers that are known to be difficult to read and understand, such as Martin Heidegger and Jacques Derrida, who happen to be two protagonists of Gert-Jan van der Heiden’s reworked edition of his doctoral thesis. 
 Van der Heiden investigates how language can disclose beings to our understanding, but is also characterized by several displacements that problematize the idea that language can present reality unequivocally.
 Fortunately for us, van der Heiden succeeded in writing a book that excels in clarity, which is a major accomplishment considering the difficulty of his subject and his choice of authors.
 
