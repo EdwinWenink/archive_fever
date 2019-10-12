@@ -65,34 +65,42 @@
 	{{ end }}
 
 	<br>
-	<p> See <a href="{{ .Site.BaseURL }}/archives"> archives </a> for more ... </p>
+	<p> See <a href="{{ .Site.BaseURL }}/archives"> archives</a> for more ... </p>
 	</div>
 
-	<h2 id="tags"> Tag roulette </h2>
 	<div class="tags">
+	<h2 id="tags"> Tag roulette </h2>
+	<br>
+	{{$tags := newScratch }}
 	{{ range .Site.Pages }} 
 	{{ if eq .Type "posts"}}
 		{{ range .Params.tags }}
-			{{ $name := .  }}
-			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
+			{{ $name := lower .  }}
+			{{ $array := $tags.Get "tags" }} <!-- For some reason I can't directly add this code below -->
+			{{ if not (in $array $name)}}
+				{{ $tags.Add "tags" (slice $name)}}
+				<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
+			{{ end }}
 		{{end}}
 	{{ end }}
 	{{ end }}
 	</div>
 	<br>
-	<h2 > Latest micros </h2>
+    <br>
+
+	<div>
+	<h2 > micros </h2>
 	{{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
 	<div class="hover-box">
 		<p>{{ .Render "content_only" }}</p>
 	</div>
 	{{ end }}
-
-    <br>
+	<p> See <a href="{{ .Site.BaseURL }}/microblog"> microblog</a> for more ... </p>
+	<br>
+	</div>
     <div class="webring">
       <a href="https://xn--sr8hvo.ws/%F0%9F%8F%BA%F0%9F%99%86%F0%9F%98%A6/previous">←</a>
       An IndieWeb Webring 🕸💍
       <a href="https://xn--sr8hvo.ws/%F0%9F%8F%BA%F0%9F%99%86%F0%9F%98%A6/next">→</a>
     </div>
-
-
 </div>
