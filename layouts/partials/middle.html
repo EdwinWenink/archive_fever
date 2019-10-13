@@ -46,9 +46,17 @@
 	<div class="preview">
 
 	{{ range $index, $value := first 6 (where .Pages ".Type" "posts") }}
-		<!--{{ .Scratch.Get "lastPost" }}-->
         <p>
-		<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+		<aside>{{ .Date.Format "January 2, 2006"}} 
+			{{ if not (eq .Params.tags nil) }}
+				{{ range first 3 $value.Params.tags }}
+					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+				{{ end }}
+				{{ if gt (len .Params.tags) 3 }}
+					...
+				{{ end }}
+			{{ end }}
+		</aside>
 		<!--<div class="unfold"> Use this class to unfold summary on hover-->
 		<div>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -57,7 +65,7 @@
 		{{ end }}
         </p>
 		{{ if (eq $index 0) }}
-			<blockquote>{{ truncate 500 .Summary }}
+			<blockquote>{{ truncate 350 .Summary }}
 			<p><a href="{{ .RelPermalink }}">Read more</a><p>
 			</blockquote>
 		{{ end }}
