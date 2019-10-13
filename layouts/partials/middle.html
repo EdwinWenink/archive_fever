@@ -52,7 +52,7 @@
 				{{ range first 2 $value.Params.tags }}
 					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
 				{{ end }}
-				{{ if gt (len .Params.tags) 3 }}
+				{{ if gt (len .Params.tags) 2 }}
 					...
 				{{ end }}
 			{{ end }}
