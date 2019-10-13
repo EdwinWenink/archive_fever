@@ -11,9 +11,11 @@
 	  <div class="preview">
       <ul>
         {{ range .Pages }}
+		  <p>
 		  <aside> {{ .Date.Format "January 2" }} </aside>
-          <li><a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
-		  {{ if .Params.guest }}(by {{ .Params.author }}) {{ end }}</li>
+          <a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
+		  {{ if .Params.guest }}(by {{ .Params.author }}) {{ end }}
+		  </p>
         {{ end }}
       </ul>
 	  </div>
