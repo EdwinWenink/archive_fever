@@ -42,7 +42,7 @@
 		</div>
 	</div>
 
-    <h2 id="engrams">{{ title .Data.Term  }} ENGRAMS </h2>
+    <h2 id="engrams">{{ title .Data.Term  }} Engrams </h2>
 	<div class="preview">
 
 	{{ range $index, $value := first 6 (where .Pages ".Type" "posts") }}
@@ -97,7 +97,7 @@
     <br>
 
 	<div>
-	<h2 > micros </h2>
+	<h2 > Micros </h2>
 	{{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
 	<div class="hover-box">
 		<p>{{ .Render "content_only" }}</p>
