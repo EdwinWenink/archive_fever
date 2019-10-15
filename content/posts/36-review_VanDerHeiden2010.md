@@ -2,6 +2,7 @@
 title: "Book review: Van der Heiden - The Truth (and Untruth) of Language"
 date: 2019-10-09
 tags: [philosophy, hermeneutics, Heidegger, Derrida, Ricoeur, book review]
+author: Edwin Wenink
 ---
 
 <img src="/images/36-blog/VanDerHeiden.jpg" style="max-width:200px;float:left; margin-right:20px;"></img>

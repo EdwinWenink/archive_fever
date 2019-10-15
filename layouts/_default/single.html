@@ -73,8 +73,29 @@ window.onload = ready;
       by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
   </a>
   </aside>
+  <br>
   </article>
+
+  <div>
+	<!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
+	{{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
+	<!--Grab the most recent-->
+	{{ range first 1 $posts }}
+		<p><b>Latest</b>: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+	{{ end }}
+
+	{{ with .NextInSection }}
+	<p><b>Next:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+	{{ end }}
+
+	{{ with .PrevInSection }}
+	<p><b>Previous:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+	{{ end }}
+  </div>
+
 </div>
+
+
 
 <!-- {{ if (eq .Type "posts") }}
   <p><small><em>Written on {{ .Date.Format "January 2, 2006"}} </em></small></p>
