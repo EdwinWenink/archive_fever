@@ -1,5 +1,5 @@
 ---
-title: Adactio: Journal—Web! What is it good for?
+title: "Adactio: Journal—Web! What is it good for?"
 date: 2019-10-17T06:44:01+00:00
 slug: web-what-is-it-good-for
 target: https://adactio.com/journal/9016?skin=default
