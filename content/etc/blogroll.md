@@ -25,13 +25,23 @@ Intended to be permanently under construction.
 
 - [Public-Interest Technology Resources](https://public-interest-tech.com/)
 
-## Decentralized Internet / Indieweb / Federated Networks
+## Indieweb and Federated Networks
 
 - [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
 - [Indiewebify.me](https://indiewebify.me/)
 - [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
 - [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
 - [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
+
+## The Web (knowledge, archive, memory)
+
+- [The Web of Alexandria](http://worrydream.com/TheWebOfAlexandria/2.html)
+- [As We May Think - Vannevar Bush, 1945](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
+- [The Cobweb - Can the Internet be archived?](https://www.newyorker.com/magazine/2015/01/26/cobweb) 
+- [Internet with a human face](https://idlewords.com/talks/internet_with_a_human_face.htm)
+	* "I've come to believe that a lot of what's wrong with the Internet has to do with memory. The Internet somehow contrives to remember too much and too little at the same time, and it maps poorly on our concepts of how memory should work."
+	* "THE WEB HAS A CENTER"
+- [The Web's Grain](https://frankchimero.com/writing/the-webs-grain/)
 
 ## Vim / Workflow / Writing
 
@@ -70,6 +80,7 @@ Intended to be permanently under construction.
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
+- [Teaching in Minecraft](https://blog.haschek.at/2019/teaching-in-minecraft.html)
 
 ## Random
 
