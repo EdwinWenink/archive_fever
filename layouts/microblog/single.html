@@ -2,8 +2,15 @@
 
 <h1>{{ .Title }}</h1>
 
+<div id="index">
+<p>These are small <a href="#bookmarks">bookmarks</a>, <a href=#events>events</a>, <a href="#replies">replies</a>, <a href="#likes">likes</a>, <a href=#notes>notes</a>,  following the 
+<a href="http://microformats.org">microformats2</a> format.
+</p>
+</div>
+
 {{ .Content }}
 
+<!--
 {{ range .Site.RegularPages }}
 {{ if eq .Type "micro" }}
 <div class="hover-box">
@@ -11,5 +18,89 @@
 </div>
 {{ end }}
 {{ end }}
+-->
+
+<div>
+	<h2 id="bookmarks"> Bookmarks <a href="#index">&uarr;</a></h2>
+
+{{ range .Site.RegularPages }}
+	{{ if and (eq .Type "micro") .Params.bookmark  }}
+		{{ if .Params.slug }}
+			{{ .Scratch.Set "slug" .Params.slug }}	
+		{{ else}}
+			{{ .Scratch.Set "slug" .File.BaseFileName }}	
+		{{ end }}
+			<p><a href="{{ "/micro/" | relLangURL }}{{ .Scratch.Get "slug" | urlize }}/">{{ .Render "content_only" }}</a></p>
+	{{ end }}
+{{ end }}
+</div>
+
+<br> 
+
+<div>
+<h2 id="events"> Events <a href="#index">&uarr;</a></h2>
+{{ range .Site.RegularPages }}
+	{{ if and (eq .Type "micro") .Params.event  }}
+		{{ if .Params.slug }}
+			{{ .Scratch.Set "slug" .Params.slug }}	
+		{{ else}}
+			{{ .Scratch.Set "slug" .File.BaseFileName }}	
+		{{ end }}
+		<div class="hover-box">
+			<p><a href="{{ "/micro/" | relLangURL }}{{ .Scratch.Get "slug" | urlize }}/">{{ .Render "content_only" }}</a></p>
+		</div>
+	{{ end }}
+{{ end }}
+</div>
+<br>
+<div>
+<h2 id="replies"> Replies <a href="#index">&uarr;</a> </h2>
+{{ range .Site.RegularPages }}
+	{{ if and (eq .Type "micro") .Params.reply  }}
+		{{ if .Params.slug }}
+			{{ .Scratch.Set "slug" .Params.slug }}	
+		{{ else}}
+			{{ .Scratch.Set "slug" .File.BaseFileName }}	
+		{{ end }}
+		<div class="hover-box">
+			<p><a href="{{ "/micro/" | relLangURL }}{{ .Scratch.Get "slug" | urlize }}/">{{ .Render "content_only" }}</a></p>
+		</div>
+	{{ end }}
+{{ end }}
+</div>
+<br>
+<div>
+<h2 id="likes"> Likes <a href="#index">&uarr;</a> </h2>
+{{ range .Site.RegularPages }}
+	{{ if and (eq .Type "micro") .Params.like  }}
+		{{ if .Params.slug }}
+			{{ .Scratch.Set "slug" .Params.slug }}	
+		{{ else}}
+			{{ .Scratch.Set "slug" .File.BaseFileName }}	
+		{{ end }}
+		<div class="hover-box">
+			<p><a href="{{ "/micro/" | relLangURL }}{{ .Scratch.Get "slug" | urlize }}/">{{ .Render "content_only" }}</a></p>
+		</div>
+	{{ end }}
+{{ end }}
+</div>
+<br>
+
+<div>
+<h2 id="notes"> Notes <a href="#index">&uarr;</a></h2>
+{{ range .Site.RegularPages }}
+	{{ if and (eq .Type "micro") .Params.note  }}
+		{{ if .Params.slug }}
+			{{ .Scratch.Set "slug" .Params.slug }}	
+		{{ else}}
+			{{ .Scratch.Set "slug" .File.BaseFileName }}	
+		{{ end }}
+		<div class="hover-box">
+			<p><a href="{{ "/micro/" | relLangURL }}{{ .Scratch.Get "slug" | urlize }}/">{{ .Render "content_only" }}</a></p>
+		</div>
+	{{ end }}
+{{ end }}
+</div>
+
 
 {{ partial "footer" . }}
