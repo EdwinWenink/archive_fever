@@ -58,7 +58,6 @@
 			{{ end }}
 		</aside>
 		<!--<div class="unfold"> Use this class to unfold summary on hover-->
-		<div>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
 		{{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
 		{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
@@ -69,7 +68,6 @@
 			<p><a href="{{ .RelPermalink }}">Read more</a><p>
 			</blockquote>
 		{{ end }}
-		</div>
 	{{ end }}
 
 	<br>
@@ -140,6 +138,7 @@
 	<p> See <a href="{{ .Site.BaseURL }}/microblog"> microblog</a> for more ... </p>
 	<br>
 	</div>
+
     <div class="webring">
       <a href="https://xn--sr8hvo.ws/%F0%9F%8F%BA%F0%9F%99%86%F0%9F%98%A6/previous">←</a>
       An IndieWeb Webring 🕸💍
