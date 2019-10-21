@@ -60,6 +60,7 @@
 		quotes[57]="&quotOne should not forget that philosophy is the art of masking inner torments&quot - Emil Cioran";
 		quotes[58]="&quotFirst we shape our dwellings and then our dwellings start to shape us&quot - Winston Churchill";
         quotes[59]="&quotYes, Moore's Law is operative, but so is Murphy's Law&quot - Peter Singer";
+		quotes[60]="&quotZu den Sachen selbst!&quot - Edmund Husserl";
 		/*
 		quotes[x]= "&quot &quot";
 		*/

@@ -71,7 +71,7 @@ If the summary is too long, you can manually truncate it to a particular amount 
 ### Deduplicated tags in Tag Roulette
 
 On my homepage I have an overview of the tags of all posts, so that one can pick a tag of interest and browse through corresponding posts.
-Previously I looped over all my posts, and then immediately rendered its tags.
+Previously I looped over all my posts, and then immediately rendered their tags.
 The result of this naive approach is that the tag overview will have many duplicate tags.
 In a normal programming language this is a trivial issue: you would keep track of a list of tags and make sure to not add duplicate tags (or perhaps work with a set), before rendering anything.
 However, Go templating has its own unique way of defining the scope of variables. 
