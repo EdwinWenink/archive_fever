@@ -76,6 +76,38 @@
 	<p> See <a href="{{ .Site.BaseURL }}/archives"> archives</a> for more ... </p>
 	</div>
 
+	<div>
+	{{ $all_comments := newScratch }}
+	{{ range $commented_posts := $.Site.Data.comments }}
+		{{ range . }}
+			{{ $all_comments.Add "comments" (slice . ) }}
+		{{ end}}
+	{{ end }}
+	<h2> Latest comments </h2>
+	<br>
+	<aside>Last 4 of {{ len ($all_comments.Get "comments") }} comments in total:</aside>
+	<p>
+	<!-- TODO retrieve title of the post -->
+	{{ range first 4 (sort ($all_comments.Get "comments") ".date" "desc") }}
+			{{ if .reply_to}}
+				<!-- Could extend the person replied to -->
+				{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#comments">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+			{{ else}}
+				{{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#comments">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+			{{ end}}
+			<!-- This way of retrieving name does not work here on in the above for some reason... -->
+			{{ with .Site.GetPage "/posts/37-deepfakes" }}
+				{{ .Title }}
+			{{ end }}
+	{{ end }}
+	</p>
+	<!-- Here is does work, but this is not where I need it
+	{{ with .Site.GetPage "/posts/37-deepfakes" }}
+		{{ .Title }}
+	{{ end }}
+	-->
+	</div>
+
 	<div class="tags">
 	<h2 id="tags"> Tag roulette </h2>
 	<br>
@@ -95,6 +127,8 @@
 	</div>
 	<br>
     <br>
+
+
 
 	<div>
 	<h2 > Micros </h2>
