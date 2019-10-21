@@ -3,7 +3,7 @@
   {{ if eq .reply_to $.parentId }}
     <div class="post-comment-reply">
       <div class="post-comment-header">
-        <p class="post-comment-info"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br><i><small>In reply to {{ $.parentName }}</i></small><br></p>
+		  <p class="post-comment-info" id="{{ ._id }}"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br><i><small>In reply to {{ $.parentName }}</i></small><br></p>
       </div>
       {{ .body | markdownify }}
     </div>

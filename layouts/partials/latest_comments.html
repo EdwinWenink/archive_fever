@@ -2,6 +2,7 @@
 
 {{ $comments := readDir "data/comments" }}
 
+<!-- TODO I have working code for this on the homepage, replace code below with that code, and use this partial on the homepage -->
 {{ range $.Site.Data.comments }}
 	{{ .name }}
 	{{ .Title }}

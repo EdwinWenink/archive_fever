@@ -12,12 +12,12 @@
 			{{ if not .reply_to }}
 				<div class="post-comment" >
 				  <div class="post-comment-header">
-					<p class="post-comment-info" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}:</p>
+					  <p class="post-comment-info" id="{{ ._id }}" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}:</p>
 				  </div>
 				  {{ .body | markdownify }}
 				  <div class="comment_reply">
 					  <br>
-	<a id="{{ ._id }}" class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')"> Reply to {{ .name }}</a>
+	<a class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')"> Reply to {{ .name }}</a>
 				</div>
 				</div>
 				{{ partial "comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name "context" .) }}
