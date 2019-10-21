@@ -1,18 +1,15 @@
 ---
 author: "Edwin Wenink"
-title: "Vim Use Cases for Writers (I)"
+title: "Vim: Basic Text Navigation and Editing"
 date: 2018-12-11
 draft: false
+toc: true
 tags: [Vim, Workflow, Text editing, Efficiency]
 ---
 
-As promised in a [previous post](https://edwinwenink.xyz/posts/13-Vim10Reasons/), here are some use cases of Vim. 
-These are intended to be basic, i.e. they do not depend on plugins, and they are not geared towards programming but towards basic text editing and -navigation.
-Vim can be customized and extended seemingly indefinitely, but sticks and stones Vim can actually already do surprisingly much! 
-
 ## Basic navigation
 
-I stated before that the main innovation of Vim is making insertion of text secondary to navigation.
+I stated in a [previous post](https://edwinwenink.xyz/posts/13-Vim10Reasons/) that the main innovation of Vim is making the insertion of text secondary to navigation.
 Let's put my money where my mouth is. The following assumes you are in normal mode.
 
 It is useful to conceptualize a bit first. 
@@ -51,7 +48,7 @@ This one is less obvious, but `$` moves towards the end of the line.
 
 **Between pages/screens**: `^f` and `^b` goes forward and back a page. Capitalizing instead makes you jump a whole screen: `^F` and `^B`. (Note that '^' here indicates the CTLR button).
 
-# Quick and dirty mode switching
+## Quick and dirty mode switching
 
 After navigation, you most likely want to enter Insert mode. 
 Vim offers commands for striking two birds with one stone; the birds being navigation and switching to insert mode.
@@ -80,7 +77,7 @@ But often you want to append something at the end of the line. No problemo: `A` 
 Notice that again there is some logic here that helps you remember this. Just like `I` does a similar operation but then on the line level, `A` does `a` but then for a whole line.
 The `A` command is amazing. You can leave a sentence half-finished, correct a small error, and then continue where you paused with a single keystroke.
 
-# Mastering the Grammar: Combining navigation and operations.
+## Mastering the Grammar: Combining navigation and operations.
 
 You can navigate, so what? Well, Vim has a grammar that allows you to combine navigational keys or "directions" with basic operations and text objects, like verbs combine with nouns and adverbs. The main importance of this is that once you understand the building blocks, you can combine them into sensible commands without the need to remember them explicitly. So again, even though learning Vim is daunting initially, it becomes easier when you study the underlying logic instead of haphazardly learning commands.
 

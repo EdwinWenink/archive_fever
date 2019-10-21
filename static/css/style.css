@@ -447,7 +447,7 @@ li {
 	line-height: 1.75em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
-	list-style-type: "> ";
+	"list-style-type: "> ";"
 }
 
 
