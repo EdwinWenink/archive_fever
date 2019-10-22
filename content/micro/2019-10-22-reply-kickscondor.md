@@ -2,7 +2,7 @@
 title: 
 date: 2019-10-22T09:29:39+00:00
 slug: reply-kickscondor
-target: https://www.kickscondor.com/
+target: https://www.kickscondor.com/comments/olia-lialina/
 type: micro
 reply: true
 ---
