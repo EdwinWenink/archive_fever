@@ -79,7 +79,7 @@ This is equivalent to throwing a coin for 2^n times and writing down all possibl
 How many of those sequences are possible?
 Well, the outcome is again either `1` or `0`, so for each row we have two options. 
 We already established we have `2^n` amount of rows. 
-So for `n` inputs, `2^n` rows, and 2 options per row, we have 2<sup>2<sup>n</sup></sup> possible truth tables, and hence so many boolean functions.
+So for `n` inputs, `2^n` rows, and 2 output options per row, we have 2<sup>2<sup>n</sup></sup> possible truth tables, and hence so many boolean functions.
 
 For 1 input, it's not much work to draw out all `2^(2^1) = 4` options:
 
