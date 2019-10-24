@@ -4,11 +4,7 @@ date: 2018-04-04T03:21:00+08:00
 type: about
 ---
 
-<meta charset="UTF-8">
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src ="/scripts/lastfm_query.js"> </script>
-</head>
+[Short version](/images/deathgeneratormbtt.png)
 
 This is the website of Edwin Wenink, a student of philosophy and artificial intelligence. 
 I wrote this static website (<a href="https://github.com/EdwinWenink/personal_website">source</a>) not because I'm into writing websites, but because I like to do things myself for the learning experience.

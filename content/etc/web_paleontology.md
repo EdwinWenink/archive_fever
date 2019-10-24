@@ -60,7 +60,7 @@ N.B. kickscondor pointed me to his web directory [href.cool](https://href.cool/a
 	<li> <a href=" http://thefirstdayoftherestofyourlife.org/ " target="_blank"> http://thefirstdayoftherestofyourlife.org/ </a></li>
 	<li> <a href=" http://floatingform.com/ " target="_blank"> http://floatingform.com/ </a></li>
 	<li> <a href=" http://www.arngren.net/ " target="_blank"> http://www.arngren.net/ </a></li>
-	<li> <a href=" http://webenact.rhizome.org/keeping-up-appearances/20151029152713/http://blacknetart.com/keepingupappearances.html" target="_blank"> Keeping up appearances </a></li>
+	<li> <a href="http://blacknetart.com/keepingupappearances.html" target="_blank"> Keeping up appearances </a></li>
 	<li> <a href="https://gifcities.org/" target="_blank"> GifCities </a></li>
 	<li> <a href="http://www.pmichaud.com/toast/" target="_blank"> Strawberry Pop-Tart Blow-Torches </a></li>
 	<li> <a href="http://onelongscream.com/" target="_blank"> one long scream </a></li>
