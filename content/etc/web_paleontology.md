@@ -31,6 +31,8 @@ You would not quickly find these pages when googling. <br>
 Surf instead of search: click away and follow that hyperlink.
 </p>
 
+N.B. kickscondor pointed me to his web directory [href.cool](https://href.cool/about). Have a look! Perhaps the list below will escalate into something similar.
+
 <h2> O.K. Computer </h2>
 
 <ul>

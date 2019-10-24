@@ -5,7 +5,7 @@ type: "etc"
 
 # Etc. Index
 
-- [Blogroll]({{<parenturl>}}blogroll)
+- [Linkage]({{<parenturl>}}blogroll)
 - [Short C.V.]({{<parenturl>}}cv)
 - [Courses]({{<parenturl>}}courses)
 - [Music statistics]({{<parenturl>}}music )
