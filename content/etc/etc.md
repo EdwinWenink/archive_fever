@@ -12,3 +12,5 @@ type: "etc"
 - [Web paleontology: An Ode to the Hyperlink]({{<parenturl>}}web_paleontology)
 - [Groen-art]({{<parenturl>}}groen_art)
 - [Plants]({{<parenturl>}}plants)
+- [Coffee]({{<parenturl>}}coffee)
+
