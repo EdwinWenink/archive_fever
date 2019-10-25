@@ -126,6 +126,7 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 ## Miscellaneous
 
 - ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
+- [philosopher.life: a unique personal wiki](https://philosopher.life)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 - [Teaching in Minecraft](https://blog.haschek.at/2019/teaching-in-minecraft.html)
 - [Nadia Eghbal](https://nadiaeghbal.com/): the only reason this is here is because I don't know how to categorize it
