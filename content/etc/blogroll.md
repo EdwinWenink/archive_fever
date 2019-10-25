@@ -94,6 +94,7 @@ Intended to be permanently under construction.
 ## Philosophy
 
 - [De Klos](http://www.de-klos.net/): blog of my friend Boris on the challenges of the Antrophocene [(old version)](https://deklos.wordpress.com/) 
+- [Stoicism-fu: internet guide to what's worth keeping in Stoicism](https://philosopher.life/#Stoicism-fu:Stoicism-fu)
 - [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
 - [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
 
