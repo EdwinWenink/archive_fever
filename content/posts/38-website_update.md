@@ -32,12 +32,12 @@ The following assumes you are looping over your posts:
 ```html
 <aside>{{ .Date.Format "January 2, 2006"}} 
   {{ if not (eq .Params.tags nil) }}
-	{{ range first 2 $value.Params.tags }}
+    {{ range first 2 $value.Params.tags }}
       <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"
       style="text-decoration:none">#{{ lower . }}</a>
-	{{ end }}
-	{{ if gt (len .Params.tags) 2 }}
-		...
+    {{ end }}
+    {{ if gt (len .Params.tags) 2 }}
+        ...
   {{ end }}
 {{ end }}
 </aside>
@@ -52,14 +52,14 @@ If the summary is too long, you can manually truncate it to a particular amount 
 <div class="preview">
 {{ range $index, $value := first 6 (where .Pages ".Type" "posts") }}
   <p>
-	<a href="{{ .Permalink }}">{{ .Title }}</a>
-	{{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
-	{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
+    {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
   </p>
   {{ if (eq $index 0) }}
-	<blockquote>{{ truncate 350 .Summary }}
-	<p><a href="{{ .RelPermalink }}">Read more</a><p>
-	</blockquote>
+    <blockquote>{{ truncate 350 .Summary }}
+    <p><a href="{{ .RelPermalink }}">Read more</a><p>
+    </blockquote>
   {{ end }}
 {{ end }}
 <br>
@@ -91,12 +91,12 @@ So before adding tags, I convert it to a list with the `slice` function.
 {{$tags := newScratch }}
 {{ range .Site.Pages }} 
   {{ if eq .Type "posts"}}
-	{{ range .Params.tags }}
-		{{ $name := lower .  }}
-		{{ $array := $tags.Get "tags" }}
-		{{ if not (in $array $name)}}
-	      {{ $tags.Add "tags" (slice $name)}}
-		  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
+    {{ range .Params.tags }}
+        {{ $name := lower .  }}
+        {{ $array := $tags.Get "tags" }}
+        {{ if not (in $array $name)}}
+          {{ $tags.Add "tags" (slice $name)}}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
         {{ end }}
     {{end}}
   {{ end }}
@@ -116,7 +116,7 @@ The layout "content_only" calls a partial that I wrote for displaying html using
 <h2 > Micros </h2>
 {{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
   <div class="hover-box">
-	<p>{{ .Render "content_only" }}</p>
+    <p>{{ .Render "content_only" }}</p>
   </div>
 {{ end }}
 <p> See <a href="{{ .Site.BaseURL }}/microblog"> microblog</a> for more ... </p>
@@ -138,45 +138,45 @@ This is work in progress, but for now I wrote the following partial:
 <body>
 {{ if not .Params.event }}
   <div class="h-entry">
-	<div class="u-author h-card" style="display:none">
+    <div class="u-author h-card" style="display:none">
       <a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
-	</div>
-	<div class="micro">
-	  <a href="{{ .Permalink }}">
-		<h4>{{ .Title}}</h4>
-		<aside>{{ .Date.Format "January 2, 2006"}}</aside></a>
+    </div>
+    <div class="micro">
+      <a href="{{ .Permalink }}">
+        <h4>{{ .Title}}</h4>
+        <aside>{{ .Date.Format "January 2, 2006"}}</aside></a>
 
-		{{ if .Params.reply }}
-  		  <p>In reply to &#8594 <a class="u-in-reply-to" href="{{ .Params.target}}">{{ .Params.target }}</a></p>
-		{{ end }}
+        {{ if .Params.reply }}
+          <p>In reply to &#8594 <a class="u-in-reply-to" href="{{ .Params.target}}">{{ .Params.target }}</a></p>
+        {{ end }}
 
-		{{ if .Params.like }}
-		  <p>Edwin &#10084 <a class="u-like-of" href="{{ .Params.target }}"> {{ .Params.target }}</a></p>
-		{{ end }}
+        {{ if .Params.like }}
+          <p>Edwin &#10084 <a class="u-like-of" href="{{ .Params.target }}"> {{ .Params.target }}</a></p>
+        {{ end }}
 
-		{{ if .Params.bookmark }}
-		  <p>&#128214 <a class="u-url u-uid" href="{{ .Params.target }}">{{ .Params.target }}</a></p>
-		{{ end }}
+        {{ if .Params.bookmark }}
+          <p>&#128214 <a class="u-url u-uid" href="{{ .Params.target }}">{{ .Params.target }}</a></p>
+        {{ end }}
 {{ else }}
   <div class="h-event">
-	<div class="micro">
-	  <h4 class="p-name"> 
-		<a class="u-url" href={{ .Params.target }}>
-		{{ if eq .Params.category "music" }}
- 		  &#9836
-		{{ else }}
-		  &#128198
-		{{ end }}
-		{{ .Title }}</a>
-	  </h4>
-	  <a href="{{ .Permalink }}">
-	    <aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
-	  </a>
+    <div class="micro">
+      <h4 class="p-name"> 
+        <a class="u-url" href={{ .Params.target }}>
+        {{ if eq .Params.category "music" }}
+          &#9836
+        {{ else }}
+          &#128198
+        {{ end }}
+        {{ .Title }}</a>
+      </h4>
+      <a href="{{ .Permalink }}">
+        <aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
+      </a>
 {{ end }}
   <p class="e-content">
-	{{ if .Content }}
-	  &#8620 {{ .Content | markdownify }}
-	{{ end }}
+    {{ if .Content }}
+      &#8620 {{ .Content | markdownify }}
+    {{ end }}
    </p>
    </div>
  </div>
@@ -223,7 +223,7 @@ I also distinguish between comments on the original post, and replies on comment
 {{ $all_comments := newScratch }}
 {{ range $commented_posts := $.Site.Data.comments }}
   {{ range . }}
-	{{ $all_comments.Add "comments" (slice . ) }}
+    {{ $all_comments.Add "comments" (slice . ) }}
   {{ end}}
 {{ end }}
 <h2> Latest comments </h2>
@@ -232,9 +232,9 @@ I also distinguish between comments on the original post, and replies on comment
 <p>
 {{ range first 4 (sort ($all_comments.Get "comments") ".date" "desc") }}
   {{ if .reply_to}}
-	{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+    {{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
   {{ else}}
-	{{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+    {{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
   {{ end}}
 {{ end }}
 </p>
