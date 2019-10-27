@@ -31,15 +31,15 @@ The following assumes you are looping over your posts:
 
 ```html
 <aside>{{ .Date.Format "January 2, 2006"}} 
-	{{ if not (eq .Params.tags nil) }}
-		{{ range first 2 $value.Params.tags }}
-			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"
-			style="text-decoration:none">#{{ lower . }}</a>
-		{{ end }}
-		{{ if gt (len .Params.tags) 2 }}
-			...
-		{{ end }}
+  {{ if not (eq .Params.tags nil) }}
+	{{ range first 2 $value.Params.tags }}
+      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/"
+      style="text-decoration:none">#{{ lower . }}</a>
 	{{ end }}
+	{{ if gt (len .Params.tags) 2 }}
+		...
+  {{ end }}
+{{ end }}
 </aside>
 ```
 
@@ -51,17 +51,16 @@ If the summary is too long, you can manually truncate it to a particular amount 
 ```html
 <div class="preview">
 {{ range $index, $value := first 6 (where .Pages ".Type" "posts") }}
-	<p>
+  <p>
 	<a href="{{ .Permalink }}">{{ .Title }}</a>
 	{{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
-	{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
-	{{ end }}
-	</p>
-	{{ if (eq $index 0) }}
-		<blockquote>{{ truncate 350 .Summary }}
-		<p><a href="{{ .RelPermalink }}">Read more</a><p>
-		</blockquote>
-	{{ end }}
+	{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span> {{ end }}
+  </p>
+  {{ if (eq $index 0) }}
+	<blockquote>{{ truncate 350 .Summary }}
+	<p><a href="{{ .RelPermalink }}">Read more</a><p>
+	</blockquote>
+  {{ end }}
 {{ end }}
 <br>
 <p> See <a href="{{ .Site.BaseURL }}/archives"> archives</a> for more ... </p>
@@ -91,16 +90,16 @@ So before adding tags, I convert it to a list with the `slice` function.
 <br>
 {{$tags := newScratch }}
 {{ range .Site.Pages }} 
-{{ if eq .Type "posts"}}
+  {{ if eq .Type "posts"}}
 	{{ range .Params.tags }}
 		{{ $name := lower .  }}
 		{{ $array := $tags.Get "tags" }}
 		{{ if not (in $array $name)}}
-			{{ $tags.Add "tags" (slice $name)}}
-			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
-		{{ end }}
-	{{end}}
-{{ end }}
+	      {{ $tags.Add "tags" (slice $name)}}
+		  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
+        {{ end }}
+    {{end}}
+  {{ end }}
 {{ end }}
 </div>
 ``` 
@@ -116,9 +115,9 @@ The layout "content_only" calls a partial that I wrote for displaying html using
 <div>
 <h2 > Micros </h2>
 {{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
-	<div class="hover-box">
-		<p>{{ .Render "content_only" }}</p>
-	</div>
+  <div class="hover-box">
+	<p>{{ .Render "content_only" }}</p>
+  </div>
 {{ end }}
 <p> See <a href="{{ .Site.BaseURL }}/microblog"> microblog</a> for more ... </p>
 <br>
@@ -137,50 +136,50 @@ This is work in progress, but for now I wrote the following partial:
 
 ```html
 <body>
-	{{ if not .Params.event }}
-	  <div class="h-entry">
-		<div class="u-author h-card" style="display:none">
-			<a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
-		</div>
-		<div class="micro">
-			<a href="{{ .Permalink }}">
-				<h4>{{ .Title}}</h4>
-				<aside>{{ .Date.Format "January 2, 2006"}}</aside></a>
-
-			{{ if .Params.reply }}
-				<p>In reply to &#8594 <a class="u-in-reply-to" href="{{ .Params.target}}">{{ .Params.target }}</a></p>
-			{{ end }}
-
-			{{ if .Params.like }}
-				<p>Edwin &#10084 <a class="u-like-of" href="{{ .Params.target }}"> {{ .Params.target }}</a></p>
-			{{ end }}
-
-			{{ if .Params.bookmark }}
-				<p>&#128214 <a class="u-url u-uid" href="{{ .Params.target }}">{{ .Params.target }}</a></p>
-			{{ end }}
-	{{ else }}
-		<div class="h-event">
-		<div class="micro">
-			<h4 class="p-name"> 
-				<a class="u-url" href={{ .Params.target }}>
-				{{ if eq .Params.category "music" }}
-				&#9836
-				{{ else }}
-				&#128198
-				{{ end }}
-				{{ .Title }}</h4></a>
-				<a href="{{ .Permalink }}">
-					<aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
-				</a>
-		{{ end }}
-
-		<p class="e-content">
-		{{ if .Content }}
-		 &#8620 {{ .Content | markdownify }}
-		{{ end }}
-		</p>
+{{ if not .Params.event }}
+  <div class="h-entry">
+	<div class="u-author h-card" style="display:none">
+      <a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
 	</div>
-  </div>
+	<div class="micro">
+	  <a href="{{ .Permalink }}">
+		<h4>{{ .Title}}</h4>
+		<aside>{{ .Date.Format "January 2, 2006"}}</aside></a>
+
+		{{ if .Params.reply }}
+  		  <p>In reply to &#8594 <a class="u-in-reply-to" href="{{ .Params.target}}">{{ .Params.target }}</a></p>
+		{{ end }}
+
+		{{ if .Params.like }}
+		  <p>Edwin &#10084 <a class="u-like-of" href="{{ .Params.target }}"> {{ .Params.target }}</a></p>
+		{{ end }}
+
+		{{ if .Params.bookmark }}
+		  <p>&#128214 <a class="u-url u-uid" href="{{ .Params.target }}">{{ .Params.target }}</a></p>
+		{{ end }}
+{{ else }}
+  <div class="h-event">
+	<div class="micro">
+	  <h4 class="p-name"> 
+		<a class="u-url" href={{ .Params.target }}>
+		{{ if eq .Params.category "music" }}
+ 		  &#9836
+		{{ else }}
+		  &#128198
+		{{ end }}
+		{{ .Title }}</a>
+	  </h4>
+	  <a href="{{ .Permalink }}">
+	    <aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
+	  </a>
+{{ end }}
+  <p class="e-content">
+	{{ if .Content }}
+	  &#8620 {{ .Content | markdownify }}
+	{{ end }}
+   </p>
+   </div>
+ </div>
 </body>
 ```
 
@@ -195,15 +194,15 @@ This ensures that when the are at the latest post, we will not cause any errors 
 {{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
 <!--Grab the most recent-->
 {{ range first 1 $posts }}
-	<p><b>Latest</b>: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+  <p><b>Latest</b>: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
 {{ end }}
 
 {{ with .NextInSection }}
-<p><b>Next:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+  <p><b>Next:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
 {{ end }}
 
 {{ with .PrevInSection }}
-<p><b>Previous:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+  <p><b>Previous:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
 {{ end }}
 </div>
 ```
@@ -223,20 +222,20 @@ I also distinguish between comments on the original post, and replies on comment
 <div>
 {{ $all_comments := newScratch }}
 {{ range $commented_posts := $.Site.Data.comments }}
-	{{ range . }}
-		{{ $all_comments.Add "comments" (slice . ) }}
-	{{ end}}
+  {{ range . }}
+	{{ $all_comments.Add "comments" (slice . ) }}
+  {{ end}}
 {{ end }}
 <h2> Latest comments </h2>
 <br>
 <aside>Last 4 of {{ len ($all_comments.Get "comments") }} comments in total:</aside>
 <p>
 {{ range first 4 (sort ($all_comments.Get "comments") ".date" "desc") }}
-		{{ if .reply_to}}
-			{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
-		{{ else}}
-		{{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
-		{{ end}}
+  {{ if .reply_to}}
+	{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+  {{ else}}
+	{{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+  {{ end}}
 {{ end }}
 </p>
 </div>
