@@ -63,6 +63,7 @@
 		quotes[60]="&quotZu den Sachen selbst!&quot - Edmund Husserl";
 		quotes[61]="&quotTell me how you read and I'll tell you who you are&quot - Martin Heidegger"; 
 		quotes[62]="&quotThere can be only one permanent revolution — a moral one; the regeneration of the inner man...How is this revolution to take place? Nobody knows how it will take place in humanity, but every man feels it clearly in himself. And yet in our world everybody thinks of changing humanity, and nobody thinks of changing himself&quot - Leo Tolstoy";
+		quotes[63]="&quotWe know more than we can tell&quot - Michael Polanyi";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
