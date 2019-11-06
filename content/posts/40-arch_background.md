@@ -91,3 +91,41 @@ Replace the line we added for scenario 1 with a simple call to your script.
 Voila!
 Each time you boot up your system you'll be greeted by a new background.
 The background sticks around when you start up your window manager, unless you explicitly override it, like we did in scenario 1 with `feh`.
+
+## Scenario 3: Change background at interval
+
+If you want to keep changing your background picture with some time interval after you have logged in, you could adjust the bash script above to include a loop that updates the background for example each hour using `feh`. 
+
+The adjust bash script could look like this:
+
+```bash
+#!/bin/bash
+
+cd /usr/share/pixmaps
+
+background_home=/home/edwin/Pictures/backgrounds
+
+# Shuffle backgrounds and pick one
+background=$(ls $background_home | shuf -n 1)
+
+# Replace current LightDM greeter background
+cp $background_home/$background background.jpg
+
+sleep 1h
+# Use feh to ad hoc set a new random background at a given time interval
+while :
+do
+	feh --randomize --bg-fill /home/edwin/Pictures/backgrounds/*
+	sleep 1h
+done
+```
+
+Because we now introduced an infinite loop, we should really make sure that the bash process can run in the background, otherwise your system will hang and never boot into your window manager!
+This is not hard though. 
+In your `~/.xprofile`, just make sure to disown the bash call, for example as such:
+
+`random_background.sh & disown`
+
+Now you will have a fresh background from your collection each hour! 
+If you manage to hang your system anyways, just open another TTY and log in there to fix the problem. 
+Because you do not automatically start the X server at other TTYs, you can adjust your script and halt the blocking process (e.g. using `htop`).
