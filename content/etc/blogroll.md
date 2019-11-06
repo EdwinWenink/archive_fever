@@ -132,6 +132,7 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 - [Teaching in Minecraft](https://blog.haschek.at/2019/teaching-in-minecraft.html)
 - [Nadia Eghbal](https://nadiaeghbal.com/): the only reason this is here is because I don't know how to categorize it
 	* But absolutely love the minimal design
+- [Ribbonfarm: constructions in magical thinking](https://www.ribbonfarm.com/)
 - [Paul Graham's site](http://www.paulgraham.com/articles.html): idem, still to categorize
 
 ## Random
