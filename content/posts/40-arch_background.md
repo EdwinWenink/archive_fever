@@ -96,7 +96,7 @@ The background sticks around when you start up your window manager, unless you e
 
 If you want to keep changing your background picture with some time interval after you have logged in, you could adjust the bash script above to include a loop that updates the background for example each hour using `feh`. 
 
-The adjust bash script could look like this:
+The adjusted bash script could look like this:
 
 ```bash
 #!/bin/bash
