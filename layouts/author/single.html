@@ -48,15 +48,30 @@ window.onload = ready;
 </script>
 
 <div class="content">
-	<h1>{{ .Title }} </h1>
+	<h1>{{ .Params.author }} </h1>
   {{ $guest := .Page.Params.author }}
   {{ .Content }}
   <h2> Contributions by {{ $guest }}: </h2><br>
+  <div class="preview">
   {{ range $pageName := .Site.Pages }}
 	  {{ if and (eq .Type "posts") (in .Params.author $guest) }}
-		<p><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}</p>
+		<p>
+
+		<aside>{{ .Date.Format "January 2, 2006"}} 
+			{{ if not (eq .Params.tags nil) }}
+				{{ range first 2 .Params.tags }}
+					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+				{{ end }}
+				{{ if gt (len .Params.tags) 2 }}
+					...
+				{{ end }}
+			{{ end }}
+		</aside>
+		
+		<a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}</p>
 	  {{ end }}
   {{ end }}
+  </div>
 </div>
 
 <!--

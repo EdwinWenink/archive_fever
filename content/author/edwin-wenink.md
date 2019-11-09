@@ -4,7 +4,7 @@ author: Edwin Wenink
 type: author
 ---
 
-Hi, I'm the author of this website.
+Hi, I'm the creator of this website.
 
 Would you like to be a digital resident at this url?
 
