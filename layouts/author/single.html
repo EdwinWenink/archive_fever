@@ -51,12 +51,20 @@ window.onload = ready;
 	<h1>{{ .Params.author }} </h1>
   {{ $guest := .Page.Params.author }}
   {{ .Content }}
-  <h2> Contributions by {{ $guest }}: </h2><br>
+  {{ $scratch := newScratch }}
+  {{ $author := .Params.author }}
+  {{ $scratch.Set "author" $author }}
+  {{ $counter := 0 }}
+  {{ range where .Site.Pages ".Type" "posts" }}
+	{{ if (eq .Params.author ( $scratch.Get "author" ))}}
+		{{ $counter = add $counter 1}}
+	{{ end}}
+  {{ end }}
+  <h2> Contributions by {{ $guest }} ({{ $counter }}):</h2><br>
   <div class="preview">
   {{ range $pageName := .Site.Pages }}
 	  {{ if and (eq .Type "posts") (in .Params.author $guest) }}
 		<p>
-
 		<aside>{{ .Date.Format "January 2, 2006"}} 
 			{{ if not (eq .Params.tags nil) }}
 				{{ range first 2 .Params.tags }}
