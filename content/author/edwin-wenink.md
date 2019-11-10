@@ -5,7 +5,6 @@ type: author
 url: /~ejw
 ---
 
-
 <div class="author-portret">
 <a href="https://www.ritsjoosten.nl">
 <img src="../../images/portret_smooth.jpg" id="portret_normal"></a>
@@ -13,13 +12,16 @@ url: /~ejw
 by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 </div>
 
-Hi, I'm the creator of this website.
+The essentials:
 
-Would you like to be a digital resident at this url?
+- Founder & Editor of Archive Fever (<a href="https://github.com/EdwinWenink/personal_website">code</a>)
+- Student of Philosophy and Artificial Intelligence
+- Nijmegen, the Netherlands
+- [Brief C.V.]({{<baseurl>}}etc/cv)
 
-That is possible!
-You can display some information about yourself here.
-This is an example page I made using my own name.
+Less essential:
 
-If you contributed a post, your posts will be automatically listed below.
-These are all posts I wrote:
+- [What music did I listen to recently?]({{<baseurl>}}etc/music/)
+- [University courses I took]({{<baseurl>}}etc/courses/)
+- [I own quite some plants]({{<baseurl>}}etc/plants/)
+- [A philosopher is a device for turning coffee into thoughts]({{<baseurl>}}etc/coffee/)
