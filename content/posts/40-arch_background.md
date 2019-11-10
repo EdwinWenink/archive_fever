@@ -92,7 +92,7 @@ Voila!
 Each time you boot up your system you'll be greeted by a new background.
 The background sticks around when you start up your window manager, unless you explicitly override it, like we did in scenario 1 with `feh`.
 
-### Scenario 3: Change background at interval
+## Scenario 3: Change background at interval
 
 If you want to keep changing your background picture with some time interval after you have logged in, you could adjust the bash script above to include a loop that updates the background for example each hour using `feh`. 
 
