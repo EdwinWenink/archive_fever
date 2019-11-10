@@ -2,7 +2,16 @@
 title: Digital residence of Edwin Wenink
 author: Edwin Wenink
 type: author
+url: /~ejw
 ---
+
+
+<div class="author-portret">
+<a href="https://www.ritsjoosten.nl">
+<img src="../../images/portret_smooth.jpg" id="portret_normal"></a>
+<img src="../../images/portret_zwart.gif" id="portret_dark"></a>
+by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
+</div>
 
 Hi, I'm the creator of this website.
 
