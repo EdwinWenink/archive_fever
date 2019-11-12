@@ -3,6 +3,7 @@ title: Digital residence of Edwin Wenink
 author: Edwin Wenink
 type: author
 url: /~ejw
+aliases: [/author/edwin-wenink/]
 ---
 
 <div class="author-portret">

@@ -2,7 +2,6 @@
 
 <div class="content container">
   <h1>Archives</h1>
-
   {{ with .Site.GetPage "section" "posts" }}
     {{ range .Data.Pages.GroupByDate "2006" }}
     
@@ -20,7 +19,6 @@
       </ul>
 	  </div>
     </section>
-
     {{ end }}
   {{ end }}
 
