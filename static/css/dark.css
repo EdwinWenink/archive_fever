@@ -79,6 +79,10 @@ aside {
 	display: inline;
 }
 
+.ansi-header {
+	color: white;>
+}
+
 .footer {
 	border-top-style: solid;
 	border-top-width: 1px;

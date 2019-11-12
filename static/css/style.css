@@ -40,6 +40,10 @@ header,header.a{
 	color:#777;
 }
 
+::selection {
+	background: yellow;
+	color: black;
+}
 
 /**
  * Table of content
@@ -154,6 +158,10 @@ input:checked + .slider:before {
 
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
 
+/*
+ * Comments
+ */
+
 .post-comments {
   margin-top: 60px;
 }
@@ -201,6 +209,10 @@ input:checked + .slider:before {
 .post-new-comment {
 	padding: 10px;
 }
+
+/*
+ * Other
+ */
 
 .btn {
   border: 2px solid #F76C5E;
@@ -257,6 +269,16 @@ input:checked + .slider:before {
 
 #portret_dark {
 	display: none;
+}
+
+.ansi-header {
+	display:block;
+	line-height:1vw;
+	font-size: 1vw;
+	font-weight:bold;
+	white-space:pre;
+	font-family: monospace;
+	color: black;>
 }
 
 .unfold {
