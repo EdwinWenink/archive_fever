@@ -107,6 +107,6 @@ Therapist says: Student2 you already had 2 beers. That's enough!
 The therapist counted 5 beers.
 ```
 
-Although the Observer pattern is in essence simple, its importance cannot be overstated. It is for example very important in the MVC-architecture that advocates a separation between model, view, and controller. The controller can make adjustments to the model, containing the program logic, and various "view" classes designed to display the model need to informed about updates in the model effectively without becoming entangled with the model. The observer pattern takes care of just that.
+Although the Observer pattern is in essence simple, its importance cannot be overstated. It is for example very important in the MVC-architecture that advocates a separation between model, view, and controller. The controller can make adjustments to the model, containing the program logic, and various "view" classes designed to display the model need to be informed about updates in the model effectively without becoming entangled with the model. The observer pattern takes care of just that.
 
 
