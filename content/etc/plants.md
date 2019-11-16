@@ -17,6 +17,7 @@ Watching these type of plants create new leaves from a spadix and sometimes a sp
     * Very big, hence the elephant reference
 - Spathiphyllum
 - Dieffenbachia
+- Homalomena "Maggy"
 
 ### Climbing Varieties
 

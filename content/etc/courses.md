@@ -7,6 +7,7 @@ style: etc
 <h1><u> Course Overview Philosophy Bachelor </u></h1>
 
 Last updated: January 2019.
+Not up to date.
 
 <h3>Propaedeutic Year | Introductory courses... </h3>
 <p>

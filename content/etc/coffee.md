@@ -64,5 +64,7 @@ I threw away two Senseo machines I owned, because I am not convinced anymore the
 	* 100% Arabica from	Soconusco, Chiapas highlands, Motozinta, Mexico
 	* Washed
 	* Tried this with the Bodum
+- Mocha Limu Ethiopie
+	* Bodum pour over
 
 
