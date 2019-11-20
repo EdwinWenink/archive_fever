@@ -1,5 +1,5 @@
 ---
-title: Information Consumerism: The Price of Hypocrisy
+title: "Information Consumerism: The Price of Hypocrisy"
 date: 2019-11-20T21:21:17+00:00
 slug: information-consumerism-the-price-of-hypocrisy
 target: https://www.faz.net/aktuell/feuilleton/debatten/ueberwachung/information-consumerism-the-price-of-hypocrisy-12292374.html
