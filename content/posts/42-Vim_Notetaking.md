@@ -1,6 +1,6 @@
 ---
 author: "Edwin Wenink"
-title: "Building a Notetaking System in Vanilla Vim"
+title: "Building a Note-taking System with Vanilla Vim"
 date: 2019-11-24
 draft: false
 tags: [Vim, Workflow]
@@ -397,12 +397,12 @@ You can adjust the size of the bar with `:vert resize {size}`.
 
 ## Conclusion and ideas for the future
 
-The system described above only uses native Vim functionality without the need for plugins.
+The system described above only uses vanilla Vim functionality without the need for plugins.
 
 I also deliberately do not use additional plugins for previewing my notes, because I write in Markdown and Markdown is designed to be readable in plain text. 
 Instead I advice to explore the various Markdown plugins out there, for syntax highlighting and folding.
 
-I'm especially interested in getting tips from you, especially about a potential implementation for "tags".
+I'm interested in getting tips from you, especially about a potential implementation for "tags".
 
 This is my current TODO list:
 
