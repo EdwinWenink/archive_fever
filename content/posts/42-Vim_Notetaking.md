@@ -159,7 +159,7 @@ The resulting tree looks something like this:
 │   │   ├── ./AI/Master/AAPS-Chemero_Radical_Embodied_Cog_Science.md
 │   │   ├── ./AI/Master/AAPS-Kwisthout_Frugal_Explanations.md
 │   │   ├── ./AI/Master/AAPS-Lecture_Notes.md
-│   │   ├── ./AI/Master/AAPS_Olivia_Scene_perception.md
+│   │   ├── ./AI/Master/AAPS-Olivia_Scene_perception.md
 │   │   └── ./AI/Master/AAPS-presentation_skills.md
 │   ├── ./AI/Other
 │   │   ├── ./AI/Other/ImageRecognitionWorkshop.md
@@ -175,13 +175,13 @@ The resulting tree looks something like this:
 
 │       ├── ./AI/Y3/RI-Logic_Block.md
 │       ├── ./AI/Y3/RI-Multi_Agent_Systems.md
-│       └── ./AI/Y3/SEC - Lecture Notes.md
+│       └── ./AI/Y3/SEC-Lecture_Notes.md
 │
-└── ./Workflow & Skills
-    ├── ./Workflow & Skills/BASB.org
-    ├── ./Workflow & Skills/environment.md
-    ├── ./Workflow & Skills/memory_techniques.md
-    └── ./Workflow & Skills/writing_principles.md
+└── ./Zettelkasten
+    ├── ./Zettelkasten/BASB.org
+    ├── ./Zettelkasten/environment.md
+    ├── ./Zettelkasten/memory_techniques.md
+    └── ./Zettelkasten/writing_principles.md
 ```
 
 You can use this full tree for navigating to any note using Vim's `gf` command. 
