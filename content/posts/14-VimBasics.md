@@ -101,10 +101,10 @@ And search functions `t`, `f`, `/`, and `?` are also navigational in nature, so 
 
 And even if you get creative, Vim often knows exactly what you mean.
 
-- `ci"`: change everything inside the brackets. Nothing to remember here, it just does what it says.
-- `da]`: delete everything until around the square brackets (so including brackets).
+- `ci"`: change everything inside the quotation marks. Nothing to remember here, it just does what it says.
+- `da]`: delete everything "around" the square brackets (so including brackets).
 
 All of this combined opens a completely new perspective on text editing. 
 The main downside however, is that when you start using Vim you will counteract the gained efficiency by delivering unrequested preaches about how much more efficient you are now that you use Vim. 
 
-In a follow up post I will focus on use cases less related to the act of writing itself, and more to everything surrounding it.
+In a follow up post I will focus on use cases less related to the act of writing itself and more to everything surrounding it.
