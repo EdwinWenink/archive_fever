@@ -124,6 +124,13 @@ Intended to be permanently under construction.
 
 Also see [web paleontology]({{<parenturl>}}web_paleontology).
 
+## Creative Coding
+
+- [Attractors book](http://sprott.physics.wisc.edu/sa.htm)
+- [Clifford attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/)
+- [Drawing with purrrr](https://fronkonstin.com/2019/03/27/drrrawing-with-purrr/)
+- [Make your own algorithmic art](https://junkiyoshi.com/tag/make-your-own-algorithmic-art/)
+
 ## Miscellaneous
 
 - ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
@@ -148,4 +155,4 @@ These are *really quite random*.
 - [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
 	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
 - [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
-
+- [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
