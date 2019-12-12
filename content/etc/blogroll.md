@@ -11,7 +11,7 @@ It is not quite a classical blogroll, as this page also contains links to specif
 Some links are here because I kept them open in a browser tab for too long, so I might not have read them carefully myself. 
 I also bookmark stuff under [edwinwenink.xyz/microblog/](https://www.edwinwenink.xyz/microblog/), but those I have read for sure.
 I do try to organize links, but it doesn't always work out. 
-At the bottom I collect links for finding more links, if you want to go through hyperspace.
+I collect links for finding more links under "Tiny Directories and Blogrolls," if you want to go through hyperspace.
 
 Intended to be permanently under construction.
 
