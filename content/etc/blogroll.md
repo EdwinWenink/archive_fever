@@ -57,6 +57,15 @@ Intended to be permanently under construction.
 - [Books about the Internet](https://en.wikipedia.org/wiki/Category:Books_about_the_Internet)
 - [Internet Invention](https://en.wikipedia.org/wiki/Internet_Invention)
 
+## Tiny directories and blogrolls
+
+- [href.cool: web directory by kicks](https://href.cool/about)
+- [https://fingers.today/](https://fingers.today/)
+- [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
+	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
+- [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
+- [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
+
 ## Vim 
 
 - [At least one Vim trick you might not now](https://www.hillelwayne.com/post/intermediate-vim/)
@@ -111,9 +120,8 @@ Intended to be permanently under construction.
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
 
 
-## Minimalist website design / Web Nostalgia
+## Minimalist / nostalgic website design
 
-- [href.cool: web directory by kicks](https://href.cool/about)
 - [greaterthanorequalto.net](http://greaterthanorequalto.net/)
 - [motherfuckingwebsite](http://motherfuckingwebsite.com/)
 - [txti](http://txti.es/)
@@ -133,6 +141,9 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 
 ## Miscellaneous
 
+Links I do not know yet how to categorize. 
+Perhaps that's the beauty of it.
+
 - ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
 - [philosopher.life: a unique personal wiki](https://philosopher.life)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
@@ -149,10 +160,3 @@ These are *really quite random*.
 
 - [Q: What is the connection between goats and Justin Bieber?](https://www.geitjesenbieber.xyz) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
 - [Hyper Text Coffee Pot Control Protocol](https://tools.ietf.org/html/rfc2324)
-
-## Links to find more links to cool blogs, websites and tech
-
-- [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
-	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
-- [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
-- [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
