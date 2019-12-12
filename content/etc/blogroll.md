@@ -60,11 +60,12 @@ Intended to be permanently under construction.
 ## Tiny directories and blogrolls
 
 - [href.cool: web directory by kicks](https://href.cool/about)
-- [https://fingers.today/](https://fingers.today/)
+- [https://neocities.org/browse](https://neocities.org/browse)
 - [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
 	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
 - [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
 - [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
+- [https://fingers.today/](https://fingers.today/)
 
 ## Vim 
 
