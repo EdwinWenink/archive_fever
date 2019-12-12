@@ -35,6 +35,7 @@ Intended to be permanently under construction.
 
 - [okmij.org](http://okmij.org/ftp/README.html)
 - [Gödels Lost Letter and P=NP](https://rjlipton.wordpress.com/)
+- [Power serious: power series in ten one-liners (Haskell)](https://www.cs.dartmouth.edu/~doug/powser.html)
 
 ## Indieweb and Federated Networks
 
@@ -66,6 +67,9 @@ Intended to be permanently under construction.
 - [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
 - [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
 - [https://fingers.today/](https://fingers.today/)
+- [Wiby: search engine for classic websites](https://wiby.me/)
+- [You can use GitHub for tiny directories - awesome!](https://github.com/sindresorhus/awesome)
+- [Cat-v.org](http://cat-v.org/)
 
 ## Vim 
 
@@ -132,6 +136,12 @@ Intended to be permanently under construction.
 - [brutalistwebsites](https://brutalistwebsites.com/)
 
 Also see [web paleontology]({{<parenturl>}}web_paleontology).
+
+## Unix stuff
+
+- [w3m manual](http://w3m.sourceforge.net/MANUAL)
+- [Unix as literature](http://www.u.arizona.edu/~rubinson/copyright_violations/Unix_as_Literature)
+- [Adapted Unix for Poets](https://ftyers.github.io/079-osnov-programm/classes/01.html)
 
 ## Creative Coding
 

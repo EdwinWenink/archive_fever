@@ -40,6 +40,7 @@ N.B. kickscondor pointed me to his web directory [href.cool](https://href.cool/a
 		&#8627 "not a social network it is one tiny totally standard unix computer"
 	<li> <a href="http://tilde.club/~harper/link.html?action=random" target="_blank">enter the tilde.club webring</a> </li>
 	<li> <a href="http://contemporary-home-computing.org/" target="_blank"> http://contemporary-home-computing.org/</a></li>
+	<li> <a href="https://makefrontendshitagain.party/" target="_blank"> https://makefrontendshitagain.party/ </a></li>
 		&#8627 Collection of articles, mostly on web culture
 	<li> <a href=" http://art.teleportacia.org/ " target="_blank"> http://art.teleportacia.org/ </a></li>
 		&#8627 Personal webpage of Olia Lialina - A hommage to how the internet used to be
