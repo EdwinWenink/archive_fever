@@ -31,21 +31,6 @@ Intended to be permanently under construction.
 - I absolutely adore everything about [Matt Might's blog](http://matt.might.net/#blog)
 	* He accurately [describes my ideal approach to blogging](http://matt.might.net/articles/how-to-blog-as-an-academic/)
 
-## CS
-
-- [okmij.org](http://okmij.org/ftp/README.html)
-- [Gödels Lost Letter and P=NP](https://rjlipton.wordpress.com/)
-- [Power serious: power series in ten one-liners (Haskell)](https://www.cs.dartmouth.edu/~doug/powser.html)
-
-## Indieweb and Federated Networks
-
-- [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
-- [Indiewebify.me](https://indiewebify.me/)
-- [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
-- [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
-- [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
-- [How to Post on Indieweb.xyz](https://indieweb.xyz/howto/en)
-
 ## The Web (knowledge, archive, memory)
 
 - [The Web of Alexandria](http://worrydream.com/TheWebOfAlexandria/2.html)
@@ -57,6 +42,15 @@ Intended to be permanently under construction.
 - [The Web's Grain](https://frankchimero.com/writing/the-webs-grain/)
 - [Books about the Internet](https://en.wikipedia.org/wiki/Category:Books_about_the_Internet)
 - [Internet Invention](https://en.wikipedia.org/wiki/Internet_Invention)
+
+## Indieweb and Federated Networks
+
+- [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
+- [Indiewebify.me](https://indiewebify.me/)
+- [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
+- [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
+- [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
+- [How to Post on Indieweb.xyz](https://indieweb.xyz/howto/en)
 
 ## Tiny directories and blogrolls
 
@@ -70,6 +64,14 @@ Intended to be permanently under construction.
 - [Wiby: search engine for classic websites](https://wiby.me/)
 - [You can use GitHub for tiny directories - awesome!](https://github.com/sindresorhus/awesome)
 - [Cat-v.org](http://cat-v.org/)
+- [Panarchy](https://www.panarchy.org/index.html)
+- [Tiny web directory forum](https://forum.indieseek.xyz/index.php)
+
+## ASCII, ANSI, PETSCII, GIF
+
+- [http://text-mode.org/](http://text-mode.org/)
+- [Uno Moralez GIF art](https://unomoralez.com)
+- [https://16colo.rs/](https://16colo.rs/)
 
 ## Vim 
 
@@ -87,16 +89,6 @@ Intended to be permanently under construction.
 
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
-
-## Technology (and society)
-
-- [Public-Interest Technology Resources](https://public-interest-tech.com/)
-
-
-## Information retrieval
-
-- [Djoerd Hiemstra homepage](https://djoerdhiemstra.com/)
-- [Maarten de Rijke homepage](https://staff.fnwi.uva.nl/m.derijke/)
 
 ## AI / Programming 
 
@@ -121,9 +113,7 @@ Intended to be permanently under construction.
 
 - [Removed.social](https://www.removed.social/)
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
-- [Uno Moralez GIF art](https://unomoralez.com)
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
-
 
 ## Minimalist / nostalgic website design
 
@@ -149,6 +139,22 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 - [Clifford attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/)
 - [Drawing with purrrr](https://fronkonstin.com/2019/03/27/drrrawing-with-purrr/)
 - [Make your own algorithmic art](https://junkiyoshi.com/tag/make-your-own-algorithmic-art/)
+
+## CS
+
+- [okmij.org](http://okmij.org/ftp/README.html)
+- [Gödels Lost Letter and P=NP](https://rjlipton.wordpress.com/)
+- [Power serious: power series in ten one-liners (Haskell)](https://www.cs.dartmouth.edu/~doug/powser.html)
+
+## Information retrieval
+
+- [Djoerd Hiemstra homepage](https://djoerdhiemstra.com/)
+- [Maarten de Rijke homepage](https://staff.fnwi.uva.nl/m.derijke/)
+
+## Technology (and society)
+
+- [Public-Interest Technology Resources](https://public-interest-tech.com/)
+
 
 ## Miscellaneous
 
