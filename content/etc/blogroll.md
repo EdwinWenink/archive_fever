@@ -67,7 +67,7 @@ Intended to be permanently under construction.
 - [Panarchy](https://www.panarchy.org/index.html)
 - [Tiny web directory forum](https://forum.indieseek.xyz/index.php)
 
-## ASCII, ANSI, PETSCII, GIF
+## Text graphics: ASCII, ANSI, PETSCII, etc.
 
 - [http://text-mode.org/](http://text-mode.org/)
 - [Uno Moralez GIF art](https://unomoralez.com)
