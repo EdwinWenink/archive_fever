@@ -1,0 +1,12 @@
+_id: fc3c8540-1eb5-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Edwin
+reply_to: 7487c010-1e97-11ea-a16d-e7b30751e183
+body: >-
+  Actually, if you do not use Vim but you *do* have all your notes in Markdown,
+  my Python script would maybe be handy for you as a standalone. It currently
+  makes an index of all tags, an index of all files belonging to each tag, and
+  the reverse index that tells you which files link back to a given file. Tags
+  are simply indicated like @philosophy, and I wrote code to recognize Markdown
+  links in your notes (but not images etc.).
+date: 1576357756
