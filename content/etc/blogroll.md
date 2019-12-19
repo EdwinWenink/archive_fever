@@ -84,6 +84,17 @@ Intended to be permanently under construction.
 - [Mutt workflow of Greg Kroah-Hartman](http://kroah.com/log/blog/2019/08/14/patch-workflow-with-mutt-2019/)
 - [On Digital Minimalism](https://www.calnewport.com/blog/2016/12/18/on-digital-minimalism/)
 - [Git Magic](https://crypto.stanford.edu/~blynn/gitmagic/ch01.html#_work_is_play)
+- [Pandocomatic: pandoc automation](https://github.com/htdebeer/pandocomatic)
+
+## Ideas about Note-taking
+
+- [Zetteldeft](https://www.eliasstorms.net/zetteldeft/)
+- [Why (and How) I Wrote My Academic Book in Plain Text](http://wcaleb.org/blog/my-academic-book-in-plain-text)
+- [Some Idiosyncratic Reflections on Note-Taking in General and ConnectedText in Particular](https://www.connectedtext.com/manfred.php)
+- [Integrated Research Environment with Vim](http://davidcolmenares.org/convivial.tools/david-s-integrated-research-environment)
+	* [Quick wiki links from the same author](http://davidcolmenares.org/dh-tools/quick-wiki-links)
+	* Have to point out I love the design of this website
+- [Vim-Based Integrated Research Environment (seems incomplete)](https://github.com/Hipomenes/vim-ide)
 
 ## Academic tips, approaches 
 
