@@ -236,6 +236,7 @@ If Vim doesn't find your tags, check that you are in the right directory and als
 set tags+=./tags;,tags
 ```
 
+The semicolon allows Vim to recursively move up a file tree to look for a tags file in case it doesn't find one as explained [here](https://vim.fandom.com/wiki/Single_tags_file_for_a_source_tree).
 You can now search tags *with autocompletion* with the `tselect` command, or `ts` for short.
 
 I for example have a tag `@workflow`, so I would type in `:ts work <TAB>`, which auto completes `ts workflow`.
@@ -378,4 +379,9 @@ endif
 
 " What to ignore while searching files, speeds up CtrlP
 set wildignore+=*/.git/*,*/tmp/*,*.swp
+
+" This step is probably not necessary for you
+" but I'll add it here for completeness
+set tags+=./tags;,tags
+
 ```
