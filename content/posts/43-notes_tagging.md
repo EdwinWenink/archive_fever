@@ -303,7 +303,7 @@ We hold our cursor on the tag "security".
 
 The command `g]` opens a list of all ambiguous tags. 
 We see that another file is also about security.
-So let's expand our horizon and enter it's number to visit that file.
+So let's expand our horizon and enter its number to visit that file.
 
 ![]({{% baseurl %}}/images/43-blog/4-security_tag_nav_detail.png)
 
