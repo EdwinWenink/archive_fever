@@ -3,7 +3,7 @@ author: "Edwin Wenink"
 title: "Building a Note-taking System with Vanilla Vim"
 date: 2019-11-24
 draft: false
-tags: [Vim, Workflow]
+tags: [Vim, Workflow, Zettelkasten]
 toc: true
 ---
 
@@ -197,6 +197,15 @@ One way to do that is to add the following mapping to your `.vimrc`:
 nnoremap <leader>ww :e $NOTES_DIR/index.md<CR>cd $NOTES_DIR
 ```
 
+UPDATE 19/12/2019: I now let all note related mappings start with `<leader>n`. 
+This command is now mapped as `<leader>ni` for "note index."
+This command also has a small mistake. This is the corrected version:
+
+```
+" Go to index of notes and set working directory to my notes
+nnoremap <leader>ni :e $NOTES_DIR/index.md<CR>:cd $NOTES_DIR<CR>
+```
+
 N.B. the default leader key is the backslash `\ `.
 
 `<CR>` is a carriage return, or an "Enter" in common tongue.
@@ -353,7 +362,7 @@ Remember that the `<leader>` is a backslash by default.
 " My own version, only searches markdown as well using ripgrep
 " Thus depends on grepprg being set to rg
 command! -nargs=1 Ngrep grep "<args>" -g "*.md" $NOTES_DIR
-nnoremap <leader>n :Ngrep 
+nnoremap <leader>nn :Ngrep 
 ```
 
 So if we press `\n` in Vim, we can immediately type our search term and get all matches in our note directory.
@@ -407,6 +416,7 @@ I'm interested in getting tips from you, especially about a potential implementa
 This is my current TODO list:
 
 - Design a tagging system and related search functions
+	* [UPDATE 19/12/2019: see this post]( {{% parenturl%}}43-notes_tagging  )
 - Think more about the best file naming convention
 	- e.g. use timestaming and write a function to search timeframes
 * Write a function for quickly adding a new note
