@@ -4,7 +4,7 @@ author: Edwin Wenink
 date: 2019-12-19
 toc: true
 draft: False
-tags: [vim, workflow, ctags, notes]
+tags: [vim, workflow, ctags, notes, Zettelkasten]
 ---
 
 In the [previous post]({{% parenturl %}}/42-vim_notetaking) I expressed my requirements for an ideal note taking system and took the first steps in designing it for my preferred editor, which is Vim.
