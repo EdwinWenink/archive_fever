@@ -316,8 +316,66 @@ And so on. I might by now have a more specific idea to write about.
 If it's a single concept I'll make a small note in my "Zettelkasten" directory (for which I have another easy binding), where I'll might decide to explicitly link to all the files I've explored. 
 If I add the security tag there as well together with a new tag, I've opened up new lines of thought!
 
+## Conclusion and summary of used Vim mappings
+
 Like with my [previous post]({{% parenturl %}}/42-vim_notetaking) on this topic, I'm writing about this while exploring ideas so everything is WIP. 
 It is possible to define multiple regex rules for our custom language, so it's easy to add more features to this tagging system. 
 I might for example explore the usefulness of tracking explicit markdown links to other files with this system.
  
 Let me know if you have suggestions! Feedback is welcomed.
+
+If at some point I haven't changed my system in a long time I'll likely bundle together a `.vimrc` with everything you need. 
+The system so far actually heavily depends on native Vim mappings, so you do not need much at all (Keep It Simple Stupid)!
+With the code below you can install `CtrlP` using [vim-plug](https://github.com/junegunn/vim-plug).
+There are two external dependencies, `Universal Ctags` and `ripgrep`  which however are both cross-platform, minimalistic and do not require configuration outside of what is provided below.
+Plug and play.
+For now, I'll provide a quick summary of mentioned Vim bindings and settings (and some not mentioned) as requested [here](https://github.com/EdwinWenink/personal_website/issues/559):
+
+```vim
+" Specify a directory for plugins
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Fuzzy file finding
+Plug 'kien/ctrlp.vim'
+
+" Initialize plugin system
+call plug#end()
+
+" Ignore case in searches
+set ignorecase
+
+" Generate ctags for current working directory
+nnoremap <leader>tt :silent !ctags -R . <CR>:redraw!<CR>
+
+" Change directory to directory of current file
+nnoremap <leader>cd :cd %:h<CR>
+
+" Quickly create a new entry into the "Zettelkasten" 
+nnoremap <leader>z :e $NOTES_DIR/Zettelkasten/
+
+" Go to index of notes and set working directory to my notes
+nnoremap <leader>ni :e $NOTES_DIR/index.md<CR>:cd $NOTES_DIR<CR>
+
+" 'Notes Grep' with ripgrep (see grepprg)
+" -i case insensitive
+" -g glob pattern
+" ! to not immediately open first search result
+command! -nargs=1 Ngrep :silent grep! "<args>" -i -g '*.md' $NOTES_DIR | execute ':redraw!'
+nnoremap <leader>nn :Ngrep 
+
+" Open quickfix list in a right vertical split (good for Ngrep results)
+command! Vlist botright vertical copen | vertical resize 50
+nnoremap <leader>v : Vlist<CR>
+
+" Make CtrlP and grep use ripgrep
+if executable('rg')
+    set grepprg=rg\ --color=never\ --vimgrep
+    set grepformat=%f:%l:%c:%m
+    let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+    let g:ctrlp_user_caching = 0
+endif
+
+" What to ignore while searching files, speeds up CtrlP
+set wildignore+=*/.git/*,*/tmp/*,*.swp
+```
