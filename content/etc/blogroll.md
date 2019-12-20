@@ -150,6 +150,7 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 - [Clifford attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/)
 - [Drawing with purrrr](https://fronkonstin.com/2019/03/27/drrrawing-with-purrr/)
 - [Make your own algorithmic art](https://junkiyoshi.com/tag/make-your-own-algorithmic-art/)
+- [Nature of code](https://natureofcode.com/book/)
 
 ## CS
 
