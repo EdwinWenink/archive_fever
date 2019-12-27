@@ -7,6 +7,7 @@ type: "etc"
 
 - [Linkage]({{<parenturl>}}blogroll)
 - [Short C.V.]({{<parenturl>}}cv)
+- [Contribution guidelines]({{<parenturl>}}contribution_guidelines)
 - [Courses]({{<parenturl>}}courses)
 - [Music statistics]({{<parenturl>}}music )
 - [Web paleontology: An Ode to the Hyperlink]({{<parenturl>}}web_paleontology)

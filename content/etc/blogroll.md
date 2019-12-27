@@ -77,6 +77,7 @@ Intended to be permanently under construction.
 
 - [At least one Vim trick you might not now](https://www.hillelwayne.com/post/intermediate-vim/)
 - [Vim Macro Trickz](https://www.hillelwayne.com/post/vim-macro-trickz/)
+- [Do 90% of what plugins do with just vim](https://www.youtube.com/watch?v=XA2WjJbmmoM)
 
 ## Workflow / Writing
 
