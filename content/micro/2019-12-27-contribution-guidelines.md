@@ -1,8 +1,8 @@
 ---
-title: 
+title: Contribution Guidelines
 date: 2019-12-27T16:30:02+00:00
 slug: contribution-guidelines
-target: 
+target: https://www.edwinwenink.xyz/etc/contribution_guidelines/
 type: micro
 note: true
 ---
