@@ -1,0 +1,6 @@
+_id: 57d68750-2949-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Brönkel
+reply_to: ''
+body: "I am implementing your setup at the moment and as a beginner I have three questions:\r\n\r\n1) How did you create the initial index file, before you print the more elaborate tree structure? Did you just type this manually?\r\n2) I think the command has to be \":!.tree [etc]\" instead of \":.!tree [etc]\". Could that be true?\r\n3) Do you need to enter this command manually every time you open the index file or is there a way to automatize this?"
+date: 1577520557
