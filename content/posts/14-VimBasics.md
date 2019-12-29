@@ -56,19 +56,18 @@ These are the basic commands that I really miss the most when I have to write in
 
 When writing you often pause to review your last sentence and fix some small error.
 Your cursor is in the middle of your last sentence, but now you want to continue writing on a new line.
-And let's say that you are writing a first draft, so your last sentence is also the end of the file.
-Take a moment and think about what you would do in MS Word.
 
 I suspect something like this: 1) you go to the end of the sentence, either by pressing 'End' or by clicking on it with your mouse 
 (in the latter case you have to take your hand of the keyboard).
 2) You click enter to create a new line. 3) You can now start typing.
 Ok, that's not too bad. But Vim does all of this with the command `o`, that *opens* a new line and leaves your cursor at its start. 
 It doesn't matter if you are in the middle of the previous sentence. 
+If your last sentence also happens to be the last sentence of the file (e.g. you are writing a first draft) you can quickly pick up your work by jumping to the end of the file with `G`.
 
 But Vim really does better in the scenario where you want to write a sentence *before* the currently selected sentence. 
 In Word you would do: 1) move to beginning of the current line, 2) press enter, 3) go up a line, 4) you can now start typing. 
 Vim still does all of this in a single keystroke. This does maybe not seem that impressive, but you would be surprised how often you will find yourself doing the previous if you pay attention to it.
-The capitalization of a command often do a similar task slightly different. In this case `O` (so the capital) does all of the described steps at once. 
+The capitalization of a command usually does a similar task slightly different. In this case `O` (so the capital `o`) does all of the described steps at once. 
 
 The same holds for `i` and `I`. `i` puts you insert mode, but `I` puts you in insert mode at the beginning of the sentence. 
 Even more handy are `a` and `A`. `a` puts you in insert mode *after* the cursor, i.e. allows you to *append* text.
