@@ -1,0 +1,6 @@
+_id: 7b0a02e0-2969-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Edwin
+reply_to: 57d68750-2949-11ea-a16d-e7b30751e183
+body: "Oh by the way, to help you with manually typing paths it is good to realize that Vim has filepath completion by default. Just start typing a path to a file and then press Ctrl-X Ctrl-F (f for filename completion) to pop up an autocompletion menu. \r\nVim basically allows you to choose the type of completion you want to use. Because you might want to focus on the basics for now, you can use the lightweight plugin called [MUcomplete](https://github.com/lifepillar/vim-mucomplete) to automatically do that for you. This plugin just uses the default Vim completion mechanisms (so it's fast) but automatically selects the appropriate type of completion. Works great for me."
+date: 1577534360
