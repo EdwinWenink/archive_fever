@@ -26,6 +26,7 @@ And here is the crux: later variaties of the `ctags` program, called `Exuberant 
 
 What this means is that I can define my own syntax for the tags I'm going to use and then let `ctags` create an index of those tags with links to their corresponding files. 
 As an icing on the cake: due to its strong roots in programming culture, Vim has *native* support for navigating with those tags!
+N.B. to be clear: even though Vim has native support for `ctags`, it is not a plugin but an *external* program that does not automatically ship with Vim.
 
 In this post I'll walk you through the process to set this up and explain the rationale of each step along the way.
 Note that even though I design this for Vim, this system works well for any editor that is smart about `ctags` or something equivalent.
