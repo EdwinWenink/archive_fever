@@ -76,10 +76,11 @@ Intended to be permanently under construction.
 ## Vim 
 
 - [Overview basic commands](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm)
-- [At least one Vim trick you might not now](https://www.hillelwayne.com/post/intermediate-vim/)
+- [At least one Vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/)
 - [Vim Macro Trickz](https://www.hillelwayne.com/post/vim-macro-trickz/)
 - [Do 90% of what plugins do with just vim](https://www.youtube.com/watch?v=XA2WjJbmmoM)
 - [Statusline guide](https://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html)
+- [Vim registers 101](https://www.brianstorti.com/vim-registers/)
 
 ## Workflow / Writing
 
@@ -114,6 +115,8 @@ Intended to be permanently under construction.
 ## Philosophy
 
 - [De Klos](http://www.de-klos.net/): blog of my friend Boris on the challenges of the Antrophocene [(old version)](https://deklos.wordpress.com/) 
+- [NewAPPS: Art, Politics, Philosophy, Science](https://www.newappsblog.com/)
+- [Digressions&Impressions](https://digressionsnimpressions.typepad.com/digressionsimpressions/)
 - [Stoicism-fu: internet guide to what's worth keeping in Stoicism](https://philosopher.life/#Stoicism-fu:Stoicism-fu)
 - [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
 - [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
