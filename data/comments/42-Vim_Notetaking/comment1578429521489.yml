@@ -1,0 +1,6 @@
+_id: b08d6e30-318d-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Brönkel
+reply_to: ''
+body: "Hey Edwin!\r\n\r\nThanks for the responses. I almost have the set up running now, and I like it a lot. The buffer function is amazing.\r\n\r\nThere are two things that seem to go wrong in my case, both related to the 'fuzzy finder'.\r\n\r\n1) Even though I can use CtrlP, I cannot use it to search in my files; it just searches the titles. Is it possible to change this? \r\n2) Whenever I press \\n, I get the error: E486: Pattern not found: \\<Hadfdasdfadsfllo\\>. It would be nice to have this short-cut, but I cannot get it to work somehow!\r\n\r\nThanks a lot for all the information on this amazing blog already :-) You have really changed my workflow for the better.\r\n\r\nAny clues on what I am doing wrong?"
+date: 1578429521
