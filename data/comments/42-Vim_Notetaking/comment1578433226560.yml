@@ -1,0 +1,6 @@
+_id: 50e34af0-3196-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Brönkel
+reply_to: ''
+body: "Thanks for your quick reply Edwin!\r\n\r\nI had simply copied your code which included <leader>nn instead of <leader>n, so that explains why my mapping went wrong. I changed it to <leader>n.\r\n\r\nWhenever I press \\n, I now get the command :Ngrep. However, no matter what I type in, I get the following error code: \r\n\r\ngrep: invalid option -- 'g'\r\nUsage: grep [OPTION]... PATTERN [FILE]...\r\nTry 'grep --help' for more information.\r\n\r\nThis is the code of my .vimrc file:\r\n\r\n106 \" Make Ctrlp use ripgrep\r\n107 if executable('rg')\r\n108     let g:ctrlp_user_command = 'rg %s --files --color=never --glob \"\"'\r\n109     let g:ctrlp_user_caching = 0\r\n110     set grepprg=rg\\ --color=never\\ --vimgrep\r\n111 endif\r\n112 \r\n113 \" Create a shortcode for searching using ripgrep\r\n114 command! -nargs=1 Ngrep grep \"<args>\" -g \"*.md\" $NOTES_DIR\r\n115 nnoremap <leader>n :Ngrep\r\n\r\nAny ideas?"
+date: 1578433226
