@@ -253,8 +253,10 @@ endif
 ```
 
 Another good argument for using `ripgrep` is that it runs both on Linux and Windows and thus fits my cross-platform requirement.
+Do note however that `ripgrep` is an external command line tool and does not ship with Vim, so you need to install it yourself. 
+Have a look at the [project page](https://github.com/BurntSushi/ripgrep) for clear installation instructions.
 
-Something I have not done yet, is design an effective plain-text tagging system. 
+Something I have not done yet, is design an effective plain-text tagging system [UPDATE 19/12/2019: see this post]( {{% parenturl%}}43-notes_tagging ).
 [This blog](https://joereynoldsaudio.com/2018/07/07/you-dont-need-vimwiki.html) adds tags behind all files in the index, as a quick hack.
 This doesn't fit with the above approach of automatically generating the navigation tree, as that would replace the tags. 
 I also think a plain-text tagging system is ideally decentralized, i.e. tags are stored in the notes themselves. 
