@@ -149,6 +149,8 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 - [w3m manual](http://w3m.sourceforge.net/MANUAL)
 - [Unix as literature](http://www.u.arizona.edu/~rubinson/copyright_violations/Unix_as_Literature)
 - [Adapted Unix for Poets](https://ftyers.github.io/079-osnov-programm/classes/01.html)
+- [Useless Use of Cat Award](http://porkmail.org/era/unix/award.html)
+- [GUIs considered harmful](http://porkmail.org/era/unix/guis.txt)
 
 ## Creative Coding
 
