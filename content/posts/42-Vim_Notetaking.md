@@ -365,7 +365,7 @@ command! -nargs=1 Ngrep grep "<args>" -g "*.md" $NOTES_DIR
 nnoremap <leader>nn :Ngrep 
 ```
 
-So if we press `\n` in Vim, we can immediately type our search term and get all matches in our note directory.
+So if we press `\nn` in Vim, we can immediately type our search term and get all matches in our note directory.
 
 The results of the search populate what is called the `quickfix` list in Vim.
 This is a list you can access from any context within Vim (as opposed to the `locallist` which is bound to the context of the current file).
