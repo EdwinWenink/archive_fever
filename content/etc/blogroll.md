@@ -172,7 +172,7 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 ## Technology (and society)
 
 - [Public-Interest Technology Resources](https://public-interest-tech.com/)
-
+- [How technology is transforming media](https://publishing2.com/)
 
 ## Miscellaneous
 
