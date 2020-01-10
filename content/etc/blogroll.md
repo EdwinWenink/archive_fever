@@ -99,6 +99,7 @@ Intended to be permanently under construction.
 	* [Quick wiki links from the same author](http://davidcolmenares.org/dh-tools/quick-wiki-links)
 	* Have to point out I love the design of this website
 - [Vim-Based Integrated Research Environment (seems incomplete)](https://github.com/Hipomenes/vim-ide)
+- [Very comprehensive Org mode guide in Emacs](http://doc.norang.ca/org-mode.html)
 
 ## Academic tips, approaches 
 
