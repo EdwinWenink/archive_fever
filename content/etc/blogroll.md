@@ -101,6 +101,7 @@ Intended to be permanently under construction.
 - [Vim-Based Integrated Research Environment (seems incomplete)](https://github.com/Hipomenes/vim-ide)
 - [Very comprehensive Org mode guide in Emacs](http://doc.norang.ca/org-mode.html)
 - [Org mode workflow with Emacs](https://blog.jethro.dev/posts/org_mode_workflow_preview/)
+- [basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
 
 ## Academic tips, approaches 
 
