@@ -1,0 +1,9 @@
+_id: 09dee9c0-3524-11ea-a16d-e7b30751e183
+_parent: 32-bibtex_dynamic_path_w_spaces
+name: Al
+reply_to: ''
+body: >-
+  This is very helpful. I was having the same issue with institutional OneDrive
+  location that contained spaces; now simply replaced with ONEDRI\string~1 in
+  the path, works like a dream.
+date: 1578823949
