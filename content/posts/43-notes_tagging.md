@@ -114,6 +114,30 @@ This is a more efficient approach with the same effect as using lazy evaluation.
 Because a tag now does not contain any whitespace characters by definition, the first tag is matched separately.
 I still enforce that the first character after the "@" has to be a word character, otherwise  "@\" or for example (and amusingly) the regex pattern itself would be a tag. 
 
+UPDATE: 15-1-2020
+
+Of course, URLs that contain "@" will also be matched with the current regular expression. 
+We can exclude these matches by requiring that "@" either occurs at the beginning of the line or is preceded by a "space" character (i.e. "@" occurs at the beginning of a new word somewhere in a sentence ).
+In other regex dialects you have the special `\b` sign to indicate word boundaries, but not in the ERE POSIX dialect. 
+We can however write `(^|[[:space]])@(\w\S*)`:
+
+```markdown
+( open a group
+^ match the beginning of the line
+| or instead match
+[[:space]]) any whitespace character
+) close the group
+@   find a literal "@"
+(   start a "capture group"; this the part of the expresion that we are interested in
+\w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
+\S  any *non*-whitespace character (inverse of \s)
+*   0 or more non-whitespace characters
+)   close the capture group. The part within brackets is the tag
+```
+
+I adjusted the code below to this new regex. 
+Note especially that we now have two groups, and that we are interested in the second one only, so our back reference changes from `\1` to `\2`.
+
 ## Installing and configuring ctags
 
 There is still another problem left. 
@@ -128,10 +152,10 @@ If that's the way you want to go, then create a configuration file called `.ctag
 ```
 --langdef=markdowntags
 --langmap=markdowntags:.md
---regex-markdowntags=/@(\w\S*)/\1/t,tag,tags/
+--regex-markdowntags=/(^|[[:space:]])@(\w\S*)/\2/t,tag,tags/
 ```
 
-The first line defines the name of our language, the second line associates our new language with a file extension (I use `.md` for Markdown) and the third line specifies our regex pattern, a backreference to our capture group (`\1`) and lastly a specification of the type of tag this is. I just called it tag, t for short.
+The first line defines the name of our language, the second line associates our new language with a file extension (I use `.md` for Markdown) and the third line specifies our regex pattern, a backreference to our capture group (`\2`) and lastly a specification of the type of tag this is. I just called it tag, t for short.
 As you might see, these options are flags that will be given to the `ctags` command.
 You can download exuberant tags [here](http://ctags.sourceforge.net/) or simply with your package manager of choice.
 
@@ -163,7 +187,7 @@ Otherwise, copy the following configuration to your configuration file in `./.ct
 --languages=markdowntags
 --langmap=markdowntags:.md
 --kinddef-markdowntags=t,tag,tags
---mline-regex-markdowntags=/@(\w\S*)/\1/t/{mgroup=1}
+--mline-regex-markdowntags=/(^|[[:space:]])@(\w\S*)/\2/t/{mgroup=1}
 ```
 
 Note that you can't call your custom language just "markdown" because that language definition already exists (unlike in `Exuberant Ctags`).
