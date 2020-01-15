@@ -125,7 +125,7 @@ We can however write `(^|[[:space:]])@(\w\S*)`:
 ( open a group
 ^ match the beginning of the line
 | or instead match
-[[:space:]]) any whitespace character
+[[:space:]] any whitespace character
 ) close the group
 @   find a literal "@"
 (   start a "capture group"; this the part of the expresion that we are interested in
