@@ -119,13 +119,13 @@ UPDATE: 15-1-2020
 Of course, URLs that contain "@" will also be matched with the current regular expression. 
 We can exclude these matches by requiring that "@" either occurs at the beginning of the line or is preceded by a "space" character (i.e. "@" occurs at the beginning of a new word somewhere in a sentence ).
 In other regex dialects you have the special `\b` sign to indicate word boundaries, but not in the ERE POSIX dialect. 
-We can however write `(^|[[:space]])@(\w\S*)`:
+We can however write `(^|[[:space:]])@(\w\S*)`:
 
 ```markdown
 ( open a group
 ^ match the beginning of the line
 | or instead match
-[[:space]]) any whitespace character
+[[:space:]]) any whitespace character
 ) close the group
 @   find a literal "@"
 (   start a "capture group"; this the part of the expresion that we are interested in
