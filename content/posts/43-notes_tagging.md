@@ -294,7 +294,7 @@ Starting from my index page, I can't quite remember the name of a tag, so I'll d
 The detail shows the fuzzy nature of the tag search. 
 I typed AC (randomly), but as you see also results like "Jacobs" and "aircraft" are displayed. 
 
-![]({{% baseurl %}}/images/43-blog/2-ctrlp_tags.PNG)
+![]({{% baseurl %}}/images/43-blog/2-ctrlp_tags.png)
 
 From the list of suggestions I chose "Jacobs", which is the name of a university professor. 
 This could be some author you are writing a paper about.
