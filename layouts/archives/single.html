@@ -29,8 +29,27 @@
   {{ end }}
 </div>
 
+<section>
+<h2 id="tags"> Tags </h2>
+
+<!-- TODO: reverse index; list all posts per tag -->
+<div class="tags">
+<br>
+{{$tags := newScratch }}
+{{ range .Site.Pages }} 
+{{ if eq .Type "posts"}}
+	{{ range .Params.tags }}
+		{{ $name := lower .  }}
+		{{ $array := $tags.Get "tags" }} <!-- For some reason I can't directly add this code below -->
+		{{ if not (in $array $name)}}
+			{{ $tags.Add "tags" (slice $name)}}
+			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
+		{{ end }}
+	{{end}}
+{{ end }}
+{{ end }}
+</div>
+
+</section>
+
 {{ partial "footer.html" . }}
-
-
-		<aside>{{ .Date.Format "January 2, 2006"}} 
-		</aside>
