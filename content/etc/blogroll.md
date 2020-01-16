@@ -92,16 +92,24 @@ Intended to be permanently under construction.
 
 ## Ideas about Note-taking
 
-- [Zetteldeft](https://www.eliasstorms.net/zetteldeft/)
+- [Luhmann: Communicating with Slip Boxes](http://luhmann.surge.sh/communicating-with-slip-boxes)
+	* [His archive is being digitalized, see here]( https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11 )
+* [Quick intro to Zettelkästen](https://clerestory.netlify.com/zk/)
+	* [Observations after one month of using Zettelkästen]( https://clerestory.netlify.com/zk1/#fn-2 )
+- [The Zettelkasten Method (extensive)](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1#Bd7BsyRovDaHAjFWz)
+* [Overview of Zettelkasten blog](https://zettelkasten.de/posts/overview/)
+- [Zetteldeft: Zettelkasten in Emacs]( https://www.eliasstorms.net/zetteldeft/ )
 - [Why (and How) I Wrote My Academic Book in Plain Text](http://wcaleb.org/blog/my-academic-book-in-plain-text)
 - [Some Idiosyncratic Reflections on Note-Taking in General and ConnectedText in Particular](https://www.connectedtext.com/manfred.php)
+- [How to Make a Complete Map of Every Thought You Think](https://users.speakeasy.net/~lion/nb/html/)
+	* [And an interview with its author]( https://gilest.org/lion-kimbro.html )
 - [Integrated Research Environment with Vim](http://davidcolmenares.org/convivial.tools/david-s-integrated-research-environment)
 	* [Quick wiki links from the same author](http://davidcolmenares.org/dh-tools/quick-wiki-links)
 	* Have to point out I love the design of this website
 - [Vim-Based Integrated Research Environment (seems incomplete)](https://github.com/Hipomenes/vim-ide)
 - [Very comprehensive Org mode guide in Emacs](http://doc.norang.ca/org-mode.html)
 - [Org mode workflow with Emacs](https://blog.jethro.dev/posts/org_mode_workflow_preview/)
-- [basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
+- [Basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
 
 ## Academic tips, approaches 
 
