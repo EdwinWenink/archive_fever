@@ -11,7 +11,13 @@
       <ul>
         {{ range .Pages }}
 		  <p>
-		  <aside> {{ .Date.Format "January 2" }} </aside>
+		  <aside> {{ .Date.Format "January 2" }}
+			{{ if not (eq .Params.tags nil) }}
+				{{ range .Params.tags }}
+					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+				{{ end }}
+			{{ end }}
+		  </aside>
           <a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
 		  {{ if .Params.guest }}(by {{ .Params.author }}) {{ end }}
 		  </p>
@@ -21,7 +27,10 @@
     </section>
     {{ end }}
   {{ end }}
-
 </div>
 
 {{ partial "footer.html" . }}
+
+
+		<aside>{{ .Date.Format "January 2, 2006"}} 
+		</aside>
