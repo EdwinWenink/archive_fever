@@ -124,6 +124,7 @@ Intended to be permanently under construction.
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 - [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
 - [Posts on algorithmic regulation](https://governancexborders.com/tag/algorithm-regulation/)
+- 
 
 ## Philosophy
 
