@@ -15,7 +15,9 @@ This particular confliction is called **Archive Fever**, a term coined by Jacque
 
 So as a rule of thumb for this blog: if I spend a considerable amount of time on some topic, I should record some of it in this unorthodox note-taking system.
 That's why I called the writings on this site "engrams": they are memory traces on the web.
-My best guess at the moment is that those memory traces are likely to be related either to philosophy, artificial intelligence, technology, and workflow design. 
+This is a place to externalize them so that I may find myself being impressed again by them later, to stimulate new thought and find out what I was and am thinking. 
+I stumbled across this fitting remark by Karl Weick: "If people know what they think when they see what they say, then words figure in every step."
+My best guess at the moment is that these memory traces are likely to be related either to philosophy, artificial intelligence, technology, and workflow design. 
 Contributions by others are welcome.
 
 What emerges over time will be a rhizomatic collection of hopefully interesting notes, where no one (including me) really has a central oversight over the contents, where there is no category table assigning everything its proper place, but where posts branch out and interlink chaos-logically. This is reflected in the only "searchable” feature of this archive: clicking on the tag of a blog post shows you posts with the same tag.
