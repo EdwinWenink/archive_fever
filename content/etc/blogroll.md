@@ -117,12 +117,13 @@ Intended to be permanently under construction.
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 
-## AI / Programming 
+## AI / AI & Society / Programming 
 
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 - [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 - [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
+- [Posts on algorithmic regulation](https://governancexborders.com/tag/algorithm-regulation/)
 
 ## Philosophy
 
