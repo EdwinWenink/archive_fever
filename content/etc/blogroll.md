@@ -52,7 +52,7 @@ Intended to be permanently under construction.
 - [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
 - [How to Post on Indieweb.xyz](https://indieweb.xyz/howto/en)
 
-## Tiny directories and blogrolls
+## Tiny directories, webrings and blogrolls
 
 - [href.cool: web directory by kicks](https://href.cool/about)
 - [https://neocities.org/browse](https://neocities.org/browse)
@@ -60,18 +60,24 @@ Intended to be permanently under construction.
 	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
 - [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
 - [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
+- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
+- [collection of tilde communities](https://tildeverse.org/)
 - [https://fingers.today/](https://fingers.today/)
 - [Wiby: search engine for classic websites](https://wiby.me/)
 - [You can use GitHub for tiny directories - awesome!](https://github.com/sindresorhus/awesome)
 - [Cat-v.org](http://cat-v.org/)
 - [Panarchy](https://www.panarchy.org/index.html)
 - [Tiny web directory forum](https://forum.indieseek.xyz/index.php)
+- [XXIIVV webring](https://webring.xxiivv.com/)
+	- [XXIIVV wiki](https://wiki.xxiivv.com/site/home.html)
+	- [Very interesting design of the webring](https://github.com/XXIIVV/webring)
 
 ## Text graphics: ASCII, ANSI, PETSCII, etc.
 
 - [http://text-mode.org/](http://text-mode.org/)
 - [Uno Moralez GIF art](https://unomoralez.com)
 - [https://16colo.rs/](https://16colo.rs/)
+- [neauismea](https://neauoire.github.io/neauismea/)
 
 ## Vim 
 
@@ -146,9 +152,10 @@ Intended to be permanently under construction.
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
 
-## Minimalist / nostalgic website design
+## Minimalist / nostalgic / retro website design
 
 - [Make a website with only pandoc and make]( https://computableverse.com/blog/create-website-using-pandoc-make-file )
+- [No idea what this is but the design is crazy](https://s-i-l-o.fr/)
 - [greaterthanorequalto.net](http://greaterthanorequalto.net/)
 - [motherfuckingwebsite](http://motherfuckingwebsite.com/)
 - [txti](http://txti.es/)
@@ -196,7 +203,6 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 Links I do not know yet how to categorize. 
 Perhaps that's the beauty of it.
 
-- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
 - [philosopher.life: a unique personal wiki](https://philosopher.life)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 - [Teaching in Minecraft](https://blog.haschek.at/2019/teaching-in-minecraft.html)
