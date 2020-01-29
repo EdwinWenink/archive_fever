@@ -3,10 +3,16 @@
 /*@import url('http://fonts.googleapis.com/css?family=Cousine:400,700');*/
 
 body, li p {
+	background-color: white;
 	font-family: 'Inconsolata', sans-serif;
 	text-align: justify;
 	font-size: 17px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-left:solid 1px #41403E;
+	border-right:solid 1px #41403E;
 	/*
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	font-family: Cousine, menlo, monospace;
 	font-size: 16px;
 	line-height: 1.4;
