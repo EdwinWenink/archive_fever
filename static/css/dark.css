@@ -1,5 +1,9 @@
 html {
 	background: black;
+}
+body {
+	background: black;
+	border-color: red;
 	color: grey;
 }
 

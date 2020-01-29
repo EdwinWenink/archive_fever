@@ -2,14 +2,32 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
 /*@import url('http://fonts.googleapis.com/css?family=Cousine:400,700');*/
 
+html {
+	/*
+	 * TODO:
+	 * Als ik dit doorzet, moet ik background:white ongedaan maken in dark mode
+	background: url("http://wohgame.com/images/02.jpg?crc=3872992552") 0 0 no-repeat,
+	url("http://www.peterburr.org/2013_images/dirtscraper.png")0 500px no-repeat,
+	url("https://neauoire.github.io/neauismea/05.png") 0 1000px no-repeat,
+	url("http://www.peterburr.org/2013_images/03B-2.png") 1500px no-repeat,
+	url("https://neauoire.github.io/neauismea/0G.png") 0 2000px no-repeat,
+	url("https://neauoire.github.io/neauismea/02.png") 0 2500px no-repeat,
+	url("http://www.peterburr.org/2013_images/shape-collective.jpg") 0 2500px no-repeat,
+	url("http://www.peterburr.org/2013_images/03B-2.png") 0 3000px repeat-y;
+	background-size: cover;
+	 */
+	/* contain is chaotischer */
+	background-image: url("/images/noodle_dots.png");
+	background-size: contain;
+}
 body, li p {
+	background: white;
 	font-family: 'Inconsolata', sans-serif;
 	text-align: justify;
 	font-size: 17px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border-left:solid 1px #41403E;
-	border-right:solid 1px #41403E;
+	border:solid 1px #41403E;
 	/*
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	font-family: Cousine, menlo, monospace;
@@ -159,6 +177,7 @@ input:checked + .slider:before {
 	border-top-width: 1px;
 	border-color: black;
 	padding-top: 12px;
+	margin-bottom: 10px;
 }
 
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
