@@ -67,6 +67,7 @@
 		quotes[64]="&quotMan is but a reed, the most feeble thing in nature; but he is a thinking reed. (...) But even if the universe were to crush him, man would still be nobler than his slayer, because he knows that he is dying and the advantage the universe has over him&quot - Blaise Pascal";
 		quotes[65]="&quotWe are becoming a nation of electronic voyeurs whose capacity for informed dialogue is a fading memory&quot - Ted Koppel";
 		quotes[66]="&quotIf people know what they think when they see what they say, then words figure in any step&quot - Karl E. Weick";
+		quotes[67]="&quotBehind every work of art lies an uncommited crime&quot - Theodor W. Adorno";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
