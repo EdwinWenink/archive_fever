@@ -5,7 +5,7 @@
 
   <h2 id="comments" >Comments</h2>
 
-  {{ $.Scratch.Add "hasComments" 0 }}
+  {{ $.Scratch.Set "hasComments" 0 }}
 
   {{ range $comments := index $.Site.Data.comments $postId }}
 		{{ $.Scratch.Add "hasComments" 1 }}
