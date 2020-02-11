@@ -53,23 +53,21 @@ It is clear that seeing a yellow banana is completely irrelevant when considerin
 
 [Peter Lipton]( https://onlinelibrary.wiley.com/doi/abs/10.1002/9781405164481.ch29 ) points out that this issue of relevance similarly plagues existing models of scientific explanation, particularly the so-called Deductive-Nomological model.
 In the summary of Lipton, this model states that "an event is explained when its description can be deduced from a set of premises that essentially includes at least one law".
-
 So to cast this into the raven example, our hypothesis may be that "All ravens are black," from which we can deduce that if we encounter a raven, we predict it to be black.
-If this indeed turns out to be the case, this is support for our hypothesis.
-But Lipton points out that a successful prediction could be construed as support for any hypothesis, logically speaking.
+If this indeed turns out to be the case, this would be support for our hypothesis.
 
+But Lipton points out that a successful prediction could be construed as support for any hypothesis, logically speaking.
 If our hypothesis is `B` (all ravens are black) and we observe indeed many black ravens, then our confidence in `B` increases, but logically speaking, so would our confidence in the hypothesis `B \/ P` because adding a disjunction is truth preserving: if `B` is true, then `B \/ P` is necessarily also true.
 And `P` might mean anything here, for example that "Cows can fly." 
 
 Granted, the hypothesis "All ravens are black or cows can fly" is a *really shitty* hypothesis.
 But the main point is the same as before: how do we convincingly show and formalize that our hypothesis is *relevant* for our observation?
 
-One interesting approach that does not disqualify inductive reasoning altogether is the idea of "inference to the best explanation," which goes back to Pierce's conception of abduction, and fits well with Bayesian formalisations.
+One interesting concept that does not disqualify inductive reasoning altogether is the idea of "inference to the best explanation," which goes back to Pierce's conception of abduction, and fits well with Bayesian formalisations.
 The phrase "best explanation" suggest at least that we compare two explanations, rather than taking observations directly as support for any one given hypothesis.
-How confident we are that we live in a world where all ravens are black (i.e. that this is a good explanation of us so far only seeing black ravens) does not only depend on how many black ravens we have seen, but should be expressed in relation to our confidence in other possible explanations.
+How confident we are that we live in a world where all ravens are black (i.e. that this is a good explanation of the fact that so far we only seeing black ravens) does not only depend on how many black ravens we have seen, but should be expressed in relation to our confidence in other possible explanations.
 If my alternative explanation is that cows can fly, I'm certainly more sure about all ravens being black.
 Of course, in empirical science a good explanation should depend on a meaningful contrast with alternative explanations (so not some alternative hypothesis about banana's or flying cows).
+Whether you have enough confidence to reject a null hypothesis depends on its formulation in contrast to the experimental hypothesis.
 
-These issues are too complicated to work out in a post. 
-My goal here was to show that the Raven paradox raises some questions that are still interesting because they challenge formalizations of (scientific) explanation and relevance in inductive reasoning.
-
+In any case, the Raven paradox raises interesting questions on what are relevant or good explanations in inductive reasoning.
