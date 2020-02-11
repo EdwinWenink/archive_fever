@@ -1,5 +1,5 @@
 ---
-title: The Raven Paradox and inductive reasoning
+title: The Raven Paradox of Inductive Reasoning
 author: Edwin Wenink
 date: 2020-02-11
 tags: [logic, induction, paradox]
