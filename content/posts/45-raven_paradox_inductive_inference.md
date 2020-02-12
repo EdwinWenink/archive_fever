@@ -45,11 +45,8 @@ For reference, we can see that these two formulas are indeed logically equivalen
 We already knew that seeing more black ravens increased our confidence that all ravens are black.
 But what rewriting the proposition suggests is that we then should also be more confident that all ravens are black when we encounter any object that is not black and not a raven.
 Although being logically equivalent, this statement suddenly no longer accurately describes how we become more sure that all ravens are black. 
-
 Does my confidence that ravens are black increase when I see a yellow banana?
-
-Not quite.
-It is clear that seeing a yellow banana is completely irrelevant when considering the proposition that Ravens are black, but the logical formalization of the inferred rule on black ravens does not express this. 
+Seeing a yellow banana seems completely irrelevant when considering the proposition that Ravens are black, but the logical formalization of the inferred rule on black ravens does not express this. 
 
 [Peter Lipton]( https://onlinelibrary.wiley.com/doi/abs/10.1002/9781405164481.ch29 ) points out that this issue of relevance similarly plagues existing models of scientific explanation, particularly the so-called Deductive-Nomological model.
 In the summary of Lipton, this model states that "an event is explained when its description can be deduced from a set of premises that essentially includes at least one law".
