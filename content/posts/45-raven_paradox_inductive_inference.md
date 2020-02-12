@@ -25,7 +25,7 @@ for all x:Rx -> Bx
 ```
 
 where Rx means "x is a raven" and Bx means "x is black".
-Remember, this proposition is inferred from the many observations of `Bx`.
+Remember, this proposition is inferred from the many observations black ravens that are, supposedly, instances of this rule.
 
 But Hempel points out that when we rewrite this statement to the following logically equivalent proposition, things get counter-intuitive:
 
