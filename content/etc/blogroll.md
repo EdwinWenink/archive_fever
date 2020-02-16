@@ -156,6 +156,7 @@ Intended to be permanently under construction.
 ## Minimalist / nostalgic / retro website design
 
 - [Make a website with only pandoc and make]( https://computableverse.com/blog/create-website-using-pandoc-make-file )
+- [Tilde website with only pandoc and make](https://zine.tildeverse.org/issue-2.html)
 - [No idea what this is but the design is crazy](https://s-i-l-o.fr/)
 - [greaterthanorequalto.net](http://greaterthanorequalto.net/)
 - [motherfuckingwebsite](http://motherfuckingwebsite.com/)
