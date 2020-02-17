@@ -1,0 +1,107 @@
+@import url('http://fonts.googleapis.com/css?family=Cousine:400,700');
+
+/* Enable this if you want to have the whole body centered, 
+ * rather than the text column
+html {
+		position: static;
+		width: 100%;
+		max-width:100%;
+		min-width:100%;
+		margin: 0;
+}
+*/
+
+html, body {
+	max-width: 1000px;
+	margin: auto;
+	text-align: left;
+	line-height: 1.3em;
+	font-family: Cousine, menlo, monospace;
+	font-size: 17px;
+	height: 98%;
+}
+
+ul {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1em;
+	text-decoration: underline;
+}
+
+h2 {
+	line-height: 1em;
+	text-decoration: underline;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	background: black;
+	color: white;
+}
+
+img {
+	max-width: 500px;
+	max-width: 100%;
+	max-height: auto;
+}
+
+blockquote {
+	border-left: 3.5px solid #0594cb;
+	border-left: 3px solid black;
+	margin: 0.7em 10px;
+	padding: 0.7em 20px;
+}
+
+blockquote p {
+	display: inline;
+}
+
+#header {
+	font-size: 140%;
+	line-height: 1.1;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	padding-left: 0.5rem;
+}
+
+.title, .author {
+		text-align: left;
+}
+
+#TOC {
+  width: 400px;
+  min-height: 100%;
+  height: 100%;
+  float: left;
+}
+
+div:not(#TOC) {
+  text-align: left;
+}
+
+.level1 {
+	margin-left: 400px;
+}
+
+@media all and (max-width:840px){
+
+		#TOC {
+		display: none;
+		width: 0px;	
+		max-width: 0px;
+		}
+
+		.level1, .title, .author {
+		margin-left: 10%;	
+		padding: 0;
+		}
+}
+
+
