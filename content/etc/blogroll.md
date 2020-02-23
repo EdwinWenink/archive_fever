@@ -124,7 +124,7 @@ Intended to be permanently under construction.
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 
-## AI   / Programming 
+## AI / Programming 
 
 - [Convolutional Neural Networks for Visual Recognition - Stanford Course](https://cs231n.github.io/)
 - [Recipe for training Neural Network - Karpathy](http://karpathy.github.io/2019/04/25/recipe/)
@@ -157,6 +157,7 @@ Intended to be permanently under construction.
 - [Removed.social](https://www.removed.social/)
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
+- [NULLCTRL glitch art]( https://tilde.town/~dustin/projects/nullctrl/)
 
 ## Minimalist / nostalgic / retro website design
 
