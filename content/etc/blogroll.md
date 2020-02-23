@@ -158,6 +158,7 @@ Intended to be permanently under construction.
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
 - [NULLCTRL glitch art]( https://tilde.town/~dustin/projects/nullctrl/)
+- [Dem Bones: daily generated skeletons](https://smidgeo.com/bots/dem-bones/)
 
 ## Minimalist / nostalgic / retro website design
 
