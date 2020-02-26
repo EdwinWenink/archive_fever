@@ -65,6 +65,7 @@ blockquote p {
 
 code {
 	border:solid 1px #41403E;
+    font-size: 85%;
 }
 
 #header {
