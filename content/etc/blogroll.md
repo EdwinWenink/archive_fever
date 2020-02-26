@@ -124,11 +124,16 @@ Intended to be permanently under construction.
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 
-## AI / AI & Society / Programming 
+## AI / Programming 
 
+- [Convolutional Neural Networks for Visual Recognition - Stanford Course](https://cs231n.github.io/)
+- [Recipe for training Neural Network - Karpathy](http://karpathy.github.io/2019/04/25/recipe/)
+- [Arxiv Sanity: repo of sane machine learning papers](http://www.arxiv-sanity.com/)
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
-- [On noise-tagging in Broad-band evoked potential BCIs](https://sites.google.com/site/dondersbci/research/noise-tagging)
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
+
+## AI & Society
+
 - [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
 - [Posts on algorithmic regulation](https://governancexborders.com/tag/algorithm-regulation/)
 - 
@@ -138,6 +143,8 @@ Intended to be permanently under construction.
 - [De Klos](http://www.de-klos.net/): blog of my friend Boris on the challenges of the Antrophocene [(old version)](https://deklos.wordpress.com/) 
 - [NewAPPS: Art, Politics, Philosophy, Science](https://www.newappsblog.com/)
 - [Digressions&Impressions](https://digressionsnimpressions.typepad.com/digressionsimpressions/)
+- [What can I do with a philosophy major](http://www.oswego.edu/~delancey/WhatCanIDo.html)
+	* Same domain contains several educational resources on philosophy
 - [Stoicism-fu: internet guide to what's worth keeping in Stoicism](https://philosopher.life/#Stoicism-fu:Stoicism-fu)
 - [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
 - [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
@@ -152,10 +159,13 @@ Intended to be permanently under construction.
 - [Removed.social](https://www.removed.social/)
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
+- [NULLCTRL glitch art]( https://tilde.town/~dustin/projects/nullctrl/)
+- [Dem Bones: daily generated skeletons](https://smidgeo.com/bots/dem-bones/)
 
 ## Minimalist / nostalgic / retro website design
 
 - [Make a website with only pandoc and make]( https://computableverse.com/blog/create-website-using-pandoc-make-file )
+- [Tilde website with only pandoc and make](https://zine.tildeverse.org/issue-2.html)
 - [No idea what this is but the design is crazy](https://s-i-l-o.fr/)
 - [greaterthanorequalto.net](http://greaterthanorequalto.net/)
 - [motherfuckingwebsite](http://motherfuckingwebsite.com/)
