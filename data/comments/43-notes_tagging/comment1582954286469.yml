@@ -1,0 +1,6 @@
+_id: ba9d8540-5ab4-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Nima
+reply_to: ''
+body: "Thanks a lot for the great post. \r\n\r\nAs a suggestion I prefer fzf (e.g. vim-fzf) instead of CtrlP which is more neat and faster. The default command for tag is :Tag which can be easily mapped."
+date: 1582954286
