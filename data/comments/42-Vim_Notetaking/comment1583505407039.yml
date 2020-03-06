@@ -1,0 +1,6 @@
+_id: e810f220-5fb7-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Edwin
+reply_to: 3d3129f0-5f86-11ea-a16d-e7b30751e183
+body: "You wouldn't want Vim to check for each word you type whether it corresponds to a filename somewhere on your computer, which would be required to highlight \"test2\" only if it links to a file. So when you write \"test2\" you basically need to know yourself that's a file. If your issue is that you are concerned that you might forget that test2.md refers to a file, I would suggest either writing it as a relative path, so as \"./test2.md\". Then you know for sure that it's a path. If you use a markdown link, you'll also know it's a link. So like: \\[ test2.md \\]\\( ./test2.md ). \r\nN.B. \"test\" and \"test.md\" do *not* refer to the same file!\r\n\r\nIf you are concerned that you have to remember filenames when linking to them, it's good to know that Vim can autocomplete filenames for you with Ctrl-X Ctrl-F (in insert mode, so when you are typing). And there are also many plugins to take of that more automatically)."
+date: 1583505407
