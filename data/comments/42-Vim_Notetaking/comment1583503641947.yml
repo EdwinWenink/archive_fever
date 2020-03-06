@@ -1,0 +1,6 @@
+_id: cc0696b0-5fb3-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Edwin
+reply_to: 3d3129f0-5f86-11ea-a16d-e7b30751e183
+body: "The file or directory does already need to exist for `gf` (go to file) to work in Vim. But making a new file is super easy. Assuming you are in the right directory where you want a new file, you type `:edit test.txt` which will open the new file (`:e test.txt` for short). To save, then \"write\" out the file with `:w`. In your index file, you can now just type \"test.txt\" and run `gf` on that to jump to it! If you master Vim, you'll never have to leave Vim again ;-). \r\nNotice that Vim also has a file explorer built in, in case you want to use that. It's called `netrw`. There's plenty of info online and for further information you can always use Vim's built in help function with `:help netrw`.\r\n\r\nBy the way, I strongly recommend having a look at Markdown (.md extension). You can easily convert from that plain text format to webpages or pdfs with this amazing tool called `pandoc`."
+date: 1583503641
