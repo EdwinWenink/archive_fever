@@ -63,6 +63,11 @@ blockquote p {
 	display: inline;
 }
 
+code {
+	border:solid 1px #41403E;
+    font-size: 85%;
+}
+
 #header {
 	font-size: 140%;
 	line-height: 1.1;
