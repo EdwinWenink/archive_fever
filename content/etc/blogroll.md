@@ -96,6 +96,7 @@ Intended to be permanently under construction.
 - [On Digital Minimalism](https://www.calnewport.com/blog/2016/12/18/on-digital-minimalism/)
 - [Git Magic](https://crypto.stanford.edu/~blynn/gitmagic/ch01.html#_work_is_play)
 - [Pandocomatic: pandoc automation](https://github.com/htdebeer/pandocomatic)
+- [Plea for parallel web and book publishing](https://thelocalyarn.com/excursus/secretary/posts/web-books.html)
 
 ## Ideas about Note-taking
 
