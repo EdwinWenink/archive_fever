@@ -1,0 +1,6 @@
+_id: 8877ec10-5fa3-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Edwin
+reply_to: d7a8dcc0-5f28-11ea-a16d-e7b30751e183
+body: "Hey, thanks for dropping by. I had a look at your output trace and tested the regex again both on Windows and Unix. I know of some other people also using the same Regex so I don't think that's the issue. Your output trace also looks fine, so I'm also a bit at a loss. The only irregularity I noticed was that for some reason ctags tried to read your options file twice (in the same location though). That does not occur for me and I don't know why it does for you. And even then, I would not expect it to make a difference. \r\n\r\nFor further testing, it's perhaps a good idea to repeat the same experiment but do it in a subdirectory somewhere instead of your home folder (and have `.ctags.d` in that same directory). It's a long shot, but if that would make a difference perhaps ctags is loading something strange under the hood that's in some subdirectory of your home folder. \r\n\r\nIs test.md file under `~/test.md` by the way?\r\n\r\nAnd just to be sure, if you run `ctags --version` it indeed says you use Universal Ctags? My build was from December but I downloaded the latest one, and also verified my code works in that case."
+date: 1583496656

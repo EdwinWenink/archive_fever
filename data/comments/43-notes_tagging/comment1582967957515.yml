@@ -1,0 +1,6 @@
+_id: 8f354120-5ad4-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Edwin
+reply_to: ba9d8540-5ab4-11ea-a16d-e7b30751e183
+body: "The main reason I went for CtrlP is that I wanted to use the exact same setup on Linux and Windows. Fzf is great on Linux but it's not designed for Windows and didn't work well for me on Windows (without suboptimal workarounds). I did find that the speedup with using ripgrep is significant though.\r\nHaving said that, I could in a later post describe this same setup with fzf, just for completeness.\r\nThanks for the feedback!"
+date: 1582967957

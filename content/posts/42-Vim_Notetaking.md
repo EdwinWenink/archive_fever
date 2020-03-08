@@ -258,7 +258,7 @@ Have a look at the [project page](https://github.com/BurntSushi/ripgrep) for cle
 
 Something I have not done yet, is design an effective plain-text tagging system [UPDATE 19/12/2019: see this post]( {{% parenturl%}}43-notes_tagging ).
 [This blog](https://joereynoldsaudio.com/2018/07/07/you-dont-need-vimwiki.html) adds tags behind all files in the index, as a quick hack.
-This doesn't fit with the above approach of automatically generating the navigation tree, as that would replace the tags. 
+This doesn't fit with the above mentioned approach of automatically generating the navigation tree, as that would replace the tags. 
 I also think a plain-text tagging system is ideally decentralized, i.e. tags are stored in the notes themselves. 
 This is more robust but also tricker to implement efficiently.
 

@@ -15,9 +15,9 @@ html {
 	url("http://www.peterburr.org/2013_images/shape-collective.jpg") 0 2500px no-repeat,
 	url("http://www.peterburr.org/2013_images/03B-2.png") 0 3000px repeat-y;
 	background-size: cover;
+	background-image: url("/images/noodle_dots.png");
 	 */
 	/* contain is chaotischer */
-	background-image: url("/images/noodle_dots.png");
 	background-size: contain;
 }
 body, li p {

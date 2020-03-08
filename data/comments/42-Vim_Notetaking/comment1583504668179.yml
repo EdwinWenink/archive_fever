@@ -1,0 +1,6 @@
+_id: 2facc5c0-5fb6-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Otternaut
+reply_to: 3d3129f0-5f86-11ea-a16d-e7b30751e183
+body: "Thank you so much!\r\nOne last question. :) \r\nIs there an option in vim to highlight this words connected with an .md in the text?\r\n\r\nFor example you have an test.md with the text ‚abc is great and test2 is also great‘. How can I highlight test2 in vim so that I know I can follow test2 with a gf command to test2.md\r\n\r\nI think it will be difficult to have a good overview when you have for example 1000 .md textfiles"
+date: 1583504668
