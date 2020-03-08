@@ -7,13 +7,19 @@ body {
 	color: grey;
 }
 
+h1 {
+	border-color: red;
+}
+
+h1 aside {
+	text-decoration: none!important;
+	text-decoration-color: grey;
+	text-decoration-style: none;
+}
+
 h2 {
 	text-decoration: overline;
 	text-decoration-color: red;
-}
-
-h1 {
-	border-color: red;
 }
 
 h2 a {
@@ -32,16 +38,6 @@ ul {
 
 a {
 	color: red!important;
-}
-
-h1 aside {
-	text-decoration: none!important;
-	text-decoration-color: grey;
-	text-decoration-style: none;
-}
-
-aside a {
-	line-height: 2.5em;
 }
 
 code {
