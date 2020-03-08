@@ -52,6 +52,10 @@ h1 {
     text-align: left;
 }
 
+.remove-frame {
+    border: none !important;
+}
+
 h2 {
 	border-bottom-style: solid;
 	border-width: 1px;
