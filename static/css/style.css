@@ -551,6 +551,10 @@ p a, blockquote a {
 	text-decoration: underline;
 }
 
+.preview {
+    max-width: 80%;
+}
+
 .preview a {
 	text-decoration: underline;
 }

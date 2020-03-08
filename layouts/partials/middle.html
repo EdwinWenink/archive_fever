@@ -28,20 +28,20 @@
 	<aside style="text-align:center;line-height:1.5vw; font-size: 1.5vw;">A public memory prosthesis <br> {philosophy, tech, ai} </aside></h1>
 </div>
 
+ <div class="desktop">
+     <p><script type="text/javascript" src="/scripts/randomquote.js"></script></p>
+ </div> 
+
+<p>
+&rarr;<a href="{{ .Site.BaseURL }}/about">/about</a>
+&rarr;<a href="{{ .Site.BaseURL }}/archives">/archives</a>
+&rarr;<a href="{{ .Site.BaseURL }}/archives/#tags">/#tags</a>
+&rarr;<a href="{{ .Site.BaseURL }}/index.xml">/rss</a>
+</p>
+
+<!--
 <h2>Index</h2>
 			 <br>
-
-			<div class="author-portret">
-		    <a href="{{ .Site.BaseURL }}~ejw">
-			<img src="{{ .Site.BaseURL }}/images/portret_smooth.jpg" id="portret_normal" alt="Author portret should have been here" > </a>
-			<img src="{{ .Site.BaseURL }}/images/portret_zwart.gif" id="portret_dark" alt="Author portret should have been here" > </a>
-			Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
-			</div>
-
-		     <div class="desktop">
-				 <p><script type="text/javascript" src="/scripts/randomquote.js"></script></p>
-			 </div> 
-
 
 			 <ul>
 				 <li><u><a href="#engrams">Engrams</a></u> are memory traces.</li>
@@ -52,6 +52,7 @@
 				 <li>Subscribe to the <u><a href="{{ .Site.BaseURL }}index.xml">RSS feed</a></u>!</li>
 				 </ul>
 			<br> 
+-->
 				 <!--
 			 I accept guest contributions, see <u><a href="{{ .Site.BaseURL }}/posts/27-website_purpose/">here why</a></u>.
 			 <br>
@@ -63,6 +64,16 @@
 	</div>
 
     <h2 id="engrams">{{ title .Data.Term  }} Engrams </h2>
+
+<div class="author-portret">
+<a href="{{ .Site.BaseURL }}~ejw">
+<img src="{{ .Site.BaseURL }}/images/portret_smooth.jpg" id="portret_normal" alt="Author portret should have been here" > </a>
+<img src="{{ .Site.BaseURL }}/images/portret_zwart.gif" id="portret_dark" alt="Author portret should have been here" > </a>
+Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
+</div>
+
+
+
 	<div class="preview">
 
 	{{ range $index, $value := first 6 (where .Pages ".Type" "posts") }}
@@ -126,6 +137,7 @@
 	-->
 	</div>
 
+    <!--
 	<div class="tags">
 	<h2 id="tags"> Tag roulette </h2>
 	<br>
@@ -134,7 +146,8 @@
 	{{ if eq .Type "posts"}}
 		{{ range .Params.tags }}
 			{{ $name := lower .  }}
-			{{ $array := $tags.Get "tags" }} <!-- For some reason I can't directly add this code below -->
+			{{ $array := $tags.Get "tags" }} 
+            For some reason I can't directly add this code below
 			{{ if not (in $array $name)}}
 				{{ $tags.Add "tags" (slice $name)}}
 				<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
@@ -145,6 +158,7 @@
 	</div>
 	<br>
     <br>
+    -->
 
 
 
