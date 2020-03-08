@@ -40,6 +40,15 @@ a {
 	color: red!important;
 }
 
+a:hover {
+	color: red!important;
+	background: black;
+}
+
+aside {
+	color: red;
+}
+
 code {
 	background-color: red;
 	color: black;
@@ -67,9 +76,6 @@ header a {
 	color: grey!important;
 }
 
-aside {
-	color: red;
-}
 
 #portret_normal {
 	display: none;
@@ -94,7 +100,7 @@ aside {
 	color: grey!important;
 }
 
-.post-comment, .post-comment-reply {
+.post-comment, .post-comment-field, .post-comment-reply {
 	background: rgba(238, 238, 238, 1);
 	background: black;
 	color: grey;
@@ -108,7 +114,3 @@ aside {
 	border: 0px;
 }
 
-a:hover {
-	color: red!important;
-	background: black;
-}
