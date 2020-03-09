@@ -1,0 +1,85 @@
+{{ partial "header.html" . }}
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    // console.log(el.style.opacity);
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+	{{ $all_comments := newScratch }}
+	{{ range $commented_posts := $.Site.Data.comments }}
+		{{ range . }}
+			{{ $all_comments.Add "comments" (slice . ) }}
+		{{ end}}
+	{{ end }}
+
+    <p>
+    {{ len ($all_comments.Get "comments") }} comments in total.
+    </p>
+
+	<p>
+	<!-- TODO retrieve title of the post -->
+	{{ range (sort ($all_comments.Get "comments") ".date" "desc") }}
+			{{ if .reply_to}}
+				<!-- Could extend the person replied to -->
+				{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+			{{ else}}
+			{{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+			{{ end}}
+			<!-- This way of retrieving name does not work here on in the above for some reason... -->
+			{{ with .Site.GetPage "/posts/37-deepfakes" }}
+				{{ .Title }}
+			{{ end }}
+	{{ end }}
+	</p>
+
+</div>
+
+
+{{ partial "footer" . }}
+
