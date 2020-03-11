@@ -1,0 +1,14 @@
+_id: 7837c2c0-6382-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Edwin
+reply_to: 4ae6cc40-6304-11ea-a16d-e7b30751e183
+body: >-
+  My pleasure! Otternaut (directly above) asked practically the same question,
+  so reading through my response to him should help you. In short: 1) type the
+  name of the file you want to link to, 2) use `gf` and `gF` in Vim (normal
+  mode) to open that file. The only assumption this makes is that your working
+  directory is set up correctly. The easiest solution is to make sure that the
+  working directory is the root directory of all your notes :-). Check with
+  `:pwd` and use `:cd` to change the working directory. Feel free to let me know
+  if you encounter issues ;-).
+date: 1583922260
