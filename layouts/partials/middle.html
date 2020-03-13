@@ -114,7 +114,7 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 	{{ end }}
 	<h2> Latest comments </h2>
 	<br>
-    <aside>Last 4 of <a href="{{ .Site.BaseURL }}/comments">{{ len ($all_comments.Get "comments") }} comments in total<a>:</aside>
+    <aside>Last 4 of <a href="{{ .Site.BaseURL }}/comments">{{ len ($all_comments.Get "comments") }} comments in total</a>:</aside>
 	<p>
 	<!-- TODO retrieve title of the post -->
 	{{ range first 4 (sort ($all_comments.Get "comments") ".date" "desc") }}
