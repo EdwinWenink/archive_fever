@@ -17,9 +17,9 @@ And to what extent do we want tech companies with flexible morals to be in contr
 
 Imagine that you overhear someone talking about "Project Nightingale."
 You might think this is a reference to a new James Bond movie or some CIA operation, but it is not. 
-It is a medical data sharing project of Google and Ascension, which is the second-largest healthcare provider in the U.S. that manages 2600 healthcare locations, including 150 hospitals [^2].
-Somewhere in 2018 Google and Ascension made a deal without consulting doctors and patients or providing them an opt-out, that implies that the electronic health records of up to 50 million patients will be transferred to Google, making them available for the development of AI applications [^3].
-Last month (November 2019) a whistleblower working on Project Nightingale reported concerns that this immense data transfer - the biggest in health care so far - might be in breach with the relevant rules on data privacy (HIPAA) [^4], which has spawned extensive media coverage[^5][^6][^7] and a federal inquiry.[^8]
+It is a medical data sharing project of Google and Ascension, which is the second-largest healthcare provider in the U.S. that manages 2600 healthcare locations, including 150 hospitals[^2].
+Somewhere in 2018 Google and Ascension made a deal without consulting doctors and patients or providing them an opt-out, that implies that the electronic health records of up to 50 million patients will be transferred to Google, making them available for the development of AI applications[^3].
+Last month (November 2019) a whistleblower working on Project Nightingale reported concerns that this immense data transfer - the biggest in health care so far - might be in breach with the relevant rules on data privacy (HIPAA)[^4], which has spawned extensive media coverage[^5][^6][^7] and a federal inquiry.[^8]
 
 The transferred records are reported to include names, addresses, family relations, allergies, radiology scans, medication use and medical conditions. 
 A lack of appropriate anonymization leads to the fear that Google employees working on the project might look into these files.
@@ -51,7 +51,7 @@ They can read the terms and conditions and decide to opt out.
 But one should at least realize that most people either have no time to read all conditions, do not understand their legal language, or otherwise feel pressured into accepting them because they need the service.
 Is this type of consent really informed and explicit?
 In particular people with health problems are more easily nudged into sharing health data.
-Consequently, the idea of a voluntary trade-off might be a fallacy \[18].
+Consequently, the idea of a voluntary trade-off might be a fallacy [^18].
 As Sharon points out, this makes the use of apps to gather sensitive health data "morally dubious" (p.5).
 
 Sharon points out an additional dynamic specific to apps that collect or require health data, namely that they almost without exception promote their service as altruistic: if we all crowdsource our health data for research we can solve nasty diseases together.
