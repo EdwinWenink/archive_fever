@@ -114,10 +114,11 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 	{{ end }}
 	<h2> Latest comments </h2>
 	<br>
-    <aside>Last 4 of <a href="{{ .Site.BaseURL }}/comments">{{ len ($all_comments.Get "comments") }} comments in total</a>:</aside>
+	{{ $n_comment := 5 }}
+	<aside>Last {{ $n_comment }} of <a href="{{ .Site.BaseURL }}/comments">{{ len ($all_comments.Get "comments") }} comments in total</a>:</aside>
 	<p>
 	<!-- TODO retrieve title of the post -->
-	{{ range first 4 (sort ($all_comments.Get "comments") ".date" "desc") }}
+	{{ range first $n_comment (sort ($all_comments.Get "comments") ".date" "desc") }}
 			{{ if .reply_to}}
 				<!-- Could extend the person replied to -->
 				{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
