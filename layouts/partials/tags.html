@@ -1,0 +1,22 @@
+<div class="tags">
+	<h2 id="tags">Tags</h2>
+<br>
+{{$tags := newScratch }}
+{{ range .Site.Pages }} 
+{{ if eq .Type "posts"}}
+	{{ range .Params.tags }}
+		{{ $name := lower .  }}
+		{{ $array := $tags.Get "tags" }} 
+		<!--
+		For some reason I can't directly add this code below
+		-->
+		{{ if not (in $array $name)}}
+			{{ $tags.Add "tags" (slice $name)}}
+			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
+		{{ end }}
+	{{end}}
+{{ end }}
+{{ end }}
+</div>
+<br>
+<br>

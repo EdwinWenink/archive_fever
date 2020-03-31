@@ -1,0 +1,11 @@
+<div>
+<h2 > Micros </h2>
+{{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
+<div class="hover-box">
+	<p>{{ .Render "content_only" }}</p>
+</div>
+{{ end }}
+<p> See <a href="{{ .Site.BaseURL }}/microblog"> microblog</a> for more ... </p>
+<br>
+</div>
+

@@ -1,0 +1,31 @@
+<div class="preview">
+
+{{ $preview_n := 15 }}
+{{ range $index, $value := first $preview_n (where .Pages ".Type" "posts") }}
+	<p>
+	<aside>{{ .Date.Format "January 2, 2006"}} 
+		{{ if not (eq .Params.tags nil) }}
+			{{ range first 2 $value.Params.tags }}
+				<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+			{{ end }}
+			{{ if gt (len .Params.tags) 2 }}
+				...
+			{{ end }}
+		{{ end }}
+	</aside>
+	<!--<div class="unfold"> Use this class to unfold summary on hover-->
+	<a href="{{ .Permalink }}">{{ .Title }}</a>
+	{{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
+	{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
+	{{ end }}
+	</p>
+	{{ if (eq $index 0) }}
+		<blockquote>{{ truncate 350 .Summary }}
+		<p><a href="{{ .RelPermalink }}">Read more</a><p>
+		</blockquote>
+	{{ end }}
+{{ end }}
+
+<br>
+<p> See <a href="{{ .Site.BaseURL }}/archives"> archives</a> for more ... </p>
+</div>
