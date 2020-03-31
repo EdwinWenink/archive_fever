@@ -104,10 +104,16 @@ Intended to be permanently under construction.
 	* [His archive is being digitalized, see here]( https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11 )
 * [Quick intro to Zettelkästen](https://clerestory.netlify.com/zk/)
 	* [Observations after one month of using Zettelkästen]( https://clerestory.netlify.com/zk1/#fn-2 )
+- [Great short but comprehensive intro to Zettelkasten](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125)
 - [Living with a Zettelkasten (digital system)]( https://omxi.se/2015-06-21-living-with-a-zettelkasten.html )
+- Johannes F.K. Schmidt on Zettelkasten: 
+	* [ Der Zettelkasten Niklas Luhmanns als Überraschungsgenerator (pdf) ]( https://www.uni-bielefeld.de/soz/luhmann-archiv/pdf/jschmidt_zettelkasten-als-uberraschungsgenerator.pdf )
+	* [Niklas Luhmann's Card Index: The Fabrication of Serendipity]( https://sociologica.unibo.it/article/view/8350/8270 )
 - [The Zettelkasten Method (physical system)](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1#Bd7BsyRovDaHAjFWz)
 * [Overview of Zettelkasten blog](https://zettelkasten.de/posts/overview/)
+* [The Principle of Atomicity](https://zettelkasten.de/posts/create-zettel-from-reading-notes/)
 - [Zetteldeft: Zettelkasten in Emacs]( https://www.eliasstorms.net/zetteldeft/ )
+- [Hack/Make: Your Knowledge Base as a Wiki (Zettelkasten)](https://hackmake.org/2015/03/your-knowledge-base-wiki)
 - [Why (and How) I Wrote My Academic Book in Plain Text](http://wcaleb.org/blog/my-academic-book-in-plain-text)
 - [Some Idiosyncratic Reflections on Note-Taking in General and ConnectedText in Particular](https://www.connectedtext.com/manfred.php)
 - [How to Make a Complete Map of Every Thought You Think](https://users.speakeasy.net/~lion/nb/html/)
@@ -118,6 +124,7 @@ Intended to be permanently under construction.
 - [Vim-Based Integrated Research Environment (seems incomplete)](https://github.com/Hipomenes/vim-ide)
 - [Very comprehensive Org mode guide in Emacs](http://doc.norang.ca/org-mode.html)
 - [Org mode workflow with Emacs](https://blog.jethro.dev/posts/org_mode_workflow_preview/)
+	* This whole blog is actually filled with nice posts on notetaking, but all centerd on org mode and Emacs.
 - [Basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
 
 ## Academic tips, approaches 
