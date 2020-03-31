@@ -43,6 +43,11 @@ h1,h2,h3,h4,h5,h6,header,header.a {
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+header,header.a{
+	font-weight: bold;
+	color:#777;
+}
+
 h1 {
 	display: inline-block;
 	border: solid;
@@ -60,11 +65,6 @@ h2 {
 	border-bottom-style: solid;
 	border-width: 1px;
 	border-color: rgba(0, 0, 0, 0.5);
-}
-
-header,header.a{
-	font-weight: bold;
-	color:#777;
 }
 
 ::selection {
@@ -494,7 +494,7 @@ ul,ol {
 }
 
 li {
-	line-height: 1.75em;
+	line-height: 1.5em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
 	"list-style-type: "> ";"
@@ -539,12 +539,20 @@ img {
 a {
 	text-decoration: none;
 	color: inherit;
+	/*display: inline-block;  enables transforms on links */
+	/*
 	-moz-transition-property: background;
 	-webkit-transition-property: background;
 	transition-property: background;
 	-moz-transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
+	*/
+	border:solid 1px transparent; /* set this to prevent horizontal shifting on hover */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	line-height: 1;
 }
 
 p a, blockquote a {
@@ -563,6 +571,9 @@ div.nav a:active div {
 	background: #cacaca;
 }
 
+hr { border: 0; overflow: hidden; }
+ hr:after { content: "--------------------------------------------------------------------------------------------------------"; color: black; max-width: 50%; }
+
 /*
 a:active { 
 	color: #777; 
@@ -570,18 +581,24 @@ a:active {
 */
 
 a:hover, a:hover h4 {
-	/*background: #F3F4F4;
-	color: #0366d6!important;
-	/*color: white!important;
-	 * */
+	/*
 	background: black;
 	color: white;
+	*/
+	background: yellow;
+	color: black;
+	text-decoration: none;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	border:solid 1px black;
 	-moz-transition-property: color;
 	-webkit-transition-property: color;
 	transition-property: color;
 	-moz-transition-duration: .01s;
 	-webkit-transition-duration: .01s;
 	transition-duration: .01s;
+	line-height: 1;
 }
 
 
