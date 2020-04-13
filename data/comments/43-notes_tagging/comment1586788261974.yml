@@ -1,0 +1,13 @@
+_id: 65dedbb0-7d93-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Edwin
+reply_to: 30136e00-7d8a-11ea-a16d-e7b30751e183
+body: >-
+  Thanks a lot for your useful response! I actually received another mail today
+  from someone on MacOS encountering issues with my setup, that I could not
+  reproduce. When I have time I'll update my universal ctags version to the most
+  recent build and do some testing. If that doesn't cause the issue, I might
+  look into why specifically people on MacOS seem to be having issues (I only
+  tested on Linux and Windows). In any case, great that you already found a fix
+  and thanks a lot for sharing! :-)
+date: 1586788261
