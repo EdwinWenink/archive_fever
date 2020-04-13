@@ -1,0 +1,10 @@
+_id: c48e5f90-7dbc-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Edwin
+reply_to: 30136e00-7d8a-11ea-a16d-e7b30751e183
+body: >-
+  My setup still works for me using the latest universal ctags build and
+  interestingly I can't seem to get your code to work (on Windows, in this
+  case). If you have time, do you mind sharing why according to you my code
+  should not work according to the documentation?
+date: 1586806029
