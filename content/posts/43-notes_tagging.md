@@ -251,6 +251,8 @@ Alternatively, you can define a function to change the directory to the root of 
 nnoremap <leader>cd :cd %:h<CR>
 ```
 
+UPDATE 14/4/2020: I've received replies and emails specifically from MacOS users that my ctags extension does not work. I do not have access to a machine with MacOS and cannot reproduce the issue. I suspect that the universal-ctags build for MacOS uses a slightly different regex engine. Luckily, [a very kind comment from Fernanco](http://localhost:1313/posts/43-notes_tagging/#30136e00-7d8a-11ea-a16d-e7b30751e183) offers a fix. I've had confirmation of at least one MacOS user that this fixed his issue as well.
+
 ## Navigating tags from within Vim
 
 As said before, Vim has great support for handling `ctags`.
@@ -357,7 +359,7 @@ There are two external dependencies, `Universal Ctags` and `ripgrep`  which howe
 Plug and play.
 For now, I'll provide a quick summary of mentioned Vim bindings and settings (and some not mentioned) as requested [here](https://github.com/EdwinWenink/personal_website/issues/559):
 
-```vim
+```
 " Specify a directory for plugins
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
@@ -408,5 +410,4 @@ set wildignore+=*/.git/*,*/tmp/*,*.swp
 " This step is probably not necessary for you
 " but I'll add it here for completeness
 set tags+=./tags;,tags
-
 ```
