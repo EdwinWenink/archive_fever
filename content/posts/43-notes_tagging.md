@@ -251,7 +251,7 @@ Alternatively, you can define a function to change the directory to the root of 
 nnoremap <leader>cd :cd %:h<CR>
 ```
 
-UPDATE 14/4/2020: I've received replies and emails specifically from MacOS users that my ctags extension does not work. I do not have access to a machine with MacOS and cannot reproduce the issue. I suspect that the universal-ctags build for MacOS uses a slightly different regex engine. Luckily, [a very kind comment from Fernanco](http://localhost:1313/posts/43-notes_tagging/#30136e00-7d8a-11ea-a16d-e7b30751e183) offers a fix. I've had confirmation of at least one MacOS user that this fixed his issue as well.
+UPDATE 14/4/2020: I've received replies and emails specifically from MacOS users that my ctags extension does not work. I do not have access to a machine with MacOS and cannot reproduce the issue. I suspect that the universal-ctags build for MacOS uses a slightly different regex engine. Luckily, [a very kind comment from Fernanco](http://localhost:1313/posts/43-notes_tagging/#30136e00-7d8a-11ea-a16d-e7b30751e183) offers a fix. I've had confirmation from at least one other MacOS user that this fixed his issue as well.
 
 ## Navigating tags from within Vim
 
