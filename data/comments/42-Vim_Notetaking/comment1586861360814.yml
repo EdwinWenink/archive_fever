@@ -1,0 +1,6 @@
+_id: 986ac3a0-7e3d-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Peter
+reply_to: ''
+body: "Hi Edwin! First of all many thanks for your kind reply and my apologies for the double-post. I got an error-message the first time - so I posted again...\r\n\r\nI played around with the index-file, the command \"gf\" was new to me, so I was impressed, how things working.\r\n\r\nMy only question here is: your index file is linked to certain subfolders (or directories) and not to certain \"documents\" is that right? That's why you implemented the tree structure - I guess?\r\n\r\nBTW: I just set up a minimalistic system, which I can sync via \"Syncthing\" to my smartphone. There I have installed an app called Markor, which can read and edit all the files. Great stuff :-)."
+date: 1586861360
