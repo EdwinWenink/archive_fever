@@ -187,6 +187,9 @@ The resulting tree looks something like this:
 You can use this full tree for navigating to any note using Vim's `gf` command. 
 To quickly jump to a file name in the tree, just use Vim's search `/` in the index file.
 
+UPDATE 14/4/2020: I almost immediately moved away from using the tree. It just looked cool, but it quickly gets unmanageable. Relying on directory structure forces you to categorize notes rather than relying on search tools and direct interlinking. I’ve switched to a “Zettelkasten” approach.
+However, the idea of an index page is alive and kicking! You can always insert links to heavily used project notes. I currently use a page with all my tags as my index page (for tags, see the next post).
+
 The last thing we need to do is make a fast way to access the index file from anywhere.
 We can make a mapping to 1) open the index file and 2) change the Vim working directory to our notes directory, so that we can use our relative paths.
 
