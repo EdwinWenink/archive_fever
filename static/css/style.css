@@ -497,6 +497,7 @@ li {
 	line-height: 1.5em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
+    list-style: "-- ";
 	"list-style-type: "> ";"
 }
 
