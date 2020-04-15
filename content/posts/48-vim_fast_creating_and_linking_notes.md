@@ -1,5 +1,5 @@
 ---
-title: "Easy creation and linking of Zettelkasten notes in Vim"
+title: "Creating and linking Zettelkasten notes in Vim"
 date: 2020-04-15T16:14:19+02:00
 draft: false
 tags: [Vim, Zettelkasten, note-taking, workflow]
@@ -9,8 +9,8 @@ This is the third post in a series of sorts about note-taking in Vim.
 I have silently kept playing around with the system outlined in the previous posts ([-1]({{% baseurl %}}posts/43-notes_tagging/),[-2]({{% baseurl %}}posts/42-vim_notetaking/)).
 Some things I have abandoned, some are improved and some are changed. 
 I have inserted several updates (marked as "UPDATE") in the previous posts in case you are curious. 
-If we have reached some sort of equilibrium at the end of this series I'll make sure to create a place where people can easily download all relevant configuration and used scripts, but until we've reached that point you follow along here. It's a matter of "voortschrijdend inzicht," a beautiful Dutch phrase that's hard to translate and certainly hard to pronounce for most of my readers.
-Given the fact that my previous posts on Vim are well-received and several people are trying it out, it's time to pick up writing again and start chipping on the backlog. 
+If we have reached some sort of equilibrium at the end of this series I'll make sure to create a place where people can easily download all relevant configuration and used scripts, but for now everything is a matter of "voortschrijdend inzicht," a beautiful Dutch phrase that's hard to translate and certainly hard to pronounce for most of my readers.
+Given the fact that my previous posts on Vim are well-received and several people are trying it out, it's time to pick up writing again and start chipping away at the backlog. 
 
 To give you a taster of what's to come: 
 
@@ -26,15 +26,15 @@ If not, let me give a brief introduction to show you where the potential workflo
 
 ## What's the issue I'm trying to fix?
 
-The authors of [this nice Zettelkasten blog](https://zettelkasten.de/) argue that you should give up trying to categorize your notes in hierarchical folders and throw everything into one big flat Zettelkasten.
+The authors of [this nice Zettelkasten blog](https://zettelkasten.de/) argue that you should give up trying to categorize your notes in hierarchical folders and instead should throw everything into one big flat Zettelkasten.
 This is scary, because notes that do not have many interconnections with other notes may be forgotten when the Zettelkasten gets big (it will be forgotten by you for sure, but also "forgotten" by the Zettelkasten itself if it lacks links).
 Nevertheless, I'm making the transition because I want to commit to the idea of my note collection being dynamic, organic, an entity of its own, rather than it being a static dump.
 In order to make this transition, you start to fully rely on your tools.
-Since I'm hacking together my own tools, some issues came up.
+Since I'm hacking together my own tools some issues came up, in this case with using timestamps in filenames.
 
-The [OG Zettelkasten of Luhmann](https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11) had an extensive naming convention for organizing notes, but it was more of a necessary evil because computers were not in the picture yet.
-Given that we now have digital means of naming, searching and linking notes, a strict naming convention for the notes is an unnecessary complication and blindly applies an "analogue" mindset to a digital solution.
-The same authors are however strong proponents of the more superficial organization of notes by their time of creation, which they do by inserting a unique timestamp in the filename.
+The [O.G. Zettelkasten of Luhmann](https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11) had an extensive naming convention for organizing notes, but it was more of a necessary evil because computers were not in the picture yet.
+Given that we now have digital means of naming, searching, and linking notes, a strict naming convention for the notes is an unnecessary complication that blindly applies an "analogue" mindset to a digital solution.
+The authors from Zettelkasten.de are however strong proponents of the more superficial organization of notes by their time of creation, which they do by inserting a unique timestamp at the beginning of the filename.
 For me, the best argument for this approach is that unique timestamps are a good way of recovering links through potential filename changes. 
 The main reason I did not use them was however that I used Vim's default filename/path completion (`C-x C-f` in insert mode) when making Markdown links.
 This worked fine for me as long as filenames are meaningful, but this just doesn't cut it anymore when all filenames start with a timestamp, as you would have to manually start typing the timestamp.
@@ -55,7 +55,7 @@ First, we declare a variable that holds the location of our Zettelkasten, so we 
 let g:zettelkasten = "/home/edwin/Notes/Zettelkasten/"
 ```
 
-Now we want to define our own custom command that 1) pre-fills all the stuff we don't want to type, namely the timestamp and the extension (I always use markdown), and 2) prompts you for the name of your note:
+Second, we want to define our own custom command that 1) pre-fills all the stuff we don't want to type, namely the timestamp and the extension (I always use markdown), and 2) that prompts you for the name of your note:
 
 ```
 command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%H%M") . "-<args>.md"
@@ -83,11 +83,11 @@ Warning: it gets pretty sexy ahead.
 The main issue was that we never want to type timestamps in order to reap the benefits of path completion to get a Markdown link to the file we want.
 Now that we are at it, having to format a Markdown link like \[description\]\(link\) also takes time, so let's automatize that as well.
 
-My current solution is to rely on my fuzzy file finder (I use CtrlP with ripgrep, but fzf is also a great choice) to find a file and automatically create a markdown link to it.
+My new solution is to rely on my fuzzy file finder (I use CtrlP with ripgrep, but fzf is also a great choice) to find a file and automatically create a markdown link to it.
 This is a great solution because the fuzzy nature of it allows you to ignore the timestamp altogether.
 But it also allows you to search on a partial fragment of the time *and* a part of the note title.
-I can imagine you for example remember making a note about Zettelkasten somewhere in 2019, but you don't quite remember the exact date (unless you are Rain Man) and neither the precies name of the file.
-No problemo! Boot up CtrlP and search on "2019Zettelkasten". 
+I can imagine you for example remember making a note about Zettelkasten somewhere in 2020, but you don't quite remember the exact date (unless you are Rain Man) and neither the precise name of the file.
+No problemo! Boot up CtrlP and search on "2020Zettelkasten". 
 We can extend CtrlP to then automatically create a markdown link to the matching file, with Ctrl-X.
 Have a look at the [short screencast I made](#screencast).
 
