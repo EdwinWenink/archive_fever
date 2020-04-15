@@ -415,6 +415,7 @@ The system described above only uses vanilla Vim functionality without the need 
 
 I also deliberately do not use additional plugins for previewing my notes, because I write in Markdown and Markdown is designed to be readable in plain text. 
 Instead I advice to explore the various Markdown plugins out there, for syntax highlighting and folding.
+I can really recommend [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc) and the corresponding [syntax plugin](https://github.com/vim-pandoc/vim-pandoc-syntax).
 
 I'm interested in getting tips from you, especially about a potential implementation for "tags".
 
@@ -426,6 +427,7 @@ This is my current TODO list:
 	- e.g. use timestaming and write a function to search timeframes
 * Write a function for quickly adding a new note
 - Think more about my folder organization
+    * UPDATE 15/4/2020: I opted for a stricter Zettelkasten approach and now use a single directory. This forces you to rely on proper searching tools and manual interlinking, following the Zettelkasten principles. Additionally, this really simplifies writing your own tools, for example for managing backlinks, because you do not have to worry about paths but only about filenames. Additionally, not relying on paths in your links makes the link robuster, e.g. they do not break when you rename some directory. I do have to mention that this was never an issue with Vim alone, because Vim's `gF` can move to parent en sibling directories as well. I would like my markdown links to be strictly correct though, so that they would also automatically work when I publish my notes as a website or preview them in Github (where I store them).
 
 If I work any of these out you can expect a new blogpost about that.
 
