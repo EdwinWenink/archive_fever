@@ -4,7 +4,7 @@ author: Edwin Wenink
 date: 2019-12-19
 toc: true
 draft: False
-tags: [Vim, workflow, ctags, notetaking, Zettelkasten]
+tags: [Vim, workflow, ctags, note-taking, Zettelkasten]
 ---
 
 In the [previous post]({{% parenturl %}}/42-vim_notetaking) I expressed my requirements for an ideal note taking system and took the first steps in designing it for my preferred editor, which is Vim.
@@ -304,6 +304,13 @@ When searching using `<Ctrl>-P` you can toggle whether you are searching files, 
 Alternatively, you can directly invoke the `:CtrlPTag` command. 
 Various autocompletion plugins will also be able to suggest and complete tags.
 
+UPDATE 15/4/2020: You probably want to define a quick mapping for this, for example:
+
+```
+" Binding for searching tags ("search tag")
+nnoremap <leader>st :CtrlPTag<CR>
+```
+
 One last trick before I'll share screenshots of an example workflow.
 If you follow a tag to another file, look around for a bit, and then want to go back to where you where before going down the rabbit hole, you can type `<Ctrl>-t` to go back to through what is called the `tag stack`. 
 The `tag stack` basically tracks the trajectory you've taken by following tags through your notes.
@@ -403,6 +410,9 @@ if executable('rg')
     let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
     let g:ctrlp_user_caching = 0
 endif
+
+" Binding for searching tags ("search tag")
+nnoremap <leader>st :CtrlPTag<CR>
 
 " What to ignore while searching files, speeds up CtrlP
 set wildignore+=*/.git/*,*/tmp/*,*.swp

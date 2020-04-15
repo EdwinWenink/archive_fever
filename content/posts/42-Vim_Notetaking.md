@@ -3,7 +3,7 @@ author: "Edwin Wenink"
 title: "Building a Note-taking System with Vanilla Vim"
 date: 2019-11-24
 draft: false
-tags: [Vim, Workflow, Zettelkasten, notetaking]
+tags: [Vim, Workflow, Zettelkasten, note-taking]
 toc: true
 ---
 
