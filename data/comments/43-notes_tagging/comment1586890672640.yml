@@ -1,0 +1,6 @@
+_id: d79ccd40-7e81-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Fernando
+reply_to: ''
+body: "Sure.  According to :\r\n\r\nhttps://docs.ctags.io/en/latest/optlib.html#regular-expression-regex-engine\r\n\r\nthe regex should match only once - even though it doesn't say so explicitl.  However it does say:\r\n\r\n\"A more relevant use-case is when {_advanceTo=N[start|end]} is used in the experimental --_mtable-regex-<LANG>, to “advance” back to the beginning of a match, so that one can generate multiple tags for the same input line(s).\"\r\n\r\n\r\nThat is what I thought you used when you said in this page: 'universal ctags does have a way to return multiple tags per line through the use of an experimental feature.'\r\n\r\nBut different behaviours on different platforms... :-("
+date: 1586890672
