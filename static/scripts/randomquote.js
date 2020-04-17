@@ -69,6 +69,7 @@
 		quotes[66]="&quotIf people know what they think when they see what they say, then words figure in any step&quot - Karl E. Weick";
 		quotes[67]="&quotBehind every work of art lies an uncommited crime&quot - Theodor W. Adorno";
 		quotes[68]="&quotThe theory of probabilities is just common sense reduces to calculus&quot - Pierre-Simon Laplace";
+		quotes[69]="&quotAll of humanity's problems stem from man's inability to sit quietly in a room alone&quot - Blaise Pascal";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
