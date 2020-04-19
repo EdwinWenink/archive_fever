@@ -1,0 +1,6 @@
+_id: 8fef2c90-8237-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Peter
+reply_to: ''
+body: "Hi Edwin!\r\n\r\nSorry, me again ;-). After a couple of days trying out the note system with Vim, I'm getting happier and happier every day. I love the flexibility and the ability to set links to other documents.\r\n\r\nFrom your article above, I found the <C-w>f very helpful. Is there a keystroke, which opens the file in a vertical way (right beneath the index file)? I had a look into the help-function and did some research via Google, but couldn't find anything - apart from splitting Vim-window straight from the beginning. \r\n\r\nMany thanks in advance for your kind help!!!"
+date: 1587298574
