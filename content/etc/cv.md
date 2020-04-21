@@ -11,6 +11,15 @@ type: etc
 
 # Curriculum Vitae Edwin Wenink
 
+Last updated: April 2020.
+
+If the pdf preview doesn't work for you, [download my C.V.]({{<baseurl>}}cv_edwinwenink.pdf)
+
+For an extensive overview of university courses I followed, see [here]({{<baseurl>}}etc/courses).
+
+<embed src="{{<baseurl>}}cv_edwinwenink.pdf" style="width:100%;height:100vw"/>
+
+<!--
 Last updated: January 2019.
 
 This is a brief version of my C.V. 
@@ -41,3 +50,5 @@ For an extensive overview of university courses I followed, see [here]({{<baseur
 | 2012-2014                         | Radboud University Nijmegen: **Disciplinary Honours Program**. On Schopenhauer's pessimistic metaphysics, supervised by prof. dr. Ger Groot |
 | 2011-2012							| Radboud University Nijmegen: Propaedeutic year philosophy. *Cum laude*, average grade: 9,0 |
 | 2005-2011 | Thomas a Kempis college Arnhem, Gymnasium. *Cum laude*, average grade: 8,5 Graduated in two curriculums: Nature and Technology, Nature and Health.  | 
+
+-->
