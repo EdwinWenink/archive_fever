@@ -1,0 +1,6 @@
+_id: 282ae360-849e-11ea-a16d-e7b30751e183
+_parent: 42-Vim_Notetaking
+name: Robert
+reply_to: ''
+body: "Edwin,\r\n\r\nA great post.  I had been using vimwiki but when I added vim-pandoc there were a few conflicts based on file types.  I have been inspired by you and Conner (the doctor you mentioned) to try to create a way of doing notes that does not depend on vimwiki.  \r\n\r\nThank you."
+date: 1587562540
