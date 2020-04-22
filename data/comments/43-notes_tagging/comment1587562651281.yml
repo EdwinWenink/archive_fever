@@ -1,0 +1,6 @@
+_id: 69f31920-849e-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Robert
+reply_to: ''
+body: "Edwin,\r\n\r\nAnother great post.\r\n\r\nOne possible conflict I noticed.  The @ is also used by vim-pandoc to cite an author.  So if one is going to use the bibliography function of vim-pandoc they may want to use a different character.\r\n\r\nThank you"
+date: 1587562651
