@@ -1,0 +1,10 @@
+_id: e7363f60-849f-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Edwin
+reply_to: 69f31920-849e-11ea-a16d-e7b30751e183
+body: >-
+  Thanks for pointing this out! I do have vim-pandoc installed but never relied
+  on its bibliography functionality. When I need that kind of functionality I
+  usually switch to writing in LaTeX directly. I might check it out in the
+  future though and now I can anticipate this potential issue thanks to you.
+date: 1587563290
