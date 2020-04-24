@@ -83,7 +83,7 @@ Warning: it gets pretty sexy ahead.
 The main issue was that we never want to type timestamps in order to reap the benefits of path completion to get a Markdown link to the file we want.
 Now that we are at it, having to format a Markdown link like \[description\]\(link\) also takes time, so let's automatize that as well.
 
-My new solution is to rely on my fuzzy file finder (I use CtrlP with ripgrep, but fzf is also a great choice) to find a file and automatically create a markdown link to it.
+My new solution is to rely on my fuzzy file finder to find a file and automatically create a markdown link to it. I use CtrlP with ripgrep, but fzf is also a great choice, see [fernando's comment](https://www.edwinwenink.xyz/posts/48-vim_fast_creating_and_linking_notes/#2edc7bf0-859e-11ea-a16d-e7b30751e183) for a fzf solution.
 This is a great solution because the fuzzy nature of it allows you to ignore the timestamp altogether.
 But it also allows you to search on a partial fragment of the time *and* a part of the note title.
 I can imagine you for example remember making a note about Zettelkasten somewhere in 2020, but you don't quite remember the exact date (unless you are Rain Man) and neither the precise name of the file.
@@ -99,7 +99,6 @@ function! CtrlPOpenFunc(action, line)
    if a:action =~ '^h$'    
       " Get the filename
       let filename = fnameescape(fnamemodify(a:line, ':t'))
-	  " TODO do not delete "-" when no timestamp is present
 	  let filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\d+-//'))
 
       " Close CtrlP
