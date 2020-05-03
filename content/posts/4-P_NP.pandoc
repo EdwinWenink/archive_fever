@@ -122,6 +122,10 @@ We have $D_1$ $\leq$ $D_2$. Two conclusions are possible:
 
 2 - If $D_1$ *cannot* be decided in polynomial time, then $D_2$ also cannot (since $D_2$ is at least as hard, and has the exact same solutions due to the possible reduction).
 
+In fact, the second statement follows logically from the first: 
+let D1 mean that $D_1$ is solvable in polynomial time and let D2 mean that $D_2$ is solvable in polynomial time. 
+Then D2 -> D1 is equivalent to ~D1 -> ~D2 (contraposition). 
+
 If the above reduction holds, we can **not** conclude that if $D_1$ can be decided in polynomial time, that $D_2$ also can. The reduction only works in one direction. It shows that any solution to $D_2$ must also be a solution to $D_1$. So let's say we find a solution for $D_1$... Then we cannot say anything about a solution to $D_2$. This is also intuitive, since $D_2$ can be way harder! A solution would of course be to show that the reduction is symmetrical.  
 
 So this is the crux: if we are able to reduce all NP problems to a set of the hardest problems in NP, i.e. NP-hard (and NP-hard problems can be reduced to each other), that means that **if** we find a P-time algorithm for deciding a NP-hard problem, we have one for all NP-hard problems, since there are shown to be polynomial time reductions to the NP-hard problems. Quite a mouth full! 
