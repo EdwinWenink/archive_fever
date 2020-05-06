@@ -134,6 +134,7 @@ Intended to be permanently under construction.
 
 ## AI / Programming 
 
+- [explained.ai: deep explanations of machine learning by Terence Parr](https://explained.ai/)
 - [Convolutional Neural Networks for Visual Recognition - Stanford Course](https://cs231n.github.io/)
 - [Recipe for training Neural Network - Karpathy](http://karpathy.github.io/2019/04/25/recipe/)
 - [Arxiv Sanity: repo of sane machine learning papers](http://www.arxiv-sanity.com/)
