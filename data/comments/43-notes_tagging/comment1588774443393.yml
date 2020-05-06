@@ -1,0 +1,6 @@
+_id: d67a6c50-8fa3-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: asdfasdfadsw
+reply_to: ''
+body: "Thanks a lot for this awesome tutorial, it helped me immensely!\r\nI'm using your system to manage quotations from books I'm reading, which results in quite big markdown files. I thought it might be helpful to mention, that by using the multiline regex (at least my version of) ctags looses the ability to store the line number in the tags file. I therefore opted for the single-line version of the tags, s.t. I can search for a quote and jump directly to the line where I put the tag."
+date: 1588774443
