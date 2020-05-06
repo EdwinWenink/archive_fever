@@ -1,0 +1,9 @@
+_id: e97d9a00-8fa5-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Edwin
+reply_to: d67a6c50-8fa3-11ea-a16d-e7b30751e183
+body: >-
+  Glad you liked it! Interesting, for me (using universal ctags on Windows and
+  Linux) the tags jump to the correct line, wherever the tag is in the file.
+  What version of ctags do you have?
+date: 1588775334
