@@ -1,0 +1,6 @@
+_id: dfed0630-908e-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Robert
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "Edwin, \r\nYour addition was perfect the script now runs.  Thanks for the help.\r\n\r\nI am new to vimscript but I hope to take your link idea along with Fernando's and add Silver Searcher to it.  \r\n\r\nfzf.vim along with Ag (silver sercher) allows you to search for a term(s) in documents and gives you a preview of the document(s) before you open it(them).  I open to take that and add the capability to create a link from the selected documents into the current buffer."
+date: 1588875390
