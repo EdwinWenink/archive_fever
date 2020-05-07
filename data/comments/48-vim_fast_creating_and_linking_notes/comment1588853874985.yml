@@ -1,0 +1,6 @@
+_id: c73f3220-905c-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Edwin
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "Hi Robert, I haven't tried this myself but what you want is to let fzf autofill the argument of the HandleFZF function and call it. So you are right that you are not supposed to call it manually. Fernando left out the following line: \r\n\r\n```\r\ncall fzf#run({'sink': 'HandleFZF'})\r\n```\r\n\r\nThis should dump the currently selected file into the HandleFZF function. As I don't use FZF myself I'm not sure what keychord triggers this hook. Perhaps also Ctrl-X? Or Ctrl-T, Ctrl-V? If trial and error doesn't work, it shouldn't be hard to find. Please let us know if this works so that others won't run into the same issue! :-)"
+date: 1588853874
