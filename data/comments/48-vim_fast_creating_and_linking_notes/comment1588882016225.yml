@@ -1,0 +1,6 @@
+_id: 4ce3ee20-909e-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Edwin
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "Great! That's cool! It sounds like you are looking for [notational-fzf-vim](https://github.com/alok/notational-fzf-vim). Vimscript can be a hassle by the way. For a less trivial things I tend to switch to Python (you can also use Python from within Vimscript, just so you know). \r\n\r\nIf you have a nice workflow going at some point, I would be glad to hear it!"
+date: 1588882016
