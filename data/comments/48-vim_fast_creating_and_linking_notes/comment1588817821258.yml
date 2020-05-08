@@ -1,0 +1,6 @@
+_id: d5b72870-9008-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Robert
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "Thanks for creating the code for fzf.  But I can't figure out how to use it.  \r\n\r\nI added to my vimrc and when I use the :HandleFZF I see it needs an argument after the command.  I can type something after and a link is created with the text I typed but I am not sure how to to use FZF with it.\r\n\r\nCould you provide a little explanation on how to use it?\r\n\r\nThanks"
+date: 1588817821
