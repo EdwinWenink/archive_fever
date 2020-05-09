@@ -70,6 +70,8 @@
 		quotes[67]="&quotBehind every work of art lies an uncommited crime&quot - Theodor W. Adorno";
 		quotes[68]="&quotThe theory of probabilities is just common sense reduces to calculus&quot - Pierre-Simon Laplace";
 		quotes[69]="&quotAll of humanity's problems stem from man's inability to sit quietly in a room alone&quot - Blaise Pascal";
+		quotes[70]="&quotThe question of whether computers can think is like the question of whether submarines can swim&quot - Edsger Dijkstra";
+		quotes[71]="&quotThe tools we use have a profound and devious influence on our thinking habits, and therefore on our thinking abilities&quot - Edsger Dijkstra";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
