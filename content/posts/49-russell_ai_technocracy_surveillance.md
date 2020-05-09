@@ -27,7 +27,7 @@ It can also the mindset of techno-optimists with good intentions.
 But then again, however extreme the surveillance, it's always for "the greater good", so good intentions only go so far.
 Technocracy comes into the picture when we ask exactly *who* decides what is good, and how we measure that?
 
-Russell reconstructs that type of reasoning as follows, with respect to governments:
+Russell reconstructs this engineering-style reasoning as follows, with respect to governments:
 
 - "it would be better if everyone behaved well, had a patriotic attitude, and contributed to the progress of the country"
 - "technology enables measurement of individual behavior, attitudes, and contributions"
@@ -48,7 +48,8 @@ That's of course a hypothetical reflection under the assumption of all-pervasive
 The paradox of this extreme example is that by trying to optimize desirable human behavior (e.g. visiting that ailing friend) and by quantifying the human values that they promote (e.g. kindness), you lose the *quality* of what is sought after, similar to the capitalist perversion of friendship or love when they become part of an economy of (monetary) exchange.
 Friendship or love cannot be part of a contract, because that would imply you can *demand* some utility from the other and *enforce* this demand. 
 (I am not denying that friendships and love relationships can have and in fact do have utility. 
-I am rather saying that only the cynical and the sociopathological would argue they *are about* utility and, as a consequence, can be quantified.)
+I am rather saying that only the cynical and the sociopathological would argue they *are about* utility and, as a consequence, can be quantified.
+But hey, perhaps I'm too romantic.)
 
 In other words, the deeper issue that Russell addresses with this extreme example is that the *true* objective would not be captured by any explicitly stated objective.
 This is a fundamental problem of what Russell calls the "standard model" of AI, where "intelligent" machines are optimizing a "purpose put in the machine":
