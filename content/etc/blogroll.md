@@ -240,4 +240,5 @@ These are *really quite random*.
 
 - [Q: What is the connection between goats and Justin Bieber?](https://www.geitjesenbieber.xyz) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
 - [Hyper Text Coffee Pot Control Protocol](https://tools.ietf.org/html/rfc2324)
+- [Cult of the party parrot](https://cultofthepartyparrot.com/)
 - [How my website looked when I began out](https://web.archive.org/web/20180902190226/https://www.edwinwenink.xyz/)
