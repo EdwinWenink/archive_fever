@@ -72,14 +72,6 @@ Intended to be permanently under construction.
 	- [XXIIVV wiki](https://wiki.xxiivv.com/site/home.html)
 	- [Very interesting design of the webring](https://github.com/XXIIVV/webring)
 
-## Text graphics: ASCII, ANSI, PETSCII, etc.
-
-- [http://text-mode.org/](http://text-mode.org/)
-- [Uno Moralez GIF art](https://unomoralez.com)
-- [https://16colo.rs/](https://16colo.rs/)
-- [neauismea](https://neauoire.github.io/neauismea/)
-- [www.peterburr.org](http://www.peterburr.org)
-
 ## Vim 
 
 - [Overview basic commands](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm)
@@ -98,7 +90,7 @@ Intended to be permanently under construction.
 - [Pandocomatic: pandoc automation](https://github.com/htdebeer/pandocomatic)
 - [Plea for parallel web and book publishing](https://thelocalyarn.com/excursus/secretary/posts/web-books.html)
 
-## Ideas about Note-taking
+## Zettelkasten
 
 - [Luhmann: Communicating with Slip Boxes](http://luhmann.surge.sh/communicating-with-slip-boxes)
 	* [His archive is being digitalized, see here]( https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11 )
@@ -114,20 +106,22 @@ Intended to be permanently under construction.
 * [The Principle of Atomicity](https://zettelkasten.de/posts/create-zettel-from-reading-notes/)
 - [Zetteldeft: Zettelkasten in Emacs]( https://www.eliasstorms.net/zetteldeft/ )
 - [Hack/Make: Your Knowledge Base as a Wiki (Zettelkasten)](https://hackmake.org/2015/03/your-knowledge-base-wiki)
+
+## Plain text tools and note-taking
+
 - [Why (and How) I Wrote My Academic Book in Plain Text](http://wcaleb.org/blog/my-academic-book-in-plain-text)
+- [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co/index.html#introduction)
 - [Some Idiosyncratic Reflections on Note-Taking in General and ConnectedText in Particular](https://www.connectedtext.com/manfred.php)
 - [How to Make a Complete Map of Every Thought You Think](https://users.speakeasy.net/~lion/nb/html/)
 	* [And an interview with its author]( https://gilest.org/lion-kimbro.html )
-- [Integrated Research Environment with Vim](http://davidcolmenares.org/convivial.tools/david-s-integrated-research-environment)
-	* [Quick wiki links from the same author](http://davidcolmenares.org/dh-tools/quick-wiki-links)
-	* Have to point out I love the design of this website
+- [Integrated Research Environment with Vim (Web Archive version)](https://web.archive.org/web/20191129125128/http://davidcolmenares.org/convivial.tools/david-s-integrated-research-environment)
 - [Vim-Based Integrated Research Environment (seems incomplete)](https://github.com/Hipomenes/vim-ide)
 - [Very comprehensive Org mode guide in Emacs](http://doc.norang.ca/org-mode.html)
 - [Org mode workflow with Emacs](https://blog.jethro.dev/posts/org_mode_workflow_preview/)
 	* This whole blog is actually filled with nice posts on notetaking, but all centerd on org mode and Emacs.
 - [Basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
 
-## Academic tips, approaches 
+## 'Academic' tips, approaches 
 
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
@@ -158,6 +152,14 @@ Intended to be permanently under construction.
 - [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
 - [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
 - [Ontology.co](https://www.ontology.co/idx00.htm)
+
+## Text graphics: ASCII, ANSI, PETSCII, etc.
+
+- [http://text-mode.org/](http://text-mode.org/)
+- [Uno Moralez GIF art](https://unomoralez.com)
+- [https://16colo.rs/](https://16colo.rs/)
+- [neauismea](https://neauoire.github.io/neauismea/)
+- [www.peterburr.org](http://www.peterburr.org)
 
 ## Music
 
@@ -238,3 +240,4 @@ These are *really quite random*.
 
 - [Q: What is the connection between goats and Justin Bieber?](https://www.geitjesenbieber.xyz) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
 - [Hyper Text Coffee Pot Control Protocol](https://tools.ietf.org/html/rfc2324)
+- [How my website looked when I began out](https://web.archive.org/web/20180902190226/https://www.edwinwenink.xyz/)
