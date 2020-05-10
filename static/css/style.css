@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
-/*@import url('http://fonts.googleapis.com/css?family=Cousine:400,700');*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Cousine:400,700');*/
 
 html {
 	/*
@@ -19,6 +23,7 @@ html {
 	 */
 	/* contain is chaotischer */
 	background-size: contain;
+    /*background-color: #202020;*/
 }
 body, li p {
 	background: white;
@@ -27,8 +32,8 @@ body, li p {
 	font-size: 17px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	border:solid 1px #41403E;
 	/*
+	border:solid 1px #41403E;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	font-family: Cousine, menlo, monospace;
 	font-size: 16px;
@@ -306,7 +311,7 @@ input:checked + .slider:before {
 	font-weight:bold;
 	white-space:pre;
 	font-family: monospace;
-	color: black;>
+	color: black;
 }
 
 .unfold {
@@ -563,7 +568,7 @@ p a, blockquote a {
 }
 
 .preview a {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 div.nav a:active div { 
