@@ -1,0 +1,6 @@
+_id: 22b92e40-938b-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Edwin
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "Thanks for the compliment! It is perfectly fine to keep a post very simple and minimal, even better I would say. You could write it as a response/addition. I think it would already be valuable to:\r\n\r\n- briefly explain your fzf code so people can more easily modify it to their own liking\r\n- explain why you opted for only using timestamps for filenames\r\n- explain why you then need to rely on `rg`. What are the up- and downsides?\r\n- explain other differences w.r.t. my setup that you think are interesting\r\n- maybe do a super small screencast of your setup in case that adds something to the screencast I did. \r\n\r\nI'm still struggling with the best naming convention, so I'm really interested in the whole timestamp-for-filename thing. If I would switch, I would also need a method for finding the correct note based on its title. (So assuming you write a guest post, I may end up responding to it with a CtrlP version!). \r\n\r\nIn short, I strongly encourage you to give it a try! I'm sure other people would be interested as well and above all, it's fun!"
+date: 1589203638
