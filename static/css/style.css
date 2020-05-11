@@ -296,11 +296,11 @@ input:checked + .slider:before {
 	font-size: 70%;
 }
 
-#portret_normal {
+#display_light {
 	display: inline;
 }
 
-#portret_dark {
+#display_dark {
 	display: none;
 }
 

@@ -78,11 +78,11 @@ header a {
 }
 
 
-#portret_normal {
+#display_normal {
 	display: none;
 }
 
-#portret_dark {
+#display_dark {
 	display: inline;
 }
 
