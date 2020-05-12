@@ -1,0 +1,6 @@
+_id: 0ac946d0-93b8-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Edwin
+reply_to: 6f8f3a90-93b6-11ea-a16d-e7b30751e183
+body: "Oh yeah fzf is great! My comment about customization above wasn't that clear. The only reason I don't use rely on fzf.vim is because I want my setup to work effortlessly on any OS. fzf works amazing on Linux, but I had trouble with it on Windows (I don't necessarily blame fzf for that, by the way). The mileage of command-line tools is just less on Windows because the command line works different, although there is improvement in that area. Anyways: that's what I meant with customization. CtrlP actually doesn't have external dependencies by default and works in any Vim install. So I was wondering if a setup that's very dependent on external tools would work that well on an OS like Windows. Additionally, I suspect some nice functionality of fzf.vim may not be in CtrlP, but I should explore that a bit more.\r\n\r\nHaving said that, only one way to find out. I should give the fzf + ag setup a go on Windows."
+date: 1589222925

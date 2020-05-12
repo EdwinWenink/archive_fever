@@ -1,0 +1,13 @@
+_id: 6f8f3a90-93b6-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Robert
+reply_to: ''
+body: >-
+  @Edwin In terms of controlP vs fzf with ripgrep or silver searcher, fzf,
+  ripgrep, and silver searchers are command line programs that can be used in
+  vim via a wrapper or plugin.  I was already using fzf and silver searcher on
+  the command line before I started using it in Vim.  FZF is a Swiss Army Knife
+  type of application, I can use it in Vim, to select music for mpd, or many
+  other tasks.  I use it because that is what I heard of first and it is so
+  versatile.
+date: 1589222235
