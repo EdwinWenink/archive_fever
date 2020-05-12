@@ -109,6 +109,9 @@ Intended to be permanently under construction.
 
 ## Plain text tools and note-taking
 
+- [Andy Matuschak's notes](https://notes.andymatuschak.org/About_these_notes)
+    * Great example of a Zettelkasten style website
+    * Contains very useful notes about note-taking (it should be about [more effective thinking](https://notes.andymatuschak.org/z7kEFe6NfUSgtaDuUjST1oczKKzQQeQWk4Dbc))
 - [Why (and How) I Wrote My Academic Book in Plain Text](http://wcaleb.org/blog/my-academic-book-in-plain-text)
 - [The Plain Person's Guide to Plain Text Social Science](https://plain-text.co/index.html#introduction)
 - [Some Idiosyncratic Reflections on Note-Taking in General and ConnectedText in Particular](https://www.connectedtext.com/manfred.php)
