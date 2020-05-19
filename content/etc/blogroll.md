@@ -170,6 +170,7 @@ Intended to be permanently under construction.
 
 ## Art
 
+- [TSP art](http://www.cgl.uwaterloo.ca/csk/projects/tsp/)
 - [Removed.social](https://www.removed.social/)
 	* "This phantom limb is used as a way of signaling busyness and unapproachability to strangers while existing as an addictive force that promotes the splitting of attention between those who are physically with you and those who are not."
 - See [this page]({{<parenturl>}}groen_art) for art that my mother makes
