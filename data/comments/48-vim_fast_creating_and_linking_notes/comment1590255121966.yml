@@ -1,0 +1,6 @@
+_id: 4fb2fef0-9d1b-11ea-a16d-e7b30751e183
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Edwin
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "@nv2lt thanks for your reply and your addition! I personally prefer to not rely on plasticboy/vim-markdown (I like vim-pandoc), but this is a great suggestion for those that prefer to keep nested directories! This again shows the beauty of the Vim-route: everyone can find a way to adjust it to their preferences. \r\n\r\nThanks a lot for dropping by!"
+date: 1590255121
