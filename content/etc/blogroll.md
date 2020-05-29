@@ -129,8 +129,9 @@ Intended to be permanently under construction.
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 
-## AI / Programming 
+## Machine learning and data science
 
+- [Deep Learning - The Straight Dope](https://gluon.mxnet.io/)
 - [explained.ai: deep explanations of machine learning by Terence Parr](https://explained.ai/)
 - [Convolutional Neural Networks for Visual Recognition - Stanford Course](https://cs231n.github.io/)
 - [Recipe for training Neural Network - Karpathy](http://karpathy.github.io/2019/04/25/recipe/)
