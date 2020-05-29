@@ -133,9 +133,17 @@ Intended to be permanently under construction.
 
 - [Deep Learning - The Straight Dope](https://gluon.mxnet.io/)
 - [explained.ai: deep explanations of machine learning by Terence Parr](https://explained.ai/)
+- Visual overview of nets in [The Neural Network Zoo](https://www.asimovinstitute.org/neural-network-zoo/) by Fjodor van Veen.
 - [Convolutional Neural Networks for Visual Recognition - Stanford Course](https://cs231n.github.io/)
-- [Recipe for training Neural Network - Karpathy](http://karpathy.github.io/2019/04/25/recipe/)
+    * Related [course website](http://cs231n.stanford.edu/)
+- [Andrej Karpathy](http://karpathy.github.io/):
+    - [Recipe for training Neural Network](http://karpathy.github.io/2019/04/25/recipe/)
+    - [Hacker's guide to Neural Networks](http://karpathy.github.io/neuralnets/)
+- Online book: [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap3.html)
+- Online book: [Deep Learning](https://www.deeplearningbook.org/)
 - [Arxiv Sanity: repo of sane machine learning papers](http://www.arxiv-sanity.com/)
+- [A 'Brief' History of Neural Nets and Deep Learning by Andrey Kurenkov](http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-nets-and-deep-learning/)
+- [Neural Networks, Manifolds, and Topology](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/) by Christopher Olah.
 - [Calling Bullshit: Data Reasoning in a Digital World](https://callingbullshit.org/index.html)
 - [Guide to Prolog Programming](http://kti.ms.mff.cuni.cz/~bartak/prolog/contents.html)
 
