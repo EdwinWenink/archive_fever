@@ -49,7 +49,7 @@ window.onload = ready;
 
 <div class="content">
   <article class="h-entry">
-  <h1 class="p-name">{{ .Title }} <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }} </a></a>{{end}}
+      <h1 class="p-name">{{ .Title }} <aside>{ {{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>{{end}} } ·
 	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read</aside></h1>
 
   <div style="margin-left: 10px; display: inline-block">
@@ -67,8 +67,10 @@ window.onload = ready;
   <div class="e-content">
   {{ .Content }}
   </div>
+  <hr>
   <aside>
   <a class="u-url" href="{{ .Permalink }}">
+      <a href="{{ .Site.BaseURL }}"> <i class="fa fa-home" style="font-size:24px"></i></a>
       Published <time class="dt-published">{{ .Params.date }}</time>
       by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
   </a>
@@ -77,20 +79,25 @@ window.onload = ready;
   </article>
 
   <div>
+    <!-- TODO Consolidate in partial -->
 	<!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
 	{{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
 	<!--Grab the most recent-->
 	{{ range first 1 $posts }}
-		<p><b>Latest</b>: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    <p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Latest</p>
 	{{ end }}
 
 	{{ with .NextInSection }}
-	<p><b>Next:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    <p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Next</p>
 	{{ end }}
 
 	{{ with .PrevInSection }}
-	<p><b>Previous:</b> <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+	<p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Previous</p>
 	{{ end }}
+
+	{{ range first 1 (shuffle $posts)  }}
+    <p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Random</p>
+    {{ end }}
   </div>
 
 </div>

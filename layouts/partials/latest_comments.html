@@ -15,11 +15,11 @@
 {{ range first $n_comment (sort ($all_comments.Get "comments") ".date" "desc") }}
 		{{ if .reply_to}}
 			<!-- Could extend the person replied to -->
-			{{ .name }} replied to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+			{{ .name }} <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">replied</a> to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}">/{{._parent }}</a>  on {{ dateFormat "Jan 2, 2006" .date }}<br>
 		{{ else}}
-		{{ .name }} commented on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">{{._parent}}</a>  on {{ dateFormat "Monday, Jan 2, 2006" .date }}<br>
+		{{ .name }} <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">commented</a> on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}">/{{._parent}}</a>  on {{ dateFormat "Jan 2, 2006" .date }}<br>
 		{{ end}}
-		<!-- This way of retrieving name does not work here on in the above for some reason... -->
+		<!-- This way of retrieving name does not work here or in the above for some reason... -->
 		{{ with .Site.GetPage "/posts/37-deepfakes" }}
 			{{ .Title }}
 		{{ end }}

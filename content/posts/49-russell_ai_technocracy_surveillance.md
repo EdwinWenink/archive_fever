@@ -1,5 +1,6 @@
 ---
 title: "Russell on AI in technocracy and surveillance"
+author: "Edwin Wenink"
 date: 2020-05-08T13:47:13+02:00
 draft: false
 tags: [Russell, AI, technocracy, surveillance]
