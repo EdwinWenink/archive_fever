@@ -7,7 +7,6 @@
 {{ end }}
 
 <h2> Latest comments </h2>
-<br>
 {{ $n_comment := 5 }}
 <aside>Last {{ $n_comment }} of <a href="{{ .Site.BaseURL }}/comments">{{ len ($all_comments.Get "comments") }} comments in total</a>:</aside>
 <p>

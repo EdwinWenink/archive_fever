@@ -6,6 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 @import url('http://fonts.googleapis.com/css?family=Cousine:400,700');*/
 
+/* TODO convert all color styling to use these variables for consistency */
+:root{
+--headerhighlight: red;
+--hovercolor:yellow;
+}
+
 html {
 	/*
 	 * TODO:
@@ -70,10 +76,18 @@ h2 {
 	border-bottom-style: solid;
 	border-width: 1px;
 	border-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.4em;
 }
 
+/* Markdown-like headers */
+h2::before { color: var(--headerhighlight); content: '## '; }
+h3::before { color: var(--headerhighlight); content: '### '; }
+h4::before { color: var(--headerhighlight); content: '#### '; }
+h5::before { color: var(--headerhighlight); content: '##### '; }
+h6::before { color: var(--headerhighlight); content: '###### '; }
+
 ::selection {
-	background: yellow;
+	background: var(--hovercolor);
 	color: black;
 }
 
@@ -589,7 +603,7 @@ a:hover, a:hover h4 {
 	background: black;
 	color: white;
 	*/
-	background: yellow;
+	background: var(--hovercolor);
 	color: black;
 	text-decoration: none;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -639,9 +653,4 @@ blockquote {
 
 blockquote p {
 	display: inline;
-}
-
-h2 {
-	border-bottom-style: solid;
-	border-width: 1px;
 }
