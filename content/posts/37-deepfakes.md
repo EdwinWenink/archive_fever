@@ -6,8 +6,7 @@ toc: true
 tags: [philosophy, deepfake, democracy, technology]
 ---
 
-Introduction
-============
+## Introduction
 
 Recent successes in the production of so-called “deep fakes” sparked
 both the imagination and the fears of many. The word “deepfake” is a
@@ -44,8 +43,7 @@ democratic discourse through mediating what is “real”, but also for
 expressing the full complexity of the question who is responsible for
 negative societal consequences.
 
-Deepfakes disrupting democratic discourse
-=========================================
+## Deepfakes disrupting democratic discourse
 
 Societally undesirable applications of deepfake technology have already
 emerged, and more negative consequences are anticipated to emerge as the
@@ -126,8 +124,7 @@ is an appropriate philosophical framework for understanding this impact,
 and moreover that it is able to grasp the complexity of the question how
 to bear responsibility for it.
 
-Stances on technological disclosure
-===================================
+## Stances on technological disclosure
 
 When one develops a technology that has a large societal impact, a quite
 fundamental ethical question is to what extent the developer is
@@ -210,8 +207,7 @@ foundation of a threat to democracy. Accordingly, if we are to conceptualize
 the responsibilities of developers of such technologies, we need to take
 into account how these technologies mediate reality and human praxis.
 
-Deepfakes and Technological Mediation
-=====================================
+## Deepfakes and Technological Mediation
 
 In this section I argue that the philosophy of technological mediation
 as put forward by Verbeek [11][10] is appropriate
@@ -309,8 +305,7 @@ democracy? Can we in the future still have the certainty of an agreed
 upon reality, on the basis of which we can have a meaningful dialogue in
 the marketplace of ideas within a democracy?
 
-Conclusion
-==========
+## Conclusion
 
 I have argued that the threat of deepfakes to democracy can be framed in
 terms of technological mediation, as we have regarded serious threats to
