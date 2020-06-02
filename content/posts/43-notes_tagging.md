@@ -322,30 +322,30 @@ After opening gVim (the screenshots are from my Windows machine), I press `\ni` 
 
 Starting from my index page, I can't quite remember the name of a tag, so I'll decide to use fuzzy finding.
 
-![]({{% baseurl %}}/images/43-blog/1-ctrlp_tags_full.png)
+![](/images/43-blog/1-ctrlp_tags_full.png)
 
 The detail shows the fuzzy nature of the tag search. 
 I typed AC (randomly), but as you see also results like "Jacobs" and "aircraft" are displayed. 
 
-![]({{% baseurl %}}/images/43-blog/2-ctrlp_tags.png)
+![](/images/43-blog/2-ctrlp_tags.png)
 
 From the list of suggestions I chose "Jacobs", which is the name of a university professor. 
 This could be some author you are writing a paper about.
 As a result I'm now viewing lecture notes of a security course I followed, which discusses a range of topics. 
 We hold our cursor on the tag "security".
 
-![]({{% baseurl %}}/images/43-blog/3-security_screenshot.PNG)
+![](/images/43-blog/3-security_screenshot.PNG)
 
 The command `g]` opens a list of all ambiguous tags. 
 We see that another file is also about security.
 So let's expand our horizon and enter its number to visit that file.
 
-![]({{% baseurl %}}/images/43-blog/4-security_tag_nav_detail.png)
+![](/images/43-blog/4-security_tag_nav_detail.png)
 
 We have now reached another file with course notes on a highly related topic.
 It discusses security, but clearly from a more societal and philosophical perspective, i.e. the human side of computer security.
 
-![]({{% baseurl %}}/images/43-blog/5-pi_notes.PNG)
+![](/images/43-blog/5-pi_notes.PNG)
 
 And so on. I might by now have a more specific idea to write about. 
 If it's a single concept I'll make a small note in my "Zettelkasten" directory (for which I have another easy binding), where I'll might decide to explicitly link to all the files I've explored. 

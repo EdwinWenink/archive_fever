@@ -6,7 +6,7 @@ tags: [Vim, Zettelkasten, note-taking, workflow]
 ---
 
 This is the third post in a series of sorts about note-taking in Vim.
-I have silently kept playing around with the system outlined in the previous posts ([-1]({{% baseurl %}}posts/43-notes_tagging/),[-2]({{% baseurl %}}posts/42-vim_notetaking/)).
+I have silently kept playing around with the system outlined in the previous posts ([-1](../43-notes_tagging/),[-2](../posts/42-vim_notetaking/)).
 Some things I have abandoned, some are improved and some are changed. 
 I have inserted several updates (marked as "UPDATE") in the previous posts in case you are curious. 
 If we have reached some sort of equilibrium at the end of this series I'll make sure to create a place where people can easily download all relevant configuration and used scripts, but for now everything is a matter of "voortschrijdend inzicht," a beautiful Dutch phrase that's hard to translate and certainly hard to pronounce for most of my readers.
