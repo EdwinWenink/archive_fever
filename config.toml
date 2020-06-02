@@ -20,6 +20,7 @@ disableKinds = ["section"]
       unsafe = true
 
 [params]
+    # N.B. this broke after updating to 0.71.0!
     navigation = ["archives.md", "about.md", "etc.md", "authors.md"]
 	archive = "archives.md"
 	about = "about.md"

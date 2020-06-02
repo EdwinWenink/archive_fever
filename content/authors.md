@@ -1,5 +1,5 @@
 ---
-title: Authors
+title: "Authors"
 author: Edwin
 type: authors
 ---

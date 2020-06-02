@@ -55,15 +55,18 @@
 
 <header>
 	<!-- Homepage Title -->
-	<!--<a href="{{ .Site.BaseURL }}" style="float: left;"><strong>~{{ $.Site.Title }}</strong></a>-->
 	<a href="{{ .Site.BaseURL }}"><strong><i class="fa fa-home"></i></strong></a>
 	<!-- Navigation Pages -->
-	{{ range $i, $e:= $.Site.Params.navigation }}&nbsp;&nbsp;{{ if eq $i 0}}{{else}}{{end}}{{ with $.Site.GetPage "page" . }}<a href="{{ lower .Permalink }}"><strong>{{ title .Title }}</strong></a>{{ end }}{{ end }}
-	<!-- Draft Posts  -->
-	{{ if .Draft }}
-	DRAFT
-	{{ end }}
-
+    <!-- TODO this broke after updating to 0.71 -->
+	{{ range $.Site.Params.navigation }}
+        &nbsp;&nbsp;
+        {{ with $.Site.GetPage  . }}
+        <a href="{{ lower .Permalink }}"><strong> {{ title .Title }}</strong></a>
+        {{ end }}
+    {{ end }}
+    <a href="{{ .Site.BaseURL }}authors/"><strong>authors</strong></a>
+    &nbsp;&nbsp;
+    <a href="{{ .Site.BaseURL }}etc/etc"><strong>etc</strong></a>
 	<!-- Show RSS feed in the header -->
 	<a href="{{ .Site.BaseURL }}index.xml" style="float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
 
