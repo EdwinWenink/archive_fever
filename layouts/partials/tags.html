@@ -1,7 +1,7 @@
 <div class="tags">
 	<h2 id="tags">Tags</h2>
 {{$tags := newScratch }}
-{{ range .Site.Pages }} 
+{{ range .Site.RegularPages }} 
 {{ if eq .Type "posts"}}
 	{{ range .Params.tags }}
 		{{ $name := lower .  }}
@@ -20,6 +20,12 @@
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a> 
 {{ end }}
 
+<!-- TODO: voor Hugo 0.55+
+{{ range .Site.Taxonomies.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a> 
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+{{ end }}
+-->
 </div>
 <br>
 <br>
