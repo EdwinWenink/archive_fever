@@ -1,7 +1,7 @@
 <div class="preview">
 
 {{ $preview_n := 15 }}
-{{ range $index, $value := first $preview_n (where .Pages ".Type" "posts") }}
+{{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "posts") }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}} 
 		{{ if not (eq .Params.tags nil) }}
