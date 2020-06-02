@@ -8,15 +8,16 @@ aliases: [/author/edwin-wenink/]
 
 <div class="author-portret">
 <a href="https://www.ritsjoosten.nl">
-<img src="../../images/portret_smooth.jpg" id="portret_normal"></a>
-<img src="../../images/portret_zwart.gif" id="portret_dark"></a>
+<img src="../../images/portret_smooth.jpg" id="display_normal"></a>
+<img src="../../images/portret_zwart.gif" id="display_dark"></a>
+
 by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 </div>
 
 The essentials:
 
 - Founder & Editor of Archive Fever (<a href="https://github.com/EdwinWenink/personal_website">code</a>)
-- Student of Philosophy and Artificial Intelligence
+- Graduated philosopher, currently studying Artificial Intelligence
 - Nijmegen, the Netherlands
 - [Brief C.V.]({{<baseurl>}}etc/cv)
 
