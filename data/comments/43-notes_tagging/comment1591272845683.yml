@@ -1,0 +1,6 @@
+_id: e2444b30-a65c-11ea-a16d-e7b30751e183
+_parent: 43-notes_tagging
+name: Greg
+reply_to: 30136e00-7d8a-11ea-a16d-e7b30751e183
+body: "Thanks Fernando for your input!\r\n\r\nHere is my working `.ctags.d/md.ctags`:\r\n\r\n```\r\n--langdef=mdtags\r\n--languages=mdtags\r\n--langmap=mdtags:.md\r\n--kinddef-mdtags=t,tag,tags\r\n--_tabledef-mdtags=toplevel\r\n--_mtable-regex-mdtags=toplevel/(^|[[:space:]])@([a-zA-Z0-9][^[:space:]]*)/\\2/t/{mgroup=1}{tenter=toplevel}\r\n--_mtable-regex-mdtags=toplevel/.//\r\n```"
+date: 1591272845
