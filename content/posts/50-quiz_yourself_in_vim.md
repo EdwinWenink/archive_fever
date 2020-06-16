@@ -53,7 +53,6 @@ Just install [vim unimpaired](https://github.com/tpope/vim-unimpaired) which map
 This is *perfect* for our purpose, because we can read these mappings as "previous question" and "next question".
 The square brackets do not look intuitive, but you get used to them in a few minutes. 
 Notice that the opening bracket is on the *left* of the closing bracket on an English keyboard, so that "left" corresponds to "previous", and "right" to "next".
-(I have a lot of German friends and this doesn't hold for them, but they should just learn to use an English keyboard anyways.)
 
 By the way, I often also answer my own study questions below the question.
 This is not a problem, because jumping to a question will usually display it at the very bottom of the screen, so I can't accidentally have a sneak peak at the answer.
