@@ -54,6 +54,8 @@ This is *perfect* for our purpose, because we can read these mappings as "previo
 The square brackets do not look intuitive, but you get used to them in a few minutes. 
 Notice that the opening bracket is on the *left* of the closing bracket on an English keyboard, so that "left" corresponds to "previous", and "right" to "next".
 
+If you want to have all questions in a separate file, that's easy enough: just focus on the quickfix window and save it as a file! E.g. `:w study_questions.txt`.
+
 By the way, I often also answer my own study questions below the question.
 This is not a problem, because jumping to a question will usually display it at the very bottom of the screen, so I can't accidentally have a sneak peak at the answer.
 
@@ -63,7 +65,7 @@ After all, I'm supposed to be studying now!
 
 ### N.B.
 
-You can of course also write a script to collect the questions and dump them in a file.
+You can of course also write a standalone script to collect the questions and dump them in a file.
 On Unix-like systems, you could do something like this:
 
 ```bash
