@@ -1,0 +1,13 @@
+_id: 57777c70-baca-11ea-a16d-e7b30751e183
+_parent: 33-epub_annotation_export
+name: Edwin
+reply_to: eb9b5ce0-bac6-11ea-a16d-e7b30751e183
+body: >-
+  Glad to hear! I don't know why exactly, but my own script has stopped working
+  for me a while back. Since then I added some more logic to handle failures and
+  missing fields (I noticed the quality of epubs can differ quite a bit w.r.t.
+  specifying meta data etc.). Also added some logic for sorting the entries. If
+  you find an issue, feel free to hit me up! I can always share the updated
+  script via email, but if there's interest I may write a post with an update
+  :-)
+date: 1593518880
