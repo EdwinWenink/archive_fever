@@ -1,0 +1,11 @@
+_id: eb9b5ce0-bac6-11ea-a16d-e7b30751e183
+_parent: 33-epub_annotation_export
+name: Mitchell
+reply_to: ''
+body: >-
+  Thanks for this walkthrough! Had some issues with permissions in the root
+  folder area on my Kobo Libra H20 but by making a copy of Kobo eReader.conf on
+  my desktop, making the edits and then dragging it into the Kobo and replacing
+  the file this seems to have worked! No idea why this isn't a default
+  feature... Might look at your python options too because I also love Python.
+date: 1593517411
