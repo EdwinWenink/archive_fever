@@ -21,7 +21,7 @@ disableKinds = ["section"]
 
 [params]
     # N.B. this broke after updating to 0.71.0!
-    navigation = ["archives.md", "about.md", "etc.md", "authors.md"]
+    navigation = ["archives.md", "about.md", "etc/etc.md", "authors.md"]
 	archive = "archives.md"
 	about = "about.md"
 	etc = "etc.md"

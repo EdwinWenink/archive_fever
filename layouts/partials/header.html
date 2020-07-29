@@ -60,7 +60,7 @@
     <!-- TODO this broke after updating to 0.71 -->
 	{{ range $.Site.Params.navigation }}
         &nbsp;&nbsp;
-        {{ with $.Site.GetPage  . }}
+        {{ with $.Site.GetPage . }}
         <a href="{{ lower .Permalink }}"><strong> {{ title .Title }}</strong></a>
         {{ end }}
     {{ end }}
