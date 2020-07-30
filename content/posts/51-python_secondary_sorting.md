@@ -1,7 +1,7 @@
 ---
 title: "Secondary sorting in Python"
 date: 2020-07-29T22:17:39+02:00
-draft: true
+draft: false
 tags: [python, coding]
 ---
 
