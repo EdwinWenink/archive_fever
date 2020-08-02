@@ -1,0 +1,6 @@
+_id: 894a8610-d51a-11ea-a360-6f00b702838a
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Jared
+reply_to: 2edc7bf0-859e-11ea-a16d-e7b30751e183
+body: "Okay so on my above comment I screwed up some sentences because I didn't account for the markdown syntax.\r\n\r\nThat first paragraph after the first codeblock the links in there were me trying to show an example of the markdown link. Of course those got translated into html links so that doesn't show. Also in the paragraph before the second codeblock I was trying to warn people not to include the buffer statement if it is in your general vimrc rather than ftplugin. the buffer is between two triangle brackets so the markdown disappeared the word which is why the sentence trails off.\r\n\r\n@edwin thanks for saying I gave a through explanation after looking at my comments I am beginning to think I might be long winded."
+date: 1596412054
