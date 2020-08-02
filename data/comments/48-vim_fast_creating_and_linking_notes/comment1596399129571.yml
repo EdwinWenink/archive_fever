@@ -1,0 +1,6 @@
+_id: 71888180-d4fc-11ea-a360-6f00b702838a
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Edwin
+reply_to: b64351f0-d40d-11ea-a360-6f00b702838a
+body: "Welcome back! A while back I also wrote code for concealing markdown syntax, but borrowing it from a commit like you did would have been more efficient :-). Before that I tried the [vim-markdown](https://github.com/plasticboy/vim-markdown) plugin, which also has a conceal function, but I really disliked that it forced some stylistic choices on me.\r\nHowever, ultimately I found out that the [pandoc plugin](https://github.com/vim-pandoc/vim-pandoc-syntax) I use also already offers proper concealing of markdown links (duh!). I use that now. \r\n\r\nIf I remember correctly, this should already do the trick (with `set conceallevel=1`):\r\n\r\n```\r\nlet g:pandoc#syntax#conceal#urls = 1\r\n```\r\n\r\nWith regards to your second tip: awesome! Honestly, it's so straightforward and yet I didn't think of doing it myself like that. There are plugins for just following markdown links, but I also didn't like it (although I don't remember my particular issues with it). \r\nSo thanks!\r\n\r\nSmall remark, for the future: in your comments you used four backticks for code blocks instead of three, which broke the conversion to html :-)"
+date: 1596399129
