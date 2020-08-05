@@ -1,0 +1,6 @@
+_id: 80241b10-d519-11ea-a360-6f00b702838a
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Jared
+reply_to: b64351f0-d40d-11ea-a360-6f00b702838a
+body: "Ha so I was talking about markdown syntax for links on a forum that takes markdown syntax so a couple of my comments are confusing because the syntax got converted into links. I assume code block should fix that So this sentence.\r\n \r\n> It is a syntax file that turns concealing on for markdown links. So your link would go from this A.md to looking like this [A.md]. \r\n\r\nIs supposed to read like this. (I only used three ticks this time.) :)\r\n\r\n```\r\nIt is a syntax file that turns concealing on for markdown links. So your link would go from this [A.md](A.md) to looking like this A.md. \r\n```\r\nYeah I felt clever getting it from the commit. Yeah I used that pandoc plugin for awhile but then I realized I only used like two of its features so I got rid of it,\r\n\r\nYou are right conceallevel 1 is enough. \r\n\r\nI tried to take the link following function out of the vim-markdown plugin but my head kind of exploded trying to take his function for that and get it to work independently. So I figured I should just come up with an easy solution. I like tinkering and pretending to be an elitist so I try to take code snippets, or do things myself instead of installing plugins."
+date: 1596411609
