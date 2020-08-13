@@ -1,0 +1,6 @@
+_id: 3b26bcd0-dd2e-11ea-a360-6f00b702838a
+_parent: 43-notes_tagging
+name: Uncertainteee
+reply_to: ''
+body: "To extend @Fernando and @Ediwin's idea, here is my `.ctags` that passed the following test.\r\n```\r\n#tag1_no-space_allowed #tag2\r\n`#not-a-tag`\r\n[link](awesome#notTag)\r\ncode-block-fence\r\n#notTag\r\ncode-block-fence\r\n```\r\n```\r\n--langdef=mdtags\r\n--languages=mdtags\r\n--langmap=mdtags:.md\r\n--kinddef-mdtags=t,tag,tags\r\n--_tabledef-mdtags=toplevel\r\n--_tabledef-mdtags=codeblock\r\n\r\n--_mtable-regex-mdtags=toplevel/```//{tenter=codeblock}\r\n--_mtable-regex-mdtags=toplevel/(#[a-zA-Z0-9_-]+)[[:space:]]/\\1/t/{mgroup=1}{tenter=toplevel}\r\n--_mtable-regex-mdtags=toplevel/.//\r\n\r\n\r\n--_mtable-regex-mdtags=codeblock/```//{tleave}\r\n--_mtable-regex-mdtags=codeblock/.//\r\n```\r\nFYI, I found ctag yesterday. There is a code example [here](https://docs.ctags.io/en/latest/optlib.html#skipping-block-comments) from the manual.\r\nI'm using the most current version of Universal-Ctags on Arch Linux.\r\n\r\nI also want to let you know that I really enjoyed your site/style. Hoping I could host a blog like this in the future."
+date: 1597300122
