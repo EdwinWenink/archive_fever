@@ -1,0 +1,6 @@
+_id: 11cd52b0-ddd6-11ea-a360-6f00b702838a
+_parent: 43-notes_tagging
+name: Uncertainteee
+reply_to: 3b26bcd0-dd2e-11ea-a360-6f00b702838a
+body: "There is a bug in above snippet.\r\n`--languages=mdtags` would erase all other parsers.\r\nInstead use `--languages=+mdtags`\r\nI also found the markdown parser from universal-ctags which is written in `optlib ` file. And translated into c source code by `optlib2c` script. \r\nhttps://github.com/universal-ctags/ctags/blob/master/optlib/markdown.ctags"
+date: 1597372208
