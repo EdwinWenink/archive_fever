@@ -1,0 +1,19 @@
+_id: 22040d20-ed32-11ea-a360-6f00b702838a
+_parent: 33-epub_annotation_export
+name: Edwin
+reply_to: 4bb85320-ed27-11ea-a360-6f00b702838a
+body: >-
+  I'm still very happy with the Kobo, so I can wholeheartedly recommend it. The
+  script above is really just a first sketch. One major problem is that it
+  doesn't handle errors at all. So if a particular field is not found, it just
+  crashes. I redid this a little bit more properly and also added some more
+  formatting for the markdown output. I didn't spend much time on it though, so
+  it's not necessarily code I would publish. What I would also add is the option
+  to process all notes in batch (also didn't do that yet). I could make a
+  repository with what I have so far, you could take that as a point of
+  departure. TLDR; the code above is a starting point that you could use for
+  your own project, if your goal is also to learn a bit of Python. Otherwise I
+  could share my code with you. I'll perhaps later make a follow-up post when I
+  have something that's worth publishing, but I'm currently a bit short on time
+  :-)
+date: 1599061016
