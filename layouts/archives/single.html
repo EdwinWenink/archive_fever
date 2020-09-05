@@ -2,6 +2,9 @@
 
 <div class="content container">
   <h1>Archives</h1>
+
+  <p>Also see <a href="{{"/authors" | relLangURL}}">authors</a></p>
+
   {{ with .Site.GetPage "section" "posts" }}
     {{ range .Data.Pages.GroupByDate "2006" }}
     
