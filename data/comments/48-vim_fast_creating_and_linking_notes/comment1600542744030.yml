@@ -1,0 +1,6 @@
+_id: 0c45c780-faac-11ea-a360-6f00b702838a
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Anton
+reply_to: ''
+body: "Hi Edwin, great blog series! How are the updates coming along? Still working on the sneak preview you gave us at the beginning of the post?\r\n\r\nI made a back-link viewer: \r\n\r\n```\r\n\" Find backlinks to current file and open quickfix list with the results  \r\ncommand! -nargs=0 Ngrepl :execute \"grep -F '\" . \" ]( \" . expand(\"%:t\") . \" )\" .  \"'\" | :copen  \r\n  1 nnoremap <leader>nb :Ngrepl<CR><CR>\r\n```\r\n\r\nIt just does a full text search with ripgrep for markdown links to the current file and opens all results in a quickfix list. This makes it very easy to see which files link to the file you have currently open. What do you think?\r\n\r\nCheers"
+date: 1600542744
