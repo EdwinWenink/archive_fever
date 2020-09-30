@@ -7,10 +7,10 @@ draft: False
 tags: [Vim, workflow, ctags, note-taking, Zettelkasten]
 ---
 
-In the [previous post]({{% parenturl %}}/42-vim_notetaking) I expressed my requirements for an ideal note taking system and took the first steps in designing it for my preferred editor, which is Vim.
+In the [previous post](/posts/42-vim_notetaking) I expressed my requirements for an ideal note taking system and took the first steps in designing it for my preferred editor, which is Vim.
 My overall desire is to create an ecosystem of interconnected notes in such a way that this system does not only become an extension or recording of my thoughts, but also a quasi-independent dialogue partner in the creative process of writing.
 The idea is that when you are going to write something, you start by opening a note on the topic of choice, and that from there on you can effortlessly follow links to other related notes to discover new lines of thought.
-To this end, I wanted to implement a tagging system that is tailored to the way I make notes, in addition to the search functions for file names and their contents that are discussed in the [previous post]({{% parenturl %}}/42-vim_notetaking).
+To this end, I wanted to implement a tagging system that is tailored to the way I make notes, in addition to the search functions for file names and their contents that are discussed in the [previous post](/posts/42-vim_notetaking).
 
 For example, I was reading an article from Stiegler and encountered an interesting thought on capitalism and the Anthropocene, so I added the tags "@capitalism" and "@anthropocene". 
 At that point that specific place in the text is connected to all my other notes on capitalism or the Anthropocene and included in many possible trajectories through the note system.
@@ -236,7 +236,7 @@ Alternatively, if you do not want to see the command output you can generate the
 nnoremap <leader>tt :silent !ctags -R . <CR>:redraw!<CR>
 ```
 
-As shown in the [previous post]({{% parenturl %}}/42-vim_notetaking) on note taking in Vim, I have a mapping that immediately brings me to the index of my notes *and* also automatically changes my directory to the project root.
+As shown in the [previous post](/posts/42-vim_notetaking) on note taking in Vim, I have a mapping that immediately brings me to the index of my notes *and* also automatically changes my directory to the project root.
 I strongly recommend this. If you have an idea you quickly want to write down you can jump to your notes folder within a second and start writing.
 
 ```markdown
@@ -299,7 +299,7 @@ This shows all ambiguous tags, i.e. all the files in which it is "defined."
 It gets even better.
 Because tags are so well integrated in Vim, your fuzzy finder plugin will almost certainly also be able to search the tags file.
 I use CtrlP because it works well both on Linux and Windows. 
-My [previous post]({{% parenturl %}}/42-vim_notetaking) mentions my setup for CtrlP using `ripgrep`.
+My [previous post](/posts/42-vim_notetaking) mentions my setup for CtrlP using `ripgrep`.
 When searching using `<Ctrl>-P` you can toggle whether you are searching files, buffers or tags with <Ctrl-b> and <Ctrl f> (backward and forward, see `:help ctrlp-mappings`). 
 Alternatively, you can directly invoke the `:CtrlPTag` command. 
 Various autocompletion plugins will also be able to suggest and complete tags.
@@ -353,7 +353,7 @@ If I add the security tag there as well together with a new tag, I've opened up 
 
 ## Conclusion and summary of used Vim mappings
 
-Like with my [previous post]({{% parenturl %}}/42-vim_notetaking) on this topic, I'm writing about this while exploring ideas so everything is WIP. 
+Like with my [previous post](/posts/42-vim_notetaking) on this topic, I'm writing about this while exploring ideas so everything is WIP. 
 It is possible to define multiple regex rules for our custom language, so it's easy to add more features to this tagging system. 
 I might for example explore the usefulness of tracking explicit markdown links to other files with this system.
  
