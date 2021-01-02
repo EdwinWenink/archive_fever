@@ -1,0 +1,6 @@
+_id: 13e913a0-4cac-11eb-a360-6f00b702838a
+_parent: 48-vim_fast_creating_and_linking_notes
+name: Bruce Dillahunty
+reply_to: b64351f0-d40d-11ea-a360-6f00b702838a
+body: "Just another options for the fzf users is to use just the basic fzf.vim plugin with a couple of tweaks to let you just copy the filename instead of open it. Right now I'm going this way as I already have fzf tweaked with the preview window settings and all that I like and am used to.\r\n\r\nThe downside of this is that (so far :-)) it doesn't actually create the md formatted link, but requires you to paste it back in manually. I want to automate that a bit more, but...\r\n\r\nMostly this just comes from here:\r\n- https://github.com/junegunn/fzf.vim/issues/772\r\n\r\n```\r\nlet g:fzf_action = {\r\n  \\ 'ctrl-t': 'tab split',\r\n  \\ 'ctrl-x': 'split',\r\n  \\ 'ctrl-v': 'vsplit',\r\n  \\ 'ctrl-y': {lines -> setreg('*', join(lines, \"\\n\"))}}\r\n```\r\n\r\nThis just adds a \"Ctrl-Y\" option to copy the filename(s) that you have selected."
+date: 1609558752
