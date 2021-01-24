@@ -21,10 +21,11 @@ disableKinds = ["section"]
 
 [params]
     # N.B. this broke after updating to 0.71.0!
-    navigation = ["about.md", "archives.md", "authors.md", "etc/etc.md" ]
+    navigation = ["about.md", "archives.md", "authors.md", "etc/etc.md", "now.md" ]
 	about = "about.md"
 	archive = "archives.md"
 	authors = "authors.md"
 	etc = "etc.md"
+    now = "now.md"
 	recaptcha_sitekey = "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
 	staticman_api = "http://77.249.145.182:1234/v2/entry/EdwinWenink/personal_website/master/comments"
