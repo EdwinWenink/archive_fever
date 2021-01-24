@@ -2,8 +2,10 @@
 title: "Two methods for exporting EPUB annotations (.annot)"
 author: "Edwin Wenink"
 date: 2019-09-01
-tags: [Epub, annotations, workflow, python]
+tags: [epub, kobo, annotations, workflow, python]
 ---
+
+See [here](/posts/53-update_kobo_annotation) for a follow-up.
 
 My personal goal for this summer break was reading more, as I really enjoy it but do not schedule enough time for it during the many hectic days throughout year. 
 I always enjoy reading a book, but somehow the threshold for doing some project behind my pc is lower than simply sitting down in a chair with a good book.

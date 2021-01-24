@@ -19,33 +19,33 @@ Here are some of my personal favorites.
 
 <br>
 
-![T&T](http://www.groen-art.nl/Natuur/Groot/T&T.jpg)
+![T&T](/images/groenart/T&T.jpg)
 
-![Verloren boom](http://www.groen-art.nl/Natuur/Groot/Verloren%20Boom.jpg)
+![Verloren boom](/images/groenart/Verloren_Boom.jpg)
 
-![Boom](http://www.groen-art.nl/Natuur/Groot/Boom.jpg)
+![Boom](/images/groenart/Boom.jpg)
 
 
 ## Animals:
 
 <br> 
 
-![](http://www.groen-art.nl/Diversedieren/Groot/J.J..jpg)
+![](/images/groenart/JJ.jpg)
 
-![](http://www.groen-art.nl/Diversedieren/Groot/HaanKenR.jpg)
+![](/images/groenart/HaanKenR.jpg)
 
-![](http://www.groen-art.nl/Diversedieren/Groot/60x80Acryl-op-doekKoeien.JPG)
+![](/images/groenart/60x80Acryl-op-doekKoeien.JPG)
 
-![](http://www.groen-art.nl/Kikkers/Groot/50x50Acryl-op-doekRodeKikker.JPG)
+![](/images/groenart/50x50Acryl-op-doekRodeKikker.JPG)
 
 ## Abstract works
 
 <br>
 
-![](http://www.groen-art.nl/Vormen/Groot/Horizonnen.jpg)
+![](/images/groenart/Horizonnen.jpg)
 
-![](http://www.groen-art.nl/Vormen/Groot/70x70Acryl-op-doek.JPG)
+![](/images/groenart/70x70Acryl-op-doek.JPG)
 
-![](http://www.groen-art.nl/Skylines/Groot/Skyline%20Hamburg.jpg)
+![](/images/groenart/Skyline_Hamburg.jpg)
 
-![](http://www.groen-art.nl/Skylines/Groot/Skyline%20Rotterdam.jpg)
+![](/images/groenart/Skyline_Rotterdam.jpg)
