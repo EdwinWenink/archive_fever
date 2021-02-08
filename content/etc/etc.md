@@ -6,7 +6,7 @@ type: "etc"
 # Etc. Index
 
 - [Linkage](../blogroll)
-- [Short C.V.](../cv)
+- [Short C.V.](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
 - [Contribution guidelines](../contribution_guidelines)
 - [Courses](../courses)
 - [Music statistics](../music )
