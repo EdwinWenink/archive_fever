@@ -99,7 +99,7 @@ function! CtrlPOpenFunc(action, line)
    if a:action =~ '^h$'    
       " Get the filename
       let filename = fnameescape(fnamemodify(a:line, ':t'))
-	  let filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\d+-//'))
+	  let filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\d\+-//'))
 
       " Close CtrlP
       call ctrlp#exit()
@@ -122,6 +122,9 @@ let g:ctrlp_open_func = {
 
 I just love it. 
 Irregardless of whether I will use timestamps in my filenames, this will greatly speed up interlinking notes in my Zettelkasten.
+
+EDIT 09/02/2021: a previous version of the post did not escape the `+` regex modifier, which is necessary in the vim regex dialect. As a result, the timestamp was not correctly removed in the created link descriptions. 
+The screencast below uses the old incorrect version.
 
 ## Screencast
 
