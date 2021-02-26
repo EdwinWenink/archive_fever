@@ -54,8 +54,21 @@ window.onload = ready;
 
   <div style="margin-left: 10px; display: inline-block">
   {{ if .Params.guest }}
-  <i>Guest contribution by
-	  <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}"> {{ .Params.author }} </a></u></i>
+      {{ if .Params.author }}
+      <i>Guest contribution by <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }} </a></u></i>
+      {{ end }}
+
+      {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
+      <!-- When co-writing -->
+      {{ if .Params.authors }}
+      {{ $n_authors := len .Params.authors }}
+      Co-written by 
+        {{ range $i, $author := .Params.authors }}
+            <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u></i>
+            {{ if ne $i (sub $n_authors 1) }}&{{ end }}
+        {{ end }}
+      {{ end }}
+
   {{ end }}
   <br><br>
   </div>

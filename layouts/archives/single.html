@@ -22,7 +22,7 @@
 			{{ end }}
 		  </aside>
           <a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
-		  {{ if .Params.guest }}(by {{ .Params.author }}) {{ end }}
+          {{ partial "collab.html" . }}
 		  </p>
         {{ end }}
       </ul>

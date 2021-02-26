@@ -1,0 +1,12 @@
+{{ if .Params.guest }} 
+    {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
+    <!-- Guest contribution -->
+    {{ if .Params.author }} (by <a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }}</a>){{ end }}
+    
+    <!-- Co-authored piece -->
+    {{ if .Params.authors }}
+        {{ $authors := .Params.authors | symdiff (slice "Edwin Wenink")}}
+        {{ $n_authors := len $authors }}
+        (+{{ range $i, $author := $authors }}<a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></i>{{ if ne $i (sub $n_authors 1) }}&{{ end }}{{ end }})
+     {{ end }}
+{{ end }}

@@ -1,5 +1,6 @@
 <div class="preview">
 
+{{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 {{ $preview_n := 15 }}
 {{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "posts") }}
 	<p>
@@ -15,7 +16,7 @@
 	</aside>
 	<!--<div class="unfold"> Use this class to unfold summary on hover-->
 	<a href="{{ .Permalink }}">{{ .Title }}</a>
-	{{ if .Params.guest }} (by {{ .Params.author }}) {{ end }}
+    {{ partial "collab.html" . }}
 	{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
 	{{ end }}
 	</p>
