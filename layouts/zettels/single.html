@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<div class="content container">
+  <h1>Zettelkasten</h1>
+
+  {{ with .Site.GetPage "section" "zettelkasten" }}
+    
+    <section>
+	  <div class="preview">
+      <ul>
+        {{ range .Pages }}
+        <li><a href="{{ .Permalink }}" class="permalink">{{ .File.BaseFileName }}</a></li>
+        {{ end }}
+      </ul>
+	  </div>
+    </section>
+    {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

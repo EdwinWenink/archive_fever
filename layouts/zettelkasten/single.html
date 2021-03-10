@@ -1,0 +1,103 @@
+{{ partial "header.html" . }}
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    // console.log(el.style.opacity);
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+
+<!-- Enable inline math; do before loading mathjax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<!-- Enable tex math notation -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<h1 style="border: none">{{ .File.BaseFileName}}</h1>
+<!-- Because the toc does not fall within the content with this hard-coded approach
+  I need to set the margins explicitly to that of the {{ .Content }} -->
+<!-- TODO Why isn't that taken care of with the 'content' style above? -->
+<div id="toc" style="margin-left: 7.5rem; margin-right: 7.5rem">
+
+  <!-- Only show TOC when it is not empty -->
+  {{ with .TableOfContents}}
+    {{ if ne . "<nav id=\"TableOfContents\"></nav>" }}
+        <!-- the variable is not an empty navigation -->
+        {{ . }}
+        <!-- it's a dot because we are inside of a `with` -->
+      {{ end }}
+  {{ end }}
+</div>
+
+<div class="content">
+
+  <div class="e-content">
+  {{ .Content }}
+  </div>
+  <hr>
+  <br>
+  </article>
+
+  <div>
+    <!-- TODO Consolidate in partial -->
+	<!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
+	{{$zettels := ($.Site.GetPage "section" "zettelkasten").Pages.ByPublishDate.Reverse}}
+	<!--Grab the most recent-->
+
+	{{ range first 1 (shuffle $zettels)  }}
+    <p><a href="{{ .Permalink }}">Surprise me</a> <-- Random</p>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ partial "footer.html" . }}
