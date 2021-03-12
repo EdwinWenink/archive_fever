@@ -123,6 +123,7 @@ Intended to be permanently under construction.
 - [Org mode workflow with Emacs](https://blog.jethro.dev/posts/org_mode_workflow_preview/)
 	* This whole blog is actually filled with nice posts on notetaking, but all centerd on org mode and Emacs.
 - [Basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
+- [Maintaining your bibtex references using git](http://andrius.velykis.lt/2012/06/master-bibtex-file-git-submodules/)
 
 ## 'Academic' tips, approaches 
 
