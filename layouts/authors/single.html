@@ -52,17 +52,16 @@ window.onload = ready;
   {{ .Content }}
 
   <h2>Contributors</h2>
-  <br><br>
   {{ $scratch := newScratch }}
   {{ with .Site.GetPage "section" "author" }}
     <ol>
 	{{ range .Pages }}
-		<li><a href="{{ .Permalink }}">{{ .Params.author }}
 		{{ $author := .Params.author }}
+		<li><a href="{{ .Permalink }}">{{ $author }}
 		{{ $scratch.Set "author" $author }}
 		{{ $counter := 0 }}
 		{{ range where .Site.RegularPages ".Type" "posts" }}
-			{{ if (eq .Params.author ( $scratch.Get "author" ))}}
+			{{ if (or (eq .Params.author ( $scratch.Get "author" )) (in .Params.authors ( $scratch.Get "author")))}}
 				{{ $counter = add $counter 1}}
 			{{ end}}
 		{{ end }}

@@ -60,7 +60,7 @@ window.onload = ready;
 		{{ $counter = add $counter 1}}
 	{{ end}}
   {{ end }}
-  <h2> Contributions by {{ $guest }} ({{ $counter }}):</h2><br>
+  <h2> Contributions by {{ $guest }} ({{ $counter }}):</h2>
   <div class="preview">
   {{ range $pageName := .Site.RegularPages }}
 	  {{ if and (eq .Type "posts") ( or (in .Params.author $guest) (in .Params.authors $guest)) }}
