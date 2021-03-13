@@ -62,7 +62,7 @@ if everything exists fundamentally in the same manner, then the "more" in holism
 Nature in this sense is thus not something "other" than the sphere of human existence (the term "sphere" is already unfavorable for Morton's thought because it seems to imply something that is closed off). 
 
 11) We as humans exist inside various wholes of differing scales but are not subjected to them, e.g. the biosphere, or liberalism or capitalism, which manifests itself *physically* in various forms around the globe (they are all also objects, nothing more and nothing less). 
-However, we should be careful with talking about increasingly bigger entities, such as the ecological crisis, in what Morton calls a "my god is bigger than yours competition", again referring to the theistic element of holism that has as a side-effect that we feel overwhelmed by and subjected to to the whole. 
+However, we should be careful with talking about increasingly bigger entities, such as the ecological crisis, in what Morton calls a "my god is bigger than yours competition", again referring to the theistic element of holism that has as a side-effect that we feel overwhelmed by and subjected to the whole. 
 
 12) Instead, Morton suggests, we should try to redirect our attention away from those big entities to smaller ones, because although they are physically big, they are ontologically smaller according to his perverse holism.
 When we walk in a forest, we encounter flora and fauna, trees, deer, fungi, but we never encounter "Nature". 
