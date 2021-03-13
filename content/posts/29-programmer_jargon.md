@@ -7,9 +7,7 @@ guest: true
 tags: [Programming]
 ---
 
-><i> 
-Joran started a programmer traineeship after graduating from a theater education. I asked him to write something about how he experiences this transition - Edwin
-</i>
+> *Joran started a programming traineeship after graduating from a theater education. I asked him to write something about how he experiences this transition - Edwin*
 
 I’ve been dabbling in programming for a while now, on account of the fact that I have recently started working in it full-time.
 I reckoned I could be able to write an article for this website because of that, so I tried to come up with something clever to discuss until I came to my senses and realised I’m a total newb. Whatever computer related revelation I’ve had over the past few months would be somewhat out of place on Edwin’s site full of computer cleverness. 
