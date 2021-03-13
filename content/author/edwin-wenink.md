@@ -19,7 +19,7 @@ The essentials:
 - Editor of Archive Fever (<a href="https://github.com/EdwinWenink/personal_website">code</a>)
 - Graduated philosopher, currently studying Artificial Intelligence
 - Nijmegen, the Netherlands
-- [Brief C.V.]({{<baseurl>}}etc/cv)
+- [Brief C.V.](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
 
 Less essential:
 
