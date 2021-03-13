@@ -71,10 +71,8 @@ This means that I just keep typing away on a single line of code until I think I
 Well, first, in the way that I use VIM, I do not have much advantage of Edwin's paradigm when it comes to collaboration, navigation, and semantics:
 
 - In my lonely lot as a philosophy researcher, I do not get to collaborate with anybody. And at the seldom occasion that I do work together on a text, chances are that this person is so used to MS Word that she will freak out if I would suggest working in other software like LibreOffice, let alone VIM. 
-
 - As to navigation, I can navigate on a macrolevel using vimtex's table of contents, and on a microlevel using "/". That suits my purposes, and I barely ever pay attention to what number any line is. I simply do not encounter situations in which this is necessary. 
-
-- The only disadvantage for me is when it comes to semantics, but VIM is flexible enough to work around this. To use Edwin's example: I cannot easily use "dd" to delete a single line, but then I just use "d\$" or "dt." Still so much better than MS Word. 
+- The only disadvantage for me is that I am less flexible when it comes to semantics, but VIM is flexible enough to work around this. To use Edwin's example: I cannot easily use "dd" to delete a single line, but then I just use "d\$" or "dt." Still so much better than MS Word. 
 
 So, given that the advantages of Edwin's method are not very effective on me, what *are* the advantages for me of sticking to one line per paragraph? 
 
