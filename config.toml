@@ -6,6 +6,7 @@ pygmentuseclasses = true
 github_username = "EdwinWenink"
 
 relativeURLs = true
+disablePathToLower = false
 
 disableKinds = ["section"]
 
