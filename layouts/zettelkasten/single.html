@@ -62,7 +62,8 @@ window.onload = ready;
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-<h1 style="border: none">{{ .File.BaseFileName}}</h1>
+<h1 style="border: none">{{ replace .File.BaseFileName "_" " "}}</h1>
+
 <!-- Because the toc does not fall within the content with this hard-coded approach
   I need to set the margins explicitly to that of the {{ .Content }} -->
 <!-- TODO Why isn't that taken care of with the 'content' style above? -->
