@@ -1,4 +1,6 @@
-{{ partial "header.html" . }}
+{{ .Scratch.Set "nofollow" "true" }}
+{{ partialCached "header.html" . }}
+<!-- See: https://harmstyler.me/posts/2019/how-to-pass-variables-to-a-partial-template-in-hugo/-->
 
 <div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
 <script>

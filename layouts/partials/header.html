@@ -24,6 +24,11 @@
 	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style{{ $.Site.Params.style }}.css">
 	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ .Site.BaseURL }}css/dark.css">
 
+    <!-- If you passed the following variable through the partialCache, indicate this file is not to be indexed -->
+    {{ if .Scratch.Get "nofollow"}}
+        <meta name="robots" content="noindex,nofollow">
+    {{ end }}
+
 	<!-- Google Analytics -->
 	{{ template "_internal/google_analytics_async.html" . }}
 	<!-- highlight.js -->
