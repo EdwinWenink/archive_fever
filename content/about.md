@@ -8,15 +8,25 @@ type: about
 
 This weblog is a mnemonic device.
 Over the years <a href="../~ejw">I</a> have occupied myself with studying such [diverse topics]({{<baseurl>}}etc/courses), only to realize that I can barely recollect half of it.
-Now I suffer from the nostalgic desire to retrieve what is forgotten, and to archive so that what comes will not meet the same fate.
+Now I suffer from the nostalgic desire to retrieve what is forgotten, and to archive what comes so that it will not meet the same fate.
 This particular confliction is called **Archive Fever**, a term coined by Jacques Derrida.
 
 >It is to burn with a passion. It is never to rest, interminably, from searching for the archive right where it slips away. It is to run after the archive, even if there's too much of it, right where something in it anarchives itself. It is to have a compulsive, repetitive, and nostalgic desire for the archive, an irrepressible desire to return to the origin, a homesickness, a nostalgia for the return to the most archaic place of absolute commencement (Derrida, Archive Fever 1995, 57) 
 
 So as a rule of thumb for this blog: if I spend a considerable amount of time on some topic, I should record some of it in this unorthodox note-taking system.
-That's why I called the writings on this site "engrams": they are memory traces on the web.
-This is a place to externalize them so that I may find myself being impressed again by them later, to stimulate new thought and find out what I was and am thinking. 
+But what I'm trying to do here is not just the archiving of a record, putting it away in a dusty drawer. 
+It is retention by creation and iteration.
+Indeed, "something in it anarchives" itself, but that's also the seed for the old to enter into something new.
+
+This is a place to externalize thoughts so that I may find myself being impressed again by them later, to stimulate new perspectives and find out what I was and am thinking. 
 I stumbled across this fitting remark by Karl Weick: "If people know what they think when they see what they say, then words figure in every step."
+(I forgot what that was supposed to mean, but it's OK).
+I'll allow the words on this site to slip from my fingers, so that I may be surprised and learn something when I find them again, perhaps years later.
+
+That's why I called the writings on this site **engrams**: they are memory traces on the web.
+These traces become ingrained and solidified the more connections they enter into, but in the process they may get twisted.
+Just so is it a basic hermeneutic insight that interpretation requires a form of application which renews the interpretandum and engages it in a new context.
+
 My best guess at the moment is that these memory traces are likely to be related either to philosophy, artificial intelligence, technology, and workflow design. 
 Contributions by others are welcome.
 
