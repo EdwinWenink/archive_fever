@@ -90,7 +90,7 @@ ADDITION 2021-03-16:
 
 You can also create a function to paste the contents of the quickfix window in your current buffer.
 
-```vim
+```
 " Paste from quickfix list (handy to collect the questions somewhere)
 nnoremap <leader>pq :execute PasteQuickfix()<CR>
 
