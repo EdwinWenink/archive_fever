@@ -83,3 +83,24 @@ fi
 ```
 
 I wrote that script maybe two years ago and didn't bother to check it again, so use at your own discretion. 
+
+### Pasting the collected questions
+
+ADDITION 2021-03-16: 
+
+You can also create a function to paste the contents of the quickfix window in your current buffer.
+
+```vim
+" Paste from quickfix list (handy to collect the questions somewhere)
+nnoremap <leader>pq :execute PasteQuickfix()<CR>
+
+:function! PasteQuickfix()
+:   for q in getqflist()
+:       put =q.text
+:   endfor
+:endfunction
+```
+
+This works well, but one annoying little detail is that this function sends you to the top of the file.
+I don't really know why. 
+If you do, please let me know!
