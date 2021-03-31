@@ -14,4 +14,5 @@ type: "etc"
 - [Groen-art](../groen_art)
 - [Plants](../plants)
 - [Coffee](../coffee)
+- [BibTex](https://raw.githubusercontent.com/EdwinWenink/bibliography/main/collection.bib)
 
