@@ -57,5 +57,5 @@ tags: ['music']
     * Down to earth mysticism
 10. [Eefje de Visser - Lange Vinnen](https://www.youtube.com/watch?v=NIN7_m2omQw)
     * The only Dutch entry!
-11. [In Care of 8675309](https://youtu.be/3CD2-xbHC5w)
+11. [Lambchop - In Care of 8675309](https://youtu.be/3CD2-xbHC5w)
     * Honourable mention, because I consider Lambchop one of my top discoveries of 2020
