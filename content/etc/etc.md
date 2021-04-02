@@ -5,14 +5,15 @@ type: "etc"
 
 # Etc. Index
 
-- [Linkage](../blogroll)
 - [Short C.V.](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
 - [Contribution guidelines](../contribution_guidelines)
-- [Courses](../courses)
+- [ Monthly Digests ]( /digests )
 - [Music statistics](../music )
+- [Courses](../courses)
+- [BibTex](https://raw.githubusercontent.com/EdwinWenink/bibliography/main/collection.bib)
+- [Linkage](../blogroll)
 - [Web paleontology: An Ode to the Hyperlink](../web_paleontology)
 - [Groen-art](../groen_art)
 - [Plants](../plants)
 - [Coffee](../coffee)
-- [BibTex](https://raw.githubusercontent.com/EdwinWenink/bibliography/main/collection.bib)
 

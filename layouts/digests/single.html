@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+
+<div class="content container">
+    <h1>{{ .Params.Title }}</h1>
+
+  {{ with .Site.GetPage "section" "digest" }}
+    {{ range .Data.Pages.GroupByDate "2006" }}
+    
+    <section>
+      <h2>{{ .Key }}</h2>
+	  <div class="preview">
+      <ul>
+        {{ range .Pages }}
+		  <p>
+		  <aside> {{ .Date.Format "January 2" }}
+			{{ if not (eq .Params.tags nil) }}
+				{{ range .Params.tags }}
+					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+				{{ end }}
+			{{ end }}
+		  </aside>
+          <a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
+          {{ partial "collab.html" . }}
+		  </p>
+        {{ end }}
+      </ul>
+	  </div>
+    </section>
+    {{ end }}
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
