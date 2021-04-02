@@ -589,8 +589,9 @@ div.nav a:active div {
 	background: #cacaca;
 }
 
-hr { border: 0; overflow: hidden; }
- hr:after { content: "--------------------------------------------------------------------------------------------------------"; color: black; max-width: 50%; }
+hr {    border: 0;
+        border-top: 1px grey dashed;
+        margin-bottom: 8px;}
 
 /*
 a:active { 
