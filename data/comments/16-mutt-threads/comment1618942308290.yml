@@ -1,0 +1,6 @@
+_id: df37cdb0-a203-11eb-9d27-cf75d60bea03
+_parent: 16-mutt-threads
+name: mariansam
+reply_to: ''
+body: "Wow, big thanks for this I had `set sort = 'reverse-date'` and I didn't know about it. This solved my issue.\r\n\r\nHowever, I'd love to see even my responses in the thread! Is that possible? Currently the received messages are in the INBOX mailbox and the sent messages are in the Sent mailbox. Is that something I have to change on the server side, or can neomutt deal with that?\r\n\r\ncontact:\r\nmariansam <edwinwenink.xyz@mariansam.eu>"
+date: 1618942308
