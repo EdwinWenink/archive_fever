@@ -1,0 +1,15 @@
+_id: 05abd660-a2b5-11eb-9d27-cf75d60bea03
+_parent: 16-mutt-threads
+name: Edwin
+reply_to: df37cdb0-a203-11eb-9d27-cf75d60bea03
+body: >-
+  Glad to hear it was useful! I'm afraid it's really intended behavior to record
+  incoming messages in INBOX and outgoing messages in SENT. Because people
+  usually include the message they respond to in the reply itself, you
+  effectively also have your own outgoing message in the inbox when the reply
+  comes in. I did a quick Google search and only found [ugly
+  hacks](https://unix.stackexchange.com/questions/131529/how-can-i-configure-mutt-to-display-my-replies-within-threads).
+  If you somehow would configure server side that sent messages stay in your own
+  inbox, that would of course work... but I can't imagine any service supporting
+  this. I'm also curious if you know of any other client doing this :-)
+date: 1619018393
