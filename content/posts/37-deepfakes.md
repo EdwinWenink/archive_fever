@@ -3,7 +3,7 @@ title: "Deepfakes and democracy: a case for technological mediation"
 author: Edwin Wenink
 date: 2019-10-12
 toc: true
-tags: [philosophy, deepfake, democracy, technology]
+tags: [philosophy, deepfake, democracy]
 ---
 
 ## Introduction

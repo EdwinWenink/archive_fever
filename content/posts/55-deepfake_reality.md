@@ -2,7 +2,7 @@
 title: Deepfake Reality
 author: Edwin Wenink
 date: 2021-04-28
-tags: [AI, deepfake]
+tags: [AI, deepfake, simulacrum, hermeneutics]
 ---
 
 In a [previous post](/posts/37-deepfakes) I discussed deepfakes from a hermeneutic perspective, by exploring how "a deepfake mediates how we perceive beings in the world by affording an interpretation of the fake as the real". 
