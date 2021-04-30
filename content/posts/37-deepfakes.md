@@ -140,14 +140,14 @@ society. To the deterministic-minded person even those who worry about
 these societal changes and remind us of the dangers, are nevertheless
 equally subjected to the great historical impetus of technological
 progression. And this person then reasons: if the technology will emerge
-in society at some point in any case, then the best thing we can do is
-raise awareness so we, as a society, can adapt to the technology -
+in society at some point in any case, then the best thing we can do now is
+raise awareness. In this way we, as a society, can adapt to the technology -
 rather than adapting the technology to human needs.
 
-At the same time, other developers of AI-technology share the concerns
+Other developers of AI-technology share the concerns
 for its potential negative societal impact, but conceive of their own
 responsibility differently. For example, the OpenAI research
-organization dedicated to making sure AI benefits humanity, announced
+organization, which is dedicated to making sure AI benefits humanity, announced
 last month that they developed an AI that can write paragraphs of text
 that “feel close to human quality and show coherence over a page or more
 of text” [6]. However, contrary to the publications about
@@ -155,15 +155,14 @@ video deepfakes, the OpenAI organization decided not to release the used
 datasets, nor the trained model or the used code, due “to concerns about
 large language models being used to generate deceptive, biased, or
 abusive language at scale” amongst other “malicious applications of the
-technology” [6]. At the same time, since the made technical
-innovations “are core to fundamental artificial intelligence research”
-and because they do not want to counteract progression of the field,
-they released a smaller trained model with less potential for abuse as
-an experiment in responsible disclosure in the field of AI
-[6]. This is a more instrumentalist view on technology: its
+technology” [6]. 
+They did however release a smaller trained model with less potential for abuse in order to still display the technical innovations that “are core to fundamental artificial intelligence research” [6].
+As scientists, they do not want to counteract progression of the field.
+This experiment in responsible AI disclosure amounts to a more instrumentalist view on technology: its
 development is controlled by humans, instead of being an autonomous
-deterministic force to which humans have to adapt. The primary hope of
-the decision to withhold the AI is that this will give the AI community
+deterministic force to which humans have to adapt. 
+
+The primary hope of the decision to withhold the AI is that this will give the AI community
 as well as governments more time to come up with ways to prevent or
 penalize malicious use of AI technologies, quite similar to the practice of responsible
 disclosure in cryptography, where organizations are given time to repair
@@ -174,12 +173,12 @@ generating fake content, requiring that “the public at large will need
 to become more skeptical of text they find online, just as the “deep
 fakes” phenomenon calls for more skepticism about images” [6].
 In their policy OpenAI thus explicitly respond to the media attention
-surrounding deepfake neural networks, as they become better at deceiving
+surrounding deepfake neural networks that become better at deceiving
 people and are increasingly publicly available. Although not free of some hint of
 determinism, the OpenAI initiative exerts a responsibility for actively
 controlling technological development in AI, to make sure that it brings
-forth useful instruments that are to the benefit and not the detriment
-of humanity .
+forth useful instruments that are to the benefit, and not the detriment
+of humanity.
 
 The contrast in the positions between a) the open publishing of deep
 fake technology including trained models and code, and b) the controlled
@@ -188,7 +187,7 @@ of these technologies does not only raise technical issues, but also
 societal ones. In both cases, the researchers are aware of the societal
 dangers of their technology, but take responsibility for it in different
 ways. In a deterministic vein, there is no reason to control disclosure
-of technology: someone else will do it anyways, and it is better to
+of technology: someone else will publish it anyways, and it is better to
 inform people as soon as possible. From a more instrumentalist point of
 view, the act of disclosure is not as neutral: since humans have at
 least some control over technology, they also share responsibility for
@@ -196,13 +195,13 @@ possible negative consequences within reasonable limits. After all, the
 technology itself is just a neutral instrument. Whether it is put to
 good use depends on humans.
 
-But what both views have in common is that they conceptualize the
-human-technological relationship in terms of a subject-object divide in
+Both views have in common that they conceptualize the
+human-technological relationship in terms of a subject-object divide, in
 which subject and object are external to each other, irrespective of
 whether the subject is human or some technology. But I think that these
 terms are no longer sufficient for understanding the complexity of
 deepfakes that heavily blur the demarcation between what is “real” and
-what is not, and consequently also not for understanding how this is the
+what is not, and consequently also not sufficient for understanding how this is the
 foundation of a threat to democracy. Accordingly, if we are to conceptualize
 the responsibilities of developers of such technologies, we need to take
 into account how these technologies mediate reality and human praxis.
@@ -211,13 +210,13 @@ into account how these technologies mediate reality and human praxis.
 
 In this section I argue that the philosophy of technological mediation
 as put forward by Verbeek [11][10] is appropriate
-for conceptualizing the threat of deepfakes to democracy through their
+for conceptualizing the threat of deepfakes to democracy in terms of their
 mediation of human praxis. Technological mediation “concerns the role of
 technology in human action (conceived as the ways in which human beings
 are present in their world) and human experience (conceived as the ways
 in which their world is present to them)” [10, p.363]. That
 technological artefacts *mediate* means that they “are not neutral
-intermediaries but actively coshape people’s being in the world”, and do
+intermediaries but actively coshape people’s being in the world”, and that they do
 so in two directions: they mediate how the world appears to humans
 (perception) and how humans give shape to their own reality by acting in
 the world through the use of technological artefacts (praxis)
@@ -318,7 +317,7 @@ One the one hand, developers of these technologies cannot be held fully
 responsible for negative consequences of technology, because they cannot
 fully predict how the interaction with users works out. But neither can
 developers realistically waive all responsibility by claiming that the
-development of AI is a historical movement shaping our social realities
+development of AI is a historical movement shaping our social realities,
 independent of human interaction. Instead, when AI increasingly changes
 our social and political reality in unexpected ways, the more accurate
 position is admitting that somehow responsibility is distributed between
@@ -332,9 +331,8 @@ honest position. When it comes to the *moral* responsibility (rather
 than a more limited legalistic story), issues around deepfakes can join
 the ranks of complicated ongoing debates about ethical responsibility in
 accidents with self-driving cars, or killer drones. The unresolved
-paradox is that due to the flexibility of AI unforeseen negative
-consequences may occur, whereas at the same time, *this flexibility is
-programmed and exactly the main innovation of state-of-the-art AIs*. And
+paradox is that unforeseen negative consequences may occur due to the learning capacity of AI, whereas at the same time, *this flexibility is
+intended and exactly the main innovation of state-of-the-art AIs*. And
 yet, we can reasonably ask of developers to foresee certain undesirable
 applications of their technologies. From the viewpoint of technological
 mediation both the stances of Philip Wang and of the OpenAI foundation
