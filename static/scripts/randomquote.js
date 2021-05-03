@@ -73,6 +73,7 @@
 		quotes[70]="&quotThe question of whether computers can think is like the question of whether submarines can swim&quot - Edsger Dijkstra";
 		quotes[71]="&quotThe tools we use have a profound and devious influence on our thinking habits, and therefore on our thinking abilities&quot - Edsger Dijkstra";
     quotes[72]="&quotIn philosophy the winner of the race is the one who can run most slowly. Or: the one who gets there last&quot - Ludwig Wittgenstein";
+    quotes[73]="&quotLife is not a problem to be solved, but a mystery to be lived&quot - Gabriel Marcel";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
