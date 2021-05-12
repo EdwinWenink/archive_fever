@@ -80,42 +80,22 @@ window.onload = ready;
   <div class="e-content">
   {{ .Content }}
   </div>
+  </article>
+
   <hr>
   <div>
-  <aside><a class="u-url" href="{{ .Permalink }}">
+  <aside>
       <i class="fa fa-home" style="font-size:24px"></i>
-      Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time>
+      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time>
       by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
   </a></aside>
   <aside> 
       <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
   </aside>
-  </div>
   <br>
-
-  </article>
-
-  <div>
-    <!-- TODO Consolidate in partial -->
-	<!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
-	{{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
-	<!--Grab the most recent-->
-	{{ range first 1 $posts }}
-    <p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Latest</p>
-	{{ end }}
-
-	{{ with .NextInSection }}
-    <p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Next</p>
-	{{ end }}
-
-	{{ with .PrevInSection }}
-	<p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Previous</p>
-	{{ end }}
-
-	{{ range first 1 (shuffle $posts)  }}
-    <p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Random</p>
-    {{ end }}
   </div>
+
+  {{ partial "link_posts.html" . }}
 
 </div>
 
