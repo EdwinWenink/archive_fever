@@ -4,11 +4,10 @@ title = "Edwin Wenink"
 googleAnalytics = "UA-117420879-1"
 pygmentuseclasses = true
 github_username = "EdwinWenink"
-
 relativeURLs = true
 disablePathToLower = false
-
-disableKinds = ["section"]
+enableGitInfo = true
+disableKinds = ["section"]  # Why did I have this again?
 
 [taxonomies]
   tag = "tags"
