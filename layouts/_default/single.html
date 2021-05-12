@@ -81,19 +81,21 @@ window.onload = ready;
   {{ .Content }}
   </div>
   </article>
+  </div> <!-- end of content -->
 
   <hr>
+
   <div>
   <aside>
       <i class="fa fa-home" style="font-size:24px"></i>
-      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time>
-      by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
+      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
   </a></aside>
   <aside> 
       <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
   </aside>
-  <br>
   </div>
+  <br>
+
 
   {{ partial "link_posts.html" . }}
 
