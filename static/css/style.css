@@ -195,13 +195,6 @@ input:checked + .slider:before {
 	transform: translateX(13px);
 }
 
-.footer {
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-color: black;
-	padding-top: 12px;
-	margin-bottom: 10px;
-}
 
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
 
@@ -466,9 +459,21 @@ header {
 	border-bottom: 0.10em solid black;
 }
 
+/*
+.footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-color: black;
+	padding-top: 12px;
+	margin-bottom: 10px;
+}
+*/
+
 footer {
+    border-top: 1px solid black;
 	display:block;
-	padding: 0.5rem 0 5.5rem 0;
+	padding: 1rem 0 1rem 0;
+    margin-top: 2rem;
 }
 
 @media all and (max-width:520px) {
