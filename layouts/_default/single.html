@@ -81,14 +81,18 @@ window.onload = ready;
   {{ .Content }}
   </div>
   <hr>
-  <aside>
-  <a class="u-url" href="{{ .Permalink }}">
-      <a href="{{ .Site.BaseURL }}"><i class="fa fa-home" style="font-size:24px"></i></a>
-      Published <time class="dt-published">{{ .Params.date }}</time>
+  <div>
+  <aside><a class="u-url" href="{{ .Permalink }}">
+      <i class="fa fa-home" style="font-size:24px"></i>
+      Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time>
       by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
-  </a>
+  </a></aside>
+  <aside> 
+      <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
   </aside>
+  </div>
   <br>
+
   </article>
 
   <div>
