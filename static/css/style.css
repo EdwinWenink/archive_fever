@@ -348,6 +348,7 @@ input:checked + .slider:before {
 
 .webring {
     text-align: center;
+    margin: 1rem;
 }
 
 .hover-box {
