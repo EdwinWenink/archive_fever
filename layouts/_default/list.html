@@ -1,5 +1,14 @@
 {{ partial "header.html" . }}
 
-{{ partial "middle.html" . }}
+  <div>
+   <h1>{{ .Title }}</h1>
+    <ul>
+    {{ range .Pages }}
+    <!-- .Count variable not available here, because we do not know if we're dealing with taxonomy 
+        TODO what's the diff between list.html and taxonomy.html? -->
+    <li><a href="{{ .Page.Permalink }}">{{ lower .Page.Title }}</a></li>
+    {{ end }}
+    </ul>
+  </div>
 
 {{ partial "footer.html" . }}
