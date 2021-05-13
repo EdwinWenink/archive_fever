@@ -1,32 +1,9 @@
 <div class="tags">
 	<h2 id="tags">Tags</h2>
-    <!-- TODO just use taxonomies for this! -->
-{{$tags := newScratch }}
-{{ range .Site.RegularPages }} 
-{{ if eq .Type "posts"}}
-	{{ range .Params.tags }}
-		{{ $name := lower .  }}
-		{{ $array := $tags.Get "tags" }} 
-		<!--
-		For some reason I can't directly add this code below
-		-->
-		{{ if not (in $array $name)}}
-			{{ $tags.Add "tags" (slice $name)}}
-		{{ end }}
-	{{end}}
-{{ end }}
-{{ end }}
-
-{{ range sort ($tags.Get "tags") "value" "asc" }}
-    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a> 
-{{ end }}
-
-<!-- TODO: voor Hugo 0.55+
-{{ range .Site.Taxonomies.tags }}
-    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a> 
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-{{ end }}
--->
+    {{ range sort .Site.Taxonomies.tags }}
+    <!-- .Count available here, but got a bit too messy for me -->
+    <a href="{{ .Page.Permalink }}">{{ lower .Page.Title }}</a>
+    {{ end }}
 </div>
 <br>
 <br>
