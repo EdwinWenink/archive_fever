@@ -2,6 +2,7 @@
 
 <div>
    <h1>{{ .Title }}</h1>
+    {{ .Content }}
     {{ range sort .Data.Terms }}
         <li><a href="{{ .Page.Permalink }}">{{ upper .Page.Title }}</a> ({{ .Count }})</li>
     {{ end }}
