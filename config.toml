@@ -11,7 +11,6 @@ disableKinds = ["section"]  # Why did I have this again?
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
   series = "series"
 
 [markup]
@@ -21,6 +20,7 @@ disableKinds = ["section"]  # Why did I have this again?
 
 [params]
     # N.B. this broke after updating to 0.71.0!
+    # TODO replace with built-in [menu] option
     navigation = ["about.md", "archives.md", "authors.md", "etc/etc.md", "now.md" ]
 	about = "about.md"
 	archive = "archives.md"
