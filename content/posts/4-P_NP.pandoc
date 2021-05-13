@@ -3,7 +3,7 @@ author: "Edwin Wenink"
 title: "Complexity 101 and the P-NP question"
 date: 2018-04-12
 draft: false 
-tags: ["complexity","p","np"]
+tags: ["complexity"]
 ---
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">

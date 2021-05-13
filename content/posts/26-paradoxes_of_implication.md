@@ -98,6 +98,6 @@ N.B. \~\~p ==> p does not hold in intuistionistic logic.
 If you master all of this, you can make (and explain) jokes like these:
 <br>
 <br>
-<img align="center" style="width:70%" src="http://www.smbc-comics.com/comics/20130303.gif" />
+<img align="center" style="width:70%" src="https://www.smbc-comics.com/comics/20130303.gif" />
 
 
