@@ -3,6 +3,7 @@ title: "Creating and linking Zettelkasten notes in Vim"
 date: 2020-04-15T16:14:19+02:00
 draft: false
 tags: [Vim, Zettelkasten, note-taking, workflow]
+series: ["vim and workflow"]
 ---
 
 This is the third post in a series of sorts about note-taking in Vim.

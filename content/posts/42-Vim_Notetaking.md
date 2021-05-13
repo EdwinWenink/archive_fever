@@ -5,6 +5,7 @@ date: 2019-11-24
 draft: false
 tags: [Vim, Workflow, Zettelkasten, note-taking]
 toc: true
+series: ["vim and workflow"]
 ---
 
 Vim is my preferred tool for making notes and organizing my thoughts.

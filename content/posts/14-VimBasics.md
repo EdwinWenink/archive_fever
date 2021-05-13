@@ -5,6 +5,7 @@ date: 2018-12-11
 draft: false
 toc: true
 tags: [Vim, Workflow, Text editing, Efficiency]
+series: ["vim and workflow"]
 ---
 
 ## Basic navigation
