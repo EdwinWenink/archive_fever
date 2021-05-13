@@ -10,15 +10,23 @@
 {{ $n_comment := 5 }}
 <aside>Last {{ $n_comment }} of <a href="{{ .Site.BaseURL }}/comments">{{ len ($all_comments.Get "comments") }} comments in total</a>:</aside>
 <p>
-<!-- TODO retrieve title of the post -->
+<!-- TODO retrieve title of the post 
+    problem is... /data is not a contect section with .Parent and .Section info
+    and I haven't saved the parent post title, nor the url in the comment data.
+    Maybe... move digsets to posts as well? I.e. use "posts" for all dynamic content?
+ --> 
 {{ range first $n_comment (sort ($all_comments.Get "comments") ".date" "desc") }}
+
+{{ .Parent }}
+INFO {{ .Section }} STOP
+
 		{{ if .reply_to}}
 			<!-- Could extend the person replied to -->
 			{{ .name }} <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">replied</a> to <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}">/{{._parent }}</a>  on {{ dateFormat "Jan 2, 2006" .date }}<br>
 		{{ else}}
 		{{ .name }} <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}#{{._id}}">commented</a> on <a href="{{ "posts/" | absLangURL }}{{ ._parent | urlize }}">/{{._parent}}</a>  on {{ dateFormat "Jan 2, 2006" .date }}<br>
 		{{ end}}
-		<!-- This way of retrieving name does not work here or in the above for some reason... -->
+		<!-- Scoping issue? This way of retrieving name does not work here or in the above for some reason... -->
 		{{ with .Site.GetPage "/posts/37-deepfakes" }}
 			{{ .Title }}
 		{{ end }}
