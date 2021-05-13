@@ -1,5 +1,7 @@
 {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 {{ $preview_n := 1 }}
+<!-- The following code was used when digests still had their own content section
 {{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "digest") }}
 <p>Also see the <a href="{{ .Permalink}}">latest digest</a><p>
 {{ end }}
+-->

@@ -3,6 +3,7 @@ title: "Listening Report 2020"
 author: Edwin Wenink
 date: 2021-03-14
 tags: ['music']
+series: ['digest']
 ---
 
 [Top artists 2020](https://www.last.fm/user/EdwinW/library/artists?from=2020-01-01&to=2021-01-01):

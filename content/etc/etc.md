@@ -7,7 +7,7 @@ type: "etc"
 
 - [Short C.V.](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
 - [Contribution guidelines](../contribution_guidelines)
-- [ Monthly Digests ]( /digests )
+- [Monthly Digests]( /series/digest )
 - [Music statistics](../music )
 - [Courses](../courses)
 - [BibTex](https://raw.githubusercontent.com/EdwinWenink/bibliography/main/collection.bib)
