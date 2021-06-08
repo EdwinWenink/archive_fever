@@ -12,6 +12,7 @@ type: "etc"
 - [Courses](../courses)
 - [BibTex](https://raw.githubusercontent.com/EdwinWenink/bibliography/main/collection.bib)
 - [Linkage](../blogroll)
+- [Tools](../tools)
 - [Web paleontology: An Ode to the Hyperlink](../web_paleontology)
 - [Groen-art](../groen_art)
 - [Plants](../plants)
