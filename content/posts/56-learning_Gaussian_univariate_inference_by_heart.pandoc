@@ -2,7 +2,7 @@
 title: "Mnemonic for closed-form Bayesian univariate inference with Gaussians"
 date: 2021-06-13T21:35:29+02:00
 draft: false
-tags: []
+tags: ['Gaussian', 'Bayes', 'probability', 'inference']
 ---
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -18,8 +18,7 @@ Where we know that the maximum likelihood estimate for the mean is the sample me
 
 $$\mu_{MLE} = \frac{1}{N} \sum_{n=1}^N x_{n}$$
 
-For MLE derivations of the Gaussian, see [MLE univariate Gaussian](202103221937-MLE_univariate_Gaussian.md).
-
+See the bottom of this post for a derivation of the maximum likelihood estimate for the mean.
 Notice that the mean update has the following shape, balancing between the prior mean and the data sample mean:
 
 $$\mu_{new} = \lambda \mu_{0} + (1-\lambda) \mu_{MLE}$$
@@ -66,3 +65,22 @@ So if you want to easily remember the parameter update rules, in natural languag
 - The posterior mean is a mix between the prior mean and the mean of the observed data sample
     * The mixing coefficient of the prior mean is the *prior precision* divided by the *posterior precision* which we called $\lambda$
     * $(1-\lambda)$ is the mixing coefficient of the sample mean.
+
+## MLE for the mean
+
+First find the expression for the Gaussian log likelihood:
+
+$$ln p(D|\mu, \sigma^2) = ln \prod_{n=1}^N \mathbb{N}(x_n | \mu, \sigma^2)$$
+$$= \sum_{n=1}^N ln \mathbb{N}(x_n | \mu, \sigma^2)$$
+$$= \sum_{n=1}^N ln( \frac{1}{\sqrt{ 2\pi \sigma^2}} exp{ - \frac{(x_n - \mu)^2}{2 \sigma^2}})$$
+$$= N ln( \frac{1}{\sqrt{2\pi \sigma^2}}) - \sum_{n=1}^N \frac{(x_n - \mu)^2}{2 \sigma^2}$$
+$$= -\frac{1}{2 \sigma^2} \sum_{n=1}^N (x_n - \mu)^2 - \frac{N}{2} ln(\sigma^2) - \frac{N}{2}ln(2\pi)$$
+
+The next step is to find $\mu_{ML}$ by deriving with respect to $\mu$. 
+The derivative w.r.t. $\mu$ is:
+
+$$\frac{1}{\sigma^2} \sum_{n=1}^N (x_n - \mu)$$
+
+Setting to zero gives the MLE:
+
+$$\mu_{ML} = \frac{1}{N}\sum_{n=1}^N x_n$$
