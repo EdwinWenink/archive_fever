@@ -3,6 +3,8 @@
 {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 {{ $preview_n := 15 }}
 {{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "posts") }}
+<!-- TODO exclude digest; but do so properly so the total amount of shown post is still $preview_n -->
+    {{ if not (in .Params.series "digest") }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}} 
 		{{ if not (eq .Params.tags nil) }}
@@ -25,6 +27,7 @@
 		<p><a href="{{ .RelPermalink }}">Read more</a><p>
 		</blockquote>
 	{{ end }}
+    {{ end  }}
 {{ end }}
 
 <br>
