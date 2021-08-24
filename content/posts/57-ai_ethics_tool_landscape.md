@@ -153,5 +153,3 @@ org/10.1016/j.inffus.2019.12.012.
 [^9]: High-Level Expert Group on Artificial Intelligence. The European Commission's high-level expert group on Artificial Intelligence: Ethics guidelines for trustworthy AI. Tech. rep. European Commission, Apr. 8, 2019, pp. 1-39.
 [^10]: Corinna Machmeier. SAP's Guiding Principles for Artificial Intelligence. Sept. 18, 2018. url: https://news.sap.com/2018/09/sap-guiding-principles-for-artificial-intelligence/ (visited on 08/04/2021).
 [^11]: Jessica Morley et al. "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices?. In: Science and Engineering Ethics 26.4 (2020), pp. 2141- 2168. doi: 10.1007/s11948-019-00165-5.
-
-
