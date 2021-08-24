@@ -15,7 +15,7 @@ In this post I introduce an open source project that hopefully makes a step in t
 The tools are described and organized in the [AI Ethics Tooling Landscape](https://edwinwenink.github.io/ai-ethics-tool-landscape/).
 The website itself and the corresponding [README](https://github.com/EdwinWenink/ai-ethics-tool-landscape/blob/main/README.md) explains how the website works and how to contribute to it.
 
-#### Where guidelines fall short
+## Where guidelines fall short
 
 AlgorithmWatch initiated an *AI Ethics Guidelines Global Inventory*
 [^1] in which more than 160 AI ethics guidelines have been
@@ -41,7 +41,7 @@ legislation that *does* enforce compliance [^8].
 This suspicion that companies use ethics guidelines as a PR tool can
 lead to accusations of *ethics washing* [^5].
 
-#### A call for operationalisation
+## A call for operationalisation
 
 This shows that despite a proliferation of principle statements --- the
 "what" of ethical AI --- there is not enough focus on the "how" of
@@ -68,7 +68,7 @@ therefore "to build tangible bridges between abstract values and
 technical implementations, as long as these bridges can be reasonably
 constructed" [^8].
 
-#### Bridging the gap
+## Bridging the gap
 
 This call for concretisation and operationalisation of AI principles
 does not mean, however, that AI principles can always and
@@ -88,7 +88,7 @@ technique is embedded and used. For example, if you use a fairness tool,
 which definition of fairness is used and is this definition appropriate
 given the type of application you are developing?
 
-#### The AI Ethics Tool Landscape
+## The AI Ethics Tool Landscape
 
 To these ends, I did an explorative study of the available tools and techniques for ethical AI. 
 The target audience that would use these tools are developers, so I
