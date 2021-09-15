@@ -109,6 +109,7 @@ Intended to be permanently under construction.
 
 ## Plain text tools and note-taking
 
+- [Plaintext Productivity](https://plaintext-productivity.net/)
 - [Andy Matuschak's notes](https://notes.andymatuschak.org/About_these_notes)
     * Great example of a Zettelkasten style website
     * Contains very useful notes about note-taking (it should be about [more effective thinking](https://notes.andymatuschak.org/z7kEFe6NfUSgtaDuUjST1oczKKzQQeQWk4Dbc))
