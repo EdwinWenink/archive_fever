@@ -12,15 +12,16 @@ type: about
 
 - Graduated a philosophy research master last year
 - Working towards a master's degree in artificial intelligence (AI)
+- Finished internship at NS on ethical AI
+- Doing a graduation project at TNO on XAI 
 
 #### Career
 
-- Not sure yet whether and how to professionally combine philosophy and artificial intelligence
-- To PhD or not to PhD?
+- Figuring out how to combine philosophy and AI in a career
 
 #### Pastime 
 
-- Currently reading: "The Unbearable Lightness of Being" by Milan Kundera.
+- Currently reading: "Breakfast of Champions" by Kurt Vonnegut.
 - Currently gaming: got quite dedicated to the space sim game Elite Dangerous during lockdown
 
-Last updated: 24 January 2021
+Last updated: 4 October 2021
