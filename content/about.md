@@ -1,8 +1,8 @@
 ---
 title: "About"
 date: 2018-04-04T03:21:00+08:00
-type: about
 menu: "main"
+tags: ['about']
 ---
 
 [Short version](/images/deathgeneratormbtt.png)
