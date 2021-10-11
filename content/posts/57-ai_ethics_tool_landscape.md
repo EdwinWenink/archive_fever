@@ -3,6 +3,7 @@ title: "Introducing the AI Ethics Tool Landscape"
 date: 2021-08-24T09:35:29+02:00
 draft: false
 tags: ['AI', 'ethics']
+author: "Edwin Wenink"
 ---
 
 Many companies that employ AI by now recognize the need for what the European Commission calls an "ecosystem of trust" [^7].

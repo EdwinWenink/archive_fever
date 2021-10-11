@@ -3,6 +3,7 @@ title: "Mnemonic for closed-form Bayesian univariate inference with Gaussians"
 date: 2021-06-13T21:35:29+02:00
 draft: false
 tags: ['Gaussian', 'Bayes', 'probability', 'inference']
+author: "Edwin Wenink"
 ---
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">

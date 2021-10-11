@@ -4,6 +4,7 @@ date: 2020-06-16T16:21:08+02:00
 draft: false
 tags: [vim, note-taking]
 series: ["vim and workflow"]
+author: Edwin Wenink
 ---
 
 I haven't written much for this website recently because it's *that* time of the year again: exams and project deadlines.

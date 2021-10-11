@@ -4,6 +4,7 @@ date: 2020-04-11T09:48:06+02:00
 draft: false
 toc: true
 tags: [tilde, nginx, linux, community]
+author: "Edwin Wenink"
 ---
 
 When I'm busy I am usually very motivated to do side projects, but paradoxically I find it harder to stay motivated and productive when I find myself with more time on my hands.
