@@ -84,9 +84,13 @@ window.onload = ready;
       <div>
       <i>
       This post is part of the 
+      {{ if reflect.IsSlice .Params.series }}
         {{ range .Params.series }}
         <a href="/series/{{ . | urlize }}" style='text-decoration: underline;'>{{ . }}</a> 
         {{ end  }}
+      {{ else  }}
+        <a href="/series/{{ . | urlize }}" style='text-decoration: underline;'>{{ .Params.series }}</a> 
+      {{ end }}
       series.
       </i>
       <br><br>
