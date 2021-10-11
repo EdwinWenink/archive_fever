@@ -1,6 +1,8 @@
 ---
 title: "Groen-art"
 type: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 TLDR: my mother makes paintings and sells some of them.

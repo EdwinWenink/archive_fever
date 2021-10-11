@@ -1,6 +1,7 @@
 ---
 title: Linkage
-type: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 This is a page where I store all kinds of links.<br>

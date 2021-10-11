@@ -1,7 +1,8 @@
 ---
 title: "Music statistics"
 date: 2018-04-04T03:21:00+08:00
-type: about
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 <meta charset="UTF-8">

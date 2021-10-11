@@ -1,6 +1,7 @@
 ---
 title: "Web Paleontology: An Ode to the Hyperlink"
-style: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 <p>&#8623</p>

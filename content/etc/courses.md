@@ -1,9 +1,10 @@
 ---
 title: Course Overview
-style: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
-<h2><u> Course Overview Philosophy Bachelor </u></h2>
+<h2> Course Overview Philosophy Bachelor </h2>
 
 Last updated: January 2019.
 Not up to date.
@@ -40,7 +41,7 @@ Not up to date.
 &#8627 on Jacques Derrida's method of deconstruction in <i>Of Grammatology</i>. Awarded with a 9,5
 </p>
 
-<h2><u>Course Overview Research Master Philosophy</u></h2>
+<h2>Course Overview Research Master Philosophy</h2>
 
 <h3><b>Specialization of Metaphysics</b> | courses on ...</h3>
 <ul>
@@ -60,7 +61,7 @@ I am currently also working on a PhD-proposal
 </p>
 
 
-<h2><u>Course Overview Bachelor Artifical Intelligence</u></h2>
+<h2>Course Overview Bachelor Artifical Intelligence</h2>
 
 <h3><b>Propaedeutic Year</b> | courses on ... </h3>
 <ul>

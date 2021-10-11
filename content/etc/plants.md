@@ -1,6 +1,7 @@
 ---
 title: Plant log
-type: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 This is a list of plants I own or owned. 

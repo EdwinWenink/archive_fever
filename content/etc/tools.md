@@ -1,6 +1,7 @@
 ---
 title: Tools
-type: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 I'm currently using two machines: a desktop running Windows and a ThinkPad T420 running [Arch Linux](https://archlinux.org/).

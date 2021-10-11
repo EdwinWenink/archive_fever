@@ -1,6 +1,7 @@
 ---
 title: Curriculum Vitae
-type: etc
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 <style>

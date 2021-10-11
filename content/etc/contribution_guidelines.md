@@ -1,7 +1,8 @@
 ---
 title: Contribution Guidelines
-type: etc
 toc: true
+author: Edwin Wenink
+tags: ['etc']
 ---
 
 Here are some guidelines if you are interested in making a guest contribution to this website. 
