@@ -2,6 +2,7 @@
 title: Now
 author: Edwin
 type: about
+menu: "main"
 ---
 
 #### Location
