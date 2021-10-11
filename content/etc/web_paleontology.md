@@ -1,8 +1,9 @@
 ---
-title: Web Paleontology
+title: "Web Paleontology: An Ode to the Hyperlink"
 style: etc
 ---
-<h1><u> Web Paleontology &#8623  An Ode to the Hyperlink </u></h1>
+
+<p>&#8623</p>
 
 <p><q>UX covers holes in Moore's Law; when computers are still bigger than expected, it can help to shrink them in your head.</q> - Olia Lialina <br></p>
 

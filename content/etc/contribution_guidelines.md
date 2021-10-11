@@ -4,8 +4,6 @@ type: etc
 toc: true
 ---
 
-# Contribution Guidelines
-
 Here are some guidelines if you are interested in making a guest contribution to this website. 
 
 The basic deal is: you contribute, I edit and provide feedback, and you get your own personal page on this domain where all your contributions are listed.

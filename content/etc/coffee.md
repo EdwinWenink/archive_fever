@@ -3,8 +3,6 @@ title: Coffee
 type: etc
 ---
 
-# Coffee
-
 <pre>
 
 				   .

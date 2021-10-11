@@ -3,8 +3,6 @@ title: "Groen-art"
 type: etc
 ---
 
-# Groen-art
-
 TLDR: my mother makes paintings and sells some of them.
 
 Over the years she painted in various styles, both abstract and concrete. 

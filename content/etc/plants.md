@@ -3,8 +3,6 @@ title: Plant log
 type: etc
 ---
 
-# My Plants 
-
 This is a list of plants I own or owned. 
 One could say this hobby got out of hand.
 All these plants live in a single student room, so it's quite... cozy.

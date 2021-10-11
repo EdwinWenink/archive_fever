@@ -4,8 +4,6 @@ type: "etc"
 toc: true
 ---
 
-# Etc. Index
-
 - [Short C.V.](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
 - [Contribution guidelines](../contribution_guidelines)
 - [Monthly Digests]( /series/digest )

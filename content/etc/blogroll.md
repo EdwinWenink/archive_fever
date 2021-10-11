@@ -3,8 +3,6 @@ title: Linkage
 type: etc
 ---
 
-# Linkage
-
 This is a page where I store all kinds of links.<br>
 
 It is not quite a classical blogroll, as this page also contains links to specific web pages.

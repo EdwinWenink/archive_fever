@@ -3,8 +3,6 @@ title: Tools
 type: etc
 ---
 
-# Tools
-
 I'm currently using two machines: a desktop running Windows and a ThinkPad T420 running [Arch Linux](https://archlinux.org/).
 I have Windows installed from before I got familiar with Linux and I'd like to get rid of it, but I'm not mentally ready to make that step because some software I like (read: Elite Dangerous) does not run well on Linux.
 
