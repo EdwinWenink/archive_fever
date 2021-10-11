@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ partial "paginator.html" . }}
+
 <div>
     {{ .Content }}
     <ul>
@@ -10,6 +12,6 @@
     </ul>
 </div>
 
-{{ template "_internal/pagination.html" . }}
+{{ partial "paginator.html" . }}
 
 {{ end }}

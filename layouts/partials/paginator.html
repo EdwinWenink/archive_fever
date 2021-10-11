@@ -1,0 +1,30 @@
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+    <div style="text-align: center; font-size: 1.5em; margin: 1em;">
+        <!--{{ template "_internal/pagination.html" . }}-->
+
+        <!-- First page. -->
+          <a  href="{{ $paginator.First.URL }}"> 0 </a>
+        </li>
+
+      <!-- Previous page. -->
+        {{ if $paginator.HasPrev }}
+          <a href="{{ $paginator.Prev.URL }}"><--</a>
+        {{ end }}
+
+        {{ range after 1 $paginator.Pagers }}
+            {{ if eq . $paginator }}
+                [ {{ .PageNumber }} ]
+            {{ end  }}
+        {{ end }}
+
+       <!-- Next page. -->
+        {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}">--></a>
+        {{ end }}
+
+        <!-- Last page. -->
+          <a  href="{{ $paginator.Last.URL }}"> N </a>
+        </li>
+    </div>
+{{ end  }}

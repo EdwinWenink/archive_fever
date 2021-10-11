@@ -31,6 +31,7 @@ html {
 	background-size: contain;
     /*background-color: #202020;*/
 }
+
 body, li p {
 	background: white;
 	font-family: 'Inconsolata', sans-serif;
@@ -349,19 +350,6 @@ input:checked + .slider:before {
 .webring {
     text-align: center;
     margin: 1rem;
-}
-
-.pagination {
-    list-style: none;
-    padding: 0;
-}
-
-.pagination > ul {
-    display: inline;
-}
-
-.page-item > li {
-    display: inline;
 }
 
 .hover-box {
