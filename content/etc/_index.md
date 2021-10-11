@@ -1,5 +1,5 @@
 ---
-title: "Etcetera"
+title: "Etc"
 menu: "main"
 ---
 
