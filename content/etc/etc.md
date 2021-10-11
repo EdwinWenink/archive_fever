@@ -1,6 +1,7 @@
 ---
 title: "Etc"
 type: "etc"
+menu: "main"
 ---
 
 # Etc. Index
