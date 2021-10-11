@@ -4,6 +4,7 @@ date: 2018-04-05
 tags: ["website","DIY"]
 draft: false
 author: "Edwin Wenink"
+series: ['Website']
 ---
 
 This website emerged from a DIY attitude, which translates as: I have been working with raw material, without having pre-existing knowledge about proper style for either html, css, or javascript etc. 

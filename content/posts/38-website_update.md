@@ -4,6 +4,7 @@ author: Edwin Wenink
 date: 2019-10-21
 tags: [hugo, templating, programming, website]
 toc: true
+series: ['Website']
 ---
 
 I have made progress in my understanding of Go templating, and in particular its scope limitations (see for example [this](https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/)).

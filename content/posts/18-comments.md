@@ -3,7 +3,8 @@ author: "Edwin Wenink"
 title: "New feature! Added comments to this *static* website"
 date: 2018-12-28
 draft: false
-tags: [staticman, raspberry pi, github, netlify, comments ]
+tags: [staticman, raspberry pi, github, netlify, comments, website]
+series: ['Website']
 ---
 
 A friend challenged me to implement the option to leave comments on blog posts over the Christmas break, and rightfully so. 

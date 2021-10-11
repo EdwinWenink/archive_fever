@@ -3,7 +3,8 @@ title: "What is the purpose of this website?"
 author: "Edwin Wenink"
 date: 2019-04-13
 draft: false
-tags: [blog, philosophy, indieweb, essay]
+tags: [blog, philosophy, indieweb, website]
+series: ['Website']
 ---
 
 I largely quit social media because it transformed from being something that helps me keep in touch with people and that stimulates social interaction, to an endless stream of promoted clickbait content. 

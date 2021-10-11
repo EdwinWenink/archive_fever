@@ -3,7 +3,8 @@ author: "Edwin Wenink"
 title: "This domain joined the IndieWeb!"
 date: 2019-05-19
 draft: false
-tags: [IndieWeb, brid.gy, webmention.io, IndieAuth, microformats2]
+tags: [IndieWeb, brid.gy, webmention.io, IndieAuth, microformats2, website]
+series: ['Website']
 ---
 
 I joined the IndieWeb!
