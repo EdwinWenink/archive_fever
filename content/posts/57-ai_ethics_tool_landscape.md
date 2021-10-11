@@ -8,7 +8,7 @@ author: "Edwin Wenink"
 
 Many companies that employ AI by now recognize the need for what the European Commission calls an "ecosystem of trust" [^7].
 This has resulted in a large amount of (ethical) principle statements for the usage of AI.
-These statements are often to a large degree inspired by pre-existing guidelines and principes, such as the European Commission's *Ethics Guidelines for Trustworthy AI* [^9] or the SAP guiding principles for AI [^10].
+These statements are often to a large degree inspired by pre-existing guidelines and principles, such as the European Commission's *Ethics Guidelines for Trustworthy AI* [^9] or the SAP guiding principles for AI [^10].
 However, there are doubts about the effectiveness of these guidelines.
 A main challenge for the coming years is to effectively *operationalise* AI policy.
 In this post I introduce an open source project that hopefully makes a step in the right direction by listing available tools to support the ethical development of AI.
