@@ -351,6 +351,19 @@ input:checked + .slider:before {
     margin: 1rem;
 }
 
+.pagination {
+    list-style: none;
+    padding: 0;
+}
+
+.pagination > ul {
+    display: inline;
+}
+
+.page-item > li {
+    display: inline;
+}
+
 .hover-box {
 	/*
 	padding-left: 25px;
