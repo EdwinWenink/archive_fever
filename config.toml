@@ -7,7 +7,7 @@ github_username = "EdwinWenink"
 relativeURLs = true
 disablePathToLower = false
 enableGitInfo = true
-disableKinds = ["section"]  # Why did I have this again?
+paginate = 5
 
 [taxonomies]
   tag = "tags"
