@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
 <div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
 <script>
@@ -80,6 +80,4 @@ window.onload = ready;
 
 </div>
 
-
-{{ partial "footer" . }}
-
+{{ end }}
