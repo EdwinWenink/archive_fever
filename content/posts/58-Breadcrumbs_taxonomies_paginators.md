@@ -148,8 +148,8 @@ Be aware that I used inline styles, because I'm bothered by my browsers/Hugo not
 
 ## Series taxonomy
 
-In the [AI Ethics Tool Landscape](posts/57-ai_ethics_tool_landscape/) I heavily made use of taxonomies, which made me realize I should also do this on my personal website.
-I added a new [series](series/) taxonomy.
+In the [AI Ethics Tool Landscape](/posts/57-ai_ethics_tool_landscape/) I heavily made use of taxonomies, which made me realize I should also do this on my personal website.
+I added a new [series](/series/) taxonomy.
 I also wrote a `terms.html` template that does not only lists the taxonomy terms, but also counts how often they occur:
 
 ```
