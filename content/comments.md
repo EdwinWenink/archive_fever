@@ -2,7 +2,6 @@
 title: Comments
 author: Edwin Wenink
 type: comments
-menu: "main"
 ---
 
 Comments are currently disabled.
