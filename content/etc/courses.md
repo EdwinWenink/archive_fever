@@ -6,9 +6,6 @@ tags: ['etc']
 
 <h2>Philosophy Bachelor </h2>
 
-Last updated: January 2019.
-Not up to date.
-
 <h3>Propaedeutic Year | Introductory courses... </h3>
 <p>
 ... to social and political philosophy, epistemology, philosophy of science, metaphysics, logic, rhetorics, philosophy of cognition, philosophical ethics, philosophy of language, and courses on the history of both antique, medieval, modern and contemporary philosophy. 
