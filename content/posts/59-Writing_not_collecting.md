@@ -4,7 +4,7 @@ date: 2021-10-12T12:01:10+02:00
 draft: false
 author: "Edwin Wenink"
 tags: ['workflow', 'note-taking', 'zettelkasten']
-series: "Vim and workflow"
+series: ["Vim and workflow"]
 ---
 
 I've written a bit about my [note-taking](/series/vim-and-workflow/) on this domain because I think systems of organizing knowledge are quintessential for anyone that is a *learner* or *knowledge* worker.
