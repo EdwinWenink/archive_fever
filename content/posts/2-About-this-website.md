@@ -1,7 +1,7 @@
 ---
 title: "About this website"
 date: 2018-04-05
-tags: ["website","DIY"]
+tags: ["about", "website","DIY"]
 draft: false
 author: "Edwin Wenink"
 series: ['Website']
