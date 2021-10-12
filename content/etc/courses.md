@@ -4,7 +4,7 @@ author: Edwin Wenink
 tags: ['etc']
 ---
 
-<h2> Course Overview Philosophy Bachelor </h2>
+<h2>Philosophy Bachelor </h2>
 
 Last updated: January 2019.
 Not up to date.
@@ -41,64 +41,86 @@ Not up to date.
 &#8627 on Jacques Derrida's method of deconstruction in <i>Of Grammatology</i>. Awarded with a 9,5
 </p>
 
-<h2>Course Overview Research Master Philosophy</h2>
+<h2>Research Master Philosophy</h2>
 
 <h3><b>Specialization of Metaphysics</b> | courses on ...</h3>
 <ul>
-	<li><a href="https://www.dupress.duq.edu/products/ontology-after-ontotheology-plurality-event-and-contingency-in-contemporary-philosophy"> contemporary ontology after ontotheology </a>(Badiou, Nancy, Heidegger, Plato, Agamben, Meillassoux).
-	<li> Gadamer's <i> Truth and Method </i>
-	<li> the philosophy of testimony, in relation to ontology (Heidegger, Derrida, Ricoeur, Foucault, Agamben, Lyotard)
-		<li> the machinal ontology of Deleuze in <i>Anti-Oedipus</i></li>
-	<li> comparison of Heidegger's and Wittgenstein's philosophies
-	<li> Husserl's <i> The Crisis of European Sciences and Transcendental Phenomenology </i>
-	<li> individual research on Heidegger's concept of <i> Geschick des Seins </i> as preparation of thesis
-	<li> two courses on philosophical methods and the skills needed for scientific philosophical research
+	<li><a href="https://www.dupress.duq.edu/products/ontology-after-ontotheology-plurality-event-and-contingency-in-contemporary-philosophy"> contemporary ontology after ontotheology </a>(Badiou, Nancy, Heidegger, Plato, Agamben, Meillassoux).</li>
+	<li> Gadamer's <i> Truth and Method </i></li>
+	<li> the philosophy of testimony, in relation to ontology (Heidegger, Derrida, Ricoeur, Foucault, Agamben, Lyotard)</li>
+    <li> the machinal ontology of Deleuze in <i>Anti-Oedipus</i></li>
+	<li> comparison of Heidegger's and Wittgenstein's philosophies</li>
+	<li> Husserl's <i> The Crisis of European Sciences and Transcendental Phenomenology </i></li>
+	<li> individual research on Heidegger's concept of <i> Geschick des Seins </i> as preparation of thesis</li>
+	<li> two courses on philosophical methods and the skills needed for scientific philosophical research</li>
 </ul>
 
-<h3><b>Thesis</b> | T.B.A.</h3>
+<h3><b>Thesis</b></h3>
 <p>
-I am currently also working on a PhD-proposal
+Wrote an article on Jacques Derrida and Martin Heidegger, as well as a PhD proposal on digital hermeneutics.
 </p>
 
 
-<h2>Course Overview Bachelor Artifical Intelligence</h2>
+<h2>Bachelor Artifical Intelligence</h2>
 
 <h3><b>Propaedeutic Year</b> | courses on ... </h3>
 <ul>
-	<li> Mathematics (basic calculus and probability theory)
-	<li> Frequentist Statistics
-	<li> Cognitive Psychology
-	<li> Linear Algebra
-	<li> Robotics
-	<li> Human-Computer Interaction
-	<li> Introduction to Artificial Intelligence (Uninformed-, Informed-, Adversial search, Constraint Satisfaction, Bayesian Networks, Supervised Learning, Neural Networks)
-	<li> Intro AI 2: Application of those methods in a agent that plays pacman (in python)
-	<li> Course on the human brain
-	<li> Formal Reasoning: Propositional- , Predicate- and Modal Logic, Discrete Mathematics, Language Grammars and Automata
-	<li> Programming in Java (two courses)
-	<li> Functional Programming
+	<li> Mathematics (basic calculus and probability theory)</li>
+	<li> Frequentist Statistics</li>
+	<li> Cognitive Psychology</li>
+	<li> Linear Algebra</li>
+	<li> Robotics</li>
+	<li> Human-Computer Interaction</li>
+	<li> Introduction to Artificial Intelligence (Uninformed-, Informed-, Adversial search, Constraint Satisfaction, Bayesian Networks, Supervised Learning, Neural Networks)</li>
+	<li> Intro AI 2: Application of those methods in a agent that plays pacman (in python)</li>
+	<li> Course on the human brain</li>
+	<li> Formal Reasoning: Propositional- , Predicate- and Modal Logic, Discrete Mathematics, Language Grammars and Automata</li>
+	<li> Programming in Java (two courses)</li>
+	<li> Functional Programming</li>
 </ul>
 
 <h3><b>Bachelor</b> | major courses on... </h3>
 <ul>
-	<li> Bayesian Statistics
-	<li> Data Mining
-	<li> Mathematics (Entropy and Information Theory, Markov Chains, Complex Numbers, Signal Theory: complex exponential signals, spectrum representations, sampling and aliasing, LTI-systems, Fourier analysis and transforms)
-	<li> Psychology of Language
-	<li> Foundations and implications of theoretical cognitive science
-	<li> Neural Networks
-	<li> Cognitive Robotics
-	<li> Search- and Planning algorithms, Bayesian Networks, Machine Learning
-	<li> Academic Skills for quantative research
-	<li> Professional Skills (application of science and pitch training) 
-	<li> Brain-computer interfacing (BCI)
-	<li> Modern Software Development Techniques (including semester software project with Agile/Scrum)
-	<li> Computational and Formal Modeling
-	<li> Neurophysiology of Cognition and Behavior
+	<li> Bayesian Statistics</li>
+	<li> Data Mining</li>
+	<li> Mathematics (Entropy and Information Theory, Markov Chains, Complex Numbers, Signal Theory: complex exponential signals, spectrum representations, sampling and aliasing, LTI-systems, Fourier analysis and transforms)</li>
+	<li> Psychology of Language</li>
+	<li> Foundations and implications of theoretical cognitive science</li>
+	<li> Neural Networks</li>
+	<li> Cognitive Robotics</li>
+	<li> Search- and Planning algorithms, Bayesian Networks, Machine Learning</li>
+	<li> Academic Skills for quantative research</li>
+	<li> Professional Skills (application of science and pitch training) </li>
+	<li> Brain-computer interfacing (BCI)</li>
+	<li> Modern Software Development Techniques (including semester software project with Agile/Scrum)</li>
+	<li> Computational and Formal Modeling</li>
+	<li> Neurophysiology of Cognition and Behavior</li>
 </ul>
 
 <h3>Bachelor | Minor courses on...</h3>
 <ul>
-	<li> Computer security
+	<li> Computer Security</li>
+    <li> Privacy and Identify</li>
+    <li> ICT en Samenleving</li>
+    <li> Big Data</li>
+</ul>
+
+<h2>Master Intelligent Technology </h2>
+<ul>
+    <li>Machine Learning in Practice</li>
+    <li>Ethics for AI</li>
+    <li>Text and Multimedia Mining</li>
+    <li>New Media Lab (develop app as research tool for experimental research )</li>
+    <li>Intelligent Systems in Medical Imaging</li>
+    <li>Bayesian Networks</li>
+    <li>Information Retrieval</li>
+    <li>Neuromorphic Computing</li>
+    <li>Computer Graphics & Computer Vision</li>
+    <li>Theoretical Foundations for Cognitive Agents</li>
+    <li>Statistical Machine Learning</li>
+    <li>Probabilistic Deep Learning</li>
+    <li>Advanced academic & professional skills</li>
+    <li>Internship on Ethical AI at NS</li>
+    <li>Graduate Intern at TNO</li> 
 </ul>
 
