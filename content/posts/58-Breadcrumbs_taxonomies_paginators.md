@@ -54,7 +54,7 @@ As a nice twist, I therefore remove a reference from the regular menu if it is a
 
 I started this website without understanding much about ... anything really.
 By now I have a better grip of the Hugo language.
-In all my templates I initially separately defined a header and footer partial, which amounts to a lot of unnecessary repetition.
+I initially separately defined a header and footer partial in all my templates, which amounts to a lot of unnecessary repetition.
 Hugo avoids this bad pattern by allowing you to define a `baseof.html` template, as such:
 
 ```
@@ -142,9 +142,9 @@ You can use the default Hugo paginator with `{{ template "_internal/pagination.h
 {{ end  }}
 ```
 
-The paginator doesn't show if there is only one page.
+The paginator doesn't appear if there is only one page.
 The "next" arrow also does not show when there's no next page.
-Be aware that I used inline styles, because I'm bothered by my browsers/Hugo not picking up css changes in the static style.css file in time.
+Be aware that I used inline css styling, because I'm bothered by my browsers/Hugo not picking up changes in the static style.css file in time.
 
 ## Series taxonomy
 
