@@ -28,7 +28,7 @@ It's very tempting to convince yourself you are *learning* just because you are 
 What we ultimately should care about is being able to use our knowledge to produce something new, whatever that may be.
 To not merely reproduce you must understand the material.
 And understanding requires application, a hermeneutic principle that particularly Gadamer worked out extensively.
-If you really want to measure your level of understanding, you should try to apply of explain something to yourself or someone else.
+If you really want to measure your level of understanding, you should try to apply or explain something to yourself or someone else.
 
 I distill this insight into a very simple principle for note-taking:
 
@@ -57,7 +57,7 @@ This desire to archive and organize comes from the fear of *losing* notes.
 But as we've said before, recording something does not prevent you from losing it.
 You lose it when you don't actively use it.
 If you mainly rely on interlinking notes for finding notes, it can indeed be that there will be many ghost notes without incoming links.
-But this probably means that whether was written in the note, wasn't that useful after all!
+But this probably means that what was written in the note, wasn't that useful after all!
 It's OK!
 On the other hand, notes that are productive will solidify their position in the rhizomatic network, because increasingly many paths lead to and from them.
 In the end, you'll actually remember what's in these notes because their insights are used and engage with other ideas.
