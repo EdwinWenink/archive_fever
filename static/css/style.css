@@ -356,8 +356,7 @@ input:checked + .slider:before {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    max-width: 70%;
+    max-width: 95%;
 }
 
 .hover-box {
