@@ -7,16 +7,21 @@ const key = '&api_key='+api_key
 $(document).ready(function()  {
   const base_url = url_base+'method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
   $.getJSON(base_url, function(data){
+    console.log(jQuery.type(data.recenttracks.track))
     if(jQuery.type(data.recenttracks.track) === 'array') {
-      var nowPlaying = data.recenttracks.track[0];
+      var mostRecent = data.recenttracks.track[0];
+    }
+    else {
+      var mostRecent = data.recenttracks.track;
+    }
+    if (mostRecent["@attr"]["nowplaying"]) {
       var listening_text = 'I am currently listening to ';
     }
     else {
-      var nowPlaying = data.recenttracks.track;
       var listening_text = 'Last listened to ';
     }
-    var currentTrack = nowPlaying['name'] + ' by ' + nowPlaying['artist']['#text'];
-    $('#now_playing').html("<a href="+nowPlaying['url']+">" + listening_text + currentTrack + "</a>");
+    var currentTrack = mostRecent['name'] + ' by ' + mostRecent['artist']['#text'];
+    $('#now_playing').html("<a href="+mostRecent['url']+">" + listening_text + currentTrack + "</a>");
   });
 });
 
