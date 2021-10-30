@@ -7,7 +7,6 @@ const key = '&api_key='+api_key
 $(document).ready(function()  {
   const base_url = url_base+'method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
   $.getJSON(base_url, function(data){
-    console.log(jQuery.type(data.recenttracks.track))
     if(jQuery.type(data.recenttracks.track) === 'array') {
       var mostRecent = data.recenttracks.track[0];
     }
@@ -21,8 +20,14 @@ $(document).ready(function()  {
     } catch (error) {
       var listening_text = 'Last listened to ';
     }
-    var currentTrack = mostRecent['name'] + ' by ' + mostRecent['artist']['#text'];
+    var currentTrack = '"'+mostRecent['name'] + '" by ' + mostRecent['artist']['#text'];
     $('#now_playing').html("<a href="+mostRecent['url']+">" + listening_text + currentTrack + "</a>");
+    try {
+      // 0, 1, 2, 3 are image sizes
+      $('#now_playing_img').html('<img src='+mostRecent['image']['2']['#text']+'/>');
+    } catch (error) {
+      console.log(error)
+    }
   });
 });
 
@@ -58,6 +63,7 @@ $(document).ready(function() {
 	});
 });
 
+/*
 $(document).ready(function() {
 	const method = 'method=user.gettoptags'
 	const limit = 20
@@ -67,8 +73,9 @@ $(document).ready(function() {
 
 	$.getJSON(url, function(data) {
 		$.each(data.toptags, function(i, tag_i) {
-			//var tags = tag_i.name;
-			//$(tags).appendTo("tags p");
+			var tags = tag_i.name;
+			$(tags).appendTo("tags p");
 		});
 	});
 });
+*/

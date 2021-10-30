@@ -17,11 +17,15 @@ These musical statistics are generated automatically
 through interacting with the LastFM API. 
 See the scripts I wrote for this <a href="https://github.com/EdwinWenink/personal_website/tree/master/static/scripts">here</a>.
 
-<p id="now_playing"></p>
+<div style="display: flex; align-items: center;">
+    <div><p id="now_playing" style="flex: 50%; padding: 2em;"></p></div>
+    <div><p id="now_playing_img" style="flex: 50%;"></p></div>
+</div>
 
-<p> Last week, I listened to these five artists the most: </p>
+Last week, I listened to these five artists the most:
 
-<table id="weekly_artists" border="1">
+<div>
+<table id="weekly_artists" border="1" style="width: 100%">
 <thead> 
 <th> Artist </th>
 <th> Playcount </th>
@@ -30,9 +34,11 @@ See the scripts I wrote for this <a href="https://github.com/EdwinWenink/persona
 </tbody>
 </table>
 </div>
+
+And this is the overall leaderboard:
+
 <div>
-<p> And this is the overall leaderboard: </p>
-<table id="artists" border="1">
+<table id="artists" border="1" style="width: 100%">
 <thead> 
 <th> Artist </th>
 <th> Playcount </th>
