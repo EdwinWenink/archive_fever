@@ -14,10 +14,11 @@ $(document).ready(function()  {
     else {
       var mostRecent = data.recenttracks.track;
     }
-    if (mostRecent["@attr"]["nowplaying"]) {
+    try {
+      // When not playing anything, this attribute is not set to false but is absent altogether 
+      mostRecent["@attr"]["nowplaying"];
       var listening_text = 'I am currently listening to ';
-    }
-    else {
+    } catch (error) {
       var listening_text = 'Last listened to ';
     }
     var currentTrack = mostRecent['name'] + ' by ' + mostRecent['artist']['#text'];
