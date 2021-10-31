@@ -1,9 +1,19 @@
+<h2 id="engrams">{{ title .Data.Term  }} Engrams </h2>
+
+<div class="author-portret">
+<a href="{{ .Site.BaseURL }}~ejw">
+<img src="{{ .Site.BaseURL }}/images/portret_smooth.jpg" id="display_normal" alt="Author portret should have been here" > </a>
+<img src="{{ .Site.BaseURL }}/images/portret_zwart.gif" id="display_dark" alt="Author portret should have been here" > </a>
+Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
+</div>
+
 <div class="preview">
 
 {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 {{ $preview_n := 15 }}
 {{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "posts") }}
 <!-- TODO exclude digest; but do so properly so the total amount of shown post is still $preview_n -->
+<!-- Count posts with series digest; add that to preview amount -->
     {{ if not (in .Params.series "digest") }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}} 
