@@ -1,7 +1,38 @@
+
 {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
-{{ $preview_n := 1 }}
-<!-- The following code was used when digests still had their own content section
-{{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "digest") }}
-<p>Also see the <a href="{{ .Permalink}}">latest digest</a><p>
+{{ $preview_n := 20 }}
+
+<h2 id="digest">Digest</h2>
+
+{{ range $key, $taxonomy := .Site.Taxonomies.series }}
+    {{ range $index, $value := $taxonomy.Pages }}
+    
+    <!-- TODO fix properly with a "where" statement in loop above -->
+    {{ if eq $key "digest"}}
+
+        <p>
+        <!--
+        <aside>{{ .Date.Format "January 2, 2006"}} 
+            {{ if not (eq .Params.tags nil) }}
+                {{ range first 2 $value.Params.tags }}
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+                {{ end }}
+                {{ if gt (len .Params.tags) 2 }}
+                    ...
+                {{ end }}
+            {{ end }}
+        </aside>
+        -->
+        <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a>
+        {{ partial "collab.html" . }}
+        {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
+        {{ end }}
+	</p>
+    {{ end }}
+    {{ end }}
 {{ end }}
--->
+
+<!-- TODO currently listening -->
+
+<br>
+<p>See all <a href="{{ .Permalink}}/series/digest"> digests</a><p>
