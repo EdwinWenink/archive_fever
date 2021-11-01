@@ -1,3 +1,8 @@
+<meta charset="UTF-8">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/scripts/lastfm_query.js"></script>
+</head>
 
 {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 {{ $preview_n := 20 }}
@@ -5,12 +10,12 @@
 <h2 id="digest">Digest</h2>
 
 {{ range $key, $taxonomy := .Site.Taxonomies.series }}
+    <p>
     {{ range $index, $value := $taxonomy.Pages }}
     
     <!-- TODO fix properly with a "where" statement in loop above -->
     {{ if eq $key "digest"}}
 
-        <p>
         <!--
         <aside>{{ .Date.Format "January 2, 2006"}} 
             {{ if not (eq .Params.tags nil) }}
@@ -24,15 +29,25 @@
         </aside>
         -->
         <a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a>
+        <span>&#8226;</span>
+        
         {{ partial "collab.html" . }}
         {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
         {{ end }}
+    {{ end }}
+    {{ end }}
 	</p>
-    {{ end }}
-    {{ end }}
 {{ end }}
 
+
 <!-- TODO currently listening -->
+<div style="display:inline-block;">
+</div>
+
+<div style="display: flex; align-items: center;">
+    <div><p style="flex; 10%; margin-right: 10px;">&#9836;</p></div>
+    <div><p id="now_playing" style="flex: 90%;"></p></div>
+</div>
 
 <br>
-<p>See all <a href="{{ .Permalink}}/series/digest"> digests</a><p>
+<p>See all <a href="{{ .Permalink}}/series/digest"> digests</a> or my <a href="{{ .Permalink}}/etc/music">music statistics</a>.<p>
