@@ -74,6 +74,7 @@
 		quotes[71]="&quotThe tools we use have a profound and devious influence on our thinking habits, and therefore on our thinking abilities&quot - Edsger Dijkstra";
     quotes[72]="&quotIn philosophy the winner of the race is the one who can run most slowly. Or: the one who gets there last&quot - Ludwig Wittgenstein";
     quotes[73]="&quotLife is not a problem to be solved, but a mystery to be lived&quot - Gabriel Marcel";
+    quotes[74]="&quotI don't want hope. Hope is killing me. My dream is to become hopeless. When you're hopeless, you don't care. And when you don't care, that indifference makes you attractive&quot - George Costanza";
 		/*
 		quotes[x]= "&quot &quot";
 		*/
