@@ -5,7 +5,7 @@ date: 2019-12-19
 toc: true
 draft: False
 tags: [Vim, workflow, ctags, note-taking, Zettelkasten]
-series: ["vim and workflow"]
+series: "Workflow"
 ---
 
 In the [previous post](/posts/42-vim_notetaking) I expressed my requirements for an ideal note taking system and took the first steps in designing it for my preferred editor, which is Vim.

@@ -2,8 +2,9 @@
 title: "Secondary sorting in Python"
 date: 2020-07-29T22:17:39+02:00
 draft: false
-tags: [python, coding]
 author: Edwin Wenink
+tags: [python, coding, programming]
+series: 'Programming'
 ---
 
 Let's say we want to compute the mode of a series of numbers, meaning that we pick the value that occurs most. 

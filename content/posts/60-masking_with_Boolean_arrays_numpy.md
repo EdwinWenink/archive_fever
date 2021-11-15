@@ -2,8 +2,8 @@
 title: Masking with Boolean arrays in Numpy
 date: 2021-11-15T12:01:10+02:00
 author: "Edwin Wenink"
-tags: ['programming']
-series: ["programming"]
+tags: ["programming",'python','numpy']
+series: ['Programming']
 ---
 
 ## Use case

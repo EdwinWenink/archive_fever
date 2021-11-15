@@ -5,7 +5,7 @@ draft: false
 authors: ['Boris van Meurs', 'Edwin Wenink']
 guest: true
 tags: ['vim', 'workflow']
-series: ["vim and workflow"]
+series: "Workflow"
 ---
 
 Many Vim users, if not most, are programmers.

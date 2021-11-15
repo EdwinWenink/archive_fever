@@ -4,7 +4,7 @@ title: "Ten reasons for using Vim"
 date: 2018-11-06
 draft: false
 tags: [Vim, Workflow, Text editing, Efficiency]
-series: ["vim and workflow"]
+series: "Workflow"
 ---
 
 Vim is a well-known (and infamous) text editor that is designed in such a handy way that some programmers even use it as their preferred IDE (Integrated Development Environment). 

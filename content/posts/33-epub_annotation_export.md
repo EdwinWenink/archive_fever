@@ -18,7 +18,7 @@ During my travels I finished "Crime and Punishment" from Dostojevski, read "Slau
 And even now that I am home I notice how much easier it is to pick up the e-reader, compared to a book. 
 
 During reading, I made many annotations and notes on my Kobo. 
-Now that I am home, I was wondering how to export these notes to my pc, because that would save the trouble of manually finding back citations on the Kobo itself, which is slow, and perhaps typing them over by hand, which is even slower.  
+Now that I am home, I was wondering how to export these notes to my pc, because that would save the trouble of manually finding back citations on the Kobo itself, which is slow, and perhaps typing them over by hand, which is even slower.
 To my surprise, there was no default exporting option for annotations. 
 
 ## Method 1: adjusting the Kobo configuration file

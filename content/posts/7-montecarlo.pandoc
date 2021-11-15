@@ -3,7 +3,8 @@ author: "Edwin Wenink"
 title: "Calculating pi with Monte Carlo simulation"
 date: 2018-05-15
 draft: false
-tags: [probability,AI,Monte Carlo]
+tags: [probability,AI,Monte Carlo,programming]
+series: 'Programming'
 ---
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
