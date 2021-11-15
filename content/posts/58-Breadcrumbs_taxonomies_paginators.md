@@ -4,7 +4,7 @@ date: 2021-10-11T23:34:31+02:00
 draft: false
 author: "Edwin Wenink"
 tags: ['hugo', 'templating', 'programming', 'website']
-series: ['Website']
+series: ['Website', 'Programming']
 toc: true
 ---
 

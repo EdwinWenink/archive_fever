@@ -3,6 +3,7 @@ title: "Two methods for exporting EPUB annotations (.annot)"
 author: "Edwin Wenink"
 date: 2019-09-01
 tags: [epub, kobo, annotations, workflow, python]
+series: ['Programming']
 ---
 
 See [here](/posts/53-update_kobo_annotation) for a follow-up.

@@ -4,6 +4,7 @@ title: "Object Orientation: Observer Pattern"
 date: 2018-07-16
 draft: false
 tags: [Object Orientation, Design Pattern, Observer, Programming]
+series: ['Programming']
 ---
 
 The observer pattern is a simple yet quintessential design pattern in object oriented programming. As programs become larger, objects multiply quickly, as do the interactions between them. For example, a class instance can be contained as an attribute in another class (composition), or be used by some method in another class (association). Sometimes these class relations are very simple and can be used without a second thought. But let's assume you have some class containing mutable information (the "subject" class) that is potentially relevant to a larger amount of other classes that observe the subject class.

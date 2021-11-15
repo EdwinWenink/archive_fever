@@ -4,6 +4,7 @@ title: "Selecting user commands in style (Python)"
 date: 2018-12-19
 draft: false
 tags: [Programming, Python, Lambda, Dictionary, CLI]
+series: ['Programming']
 ---
 
 If you write an interactive program that takes user commands as an input, you can select the appropriate action for a given command by going through a sequence of `if... else if` statements. 

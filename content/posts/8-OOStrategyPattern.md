@@ -4,6 +4,7 @@ title: "Object Orientation: Strategy Pattern"
 date: 2018-06-28
 draft: false
 tags: [Object Orientation, Design Pattern, Strategy, Programming]
+series: ['Programming']
 ---
 
 In object-oriented programming classes tend to multiply quickly. Luckily, some design patterns are available to solve commonly occurring issues. In this post I want to quickly illustrate the strategy pattern with an easy example written in Java. To make it intuitively clear why this pattern is called the 'strategy' pattern, let's sketch a situation in which the application of different strategies is important: a game. 
