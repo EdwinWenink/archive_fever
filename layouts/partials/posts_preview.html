@@ -14,7 +14,9 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 {{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "posts") }}
 <!-- TODO exclude digest; but do so properly so the total amount of shown post is still $preview_n -->
 <!-- Count posts with series digest; add that to preview amount -->
-    {{ if not (in .Params.series "digest") }}
+    <!-- series can either be a list of a single string; 
+        but apparently the following does not break for single strings -->
+    {{ if not (in .Params.series "Digest") }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}} 
 		{{ if not (eq .Params.tags nil) }}
