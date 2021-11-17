@@ -1,0 +1,69 @@
+<!-- source: https://www.control-alt-del.org/posts/building-an-image-gallery-for-hugo/ -->
+<!-- Some adjustments to original script made -->
+<!-- For further inspiration: https://github.com/mfg92/hugo-shortcode-gallery/blob/master/layouts/shortcodes/gallery.html -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.css" />
+
+<style>
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+div.gallery a {
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 10px;
+    display: flex;
+}
+
+div.gallery a img {            
+    height: 200px;
+    object-fit: cover;
+    flex-grow: 1;
+}
+</style>
+
+<div class="gallery">
+
+{{ $currentPage := . }}
+<!-- Alternative approach; maybe compatible with images under static/images:
+https://gohugo.io/content-management/image-processing/#the-image-resource -->
+{{ $images := (.Page.Resources.ByType "image") }}
+
+{{ $sortOrder := "asc" }}
+{{ $sortBy := ".Name" }} <!-- .Name, value -->
+{{- range sort $images $sortBy $sortOrder}}
+    {{- $thumbext := "-thumb" }}
+    {{- $isthumb := .Name | findRE ($thumbext | printf "%s\\.") }}
+    {{- $isimg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}
+    {{- if and $isimg (not $isthumb) }}
+    {{- $thumb := .Name | replaceRE "(\\.{JPG}?)" ($thumbext | printf "%s.") }}
+        <a data-fancybox="gallery" href="/{{ .Permalink }}">
+            <!-- Hardcoded gallery path -->
+            <img src="/gallery/{{ $thumb }}"><br/>
+        </a>
+    {{- end }}
+{{ end }}
+
+<!-- Use the following if you have your gallery at static/gallery -->
+<!-- $img_path below is default Go .FileInfo object. e.g. with .Name and .ModTime property-->
+<!-- Notice I hardcoded the JPG to deal with thumbnails being converted to .jpg -->
+<!--
+{{ $base := .Get "src" }}
+{{ $path := print "static/" (.Get "src") }}
+{{ $image_paths := readDir $path }}
+{{- range $img_path := $image_paths}}
+    {{- $thumbext := "-thumb" }}
+    {{- $isthumb := .Name | findRE ($thumbext | printf "%s\\.") }}
+    {{- $isimg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}
+    {{- if and $isimg (not $isthumb) }}
+    {{- $thumb := .Name | replaceRE "(\\.{JPG}?)" ($thumbext | printf "%s.") }}
+        <a data-fancybox="gallery" href="/{{ $base }}/{{ .Name }}">
+            <img src="/{{ $base  }}/{{ $thumb }}"><br/>
+        </a>
+    {{- end }}
+{{ end }}
+-->
+</div>
+
