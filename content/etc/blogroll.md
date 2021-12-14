@@ -144,6 +144,10 @@ Intended to be permanently under construction.
 - [Mike Caufield - The Garden and the Stream: A Technopastoral ](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)
 - [How blogs broke the web](https://stackingthebricks.com/how-blogs-broke-the-web/)
 - [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos/) 
+- [Devon Zuegel - Epistemic statuses](https://devonzuegel.com/post/epistemic-statuses-are-lazy-and-that-is-a-good-thing)
+- [gwern.net](https://www.gwern.net/)
+    * This site is fascinating and a technical feat in itself. Note to self: look here more often!
+    * [uses confidence tags to indicate epistemic status](https://www.gwern.net/About#confidence-tags)
 
 ## 'Academic' tips, approaches 
 
