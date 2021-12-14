@@ -2,25 +2,31 @@
 title: Linkage
 author: Edwin Wenink
 tags: ['etc']
+toc: true
 ---
 
-This is a page where I store all kinds of links.<br>
+Beware: links are stored here.
+Some links have lived here for so long, they started to rot.
+That's a shame but part of life on the internet.
 
-It is not quite a classical blogroll, as this page also contains links to specific web pages.
+If you look closely the URL mentions something about a blogroll, but that's not quite accurate, is it now?
+
 Some links are here because I kept them open in a browser tab for too long, so I might not have read them carefully myself. 
+Neither do I necessarily endorse whatever is listed on these pages, deal with it!
 I also bookmark stuff under [edwinwenink.xyz/microblog/](https://www.edwinwenink.xyz/microblog/), but those I have read for sure.
-I do try to organize links, but it doesn't always work out. 
+
+I do more or less try to organize links - it's a futile effort, one may call it Archive Fever - but it doesn't always work out. 
+The order of links has no significance.
+That's OK.
+
 I collect links for finding more links under "Tiny Directories and Blogrolls," if you want to go through hyperspace.
 
 Intended to be permanently under construction.
 
 <pre>
-            O
-    /~~~|#|]|=\|---\__
-  |-=_____________  |\\ ,               O       O
- I|_/,-.-.-.-.-,-.\_|='(               T/\     /\=,---.
-    ( o )( o )( o )     \              U /\   /\   `O'     cww
-     `-'-'-'-'-`-'
+  O
+ /\=,---.
+/\   `O'  `
 </pre>
 
 <br>
@@ -50,6 +56,7 @@ Intended to be permanently under construction.
 - [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
 - [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
 - [How to Post on Indieweb.xyz](https://indieweb.xyz/howto/en)
+- [TODO Clientside webmentions](https://www.swyx.io/clientside-webmentions/)
 
 ## Tiny directories, webrings and blogrolls
 
@@ -124,11 +131,25 @@ Intended to be permanently under construction.
 	* This whole blog is actually filled with nice posts on notetaking, but all centerd on org mode and Emacs.
 - [Basic intro to GTD with Org mode](https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html)
 - [Maintaining your bibtex references using git](http://andrius.velykis.lt/2012/06/master-bibtex-file-git-submodules/)
+- [Progressive Summarization: A Practical Technique for Designing Discoverable Notes](https://fortelabs.co/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/)
+
+## Digital Garden
+
+- [Maggie Appleton - A Brief History of Digital Gardens](https://maggieappleton.com/garden-history)
+- [Joel Hook - My blog is a digital gardsen, not a blog](https://joelhooks.com/digital-garden)
+- [Tom Critchlow - Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden/)
+    * [Chain](https://tomcritchlow.com/blogchains/digital-gardens/)
+    - [On Digital Streams, Campfires and Gardens](https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/)
+- [Mark Bernstein - Hypertext Garden (1998)](http://www.eastgate.com/garden/Enter.html)
+- [Mike Caufield - The Garden and the Stream: A Technopastoral ](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)
+- [How blogs broke the web](https://stackingthebricks.com/how-blogs-broke-the-web/)
+- [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos/) 
 
 ## 'Academic' tips, approaches 
 
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
+- [Richard Hamming - You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
 ## Machine learning and data science
 
@@ -152,7 +173,6 @@ Intended to be permanently under construction.
 
 - [Applied Ethical and Governance Challenges in AI - Course Notes](https://joi.ito.com/weblog/2019/03/07/2019-applied-et.html).
 - [Posts on algorithmic regulation](https://governancexborders.com/tag/algorithm-regulation/)
-- 
 
 ## Philosophy
 
