@@ -1,6 +1,7 @@
 ---
 title: "Etc"
 menu: "main"
+aliases: /etc/etc
 ---
 
 - [AI Ethics Tool Landscape](https://edwinwenink.github.io/ai-ethics-tool-landscape/)
