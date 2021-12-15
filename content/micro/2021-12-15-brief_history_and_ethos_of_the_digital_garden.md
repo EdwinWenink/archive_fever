@@ -1,5 +1,5 @@
 ---
-title: "2021-12-15-Brief History and Ethos of the Digital Garden"
+title: "Brief History and Ethos of the Digital Garden"
 date: 2021-12-15T17:45:18+01:00
 slug: "2021-12-15-Brief_history_and_ethos_of_the_digital_garden"
 type: micro
