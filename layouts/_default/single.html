@@ -66,6 +66,7 @@
   </a></aside>
   <aside> 
       <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
+      <a href="{{.Site.Params.github}}commit/{{ .GitInfo.Hash }}" target="_blank">{{.GitInfo.AbbreviatedHash}} {{.GitInfo.Subject}}</a>
   </aside>
   </div>
   <br>
