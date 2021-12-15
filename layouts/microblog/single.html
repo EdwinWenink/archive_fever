@@ -3,22 +3,30 @@
 <h1>{{ .Title }}</h1>
 
 <div id="index">
+    <!--
 <p>These are small <a href="#bookmarks">bookmarks</a>, <a href=#events>events</a>, <a href="#replies">replies</a>, <a href="#likes">likes</a>, <a href=#notes>notes</a>,  following the 
 <a href="http://microformats.org">microformats2</a> format.
 </p>
+    -->
+    <p>These are bookmarks, events, replies, likes, following the <a href="http://microformats.org">microformats2</a> format.
 </div>
 
 {{ .Content }}
 
-<!--
 {{ range .Site.RegularPages }}
 {{ if eq .Type "micro" }}
 <div class="hover-box">
-	<p>{{ .Render "content_only" }}</p>
+    {{ if .Params.slug }}
+        {{ .Scratch.Set "slug" .Params.slug }}	
+    {{ else}}
+        {{ .Scratch.Set "slug" .File.BaseFileName }}	
+    {{ end }}
+    <p>{{ .Render "content_only" }}</p>
 </div>
 {{ end }}
 {{ end }}
--->
+
+<!--
 
 <div>
 	<h2 id="bookmarks"> Bookmarks <a href="#index">&uarr;</a></h2>
@@ -101,5 +109,7 @@
 	{{ end }}
 {{ end }}
 </div>
+
+-->
 
 {{ end }}
