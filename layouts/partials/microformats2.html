@@ -9,7 +9,7 @@
 {{ if .Title }}
     {{ $title.Set "title" .Title}}
 {{ else if .Params.slug }}
-    {{ humanize ($title.Set "title" .Params.slug ) }} 
+    {{ $title.Set "title" ( replace .Params.slug "-" " ") }} 
 {{ else }}
     {{ $title.Set "title" .Date.Format "January 2, 2006"}} 
 {{ end  }}
