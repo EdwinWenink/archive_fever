@@ -5,6 +5,15 @@
 	** Discovered music!
 --> 
 
+{{ $title := newScratch }}
+{{ if .Title }}
+    {{ $title.Set "title" .Title}}
+{{ else if .Params.slug }}
+    {{ humanize ($title.Set "title" .Params.slug ) }} 
+{{ else }}
+    {{ $title.Set "title" .Date.Format "January 2, 2006"}} 
+{{ end  }}
+
 <body>
 	{{ if not .Params.event }}
 	  <div class="h-entry">
@@ -13,7 +22,7 @@
 		</div>
 		<div class="micro">
 			<a href="{{ .Permalink }}">
-				<h4>{{ .Title}}</h4>
+				<h4>{{ $title.Get "title"}}</h4>
 				<aside>{{ .Date.Format "January 2, 2006"}}</aside>
 			</a>
 			{{ if .Params.reply }}
@@ -27,29 +36,28 @@
 			{{ if .Params.bookmark }}
 				<p>&#128214 <a class="u-url u-uid" href="{{ .Params.target }}">{{ .Params.target }}</a></p>
 			{{ end }}
-
-
-		{{ else }}
+    {{ else }}
 		<div class="h-event">
 		<div class="micro">
 			<h4 class="p-name"> 
-				<a class="u-url" href={{ .Params.target }}>
 				{{ if eq .Params.category "music" }}
-				&#9836
+				    &#9836
 				{{ else }}
-				&#128198
+				    &#128198
 				{{ end }}
-				{{ .Title }}</h4></a>
-				<a href="{{ .Permalink }}">
-					<aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
-				</a>
-		{{ end }}
+                <a href="{{ .Permalink }}">{{ $title.Get "title" }}</a>
+				<a class="u-url" href={{ .Params.target }}>[link]</a>
+            </h4>
+                <aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
+    {{ end }}
 
-		<p class="e-content">
-		{{ if .Content }}
-		 &#8620 {{ .Content | markdownify }}
-		{{ end }}
-		</p>
+    <p class="e-content">
+    {{ if .Content }}
+    <!--&#8620 Produces artefacts for micros of multiple paragraphs-->
+    <p>{{ .Content | markdownify }}</p>
+    {{ end }}
+    </p>
+
 	</div>
   </div>
 </body>

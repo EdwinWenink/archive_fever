@@ -1,11 +1,12 @@
 ---
-title: 
+title: Thanks Kicks
 date: 2019-10-24T17:30:38+00:00
 slug: thanks-kicks
 target: https://www.kickscondor.com/comments/for-sure
 type: micro
 reply: true
 ---
+
 That's a great compliment, much appreciated!
 I just found https://nadiaeghbal.com/ through you: an absolute gem. 
 
