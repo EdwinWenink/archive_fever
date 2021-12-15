@@ -155,6 +155,7 @@ Intended to be permanently under construction.
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 - [Richard Hamming - You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+- [Ten Secrets to Giving a Good Scientific Talk](https://www.cgd.ucar.edu/cms/agu/scientific_talk.html)
 
 ## Machine learning and data science
 
