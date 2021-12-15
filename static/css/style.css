@@ -375,8 +375,8 @@ input:checked + .slider:before {
 .micro {
 	margin: 0px;
 	text-align: left;
-	border: 1px solid black;
-	padding: 1em; 
+	/*border: 1px dotted black;*/
+	padding-left: 0.5em; 
 }
 
 @media all {

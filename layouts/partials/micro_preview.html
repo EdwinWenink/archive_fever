@@ -1,7 +1,8 @@
 <div>
-<h2 > Micros </h2>
-{{ range first 3 (where .Site.RegularPages ".Type" "micro") }}
-<div class="hover-box">
+<h2 > Micro </h2>
+{{ range first 2 (where .Site.RegularPages ".Type" "micro") }}
+<!--<div class="hover-box">-->
+<div>
 	<p>{{ .Render "content_only" }}</p>
 </div>
 {{ end }}

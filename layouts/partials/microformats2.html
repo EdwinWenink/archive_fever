@@ -22,7 +22,7 @@
 		</div>
 		<div class="micro">
 			<a href="{{ .Permalink }}">
-				<h4>{{ $title.Get "title"}}</h4>
+				<h3>{{ $title.Get "title"}}</h3>
 				<aside>{{ .Date.Format "January 2, 2006"}}</aside>
 			</a>
 			{{ if .Params.reply }}
@@ -39,7 +39,7 @@
     {{ else }}
 		<div class="h-event">
 		<div class="micro">
-			<h4 class="p-name"> 
+			<h3 class="p-name"> 
 				{{ if eq .Params.category "music" }}
 				    &#9836
 				{{ else }}
@@ -47,7 +47,7 @@
 				{{ end }}
                 <a href="{{ .Permalink }}">{{ $title.Get "title" }}</a>
 				<a class="u-url" href={{ .Params.target }}>[link]</a>
-            </h4>
+            </h3>
                 <aside><time class="dt-start">{{ .Date.Format "January 2, 2006 15:04" }}</time></aside>
     {{ end }}
 
