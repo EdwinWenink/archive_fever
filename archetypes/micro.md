@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-slug: "{{ replace .Name "-" "-" | title }}"
+slug: "{{ lower (replace .Name "-" "-" | title) }}"
 type: micro
 target: ''
 bookmark: false
