@@ -3,7 +3,7 @@ title: "Secondary sorting in Python"
 date: 2020-07-29T22:17:39+02:00
 draft: false
 author: Edwin Wenink
-tags: [python, coding, programming]
+tags: [python, programming]
 series: 'Programming'
 ---
 
