@@ -10,6 +10,9 @@
 :root{
 --headerhighlight: red;
 --hovercolor:yellow;
+--bordercolor:rgb(255,0,0,0.8);
+--borderwidth: 3px;
+--borderstyle: dotted;
 }
 
 html {
@@ -74,9 +77,10 @@ h1 {
 }
 
 h2 {
-	border-bottom-style: solid;
-	border-width: 1px;
-	border-color: rgba(0, 0, 0, 0.5);
+	border-bottom-style: var(--borderstyle);
+	border-width: var(--borderwidth);
+	border-color: var(--bordercolor);
+    padding-bottom: 5px;
     margin-bottom: 0.4em;
 }
 
@@ -87,10 +91,12 @@ h4::before { color: var(--headerhighlight); content: '#### '; }
 h5::before { color: var(--headerhighlight); content: '##### '; }
 h6::before { color: var(--headerhighlight); content: '###### '; }
 
+/*
 ::selection {
 	background: var(--hovercolor);
-	color: black;
+	color: red;
 }
+*/
 
 /**
  * Table of content
@@ -375,8 +381,8 @@ input:checked + .slider:before {
 .micro {
 	margin: 0px;
 	text-align: left;
-	/*border: 1px dotted black;*/
-	padding-left: 0.5em; 
+	/*border: 1px dotted black;
+	padding-left: 0.5em;*/
 }
 
 @media all {
@@ -465,7 +471,7 @@ div.content {
 header {
 	display:block;
 	padding: 0.5rem 0 0.5rem 0;
-	border-bottom: 0.10em solid black;
+	/*border-bottom: 0.10em solid black;*/
 }
 
 /*
@@ -660,8 +666,7 @@ figcaption {
 }
 
 blockquote {
-	border-left: 3.5px solid #0594cb;
-	border-left: 3px solid black;
+	border-left: var(--borderwidth) solid var(--bordercolor);
 	margin: 0.7em 10px;
 	padding: 0.7em 20px;
 }

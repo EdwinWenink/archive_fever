@@ -17,33 +17,18 @@ h1 aside {
 	text-decoration-style: none;
 }
 
-h2 {
-	text-decoration: overline;
-	text-decoration-color: red;
-}
-
 h2 a {
 	color: grey!important;
-	
-}
-
-h3 {
-	text-decoration: underline;
-	text-decoration-color: red;
-}
-
-ul {
-	list-style-type: '+ ';
 }
 
 a {
 	color: red!important;
 }
 
-a:hover, a:hover h4 {
+a:hover, a:hover h4, .preview a:hover {
 	background-color: black!important;
 	border:solid 1px red!important;
-	color: white!important;
+	color: yellow!important;
 }
 
 aside {
@@ -66,7 +51,9 @@ header a {
 }
 
 .hljs {
-	background-color: lightgray!important;
+	background-color: black!important;
+    border-color: red!important;
+    color: gray!important;
 }
 
 .preview a {
