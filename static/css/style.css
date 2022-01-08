@@ -365,14 +365,6 @@ input:checked + .slider:before {
     max-width: 95%;
 }
 
-.hover-box {
-	/*
-	padding-left: 25px;
-	margin: 0.7em 10px;
-	padding: 0.7em 20px;
-	*/
-}
-
 .hover-box:hover {
 	border-left: 3px solid var(--bordercolor);
     margin-left: -10px;
@@ -382,8 +374,6 @@ input:checked + .slider:before {
 .micro {
 	margin: 0px;
 	text-align: left;
-	/*border: 1px dotted black;
-	padding-left: 0.5em;*/
 }
 
 @media all {
@@ -537,7 +527,11 @@ li {
 	line-height: 1.5em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
-    list-style: "-- ";
+    list-style: "+ ";
+}
+
+li:hover {
+    list-style: "> ";
 }
 
 table { 
