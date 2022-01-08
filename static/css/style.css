@@ -492,12 +492,10 @@ footer {
 }
 
 h1 {
-	/* display: block; */
 	font-size: 170%;
 	line-height: 1.1;
-	margin-top: 1rem;
-	margin-bottom: 1.5rem;
-	/*padding-top: 0.02em;*/
+	margin-top: 0.2em;
+	margin-bottom: 1em;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
 	-o-hyphens: none;
@@ -524,10 +522,6 @@ p {
 ul,ol {
 	margin-bottom: 0;
 	padding-left: 1em;
-}
-
-ul, ol {
-    margin-bottom: 0em;
 }
 
 /*
@@ -609,6 +603,10 @@ a {
 
 p a, blockquote a {
 	text-decoration: underline;
+}
+
+.addendum {
+    text-align: center;
 }
 
 .preview {

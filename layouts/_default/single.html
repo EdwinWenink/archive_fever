@@ -5,27 +5,49 @@
       <h1 class="p-name">{{ .Title }} <aside>{ {{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>{{end}} } ·
 	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read</aside></h1>
 
-  <div>
-  {{ if .Params.guest }}
-      {{ if .Params.author }}
-      <i>Guest contribution by <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }} </a></u></i>
-      {{ end }}
-
       {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
-      <!-- When co-writing -->
-      {{ if .Params.authors }}
-      {{ $n_authors := len .Params.authors }}
-      <i>Co-written by 
-        {{ range $i, $author := .Params.authors }}
-            <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u>
-            {{ if ne $i (sub $n_authors 1) }}&{{ end }}
-        {{ end }}
-      {{ end }}
-      </i>
 
-  {{ end }}
-  <br><br>
-  </div>
+    <div class="addendum">
+        <!-- Guest contribution -->
+        {{ if and (ne .Params.author "Edwin Wenink") (ne .Params.author nil) }}
+          <i>Guest contribution by <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }} </a></u></i>
+        {{ end }}
+
+        <!-- When co-writing -->
+        {{ if .Params.authors }}
+        {{ $n_authors := len .Params.authors }}
+        <i>Co-written by 
+        {{ range $i, $author := .Params.authors }}
+            {{ if ne $i (sub $n_authors 1) }}
+              <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u> & 
+            {{ else}}
+              <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u>. 
+            {{ end }}
+        {{ end }}
+        </i>
+        {{ end }}
+
+        <!-- Series -->
+        {{ if .Params.series }}
+          <br>
+          <i>
+          This post is part of the 
+          {{ if reflect.IsSlice .Params.series }}
+          {
+            {{ range .Params.series }}
+            <a href="/series/{{ . | urlize }}" style='text-decoration: underline;'>{{ . }}</a> 
+            {{ end  }}
+          }
+          {{ else  }}
+            <a href="/series/{{ .Params.series | urlize }}" style='text-decoration: underline;'>{{ .Params.series }}</a> 
+          {{ end }}
+          series.
+          </i>
+          <br><br>
+        {{ end }}
+    </div>
+
+  <!-- Table of contents -->
   {{ if .Params.toc }}
 	<div id="toc">
 		{{ .TableOfContents }}
@@ -33,25 +55,6 @@
   {{ end }}
 
   <div class="e-content">
-
-  {{ if .Params.series }}
-      <div>
-      <i>
-      This post is part of the 
-      {{ if reflect.IsSlice .Params.series }}
-      {
-        {{ range .Params.series }}
-        <a href="/series/{{ . | urlize }}" style='text-decoration: underline;'>{{ . }}</a> 
-        {{ end  }}
-      }
-      {{ else  }}
-        <a href="/series/{{ .Params.series | urlize }}" style='text-decoration: underline;'>{{ .Params.series }}</a> 
-      {{ end }}
-      series.
-      </i>
-      <br><br>
-      </div>
-  {{ end }}
 
   {{ .Content }}
   </div>

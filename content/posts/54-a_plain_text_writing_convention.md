@@ -3,7 +3,6 @@ title: "Two perspectives on a plain-text writing convention"
 date: 2021-03-12T15:44:29+01:00
 draft: false
 authors: ['Boris van Meurs', 'Edwin Wenink']
-guest: true
 tags: ['vim', 'workflow']
 series: "Workflow"
 ---
