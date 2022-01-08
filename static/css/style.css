@@ -86,10 +86,6 @@ h1 {
     box-sizing: border-box;
 }
 
-.remove-frame {
-    border: none !important;
-}
-
 h2 {
 	border-bottom-style: var(--borderstyle);
 	border-width: var(--borderwidth);
@@ -109,6 +105,14 @@ h3::before { color: var(--headerhighlight); content: '### '; }
 h4::before { color: var(--headerhighlight); content: '#### '; }
 h5::before { color: var(--headerhighlight); content: '##### '; }
 h6::before { color: var(--headerhighlight); content: '###### '; }
+
+.remove-frame {
+    border: none !important;
+}
+
+h1.remove-frame::before {
+    content: none!important;
+}
 
 ::selection {
 	background: var(--hovercolor);
