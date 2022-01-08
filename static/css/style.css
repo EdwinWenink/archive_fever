@@ -91,12 +91,10 @@ h4::before { color: var(--headerhighlight); content: '#### '; }
 h5::before { color: var(--headerhighlight); content: '##### '; }
 h6::before { color: var(--headerhighlight); content: '###### '; }
 
-/*
 ::selection {
 	background: var(--hovercolor);
-	color: red;
+	color: black;
 }
-*/
 
 /**
  * Table of content
@@ -457,6 +455,7 @@ body {
 div.content { 
 	display: block; 
 	padding: 1rem 0 1rem 0;
+    margin-bottom: 1em;
 }
 
 header {
@@ -529,9 +528,13 @@ ul, ol {
 
 /*
  * Add top margin to paragraphs starting directly after lists
+ * My original solution was to have only margin-bottom on ul:list-child 
+ * but that also creates margin after the last element of sub lists
  * Is div needed here? I didn't test this.
  */
-ul + p, ol + p, ul + div, ol + div {
+ul + p, ol + p, ul + div, ol + div,
+ul + h3, ol + h3, ul + h4, ol + h4,
+ul + h5, ol + h5, ul + h6, ol + h6{
     margin-top: 1em;
 }
 

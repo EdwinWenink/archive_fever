@@ -5,7 +5,7 @@
       <h1 class="p-name">{{ .Title }} <aside>{ {{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>{{end}} } ·
 	   {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read</aside></h1>
 
-  <div style="margin-left: 10px; display: inline-block">
+  <div>
   {{ if .Params.guest }}
       {{ if .Params.author }}
       <i>Guest contribution by <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }} </a></u></i>
@@ -15,12 +15,13 @@
       <!-- When co-writing -->
       {{ if .Params.authors }}
       {{ $n_authors := len .Params.authors }}
-      Co-written by 
+      <i>Co-written by 
         {{ range $i, $author := .Params.authors }}
-            <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u></i>
+            <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u>
             {{ if ne $i (sub $n_authors 1) }}&{{ end }}
         {{ end }}
       {{ end }}
+      </i>
 
   {{ end }}
   <br><br>
