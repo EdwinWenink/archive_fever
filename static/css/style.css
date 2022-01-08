@@ -523,8 +523,16 @@ ul,ol {
 	padding-left: 1em;
 }
 
-ul:last-child, ol:last-child {
-    margin-bottom: 1em;
+ul, ol {
+    margin-bottom: 0em;
+}
+
+/*
+ * Add top margin to paragraphs starting directly after lists
+ * Is div needed here? I didn't test this.
+ */
+ul + p, ol + p, ul + div, ol + div {
+    margin-top: 1em;
 }
 
 li {
