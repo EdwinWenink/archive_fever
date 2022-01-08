@@ -374,8 +374,9 @@ input:checked + .slider:before {
 }
 
 .hover-box:hover {
-	border-left: 3.5px solid #0594cb;
-	border-left: 3px solid black;
+	border-left: 3px solid var(--bordercolor);
+    margin-left: -10px;
+    padding-left: 7px;
 }
 
 .micro {

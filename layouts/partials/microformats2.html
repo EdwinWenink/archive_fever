@@ -21,10 +21,9 @@
 			<a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
 		</div>
 		<div class="micro">
-			
-            <div>
-				<h3><a href="{{ .Permalink }}">{{ $title.Get "title"}}</a></h3>
-				<aside>{{ .Date.Format "January 2, 2006"}}</aside>
+            <div style="margin-bottom: 0.4em;">
+            <h3><a href="{{ .Permalink }}">{{ $title.Get "title"}}</a></h3>
+            <aside>{{ .Date.Format "January 2, 2006"}}</aside>
             </div>
 			{{ if .Params.reply }}
 				<p>In reply to &#8594 <a class="in-reply-to u-in-reply-to" href="{{ .Params.target}}" target="_blank" >{{ .Params.target }}</a></p>
