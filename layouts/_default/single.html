@@ -10,11 +10,14 @@
     <div class="addendum">
         <!-- Guest contribution -->
         {{ if and (ne .Params.author "Edwin Wenink") (ne .Params.author nil) }}
+        <p>
           <i>Guest contribution by <u><a href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }} </a></u></i>
+        </p>
         {{ end }}
 
         <!-- When co-writing -->
         {{ if .Params.authors }}
+        <p>
         {{ $n_authors := len .Params.authors }}
         <i>Co-written by 
         {{ range $i, $author := .Params.authors }}
@@ -25,11 +28,12 @@
             {{ end }}
         {{ end }}
         </i>
+        </p>
         {{ end }}
 
         <!-- Series -->
         {{ if .Params.series }}
-          <br>
+        <p>
           <i>
           This post is part of the 
           {{ if reflect.IsSlice .Params.series }}
@@ -43,7 +47,7 @@
           {{ end }}
           series.
           </i>
-          <br><br>
+        </p>
         {{ end }}
     </div>
 
@@ -55,8 +59,7 @@
   {{ end }}
 
   <div class="e-content">
-
-  {{ .Content }}
+    {{ .Content }}
   </div>
   </article>
   </div> <!-- end of content -->

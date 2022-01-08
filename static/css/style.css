@@ -63,13 +63,27 @@ header,header.a{
 	color:#777;
 }
 
+
 h1 {
 	display: inline-block;
+    width: 100%;
+	font-size: 170%;
+	line-height: 1.1;
+	margin-top: 0.2em;
+	margin-bottom: 1em;
 	border: solid;
 	border-width: 4px;
 	border-color: black; 
 	padding: 0.8em;
-    text-align: left;
+    text-align: center;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	-o-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .remove-frame {
@@ -89,6 +103,7 @@ h3, h4, h5, h6 {
 }
 
 /* Markdown-like headers */
+h1::before { color: var(--headerhighlight); content: '# '; }
 h2::before { color: var(--headerhighlight); content: '## '; }
 h3::before { color: var(--headerhighlight); content: '### '; }
 h4::before { color: var(--headerhighlight); content: '#### '; }
@@ -491,18 +506,6 @@ footer {
 	}
 }
 
-h1 {
-	font-size: 170%;
-	line-height: 1.1;
-	margin-top: 0.2em;
-	margin-bottom: 1em;
-	-moz-hyphens: none;
-	-webkit-hyphens: none;
-	-o-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
 aside {
 	font-size: 0.84rem;
 	line-height: 1.40;
@@ -607,6 +610,7 @@ p a, blockquote a {
 
 .addendum {
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .preview {
