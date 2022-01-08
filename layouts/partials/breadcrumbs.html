@@ -13,7 +13,7 @@
             because I filter out the empty elements above -->
         {{ if gt (len . ) 0 }}
             {{ if eq $counter (len $components) }}
-                > <a href="{{ $url }}">{{ humanize . }}</a>
+                > <a href="{{ $url }}">{{ trim (humanize .) "123456789"  }}</a>
             {{ else }}
                 > <a href="/{{ . }}">{{ humanize . }}</a>
             {{ end }}
