@@ -3,7 +3,14 @@
 <div class="content container">
   <h1>Archives</h1>
 
-  <p>Also see <a href="{{"/authors" | relLangURL}}">authors</a></p>
+  <p>This page contains an overview of all <a href="{{"/about" | relLangURL }}">engrams</a> in reverse chronological order. 
+  These are the more "outward facing" writings on this site, written by these <a href="{{"/authors" | relLangURL}}">authors</a>.</p>
+
+  <p>This site also contains a lot of more ephemeral content.
+  For small notes, likes, bookmarks etc. in <a href="http://microformats.org/">microformats2</a> format, have a look at the <a href="/micro">micros</a>.
+  You can also have a look at my digital garden under <a href="/zettelkasten">zettelkästen</a>. 
+  These notes are a constant work in progress and not necessarily intended for your reading.
+  Nevertheless, I submit them to your "voyeurism."
 
   {{ with .Site.GetPage "section" "posts" }}
     {{ range .Data.Pages.GroupByDate "2006" }}
@@ -32,27 +39,5 @@
   {{ end }}
 </div>
 
-<section>
-<h2 id="tags"> Tags </h2>
-
-<!-- TODO: reverse index; list all posts per tag -->
-<div class="tags">
-<br>
-{{$tags := newScratch }}
-{{ range .Site.RegularPages }} 
-{{ if eq .Type "posts"}}
-	{{ range .Params.tags }}
-		{{ $name := lower .  }}
-		{{ $array := $tags.Get "tags" }} <!-- For some reason I can't directly add this code below -->
-		{{ if not (in $array $name)}}
-			{{ $tags.Add "tags" (slice $name)}}
-			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ lower $name }}</a>
-		{{ end }}
-	{{end}}
-{{ end }}
-{{ end }}
-</div>
-
-</section>
 
 {{ end }}
