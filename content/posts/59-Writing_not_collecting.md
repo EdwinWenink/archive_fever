@@ -7,7 +7,7 @@ tags: ['workflow', 'note-taking', 'zettelkasten']
 series: "Workflow"
 ---
 
-I've written a bit about my [note-taking](/series/vim-and-workflow/) on this domain because I think systems of organizing knowledge are quintessential for anyone that is a *learner* or *knowledge* worker.
+I've written a bit about my [note-taking](/series/workflow/) on this domain because I think systems of organizing knowledge are quintessential for anyone that is a *learner* or *knowledge* worker.
 To be frank, I find it quite ridiculous that in my university education I've not learned how to manage my knowledge base, not even basic academic skills like managing references efficiently.
 I've too often repeated the pattern of following a course, learning for an exam, and not being able to reproduce everything even six months later.
 (I'm painfully aware of the "forgetting" part, as I took a decade of university [courses](/etc/courses/)...) 
