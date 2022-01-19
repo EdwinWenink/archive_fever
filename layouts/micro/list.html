@@ -13,8 +13,16 @@
 
 {{ .Content }}
 
+<!-- Use the following if you mix micros in with regular posts -->
+<!--
 {{ range .Site.RegularPages }}
-{{ if eq .Type "micro" }}
+    {{ if eq .Type "micro" }}
+        ...
+    {{ end }}
+{{ end }}
+-->
+
+{{ range .RegularPages }}
 <div class="hover-box">
     {{ if .Params.slug }}
         {{ .Scratch.Set "slug" .Params.slug }}	
@@ -23,7 +31,6 @@
     {{ end }}
     <p>{{ .Render "content_only" }}</p>
 </div>
-{{ end }}
 {{ end }}
 
 <!--
