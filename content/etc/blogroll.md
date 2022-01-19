@@ -202,7 +202,14 @@ Intended to be permanently under construction.
 
 ## Music
 
+- [Sputnik Music](https://www.sputnikmusic.com/best/albums/2021/)
+- [last.fm](https://www.last.fm/)
+- [Rate Your Music](https://rateyourmusic.com/)
+
+### Labels
+
 - [Blackesteverblack](http://blackesteverblack.com/)
+- [Drag City](https://www.dragcity.com/)
 
 ## Art
 
