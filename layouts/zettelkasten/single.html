@@ -1,54 +1,4 @@
-{{ .Scratch.Set "nofollow" "true" }}
-{{ partialCached "header.html" . }}
-<!-- See: https://harmstyler.me/posts/2019/how-to-pass-variables-to-a-partial-template-in-hugo/-->
-
-<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
-<script>
-function fadeOut(el) {
-  el.style.opacity = 1;
-
-  var last = +new Date();
-  var tick = function() {
-    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
-    last = +new Date();
-    // console.log(el.style.opacity);
-
-    if (el.style.opacity > 0) {
-      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
-    } else {
-      el.style.display='none';
-    }
-  };
-
-  tick();
-}
-
-function ready(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
-         el = document.getElementById('loadingMask');
-         fadeOut(el);
-        var elements = document.querySelectorAll("img");
-        Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("alt")) {
-                const caption = document.createElement('figcaption');
-                var node = document.createTextNode(el.getAttribute("alt"));
-                caption.appendChild(node);
-                const wrapper = document.createElement('figure');
-                wrapper.className = 'image';
-                el.parentNode.insertBefore(wrapper, el);
-                el.parentNode.removeChild(el);
-                wrapper.appendChild(el);
-                wrapper.appendChild(caption);
-            }
-        });
-
-    } else {
-        document.addEventListener('DOMContentLoaded', fn);
-    }
-}
-window.onload = ready;
-</script>
-
+{{ define "main" }}
 
 <!-- Enable inline math; do before loading mathjax -->
 <script type="text/x-mathjax-config">
@@ -64,29 +14,54 @@ window.onload = ready;
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
-<h1 style="border: none">{{ replace .File.BaseFileName "_" " "}}</h1>
-
-<!-- Because the toc does not fall within the content with this hard-coded approach
-  I need to set the margins explicitly to that of the {{ .Content }} -->
-<!-- TODO Why isn't that taken care of with the 'content' style above? -->
-  <!-- Only show TOC when it is not empty -->
-  {{ with .TableOfContents}}
-    <!-- the variable is not an empty navigation -->
-    {{ if ne . "<nav id=\"TableOfContents\"></nav>" }}
-        <div id="toc" style="margin-left: 7.5rem; margin-right: 7.5rem">
-        {{ . }}
-        </div>
-    {{ end }}
-  {{ end }}
 
 <div class="content">
+  <article class="h-entry">
+    {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
+    <div class="e-content">
 
-  <div class="e-content">
-  {{ .Content }}
+
+    <!-- Because the toc does not fall within the content with this hard-coded approach
+      I need to set the margins explicitly to that of the {{ .Content }} -->
+    <!-- TODO Why isn't that taken care of with the 'content' style above? -->
+      <!-- Only show TOC when it is not empty -->
+      <!--
+      {{ with .TableOfContents}}
+        {{ if ne . "<nav id=\"TableOfContents\"></nav>" }}
+            <div id="toc" style="margin-left: 7.5rem; margin-right: 7.5rem">
+            {{ . }}
+            </div>
+        {{ end }}
+      {{ end }}
+      -->
+      {{ .Content }}
   </div>
-  <hr>
-  <br>
   </article>
+</div> <!-- end of content -->
+
+  <hr>
+
+  <div>
+
+  <aside>
+      <i class="fas fa-clock" style="font-size:24px;"></i>
+      {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read
+  </aside>
+
+  <aside>
+      <i class="fa fa-home" style="font-size:24px"></i>
+      <!-- Author is hard coded here; no font matter with author available -->
+      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/edwin-wenink">Edwin Wenink</a>
+  </a></aside>
+  <aside> 
+    <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
+    {{ $github := .Site.Params.github}}
+    {{ with .GitInfo }}
+        <a href="{{$github}}commit/{{ .Hash }}" target="_blank">{{.AbbreviatedHash}} {{.Subject}}</a>
+    {{ end }}
+  </aside>
+  </div>
+  <br>
 
   <div>
     <!-- TODO Consolidate in partial -->
@@ -94,11 +69,25 @@ window.onload = ready;
 	{{$zettels := ($.Site.GetPage "section" "zettelkasten").Pages.ByPublishDate.Reverse}}
 	<!--Grab the most recent-->
 
+    {{ with .NextInSection }}
+    <p><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a> <-- Next</p>
+    {{ end }}
+
+    {{ with .PrevInSection }}
+    <p><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a> <-- Previous</p>
+    {{ end }}
+
 	{{ range first 1 (shuffle $zettels)  }}
-    <p><a href="{{ .Permalink }}">Surprise me</a> <-- Random</p>
+    <p><a href="{{ .Permalink }}">Surprise me</a> <-- Random Zettel</p>
     {{ end }}
   </div>
 
 </div>
 
-{{ partial "footer.html" . }}
+{{ partial "webmentions.html" . }}
+
+{{ partial "post-comments" . }}
+
+{{ partial "contribute-post" . }}
+
+{{ end }}

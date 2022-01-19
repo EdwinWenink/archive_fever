@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div>
+  <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <p>{{ len .Pages }} entries:</p>
+    <ul>
+    {{ range .Pages }}
+        <li><a href="{{ .Page.Permalink }}">{{ lower .Page.File.BaseFileName }}</a></li>
+    {{ end }}
+    </ul>
+  </div>
+{{ end }}
+
+

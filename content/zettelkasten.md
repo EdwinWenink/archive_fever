@@ -1,4 +1,0 @@
----
-title: "Zettelkasten"
-type: "zettels"
----
