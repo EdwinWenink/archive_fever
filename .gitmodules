@@ -1,6 +1,6 @@
 [submodule "Notes"]
 	path = Notes
-	url = https://github.com/EdwinWenink/Notes
+	url = git@github.com:EdwinWenink/Notes.git
 [submodule "content/zettelkasten"]
 	path = content/zettelkasten
-	url = https://github.com/EdwinWenink/Notes
+	url = git@github.com:EdwinWenink/Notes.git
