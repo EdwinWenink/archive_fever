@@ -68,6 +68,10 @@
 
   <div>
   <aside>
+      <i class="fas fa-clock" style="font-size:24px;"></i>
+      {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read
+  </aside>
+  <aside>
       <i class="fa fa-home" style="font-size:24px"></i>
       <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
   </a></aside>
