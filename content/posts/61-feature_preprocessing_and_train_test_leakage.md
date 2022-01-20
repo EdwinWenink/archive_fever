@@ -4,7 +4,7 @@ date: 2021-12-10T12:39:02+01:00
 draft: false
 author: "Edwin Wenink"
 tags: ['machine learning', 'python','programming']
-series: 'machine learning'
+series: 'Machine learning'
 ---
 
 Feature selection should be done *after* train-test splitting to avoid leaking information from the test set into the training pipeline.
