@@ -1,3 +1,8 @@
+{{ $link := .Destination }}
+<!-- Dirty hack for images in my Zettelkasten ... -->
+{{ if eq .Page.Section "zettelkasten" }}
+    {{ $link = printf "%s%s" "../" $link  }}
+{{ end }}
 <p class="md__image">
-  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+  <img src="{{ $link | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
 </p>

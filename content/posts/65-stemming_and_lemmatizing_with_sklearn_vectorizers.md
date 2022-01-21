@@ -4,7 +4,7 @@ date: 2022-01-21T19:21:21+01:00
 draft: false
 author: "Edwin Wenink"
 series: 'programming'
-tags: ['programming', 'sklearn', 'NLP']
+tags: ['programming', 'sklearn', 'NLP', 'IR']
 tex: true
 ---
 
