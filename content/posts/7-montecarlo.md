@@ -5,12 +5,8 @@ date: 2018-05-15
 draft: false
 tags: [probability,AI,Monte Carlo,programming]
 series: 'Programming'
+tex: true
 ---
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-{{% mathjax %}}
 
 I came across Monte Carlo sampling in a class on Bayesian statistics, where a Markov Chain Monte Carlo (MCMC) sampler was used to approximate probability distributions that were otherwise hard to calculate due to nasty integrals.
 This posts illustrates the basic idea of Monte Carlo sampling, by using it to approximate the number $\pi$.

@@ -4,10 +4,8 @@ date: 2021-06-13T21:35:29+02:00
 draft: false
 tags: ['Gaussian', 'Bayes', 'probability', 'inference']
 author: "Edwin Wenink"
+tex: true
 ---
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 The following note helps me remember the closed-form solution for Bayesian inference using Gaussian distributions, which comes in handy very often.
 See Bishop p.98 (2.141 and 2.142) for closed-form parameter updates for univariate Bayesian inference using a Gaussian likelihood with conjugate Gaussian prior.

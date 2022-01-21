@@ -4,10 +4,8 @@ date: 2020-09-01T12:12:39+02:00
 draft: false
 tags: [Bayes, probability, MLE, MAP]
 author: Edwin Wenink
+tex: true
 ---
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 
 <small>15/10/2020 Extended with an explanation of MAP; minor fixes and changed the title</small>
 

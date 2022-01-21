@@ -4,12 +4,8 @@ title: "Complexity 101 and the P-NP question"
 date: 2018-04-12
 draft: false 
 tags: ["complexity"]
+tex: true
 ---
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-{{% mathjax %}}
 
 Anyone working with computer algorithms sometimes has to reflect on the question what the complexity of that algorithm is. Last week I tortured my poor laptop by letting it crunch away the whole night on a planning problem using A\* with the $h_{max}$ heuristic, only to find that upon waking up 1) the cpu heat was quite critical and 2) that the search space exploded and the program did not terminate. In situations like this is nice to have an estimate about whether it even makes sense to wait for termination (and no it did not, the $h_{max}$ heuristic performed very poorly).
 
