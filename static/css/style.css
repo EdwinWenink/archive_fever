@@ -94,8 +94,8 @@ h2 {
     margin-bottom: 0.4em;
 }
 
-h3, h4, h5, h6 {
-    margin: 0.4em;
+h2, h3, h4, h5, h6 {
+    margin: 0.4em 0em 0.4em 0em;
 }
 
 /* Markdown-like headers */
@@ -443,7 +443,7 @@ input:checked + .slider:before {
 
 /* reset */
 * {
-	margin: 0;
+	margin-left: 0; /* was margin: 0; before */
 	padding: 0;
 }
 
@@ -537,16 +537,18 @@ ul,ol {
  * but that also creates margin after the last element of sub lists
  * Is div needed here? I didn't test this.
  */
-ul + p, ol + p, ul + div, ol + div,
-ul + h3, ol + h3, ul + h4, ol + h4,
-ul + h5, ol + h5, ul + h6, ol + h6{
+ul + *, ol + * {
     margin-top: 1em;
 }
 
-li {
+ul, ol {
 	line-height: 1.5em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
+    list-style: "- ";
+}
+
+ul > li > ul, ul > li > ol, ol > li > ol, ol > li > ul {
     list-style: "+ ";
 }
 
