@@ -31,10 +31,13 @@ Intended to be permanently under construction.
 
 <br>
 
-## Academic blogs (not restricted to one specific topic)
+## Insightful Blogs
 
 - I absolutely adore everything about [Matt Might's blog](http://matt.might.net/#blog)
 	* He accurately [describes my ideal approach to blogging](http://matt.might.net/articles/how-to-blog-as-an-academic/)
+- [Nadia Eghbal](https://nadia.xyz/)
+    * Absolute gem. Also see the [kickscondor Q&A](https://www.kickscondor.com/nadia-eghbal/)
+    * Old url: https://nadiaeghbal.com/
 
 ## The Web (knowledge, archive, memory)
 
@@ -47,6 +50,11 @@ Intended to be permanently under construction.
 - [The Web's Grain](https://frankchimero.com/writing/the-webs-grain/)
 - [Books about the Internet](https://en.wikipedia.org/wiki/Category:Books_about_the_Internet)
 - [Internet Invention](https://en.wikipedia.org/wiki/Internet_Invention)
+
+## Wiki's
+
+- [The Jolly Contrarian](https://jollycontrarian.com/index.php?title=Main_Page) (very witty!)
+- [philosopher.life](https://philosopher.life) (a unique personal wiki)
 
 ## Indieweb and Federated Networks
 
@@ -61,6 +69,7 @@ Intended to be permanently under construction.
 ## Tiny directories, webrings and blogrolls
 
 - [href.cool: web directory by kicks](https://href.cool/about)
+- [kick condor](https://www.kickscondor.com/)
 - [https://neocities.org/browse](https://neocities.org/browse)
 - [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
 	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
@@ -78,6 +87,7 @@ Intended to be permanently under construction.
 	- [XXIIVV wiki](https://wiki.xxiivv.com/site/home.html)
 	- [Very interesting design of the webring](https://github.com/XXIIVV/webring)
 - [daywreckers](http://daywreckers.com/)
+- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 
 ## Vim 
 
@@ -137,7 +147,7 @@ Intended to be permanently under construction.
 ## Digital Garden
 
 - [Maggie Appleton - A Brief History of Digital Gardens](https://maggieappleton.com/garden-history)
-- [Joel Hook - My blog is a digital gardsen, not a blog](https://joelhooks.com/digital-garden)
+- [Joel Hook - My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
 - [Tom Critchlow - Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden/)
     * [Chain](https://tomcritchlow.com/blogchains/digital-gardens/)
     - [On Digital Streams, Campfires and Gardens](https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/)
@@ -149,6 +159,7 @@ Intended to be permanently under construction.
 - [gwern.net](https://www.gwern.net/)
     * This site is fascinating and a technical feat in itself. Note to self: look here more often!
     * [uses confidence tags to indicate epistemic status](https://www.gwern.net/About#confidence-tags)
+- [coolguy.website manifesto](https://coolguy.website/introduction/)
 
 ## 'Academic' tips, approaches 
 
@@ -272,11 +283,7 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 Links I do not know yet how to categorize. 
 Perhaps that's the beauty of it.
 
-- [philosopher.life: a unique personal wiki](https://philosopher.life)
-- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 - [Teaching in Minecraft](https://blog.haschek.at/2019/teaching-in-minecraft.html)
-- [Nadia Eghbal](https://nadiaeghbal.com/): the only reason this is here is because I don't know how to categorize it
-	* But absolutely love the minimal design
 - [Ribbonfarm: constructions in magical thinking](https://www.ribbonfarm.com/)
 - [Paul Graham's site](http://www.paulgraham.com/articles.html): idem, still to categorize
 
@@ -285,7 +292,7 @@ Perhaps that's the beauty of it.
 Not to be confused with miscellaneous.
 These are *really quite random*.
 
-- [Q: What is the connection between goats and Justin Bieber?](https://www.geitjesenbieber.xyz) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
+- [Q: What is the connection between goats and Justin Bieber?](https://quirky-einstein-62babb.netlify.app/) <br> A: My friend [Joran](https://www.joranwelling.nl/) apparently promised to make a website about them.
 - [Hyper Text Coffee Pot Control Protocol](https://tools.ietf.org/html/rfc2324)
 - [Cult of the party parrot](https://cultofthepartyparrot.com/)
 - [GPL license](http://giant-penis-license.org/)
