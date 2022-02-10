@@ -150,13 +150,47 @@ The only thing we then have to do is filter out matches that have neither of the
 The regex with two optional groups, both at the beginning and the end, could look like this:
 
 ```
-(?:(?P<verlenging>verlengt|verlenging).{0,50})?(?P<TBS1>TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
+(?:(?P<verlenging>verlengt|verlenging).{0,50})?(TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
+```
+
+
+Test case 1: "gelast de terbeschikkingstelling van verdachte, met verpleging van overheidswege" (ECLI:NL:RBZWB:2020:6268).
+
+```
+match: terbeschikkingstelling van verdachte, met verpleging
+group 2: terbeschikkingstelling
+group 3: verpleging
+```
+
+Test case 2: "gelast dat de verdachte, voor de feiten 2, 3 en 4, ter beschikking wordt gesteld en stelt daarbij de volgende, het gedrag van de ter beschikking gestelde betreffende, voorwaarden" (ECLI:NL:RBLIM:2020:9778).
+
+```
+match: ter beschikking wordt gesteld en stelt daarbij de volgende, het gedrag van de ter beschikking gestelde betreffende, vooraarden
+group 2: ter beschikking wordt gesteld
+group 3: voorwaarden
+```
+
+Test case 3: "De rechtbank verlengt de termijn van de terbeschikkingstelling van veroordeelde met één jaar" (ECLI:NL:RBNNE:2020:4558).
+
+```
+match: verlengt de termijn van de terbeschikkingstelling van veroordeelde met één jaar
+group 1: verlengt
+group 2: terbeschikkingstelling
+```
+
+Test case 4: "verlengt de termijn gedurende welke [verdachte] ter beschikking is gesteld met verpleging van overheidswege met één jaar" (ECLI:NL:RBLIM:2020:10468).
+
+```
+match: verlengt de termijn gedurende welke [verdachte] ter beschikking is gesteld met verpleging
+group 1: verlengt
+group 2: ter beschikking is gesteld
+group 3: verpleging
 ```
 
 Some final notes: 
 
 - In this setup, not making `(voorwaarden|verpleging)?` optional leads to large inefficiency if the group is not in the string. It will cause the lookahead to be repeated a lot in an attempt to still find the group.
-- Downstream we may opt to reject the match if neither of the optional groups is matched, because this may be a false positive. The upside is that this gives flexibility in your application without having to redesign the regex.
+- Downstream we may opt to reject the match if neither of the optional groups is matched, because this may be a false positive. The upside is that this gives flexibility in your application without having to redesign the regex. As we see in the last test case, it may also be that *both* groups are present as we see in test case 4.
 - There are other edge cases to catch for detecting TBS. I only consider a few test cases to keep things simple.
 
 Please let me know if you see points where I can improve (e.g. in terms of optimization)!
