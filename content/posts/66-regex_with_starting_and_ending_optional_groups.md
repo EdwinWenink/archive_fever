@@ -3,7 +3,8 @@ title: "Regular expressions with optional starting or ending groups"
 date: 2022-02-10T10:29:34+01:00
 draft: false
 author: "Edwin Wenink"
-tags: ['regex', 'programming', 'NLP']
+tags: ['regex', 'programming', 'NLP', 'law']
+series: ['programming']
 ---
 
 I'm currently working on a classifier that can extract punishments from Dutch criminal law decisions.
