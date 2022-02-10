@@ -12,7 +12,12 @@ One of those punishments is called "TBS", which is assigned in severe cases wher
 There's two types of TBS in the Netherlands: with "verpleging" (mandatory psychiatric treatment) and with "voorwaarden" (several conditions).
 We want to match "terbeschikkingstelling" (TBS), but if the type of TBS is specified, we want to capture that too.
 
-We want to match the following test strings:
+These TBS judgments can be found in free natural language texts, but because lawyers and judges tend to use standard formulations with legal jargon -- although... "standard"... who really talks like that? -- we may try to extract information from case decisions using regular expressions. 
+Regular expressions are essentially a powerful way to do pattern matching on text.
+
+## Optional group after greedy quantifier
+
+To start, we want to match the following test strings:
 
 - "de maatregel van terbeschikkingstelling wordt aan de verdachte opgelegd."
 - "de maatregel van terbeschikkingstelling met voorwaarden te gelasten."
@@ -150,9 +155,8 @@ The only thing we then have to do is filter out matches that have neither of the
 The regex with two optional groups, both at the beginning and the end, could look like this:
 
 ```
-(?:(?P<verlenging>verlengt|verlenging).{0,50})?(TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
+(?:(verlengt|verlenging).{0,50})?(TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
 ```
-
 
 Test case 1: "gelast de terbeschikkingstelling van verdachte, met verpleging van overheidswege" (ECLI:NL:RBZWB:2020:6268).
 
