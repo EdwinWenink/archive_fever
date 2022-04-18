@@ -13,7 +13,7 @@ One of those punishments is called "TBS", which is assigned in severe cases wher
 There's two types of TBS in the Netherlands: with "verpleging" (mandatory psychiatric treatment) and with "voorwaarden" (several conditions).
 We want to match "terbeschikkingstelling" (TBS), but if the type of TBS is specified, we want to capture that too.
 
-These TBS judgments can be found in free natural language texts, but because lawyers and judges tend to use standard formulations with legal jargon -- although... "standard"... who really talks like that? -- we may try to extract information from case decisions using regular expressions. 
+These TBS judgments occur in free natural language texts, but because lawyers and judges tend to use standard formulations with legal jargon -- although... "standard"... who really talks like that? -- we may try to extract information from case decisions using regular expressions. 
 Regular expressions are essentially a powerful way to do pattern matching on text.
 
 ## Optional group after greedy quantifier

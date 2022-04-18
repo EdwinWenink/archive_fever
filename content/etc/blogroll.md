@@ -38,6 +38,9 @@ Intended to be permanently under construction.
 - [Nadia Eghbal](https://nadia.xyz/)
     * Absolute gem. Also see the [kickscondor Q&A](https://www.kickscondor.com/nadia-eghbal/)
     * Old url: https://nadiaeghbal.com/
+- [Derek Sivers](https://sive.rs/)
+    * For example this post on [slow thinking](https://sive.rs/slow)
+
 
 ## The Web (knowledge, archive, memory)
 
@@ -70,6 +73,7 @@ Intended to be permanently under construction.
 
 - [href.cool: web directory by kicks](https://href.cool/about)
 - [kick condor](https://www.kickscondor.com/)
+- [Gossip's Web the directory of handmade webpages](https://gossipsweb.net/)
 - [https://neocities.org/browse](https://neocities.org/browse)
 - [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
 	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
