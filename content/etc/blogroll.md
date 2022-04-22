@@ -74,6 +74,7 @@ Intended to be permanently under construction.
 - [href.cool: web directory by kicks](https://href.cool/about)
 - [kick condor](https://www.kickscondor.com/)
 - [Gossip's Web the directory of handmade webpages](https://gossipsweb.net/)
+- [Ye Old Blogroll](https://blogroll.org/)
 - [https://neocities.org/browse](https://neocities.org/browse)
 - [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
 	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
