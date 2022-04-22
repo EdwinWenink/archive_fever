@@ -236,6 +236,10 @@ Intended to be permanently under construction.
 - [NULLCTRL glitch art]( https://tilde.town/~dustin/projects/nullctrl/)
 - [Dem Bones: daily generated skeletons](https://smidgeo.com/bots/dem-bones/)
 
+## Literature
+
+- [Bert Wenink](https://www.bertwenink.nl/) (that's my dad) wrote amongst other things a historical novel that describes the Atjeh war in Indonesia, The Netherland's longest and bloodiest colonial war.
+
 ## Minimalist / nostalgic / retro website design
 
 - [Make a website with only pandoc and make]( https://computableverse.com/blog/create-website-using-pandoc-make-file )
