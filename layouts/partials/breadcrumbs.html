@@ -23,7 +23,7 @@
 	<!-- Navigation Pages -->
     {{ range .Site.Menus.main }}
         {{ if ne $url .URL }}
-            <a href="{{ .URL }}">{{ .Name }}</a>&nbsp;&nbsp;
+        <a href="{{ .URL }}"{{if eq .Page nil}} target="_blank"{{end}}>{{ .Name }}</a>&nbsp;&nbsp;
         {{ end }}
     {{ end }}
 
