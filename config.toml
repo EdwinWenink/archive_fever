@@ -22,3 +22,10 @@ paginate = 5
 	recaptcha_sitekey = "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
 	staticman_api = "http://77.249.145.182:1234/v2/entry/EdwinWenink/personal_website/master/comments"
     github = "https://github.com/EdwinWenink/personal_website/"
+
+[menu]
+[[menu.main]]
+    identifier = 'cv'
+    name = 'cv'
+    url = 'https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf'
+    target = "_blank"
