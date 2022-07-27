@@ -3,9 +3,11 @@
 <div>
    <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <ul>
     {{ range .Pages }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
     {{ end }}
+    </ul>
 </div>
 
 {{ end }}

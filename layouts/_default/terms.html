@@ -3,9 +3,11 @@
 <div>
    <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <ul>
     {{ range sort .Data.Terms }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
     {{ end }}
+    </ul>
 </div>
 
 {{ end }}

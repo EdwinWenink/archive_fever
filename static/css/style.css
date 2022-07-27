@@ -541,7 +541,7 @@ ul + *, ol + * {
     margin-top: 1em;
 }
 
-ul, ol, li {
+ul, ol {
 	line-height: 1.5em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
