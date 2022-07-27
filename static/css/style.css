@@ -541,14 +541,14 @@ ul + *, ol + * {
     margin-top: 1em;
 }
 
-ul, ol {
+ul, ol, li {
 	line-height: 1.5em;
 	margin-left: 1em;
 	list-style-type: lower-greek; 
     list-style: "- ";
 }
 
-li, ul > li > ul, ul > li > ol, ol > li > ol, ol > li > ul {
+ul > li > ul, ul > li > ol, ol > li > ol, ol > li > ul {
     list-style: "+ ";
 }
 
