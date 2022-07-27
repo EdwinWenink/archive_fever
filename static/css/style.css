@@ -548,7 +548,7 @@ ul, ol {
     list-style: "- ";
 }
 
-ul > li > ul, ul > li > ol, ol > li > ol, ol > li > ul {
+li, ul > li > ul, ul > li > ol, ol > li > ol, ol > li > ul {
     list-style: "+ ";
 }
 
