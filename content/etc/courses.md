@@ -121,3 +121,7 @@ Wrote an article on Jacques Derrida and Martin Heidegger, as well as a PhD propo
     <li>Graduate Intern at TNO</li> 
 </ul>
 
+<h3><b>Thesis</b></h3>
+<p>
+I wrote a thesis researching explainable recommendation of case law using paragraph embeddings and counterfactual explanations.
+</p>
