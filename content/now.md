@@ -6,22 +6,31 @@ menu: "main"
 tags: ['now']
 ---
 
-#### Location
 
-- Living in Nijmegen, the Netherlands
+<div style="text-align:center;">
 
-#### Studies
+🏠 [Nijmegen, the Netherlands](https://goo.gl/maps/VpTtZ7fhVdTez5pH8)
 
-- Doing a graduation project at TNO on XAI 
-- Finished internship at NS on ethical AI
-- Working towards a master's degree in artificial intelligence (AI)
-- Graduated a philosophy research master
+📖 Graduated from a master in AI and research master in philosophy
 
-#### Career
+🦩 Took some time off to visit festivals, friends, and be outside a lot
 
-- Figuring out how to combine philosophy and AI in a career
+🧑‍💼 But now *open to work* [[cv]](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
 
-#### Pastime 
+Fields I'm interested in:
 
-- Currently reading: "Breakfast of Champions" by Kurt Vonnegut.
-- Currently gaming: got quite dedicated to the space sim game Elite Dangerous during lockdown
+<ul style="list-style:none;">
+<li> Data science & data analytics </li>
+<li> ML & NLP </li>
+<li> Responsible AI </li>
+<li> Hybrid AI </li>
+<li> AI ethics </li>
+</ul>
+
+🖥️ Latest major website update: I made the radical step to make all my private notes public on this domain.
+This was scary.
+Please let me know if you find anything that should not be public!
+
+✨ Getting energy again to pick up some projects and writing for this domain. 
+
+</div>
