@@ -95,6 +95,9 @@ Wrote an article on Jacques Derrida and Martin Heidegger, as well as a PhD propo
 - ICT en Samenleving
 - Big Data
 
+### AI Bachelor | Thesis
+
+... on query by navigation over legal documents using Formal Concept Analysis.
 
 ## Master AI: Intelligent Technology
 
