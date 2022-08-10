@@ -20,6 +20,8 @@
 
       {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 
+    <!-- Condition in which to add the addendum -->
+    {{ if or (or (ne .Params.author "Edwin Wenink") .Params.authors) .Params.series }}
     <div class="addendum">
         <!-- Guest contribution -->
         {{ if and (ne .Params.author "Edwin Wenink") (ne .Params.author nil) }}
@@ -63,6 +65,7 @@
         </p>
         {{ end }}
     </div>
+    {{ end }}
 
   <!-- Table of contents -->
   {{ if .Params.toc }}
