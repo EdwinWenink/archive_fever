@@ -23,7 +23,7 @@ For these courses I have included some indication of the practical work involved
 - Intelligent Systems in Medical Imaging 
     * Final project: U-Net for Segmenting Stroma and Tumor Infiltrating Lymphocytes in Breast Cancer Images
 - Bayesian Networks
-    * Project 1: Manually design from scratch of a Bayesian network (DAG) that models wilderness areas in a nature reserve
+    * Project 1: Manual design from scratch of a Bayesian network (DAG) that models wilderness areas in a nature reserve
     * Project 2: Learn the Bayesian network structure on the same data automatically  
 - Information Retrieval
     * Project: Promoting diversity in search results by reranking on latent subtopics using LDA
