@@ -64,7 +64,7 @@ Depending on the type of post you plan on writing, here are some sensible defaul
 
 By default a maximum of 1000 words is appropriate for a blog post. 
 This guideline helps you focus on your main point and is particularly appropriate for posts that explain a single idea, be it technical or philosophical. 
-Many people read blogs from their phone and they will likely be distracted when reading longer posts, or reading is simply not comfortable enough for long reads.
+Many people read blogs from their phone and they will likely be distracted when reading longer posts.
 
 Examples: 
 
@@ -93,16 +93,22 @@ So far I find that the longer posts I wrote are long because they ...
 	* Require references
 	* Headers and subheaders
 	* More classical structure, e.g. introduction, body, conclusion
-	* Examples:
-	- [Deepfakes and democracy: a case for technological mediation ](https://www.edwinwenink.xyz/posts/37-deepfakes/)
-	* [Book review: Van der Heiden - The Truth (and Untruth) of Language ](https://www.edwinwenink.xyz/posts/36-review_vanderheiden2010/)
-	* [Friendship, death, and writing in Michel de Montaigne's Essays ](https://www.edwinwenink.xyz/posts/34-friendship_montaigne/)
-- ... explain not a single idea but a project
+
+Examples:
+
+- [Deepfakes and democracy: a case for technological mediation ](https://www.edwinwenink.xyz/posts/37-deepfakes/)
+- [Book review: Van der Heiden - The Truth (and Untruth) of Language ](https://www.edwinwenink.xyz/posts/36-review_vanderheiden2010/)
+- [Friendship, death, and writing in Michel de Montaigne's Essays ](https://www.edwinwenink.xyz/posts/34-friendship_montaigne/)
+
+
+[-](-.md) ... explain not a single idea but a project
 	* larger size results from explaining and contextualizing various separate steps
 	* as well as from providing code blocks
-	* Examples:
-	* [Building a Note-taking System with Vanilla Vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/)
-	* [Custom Note Tagging System with Ctags and Vim](https://www.edwinwenink.xyz/posts/43-notes_tagging/)
+
+Examples:
+
+- [Building a Note-taking System with Vanilla Vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/)
+- [Custom Note Tagging System with Ctags and Vim](https://www.edwinwenink.xyz/posts/43-notes_tagging/)
 
 ### Other
 
@@ -110,7 +116,7 @@ When you find you need more than let's say 4000 words, your idea is probably too
 That's not necessarily an issue: try to split up your idea into several smaller ideas. 
 You could write a post on each separate part and develop a small series of posts. 
 Of course, when you encounter this situation there is a good chance it is caused by lack of focus. 
-Requirements for publishing a blog series will be likely be stricter for this reason.
+Requirements for publishing a blog series will likely be stricter for this reason.
 
 ## Writing tips
 
@@ -119,6 +125,8 @@ Requirements for publishing a blog series will be likely be stricter for this re
 - Alternate longer and shorter sentences
 - Do not chain endless subordinate clauses
 - Check your "speling" and "grammer" and read your own work carefully
+
+This [index note pointing to writing principles](/zettelkasten/index_writing_principles) may be useful.
 
 ## Formal details for submission
 
