@@ -378,6 +378,99 @@ input:checked + .slider:before {
 	text-align: left;
 }
 
+/* TESTING ZONE with Tufte style Sidenotes */
+/*
+<label for="sidenote-{{.Page.File.UniqueID}}-{{ $sidenoteDomIdSuffix }}" class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id="sidenote-{{.Page.File.UniqueID}}-{{ $sidenoteDomIdSuffix }}" class="margin-toggle"/>
+<span class="sidenote">{{ .Inner }}</span>
+*/
+/*
+ * Idea behind my footnotes: show them by default on desktop.
+ * On small screens, instead show a checkbox with the side note counter and hide the original side note.
+ * Clicking the checkbox opens the side note below the current line.
+*/
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    padding-right: 1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+    transform: translate(-0.5rem, -0.5rem);
+    margin-left: -0.5rem;
+}
+
+.sidenote-number:after,
+.sidenote:before {
+    position: relative;
+    vertical-align: baseline;
+}
+
+.sidenote-number:after {
+    content: "^" counter(sidenote-counter);
+    top: -0.5rem;
+}
+
+.sidenote:before {
+    content: "[" counter(sidenote-counter) "]:"; /* WHY SPACE? */
+    font-size: 1rem;
+}
+
+label.sidenote-number {
+    display: inline;
+}
+
+/* Only display number for side notes, not for margin notes */
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+/* I only want the toggle to show on mobile devices.
+ * And only the number to show on desktop.*/
+input.margin-toggle {
+    display: none;
+}
+
+/* Adjusting checkbox styling */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  border: 0.15em solid currentColor;
+  /*transform: translate(-1.75em, -0rem) scale(0.9);*/
+  transform: scale(0.9);
+}
+
+input[type="checkbox"]::before {
+  transition: 120ms transform ease-in-out;
+  width: 1em;
+  height: 1em;
+  content: counter(sidenote-counter);
+  padding: 0.1rem;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "X";
+}
+
+
+
 @media all {
 	html {
 		font-size: 18px;
@@ -408,6 +501,37 @@ input:checked + .slider:before {
 	.author-portret {
 		max-width: 111px;
 	}
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    /* I only want the toggle to show on mobile devices */
+    input.margin-toggle {
+        display: inline;
+    }
+
+    label.sidenote-number {
+        /*display: none;*/
+        /*Display is none prevents the sidenote number from incrementing!*/
+        visibility: hidden;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+        content: "X";
+    }
+
+
 }
 @media all and (max-width:580px){
 	html {
