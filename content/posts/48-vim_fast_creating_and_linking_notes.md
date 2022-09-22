@@ -101,14 +101,15 @@ function! CtrlPOpenFunc(action, line)
    if a:action =~ '^h$'    
       " Get the filename
       let filename = fnameescape(fnamemodify(a:line, ':t'))
-	  let filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\d\+-//'))
+      let l:filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\(^\d\+-\)\?\(.*\)\..\{1,3\}/\2/'))
+      let l:filename_wo_timestamp = substitute(l:filename_wo_timestamp, "_", " ", "g")
 
       " Close CtrlP
       call ctrlp#exit()
       call ctrlp#mrufiles#add(filename)
 
       " Insert the markdown link to the file in the current buffer
-	  let mdlink = "[ ".filename_wo_timestamp." ]( ".filename." )"
+	  let mdlink = "[".filename_wo_timestamp."]( ".filename." )"
       put=mdlink
   else    
       " Use CtrlP's default file opening function
@@ -125,8 +126,12 @@ let g:ctrlp_open_func = {
 I just love it. 
 Irregardless of whether I will use timestamps in my filenames, this will greatly speed up interlinking notes in my Zettelkasten.
 
-EDIT 09/02/2021: a previous version of the post did not escape the `+` regex modifier, which is necessary in the vim regex dialect. As a result, the timestamp was not correctly removed in the created link descriptions. 
+EDIT 09/02/2021: a previous version of the post did not escape the `+` regex modifier, which is necessary in the vim regex dialect.
+As a result, the timestamp was not correctly removed in the created link descriptions. 
 The screencast below uses the old incorrect version.
+
+EDIT 22/09/2022: I updated the regular expression and additionally remove underscores from file paths.
+The behavior of the regex is as follows: `20210340-note.md` becomes `[note]( 20210340-note.md )`; `note.md` becomes `[note]( note.md )` and `index_notes.md` becomes `[index notes]( index_notes.md )`.
 
 ## Screencast
 
