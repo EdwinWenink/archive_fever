@@ -42,58 +42,6 @@ Intended to be permanently under construction.
     * For example this post on [slow thinking](https://sive.rs/slow)
 
 
-## The Web (knowledge, archive, memory)
-
-- [The Web of Alexandria](http://worrydream.com/TheWebOfAlexandria/2.html)
-- [As We May Think - Vannevar Bush, 1945](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
-- [The Cobweb - Can the Internet be archived?](https://www.newyorker.com/magazine/2015/01/26/cobweb) 
-- [Internet with a human face](https://idlewords.com/talks/internet_with_a_human_face.htm)
-	* "I've come to believe that a lot of what's wrong with the Internet has to do with memory. The Internet somehow contrives to remember too much and too little at the same time, and it maps poorly on our concepts of how memory should work."
-	* "THE WEB HAS A CENTER"
-- [The Web's Grain](https://frankchimero.com/writing/the-webs-grain/)
-- [Books about the Internet](https://en.wikipedia.org/wiki/Category:Books_about_the_Internet)
-- [Internet Invention](https://en.wikipedia.org/wiki/Internet_Invention)
-
-## Wiki's
-
-- [The Jolly Contrarian](https://jollycontrarian.com/index.php?title=Main_Page) (very witty!)
-- [philosopher.life](https://philosopher.life) (a unique personal wiki)
-
-## Indieweb and Federated Networks
-
-- [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
-- [Indiewebify.me](https://indiewebify.me/)
-- [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
-- [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
-- [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
-- [How to Post on Indieweb.xyz](https://indieweb.xyz/howto/en)
-- [TODO Clientside webmentions](https://www.swyx.io/clientside-webmentions/)
-
-## Tiny directories, webrings and blogrolls
-
-- [href.cool: web directory by kicks](https://href.cool/about)
-- [kick condor](https://www.kickscondor.com/)
-- [Gossip's Web the directory of handmade webpages](https://gossipsweb.net/)
-- [Ye Old Blogroll](https://blogroll.org/)
-- [https://neocities.org/browse](https://neocities.org/browse)
-- [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
-	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
-- [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
-- [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
-- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
-- [collection of tilde communities](https://tildeverse.org/)
-- [https://fingers.today/](https://fingers.today/)
-- [Wiby: search engine for classic websites](https://wiby.me/)
-- [You can use GitHub for tiny directories - awesome!](https://github.com/sindresorhus/awesome)
-- [Cat-v.org](http://cat-v.org/)
-- [Panarchy](https://www.panarchy.org/index.html)
-- [Tiny web directory forum](https://forum.indieseek.xyz/index.php)
-- [XXIIVV webring](https://webring.xxiivv.com/)
-	- [XXIIVV wiki](https://wiki.xxiivv.com/site/home.html)
-	- [Very interesting design of the webring](https://github.com/XXIIVV/webring)
-- [daywreckers](http://daywreckers.com/)
-- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
-
 ## Vim 
 
 - [Overview basic commands](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm)
@@ -112,7 +60,7 @@ Intended to be permanently under construction.
 - [Pandocomatic: pandoc automation](https://github.com/htdebeer/pandocomatic)
 - [Plea for parallel web and book publishing](https://thelocalyarn.com/excursus/secretary/posts/web-books.html)
 
-## Zettelkasten
+## On Zettelkasten
 
 - [Luhmann: Communicating with Slip Boxes](http://luhmann.surge.sh/communicating-with-slip-boxes)
 	* [His archive is being digitalized, see here]( https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11 )
@@ -166,12 +114,63 @@ Intended to be permanently under construction.
     * [uses confidence tags to indicate epistemic status](https://www.gwern.net/About#confidence-tags)
 - [coolguy.website manifesto](https://coolguy.website/introduction/)
 
+- [The Jolly Contrarian](https://jollycontrarian.com/index.php?title=Main_Page) (very witty!)
+- [philosopher.life](https://philosopher.life) (a unique personal wiki)
+- [Strikingloo Digital Garden](https://strikingloo.github.io/wiki/)
+
 ## 'Academic' tips, approaches 
 
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
 - [Richard Hamming - You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 - [Ten Secrets to Giving a Good Scientific Talk](https://www.cgd.ucar.edu/cms/agu/scientific_talk.html)
+
+## The Web (knowledge, archive, memory)
+
+- [The Web of Alexandria](http://worrydream.com/TheWebOfAlexandria/2.html)
+- [As We May Think - Vannevar Bush, 1945](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
+- [The Cobweb - Can the Internet be archived?](https://www.newyorker.com/magazine/2015/01/26/cobweb) 
+- [Internet with a human face](https://idlewords.com/talks/internet_with_a_human_face.htm)
+	* "I've come to believe that a lot of what's wrong with the Internet has to do with memory. The Internet somehow contrives to remember too much and too little at the same time, and it maps poorly on our concepts of how memory should work."
+	* "THE WEB HAS A CENTER"
+- [The Web's Grain](https://frankchimero.com/writing/the-webs-grain/)
+- [Books about the Internet](https://en.wikipedia.org/wiki/Category:Books_about_the_Internet)
+- [Internet Invention](https://en.wikipedia.org/wiki/Internet_Invention)
+
+## Indieweb and Federated Networks
+
+- [An introduction to the IndieWeb](https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/)
+- [Indiewebify.me](https://indiewebify.me/)
+- [Indiewebify your Hugo website](https://www.amitgawande.com/indiewebify-hugo-website/)
+- [Embracing the Indieweb (Hugo)](https://ascraeus.org/embracing-the-indieweb/)
+- [Bridgy](https://brid.gy/) and [fed.brid.gy](https://fed.brid.gy/)
+- [How to Post on Indieweb.xyz](https://indieweb.xyz/howto/en)
+- [TODO Clientside webmentions](https://www.swyx.io/clientside-webmentions/)
+
+## Tiny directories, webrings and blogrolls
+
+- [href.cool: web directory by kicks](https://href.cool/about)
+- [kick condor](https://www.kickscondor.com/)
+- [Gossip's Web the directory of handmade webpages](https://gossipsweb.net/)
+- [Ye Old Blogroll](https://blogroll.org/)
+- [https://neocities.org/browse](https://neocities.org/browse)
+- [Trivium by Leah Neukirchen (mostly tech)](http://leahneukirchen.org/trivium/)
+	* See [her template engine in Ruby](https://github.com/leahneukirchen/trivium)
+- [http://blog.fogus.me/linkage/](http://blog.fogus.me/linkage/)
+- [http://tilde.club/~jonbell/](http://tilde.club/~jonbell/)
+- ["tilde.club is not a social network it is one tiny totally standard unix computer"](http://tilde.club).
+- [collection of tilde communities](https://tildeverse.org/)
+- [https://fingers.today/](https://fingers.today/)
+- [Wiby: search engine for classic websites](https://wiby.me/)
+- [You can use GitHub for tiny directories - awesome!](https://github.com/sindresorhus/awesome)
+- [Cat-v.org](http://cat-v.org/)
+- [Panarchy](https://www.panarchy.org/index.html)
+- [Tiny web directory forum](https://forum.indieseek.xyz/index.php)
+- [XXIIVV webring](https://webring.xxiivv.com/)
+	- [XXIIVV wiki](https://wiki.xxiivv.com/site/home.html)
+	- [Very interesting design of the webring](https://github.com/XXIIVV/webring)
+- [daywreckers](http://daywreckers.com/)
+- [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
 
 ## Machine learning and data science
 
