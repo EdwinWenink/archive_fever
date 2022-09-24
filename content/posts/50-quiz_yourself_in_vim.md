@@ -40,7 +40,7 @@ I just make a quick mapping `\nq` ( '\\' is the default leader key) with the mne
 nnoremap <leader>nq :vimgrep /\*\*Q\*\*/ %<CR>
 ```
 
-It looks a bit awkward because the asterix needs to be escaped in order to not be interpreted as a regex wildcard.
+It looks a bit awkward because the asterix needs to be escaped in order to not be interpreted as a regex wildcard (Update: the plugin version of this code uses a proper escape function for this.).
 This just searches for our pattern in the current file (indicated in Vim with `%`) and does not need our confirmation (`<CR>` "presses" Enter for us). 
 By default, `vimgrep` populates the `quickfix` window with the search results and opens it automatically.
 
