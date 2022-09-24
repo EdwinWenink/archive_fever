@@ -15,17 +15,7 @@ tags: ['now']
 
 🦩 Took some time off to visit festivals, friends, and be outside a lot
 
-🧑‍💼 But now *open to work* [[cv]](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
-
-Fields I'm interested in:
-
-<ul style="list-style:none;">
-<li> Data science & data analytics </li>
-<li> ML & NLP </li>
-<li> Responsible AI </li>
-<li> Hybrid AI </li>
-<li> AI ethics </li>
-</ul>
+💼 Starting as a data scientist @NS
 
 🖥️ Latest major website update: I made the radical step to make all my private notes public on this domain.
 This was scary.
