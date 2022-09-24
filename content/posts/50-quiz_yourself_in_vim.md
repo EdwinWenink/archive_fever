@@ -7,6 +7,10 @@ series: "Workflow"
 author: Edwin Wenink
 ---
 
+Update 24-09-2022: you can install this functionality as a plugin by writing `Plug 'EdwinWenink/vim-quiz'` in your `vimrc`.
+It contains updated Vimscript and offers two commands and handy default bindings that you can override.
+See the [README](https://github.com/EdwinWenink/vim-quiz/blob/master/README.md).
+
 I haven't written much for this website recently because it's *that* time of the year again: exams and project deadlines.
 Here's a taster of what's going on in my studies: experimenting with gradient boosting decision-trees for forecasting; writing about Bayesian approaches to inference to the best explanation; developing and testing a podcast app; programming autoencoders, a GAN, and learning about generative modeling; writing an ethics policy brief on an AI-related issue.
 
