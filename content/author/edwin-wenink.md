@@ -29,6 +29,7 @@ Less essential:
 - [A philosopher is a device for turning coffee into thoughts]({{<baseurl>}}etc/coffee/)
 
 
+<!--
 Not aligned with a school of thought.
 
 I've spend quite some time on 
@@ -65,10 +66,6 @@ But there's beauty in contingency.
 We'll take our chances.
 
 
-
-
-
-
-
-
 the best works of Derrida makes me experience this; his more derivative work (derivative of his own more original works, mostly) feel like indeed he is applying a trick, more lazily reapplying points "made elsewhere already".
+
+-->
