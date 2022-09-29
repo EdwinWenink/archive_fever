@@ -17,9 +17,12 @@ by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 The essentials:
 
 - Editor of Archive Fever (<a href="https://github.com/EdwinWenink/personal_website">code</a>)
-- Graduated philosopher, currently studying Artificial Intelligence
+- MA in philosophy, MSc in Artificial Intelligence
+- Employed as a data scientist
 - Nijmegen, the Netherlands
 - [Brief C.V.](https://raw.githubusercontent.com/EdwinWenink/cv/main/cv.pdf)
+- [What am I up to now?](https://www.edwinwenink.xyz/now/)
+- [Github](https://github.com/EdwinWenink/)
 
 Less essential:
 
@@ -29,6 +32,7 @@ Less essential:
 - [A philosopher is a device for turning coffee into thoughts]({{<baseurl>}}etc/coffee/)
 
 
+<!--
 Not aligned with a school of thought.
 
 I've spend quite some time on 
@@ -65,10 +69,6 @@ But there's beauty in contingency.
 We'll take our chances.
 
 
-
-
-
-
-
-
 the best works of Derrida makes me experience this; his more derivative work (derivative of his own more original works, mostly) feel like indeed he is applying a trick, more lazily reapplying points "made elsewhere already".
+
+-->

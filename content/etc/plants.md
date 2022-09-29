@@ -42,7 +42,7 @@ Their leaves dance and sing.
 ## Trees / varia
 
 - Pachira Aquatica
-- Ficus Microcarpa Ginseng x3
+- Ficus Microcarpa Ginseng
 - Lemon tree
 
 ## Strelitziacaea
@@ -52,7 +52,7 @@ Their leaves dance and sing.
 
 ## Urticaceae ("nettle family")
 
-- Pilea Peperomioides x2 
+- Pilea Peperomioides
 
 ## Asparagaceae
 
@@ -65,9 +65,9 @@ Their leaves dance and sing.
 
 ## Succulents
 
-- Aloe Vera x2 (specific type unknown)
+- Aloe Vera (specific type unknown)
 - Sanseveria Black Coral
-- Crassula Portulacea x2 ("Jade tree")
+- Crassula Portulacea ("Jade tree")
 
 ## Cactii
 
