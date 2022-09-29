@@ -3,7 +3,8 @@ title: "On circular imports in Python"
 date: 2022-09-24T14:00:45+02:00
 draft: false
 author: "Edwin Wenink"
-tags: ['python']
+tags: ['python', 'programming']
+series: ['programming']
 ---
 
 It has happened in the past that I've been sloppy with programming and took some shortcuts just to "get things done," and that I encountered an error like the following: `AttributeError: module 'X' has no attribute 'call'`.
