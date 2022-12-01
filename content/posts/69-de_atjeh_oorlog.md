@@ -73,9 +73,9 @@ Over de lessen die we van de Atjeh-oorlog kunnen leren, over de beschaving die d
 Mijn blik was – denk ik – niet oordelend, eerder met een zekere compassie voor de militairen, maar zeker niet vergoelijkend.
 De lezer trekt zelf wel zijn conclusies. 
 
-EW: De roman neemt inderdaad geen stelling en biedt de lezer ruimte een eigen oordeel te vellen. Toch is het zo dat de roman vanuit het historische perspectief van Nederland is geschreven.
+**EW: De roman neemt inderdaad geen stelling en biedt de lezer ruimte een eigen oordeel te vellen. Toch is het zo dat de roman vanuit het historische perspectief van Nederland is geschreven.
 Is dat iets waar je mee hebt geworsteld tijdens het schrijven?
-In hoeverre is het nodig en mogelijk het perspectief en de beweegredenen van de Atjeeërs te vertolken, of blijven zij toch de stemlozen van de koloniale geschiedenis?
+In hoeverre is het nodig en mogelijk het perspectief en de beweegredenen van de Atjeeërs te vertolken, of blijven zij toch de stemlozen van de koloniale geschiedenis?**
 
 BW: Ik ben me er zeker van bewust dat de roman vanuit Nederlands perspectief is geschreven, al was het maar omdat ik was aangewezen op Nederlandse boeken, waarvan ook nog eens vaak voormalige officieren de auteurs waren.
 Voor zover mij bekend is er trouwens nauwelijks documentatie van Atjese kant, en mocht die er zijn dan kan ik er niet mee uit de voeten, omdat ik de taal niet machtig ben.
