@@ -1,4 +1,4 @@
 [submodule "content/zettelkasten"]
 	path = content/zettelkasten
-    url = https://github.com/EdwinWenink/Notes.git
-    #url = git@github.com:EdwinWenink/Notes.git
+    #url = https://github.com/EdwinWenink/Notes.git
+    url = git@github.com:EdwinWenink/Notes.git
