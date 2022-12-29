@@ -5,12 +5,21 @@
     {{ .Content }}
 
     <p>{{ len .Pages }} entries:</p>
+    <!--
     <ul>
     {{ range .Pages }}
         <li><a href="{{ .Page.Permalink }}">{{ lower .Page.File.BaseFileName }}</a></li>
     {{ end }}
     </ul>
+    -->
+    <div style="font-size: 0px;">
+    <div style="display: inline-block; font-size:14pt; max-width: 100%;
+        word-wrap: break-word; word-break: break-all; word-spacing: -20px;">
+    {{ range .Pages }}
+        <a href="{{ .Page.Permalink }}">{{ upper .Page.File.BaseFileName }}</a> |
+    {{ end}}
+    </div>
+    </div>
+
   </div>
 {{ end }}
-
-
