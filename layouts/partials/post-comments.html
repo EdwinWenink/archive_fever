@@ -12,7 +12,7 @@
 			{{ if not .reply_to }}
 				<div class="post-comment" >
 				  <div class="post-comment-header">
-					  <p class="post-comment-info" id="{{ ._id }}" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{ dateFormat "Monday, Jan 2, 2006" .date }}:</p>
+                      <p class="post-comment-info" id="{{ ._id }}" style="border-bottom:1px;border-bottom-color:black"><strong>{{ .name }}</strong> on {{with .date}}{{ dateFormat "Monday, Jan 2, 2006" . }}:{{end}}</p>
 				  </div>
 				  {{ .body | markdownify }}
 				  <div class="comment_reply">
