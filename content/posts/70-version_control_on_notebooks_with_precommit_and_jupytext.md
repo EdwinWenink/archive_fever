@@ -4,7 +4,8 @@ date: 2023-01-29T16:21:46+01:00
 draft: false
 author: "Edwin Wenink"
 toc: true
-tags: ['programming', 'python']
+tags: ['programming', 'python', 'workflow']
+series: ['workflow']
 ---
 
 Notebooks have a place and a time.
