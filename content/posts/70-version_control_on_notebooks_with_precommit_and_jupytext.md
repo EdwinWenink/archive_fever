@@ -1,5 +1,5 @@
 ---
-title: "Version control on notebooks using pre-commit and jupytext"
+title: "Version control on notebooks using pre-commit and Jupytext"
 date: 2023-01-29T16:21:46+01:00
 draft: false
 author: "Edwin Wenink"
@@ -89,9 +89,9 @@ We'll use the multi-language `pre-commit` framework to install a `jupytext` sync
 Jupytext is a tool for two-way synchronization between a Jupyter notebook and a paired script in [many languages](https://jupytext.readthedocs.io/en/latest/languages.html).
 In this post we only consider the `.ipynb` and `.py` extensions.
 It can be used as a standalone command line tool or as a plugin for Jupyter Notebooks or Jupyter Lab.
-To save information on notebook cells jupytext either uses a minimalistic "light" encoding or a "percent" encoding (the default).
+To save information on notebook cells Jupytext either uses a minimalistic "light" encoding or a "percent" encoding (the default).
 We will use the percent encoding.
-The following subsections are applicable only if you want to be able to use jupytext as a standalone tool.
+The following subsections are applicable only if you want to be able to use Jupytext as a standalone tool.
 If not, skip ahead to <a href="#version-control-using-pre-commit-and-jupytext">here</a>.
 
 ### Installation and pairing
@@ -114,7 +114,7 @@ If not, skip ahead to <a href="#version-control-using-pre-commit-and-jupytext">h
 When you save a paired notebook in Jupyter, both the `.ipynb` file and the script version are updated on disk.
 
 On the command line, you can update paired notebooks using `jupytext --sync notebook.ipynb` or `jupytext --sync notebook.py`.
-If you run this on a new script, `jupytext` will encode the script and define cells using some basic rules (e.g. delimited by newlines), then convert it to a paired notebook.
+If you run this on a new script, Jupytext will encode the script and define cells using some basic rules (e.g. delimited by newlines), then convert it to a paired notebook.
 
 When a paired notebook is opened or reloaded in Jupyter, the input cells are loaded from the text file, and combined with the output cells from the `.ipynb` file.
 This also means that when you edit the `.py` file, you can update the notebook simply by *reloading* it.
@@ -129,7 +129,7 @@ To convert a notebook to a notebook *without outputs*, use `jupytext --to notebo
 
 ## Version control using pre-commit and Jupytext
 
-Okay, so jupytext handles the two-way synchronization between scripts and outputs, which is an improvement compared to Jupyter's native `nbconvert` command.
+Okay, so Jupytext handles the two-way synchronization between scripts and outputs, which is an improvement compared to Jupyter's native `nbconvert` command.
 The basic idea is still that when you want notebook code reviewed, collaborators can instead read and comment on the paired script.
 It is now also possible to incorporate the feedback directly in the script if we wish to do so, because the notebook will be updated accordingly.
 
@@ -139,7 +139,7 @@ This is a safeguard to avoid to avoid that out of sync notebooks and scripts are
 
 Git hooks are very handy, but they go in `.git/hooks` and are therefore not easily shared across projects.
 The `pre-commit` package is designed as a multi-language package manager for pre-commit hooks and can be installed using pip: `pip install pre-commit`.
-It allows you to specify pre-commit hooks in a declarative style and also manages dependencies, so if we declare a hook that uses jupytext we do not even have to manually install jupytext.
+It allows you to specify pre-commit hooks in a declarative style and also manages dependencies, so if we declare a hook that uses Jupytext we do not even have to manually install Jupytext.
 We declare the hooks in a configuration file.
 We also automate the "clear output cells" step mentioned above using `nbstripout`.
 
@@ -165,7 +165,7 @@ repos:
 ```
 
 After setting up a config, you have to *install* the hook as a git hook: `pre-commit install`.
-This clones jupytext and sets up the git hook using it.
+This clones Jupytext and sets up the git hook using it.
 Now the defined commit wil run when you `git commit` and you have defined the hook in a language agnostic way!
 In this configuration, you manually specify the `rev` which is the tag of the specifiek `repo` to clone from.
 You can test if the hook runs by running it on a specific file or on all files with `pre-commit run --all-files`.
@@ -173,7 +173,7 @@ You can test if the hook runs by running it on a specific file or on all files w
 ### Explanation and possible issues
 
 There are some important details when using Jupytext as a pre-commit hook.
-The first *gotcha* is that when checking whether paired notebooks and scripts are in sync, it actually runs jupytext and synchronizes paired scripts and notebooks.
+The first *gotcha* is that when checking whether paired notebooks and scripts are in sync, it actually runs Jupytext and synchronizes paired scripts and notebooks.
 If the paired notebooks and scripts were out of sync, running the hook will thus *introduce unstaged changes*!
 These unstaged changes also need to be committed in Git before the hook passes and it is recognized that the files are in sync.
 
@@ -181,19 +181,19 @@ The second gotcha is that the `--pre-commit-mode` flag is important to avoid a s
 The standard behavior of `jupytext --sync` is to see which two of the paired files (notebook or script) was most recently edited and has to be taken as the ground truth for the two way synchronization.
 This is problematic because this causes a loop when used in the pre-commit framework.
 For example, let's say that we have a paired notebook and script and that we edit the script.
-When we commit the changes in the script, the pre-commit hook will first run jupytext.
+When we commit the changes in the script, the pre-commit hook will first run Jupytext.
 In this case the script is the "source of truth" for the synchronization such that the notebook needs to be updated.
-The jupytext pre-commit check will fail because we now have unstaged changed in the updated notebook that we need to commit to Git.
-When we commit the changes in the updated notebook, however, the notebook becomes the most recently edited file, such that jupytext complains that it is now unclear whether the notebook or the script is the source of truth.
+The Jupytext pre-commit hook check will fail because we now have unstaged changed in the updated notebook that we need to commit to Git.
+When we commit the changes in the updated notebook, however, the notebook becomes the most recently edited file, such that Jupytext complains that it is now unclear whether the notebook or the script is the source of truth.
 
-The good news is that jupytext is smart enough to raise an error and requires you to manually specify which changes to keep.
+The good news is that Jupytext is smart enough to raise an error and requires you to manually specify which changes to keep.
 The bad news is that in this specific case, this manual action does not prevent the loop: we're in a Catch 22 of sorts!
-The `--pre-commit-mode` fixes this nasty issue by making sure that jupytext does not always consider the most recently edited file as the ground truth.
+The `--pre-commit-mode` fixes this nasty issue by making sure that Jupytext does not always consider the most recently edited file as the ground truth.
 
 Within the pre-commit framework you almost certainly also want to specify other hooks.
 For example, I want to make sure my code is `PEP8` compliant by running `flake8` or some other linter on the changes that are to be committed.
 The pre-commit framework itself also offers hooks for fixing common code issues such as trailing whitespaces or left-over merge conflict markers.
-But this is where I've encountered another nasty issue that prevented the jupytext hook from correctly syncing.
+But this is where I've encountered another nasty issue that prevented the Jupytext hook from correctly syncing.
 
 Let's take a hook that removes trailing white spaces as an example.
 This hook works as intended on Python scripts, but the hook does not actually remove trailing white spaces *in the code* because source code of notebook cells are encapsulated in a JSON field as follows:
@@ -229,7 +229,7 @@ This hook works as intended on Python scripts, but the hook does not actually re
 
 This means that if you commit a notebook with trailing white spaces in the cells, the following happens and will prevent the paired notebook and script from ever syncing:
 
-- The jupytext hook synchronizes the notebook with a paired Python script.
+- The Jupytext hook synchronizes the notebook with a paired Python script.
 - Trailing whitespaces are removed from the Python script and the *plain text* representation of the notebook (i.e. it removes trailing white space after the closing brackets)
 - When translating the notebook to code or vice versa, one version still includes trailing white spaces in the code cells and the other not.
 
