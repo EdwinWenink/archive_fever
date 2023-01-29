@@ -93,7 +93,7 @@ It can be used as a standalone command line tool or as a plugin for Jupyter Note
 To save information on notebook cells Jupytext either uses a minimalistic "light" encoding or a "percent" encoding (the default).
 We will use the percent encoding.
 The following subsections are applicable only if you want to be able to use Jupytext as a standalone tool.
-If not, skip ahead to <a href="#version-control-using-pre-commit-and-jupytext">here</a>.
+If not, skip ahead to <a href="combining-jupytext-with-pre-commit">here</a>.
 
 ### Installation and pairing
 
@@ -128,7 +128,7 @@ formats = "ipnb,py:percent"
 
 To convert a notebook to a notebook *without outputs*, use `jupytext --to notebook notebook.py `.
 
-## Version control using pre-commit and Jupytext
+## Combining Jupytext with pre-commit
 
 Okay, so Jupytext handles the two-way synchronization between scripts and outputs, which is an improvement compared to Jupyter's native `nbconvert` command.
 The basic idea is still that when you want notebook code reviewed, collaborators can instead read and comment on the paired script.
