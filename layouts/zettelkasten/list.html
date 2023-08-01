@@ -13,10 +13,10 @@
     </ul>
     -->
     <div style="font-size: 0px;">
-    <div style="display: inline-block; font-size:14pt; max-width: 100%;
-        word-wrap: break-word; word-break: break-all; word-spacing: -20px;">
+    <div style="display: inline-block; font-size:16pt; max-width: 100%;
+        word-wrap: break-word; word-break: break-all; line-height: 1.5em;">
     {{ range .Pages }}
-        <a href="{{ .Page.Permalink }}">{{ upper .Page.File.BaseFileName }}</a> |
+        <a href="{{ .Page.Permalink }}" style="color: black; border: solid gray 1px;">{{ .Page.File.BaseFileName | humanize | lower }}</a>
     {{ end}}
     </div>
     </div>
