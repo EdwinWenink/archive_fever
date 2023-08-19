@@ -126,7 +126,7 @@ h1.remove-frame::before {
 #toc {
   line-height: 1em;
   font-size: .8em;
-  padding: 8px;
+  padding-bottom: 1em;
   display: block;
   overflow: hidden;
   width: 70%;
@@ -139,7 +139,8 @@ h1.remove-frame::before {
 #TableOfContents {
   overflow-x: auto;
   word-wrap: normal;
-  word-break: break-all;
+  word-break: normal;
+  text-align: left;
 }
 
 #TableOfContents ul {
