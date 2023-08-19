@@ -72,9 +72,10 @@ h1 {
 	margin-top: 0.2em;
 	margin-bottom: 1em;
 	border: solid;
-	border-width: 4px;
-	border-color: black; 
-	padding: 0.8em;
+	border-width: 3px;
+	border-color: transparent transparent black transparent;
+    border-radius: 60% 35% / 15% 25%;
+	padding: 1em 1em 1.5em 1em;
     text-align: center;
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
@@ -340,7 +341,7 @@ input:checked + .slider:before {
 }
 
 .unfold:hover {
-	max-height: 500px; 
+	max-height: 500px;
 }
 
 .post-mentions {
@@ -350,7 +351,7 @@ input:checked + .slider:before {
     font-size: 16px;
 }
 .post-mentions ul {
-    list-style:none; 
+    list-style:none;
     padding:0;
     margin-left: 0;
 }
@@ -580,8 +581,8 @@ body {
 	font-feature-settings: 'liga' 1;
 }
 
-div.content { 
-	display: block; 
+div.content {
+	display: block;
 	padding: 1rem 0 1rem 0;
     margin-bottom: 1em;
 }
@@ -610,7 +611,7 @@ footer {
 }
 
 @media all and (max-width:520px) {
-	div.content { 
+	div.content {
 		padding: 0;
 	}
 }
@@ -638,7 +639,7 @@ ul,ol {
 
 /*
  * Add top margin to paragraphs starting directly after lists
- * My original solution was to have only margin-bottom on ul:list-child 
+ * My original solution was to have only margin-bottom on ul:list-child
  * but that also creates margin after the last element of sub lists
  * Is div needed here? I didn't test this.
  */
@@ -649,7 +650,7 @@ ul + *, ol + * {
 ul, ol {
 	line-height: 1.5em;
 	margin-left: 1em;
-	list-style-type: lower-greek; 
+	list-style-type: lower-greek;
     list-style: "- ";
 }
 
@@ -661,7 +662,7 @@ li:hover {
     list-style: "> ";
 }
 
-table { 
+table {
 	margin-bottom: 1.5em;
 	border-collapse: collapse;
 	width: 95%;
@@ -732,7 +733,7 @@ p a, blockquote a {
 	/*text-decoration: underline;*/
 }
 
-div.nav a:active div { 
+div.nav a:active div {
 	background: #cacaca;
 }
 
@@ -741,8 +742,8 @@ hr {    border: 0;
         margin-bottom: 8px;}
 
 /*
-a:active { 
-	color: #777; 
+a:active {
+	color: #777;
 }
 */
 
