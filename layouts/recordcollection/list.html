@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <div>
+  <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <p>{{ len .Pages }} entries:</p>
+    <div style="display: inline-block;">
+    {{ range .Pages }}
+        <a href="{{ .Page.Permalink }}">
+            <img src="{{ .Params.cover }}", alt="Album cover.", style="max-width:30%; padding: 5px;">
+        </a>
+    {{ end}}
+    </div>
+
+  </div>
+{{ end }}
