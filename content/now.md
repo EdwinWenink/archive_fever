@@ -11,16 +11,14 @@ tags: ['now']
 
 🏠 [Nijmegen, the Netherlands](https://goo.gl/maps/VpTtZ7fhVdTez5pH8)
 
-📖 Graduated from a master in AI and research master in philosophy
+📖 Currently interested in MLOps
 
-🦩 Took some time off to visit festivals, friends, and be outside a lot
-
-💼 Starting as a data scientist @NS
+💼 Working as a data scientist @NS
 
 🖥️ Latest major website update: I made the radical step to make all my private notes public on this domain.
 This was scary.
 Please let me know if you find anything that should not be public!
 
-✨ Getting energy again to pick up some projects and writing for this domain. 
+✨ I let my domain expire a while back and had to pay to get it out of quarantine. Ouch! This motivated me to tinker at this website again.
 
 </div>
