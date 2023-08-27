@@ -2,15 +2,14 @@
 
 <h1>{{.Params.title}}</h1>
 <div>
-    <!-- How to vertically align? -->
-    <div style="display: inline-block; max-width: 65%; min-height: 100%; height: 100%; vertical-align:middle;">
+    <div style="display: inline-block; max-width: 65%; min-height: 100%; height: 100%;">
         <img src="{{ .Params.cover }}", alt="Album cover.", style="max-width: 100%; vertical-align:middle;"></div>
     <div style="display: inline-block; max-width: 30%; padding-left: 1em; vertical-align: middle; text-align: left;">
         <p>Artist: {{ range .Params.artists }}{{ . }} {{ end }}</p>
         <p>Title: {{ .Params.title }}</p>
-        <p>Genres: {{ range .Params.genres }}{{ . }}{{ end }}</p>
+        <p>Genres: {{ range .Params.genres }}{{ . }} {{ end }}</p>
         <p>Year: {{ .Params.year }}</p>
-        <p>Labels: {{ range .Params.labels }}{{ . }}{{ end }}</p>
+        <p>Labels: {{ range .Params.labels | uniq }}{{ . }} {{ end }}</p>
     </div>
 </div>
 {{ end }}
