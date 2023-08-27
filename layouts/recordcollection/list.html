@@ -4,10 +4,10 @@
 
     {{ .Content }}
 
-    <p>{{ len .Pages }} entries:</p>
+    <!--<p>{{ len .Pages }} entries:</p>-->
     <div style="display: inline-block;">
     {{ range .Pages }}
-        <a href="{{ .Page.Permalink }}">
+        <a href="{{ .Page.Permalink }}", style="background: none; border: none">
             <img src="{{ .Params.cover }}", alt="Album cover.", style="max-width:30%; padding: 5px;">
         </a>
     {{ end}}
