@@ -42,15 +42,6 @@ body, li p {
 	font-size: 17px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	/*
-	border:solid 1px #41403E;
-	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-	font-family: Cousine, menlo, monospace;
-	font-size: 16px;
-	line-height: 1.4;
-	background-color: #fff;
-	color: hsl(0, 0%, 10%);
-	*/
 }
 
 h1,h2,h3,h4,h5,h6,header,header.a {
@@ -62,7 +53,6 @@ header,header.a{
 	font-weight: bold;
 	color:#777;
 }
-
 
 h1 {
 	display: inline-block;
@@ -205,7 +195,6 @@ input:checked + .slider:before {
 	transform: translateX(13px);
 }
 
-
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
 
 /*
@@ -258,6 +247,14 @@ input:checked + .slider:before {
 
 .post-new-comment {
 	padding: 10px;
+}
+
+/*
+ * Record collection columns on PC
+ */
+.records {
+    max-width: 30%;
+    padding-bottom: 1em;
 }
 
 /*
@@ -493,6 +490,7 @@ input[type="checkbox"]:checked::before {
 	.author-portret {
 		max-width: 123px;
 	}
+
 }
 @media all and (max-width:760px){
 	body > * {
@@ -531,9 +529,8 @@ input[type="checkbox"]:checked::before {
         position: relative;
         content: "X";
     }
-
-
 }
+
 @media all and (max-width:580px){
 	html {
 		font-size: 16px;
@@ -544,6 +541,12 @@ input[type="checkbox"]:checked::before {
 	.author-portret {
 		max-width: 85px;
 	}
+
+    .records {
+        /* switch to two column */
+        max-width: 45%;
+        padding-bottom: 1em;
+    }
 }
 
 
