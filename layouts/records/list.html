@@ -8,7 +8,7 @@
     <div style="display: inline-block;">
     {{ range .Pages }}
         <a href="{{ .Page.Permalink }}", style="background: none; border: none;">
-            <img src="{{ replace .Params.cover "https://i.discogs.com" (printf "%sdiscogs" .Site.BaseURL )}}", alt="{{ .Params.title }}", class="records">
+            <img src="{{ replace .Params.cover "https://i.discogs.com" (printf "%s/discogs" .Site.BaseURL )}}", alt="{{ .Params.title }}", class="records">
         </a>
     {{ end}}
     </div>
