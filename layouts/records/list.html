@@ -8,7 +8,7 @@
     <div style="display: inline-block;">
     {{ range .Pages }}
         <a href="{{ .Page.Permalink }}", style="background: none; border: none;">
-            <img src="{{ .Params.cover }}", alt="Album cover.", class="records">
+            <img src="{{ .Params.cover }}", alt="{{ .Params.title }}", class="records">
         </a>
     {{ end}}
     </div>
