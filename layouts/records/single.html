@@ -3,7 +3,9 @@
 <h1>{{.Params.title}}</h1>
 <div>
     <div style="display: inline-block; max-width: 65%; min-height: 100%; height: 100%;">
-        <img src="{{ .Params.cover }}", alt="{{ .Params.title }}", style="max-width: 100%; vertical-align:middle;"></div>
+        <!-- we will proxy /discogs/* back to original link to allow CDN to cache results -->
+
+        <img src="{{ replace .Params.cover "https://i.discogs.com" (printf "%s/discogs" .Site.BaseURL ) }}", alt="{{ .Params.title }}", style="max-width: 100%; vertical-align:middle;"></div>
     <div style="display: inline-block; max-width: 30%; padding-left: 1em; vertical-align: middle; text-align: left;">
         <p>Artist: {{ range .Params.artists }}{{ . }} {{ end }}</p>
         <p>Title: {{ .Params.title }}</p>
