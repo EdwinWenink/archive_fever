@@ -7,6 +7,11 @@ tags: ['website', 'programming', 'python', 'music']
 series: ['website']
 ---
 
+<figure style="width: 50%; margin-left: 20px; margin-bottom: 10px; float: right;">
+<img src="https://thevinylwall.com/cdn/shop/files/head_alternate_edit.jpg?v=1613523692" alt="Vinyl wall mount" />
+<figcaption><a href="https://thevinylwall.com/">Analog example</a></figcaption>
+</figure>
+
 I added a digital [vinyl record display](/records/) to this website, have a look!
 
 The idea was to digitally reproduce one of those fancy wall mounts for displaying records in your room.
