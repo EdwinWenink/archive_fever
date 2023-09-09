@@ -22,9 +22,9 @@
 	<meta name="og:title" content="{{ .Title }}">
 	<meta name="og:description" content="{{ .Description }}">
 	{{ if $.Param "image" }}
-    <meta name="og:image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
+    <meta name="og:image" itemprop="image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
     {{ else }}
-    <meta name="og:image" content="{{ .Site.BaseURL}}images/archive_fever.jpg">
+    <meta name="og:image" itemprop="image" content="{{ .Site.BaseURL}}images/archive_fever.jpg">
     {{ end }}
 	<meta name="og:url" content="{{ .Permalink }}">
 	<meta name="og:site_name" content="{{ .Site.Title }}">
