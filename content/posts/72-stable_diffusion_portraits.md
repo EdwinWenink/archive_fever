@@ -50,9 +50,9 @@ For example, I added jugendstil artist Alphone Mucha to the prompt.
 These results are obviously not "realistic", but in for example the top left picture I started recognizing a bit of myself in the glance of the eyes.
 The style worked really well with the Monstera in the background.
 
-For better or worse, I tend to be compared to Vincent van Gogh and you can probably see why in the final results.
+I tend to be compared to Vincent van Gogh and you can probably see why in the final results.
 These are based on a different picture that I sent to my better half when I was, quite frankly, done with my day.
-After a fair amount of experimentation, I finally managed to produce a stylized version of a picture that actually looked like me when I threw Vincent van Gogh and Edvard Munch in the mix.
+When I threw Vincent van Gogh and Edvard Munch in the mix, I finally managed to produce a stylized version of a picture that actually looked like me.
 Lo and behold, the top left picture is a stylized and "painted" version of what I actually look like.
 Everyone that knows me will immediately recognize me in this picture.
 
