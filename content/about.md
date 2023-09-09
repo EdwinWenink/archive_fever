@@ -39,14 +39,13 @@ I reserve the right to be wrong.
 My best guess at the moment is that these memory traces are likely to be related either to philosophy, artificial intelligence, technology, and workflow design.
 Contributions by [others](/authors) [are welcome](/etc/contribution_guidelines).
 
+<figure style="width: 60%; float: left; margin-left: 20px;">
+   <img align="center" src="/images/boypoolrhizome.jpg" />
+   <figcaption><a href="https://markingham.org/stories/becoming-rhizomatic/boypoolrhizome-2/">BoyPoolRhizome by Mark Ingham</a>
+</figure>
+
 What emerges over time will be a rhizomatic collection of hopefully interesting notes, where no one (including me) really has a central oversight over the contents, where there is no category table assigning everything its proper place, but where posts branch out and interlink chaos-logically. This is reflected in the only "searchable” feature of this archive: clicking on the tag of a blog post shows you posts with the same tag.
 I encourage you to do this and trace your own path.
-
-<figure>
-   <img align="center" style="width:100%" src="/images/boypoolrhizome.jpg" />
-   <figcaption> <a href="https://markingham.org/stories/becoming-rhizomatic/boypoolrhizome-2/"> BoyPoolRhizome by Mark Ingham</a>
-</figure>
-<br>
 
 By now some words have floated in my direction that also more or less describe what this website is.
 For example, see [this description](https://maggieappleton.com/garden-history) of a digital garden:
