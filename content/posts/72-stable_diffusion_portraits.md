@@ -4,6 +4,7 @@ date: 2023-09-09T16:21:46+01:00
 draft: false
 author: "Edwin Wenink"
 tags: ['AI', 'art']
+image: 'images/diffusion/diffusion_self_portrait.jpg'
 ---
 
 I was in need of a head shot, but I don't like taking pictures.

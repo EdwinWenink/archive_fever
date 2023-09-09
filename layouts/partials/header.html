@@ -13,9 +13,13 @@
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
 	<meta name="og:title" content="{{ .Title }}">
 	<meta name="og:description" content="{{ .Description }}">
-	{{ if $.Param "image" }}<meta name="og:image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">{{ end }}
+	{{ if $.Param "image" }}
+        <meta name="og:image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
+    {{ else }}
+        <meta name="og:image" content="{{ .Site.BaseURL}}images/achive_fever.jpg">
+    {{ end }}
 	<meta name="og:url" content="{{ .Permalink }}">
-	<meta name="og:site_name" content="{{ .Title }}">
+	<meta name="og:site_name" content="{{ .Site.Title }}">
 	<meta name="og:type" content="article">
 	<!-- Open Graph - Article -->
 	<meta name="article:tag" content="{{ range .Params.tags }}{{.}} {{end}}">
