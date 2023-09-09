@@ -5,18 +5,26 @@
 	<title>{{ .Title }}</title>
 	<!-- Search Engine -->
 	<meta name="description" content="{{ .Description }}">
-	<meta name="image" content="{{ $.Param "image" }}">
+	{{ if $.Param "image" }}
+	<meta name="image" content="{{ .Site.BaseURL }}{{ $.Param "image" }}">
+    {{ else }}
+	<meta name="image" content="{{ .Site.BaseURL }}images/archive_fever.jpg">
+    {{ end }}
 	<!-- Schema.org for Google -->
 	<meta itemprop="name" content="{{ .Title }}">
 	<meta itemprop="description" content="{{ .Description }}">
-	<meta itemprop="image" content="{{ $.Param "image" }}">
+	{{ if $.Param "image" }}
+    <meta itemprop="image" content="{{ .Site.BaseURL }}{{ $.Param "image" }}">
+    {{ else }}
+    <meta itemprop="image" content="{{ .Site.BaseURL }}images/archive_fever.jpg">
+    {{ end }}
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
 	<meta name="og:title" content="{{ .Title }}">
 	<meta name="og:description" content="{{ .Description }}">
 	{{ if $.Param "image" }}
-        <meta name="og:image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
+    <meta name="og:image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
     {{ else }}
-        <meta name="og:image" content="{{ .Site.BaseURL}}images/archive_fever.jpg">
+    <meta name="og:image" content="{{ .Site.BaseURL}}images/archive_fever.jpg">
     {{ end }}
 	<meta name="og:url" content="{{ .Permalink }}">
 	<meta name="og:site_name" content="{{ .Site.Title }}">
