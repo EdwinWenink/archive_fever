@@ -34,7 +34,7 @@ My main observation at this point is that ...
 
 I was initially sceptical, but by now I'm convinced that using generative AI in this manner to create a specific picture you have in mind truly is a creative process.
 It is similar to how a professional photographer sets up the environment for the right snapshot: the art is not in the pressing of the button, but on using the tools available to materialize something that only existed in your mind's eye so far.
-Similarly, prompt engineering is an art in the sense that over time you start to get a feeling for which prompts are successful of manipulating this stochastic "obscene hallucination machine" in a desired direction.
+Similarly, prompt engineering is an art in the sense that over time you start to get a feeling for which prompts are successful for manipulating this stochastic "obscene hallucination machine" in a desired direction.
 
 <figure style="width: 50%; margin-left: 20px; margin-bottom: 10px; float: right;">
 <img src="/images/diffusion/edwin_alphone_mucha.jpg" alt="Edwin interpreted in jugendstil à la Alphone Mucha." />
@@ -46,7 +46,7 @@ Similarly, prompt engineering is an art in the sense that over time you start to
 <figcaption>Edwin and Vincent.</figcaption>
 </figure>
 
-The breakthrough where I started seeing results that I liked was when I started including the names of painters and artists.
+Only after including the names of painters and artists I started seeing results that I liked.
 For example, I added jugendstil artist Alphone Mucha to the prompt.
 These results are obviously not "realistic," but in for example the top left picture I started recognizing a bit of myself in the glance of the eyes.
 The style worked really well with the Monstera in the background.
