@@ -1,6 +1,5 @@
 <div id="breadcrumbs">
-	<a href="{{ .Site.BaseURL }}"><strong><i class="fa fa-home"></i></strong></a>
-
+	<a href="{{ .Site.BaseURL }}">~</a>
     <!-- Remove empty first and last element -->
     {{ $url  := .RelPermalink }}
     {{ $components := last 2 (split (delimit (split .RelPermalink "/") "," "") "," ) }}
@@ -19,21 +18,4 @@
             {{ end }}
         {{ end }}
     {{ end }}
-    | 
-	<!-- Navigation Pages -->
-    {{ range .Site.Menus.main }}
-        {{ if ne $url .URL }}
-        <a href="{{ .URL }}"{{if eq .Page nil}} target="_blank"{{end}}>{{ .Name }}</a>&nbsp;&nbsp;
-        {{ end }}
-    {{ end }}
-
-	<!-- Show RSS feed in the header -->
-	<a href="{{ .Site.BaseURL }}index.xml" style="float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
-
-	<!-- Button to toggle dark theme -->
-	<label class="switch" style="float: right;">
-		<input type="checkbox" onclick="switch_style();" name="theme" id="Dark theme">
-		<span class="slider"></span>
-	</label>
-
 </div>
