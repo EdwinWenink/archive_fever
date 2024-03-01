@@ -3,20 +3,25 @@
 {{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
 <!--Grab the most recent-->
 <aside>
+    <p>
 {{ range first 1 $posts }}
-    <p>Latest: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    Latest: <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
 {{ end }}
 
 {{ with .NextInSection }}
-<p>Next: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    Next: <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
 {{ end }}
 
 {{ with .PrevInSection }}
-<p>Previous: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    Previous: <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
 {{ end }}
 
 {{ range first 1 (shuffle $posts)  }}
-<p>Random: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+Random: <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}
+    </p>
 </aside>
 </div>
