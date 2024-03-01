@@ -49,11 +49,6 @@ h1,h2,h3,h4,h5,h6,header,header.a {
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-header,header.a{
-	font-weight: bold;
-	color:#777;
-}
-
 h1 {
 	display: inline-block;
     width: 100%;
@@ -591,7 +586,7 @@ div.content {
 }
 
 header {
-	display:block;
+	display: block;
 	padding: 0.5rem 0 0.5rem 0;
 	/*border-bottom: 0.10em solid black;*/
 }
