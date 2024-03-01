@@ -1,14 +1,13 @@
-{{ partial "header" . }}
+{{ define "main" }}
 
 <div class="content">
 
 {{ partial "title.html" . }}
 
-
 {{ $preview_n := 15 }}
 {{ range $index, $value := first $preview_n .Data.Pages }}
 	<p>
-	<aside>{{ .Date.Format "January 2, 2006"}} 
+	<aside>{{ .Date.Format "January 2, 2006"}}
 		{{ if not (eq .Params.tags nil) }}
 			{{ range first 2 $value.Params.tags }}
 				<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
@@ -35,12 +34,14 @@
 <p> See <a href="{{ .Site.BaseURL }}/archives"> archives</a> for more ... </p>
 </div>
 
-{{ partial "latest_comments.html" . }}
+<!-- {{ partial "latest_comments.html" . }} -->
 
-{{ partial "tags.html" . }}
+<!-- {{ partial "tags.html" . }} -->
 
-<!--{{ partial "micro_preview.html" . }}-->
+<!-- {{ partial "micro_preview.html" . }} -->
 
 {{ partial "webring.html" . }}
 
 </div>
+
+{{ end }}

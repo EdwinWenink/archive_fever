@@ -52,7 +52,7 @@
       <!-- Author is hard coded here; no font matter with author available -->
       <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/edwin-wenink">Edwin Wenink</a>
   </a></aside>
-  <aside> 
+  <aside>
     <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
     {{ $github := .Site.Params.github}}
     {{ with .GitInfo }}
@@ -62,31 +62,14 @@
   </div>
   <br>
 
-  <div>
-    <!-- TODO Consolidate in partial -->
-	<!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
-	{{$zettels := ($.Site.GetPage "section" "zettelkasten").Pages.ByPublishDate.Reverse}}
-	<!--Grab the most recent-->
-
-    {{ with .NextInSection }}
-    <p><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a> <-- Next</p>
-    {{ end }}
-
-    {{ with .PrevInSection }}
-    <p><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a> <-- Previous</p>
-    {{ end }}
-
-	{{ range first 1 (shuffle $zettels)  }}
-    <p><a href="{{ .Permalink }}">Surprise me</a> <-- Random Zettel</p>
-    {{ end }}
-  </div>
+  {{ partial "link-posts.html" . }}
 
 </div>
 
-{{ partial "webmentions.html" . }}
+<!-- {{ partial "webmentions.html" . }} -->
 
-{{ partial "post-comments" . }}
+<!-- {{ partial "post-comments" . }} -->
 
-{{ partial "contribute-post" . }}
+<!-- {{ partial "contribute-post" . }}-->
 
 {{ end }}
