@@ -1,0 +1,73 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- COMMON TAGS -->
+	<title>{{ .Title }}</title>
+	<!-- Search Engine -->
+	<meta name="description" content="{{ .Description }}">
+	{{ if $.Param "image" }}
+	<meta name="image" content="{{ .Site.BaseURL }}{{ $.Param "image" }}">
+    {{ else }}
+	<meta name="image" content="{{ .Site.BaseURL }}images/archive_fever.jpg">
+    {{ end }}
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="{{ .Title }}">
+	<meta itemprop="description" content="{{ .Description }}">
+	{{ if $.Param "image" }}
+    <meta itemprop="image" content="{{ .Site.BaseURL }}{{ $.Param "image" }}">
+    {{ else }}
+    <meta itemprop="image" content="{{ .Site.BaseURL }}images/archive_fever.jpg">
+    {{ end }}
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta name="og:title" content="{{ .Title }}">
+	<meta name="og:description" content="{{ .Description }}">
+	{{ if $.Param "image" }}
+    <meta name="og:image" itemprop="image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
+    {{ else }}
+    <meta name="og:image" itemprop="image" content="{{ .Site.BaseURL}}images/archive_fever.jpg">
+    {{ end }}
+	<meta name="og:url" content="{{ .Permalink }}">
+	<meta name="og:site_name" content="{{ .Site.Title }}">
+	<meta name="og:type" content="article">
+	<!-- Open Graph - Article -->
+	<meta name="article:tag" content="{{ range .Params.tags }}{{.}} {{end}}">
+	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style{{ $.Site.Params.style }}.css">
+	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ .Site.BaseURL }}css/dark.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- If you passed the following variable through the partialCache, indicate this file is not to be indexed -->
+    {{ if .Scratch.Get "nofollow"}}
+        <meta name="robots" content="noindex,nofollow">
+    {{ end }}
+
+	<!-- Google Analytics -->
+	{{ template "_internal/google_analytics_async.html" . }}
+	<!-- highlight.js -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/webmention.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="{{ .Site.BaseURL }}scripts/changetheme.js"></script>
+    <script>set_style_from_cookie()</script>
+    <!-- indieauth -->
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <!-- webmentions -->
+    <link rel="webmention" href="https://webmention.io/www.edwinwenink.xyz/webmention" />
+    <link rel="pingback" href="https://webmention.io/www.edwinwenink.xyz/xmlrpc" />
+	<!-- Micropub endpoints -->
+	<link href="https://sitewriter.net/www.edwinwenink.xyz/micropub" rel="micropub">
+	<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+	<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+</head>
