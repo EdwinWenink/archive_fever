@@ -50,7 +50,7 @@
   <aside>
       <i class="fa fa-home" style="font-size:24px"></i>
       <!-- Author is hard coded here; no font matter with author available -->
-      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/edwin-wenink">Edwin Wenink</a>
+      <a class="u-url" href="{{ .Permalink }}">Published {{with .Params.data.Format }}<time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time>{{end}} by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/edwin-wenink">Edwin Wenink</a>
   </a></aside>
   <aside>
     <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
@@ -62,7 +62,7 @@
   </div>
   <br>
 
-  {{ partial "link-posts.html" . }}
+  {{ partial "link_posts.html" . }}
 
 </div>
 
