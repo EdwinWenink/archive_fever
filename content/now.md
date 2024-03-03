@@ -6,14 +6,13 @@ menu: "main"
 tags: ['now']
 ---
 
-
 <div style="text-align:center;">
 
 🏠 [Nijmegen, the Netherlands](https://goo.gl/maps/VpTtZ7fhVdTez5pH8)
 
-📖 Currently interested in MLOps
+💼 Working as a <s>data scientist</s> machine learning engineer @NS, building Generative AI solutions with a focus on privacy and retrieval augmented generation.
 
-💼 Working as a data scientist @NS
+📖 Currently interested in MLOps, Generative AI, and API design.
 
 🖥️ Latest major website update: I made the radical step to make all my private notes public on this domain.
 This was scary.
