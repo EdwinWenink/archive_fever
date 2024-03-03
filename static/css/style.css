@@ -769,10 +769,10 @@ a:hover, a:hover h4 {
 
 
 code {
-	border:solid 1px #41403E;
+	border:dotted 1px #41403E;
 	font-size: 85%;
 	margin-bottom: 20px;
-	background-color: #F4F4F5;
+	background-color: white;
 	/*background-color: white !important;*/
 	-moz-hyphens: none;
 	-webkit-hyphens: none;
