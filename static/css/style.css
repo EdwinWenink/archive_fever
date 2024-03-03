@@ -582,8 +582,7 @@ body {
 
 div.content {
 	display: block;
-	padding: 1rem 0 1rem 0;
-    margin-bottom: 1em;
+	padding: .5rem 0 .5rem 0;
 }
 
 header {
