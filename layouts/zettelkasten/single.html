@@ -40,36 +40,16 @@
 
   <hr>
 
-  <div>
+{{ partial "post_metadata.html" . }}
 
-  <aside>
-      <i class="fas fa-clock" style="font-size:24px;"></i>
-      {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read
-  </aside>
-
-  <aside>
-      <i class="fa fa-home" style="font-size:24px"></i>
-      <!-- Author is hard coded here; no font matter with author available -->
-      <a class="u-url" href="{{ .Permalink }}">Published {{with .Params.data.Format }}<time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time>{{end}} by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/edwin-wenink">Edwin Wenink</a>
-  </a></aside>
-  <aside>
-    <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
-    {{ $github := .Site.Params.github}}
-    {{ with .GitInfo }}
-        <a href="{{$github}}commit/{{ .Hash }}" target="_blank">{{.AbbreviatedHash}} {{.Subject}}</a>
-    {{ end }}
-  </aside>
-  </div>
-  <br>
-
-  {{ partial "link_posts.html" . }}
-
-</div>
+<!-- {{ partial "link_posts.html" . }} -->
 
 <!-- {{ partial "webmentions.html" . }} -->
 
 <!-- {{ partial "post-comments" . }} -->
 
 <!-- {{ partial "contribute-post" . }}-->
+
+{{ partial "footer" . }}
 
 {{ end }}
