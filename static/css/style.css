@@ -13,6 +13,7 @@
 --bordercolor:rgb(255,0,0,0.8);
 --borderwidth: 3px;
 --borderstyle: dotted;
+--customgray: #667;
 }
 
 html {
@@ -591,21 +592,14 @@ header {
 	/*border-bottom: 0.10em solid black;*/
 }
 
-/*
-.footer {
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-color: black;
-	padding-top: 12px;
-	margin-bottom: 10px;
-}
-*/
-
 footer {
-    border-top: 1px solid black;
+	font-size: 0.84rem;
+    border-top: 1px solid var(--customgray);
 	display:block;
-	padding: 1rem 0 1rem 0;
-    margin-top: 2rem;
+	padding: .5rem 0 .5rem 0;
+    margin-top: 1rem;
+    color: var(--customgray);
+
 }
 
 @media all and (max-width:520px) {
@@ -617,7 +611,7 @@ footer {
 aside {
 	font-size: 0.84rem;
 	line-height: 1.40;
-	color: #667;
+	color: var(--customgray);
 }
 
 aside em {
