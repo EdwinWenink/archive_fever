@@ -40,53 +40,16 @@
 
   <hr>
 
-  <div>
+{{ partial "post_metadata.html" . }}
 
-  <aside>
-      <i class="fas fa-clock" style="font-size:24px;"></i>
-      {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read
-  </aside>
+<!-- {{ partial "link_posts.html" . }} -->
 
-  <aside>
-      <i class="fa fa-home" style="font-size:24px"></i>
-      <!-- Author is hard coded here; no font matter with author available -->
-      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/edwin-wenink">Edwin Wenink</a>
-  </a></aside>
-  <aside> 
-    <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
-    {{ $github := .Site.Params.github}}
-    {{ with .GitInfo }}
-        <a href="{{$github}}commit/{{ .Hash }}" target="_blank">{{.AbbreviatedHash}} {{.Subject}}</a>
-    {{ end }}
-  </aside>
-  </div>
-  <br>
+<!-- {{ partial "webmentions.html" . }} -->
 
-  <div>
-    <!-- TODO Consolidate in partial -->
-	<!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
-	{{$zettels := ($.Site.GetPage "section" "zettelkasten").Pages.ByPublishDate.Reverse}}
-	<!--Grab the most recent-->
+<!-- {{ partial "post-comments" . }} -->
 
-    {{ with .NextInSection }}
-    <p><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a> <-- Next</p>
-    {{ end }}
+<!-- {{ partial "contribute-post" . }}-->
 
-    {{ with .PrevInSection }}
-    <p><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a> <-- Previous</p>
-    {{ end }}
-
-	{{ range first 1 (shuffle $zettels)  }}
-    <p><a href="{{ .Permalink }}">Surprise me</a> <-- Random Zettel</p>
-    {{ end }}
-  </div>
-
-</div>
-
-{{ partial "webmentions.html" . }}
-
-{{ partial "post-comments" . }}
-
-{{ partial "contribute-post" . }}
+{{ partial "footer" . }}
 
 {{ end }}

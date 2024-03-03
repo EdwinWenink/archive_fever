@@ -34,12 +34,12 @@
         {{ if .Params.authors }}
         <p>
         {{ $n_authors := len .Params.authors }}
-        <i>Co-written by 
+        <i>Co-written by
         {{ range $i, $author := .Params.authors }}
             {{ if ne $i (sub $n_authors 1) }}
-              <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u> & 
+              <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u> &
             {{ else}}
-              <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u>. 
+              <u><a href="{{ $baseURL }}author/{{ urlize $author }}">{{ $author }}</a></u>.
             {{ end }}
         {{ end }}
         </i>
@@ -50,15 +50,15 @@
         {{ if .Params.series }}
         <p>
           <i>
-          This post is part of the 
+          This post is part of the
           {{ if reflect.IsSlice .Params.series }}
           {
             {{ range .Params.series }}
-            <a href="/series/{{ . | urlize }}" style='text-decoration: underline;'>{{ . }}</a> 
+            <a href="/series/{{ . | urlize }}" style='text-decoration: underline;'>{{ . }}</a>
             {{ end  }}
           }
           {{ else  }}
-            <a href="/series/{{ .Params.series | urlize }}" style='text-decoration: underline;'>{{ .Params.series }}</a> 
+            <a href="/series/{{ .Params.series | urlize }}" style='text-decoration: underline;'>{{ .Params.series }}</a>
           {{ end }}
           series.
           </i>
@@ -82,25 +82,7 @@
 
   <hr>
 
-  <div>
-  <aside>
-      <i class="fas fa-clock" style="font-size:24px;"></i>
-      {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read
-  </aside>
-  <aside>
-      <i class="fa fa-home" style="font-size:24px"></i>
-      <a class="u-url" href="{{ .Permalink }}">Published <time class="dt-published">{{ .Params.date.Format "2 January, 2006" }}</time> by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
-  </a></aside>
-  <aside> 
-    <i class="fas fa-tools" style="font-size:24px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
-    {{ $github := .Site.Params.github}}
-    {{ with .GitInfo }}
-        <a href="{{$github}}commit/{{ .Hash }}" target="_blank">{{.AbbreviatedHash}} {{.Subject}}</a>
-    {{ end }}
-  </aside>
-  </div>
-  <br>
-
+  {{ partial "post_metadata.html" . }}
 
   {{ partial "link_posts.html" . }}
 
@@ -112,8 +94,10 @@
 
 {{ partial "webmentions.html" . }}
 
-{{ partial "post-comments" . }}
+<!-- {{ partial "post-comments" . }} -->
 
 <!--{{ partial "contribute-post" . }}-->
+
+{{ partial "footer.html" . }}
 
 {{ end }}

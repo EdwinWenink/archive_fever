@@ -1,21 +1,27 @@
 <div>
-<!-- TODO Consolidate in partial -->
 <!--Sorts pages by the publishdate field in front matter; you could use by date as well; the reverse puts the newest at the front-->
 {{$posts := ($.Site.GetPage "section" "posts").Pages.ByPublishDate.Reverse}}
 <!--Grab the most recent-->
+<aside>
+    <p>
 {{ range first 1 $posts }}
-<p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Latest</p>
+    Latest: <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
 {{ end }}
 
 {{ with .NextInSection }}
-<p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Next</p>
+    Next: <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
 {{ end }}
 
 {{ with .PrevInSection }}
-<p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Previous</p>
+    Previous: <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <br>
 {{ end }}
 
 {{ range first 1 (shuffle $posts)  }}
-<p><a href="{{ .Permalink }}">{{ .Title }}</a> <-- Random</p>
+Random: <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}
+    </p>
+</aside>
 </div>

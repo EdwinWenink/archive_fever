@@ -18,7 +18,7 @@ In this post we discuss the do's and don'ts when it comes to leaking information
 
 This is an example of how it should *not* be done ([source](https://stackoverflow.com/questions/56308116/should-feature-selection-be-done-before-train-test-split-or-after)):
 
-```
+```python
 import numpy as np
 from sklearn.feature_selection import SelectKBest
 from sklearn.model_selection import train_test_split
@@ -51,7 +51,7 @@ You can see that the feature selector is fitted using target signal `y`, which i
 
 Instead, you should only fit the data preprocessing steps on the training data *after* splitting, and then at inference time *apply* (but not refit!) the preprocessing steps:
 
-```
+```python
 # split first
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
 # then select features using the training set only
@@ -60,6 +60,7 @@ X_train_selected = selector.fit_transform(X_train,y_train)
 
 # fit again a simple logistic regression
 lr.fit(X_train_selected,y_train)
+
 # select the same features on the test set, predict, and get the test accuracy:
 X_test_selected = selector.transform(X_test)
 y_pred = lr.predict(X_test_selected)
@@ -78,7 +79,7 @@ So you may for example remove features that always have the same value, i.e. sel
 
 Okay, well, let's test that!
 
-```
+```python
 from sklearn.feature_selection import VarianceThreshold
 
 selector = VarianceThreshold(threshold=1)  # Normally you'd do some form of scaling
@@ -116,7 +117,7 @@ You therefore effectively do not as adequately evaluate the ability of the model
 
 In short, even though unsupervised feature selection does not leak data strictly by itself, this insight is not super useful in practical applications because 1) you'll likely also need other prior steps that *do* leak information and 2) you'll have to constantly be careful and overthink each each step, which costs effort while unnecessarily being at risk.
 
-It's better to just follow the rule of thumb: 
+It's better to just follow the rule of thumb:
 avoid leakage by always fitting your data preprocessing and feature selection *only* on the *training* data.
 During testing, only *apply* the data preprocessing steps used during the training phase.
 

@@ -1,4 +1,4 @@
-<h2 id="engrams">{{ title .Data.Term  }} Engrams </h2>
+<!--<h2 id="engrams">{{ title .Data.Term  }} Engrams </h2>-->
 
 <div class="author-portret">
 <a href="{{ .Site.BaseURL }}~ejw">
@@ -8,7 +8,6 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 </div>
 
 <div class="preview">
-
 {{ $baseURL := .Site.BaseURL}} <!-- because of annoying scoping -->
 {{ $preview_n := 15 }}
 {{ range $index, $value := first $preview_n (where .Site.RegularPages ".Type" "posts") }}
@@ -43,6 +42,7 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
 {{ end }}
 
 <br>
+
 <p> Read as a <a href="{{ .Site.BaseURL }}/posts">blogroll</a> or as <a href="{{ .Site.BaseURL }}/series">series</a>.<br>
 See <a href="{{ .Site.BaseURL }}/archives">archives</a> for all engrams...</p>
 </div>
