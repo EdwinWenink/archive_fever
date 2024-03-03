@@ -12,7 +12,7 @@ One of the most basic techniques in Natural Language Processing [(NLP)](zettelka
 
 `scikit-learn` provides efficient classes for this:
 
-```
+```python
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 ```
 
@@ -53,7 +53,7 @@ Vectorizers can be customised with three arguments: 1) preprocessor, 2) tokenize
 So in order to add stemming or lemmatization to the sklearn vectorizers, a good approach is to include this in a custom tokenize function.
 This does assume our stemming and lemmatization functions only need access to tokens, instead of the whole input strings (may be documents, sections, paragraphs, sentences etc.).
 
-This is a very nice snippet to compose functions using `functools` 
+This is a very nice snippet to compose functions using `functools`
 
 ```python
 import functools
@@ -74,7 +74,7 @@ Assuming we have some class where we can assign a stemmer, a lemmatizer, or neit
 # If a stemmer or lemmatizer is provided in the configuration
 # compose a new tokenization function that includes stemming/lemmatization after tokenization.
 # This allows stemming or lemmatization to be integrated e.g. with CountVectorizer
-if stemmer: 
+if stemmer:
     self._tokenize = compose(self._stemmer.stem, self._tokenizer.tokenize)
 elif lemmatizer:
     self._tokenize = compose(self._lemmatizer.lemmatize, self._tokenizer.tokenize)
@@ -94,7 +94,7 @@ use_idf = True
 tfidf = TfidfVectorizer(tokenizer=self._tokenize,
                         max_features=max_features,
                         ngram_range=ngram_range,
-                        min_df=1, 
+                        min_df=1,
                         max_df=1.0,
                         use_idf=use_idf)
 ```
