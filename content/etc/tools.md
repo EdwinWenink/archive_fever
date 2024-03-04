@@ -6,9 +6,12 @@ tags: ['etc']
 
 I'm currently using two machines: a desktop running Windows and a ThinkPad T420 running [Arch Linux](https://archlinux.org/).
 I have Windows installed from before I got familiar with Linux and I'd like to get rid of it, but I'm not mentally ready to make that step because some software I like (read: Elite Dangerous) does not run well on Linux.
+I recently updated my desktop to a nicer machine with a RTX 3080 and 64GB RAM.
 
-The ThinkPad T420 is loved for being a laptop with a good keyboard. 
-On my desktop, I use the tenkeyless Leopold FC 660M keyboard with blue cherry switches, alongside a cheap Verto Ergonomic mouse from Trust.
+The ThinkPad T420 is loved for being a laptop with a good keyboard.
+On my desktop, I used a tenkeyless Leopold FC 660M keyboard with blue cherry switches, alongside a cheap Verto Ergonomic mouse from Trust.
+Unfortunately, I spilled [coffee](/etc/coffee) on it so a few keys don't work anymore.
+For daily use, I now enjoy a Mistel MD770 split mechanical keyboard with Brown Cherry switches.
 
 On Arch Linux, I used [i3wm](https://i3wm.org/) for several years, but a while back I switched to [dwm](https://dwm.suckless.org/) and I like how simple and fast it is.
 I kept tinkling with i3 and after a while got fed up with wasting time on this, and regressed into a bare bones setup with the default i3 status bar.

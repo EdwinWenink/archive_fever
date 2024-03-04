@@ -1,5 +1,5 @@
 ---
-title: Linkage
+title: Links
 author: Edwin Wenink
 tags: ['etc']
 toc: true
@@ -11,11 +11,11 @@ That's a shame but part of life on the internet.
 
 If you look closely the URL mentions something about a blogroll, but that's not quite accurate, is it now?
 
-Some links are here because I kept them open in a browser tab for too long, so I might not have read them carefully myself. 
+Some links are here because I kept them open in a browser tab for too long, so I might not have read them carefully myself.
 Neither do I necessarily endorse whatever is listed on these pages, deal with it!
 I also bookmark stuff under [edwinwenink.xyz/microblog/](https://www.edwinwenink.xyz/microblog/), but those I have read for sure.
 
-I do more or less try to organize links - it's a futile effort, one may call it Archive Fever - but it doesn't always work out. 
+I do more or less try to organize links - it's a futile effort, one may call it Archive Fever - but it doesn't always work out.
 The order of links has no significance.
 That's OK.
 
@@ -31,6 +31,10 @@ Intended to be permanently under construction.
 
 <br>
 
+## Yet to find a place
+
+- [River by Max Bittker: a visual connection engine](https://river.maxbittker.com/)
+
 ## Insightful Blogs
 
 - I absolutely adore everything about [Matt Might's blog](http://matt.might.net/#blog)
@@ -42,7 +46,7 @@ Intended to be permanently under construction.
     * For example this post on [slow thinking](https://sive.rs/slow)
 
 
-## Vim 
+## Vim
 
 - [Overview basic commands](https://www.radford.edu/~mhtay/CPSC120/VIM_Editor_Commands.htm)
 - [At least one Vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/)
@@ -68,7 +72,7 @@ Intended to be permanently under construction.
 	* [Observations after one month of using Zettelkästen]( https://clerestory.netlify.com/zk1/#fn-2 )
 - [Great short but comprehensive intro to Zettelkasten](https://writingcooperative.com/zettelkasten-how-one-german-scholar-was-so-freakishly-productive-997e4e0ca125)
 - [Living with a Zettelkasten (digital system)]( https://omxi.se/2015-06-21-living-with-a-zettelkasten.html )
-- Johannes F.K. Schmidt on Zettelkasten: 
+- Johannes F.K. Schmidt on Zettelkasten:
 	* [ Der Zettelkasten Niklas Luhmanns als Überraschungsgenerator (pdf) ]( https://www.uni-bielefeld.de/soz/luhmann-archiv/pdf/jschmidt_zettelkasten-als-uberraschungsgenerator.pdf )
 	* [Niklas Luhmann's Card Index: The Fabrication of Serendipity]( https://sociologica.unibo.it/article/view/8350/8270 )
 - [The Zettelkasten Method (physical system)](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1#Bd7BsyRovDaHAjFWz)
@@ -100,6 +104,8 @@ Intended to be permanently under construction.
 ## Digital Garden
 
 - [Maggie Appleton - A Brief History of Digital Gardens](https://maggieappleton.com/garden-history)
+    * [Digital Gardeners - Github]()
+
 - [Joel Hook - My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
 - [Tom Critchlow - Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden/)
     * [Chain](https://tomcritchlow.com/blogchains/digital-gardens/)
@@ -107,18 +113,18 @@ Intended to be permanently under construction.
 - [Mark Bernstein - Hypertext Garden (1998)](http://www.eastgate.com/garden/Enter.html)
 - [Mike Caufield - The Garden and the Stream: A Technopastoral ](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)
 - [How blogs broke the web](https://stackingthebricks.com/how-blogs-broke-the-web/)
-- [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos/) 
+- [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos/)
 - [Devon Zuegel - Epistemic statuses](https://devonzuegel.com/post/epistemic-statuses-are-lazy-and-that-is-a-good-thing)
 - [gwern.net](https://www.gwern.net/)
     * This site is fascinating and a technical feat in itself. Note to self: look here more often!
     * [uses confidence tags to indicate epistemic status](https://www.gwern.net/About#confidence-tags)
 - [coolguy.website manifesto](https://coolguy.website/introduction/)
-
 - [The Jolly Contrarian](https://jollycontrarian.com/index.php?title=Main_Page) (very witty!)
 - [philosopher.life](https://philosopher.life) (a unique personal wiki)
 - [Strikingloo Digital Garden](https://strikingloo.github.io/wiki/)
+- [Making a Place on the Web - Garden](https://garden.vincentli.space/making-a-place-on-the-web---garden)
 
-## 'Academic' tips, approaches 
+## 'Academic' tips, approaches
 
 - [How to ask questions the smart way](http://www.catb.org/~esr/faqs/smart-questions.html).
 - [How to disagree](http://www.paulgraham.com/disagree.html)
@@ -129,7 +135,7 @@ Intended to be permanently under construction.
 
 - [The Web of Alexandria](http://worrydream.com/TheWebOfAlexandria/2.html)
 - [As We May Think - Vannevar Bush, 1945](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
-- [The Cobweb - Can the Internet be archived?](https://www.newyorker.com/magazine/2015/01/26/cobweb) 
+- [The Cobweb - Can the Internet be archived?](https://www.newyorker.com/magazine/2015/01/26/cobweb)
 - [Internet with a human face](https://idlewords.com/talks/internet_with_a_human_face.htm)
 	* "I've come to believe that a lot of what's wrong with the Internet has to do with memory. The Internet somehow contrives to remember too much and too little at the same time, and it maps poorly on our concepts of how memory should work."
 	* "THE WEB HAS A CENTER"
@@ -171,6 +177,27 @@ Intended to be permanently under construction.
 	- [Very interesting design of the webring](https://github.com/XXIIVV/webring)
 - [daywreckers](http://daywreckers.com/)
 - [Collection of canonical short texts, mostly on (cyber)culture](https://urbigenous.net/library/).
+- [tiny internets](https://www.are.na/spencer-chang/tiny-internets)
+- [list of lists](https://arbesman.net/listoflists/)
+- [Bernadette Mayer's List of Journal Ideas](https://www.writing.upenn.edu/library/Mayer-Bernadette_Experiments.html)
+
+## Web nostalgia
+
+- [Syllabus for Taking an Internet Walk](https://syllabusproject.org/syllabus-for-taking-an-internet-walk/)
+- [thewebthatwas](http://thewebthatwas.net/)
+- [web paleontology]({{<parenturl>}}web_paleontology).
+
+## Minimalist / retro website design
+
+- [brutalistwebsites](https://brutalistwebsites.com/)
+- [mariouher](https://mariouher.com/)
+- [personal site of emile sadria](http://emilesadria.com/)
+- [Make a website with only pandoc and make]( https://computableverse.com/blog/create-website-using-pandoc-make-file )
+- [Tilde website with only pandoc and make](https://zine.tildeverse.org/issue-2.html)
+- [No idea what this is but the design is crazy](https://s-i-l-o.fr/)
+- [greaterthanorequalto.net](http://greaterthanorequalto.net/)
+- [motherfuckingwebsite](http://motherfuckingwebsite.com/)
+- [txti](http://txti.es/)
 
 ## Machine learning and data science
 
@@ -197,14 +224,14 @@ Intended to be permanently under construction.
 
 ## Philosophy
 
-- [De Klos](http://www.de-klos.net/): blog of my friend Boris on the challenges of the Antrophocene [(old version)](https://deklos.wordpress.com/) 
+- [De Klos](http://www.de-klos.net/): blog of my friend Boris on the challenges of the Antrophocene [(old version)](https://deklos.wordpress.com/)
 - [NewAPPS: Art, Politics, Philosophy, Science](https://www.newappsblog.com/)
 - [Digressions&Impressions](https://digressionsnimpressions.typepad.com/digressionsimpressions/)
 - [What can I do with a philosophy major](http://www.oswego.edu/~delancey/WhatCanIDo.html)
 	* Same domain contains several educational resources on philosophy
 - [Stoicism-fu: internet guide to what's worth keeping in Stoicism](https://philosopher.life/#Stoicism-fu:Stoicism-fu)
 - [Fivebooks.com philosophy section](https://fivebooks.com/category/philosophy/): recommended readings by known philosophers for many areas of philosophy.
-- [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look. 
+- [Conscious Entities](http://www.consciousentities.com): casual blog for some late-night philosophy, with a nice clean look.
 - [Ontology.co](https://www.ontology.co/idx00.htm)
 
 ## Text graphics: ASCII, ANSI, PETSCII, etc.
@@ -238,21 +265,6 @@ Intended to be permanently under construction.
 ## Literature
 
 - [Bert Wenink](https://www.bertwenink.nl/) (that's my dad) wrote amongst other things a historical novel that describes the Atjeh war in Indonesia, The Netherland's longest and bloodiest colonial war.
-
-## Minimalist / nostalgic / retro website design
-
-- [Make a website with only pandoc and make]( https://computableverse.com/blog/create-website-using-pandoc-make-file )
-- [Tilde website with only pandoc and make](https://zine.tildeverse.org/issue-2.html)
-- [No idea what this is but the design is crazy](https://s-i-l-o.fr/)
-- [greaterthanorequalto.net](http://greaterthanorequalto.net/)
-- [motherfuckingwebsite](http://motherfuckingwebsite.com/)
-- [txti](http://txti.es/)
-- [personal site of emile sadria](http://emilesadria.com/)
-- [thewebthatwas](http://thewebthatwas.net/)
-- [mariouher](https://mariouher.com/)
-- [brutalistwebsites](https://brutalistwebsites.com/)
-
-Also see [web paleontology]({{<parenturl>}}web_paleontology).
 
 ## Unix stuff
 
@@ -288,7 +300,7 @@ Also see [web paleontology]({{<parenturl>}}web_paleontology).
 
 ## Miscellaneous
 
-Links I do not know yet how to categorize. 
+Links I do not know yet how to categorize.
 Perhaps that's the beauty of it.
 
 - [Teaching in Minecraft](https://blog.haschek.at/2019/teaching-in-minecraft.html)
