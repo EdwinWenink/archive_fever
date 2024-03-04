@@ -1,5 +1,5 @@
 ---
-title: Course Overview
+title: University Courses
 author: Edwin Wenink
 tags: ['etc']
 toc: true
@@ -20,11 +20,11 @@ For these courses I have included some indication of the practical work involved
     * Project on text classification using stylistic text features
 - New Media Lab
     * Developed a podcast app as a research tool for experimental research ([prototype](https://nml-podcast-transcription.vercel.app/home))
-- Intelligent Systems in Medical Imaging 
+- Intelligent Systems in Medical Imaging
     * Final project: U-Net for Segmenting Stroma and Tumor Infiltrating Lymphocytes in Breast Cancer Images
 - Bayesian Networks
     * Project 1: Manual design from scratch of a Bayesian network (DAG) that models wilderness areas in a nature reserve
-    * Project 2: Learn the Bayesian network structure on the same data automatically  
+    * Project 2: Learn the Bayesian network structure on the same data automatically
 - Information Retrieval
     * Project: Promoting diversity in search results by reranking on latent subtopics using LDA
 - Neuromorphic Computing
@@ -38,7 +38,7 @@ For these courses I have included some indication of the practical work involved
 - Statistical Machine Learning
     - Project 1: Polynomial curve fitting; gradient descent
     - Project 2: Probabilistic generative models; Bayesian linear regression; Sequential learning
-    - Project 3: Neural network regression; Bayesian polynomial regression; 
+    - Project 3: Neural network regression; Bayesian polynomial regression;
     - Project 4: Gaussian Processes; Expectation-maximization; Gibbs sampling and Metropolis-Hastings; Variational Inference for Bayesian linear regression
 - Probabilistic Deep Learning
     * Variational Inference with Gaussian models
@@ -82,7 +82,7 @@ I wrote a thesis researching explainable recommendation of case law using paragr
  - Cognitive Robotics
  - Search- and Planning algorithms, Bayesian Networks, Machine Learning
  - Academic Skills for quantitative research
- - Professional Skills (application of science and pitch training) 
+ - Professional Skills (application of science and pitch training)
  - Brain-computer interfacing (BCI)
  - Modern Software Development Techniques (including semester software project with Agile/Scrum)
  - Computational and Formal Modeling
@@ -121,7 +121,7 @@ Wrote an article on Jacques Derrida and Martin Heidegger, as well as a PhD propo
 
 ### Phil. Propaedeutic Year | Introductory courses...
 
-... to social and political philosophy, epistemology, philosophy of science, metaphysics, logic, rhetorics, philosophy of cognition, philosophical ethics, philosophy of language, and courses on the history of both antique, medieval, modern and contemporary philosophy. 
+... to social and political philosophy, epistemology, philosophy of science, metaphysics, logic, rhetorics, philosophy of cognition, philosophical ethics, philosophy of language, and courses on the history of both antique, medieval, modern and contemporary philosophy.
 
 ### Phil. Bachelor | Major courses on...
 
@@ -143,8 +143,6 @@ Wrote an article on Jacques Derrida and Martin Heidegger, as well as a PhD propo
 - the interplay between philosophical and literary methods (one methodical course and two courses where the studied methods are applied)
 - sexuality (I became interested in this topic from an anthropological point of view: insofar as it shapes human identities)
 
-### Phil. Bachelor | Thesis 
+### Phil. Bachelor | Thesis
 
 ... on Jacques Derrida's method of deconstruction in *Of Grammatology*.
-
-

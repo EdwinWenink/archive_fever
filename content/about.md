@@ -16,7 +16,7 @@ This particular confliction is called **Archive Fever**, a term coined by Jacque
 
 <figure style="width: 30%; margin-left: 20px; margin-bottom: 10px; float: right;">
 <img src="/images/diffusion/diffusion_self_portrait.jpg" alt="Edwin, imagined through stable diffusion." />
-<figcaption>Edwin, imagined through stable diffusion.</figcaption>
+<figcaption><a href="/~ejw">Edwin</a>, imagined through stable diffusion.</figcaption>
 </figure>
 
 
@@ -72,4 +72,3 @@ With the irreplaceable singularity of a document to interpret, to repeat, to rep
 -->
 
 Feel free to send me a mail in response to anything on this website.
-If you want to encrypt it, <a href="https://www.edwinwenink.xyz/page/pgp.html">here</a> is my PGP key.
