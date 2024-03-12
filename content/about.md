@@ -8,8 +8,8 @@ tags: ['about']
 [Short version](/images/deathgeneratormbtt.png)
 
 This weblog is a mnemonic device.
-Over the years <a href="../~ejw">I</a> have occupied myself with studying such [diverse topics]({{<baseurl>}}etc/courses), only to realize that I can barely recollect half of it.
-Now I suffer from the nostalgic desire to retrieve what is forgotten, and to archive what comes so that it will not meet the same fate.
+Over the years <a href="/~ejw">I</a> have occupied myself with studying such [diverse topics]({{<baseurl>}}etc/courses), only to realize that I can barely recollect half of it.
+Now I suffer from the nostalgic desire to retrieve what is forgotten and to build a grand archive to preserve everything, such that it will not meet the same fate.
 This particular confliction is called **Archive Fever**, a term coined by Jacques Derrida.
 
 >It is to burn with a passion. It is never to rest, interminably, from searching for the archive right where it slips away. It is to run after the archive, even if there's too much of it, right where something in it anarchives itself. It is to have a compulsive, repetitive, and nostalgic desire for the archive, an irrepressible desire to return to the origin, a homesickness, a nostalgia for the return to the most archaic place of absolute commencement (Derrida, Archive Fever 1995, 57)
