@@ -1,5 +1,2 @@
-<!--<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>-->
 <!--The following handles relative links better! Needed for my Zettelkasten-->
-{{ $link := .Destination }}
-{{- with .Page.GetPage .Destination }}{{ $link = .RelPermalink }}{{ end -}}
-<a href="{{ $link | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text }}</a>
+{{ $link := .Destination }}{{- with .Page.GetPage .Destination }}{{ $link = .RelPermalink }}{{ end -}}<a href="{{ $link | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text }}</a>{{- /*hoi */ -}}
