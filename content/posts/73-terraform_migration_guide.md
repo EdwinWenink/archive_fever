@@ -30,7 +30,7 @@ There are various scenarios in which you need to migrate Terraform resources:
 Scenario A and B are the most interesting scenarios.
 In particular scenario B is a superset of scenarios C and D, so they are discussed in one go.
 
-## Scenario A: moving resources within the same Terra form state
+## Scenario A: moving resources within the same Terraform state
 
 - Make the refactor in your IaC
 - In a Terraform plan, observe which resources are deleted and then recreated at the new path
