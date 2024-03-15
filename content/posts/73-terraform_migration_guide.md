@@ -3,7 +3,8 @@ title: "Idiot's guide to resource migration in Terraform"
 date: 2024-03-15T12:21:46+01:00
 draft: false
 author: "Edwin Wenink"
-tags: ['programming']
+tags: ['terraform', 'infrastructure as code', 'programming']
+series: ['programming']
 toc: true
 ---
 
