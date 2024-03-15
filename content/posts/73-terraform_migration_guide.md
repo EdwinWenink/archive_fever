@@ -155,4 +155,4 @@ Also don't forget to update to the latest Terraform version, because the  `for_e
 
 Related notes:
 
-- [Terraform migration guide](/zettelkasten/terraform_migration_guide)
+- [Terraform migration guide](/zettelkasten/202403130820-terraform_migration_guide/)
