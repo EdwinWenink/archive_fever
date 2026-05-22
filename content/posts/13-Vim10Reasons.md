@@ -54,7 +54,7 @@ I will try to give examples of that in a follow-up post.
 
 ## My ten reasons for using Vim
 
-**1) Improve efficiency**
+### 1. Improve efficiency
 
 The main reason for using Vim is that it enables more efficient text editing due to its numerous commands.
 If you take for granted that Vim does this for a second, you might ask: but at what cost? Do I need to learn a hundred special commands?
@@ -62,7 +62,7 @@ The answer is yes and no. Vim commands for text navigation and manipulation foll
 This means that if you learn some basic operations and a simple rule how to combine them, the amount of commands at your disposal grows exponentially.
 It is not hard to remember those basic operations, because they make sense.
 
-**2) Focus on the content (and think about the view later)**
+### 2. Focus on the content (and think about the view later)
 
 Vim and its ecosystem of plugins offers practically all the functionality you need, but without unnecessary bells and whistles.
 Traditional text editors such as MS Word have many menu's, tabs and buttons.
@@ -81,7 +81,7 @@ If you do not require complex typesetting, a good option is writing in Markdown,
 
 But you can also get the best of both worlds: the simplicity of Markdown, with the beauty of LaTeX. I personally write all my study notes in Markdown, and then use the amazing tool [pandoc](https://pandoc.org/) to create a nice looking pdf file with the good looks of LaTeX. Pandoc does this out of the box, but allows you to define your own LaTeX templates for converting markdown into pdf using a LaTeX engine. The other day I made my own template for compiling my study notes just the way I like it.
 
-**3) Universally readable file type without compatibility issues**
+### 3. Universally readable file type without compatibility issues
 
 Did you ever try opening a .docx document with a plain text editor? Everyone uses .docx because everyone uses MS Word. But .docx is only readable as intended through MS Word (let's forget about OpenOffice for now). So everyone keeps using Word (and paying for it).
 
@@ -93,7 +93,7 @@ Everyone can read and edit it with their program of choice, and you will not be 
 
 And there are some more advantages to this:
 
-**4) Version control on your texts**
+### 4. Version control on your texts
 
 Using plain text for your writing opens up the possibility to use adequate version control on your documents, for example using git.
 You can integrate git in Vim by using plugins, for example [gitgutter](https://github.com/airblade/vim-gitgutter), which indicates all changes in your text.
@@ -103,31 +103,31 @@ Programmers are already used to using tools like git, but why do people in the s
 
 Also, git is free. Which brings me to the next advantage of Vim.
 
-**5) Vim is completely free (okay, Charityware).**
+### 5. Vim is completely free (okay, Charityware)
 
 Vim is free, but comes installed with the friendly mention that if you want to give something back, you should consider donating money to a charity supporting orphan children in Uganda.
 
-**6) Vim is cross-platform**
+### 6. Vim is cross-platform
 
 The files you write in Vim are readable by everyone, but on top of that vim (or gVim) is available for all major operating systems.
 
-**7) Highly extendable, fits whatever workflow**
+### 7. Highly extendable, fits whatever workflow
 
 Vim is highly customizable to your needs, and there are numerous plugins available for all kinds of purposes. Do you want to use Vim as an IDE? Sure, you can setup autocompletion, automatic bracket closing, function and variable tags, file exploring, syntax checking and highlighting for your language of choice, etc. You are not a programmer but you like writing proza? Sure, install for example Goya and Limelight for a smooth and beautiful writing experience.
 
 And one thing to not forget: you can run shell commands without leaving vim using the `!` command. This means that whatever commands line tools you use, you can integrate vim in your usual workflow.
 
-**8) Vim (or at least vi) is ubiquitous**
+### 8. Vim (or at least vi) is ubiquitous
 
 After learning Vim / vi keybindings, you will find that you can start up Vim on practically every Linux machine you will encounter.
 No hassle. Even if you need to do something on a remote machine terminal: vi will be there. Vi-bindings are so popular that you will see them appearing in other applications as well.
 
-**9) Vim is ergonomic**
+### 9. Vim is ergonomic
 
 Vim allows you to do your work without ever having to move your hands away from the keyboard.
 I spent quite some time behind my computer, and not having my hand on the mouse continuously really helps me reduce stress on my right shoulder.
 
-**10) Have fun learning**
+### 10. Have fun learning
 
 Perhaps the best influence vim has on my workflow, is that *whatever* I do with Vim, it will indirectly be part of the bigger learning experience that Vim is. So Vim actually is a strong motivational factor for me. For example, taking notes is tedious, but now I see it as an opportunity to improve on my skills, and most importantly, enjoy the skills I have gathered so far.
 

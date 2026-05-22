@@ -8,7 +8,7 @@ tags: ["philosophy","holism","emergence","ontology","Morton","phenomenology"]
 A year ago I attended a lecture by [Timothy Morton](http://ecologywithoutnature.blogspot.com/).
 I had not seriously read anything of Morton except a quite extravagant paper called "From modernity to the Anthropocene: ecology and art in the age of asymmetry", which flamboyantly combined Hegel, art and ecology in a manner I do not recall.
 The lecture was equally flamboyant, and can perhaps best be described as a confused rant that simultaneously felt very genuine and personal.
-The lecture can be listened to integrally [here](https://www.ru.nl/radboudreflects/terugblik/terugblik-2018/terugblik-2018/18-03-23-being-ecological-lecture-by-philosopher/).
+The [lecture can be listened to integrally](https://www.ru.nl/radboudreflects/terugblik/terugblik-2018/terugblik-2018/18-03-23-being-ecological-lecture-by-philosopher/).
 Some time after the lecture, I watched [an interview](https://www.youtube.com/watch?v=1AEy2KmHwh0) of Morton with his publisher, in which in particular his conception of holism struck me as refreshing.
 
 The most summary description of holism undoubtedly is the phrase: "The whole is greater than the sum of its parts."

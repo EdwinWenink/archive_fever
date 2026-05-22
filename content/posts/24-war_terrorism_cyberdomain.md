@@ -12,7 +12,7 @@ One paragraph in particular caught my eye:
 
 > To complicate matters, having cyber insurance might not cover everyone’s losses. Zurich American Insurance Company refused to pay out a $100 million claim from Mondelez, saying that since the U.S. and other governments labeled the NotPetya attack as an action by the Russian military their claim was excluded under the “hostile or warlike action in time of peace or war” exemption.
 
-You can read the official U.S. press release [here](https://www.whitehouse.gov/briefings-statements/statement-press-secretary-25/).
+You can read [the official U.S. press release](https://www.whitehouse.gov/briefings-statements/statement-press-secretary-25/).
 What interests me is not just the small letters of insurances policies, although they can have huge financial consequences for companies in this case.
 Philosophically and politically, the more interesting question is what constitutes an act of war in the cyber domain.
 In this scenario, insurance money is paid based on whether the cyber attack is considered a warlike act or not.
@@ -30,16 +30,16 @@ The DigiNotar certificates becoming untrusted consequentially threatened to dest
 In other words, the hack was a threat to the stability of the Dutch state.
 Is this a warlike act? Or is it an act of war?
 
-Interestingly a presumably Iranian hacker claimed the attack [here](https://pastebin.com/1AxH30em) and stated that his motivation was political: revenge for the Srebrenica massacre the part the Dutch government played in it.
+Interestingly a presumably Iranian hacker [claimed the attack](https://pastebin.com/1AxH30em) and stated that his motivation was political: revenge for the Srebrenica massacre the part the Dutch government played in it.
 It seems then that destabilizing the Dutch government was not just a side-effect, but a direct target of the attack.
 One can wonder how convincing is it that such a young person would successfully perform a hack on a major certificate authority all by himself.
 Especially when one hypothesizes about government involvement and if one takes into account that the target of the attack was announced to be the Dutch government, then this attack can potentially be interpreted as an act of war.
 
-The following quote from [here](https://www.computerworld.com/article/2507509/comodo-hacker-claims-another-certificate-authority.html) argues against jumping to such conclusions:
+The following quote argues against jumping to such conclusions:
 
-> "Security expert Robert Graham, who's swapped e-mails with Ich Sun and ultimately confirmed that he was indeed the one who pulled off the Comodo hack, thinks otherwise. He accuses Comodo and reporters who have covered this story of jumping to conclusions about the Iran connection. "We make the assumption that anyone who supports the government there works for the government and that's just not true," said Graham, CEO of Errata Security. "My theory is he's exactly what he says he is. That's what the evidence points to. There's no evidence that says he would have to be part of a state-sponsored effort. The attack is not that complex. It's just what your average pen-tester would do."
+> "Security expert Robert Graham, who's swapped e-mails with Ich Sun and ultimately confirmed that he was indeed the one who pulled off the Comodo hack, thinks otherwise. He accuses Comodo and reporters who have covered this story of jumping to conclusions about the Iran connection. "We make the assumption that anyone who supports the government there works for the government and that's just not true," said Graham, CEO of Errata Security. "My theory is he's exactly what he says he is. That's what the evidence points to. There's no evidence that says he would have to be part of a state-sponsored effort. The attack is not that complex. It's just what your average pen-tester would do." [source](https://www.computerworld.com/article/2507509/comodo-hacker-claims-another-certificate-authority.html)
 
-Interestingly, the later investigation report by Fox-IT which can be downloaded [here](https://www.rijksoverheid.nl/bestanden/documenten-en-publicaties/rapporten/2011/09/05/diginotar-public-report-version-1/rapport-fox-it-operation-black-tulip-v1-0.pdf) from a Dutch government website showed that "Around 300.000 unique requesting IPs to google.com have been identified. Of these IPs \>99% originated from Iran" (p. 8).
+Interestingly, the later investigation report by Fox-IT ([download link](https://www.rijksoverheid.nl/bestanden/documenten-en-publicaties/rapporten/2011/09/05/diginotar-public-report-version-1/rapport-fox-it-operation-black-tulip-v1-0.pdf) from a Dutch government website showed that "Around 300.000 unique requesting IPs to google.com have been identified. Of these IPs \>99% originated from Iran" (p. 8).
 It turned out that practically all victims of the attack on a Dutch certificate authority where in fact Iranian gmail users.
 The target then was not the Dutch government after all. The Dutch certificates were used for a massive man-in-the-middle attack on Iranian civilians.
 

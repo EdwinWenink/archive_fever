@@ -6,4 +6,4 @@ target: http://timharford.com/2013/09/3180/
 type: micro
 bookmark: true
 ---
-Very good read about how to manage email in a sane way. For an implementation with mu4e and org-mode, see [here](http://pragmaticemacs.com/emacs/master-your-inbox-with-mu4e-and-org-mode/)
+Very good read about how to manage email in a sane way. [Implementation with mu4e and org-mode.](http://pragmaticemacs.com/emacs/master-your-inbox-with-mu4e-and-org-mode/)

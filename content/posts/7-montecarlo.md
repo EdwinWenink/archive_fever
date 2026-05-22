@@ -40,7 +40,7 @@ To get the probability we are interested in, we only have to divide the number o
 
 This is the python 3 script I wrote, so you can play around with the parameters yourself. The code for a simple histogram plot is also included, but you should delete this if you don't have the matplotlib package (and don't want to install it).
 
-{{< highlight python>}}
+```python
 import random
 import math
 import matplotlib.pyplot as plt
@@ -64,7 +64,7 @@ print("Approximation of pi: ", sum(estimations)/float(iterations))
 bins=int(iterations/2)
 plt.hist(estimations, bins=bins,histtype='step')
 plt.savefig("pi-plot.png")
-{{< /highlight >}}
+```
 
 ## Sampling and Plots
 

@@ -53,8 +53,7 @@ For these courses I have included some indication of the practical work involved
 I wrote a thesis researching explainable recommendation of case law using paragraph embeddings and counterfactual explanations.
 
 
-
-## Bachelor Artificial Intelligence ##
+## Bachelor Artificial Intelligence
 
 ### AI Propaedeutic Year | courses on
 
@@ -71,7 +70,7 @@ I wrote a thesis researching explainable recommendation of case law using paragr
 - Programming in Java (two courses)
 - Functional Programming
 
-### AI Bachelor</b> | Major courses on
+### AI Bachelor | Major courses on
 
 - Bayesian Statistics
 - Data Mining

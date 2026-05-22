@@ -106,8 +106,7 @@ Intended to be permanently under construction.
 ## Digital Garden
 
 - [Maggie Appleton - A Brief History of Digital Gardens](https://maggieappleton.com/garden-history)
-  * [Digital Gardeners - Github]()
-
+  * [Digital Gardeners - Github](https://github.com/MaggieAppleton/digital-gardeners)
 - [Joel Hook - My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
 - [Tom Critchlow - Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden/)
   * [Chain](https://tomcritchlow.com/blogchains/digital-gardens/)
