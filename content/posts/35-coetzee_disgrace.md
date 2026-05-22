@@ -173,6 +173,6 @@ Zoals David tegen Petrus zegt: ‘It is not finished. On the contrary, it is
 just beginning. It will go on long after I am dead and you are dead.’
 (Coetzee 2000, 202). Het gesprek gaat voort, al is het zonder ons.
 
-### Bibliografie
+## Bibliografie
 
 Coetzee, J.M. 2000. *Disgrace*. London: Vintage.

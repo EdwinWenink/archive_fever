@@ -70,4 +70,4 @@ The latter point is relatively self-evident and adds to the earlier reasoning: c
 Russel's book in particular deals with the problem of specifying objectives in AI technology designed to optimize towards a given goal.
 But you could perhaps generalize his argument to technocracy in general: technocracy firstly assumes you have an (engineer) class of people that know what is best, which is both optimistic and paternalistic, but secondly, even when they *do* know what is best, it is quite a fundamental issue whether you can also translate that into procedures that truly achieve the intended result.
 
-*N.B. I'm reading this book in EPUB format so I can't quite add page references. All citations can be found in Chapter 4, Surveillance, Persuasion, and Control, section "Controlling your behavior"*
+\*N.B. I'm reading this book in EPUB format so I can't quite add page references. All citations can be found in Chapter 4, Surveillance, Persuasion, and Control, section "Controlling your behavior"*

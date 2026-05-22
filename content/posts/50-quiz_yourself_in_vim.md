@@ -69,7 +69,7 @@ Of course you can do this better, and you can extend it easily to also search ot
 I currently have no need for that, and I really wanted this to be a ten second hack.
 After all, I'm supposed to be studying now!
 
-### N.B
+## N.B
 
 You can of course also write a standalone script to collect the questions and dump them in a file.
 On Unix-like systems, you could do something like this:

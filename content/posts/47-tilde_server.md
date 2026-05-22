@@ -10,7 +10,7 @@ author: "Edwin Wenink"
 When I'm busy I am usually very motivated to do side projects, but paradoxically I find it harder to stay motivated and productive when I find myself with more time on my hands.
 My guess is that many people noticed a similar effect during this Corona crisis, thinking something along the lines of "well at least I now have time to do project X that I've been meaning to do for a while", only to find that it's not that easy to stay motivated after being locked in the house for several days without external structure.
 I felt the vague need to do a project, but more specifically I wanted it to be a project that would be collaborative and social, to make up for the social interaction lost due to Covid-19.
-Well, here's the perfect project: setting up your own "tilde club" along the lines of [tilde.club](http://tilde.club) or [tilde.town](http://tilde.town/) (see [here](http://tilde.club/~ejw/) for my tilde.club account).
+Well, here's the perfect project: setting up your own "tilde club" along the lines of [tilde.club](http://tilde.club) or [tilde.town](http://tilde.town/) ([this is my tilde.club account](http://tilde.club/~ejw/)).
 There's something in this project for people of different interests and skill sets.
 My main interest was to gain some experience with setting up a web server and being a system admin of a UNIX-like system.
 For my non-technical friends, it was a fun project because it provided a safe environment to get to learn the command line and learn how to write web pages.
@@ -134,7 +134,7 @@ Assuming you keep the default settings, you can edit your homepage with:
 `vim /var/www/html/index.nginx-debian.html`
 
 The next thing we want to do is set up nginx to publish web sites "usedir"-style, meaning that we allow each user to publish a website from a `public_html` folder in their home directory.
-I found [here](https://websiteforstudents.com/configure-nginx-userdir-feature-on-ubuntu-16-04-lts-servers/) how to do that in Nginx.
+[This tutorial](https://websiteforstudents.com/configure-nginx-userdir-feature-on-ubuntu-16-04-lts-servers/) describes how to do that in Nginx.
 Open the default configuration file at `/etc/nginx/sites-available/default` and make sure it matches the following:
 
 ```text
@@ -275,6 +275,7 @@ Don't forget to have some fun making your own stuff for your little community.
 In my friend group we have this quite random beaver theme going on.
 So I extended the `cowsay` command with an ASCII beaver ([source](https://www.asciiart.eu/animals/beavers)) and made it spit out random beaver-related quotes:
 
+```text
      ----------------------------------------
     < Save a tree, eat a beaver - Zac Hanson >
      ----------------------------------------
@@ -288,7 +289,7 @@ So I extended the `cowsay` command with an ASCII beaver ([source](https://www.as
               / |.'   |### 
              _ ``   )##
             /,,_/,,____#
-
+```
 
 If you place this command in `/usr/local/bin` and make it executable, other people can also use it.
 

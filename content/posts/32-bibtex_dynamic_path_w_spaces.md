@@ -8,7 +8,7 @@ tags: [LaTeX, BibTeX, bibliography]
 Although LaTeX is amazing in many aspects, I often encounter relatively small issues that somehow take way too long to fix.
 Today I encountered a very specific use case that gave me a headache, and I want to write up my solution so I never have to think about it again.
 
-### The scenario
+## The scenario
 
 I'm currently working on my bachelor thesis for Artificial Intelligence, which is due in a week, so I have no time to waste.
 My thesis lives in a github repo, so that I always have my latest work available depending on whether I work from my laptop running Arch Linux, or from my desktop running MS Windows.
@@ -32,7 +32,7 @@ This situation created two issues for me.
 2. I now have to provide a path, but both my Windows path and the Mendeley export files contain spaces in them.
 
 
-### Solutions
+## Solutions
 
 In order to solve the first issue, I loaded `\usepackage{ifplatform}`.
 This allows LaTeX to do an operating system check.

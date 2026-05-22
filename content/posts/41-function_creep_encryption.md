@@ -17,7 +17,7 @@ This transformative power is in fact something that is sought after nowadays.
 Take for example the Internet of Things movement that entertains the ideal of connected technologies embedded in our homes and ultimately our cities, to the point where they are ubiquitous and shape our life world.
 Despite this being a dream for some, others see in this the voluntary and naive submission to a surveillance society.
 
-### Function creep and security
+## Function creep and security
 
 In other cases, the application of a technology outside of its intended context is simply inappropriate.
 When it comes to security, [Bruce Schneier](https://www.schneier.com/essays/archives/2010/01/security_and_functio.html) writes that "far too often we build security for one purpose, only to find it being used for another purpose -- one it wasn't suited for in the first place."
@@ -35,7 +35,7 @@ The issue here is not just the particular usage of personal data that may be des
 The public outrage about the Cambridge Analytica-scandal is understandable because personal data collected in the context of a social network was used in another context for the Trump campaign.
 Those people may have consented to sharing their data with Facebook, but would likely not have consented to their data being used for a political campaign.
 
-### Function creep and contextual integrity
+## Function creep and contextual integrity
 
 Why function creep is such a threat to privacy is best explained by Helen Nissenbaum's concept of contextual integrity.
 When we visit a doctor we consent to disclosing very personal information so that the doctor can adequately help us (we are obliged to give the doctor complete and accurate information, actually).
@@ -50,7 +50,7 @@ For the course where I work as a teaching assistant, students were asked to give
 Reading and evaluating the resulting small essays were proof of the importance of teaching, as they forced my to formulate my own thoughts on the subject.
 I noticed one trend in particular, namely that many students proposed encryption as a solution to the privacy issues concerning function creep.
 
-### Is encryption a solution?
+## Is encryption a solution?
 
 Some students found [a blog of Michael Zimmer](https://www.michaelzimmer.org/2007/06/30/function-creep-101-surveillance-cameras-and-social-norms/) where he gives an example of privacy invasion due to function creep.
 He mentions how a dean of a Washington high school thought he saw two girls kissing.

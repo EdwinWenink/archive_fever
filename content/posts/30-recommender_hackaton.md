@@ -12,12 +12,12 @@ I was fully convinced that the score I achieved was very low, and I know for a f
 I will not share the Spark notebook itself, as the data we worked with is not open and much of the code was already provided by BigData Republic.
 Nevertheless I did gain some insights that I would like to share.
 
-### The challenge
+## The challenge
 
 Employment agencies such as RandStad want to show customers looking for a job the most relevant vacancies, given their preferences.
 The challenge for this hackathon was to build a recommender system that predicts a top 15 of vacancies, that can be shown to the user.
 
-### Data
+## Data
 
 All data was anonymized.
 
@@ -25,7 +25,7 @@ All data was anonymized.
 - A dataset of user profiles storing user preferences, such as the desired wage, minimum and maximum working hours, and maximum travel distance.
 - A dataset of vacancies, of which we will make a selection for recommendation.
 
-### Architecture of the solution
+## Architecture of the solution
 
 The basic model used for recommendation is [Collaborative filtering using alternating least squares](https://spark.apache.org/docs/2.2.0/ml-collaborative-filtering.html).
 
@@ -43,7 +43,7 @@ preference scores for items that previously had zero-entries.
 
 To implement this model in Spark, there are two major things to take into consideration:
 
-#### Implicit versus explicit feedback
+### Implicit versus explicit feedback
 
 Preferences of users for particular products can be explicit, for example when you ask users to rate the products they buy on a scale from 1 to 10 in a questionnaire.
 However, one can also have an implicit measure of preferences.
@@ -53,7 +53,7 @@ When it comes to Big Data, it is more likely that you have implicit preference d
 In the case of this hackathon, the indirect information we have of customer preference is a log of what vacancies users click on in the vacancy search machine of RandStad.
 If users click more on a particular type of vacancy, e.g. for management functions, we can infer this user prefers management functions, rather than for example being a cashier in a supermarket.
 
-#### Cold-start problem
+### Cold-start problem
 
 Another challenge for this setup is the so-called cold start problem.
 Computing an user-item association matrix for a given set of users and items is computationally quite expensive.
@@ -92,7 +92,7 @@ Based on that information you can either filter out vacancies, or integrate thes
 
 The end result of this whole process is a top 15 of vacancies to first display to the end user.
 
-### Parameter optimization, weighing factors for a final prediction
+## Parameter optimization, weighing factors for a final prediction
 
 Everyone used the same general approach with the ALS model, so what distinguished my solution from others where 1) model parameters and 2) further scoring and processing of vacancies based on profile data.
 
@@ -114,7 +114,7 @@ The largest improvement in my final score was achieved by using profile data and
 We computed a score for whether the vacancy matched the preferred working hours or not, and a normalized score for how far away the job is from the candidate. These factors, together with the recommendation score for the function title of a particular vacancy, were weighed together to produce a final score per vacancy.
 It turned out that people care a lot about how far the job is, and I gave this factor a very big weight of 10:1 compared to the recommendation score for the actual function title (but note that only vacancies for the top 3 function descriptions were taken into account, so the ALS model already fulfilled its purpose).
 
-### Result and reflection
+## Result and reflection
 
 The final score for the competition was a very simple recall measure, i.e. what percentage of the vacancies candidates actually applied for (can be extracted from the dataset of browsing behavior) was recommended *in the top 15* vacancies by the recommendation model.
 My final recall score on a test set was 16.8% (19.8% on the validation set).
@@ -129,7 +129,7 @@ But apart from that, I have the feeling that the average attitude is: please don
 I suspect that for many people in the data business "data science/engineering" is mostly slapping together pre-existing models and making computers crunch a lot on optimizing them.
 
 
-### Tools used
+## Tools used
 
 - Docker
 - Scala
@@ -137,3 +137,4 @@ I suspect that for many people in the data business "data science/engineering" i
 - Spark Dataframes
 - Spark SQL
 - My poor old ThinkPad
+

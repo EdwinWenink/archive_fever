@@ -6,7 +6,7 @@ date: 2019-09-03
 tags: [philosophy, friendship, death, writing, Michel de Montaigne, Derrida]
 ---
 
-# Introduction
+## Introduction
 
 In the center of the first book of Michel de Montaigne's (1533-1592) *Essais* we find his famous essay on friendship.
 We should not ascribe the central location of this essay to coincidence, in particular not when we take the introduction of this famous essay on friendship into consideration.
@@ -28,7 +28,7 @@ In this essay I ask why the writing on friendship is so often connected to the d
 In particular, what does this say about *writing*, and what does it say about the *friendship*?
 How do the motives of friendship, death and writing coincide in Montaigne's essays?
 
-# Derrida on the love that mourns
+## Derrida on the love that mourns
 
 The testamentary character of friendship is emphasized by Jacques Derrida in his book *The Politics of Friendship*.
 Although Derrida distinguishes historical periods in the writing and thinking on friendship - namely: the Greek-Roman model, the Christian model, and "Nietzschean" thought on friendship (Berns 2013, 218) - he observes that the relation between friendship and the death of the friend is a recurrent theme, parallel to or *throughout* those periods.
@@ -90,7 +90,7 @@ Tracing the steps of that deconstruction is not the aim of this essay.
 Instead, the goal was to introduce the connection between friendship and death, because this thread returns throughout history in the thinking about friendship, for example in Cicero, Seneca, Augustinus, and also in Derrida himself, who published several memorials about friends.
 Another interesting author where this connection can be examined is Michel de Montaigne.
 
-# The essay as Grotesque
+## The essay as Grotesque
 
 What Montaigne adds to the aforementioned connection between friendship and death
 is, I argue, that in his essay on friendship *textuality itself* enters into relation with death as well.

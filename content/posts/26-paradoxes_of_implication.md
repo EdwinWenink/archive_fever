@@ -71,10 +71,10 @@ You can easily see the equivalence of these formula's as they have the same trut
 
 | p | q | ~p |  p -> q | ~p \/ q |
 |:-:|:-:|:--:|:-------:|:-------:|
-| 0 | 0 | 1  | 1       | 1
-| 1 | 0 | 0  | 0       | 0
-| 0 | 1 | 1  | 1       | 1
-| 1 | 1 | 0  | 1       | 1
+| 0 | 0 | 1  | 1       | 1       |
+| 1 | 0 | 0  | 0       | 0       |
+| 0 | 1 | 1  | 1       | 1       |
+| 1 | 1 | 0  | 1       | 1       |
 
 We can use this for example to show that if p does not imply q, then p holds and q does not hold.
 

@@ -13,7 +13,7 @@ This quick write-up shows how you can pick a different background each time you 
 If you do not use LightDM, you can easily adapt the instructions in this post to your needs.
 I will discuss two different scenarios.
 
-### Scenario 1: Static Greeter background, random thereafter
+## Scenario 1: Static Greeter background, random thereafter
 
 It could be the case that you want your LightDM greeter background to be static because you have a background that really suits the greeter, while at the same time you would like a random background after logging in.
 To achieve this, firstly specify the static background in the configuration file of your greeter at `/etc/lightdm/lightdm-gtk-greeter.conf`.
@@ -48,7 +48,7 @@ Notice that that command creates a file called `~/.fehbg` with your background s
 
 If you do not use LightDM at all, you can use this method all the same to set a random background for your window manager, skipping the first step.
 
-### Scenario 2: random LightDM background
+## Scenario 2: random LightDM background
 
 If you want the background of both the LightDM greeter and your window manager to be chosen randomly at startup, we can write a script to replace `background.jpg` in `/usr/share/pixmaps/` with a random background.
 Alternatively, you could write a script to directly write to the greeter configuration file, but my approach is easier and has low risk, because you do not adjust any configuration file.

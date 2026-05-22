@@ -144,6 +144,7 @@ tmux attach -t sessionID
 
 Voila!
 
+```text
  __________________
 
 < tmux + ssh = OK >
@@ -154,3 +155,4 @@ Voila!
             (__)\       )\/\
                 ||----w |
                 ||     ||
+```

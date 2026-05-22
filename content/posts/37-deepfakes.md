@@ -209,7 +209,7 @@ into account how these technologies mediate reality and human praxis.
 ## Deepfakes and Technological Mediation
 
 In this section I argue that the philosophy of technological mediation
-as put forward by Verbeek [11][10] is appropriate
+as put forward by Verbeek [11] [10] is appropriate
 for conceptualizing the threat of deepfakes to democracy in terms of their
 mediation of human praxis. Technological mediation “concerns the role of
 technology in human action (conceived as the ways in which human beings

@@ -18,7 +18,7 @@ I had to write some code to support [microformats2](http://microformats.org/wiki
 Below I summarize the new features and provide related code snippets.
 Perhaps they are of use to you!
 
-### Preview of first two tags above each post
+## Preview of first two tags above each post
 
 On the homepage I display the most recent blog posts (I call them "engrams").
 For each post I wanted to add a preview of its tags.
@@ -44,7 +44,7 @@ The following assumes you are looping over your posts:
 </aside>
 ```
 
-### Show a preview of the latest post
+## Show a preview of the latest post
 
 Hugo offers a handy summary option that automatically generates an "abstract".
 If the summary is too long, you can manually truncate it to a particular amount of characters.
@@ -68,7 +68,7 @@ If the summary is too long, you can manually truncate it to a particular amount 
 </div>
 ```
 
-### Deduplicated tags in Tag Roulette
+## Deduplicated tags in Tag Roulette
 
 On my homepage I have an overview of the tags of all posts, so that one can pick a tag of interest and browse through corresponding posts.
 Previously I looped over all my posts, and then immediately rendered their tags.
@@ -107,7 +107,7 @@ So before adding tags, I convert it to a list with the `slice` function.
 
 The only thing that still bothers me is that I did not figure out how to do `{{ $array := $tags.Get "tags" }}` inline.
 
-### Preview of latest micros
+## Preview of latest micros
 
 The most important element here is to distinguish pages of the type "micro" from regular posts.
 The layout "content_only" calls a partial that I wrote for displaying html using microformats2 (see next section).
@@ -125,7 +125,7 @@ The layout "content_only" calls a partial that I wrote for displaying html using
 </div>
 ```
 
-### Microformats2
+## Microformats2
 
 I wanted to display different type of micros in different manners.
 For example, I wanted bookmarks to show a book symbol with the URL of the bookmark.
@@ -184,7 +184,7 @@ This is work in progress, but for now I wrote the following partial:
 </body>
 ```
 
-### Links to latest, previous and next post
+## Links to latest, previous and next post
 
 Hugo makes this feature extremely easy by providing default functions.
 The `with` function is particularly handy, because it knows how to deal with `nils`.
@@ -210,7 +210,7 @@ This ensures that when the are at the latest post, we will not cause any errors 
 
 What would be a cool improvement for the future is also linking to a relevant post with a similar tag.
 
-### Show latest comments (WIP)
+## Show latest comments (WIP)
 
 The most recent feature (I started on it today) is a preview of the latest comments on my website.
 The challenge for this feature was that comments are stored in a separate data folder in a nested manner, where each post has its own comment directory.
