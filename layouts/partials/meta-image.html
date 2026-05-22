@@ -1,0 +1,7 @@
+{{- $image := "" -}}
+{{- if $.Param "image" -}}
+  {{- $image = printf "%s%s" .Site.BaseURL ($.Param "image") -}}
+{{- else -}}
+  {{- $image = printf "%simages/archive_fever.jpg" .Site.BaseURL -}}
+{{- end -}}
+{{- return $image -}}
