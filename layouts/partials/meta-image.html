@@ -1,0 +1,7 @@
+{{- $image := "" -}}
+{{- if $.Param "image" -}}
+  {{- $image = $.Param "image" | relURL -}}
+{{- else -}}
+  {{- $image = "images/archive_fever.jpg" | relURL -}}
+{{- end -}}
+{{- return $image -}}

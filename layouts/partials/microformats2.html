@@ -17,11 +17,11 @@
 <body>
 	{{ if not .Params.event }}
 	  <div class="h-entry">
-		<div class="u-author h-card" style="display:none">
+		<div class="u-author h-card hidden">
 			<a href="{{ .Site.BaseURL }}" class="u-url p-name">Edwin Wenink</a>
 		</div>
 		<div class="micro">
-            <div style="margin-bottom: 0.4em;">
+            <div class="mb-04em">
             <h3><a href="{{ .Permalink }}">{{ $title.Get "title"}}</a></h3>
             <aside>{{ .Date.Format "January 2, 2006"}}</aside>
             </div>

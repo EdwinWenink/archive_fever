@@ -1,6 +1,6 @@
 {{ $paginator := .Paginator }}
 {{ if gt $paginator.TotalPages 1 }}
-    <div style="text-align: center; font-size: 1.5em; margin: 1em;">
+    <div class="paginator">
         <!--{{ template "_internal/pagination.html" . }}-->
 
         <!-- First page. -->

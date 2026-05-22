@@ -3,36 +3,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- COMMON TAGS -->
 	<title>{{ .Title }}</title>
+	{{ $metaImage := partial "meta-image.html" . }}
 	<!-- Search Engine -->
 	<meta name="description" content="{{ .Description }}">
-	{{ if $.Param "image" }}
-	<meta name="image" content="{{ .Site.BaseURL }}{{ $.Param "image" }}">
-    {{ else }}
-	<meta name="image" content="{{ .Site.BaseURL }}images/archive_fever.jpg">
-    {{ end }}
+	<meta name="image" content="{{ $metaImage }}">
 	<!-- Schema.org for Google -->
 	<meta itemprop="name" content="{{ .Title }}">
 	<meta itemprop="description" content="{{ .Description }}">
-	{{ if $.Param "image" }}
-    <meta itemprop="image" content="{{ .Site.BaseURL }}{{ $.Param "image" }}">
-    {{ else }}
-    <meta itemprop="image" content="{{ .Site.BaseURL }}images/archive_fever.jpg">
-    {{ end }}
+	<meta itemprop="image" content="{{ $metaImage }}">
 	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
 	<meta name="og:title" content="{{ .Title }}">
 	<meta name="og:description" content="{{ .Description }}">
-	{{ if $.Param "image" }}
-    <meta name="og:image" itemprop="image" content="{{ .Site.BaseURL}}{{ $.Param "image" }}">
-    {{ else }}
-    <meta name="og:image" itemprop="image" content="{{ .Site.BaseURL}}images/archive_fever.jpg">
-    {{ end }}
+	<meta name="og:image" itemprop="image" content="{{ $metaImage }}">
 	<meta name="og:url" content="{{ .Permalink }}">
 	<meta name="og:site_name" content="{{ .Site.Title }}">
 	<meta name="og:type" content="article">
 	<!-- Open Graph - Article -->
 	<meta name="article:tag" content="{{ range .Params.tags }}{{.}} {{end}}">
-	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style{{ $.Site.Params.style }}.css">
-	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ .Site.BaseURL }}css/dark.css">
+	<link rel="stylesheet" type="text/css" href="{{ "css/style" | relURL }}{{ $.Site.Params.style }}.css">
+	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ "css/dark.css" | relURL }}">
+	<link rel="stylesheet" type="text/css" href="{{ "css/utilities.css" | relURL }}">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -48,16 +38,16 @@
 	<!-- Google Analytics -->
 	{{ template "_internal/google_analytics_async.html" . }}
 	<!-- highlight.js -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/webmention.js"></script>
 
     <script>hljs.initHighlightingOnLoad();</script>
     <script async src="https://www.google.com/recaptcha/api.js"></script>
-    <script src="{{ .Site.BaseURL }}scripts/changetheme.js"></script>
+    <script src="{{ "scripts/changetheme.js" | relURL }}"></script>
     <script>set_style_from_cookie()</script>
     <!-- indieauth -->
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
@@ -69,5 +59,5 @@
 	<link rel="authorization_endpoint" href="https://indieauth.com/auth">
 	<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
     <!-- Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous"/>
 </head>
