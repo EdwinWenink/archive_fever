@@ -1,5 +1,6 @@
 {
   "default": true,
+  "MD012": false,
   "MD013": false,
   "MD033": false,
   "MD041": false,
@@ -8,5 +9,11 @@
   },
   "MD025": {
     "front_matter_title": ""
+  },
+  "MD049": {
+    "style": "asterisk"
+  },
+  "MD050": {
+    "style": "asterisk"
   }
 }
