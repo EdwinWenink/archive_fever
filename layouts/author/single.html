@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div id="loadingMask" class="loading-mask"></div>
-<script src="{{ .Site.BaseURL }}scripts/image-processing.js"></script>
+<script src="{{ "scripts/image-processing.js" | relURL }}"></script>
 
 <div class="content">
 	<h1>{{ .Params.author }} </h1>

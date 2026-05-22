@@ -1,5 +1,5 @@
 <div id="breadcrumbs" class="float-left">
-	<a href="{{ .Site.BaseURL }}">~</a>
+	<a href="{{ "/" | relURL }}">~</a>
     <!-- Remove empty first and last element -->
     {{ $url  := .RelPermalink }}
     {{ $components := last 2 (split (delimit (split .RelPermalink "/") "," "") "," ) }}

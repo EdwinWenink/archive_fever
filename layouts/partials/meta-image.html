@@ -1,7 +1,7 @@
 {{- $image := "" -}}
 {{- if $.Param "image" -}}
-  {{- $image = printf "%s%s" .Site.BaseURL ($.Param "image") -}}
+  {{- $image = $.Param "image" | relURL -}}
 {{- else -}}
-  {{- $image = printf "%simages/archive_fever.jpg" .Site.BaseURL -}}
+  {{- $image = "images/archive_fever.jpg" | relURL -}}
 {{- end -}}
 {{- return $image -}}
