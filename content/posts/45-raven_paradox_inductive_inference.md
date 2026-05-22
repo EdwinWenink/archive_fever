@@ -8,9 +8,9 @@ tags: [logic, induction, paradox]
 The Raven paradox, coined by Carl Gustav Hempel in the 40s, formulates an interesting problem with inductive inference, more specifically, enumerative induction.
 
 Inductive inference is a type of reasoning where you infer a hypothesis or proposition after observing a series of data.
-This movement from observation to hypothesis is important for scientific reasoning in empirical science. 
+This movement from observation to hypothesis is important for scientific reasoning in empirical science.
 
-For example, if you observe a thousand black ravens, you may reasonably conclude that all ravens are black. 
+For example, if you observe a thousand black ravens, you may reasonably conclude that all ravens are black.
 However, you would probably not arrive at this conclusion after only seeing a few black ravens.
 In other words, the more black ravens you see, the more confidence you gain in your proposition that all ravens are black.
 
@@ -20,7 +20,8 @@ In other words, the correctness of inductive inference cannot be shown deductive
 
 The Raven paradox is a second logical challenge, but rather concerns the usefulness of induction as a *description* of how we become more sure after more observations.
 The claim that all ravens are black can be cast in the form of a logical implication:
-```
+
+```text
 for all x:Rx -> Bx
 ```
 
@@ -29,7 +30,7 @@ Remember, this proposition is inferred from the many observations black ravens t
 
 But Hempel points out that when we rewrite this statement to the following logically equivalent proposition, things get counter-intuitive:
 
-```
+```text
 for all x: ~Bx -> ~Rx
 ```
 
@@ -44,9 +45,9 @@ For reference, we can see that these two formulas are indeed logically equivalen
 
 We already knew that seeing more black ravens increased our confidence that all ravens are black.
 But what rewriting the proposition suggests is that we then should also be more confident that all ravens are black when we encounter any object that is not black and not a raven.
-Although being logically equivalent, this statement suddenly no longer accurately describes how we become more sure that all ravens are black. 
+Although being logically equivalent, this statement suddenly no longer accurately describes how we become more sure that all ravens are black.
 Does my confidence that ravens are black increase when I see a yellow banana?
-Seeing a yellow banana seems completely irrelevant when considering the proposition that all ravens are black, but the logical formalization of the inferred rule on black ravens does not express this. 
+Seeing a yellow banana seems completely irrelevant when considering the proposition that all ravens are black, but the logical formalization of the inferred rule on black ravens does not express this.
 
 [Peter Lipton]( https://onlinelibrary.wiley.com/doi/abs/10.1002/9781405164481.ch29 ) points out that this issue of relevance similarly plagues existing models of scientific explanation, particularly the so-called Deductive-Nomological model.
 In the summary of Lipton, this model states that "an event is explained when its description can be deduced from a set of premises that essentially includes at least one law".
@@ -55,7 +56,7 @@ If this indeed turns out to be the case, this would be support for our hypothesi
 
 But Lipton points out that a successful prediction could be construed as support for any hypothesis, logically speaking.
 If our hypothesis is `B` (all ravens are black) and we observe indeed many black ravens, then our confidence in `B` increases, but logically speaking, so would our confidence in the hypothesis `B \/ P` because adding a disjunction is truth preserving: if `B` is true, then `B \/ P` is necessarily also true.
-And `P` might mean anything here, for example that "Cows can fly." 
+And `P` might mean anything here, for example that "Cows can fly."
 
 Granted, the hypothesis "All ravens are black or cows can fly" is a *really shitty* hypothesis.
 But the main point is the same as before: how do we convincingly show and formalize that our hypothesis is *relevant* for our observation?

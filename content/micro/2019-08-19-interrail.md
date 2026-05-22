@@ -6,4 +6,4 @@ type: micro
 event: true
 ---
 
-Returned home from a road trip, taking trains from Nijmegen to Vienna, Bratislava, Krakau, Wroclaw, Prague, and Dresden. 
+Returned home from a road trip, taking trains from Nijmegen to Vienna, Bratislava, Krakau, Wroclaw, Prague, and Dresden.

@@ -42,7 +42,7 @@ series: 'Digest'
 9. Marcus King - El Dorado
 10. Alpha Brain Waves - Study Music: Soothing Sounds to Help Focus on Creativity & Memory Retention
 11. Madvillain - Madvillainy
-    * Honourable mention; R.I.P. MF Doom. 
+    * Honourable mention; R.I.P. MF Doom.
 
 [Top tracks 2020](https://www.last.fm/user/EdwinW/library/tracks?from=2020-01-01&to=2021-01-01):
 

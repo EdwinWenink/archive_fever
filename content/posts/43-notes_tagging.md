@@ -13,7 +13,7 @@ My overall desire is to create an ecosystem of interconnected notes in such a wa
 The idea is that when you are going to write something, you start by opening a note on the topic of choice, and that from there on you can effortlessly follow links to other related notes to discover new lines of thought.
 To this end, I wanted to implement a tagging system that is tailored to the way I make notes, in addition to the search functions for file names and their contents that are discussed in the [previous post](/posts/42-vim_notetaking).
 
-For example, I was reading an article from Stiegler and encountered an interesting thought on capitalism and the Anthropocene, so I added the tags "@capitalism" and "@anthropocene". 
+For example, I was reading an article from Stiegler and encountered an interesting thought on capitalism and the Anthropocene, so I added the tags "@capitalism" and "@anthropocene".
 At that point that specific place in the text is connected to all my other notes on capitalism or the Anthropocene and included in many possible trajectories through the note system.
 
 Initially I was working on my own implementation by playing around with Python and Vimscript, but I have settled on a solution that is fast, cross platform, with minimal dependencies and perfectly integrated within Vim.
@@ -25,7 +25,7 @@ This allows the programmer to easily navigate through a complex coding project.
 Over time this program has been extended to be used with many other programming languages as well, even though it has retained the reference to the `C` programming language in its name.
 And here is the crux: later variaties of the `ctags` program, called `Exuberant Ctags` and `Universal Ctags` allow you to define extensions towards other languages!
 
-What this means is that I can define my own syntax for the tags I'm going to use and then let `ctags` create an index of those tags with links to their corresponding files. 
+What this means is that I can define my own syntax for the tags I'm going to use and then let `ctags` create an index of those tags with links to their corresponding files.
 As an icing on the cake: due to its strong roots in programming culture, Vim has *native* support for navigating with those tags!
 N.B. to be clear: even though Vim has native support for `ctags`, it is not a plugin but an *external* program that does not automatically ship with Vim.
 
@@ -37,32 +37,32 @@ If you have no idea what I'm talking about and just want to see some pictures, s
 ## Defining and parsing the syntax of your tags
 
 Because I write in Markdown the hashtag is not a candidate for our tag syntax because it already indicates a header.
-I chose to define tags instead as such: "@tag". 
+I chose to define tags instead as such: "@tag".
 You can define your tags in a different way of course, but I suggest you keep it simple because you will have to write the rule that correctly parses your tags.
 
-Different `ctags` versions offer different options, so it is good to provide a quick overview. 
+Different `ctags` versions offer different options, so it is good to provide a quick overview.
 Historically `ctags` has first evolved into `Exuberant Ctags` and recently into `Universal ctags`.
-`Exuberant Ctags` introduces support for other languages than C and first introduced the possibility to support other languages in two ways. 
+`Exuberant Ctags` introduces support for other languages than C and first introduced the possibility to support other languages in two ways.
 The first and simplest option is to provide a regular expression, which is basically a rule to find your tag by matching a particular pattern in a string.
-The second option is to define your own full blown parser. 
+The second option is to define your own full blown parser.
 We are not creating a whole new language, but only need to find simple tags, so we are obviously going for the first option.
 
 Because non-technical writers very likely do not know how to write regular expressions (regex for short), I'll walk you through the process of writing one.
 Be aware that there are many dialects for writing regex, but that all versions of `ctags` use an incredibly old version called Extended Regular Expressions (ERE) which really limits what we can do. Another reason to keep things simple.
 
 This is how such a reasoning process could look like.
-Let's say we write two tags on one line for example as such: 
+Let's say we write two tags on one line for example as such:
 
-```
+```text
 @meme-machine @vimlife
 ```
 
-Our rule should recognize two single tags. 
-Intuitively, the rule should be something like: find an "@" and then match all word characters until you encounter a character that clearly does not belong to the word. 
+Our rule should recognize two single tags.
+Intuitively, the rule should be something like: find an "@" and then match all word characters until you encounter a character that clearly does not belong to the word.
 
 This simple regex would be expressed as `@(\w+)`:
 
-```markdown
+```text
 @   find a literal "@"
 (   start a "capture group", i.e. the part of the expresion that we are interested in
 \w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
@@ -78,7 +78,7 @@ We could improve on this regex by refining our rule: find an "@" and then match 
 
 This regex could be expressed as `@(\w.*)\s`:
 
-```markdown
+```text
 @   find a literal "@"
 (   start a "capture group", i.e. the part of the expresion that we are interested in
 \w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
@@ -89,20 +89,20 @@ This regex could be expressed as `@(\w.*)\s`:
 ```
 
 This avoids the previous problem, but introduces a new one.
-One feature that is common nowadays but absent in the regex for `ctags` is a thing called `lazy evaluation`. 
-If the regex would be lazy then the rule would stop matching at the first space, which separates the two tags. 
-But unfortunately our regex is *greedy*, meaning he will make the match as long as possible. 
+One feature that is common nowadays but absent in the regex for `ctags` is a thing called `lazy evaluation`.
+If the regex would be lazy then the rule would stop matching at the first space, which separates the two tags.
+But unfortunately our regex is *greedy*, meaning he will make the match as long as possible.
 The combination `.*\s` matches everything until a space character is found, but the end of the line is also a space character type!
 As a result, `@meme-machine @vimlife` is considered to be a single tag, which is obviously not what we want.
 
 In modern regex dialects you could explicitly make the star match lazily by appending a question mark. Then the regex would look as such: `@(\w.*?)\s`.
 But this is not possible in the ERE dialect of `ctags`.
-In other words, time to take a step back and re-evaluate how to solve this problem without lazy evaluation, which is better in any case because lazy evaluation is computationally expensive. 
+In other words, time to take a step back and re-evaluate how to solve this problem without lazy evaluation, which is better in any case because lazy evaluation is computationally expensive.
 Click away if you want to think about it yourself.
 
 If not, my simple solution is `@(\w\S*)`:
 
-```markdown
+```text
 @   find a literal "@"
 (   start a "capture group", i.e. the part of the expresion that we are interested in
 \w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
@@ -111,18 +111,18 @@ If not, my simple solution is `@(\w\S*)`:
 )   close the capture group. The part within brackets is the tag
 ```
 
-This is a more efficient approach with the same effect as using lazy evaluation. 
+This is a more efficient approach with the same effect as using lazy evaluation.
 Because a tag now does not contain any whitespace characters by definition, the first tag is matched separately.
-I still enforce that the first character after the "@" has to be a word character, otherwise  "@\" or for example (and amusingly) the regex pattern itself would be a tag. 
+I still enforce that the first character after the "@" has to be a word character, otherwise  "@\" or for example (and amusingly) the regex pattern itself would be a tag.
 
 UPDATE: 15-1-2020
 
-Of course, URLs that contain "@" will also be matched with the current regular expression. 
+Of course, URLs that contain "@" will also be matched with the current regular expression.
 We can exclude these matches by requiring that "@" either occurs at the beginning of the line or is preceded by a "space" character (i.e. "@" occurs at the beginning of a new word somewhere in a sentence ).
-In other regex dialects you have the special `\b` sign to indicate word boundaries, but not in the ERE POSIX dialect. 
+In other regex dialects you have the special `\b` sign to indicate word boundaries, but not in the ERE POSIX dialect.
 We can however write `(^|[[:space:]])@(\w\S*)`:
 
-```markdown
+```text
 ( open a group
 ^ match the beginning of the line
 | or instead match
@@ -136,21 +136,21 @@ We can however write `(^|[[:space:]])@(\w\S*)`:
 )   close the capture group. The part within brackets is the tag
 ```
 
-I adjusted the code below to this new regex. 
+I adjusted the code below to this new regex.
 Note especially that we now have two groups, and that we are interested in the second one only, so our back reference changes from `\1` to `\2`.
 
 ## Installing and configuring ctags
 
-There is still another problem left. 
-Modern implementations of regex engines in programming languages offer the option to find all regex matches of a given line. 
-However, when we use regex only our pattern only matches the first tag. 
-This means that in `@meme-machine @vimlife` the second tag will never be registered. 
+There is still another problem left.
+Modern implementations of regex engines in programming languages offer the option to find all regex matches of a given line.
+However, when we use regex only our pattern only matches the first tag.
+This means that in `@meme-machine @vimlife` the second tag will never be registered.
 
-I thought about this for a bit, but long story short, this problem cannot in principle be solved with `Exuberant Ctags` when we take the regex route. 
+I thought about this for a bit, but long story short, this problem cannot in principle be solved with `Exuberant Ctags` when we take the regex route.
 So if you for some reason insist on using `Exuberant Ctags` rather than `Universal Ctags` the tagging system strictly requires you to only put one tag on each line.
 If that's the way you want to go, then create a configuration file called `.ctags` in your home directory and write the following specification of our markdown tagging language.
 
-```
+```text
 --langdef=markdowntags
 --langmap=markdowntags:.md
 --regex-markdowntags=/(^|[[:space:]])@(\w\S*)/\2/t,tag,tags/
@@ -166,24 +166,24 @@ The benefits as I perceive them are:
 
 - Support for even more languages, including Markdown!
 - Does not necessarily use a system wide configuration, so you can define your needs on a per project basis
-    * The config file can thus be included in your GitHub repository and you'll be set up immediately after cloning your repository on any computer.
+  * The config file can thus be included in your GitHub repository and you'll be set up immediately after cloning your repository on any computer.
 - Multiline support (this is actually what we abuse to find multiple tags on *one* line)
 
 You can download the latest build of `Universal Ctags` for Windows [on the project's GitHub page](https://github.com/universal-ctags/ctags-win32/releases).
 If you are using Windows, make sure you place the executable in a folder that is contained in the PATH variable, so that you can run `ctags` from the command line.
-On Linux just download the package with your package manager of choice. 
+On Linux just download the package with your package manager of choice.
 If you use the Arch User Repository (AUR) look for [this package](https://aur.archlinux.org/packages/universal-ctags-git/).
 
 To avoid conflicts with `Exuberant Ctags` the configuration files are now located in a special directory.
-So after installing create the directory `.ctags.d/` and create the file `md.ctags` within that directory. 
-The configuration syntax has slightly changed. 
-The main change is that we will use a multiline regex now. 
+So after installing create the directory `.ctags.d/` and create the file `md.ctags` within that directory.
+The configuration syntax has slightly changed.
+The main change is that we will use a multiline regex now.
 Because programming languages that rely on brackets to indicate scopes can spread structures of interest over multiple lines, the usefulness of pure regex is limited.
-This feature can however also be used to find multiple matches within a single line. 
+This feature can however also be used to find multiple matches within a single line.
 Have a look [here](https://docs.ctags.io/en/latest/optlib.html#multiline-pattern-flags) for documentation, if you are interested.
-Otherwise, copy the following configuration to your configuration file in `./.ctags.d/md.ctags`, relative to your project folder. 
+Otherwise, copy the following configuration to your configuration file in `./.ctags.d/md.ctags`, relative to your project folder.
 
-```
+```text
 --langdef=markdowntags
 --languages=markdowntags
 --langmap=markdowntags:.md
@@ -199,27 +199,27 @@ Almost good to go!
 
 Tags can now be created easily from the command line by changing your directory to your project folder (here, our notes repository), and then running `ctags` recursively on the current folder (recursively indicating that all subfolders will be taken into account as well):
 
-```
+```bash
 ctags -R .
 ```
 
-This will create a file names `tags` in your project folder. 
+This will create a file names `tags` in your project folder.
 You can open it to inspect if everything worked out correctly.
-As you will see, the generation of tags is very fast as this tool is designed to still work for very large and complex code projects, where each file has many tags. 
+As you will see, the generation of tags is very fast as this tool is designed to still work for very large and complex code projects, where each file has many tags.
 We'll have less files and significantly less tags per file.
 
 So far this post has been completely editor agnostic.
-But the beauty of using `ctags` for our note taking tags is that Vim handles them exceptionally well. 
+But the beauty of using `ctags` for our note taking tags is that Vim handles them exceptionally well.
 
-The power of the whole command line is at your fingertips, because Vim can run external commands from within the editor. 
-So you do not have to leave Vim to generate the tags. 
+The power of the whole command line is at your fingertips, because Vim can run external commands from within the editor.
+So you do not have to leave Vim to generate the tags.
 You can simply type `:!ctags -R .` , where the dot refers to the current directory.
 
 This does however assume that Vim's current directory is your project root folder.
-Verify this with the command `:pwd`. 
+Verify this with the command `:pwd`.
 Alternatively, you could replace the dot with the path towards your notes directory.
 But the better option is to use Vim's native `cd` (change directory) command and change the working directory to your notes folder.
-For example, type `:cd ~/Documents/Notes`. 
+For example, type `:cd ~/Documents/Notes`.
 This also allows you to more efficiently search files by only considering your notes.
 
 To make this whole process smooth we can easily make some mappings so we don't have to bother typing commands anymore.
@@ -257,10 +257,10 @@ UPDATE 14/4/2020: I've received replies and emails specifically from MacOS users
 ## Navigating tags from within Vim
 
 As said before, Vim has great support for handling `ctags`.
-Vim knows about the location of your tags file. 
+Vim knows about the location of your tags file.
 If Vim doesn't find your tags, check that you are in the right directory and also make sure that the `tags` variable makes sense with `:set tags?` Alternatively, set tags explicitly in your `.vimrc` or `._vimrc` (Windows) configuration file for example as such:
 
-```
+```vim
 set tags+=./tags;,tags
 ```
 
@@ -268,13 +268,13 @@ The semicolon allows Vim to recursively move up a file tree to look for a tags f
 You can now search tags *with autocompletion* with the `tselect` command, or `ts` for short.
 
 I for example have a tag `@workflow`, so I would type in `:ts work <TAB>`, which auto completes `ts workflow`.
-This will open a menu with a numbered list of all files with the tag `workflow`. 
+This will open a menu with a numbered list of all files with the tag `workflow`.
 You can quickly jump to a file by entering its number.
 
 Pro tip: make your search case insensitive! This makes autocompletion ignore the case, so that `:ts Work<TAB>` still autocompletes to `:ts workflow`.
 To achieve this, set this in your `.vimrc`:
 
-```
+```vim
 " Ignore case in searches
 set ignorecase
 ```
@@ -286,34 +286,34 @@ This will jump to the *first encountered* tag.
 What's also really nice is that it jumps to the exact line where the tag is used, so you do not have to search further manually.
 
 One interesting note here is that the way we use tags is really quite different than its regular use in programming.
-The base case in programming is that you define a function once and that it is called in many places. 
+The base case in programming is that you define a function once and that it is called in many places.
 The desired default behavior is that from all those places where it is called, you can quickly jump to the place where that function is defined.
 It can however occur that you override a function definition, so that in fact you end up with an *ambiguous tag* where the same tag links to two different locations.
 
 We however *desire and exploit the ambiguity of tags*.
 
-The whole principle of rhizomatic navigation that I desire is exactly that tags are defined in multiple places. 
-The `tselect` command already gives you all options for navigation. 
+The whole principle of rhizomatic navigation that I desire is exactly that tags are defined in multiple places.
+The `tselect` command already gives you all options for navigation.
 But if we want to find all files for the tag under the cursor rather than only the first one, we do not use `<Ctrl>-]` but `g ]` instead.
 This shows all ambiguous tags, i.e. all the files in which it is "defined."
 
 It gets even better.
 Because tags are so well integrated in Vim, your fuzzy finder plugin will almost certainly also be able to search the tags file.
-I use CtrlP because it works well both on Linux and Windows. 
+I use CtrlP because it works well both on Linux and Windows.
 My [previous post](/posts/42-vim_notetaking) mentions my setup for CtrlP using `ripgrep`.
-When searching using `<Ctrl>-P` you can toggle whether you are searching files, buffers or tags with <Ctrl-b> and <Ctrl f> (backward and forward, see `:help ctrlp-mappings`). 
-Alternatively, you can directly invoke the `:CtrlPTag` command. 
+When searching using `<Ctrl>-P` you can toggle whether you are searching files, buffers or tags with <Ctrl-b> and <Ctrl f> (backward and forward, see `:help ctrlp-mappings`).
+Alternatively, you can directly invoke the `:CtrlPTag` command.
 Various autocompletion plugins will also be able to suggest and complete tags.
 
 UPDATE 15/4/2020: You probably want to define a quick mapping for this, for example:
 
-```
+```vim
 " Binding for searching tags ("search tag")
 nnoremap <leader>st :CtrlPTag<CR>
 ```
 
 One last trick before I'll share screenshots of an example workflow.
-If you follow a tag to another file, look around for a bit, and then want to go back to where you where before going down the rabbit hole, you can type `<Ctrl>-t` to go back to through what is called the `tag stack`. 
+If you follow a tag to another file, look around for a bit, and then want to go back to where you where before going down the rabbit hole, you can type `<Ctrl>-t` to go back to through what is called the `tag stack`.
 The `tag stack` basically tracks the trajectory you've taken by following tags through your notes.
 A beacon of light in the mess of the creative mind.
 
@@ -325,19 +325,19 @@ Starting from my index page, I can't quite remember the name of a tag, so I'll d
 
 ![](/images/43-blog/1-ctrlp_tags_full.png)
 
-The detail shows the fuzzy nature of the tag search. 
-I typed AC (randomly), but as you see also results like "Jacobs" and "aircraft" are displayed. 
+The detail shows the fuzzy nature of the tag search.
+I typed AC (randomly), but as you see also results like "Jacobs" and "aircraft" are displayed.
 
 ![](/images/43-blog/2-ctrlp_tags.png)
 
-From the list of suggestions I chose "Jacobs", which is the name of a university professor. 
+From the list of suggestions I chose "Jacobs", which is the name of a university professor.
 This could be some author you are writing a paper about.
-As a result I'm now viewing lecture notes of a security course I followed, which discusses a range of topics. 
+As a result I'm now viewing lecture notes of a security course I followed, which discusses a range of topics.
 We hold our cursor on the tag "security".
 
 ![](/images/43-blog/3-security_screenshot.PNG)
 
-The command `g]` opens a list of all ambiguous tags. 
+The command `g]` opens a list of all ambiguous tags.
 We see that another file is also about security.
 So let's expand our horizon and enter its number to visit that file.
 
@@ -348,26 +348,26 @@ It discusses security, but clearly from a more societal and philosophical perspe
 
 ![](/images/43-blog/5-pi_notes.PNG)
 
-And so on. I might by now have a more specific idea to write about. 
-If it's a single concept I'll make a small note in my "Zettelkasten" directory (for which I have another easy binding), where I'll might decide to explicitly link to all the files I've explored. 
+And so on. I might by now have a more specific idea to write about.
+If it's a single concept I'll make a small note in my "Zettelkasten" directory (for which I have another easy binding), where I'll might decide to explicitly link to all the files I've explored.
 If I add the security tag there as well together with a new tag, I've opened up new lines of thought!
 
 ## Conclusion and summary of used Vim mappings
 
-Like with my [previous post](/posts/42-vim_notetaking) on this topic, I'm writing about this while exploring ideas so everything is WIP. 
-It is possible to define multiple regex rules for our custom language, so it's easy to add more features to this tagging system. 
+Like with my [previous post](/posts/42-vim_notetaking) on this topic, I'm writing about this while exploring ideas so everything is WIP.
+It is possible to define multiple regex rules for our custom language, so it's easy to add more features to this tagging system.
 I might for example explore the usefulness of tracking explicit markdown links to other files with this system.
- 
+
 Let me know if you have suggestions! Feedback is welcomed.
 
-If at some point I haven't changed my system in a long time I'll likely bundle together a `.vimrc` with everything you need. 
+If at some point I haven't changed my system in a long time I'll likely bundle together a `.vimrc` with everything you need.
 The system so far actually heavily depends on native Vim mappings, so you do not need much at all (Keep It Simple Stupid)!
 With the code below you can install `CtrlP` using [vim-plug](https://github.com/junegunn/vim-plug).
 There are two external dependencies, `Universal Ctags` and `ripgrep`  which however are both cross-platform, minimalistic and do not require configuration outside of what is provided below.
 Plug and play.
 For now, I'll provide a quick summary of mentioned Vim bindings and settings (and some not mentioned) as requested [here](https://github.com/EdwinWenink/personal_website/issues/559):
 
-```
+```vim
 " Specify a directory for plugins
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')

@@ -75,9 +75,9 @@ This is what happens:
 2. The first line of module X import Y
 3. This executes the code in module Y
 4. Python sees X is already (partially being) imported, so the `import X` statement in `Y` will not trigger compilation of the content of X.
-4. This will print  "Name: Y" and "Y start"
-5. Then it will run `X.call()`
-6. But the `def call()` statement in module `X` has not been run yet, so we run into this error!
+5. This will print  "Name: Y" and "Y start"
+6. Then it will run `X.call()`
+7. But the `def call()` statement in module `X` has not been run yet, so we run into this error!
 
 ## Understanding the problem
 

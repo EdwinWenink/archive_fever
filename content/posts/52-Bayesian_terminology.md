@@ -9,11 +9,11 @@ tex: true
 
 <small>15/10/2020 Extended with an explanation of MAP; minor fixes and changed the title</small>
 
-Take Bob. 
+Take Bob.
 Bob is not feeling so great and has a runny nose.
 This is an observation that may depend on various other conditions.
 Perhaps Bob has a cold, perhaps he has allergies, or perhaps he unfortunately picked up COVID-19.
-Given that we know Bob has a runny nose, which one of these potential explanations is more likely (assuming for the sake of simplicity that these are the three options)? 
+Given that we know Bob has a runny nose, which one of these potential explanations is more likely (assuming for the sake of simplicity that these are the three options)?
 
 Bayes' theorem allows us to formulate an answer to that question.
 Let `R=True` stand for the observation that Bob has a runny nose, and let `H` be the variable indicating the three hypotheses.
@@ -40,15 +40,15 @@ The resulting probability of Bayes' theorem is usually called the "posterior" pr
 Of course, these probabilities change again once Bob takes a test for either of these ailments.
 And even if Bob takes a test, Bayes' theorem allows us to take into account the probabilities of false positives and negatives.
 
-In short, Bayes' theorem is pretty awesome because it can be used to express how the probability of one event depends on related possible events. 
+In short, Bayes' theorem is pretty awesome because it can be used to express how the probability of one event depends on related possible events.
 The application of Bayes' theorem is not necessarily Bayesian though.
-If you are a typical Bayesian, you would also interpret the involved probabilities as "credences" or "degrees of belief", and then apply the process of *conditionalization* (the diachronic application of Bayes' theorem over an "old" and "new" moment in time) in order to express how our (subjective) beliefs change when we learn new information. 
+If you are a typical Bayesian, you would also interpret the involved probabilities as "credences" or "degrees of belief", and then apply the process of *conditionalization* (the diachronic application of Bayes' theorem over an "old" and "new" moment in time) in order to express how our (subjective) beliefs change when we learn new information.
 
 Now, there's one term in Bayes' theorem that caused some confusion when I first considered it more closely.
 That's the so-called "likelihood" `P(R|H)`.
-Bayes' theorem is derived from the definition of conditional probability. 
+Bayes' theorem is derived from the definition of conditional probability.
 As a conditional probability, we would for example read `P(R=True|H=Covid)` as follows: "How likely is it that Bob has a runny nose, assuming he has COVID-19".
-In that case, we talk of the likelihood of the *data*, in this case the observed symptom of Bob. 
+In that case, we talk of the likelihood of the *data*, in this case the observed symptom of Bob.
 In the literature however, `P(R=True|H=Covid)` is also sometimes called the likelihood *of the hypothesis*.
 
 Personally I found it helpful to have a look at the terminology of *maximum likelihood estimation*.
@@ -58,7 +58,7 @@ I'll get technical for one minute and then recap in more understandable language
 
 Assume we have a parametric model with parameters $\theta$, e.g. a probability density function $p_{theta}(x)$.
 Then the *likelihood* of this parametric model can be written as $$L(\theta|X) = \prod_{x \in X} p_{\theta}(x)$$
-As an aside, we usually take the log-likelihood $l(\theta|X) = log \prod_{x \in X} p_{\theta}(x)$[^1]. 
+As an aside, we usually take the log-likelihood $l(\theta|X) = log \prod_{x \in X} p_{\theta}(x)$[^1].
 
 [^1]: The logarithm over a product is the sum over the component's logs, i.e. $log \prod_{x \in X} p_{\theta}(x) = \sum_{x \in X} log p_{\theta}(x)$.
 The logarithmic function is "monotonically increasing", which guarantees that the parameter  that will maximize the log-likelihood will also maximize the regular likelihood.
@@ -71,10 +71,10 @@ $$ \hat{\theta} = \underset{\theta}{argmax\ }l(\theta|X)$$
 
 where $\hat{\theta}$ is known as the *maximum likelihood estimate* (MLE).
 In other words, the MLE is the parameter (cf. "hypothesis)" for which the data is most likely.
-Since this would be the "best" or "most likely" model, we understand the likelihood of our hypotheses in terms of how probable it is that we observed out data, assuming the hypothesis were true. 
+Since this would be the "best" or "most likely" model, we understand the likelihood of our hypotheses in terms of how probable it is that we observed out data, assuming the hypothesis were true.
 So in plain language: a good hypothesis for some model assigns a high probability to the observed data.
 
-The Bayesian approach differs from standard maximum likelihood estimation in that it does not straightforwardly assume there is a "true" parameter $\theta$. 
+The Bayesian approach differs from standard maximum likelihood estimation in that it does not straightforwardly assume there is a "true" parameter $\theta$.
 Instead, we allow uncertainty over our parameters and incorporate this by defining a prior distribution over $\theta$.
 When taking into account our prior beliefs, the matter of finding the most likely parameter/hypothesis is then to find the *posterior* distribution.
 This is the so-called Bayesian MAP problem, namely finding the *maximum a posteriori probability*.
@@ -83,7 +83,7 @@ When we write out the probability of our parameters/hypotheses in terms of Bayes
 $$p(\theta|X) = \frac{ p(X|\theta)q(\theta) }{ \int_{\theta \in \Theta} p(X|\theta)q(\theta) d\theta  }$$
 
 Where $q(\theta)$ is the distribution of our prior beliefs over the possible parameters.
-The above formula assumes that $\theta$ is continuous, but this is not important for now. 
+The above formula assumes that $\theta$ is continuous, but this is not important for now.
 
 MAP is then defined as finding the most likely parameter, so $\underset{\theta}{argmax\ } p(\theta|X)$.
 Because everything in the denominator is only for normalization and does not depend on our current hypothesis, we can ignore it in the maximization operation.

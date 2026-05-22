@@ -1,0 +1,15 @@
+DirectoryPath: "public"
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreAltMissing: true
+IgnoreInternalEmptyHash: true
+IgnoreSSLVerify: true
+CheckExternal: false
+CheckInternalHash: true
+IgnoreURLs:
+  - "webmention.io"
+  - "indieauth.com"
+  - "tokens.indieauth.com"
+  - "sitewriter.net"
+  - "github.com/.*/commit/"
+IgnoreDirs:
+  - "zettelkasten"

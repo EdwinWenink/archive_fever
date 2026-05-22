@@ -13,25 +13,25 @@ series: "Workflow"
 I stated in a [previous post](https://edwinwenink.xyz/posts/13-Vim10Reasons/) that the main innovation of Vim is making the insertion of text secondary to navigation.
 Let's put my money where my mouth is. The following assumes you are in normal mode.
 
-It is useful to conceptualize a bit first. 
-In MS Word text navigation is done mainly by 1) using the arrows, 2) mouse clicking, 3) mouse scrolling. 
+It is useful to conceptualize a bit first.
+In MS Word text navigation is done mainly by 1) using the arrows, 2) mouse clicking, 3) mouse scrolling.
 Some expert Word users perhaps navigate between words and paragraphs by using Ctrl + arrow key.
 In (pure terminal) Vim, navigation has to be done without the mouse. Are we then only left with the arrow keys, or `h j k l`?
 
-Getting rid of the mouse forces you to think about navigation on different levels. 
+Getting rid of the mouse forces you to think about navigation on different levels.
 There is navigation within words.
 But also navigation between words within sentences, between sentences within paragraphs, between paragraphs within pages, and between pages/screens.
 I leave navigation between files aside for now.
 Only if you choose the appropriate level for your situation will text navigation in Vim be more efficient than for other editors.
 When starting out with Vim you will probably be a bit inefficient, but over time reviewing your behavior should result in good habits.
 
-**Within words**: on the lowest level you navigate with the basic navigation keys `h j k l`. 
+**Within words**: on the lowest level you navigate with the basic navigation keys `h j k l`.
 Do not use the arrows, since this requires you to move your hand away from the central keyboard position.
 To force yourself to do this, and simultaneously make the arrow keys useful for something, consider mapping your arrow keys to resize windows.
 
-**Between words**: If you are editing within a sentence and want to jump to particular word, you have some options. 
+**Between words**: If you are editing within a sentence and want to jump to particular word, you have some options.
 You will notice that most key commands are easy to remember based on what they do.
-If you want to jump towards the *end* of a word, press `e`. 
+If you want to jump towards the *end* of a word, press `e`.
 To instead go to the beginning, press `b`. So far so good.
 To jump to the beginning of the next word, press the `w` from "word".
 In long sentences this can still feel a bit inefficient, but you do have some options:
@@ -51,33 +51,33 @@ This one is less obvious, but `$` moves towards the end of the line.
 
 ## Quick and dirty mode switching
 
-After navigation, you most likely want to enter Insert mode. 
+After navigation, you most likely want to enter Insert mode.
 Vim offers commands for striking two birds with one stone; the birds being navigation and switching to insert mode.
 These are the basic commands that I really miss the most when I have to write in something else than Vim.
 
 When writing you often pause to review your last sentence and fix some small error.
 Your cursor is in the middle of your last sentence, but now you want to continue writing on a new line.
 
-I suspect something like this: 1) you go to the end of the sentence, either by pressing 'End' or by clicking on it with your mouse 
+I suspect something like this: 1) you go to the end of the sentence, either by pressing 'End' or by clicking on it with your mouse
 (in the latter case you have to take your hand of the keyboard).
 2) You click enter to create a new line. 3) You can now start typing.
-Ok, that's not too bad. But Vim does all of this with the command `o`, that *opens* a new line and leaves your cursor at its start. 
-It doesn't matter if you are in the middle of the previous sentence. 
+Ok, that's not too bad. But Vim does all of this with the command `o`, that *opens* a new line and leaves your cursor at its start.
+It doesn't matter if you are in the middle of the previous sentence.
 If your last sentence also happens to be the last sentence of the file (e.g. you are writing a first draft) you can quickly pick up your work by jumping to the end of the file with `G`.
 
-But Vim really does better in the scenario where you want to write a sentence *before* the currently selected sentence. 
-In Word you would do: 1) move to beginning of the current line, 2) press enter, 3) go up a line, 4) you can now start typing. 
+But Vim really does better in the scenario where you want to write a sentence *before* the currently selected sentence.
+In Word you would do: 1) move to beginning of the current line, 2) press enter, 3) go up a line, 4) you can now start typing.
 Vim still does all of this in a single keystroke. This does maybe not seem that impressive, but you would be surprised how often you will find yourself doing the previous if you pay attention to it.
-The capitalization of a command usually does a similar task slightly different. In this case `O` (so the capital `o`) does all of the described steps at once. 
+The capitalization of a command usually does a similar task slightly different. In this case `O` (so the capital `o`) does all of the described steps at once.
 
-The same holds for `i` and `I`. `i` puts you insert mode, but `I` puts you in insert mode at the beginning of the sentence. 
+The same holds for `i` and `I`. `i` puts you insert mode, but `I` puts you in insert mode at the beginning of the sentence.
 Even more handy are `a` and `A`. `a` puts you in insert mode *after* the cursor, i.e. allows you to *append* text.
 So if you quickly want to append something to a word, you type `ea` to append after the end of the word.
-But often you want to append something at the end of the line. No problemo: `A` jumps towards the end of the line and leaves you in insert mode so you can immediately start typing. 
+But often you want to append something at the end of the line. No problemo: `A` jumps towards the end of the line and leaves you in insert mode so you can immediately start typing.
 Notice that again there is some logic here that helps you remember this. Just like `I` does a similar operation but then on the line level, `A` does `a` but then for a whole line.
 The `A` command is amazing. You can leave a sentence half-finished, correct a small error, and then continue where you paused with a single keystroke.
 
-## Mastering the Grammar: Combining navigation and operations.
+## Mastering the Grammar: Combining navigation and operations
 
 You can navigate, so what? Well, Vim has a grammar that allows you to combine navigational keys or "directions" with basic operations and text objects, like verbs combine with nouns and adverbs. The main importance of this is that once you understand the building blocks, you can combine them into sensible commands without the need to remember them explicitly. So again, even though learning Vim is daunting initially, it becomes easier when you study the underlying logic instead of haphazardly learning commands.
 
@@ -92,7 +92,7 @@ But this language is still a bit limited. We can specify the basic commands, suc
 
 - `ciw`: change inside word; notice that normally `w` jumps to the next word, but now you do not want to change until the beginning of the next word, but instead want to change the word object inside which your cursor is placed.
 - `dis`: delete inside sentence. Deletes the sentence object inside which your cursor is placed. N.B. `dd` is a shortcut that does the same.
-- `yip`: yank everything inside the paragraph object we are currently in. No dragging and selecting: we just specify the logic and Vim does the work. 
+- `yip`: yank everything inside the paragraph object we are currently in. No dragging and selecting: we just specify the logic and Vim does the work.
 
 And search functions `t`, `f`, `/`, and `?` are also navigational in nature, so why should they be treated any different?
 
@@ -104,7 +104,7 @@ And even if you get creative, Vim often knows exactly what you mean.
 - `ci"`: change everything inside the quotation marks. Nothing to remember here, it just does what it says.
 - `da]`: delete everything "around" the square brackets (so including brackets).
 
-All of this combined opens a completely new perspective on text editing. 
-The main downside however, is that when you start using Vim you will counteract the gained efficiency by delivering unrequested preaches about how much more efficient you are now that you use Vim. 
+All of this combined opens a completely new perspective on text editing.
+The main downside however, is that when you start using Vim you will counteract the gained efficiency by delivering unrequested preaches about how much more efficient you are now that you use Vim.
 
 In a follow up post I will focus on use cases less related to the act of writing itself and more to everything surrounding it.

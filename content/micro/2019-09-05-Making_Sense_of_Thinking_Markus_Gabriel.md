@@ -5,5 +5,5 @@ date: 2019-09-05T20:30:00+02:00
 type: micro
 event: true
 ---
-The lecture was a philosophical tornado, leaving the audience dazzled. 
-A semi-random quote of my choice: "There is no intelligence without a problem to be solved". 
+The lecture was a philosophical tornado, leaving the audience dazzled.
+A semi-random quote of my choice: "There is no intelligence without a problem to be solved".

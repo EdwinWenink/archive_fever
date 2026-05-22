@@ -14,7 +14,7 @@ Wow, phrasing.
 It's easy to get confused.
 If you forget how to do it, you can first write out the whole loop:
 
-```
+```python
 # Flatten list
 >>> flat = []
 >>> nested = [ [1, 2, 3], [4, 5, 6] ]
@@ -27,7 +27,7 @@ If you forget how to do it, you can first write out the whole loop:
 
 To collapse this into a one-liner, work from the *outer scope inwards*:
 
-```
+```python
 flat = [ el for sub in nested for el in sub ]
 ```
 

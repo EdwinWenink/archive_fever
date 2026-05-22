@@ -155,12 +155,12 @@ video deepfakes, the OpenAI organization decided not to release the used
 datasets, nor the trained model or the used code, due “to concerns about
 large language models being used to generate deceptive, biased, or
 abusive language at scale” amongst other “malicious applications of the
-technology” [6]. 
+technology” [6].
 They did however release a smaller trained model with less potential for abuse in order to still display the technical innovations that “are core to fundamental artificial intelligence research” [6].
 As scientists, they do not want to counteract progression of the field.
 This experiment in responsible AI disclosure amounts to a more instrumentalist view on technology: its
 development is controlled by humans, instead of being an autonomous
-deterministic force to which humans have to adapt. 
+deterministic force to which humans have to adapt.
 
 The primary hope of the decision to withhold the AI is that this will give the AI community
 as well as governments more time to come up with ways to prevent or
@@ -209,7 +209,7 @@ into account how these technologies mediate reality and human praxis.
 ## Deepfakes and Technological Mediation
 
 In this section I argue that the philosophy of technological mediation
-as put forward by Verbeek [11][10] is appropriate
+as put forward by Verbeek [11] [10] is appropriate
 for conceptualizing the threat of deepfakes to democracy in terms of their
 mediation of human praxis. Technological mediation “concerns the role of
 technology in human action (conceived as the ways in which human beings
@@ -350,6 +350,7 @@ democratic debate with all involved stakeholders about how to design a
 better interaction with the technology [cf. 10].
 
 ## References
+
 <br>
 
 <p style="text-align:left">[1]: Robert Chesney and Danielle Keats Citron. Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security. SSRN Electronic Journal, 2018. doi: 10.2139/ssrn.3213954.</p>
@@ -370,7 +371,7 @@ better interaction with the technology [cf. 10].
 
 <p style="text-align:left">[9] Jan A. G. M. Van Dijk. Digital democracy: Vision and reality. Innovation and the Public Sector, 19:49-62, 2012. doi: 10.3233/978-1-61499-137-3-49.</p>
 
-<p style="text-align:left">[10] Peter-Paul Verbeek. Materializing morality: Design ethics and technological mediation. Science, Technology, & Human Values, 31(3):361-380, 2006. doi: 10.1177/0162243905285847. URL https://doi.org/10.1177/ 0162243905285847.</p> 
+<p style="text-align:left">[10] Peter-Paul Verbeek. Materializing morality: Design ethics and technological mediation. Science, Technology, & Human Values, 31(3):361-380, 2006. doi: 10.1177/0162243905285847. URL https://doi.org/10.1177/ 0162243905285847.</p>
 
 <p style="text-align:left">[11] Peter-Paul Verbeek. Mediation theory. 2019. URL https://ppverbeek.wordpress.com/mediation-theory/. (accessed: 2019-03-23).</p>
 

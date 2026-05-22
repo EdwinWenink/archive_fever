@@ -12,7 +12,7 @@ I have just added some new features to this website.
 
 ## Breadcrumb navigation
 
-This took a bit of puzzling. 
+This took a bit of puzzling.
 To get all the breadcrumbs, you essentially want to parse all the URL components of the current URL relate to the base domain.
 The Hugo `split` function returns an empty head and tail, which I needed to filter out.
 
@@ -20,7 +20,7 @@ I wanted to keep my regular navigation bar next to the breadcrumb navigation.
 This means that if I visit let's say the "about" page, that *both* the breadcrumb and regular navigation bar show the "about" page.
 As a nice twist, I therefore remove a reference from the regular menu if it is already mentioned in the breadcrumb navigation (i.e. if it's the current page).
 
-```
+```html
 <div id="breadcrumbs">
     <!-- Remove empty first and last element -->
     {{ $url  := .RelPermalink }}
@@ -41,7 +41,7 @@ As a nice twist, I therefore remove a reference from the regular menu if it is a
         {{ end }}
     {{ end }}
     | 
-	<!-- Navigation Pages -->
+ <!-- Navigation Pages -->
     {{ range .Site.Menus.main }}
         {{ if ne $url .URL }}
             <a href="{{ .URL }}">{{ .Name }}</a>&nbsp;&nbsp;
@@ -57,7 +57,7 @@ By now I have a better grip of the Hugo language.
 I initially separately defined a header and footer partial in all my templates, which amounts to a lot of unnecessary repetition.
 Hugo avoids this bad pattern by allowing you to define a `baseof.html` template, as such:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "header.html" . }}
@@ -77,12 +77,12 @@ The next section shows a full example.
 ## Section index pages
 
 Having proper index pages for sections is not hard to do at all and yet, I never had them.
-This is because I did not fully understand how Hugo treats `_index.md` pages in the content organization. 
+This is because I did not fully understand how Hugo treats `_index.md` pages in the content organization.
 But once I did understand, I still didn't get them to work.
 Turns out I had `disableKinds` enabled for sections in my `config.toml`.
 I can't remember at all that I enabled this and it took way too long to figure out this prevented Hugo from generating index pages.
 
-```
+```html
 {{ define "main" }}
 
 {{ partial "paginator.html" . }}
@@ -109,7 +109,7 @@ In addition to the [archive](/archives), which has a template of its own, the [p
 As you can also see in the above snippet, I also introduced a paginator in the section index pages.
 You can use the default Hugo paginator with `{{ template "_internal/pagination.html" . }}`, but I built a simple custom paginator instead:
 
-```
+```html
 {{ $paginator := .Paginator }}
 {{ if gt $paginator.TotalPages 1 }}
     <div style="text-align: center; font-size: 1.5em; margin: 1em;">
@@ -152,7 +152,7 @@ In the [AI Ethics Tool Landscape](/posts/57-ai_ethics_tool_landscape/) I heavily
 I added a new [series](/series/) taxonomy.
 I also wrote a `terms.html` template that does not only lists the taxonomy terms, but also counts how often they occur:
 
-```
+```html
 {{ define "main" }}
 
 <div>
@@ -172,7 +172,7 @@ This is a really cool Hugo feature I wasn't aware of before.
 If you keep your Hugo site in a git repo (which you should anyways), the Hugo build can pick up the latest commit made on the current file in order to show the date of the last edit.
 It's as simple as:
 
-```
+```html
 <aside> 
   Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
 </aside>

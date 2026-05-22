@@ -6,4 +6,4 @@ event: true
 category: "music"
 ---
 
-Went to see The Myrrors, stayed for Minami Deutsch, which was a great surprise. 
+Went to see The Myrrors, stayed for Minami Deutsch, which was a great surprise.

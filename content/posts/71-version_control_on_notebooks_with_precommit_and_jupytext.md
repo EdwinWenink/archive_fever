@@ -33,8 +33,8 @@ For this type of "lab" notebook, most difficulties concerning version control ca
 
 - Exploratory notebooks should have a *single* author who is the owner of the analysis
 - A minimal version control approach is possible: others do not push changes in that notebook, unless explicitly coordinated with the owner of the notebook.
-    * This should avoid having to review unreadable diffs
-    * And also avoid merge conflicts altogether
+  * This should avoid having to review unreadable diffs
+  * And also avoid merge conflicts altogether
 - Mention the *date* and the *author name* of the analysis in the file name to make the historical character and owner explicit
 
 Secondly, in some workflows one may want to collaborate with multiple people on the same notebook or even have notebooks in production (looking at you, Databricks).
@@ -98,17 +98,17 @@ If not, skip ahead to <a href="combining-jupytext-with-pre-commit">here</a>.
 ### Installation and pairing
 
 - Install as standalone command using pip
-    * `pip install jupytext --upgrade`
-    * Handy! Can be included in requirements.txt
+  * `pip install jupytext --upgrade`
+  * Handy! Can be included in requirements.txt
 - Install as Jupyter notebook extension
-    * `jupyter nbextension install --py jupytext [--user]`
-    * Follow by: `jupyter nbextension enable --py jupytext [--user]`
-    * Notebook: File -> Jupytext -> Pair Notebook with light (fewer markers) or percent (explicit cell delimiters) script
-    * If you now save the notebook, a corresponding .py version will be updated automatically!
+  * `jupyter nbextension install --py jupytext [--user]`
+  * Follow by: `jupyter nbextension enable --py jupytext [--user]`
+  * Notebook: File -> Jupytext -> Pair Notebook with light (fewer markers) or percent (explicit cell delimiters) script
+  * If you now save the notebook, a corresponding .py version will be updated automatically!
 - Install as Jupyter lab extension
-    * `jupyter labextension install jupyterlab-jupytext`
-    * Lab: View -> Activate Command Palette (Ctrl+Shift+C) -> Pair Notebook with ...
-    * If you now save the notebook, a corresponding .py version will be updated automatically!
+  * `jupyter labextension install jupyterlab-jupytext`
+  * Lab: View -> Activate Command Palette (Ctrl+Shift+C) -> Pair Notebook with ...
+  * If you now save the notebook, a corresponding .py version will be updated automatically!
 
 ### Basic usage
 
@@ -122,11 +122,11 @@ This also means that when you edit the `.py` file, you can update the notebook s
 
 You can specify a project specific configuration in `jupytext.toml`:
 
-```
+```text
 formats = "ipnb,py:percent"
 ```
 
-To convert a notebook to a notebook *without outputs*, use `jupytext --to notebook notebook.py `.
+To convert a notebook to a notebook *without outputs*, use `jupytext --to notebook notebook.py`.
 
 ## Combining Jupytext with pre-commit
 
@@ -146,7 +146,7 @@ We also automate the "clear output cells" step mentioned above using `nbstripout
 
 My `.pre-commit-config.yaml` for syncing notebooks and their script version looks like this:
 
-```
+```yaml
 repos:
 -   repo: https://github.com/kynan/nbstripout
     rev: 0.6.1
@@ -199,7 +199,7 @@ But this is where I've encountered another nasty issue that prevented the Jupyte
 Let's take a hook that removes trailing white spaces as an example.
 This hook works as intended on Python scripts, but the hook does not actually remove trailing white spaces *in the code* because source code of notebook cells are encapsulated in a JSON field as follows:
 
-```
+```json
 {
  "cell_type": "code",
  "execution_count": null,
@@ -241,7 +241,7 @@ I have solved this specific issue by adding all notebooks in the `notebooks` fol
 
 The following is a `.pre-commit-config.yaml` that synchronizes all notebooks with Python scripts under `notebooks` and plays nice with other pre-commit hooks:
 
-```
+```yaml
 # Install the pre-commit hooks below with
 # 'pre-commit install'
 
@@ -306,10 +306,10 @@ Here we have assumed you have created and specified `.pre-commit-config.yaml` an
 - [Jupytext docs](https://jupytext.readthedocs.io/en/latest/index.html)
 - [Jupytext docs on collaborating on notebooks](https://jupytext.readthedocs.io/en/latest/examples.html).
 - There are some notebook aware tools for diffing and merging
-    * E.g. `nbdiff` and `nbmerge` commands from [nbdime](https://nbdime.readthedocs.io/en/latest/)
-    * ReviewNB GitHub app
-    * Neptune
-- https://www.svds.com/jupyter-notebook-best-practices-for-data-science/
-- http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/
-- https://innerjoin.bit.io/automate-jupyter-notebooks-on-github-9d988ecf96a6
-- https://nextjournal.com/schmudde/how-to-version-control-jupyter
+  * E.g. `nbdiff` and `nbmerge` commands from [nbdime](https://nbdime.readthedocs.io/en/latest/)
+  * ReviewNB GitHub app
+  * Neptune
+- <https://www.svds.com/jupyter-notebook-best-practices-for-data-science/>
+- <http://timstaley.co.uk/posts/making-git-and-jupyter-notebooks-play-nice/>
+- <https://innerjoin.bit.io/automate-jupyter-notebooks-on-github-9d988ecf96a6>
+- <https://nextjournal.com/schmudde/how-to-version-control-jupyter>

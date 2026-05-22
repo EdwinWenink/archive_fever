@@ -18,7 +18,7 @@ While doing me a favour, Rits made sure that he enjoyed himself.
 See right for a first proof of concept. After seeing this sketch, I had complete faith in the end result.
 
 
-You can see the final results on my home page. 
+You can see the final results on my home page.
 If you feel adventurous, make sure to switch to the dark theme by clicking on the switch button on top for an amazing GIF.
 The normal portrait did not fit with the dark theme, so we decided it was best to design another portrait for that.
 We couldn't quite figure out how to avoid creepy hollow eyes with high contrast against a dark background.

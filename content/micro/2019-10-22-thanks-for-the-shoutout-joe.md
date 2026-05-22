@@ -6,4 +6,4 @@ target: https://pointers.dailywebthing.com/10-17-19/
 type: micro
 reply: true
 ---
-Thanks for the shoutout Joe! 
+Thanks for the shoutout Joe!

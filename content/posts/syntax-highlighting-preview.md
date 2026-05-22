@@ -7,13 +7,13 @@ draft: true
 
 Syntax highlighting is a feature of text editors that are used for programming, scripting, or markup languages, such as HTML. Besides Chroma, the default syntax hightlighter in Hugo, [highlight.js](https://highlightjs.org/) is a better choice. The bare minimum for using highlight.js on a web page is linking to the library along with one of the styles and calling initHighlightingOnLoad:
 
-```
+```html
 <link rel="stylesheet" href="/path/to/styles/default.css">
 <script src="/path/to/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 ```
 
-Theme one uses the github style color theme. 
+Theme one uses the github style color theme.
 
 CSS
 

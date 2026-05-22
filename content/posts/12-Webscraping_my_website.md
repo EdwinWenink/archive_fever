@@ -13,7 +13,7 @@ Required:
 
 A while back I suddenly felt the urge to do some quick programming after having spent the last weeks of my summer break on reading philosophy. Since I had no actual programming work to do, I decided to explore something new to me: web scraping. Web scraping is the (automated) retrieval of data from websites. If done properly, you can gather a large amount of information from a great variety of sources without any manual labour. This is for example essential for websites that compare prices, let's say for hotels or various travel tickets. In my case, despite some fantasizing about fun projects, I do not (yet) have a useful application in mind. Just for practice I decided to start with something simple: extract all blogs from my own website, and organize them nicely in a folder on my computer.
 
-Since I'm absolutely new to this topic myself, this blog post is intended as a starters tutorial of sorts. To get started, we need some Python modules. This script is written for Python 3. 
+Since I'm absolutely new to this topic myself, this blog post is intended as a starters tutorial of sorts. To get started, we need some Python modules. This script is written for Python 3.
 The module `requests` (version 2.19.1) is needed because we need our script to send a request to a website to get its data, without having to open a browser ourselves. Once we have this data it is a huge unreadable mess, so we need something to parse it and recover some of its original structure. The module `BeautifulSoup` (version 4.6.0) does exactly that: it knows its way around HTML and XML, and it will provide us the data we're interested in if we ask it nicely.
 
 ```python
@@ -26,7 +26,7 @@ We now need to give the script some necessary information: a website url of our 
 
 So first we get the data of this 'archives' page with the `requests` module, and then let `BeautifulSoup` index its contents by creating a nice 'soup' of the requested data. From this soup we can extract the ingredients we want, which are in this case all urls from the blog posts. But we have to be precise about what we want. If you go to the archives page yourself and inspect the webpage's html using your browser, you will see that all links to the blog posts are of the class "permalink". Therefore, we can retrieve only the links we want by asking the soup to show us all html data of class "permalink".
 
-```
+```python
 base_url = "https://edwinwenink.xyz/archives/"
 script_dir = os.path.dirname(os.path.abspath(__file__))
 

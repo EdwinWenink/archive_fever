@@ -12,7 +12,7 @@ Let's explore that in Python.
 By using the unpacking operator `*` you don't have to manually specify the number of arguments (although I do assume the return of two components in the example below).
 In Python 3, the zip operator returns a generator instead of a list, so you need to explicitly cast to a list if you want one.
 
-```
+```python
 >>> a = [1, 3]
 >>> b = [2, 4]
 >>> c = list(zip(a,b))
@@ -25,7 +25,7 @@ In Python 3, the zip operator returns a generator instead of a list, so you need
 (2, 4)
 ```
 
-The inverse operation will always return tuples in Python, so if your original input was a list, you also need to convert back the results to a list. 
+The inverse operation will always return tuples in Python, so if your original input was a list, you also need to convert back the results to a list.
 
 This operation is super handy.
 For example, I wrote a class to recommend relevant texts for a query document based on their distance in a vector space.
@@ -34,7 +34,7 @@ So the metadata will be a list of `(distance, document_id, type)` tuples.
 We may be interested in easily retrieving all distances, document_ids etc. as a list of their own.
 We can do that by using the unpack+zip trick:
 
-```
+```python
 distances, document_ids, types = zip(*meta)
 ```
 

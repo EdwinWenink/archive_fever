@@ -32,7 +32,7 @@ This means that if we accurately approach the probability of a random point land
 
 We can generate points with x and y coordinates uniformly sampled between -1 and 1. This effectively amounts to saying that for the circle we use a radius of 1, centered in (0,0).
 Now we need to determine a test for whether any given point lies in the circle.
-Given a sampled point, we can reconstruct if it lies on a circle with a radius smaller than 1. The radius is obtained with the "hypot" function, i.e. $\sqrt{x^2+y^2}$. If the reconstructed radius is smaller than the radius of our circle, we know it must lie within the circle we defined with radius 1. Otherwise, we know it is a point that only lies within the containing square, but not in the circle. 
+Given a sampled point, we can reconstruct if it lies on a circle with a radius smaller than 1. The radius is obtained with the "hypot" function, i.e. $\sqrt{x^2+y^2}$. If the reconstructed radius is smaller than the radius of our circle, we know it must lie within the circle we defined with radius 1. Otherwise, we know it is a point that only lies within the containing square, but not in the circle.
 
 To get the probability we are interested in, we only have to divide the number of sampled points within the square by the total amount of samples. To get an approximation of $\pi$, we multiply this probability with 4.
 
@@ -40,7 +40,7 @@ To get the probability we are interested in, we only have to divide the number o
 
 This is the python 3 script I wrote, so you can play around with the parameters yourself. The code for a simple histogram plot is also included, but you should delete this if you don't have the matplotlib package (and don't want to install it).
 
-{{< highlight python>}}
+```python
 import random
 import math
 import matplotlib.pyplot as plt
@@ -58,20 +58,20 @@ for i in range(iterations):
         if hyp_r < radius: sample_inside +=1
     countdown-=1
     print(countdown)
-    estimations.append(4.0 * sample_inside / sample) 
+    estimations.append(4.0 * sample_inside / sample)
 print("Approximation of pi: ", sum(estimations)/float(iterations))
- 
+
 bins=int(iterations/2)
 plt.hist(estimations, bins=bins,histtype='step')
 plt.savefig("pi-plot.png")
-{{< /highlight >}}
+```
 
 ## Sampling and Plots
 
 Another question is how much samples we need: a lot. Without working out the mathematics, some quick and dirty testing shows that in order to get only one decimal accuracy we already need at least 10.000 samples. Unfortunately, to get more accuracy, we need relatively more and more samples, since the rate of convergence is the inverse of the square root of the number of samples N. In simple words: the higher the number of samples we take, the slower the convergence.
 
 With a million samples, we can approximate the first two decimals well, but for the third decimals we already start getting into trouble. On top of that, the approximation becomes slow... Instead of straightforwardly pumping up the number of samples taken to increase the accuracy, I tried out another strategy.
-Instead of running a simulation with for example 100 million samples, I tried running 100 simulations with a million samples, and taking the average of those for the final approximation. In this manner we can create a confidence interval and say something about how reliable our estimate is. Since all samples are independent and concern a stochastic variable, the central limit theorem applies. In other words: if we have enough approximations, these approximations themselves will follow a normal distribution. I have an ongoing discussion with some friends about the benefit of this method, compared to running one bigger simulation. My current position is that with taking the mean over multiple approximations (which are themselves means over a million samples), we have a lower maximum precision than a single run with the same amount of total samples, but *effectively* get a better estimate because the result is more reliable. 
+Instead of running a simulation with for example 100 million samples, I tried running 100 simulations with a million samples, and taking the average of those for the final approximation. In this manner we can create a confidence interval and say something about how reliable our estimate is. Since all samples are independent and concern a stochastic variable, the central limit theorem applies. In other words: if we have enough approximations, these approximations themselves will follow a normal distribution. I have an ongoing discussion with some friends about the benefit of this method, compared to running one bigger simulation. My current position is that with taking the mean over multiple approximations (which are themselves means over a million samples), we have a lower maximum precision than a single run with the same amount of total samples, but *effectively* get a better estimate because the result is more reliable.
 
 Below are plots using a million samples and 100 and 200 iterations respectively. We indeed see that the means of the iterations crudely follow a normal distribution.
 

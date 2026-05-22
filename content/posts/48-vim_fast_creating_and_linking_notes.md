@@ -9,19 +9,19 @@ author: "Edwin Wenink"
 
 This is the third post in a series of sorts about note-taking in Vim.
 I have silently kept playing around with the system outlined in the previous posts ([-1](../43-notes_tagging/),[-2](../posts/42-vim_notetaking/)).
-Some things I have abandoned, some are improved and some are changed. 
-I have inserted several updates (marked as "UPDATE") in the previous posts in case you are curious. 
+Some things I have abandoned, some are improved and some are changed.
+I have inserted several updates (marked as "UPDATE") in the previous posts in case you are curious.
 If we have reached some sort of equilibrium at the end of this series I'll make sure to create a place where people can easily download all relevant configuration and used scripts, but for now everything is a matter of "voortschrijdend inzicht," a beautiful Dutch phrase that's hard to translate and certainly hard to pronounce for most of my readers.
-Given the fact that my previous posts on Vim are well-received and several people are trying it out, it's time to pick up writing again and start chipping away at the backlog. 
+Given the fact that my previous posts on Vim are well-received and several people are trying it out, it's time to pick up writing again and start chipping away at the backlog.
 
-To give you a taster of what's to come: 
+To give you a taster of what's to come:
 
 - various surprising uses of back-linking between files
 - a script for automatically updating them *in-place* in a dedicated section each note
 - exploring methods of visualizing relations between notes ...
 - ... and ideally using this visualizing for some free-roaming navigation as well.
 
-In this post, I want to discuss a seemingly minor issue that will nevertheless potentially have a big impact on your workflow. 
+In this post, I want to discuss a seemingly minor issue that will nevertheless potentially have a big impact on your workflow.
 It concerns the quick creation of new timestamped notes in your note directory or Zettelkasten, and then easily creating a correctly formatted Markdown link to it from another note.
 If you are impatient, you can have a look at the [screencast](#screencast) below.
 If not, let me give a brief introduction to show you where the potential workflow issue is.
@@ -37,7 +37,7 @@ Since I'm hacking together my own tools some issues came up, in this case with u
 The [O.G. Zettelkasten of Luhmann](https://niklas-luhmann-archiv.de/bestand/zettelkasten/inhaltsuebersicht#ZK_1_editor_I_45-11) had an extensive naming convention for organizing notes, but it was more of a necessary evil because computers were not in the picture yet.
 Given that we now have digital means of naming, searching, and linking notes, a strict naming convention for the notes is an unnecessary complication that blindly applies an "analogue" mindset to a digital solution.
 The authors from Zettelkasten.de are however strong proponents of the more superficial organization of notes by their time of creation, which they do by inserting a unique timestamp at the beginning of the filename.
-For me, the best argument for this approach is that unique timestamps are a good way of recovering links through potential filename changes. 
+For me, the best argument for this approach is that unique timestamps are a good way of recovering links through potential filename changes.
 The main reason I did not use them was however that I used Vim's default filename/path completion (`C-x C-f` in insert mode) when making Markdown links.
 This worked fine for me as long as filenames are meaningful, but this just doesn't cut it anymore when all filenames start with a timestamp, as you would have to manually start typing the timestamp.
 An early adapter of my Vim experiment, [Boris](https://www.de-klos.net/), did however use long complex timestamps and noticed interlinking was getting in the way of his workflow.
@@ -47,36 +47,36 @@ So here it goes ...
 ## Create a timestamped Markdown note in your Zettelkasten
 
 Before we solve the bigger issue, let's add some convenience.
-When using timestamps, manually typing out the date and time is a pain in the ass. 
+When using timestamps, manually typing out the date and time is a pain in the ass.
 Each timestamp needs to be a unique identifier, so this means you at least also want to include the time of day, potentially up to the amount of seconds if you regularly make multiple notes within a minute.
 I don't personally, but the code below is very easy to adjust to your own needs.
 
 First, we declare a variable that holds the location of our Zettelkasten, so we may use it in multiple places without having to retype the whole path.
 
-```
+```vim
 let g:zettelkasten = "/home/edwin/Notes/Zettelkasten/"
 ```
 
 Second, we want to define our own custom command that 1) pre-fills all the stuff we don't want to type, namely the timestamp and the extension (I always use markdown), and 2) that prompts you for the name of your note:
 
-```
+```vim
 command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%H%M") . "-<args>.md"
 ```
 
 This will produce a filename like "201704051731-my_awesome_note.md".
-Don't bother with understanding this. 
+Don't bother with understanding this.
 Writing it certainly gave me a headache because I'm new to Vimscript.
 What is interesting for you is "%Y%m%d%H%M" because it indicates how you want to format your datetime.
 You can read about this by typing `:help strftime` and otherwise [this](https://vim.fandom.com/wiki/Insert_current_date_or_time) is a good resource.
 
-Now all we have to do is declare a mapping to call our command. 
+Now all we have to do is declare a mapping to call our command.
 I use the "<leader>n" prefix for all note-related stuff I write myself, so I choose "<leader>nz", which just also happens to be a mnemonic for **n**ew **z**ettel.
 
-```
+```vim
 nnoremap <leader>nz :NewZettel 
 ```
 
-Done! 
+Done!
 Now let's solve the real problem of effortlessly linking to this note.
 Warning: it gets pretty sexy ahead.
 
@@ -89,13 +89,13 @@ My new solution is to rely on my fuzzy file finder to find a file and automatica
 This is a great solution because the fuzzy nature of it allows you to ignore the timestamp altogether.
 But it also allows you to search on a partial fragment of the time *and* a part of the note title.
 I can imagine you for example remember making a note about Zettelkasten somewhere in 2020, but you don't quite remember the exact date (unless you are Rain Man) and neither the precise name of the file.
-No problemo! Boot up CtrlP and search on "2020Zettelkasten". 
+No problemo! Boot up CtrlP and search on "2020Zettelkasten".
 We can extend CtrlP to then automatically create a markdown link to the matching file, with Ctrl-X.
 Have a look at the [short screencast I made](#screencast).
 
 I started with code provided in [this StackExchange post](https://vi.stackexchange.com/questions/8976/is-there-a-way-to-insert-a-path-of-the-file-instead-of-opening-it-with-ctrlp-plu) and adjusted it to create valid Markdown links:
 
-```
+```vim
 " CtrlP function for inserting a markdown link with Ctrl-X
 function! CtrlPOpenFunc(action, line)
    if a:action =~ '^h$'    
@@ -109,7 +109,7 @@ function! CtrlPOpenFunc(action, line)
       call ctrlp#mrufiles#add(filename)
 
       " Insert the markdown link to the file in the current buffer
-	  let mdlink = "[".filename_wo_timestamp."]( ".filename." )"
+   let mdlink = "[".filename_wo_timestamp."]( ".filename." )"
       put=mdlink
   else    
       " Use CtrlP's default file opening function
@@ -123,11 +123,11 @@ let g:ctrlp_open_func = {
          \ }
 ```
 
-I just love it. 
+I just love it.
 Irregardless of whether I will use timestamps in my filenames, this will greatly speed up interlinking notes in my Zettelkasten.
 
 EDIT 09/02/2021: a previous version of the post did not escape the `+` regex modifier, which is necessary in the vim regex dialect.
-As a result, the timestamp was not correctly removed in the created link descriptions. 
+As a result, the timestamp was not correctly removed in the created link descriptions.
 The screencast below uses the old incorrect version.
 
 EDIT 22/09/2022: I updated the regular expression and additionally remove underscores from file paths.

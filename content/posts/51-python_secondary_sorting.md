@@ -7,13 +7,13 @@ tags: [python, programming]
 series: 'Programming'
 ---
 
-Let's say we want to compute the mode of a series of numbers, meaning that we pick the value that occurs most. 
+Let's say we want to compute the mode of a series of numbers, meaning that we pick the value that occurs most.
 This is easy enough: we sort on the amount of occurrences, assuming we have some datatype that tracks the amount of occurrences per value.
-However, we need to deal with the edge case of two values occurring the same amount of times. 
+However, we need to deal with the edge case of two values occurring the same amount of times.
 In other words, after having sorted on occurrences, we need to sort on the value to break the tie.
 
 If we pick the largest value, both the primary and the secondary sorting use the same sorting order.
-Python's `sorted` and `sort` (the in-place variant) accept tuples as sorting keys, so that you can straightforwardly perform the secondary sorting in one line. 
+Python's `sorted` and `sort` (the in-place variant) accept tuples as sorting keys, so that you can straightforwardly perform the secondary sorting in one line.
 First, we get (value, count) tuples:
 
 ```python
@@ -40,7 +40,7 @@ Because we want the biggest counts (primary) and biggest values (secondary) in t
 values_by_count = sorted(counts, reverse=True, key=lambda x: (x[1], x[0]))
 ```
 
-This outputs: 
+This outputs:
 
 ```python
 [(5, 2), (2, 2), (10, 1), (7, 1), (1, 1)] 
@@ -53,8 +53,8 @@ The handy one liner above assumes that we use the same sorting order for both th
 
 So how can we maintain this ease of syntax while using different sorting orders?
 
-Because we work with numerical data, we can use a little hack. 
-We can call `sorted` using the default *ascending* sort order, but nevertheless sort on the counts in a *descending* fashion by sorting on the negative of the counts. 
+Because we work with numerical data, we can use a little hack.
+We can call `sorted` using the default *ascending* sort order, but nevertheless sort on the counts in a *descending* fashion by sorting on the negative of the counts.
 So we write:
 
 ```python

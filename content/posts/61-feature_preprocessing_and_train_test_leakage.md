@@ -123,6 +123,6 @@ During testing, only *apply* the data preprocessing steps used during the traini
 
 Useful sources:
 
-- https://www.nodalpoint.com/not-perform-feature-selection/
-- https://stackoverflow.com/questions/56308116/should-feature-selection-be-done-before-train-test-split-or-after
-- https://machinelearningmastery.com/data-preparation-without-data-leakage/
+- <https://www.nodalpoint.com/not-perform-feature-selection/>
+- <https://stackoverflow.com/questions/56308116/should-feature-selection-be-done-before-train-test-split-or-after>
+- <https://machinelearningmastery.com/data-preparation-without-data-leakage/>

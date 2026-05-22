@@ -16,7 +16,7 @@ I want to investigate the hypothesis that each case has indeed a single section 
 
 A dummy dataframe for this situation looks may like this:
 
-```
+```python
 import pandas as pd
 
 data = {'doc_id': [1, 1, 2, 2, 3, 3],
@@ -27,7 +27,7 @@ df = pd.DataFrame(data)
 
 This gives:
 
-```
+```python
 >>> df
    doc_id  section_id      type
 0       1           1     other
@@ -38,7 +38,7 @@ This gives:
 5       3           2  decision
 ```
 
-This dummy example distinguishes three cases: 
+This dummy example distinguishes three cases:
 
 1. the first document contains a single section with a decision, as expected
 2. the second document contains no section with a decision
@@ -46,7 +46,7 @@ This dummy example distinguishes three cases:
 
 Notice that in this case we cannot simply test our hypothesis by counting the amount of documents and checking equality with the number of sections with type 'decision':
 
-```
+```python
 >>> len(df['doc_id'].unique())
 3
 >>> len(df.loc[df['type'] == 'decision'])
@@ -57,7 +57,7 @@ The totals add up, but our hypothesis is clearly false!
 
 Instead, we want to test our hypothesis on the level of documents, not sections, so we *group* our data by the document identifier:
 
-```
+```python
 >>> df.groupby('doc_id')
 <pandas.core.groupby.generic.DataFrameGroupBy object at 0x000001C55EF8F9E8>
 ```
@@ -66,7 +66,7 @@ Now we want to count the number of 'decision' sections on the data that is group
 For this I apply a lambda expression in order to only regard data from the 'type' column of each group.
 With this functional style, we can do all operations in a single line:
 
-```
+```python
 >>> decision_counts = df.groupby('doc_id').apply(lambda x: len(x.loc[x['type'] == 'decision']))
 >>> decision_counts
 doc_id
@@ -79,7 +79,7 @@ We end up with a dataframe that lists the number of 'decision' sections per docu
 Counting how many documents violate our hypothesis is now trivial.
 We can count the number of documents that have no 'decision' sections and those that have more than one, as follows:
 
-```
+```python
 >>> decision_counts[decision_counts == 0]
 doc_id
 2    0
