@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
-/*
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
-@import url('http://fonts.googleapis.com/css?family=Cousine:400,700');*/
 
 /* TODO convert all color styling to use these variables for consistency */
 :root{
@@ -17,23 +12,7 @@
 }
 
 html {
-	/*
-	 * TODO:
-	 * Als ik dit doorzet, moet ik background:white ongedaan maken in dark mode
-	background: url("http://wohgame.com/images/02.jpg?crc=3872992552") 0 0 no-repeat,
-	url("http://www.peterburr.org/2013_images/dirtscraper.png")0 500px no-repeat,
-	url("https://neauoire.github.io/neauismea/05.png") 0 1000px no-repeat,
-	url("http://www.peterburr.org/2013_images/03B-2.png") 1500px no-repeat,
-	url("https://neauoire.github.io/neauismea/0G.png") 0 2000px no-repeat,
-	url("https://neauoire.github.io/neauismea/02.png") 0 2500px no-repeat,
-	url("http://www.peterburr.org/2013_images/shape-collective.jpg") 0 2500px no-repeat,
-	url("http://www.peterburr.org/2013_images/03B-2.png") 0 3000px repeat-y;
-	background-size: cover;
-	background-image: url("/images/noodle_dots.png");
-	 */
-	/* contain is chaotischer */
 	background-size: contain;
-    /*background-color: #202020;*/
 }
 
 body, li p {
