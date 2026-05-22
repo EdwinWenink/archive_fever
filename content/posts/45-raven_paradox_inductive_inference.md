@@ -21,7 +21,7 @@ In other words, the correctness of inductive inference cannot be shown deductive
 The Raven paradox is a second logical challenge, but rather concerns the usefulness of induction as a *description* of how we become more sure after more observations.
 The claim that all ravens are black can be cast in the form of a logical implication:
 
-```
+```text
 for all x:Rx -> Bx
 ```
 
@@ -30,7 +30,7 @@ Remember, this proposition is inferred from the many observations black ravens t
 
 But Hempel points out that when we rewrite this statement to the following logically equivalent proposition, things get counter-intuitive:
 
-```
+```text
 for all x: ~Bx -> ~Rx
 ```
 

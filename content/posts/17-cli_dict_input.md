@@ -87,7 +87,7 @@ def error(incorrect_input):
 
 Which together produces the following output:
 
-```
+```text
 'Incorrect command' was an example of an incorrect command
 
         help        see this menu, obviously

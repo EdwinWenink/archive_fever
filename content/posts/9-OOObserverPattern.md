@@ -99,7 +99,7 @@ Let's test our code:
 
 Which gives the output:
 
-```
+```text
 Therapist says: Student1 you already had 1 beers. That's enough!
 Therapist says: Student2 you already had 1 beers. That's enough!
 Therapist says: Student1 you already had 2 beers. That's enough!

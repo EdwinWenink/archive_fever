@@ -53,13 +53,13 @@ I don't personally, but the code below is very easy to adjust to your own needs.
 
 First, we declare a variable that holds the location of our Zettelkasten, so we may use it in multiple places without having to retype the whole path.
 
-```
+```vim
 let g:zettelkasten = "/home/edwin/Notes/Zettelkasten/"
 ```
 
 Second, we want to define our own custom command that 1) pre-fills all the stuff we don't want to type, namely the timestamp and the extension (I always use markdown), and 2) that prompts you for the name of your note:
 
-```
+```vim
 command! -nargs=1 NewZettel :execute ":e" zettelkasten . strftime("%Y%m%d%H%M") . "-<args>.md"
 ```
 
@@ -72,7 +72,7 @@ You can read about this by typing `:help strftime` and otherwise [this](https://
 Now all we have to do is declare a mapping to call our command.
 I use the "<leader>n" prefix for all note-related stuff I write myself, so I choose "<leader>nz", which just also happens to be a mnemonic for **n**ew **z**ettel.
 
-```
+```vim
 nnoremap <leader>nz :NewZettel 
 ```
 
@@ -95,7 +95,7 @@ Have a look at the [short screencast I made](#screencast).
 
 I started with code provided in [this StackExchange post](https://vi.stackexchange.com/questions/8976/is-there-a-way-to-insert-a-path-of-the-file-instead-of-opening-it-with-ctrlp-plu) and adjusted it to create valid Markdown links:
 
-```
+```vim
 " CtrlP function for inserting a markdown link with Ctrl-X
 function! CtrlPOpenFunc(action, line)
    if a:action =~ '^h$'    

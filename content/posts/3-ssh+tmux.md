@@ -9,11 +9,11 @@ toc: true
 
 Ingredients:
 
-* ssh: the client command
-* sshd: the server component
-* scp and sshfs: tools to securely copy files
-* ssh-keygen
-* tmux
+- ssh: the client command
+- sshd: the server component
+- scp and sshfs: tools to securely copy files
+- ssh-keygen
+- tmux
 
 ## Why SSH?
 
@@ -23,7 +23,7 @@ One of the reasons I was getting more and more annoyed with Windows was that it 
 
 Install the openssh protocol with your preferred package manager. In my case that is pacman:
 
-```
+```bash
 sudo pacman -S openssh
 ```
 
@@ -32,18 +32,14 @@ sudo pacman -S openssh
 Before being able to ssh into your machine, the daemon taking care of all the ssh business must be correctly configured according to your preferences.
 Your configuration file is usually found in /etc/ssh/sshd_config .
 
-
 These are options you should consider changing from the defaults:
 
 1) To make connections more secure and only allow known users, disallow password logins on your server. This requires validation with ssh keys to login. More on that later. Even if you enable authorization with key pairs, the server will still allow password authentication if key authentication fails, thus still exposing the server to brute force attacks.  
-
 2) Disable root login to minimize damage to the overall system in case someone acquired unwanted access to the server.
-
 3) Enable X11 forwarding if you want to be able to start graphical applications over your ssh connection. It gives you permission to run X server.
-
 4) If you want to login using ssh keys, make sure to give the correct path to where the keys are stored (more on actually generating them below). That sounds easy enough, nevertheless I did not got key authorization to work because I thought it was possible to refer to my home directory as I usually do with ~. It gave me a headache, but ones I located the issue I replaced ~ with the path variable %h instead.
 
-```
+```text
 %h/.ssh/authorized_keys
 ```
 
@@ -55,13 +51,13 @@ The server to which we want to connect now requires an ssh key for authenticatio
 
 Also make sure the .ssh folder has the right permissions:
 
-```
+```bash
 chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
 ```
 
 On the client pc with which we want to connect to the server, we first need to have a pair of keys. The following command creates a private and a public key for authentication:
 
-```
+```bash
 ssh-keygen
 ```
 
@@ -72,13 +68,13 @@ In order to make sure our system knows what key to use for that, add the freshly
 
 First start the ssh-agent:
 
-```
+```bash
 eval "$(ssh-agent -s)"
 ```
 
 Next, we add the generated key:
 
-```
+```bash
 ssh-add ~/.ssh/id_rsa
 ```
 
@@ -86,7 +82,7 @@ Note that the key here ends with 'rsa'. This is just one of the possible encrypt
 
 The only thing we still need to do now is copy our public key to the ~/.ssh/authorized_keys folder on the server, so it allows us to connect. Copy the key in any way you like. An option is to temporarily allow password authentication on your server and run:
 
-```
+```bash
 ssh-copy-id -p port remotename@remotehostaddress
 ```
 
@@ -101,19 +97,19 @@ Don't forget to disable password authentication again.
 
 If you want to allow ssh connections, there is one last thing you need to do: run the sshd.service daemon that allows people with the ssh tool to connect. If you want to only temporarily turn it on, run (on Arch Linux):
 
-```
+```bash
 systemctl start sshd.service
 ```
 
 And if you run a dedicated server to which you always want to allow ssh connections, run:
 
-```
+```bash
 systemctl enable sshd.service
 ```
 
 The establishment of a ssh connection should now be straightforward. Run:
 
-```
+```bash
 ssh -p port remoteip
 ```
 
@@ -130,19 +126,19 @@ So after initiating a ssh connection, install and fire up tmux.
 
 Detach a session:
 
-```
+```bash
 tmux detach
 ```
 
 List all active sessions:
 
-```
+```bash
 tmux list-sessions
 ```
 
 Check out the id of the session you want to attach to (or its name, if you have given it while creating it) and run:
 
-```
+```bash
 tmux attach -t sessionID
 ```
 

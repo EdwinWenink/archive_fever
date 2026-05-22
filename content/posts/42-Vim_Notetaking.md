@@ -106,7 +106,7 @@ Only use *relative* paths, because this makes our note system independent of any
 
 For example, my index file contains a "quick start" menu for useful folders:
 
-```
+```text
 Quick start:
 
 - Philosophy/Thesis
@@ -132,7 +132,7 @@ By default the tree command only shows the file names at nodes, but for `gf` to 
 Because all notes share the same root directory, we can save space by using valid relative paths.
 On a Linux system, you can achieve this as such:
 
-```
+```bash
 tree -f -I "images*|*.pdf|*.py|*.html"
 ```
 
@@ -145,13 +145,13 @@ All notes have the markdown extension (and an occasional Emacs `.org` file).
 To insert the output of the command directly in our text buffer, prepend the command with the `read` command or its shorthand `r`, or even shorter (but this overrides the current line), with `.` (a dot).
 So you run:
 
-```
+```vim
 :.!tree -f -I "images*|*.pdf|*.py|*.html"
 ```
 
 The resulting tree looks something like this:
 
-```
+```text
 
 .
 ├── ./AI
@@ -196,7 +196,7 @@ We can make a mapping to 1) open the index file and 2) change the Vim working di
 
 One way to do that is to add the following mapping to your `.vimrc`:
 
-```
+```vim
 " Go to index of notes
 nnoremap <leader>ww :e $NOTES_DIR/index.md<CR>cd $NOTES_DIR
 ```
@@ -205,7 +205,7 @@ UPDATE 19/12/2019: I now let all note related mappings start with `<leader>n`.
 This command is now mapped as `<leader>ni` for "note index."
 This command also has a small mistake. This is the corrected version:
 
-```
+```vim
 " Go to index of notes and set working directory to my notes
 nnoremap <leader>ni :e $NOTES_DIR/index.md<CR>:cd $NOTES_DIR<CR>
 ```
@@ -217,7 +217,7 @@ We need `<CR>` to also execute the command, but it is also a cheeky way to chain
 
 `$NOTES_DIR` is a bash variable that I set in my `~/.bashrc`:
 
-```
+```bash
 export NOTES_DIR=/home/edwin/Documents/Notes
 ```
 
@@ -226,7 +226,7 @@ On Windows I do hardcore the path though.
 Vim allows you to ignore the Windows convention of using backslashes in paths, so you can use a backslash to escape whitespaces as usual.
 For example, my remap on Windows looks like this:
 
-```
+```vim
 nnoremap <Leader>ww :e C:/Users/Edwin\ Wenink/Documents/Notes/index.md<cr>
 ```
 
@@ -248,7 +248,7 @@ I opted for the `Ctrl-P` fuzzy finder because making that run on Windows as well
 
 You can make Ctrl-P faster by letting it use the blazingly fast tool `ripgrep`, by adding the following to your `.vimrc` (after installing `ripgrep` of course):
 
-```
+```vim
 " Make Ctrlp use ripgrep
 if executable('rg')
     let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
@@ -334,7 +334,7 @@ Luckily, Vim also has a regular `grep` command that you can configure to use any
 We just need that tool to be cross-platform.
 We already used `ripgrep` for Ctrl-P, so let's use it for Vim's `grep` command as well.
 
-```
+```vim
 " Make :grep use ripgrep
 if executable('rg')
     set grepprg=rg\ --color=never\ --vimgrep
@@ -350,7 +350,7 @@ I was inspired by a note searching function from [this video](https://www.youtub
 He uses the slow `vimgrep`.
 This is his function:
 
-```
+```vim
 command! -nargs=1 Ngrep vimgrep "<args>" $NOTES_DIR/**/*.txt
 nnoremap <leader>[ :Ngrep
 ```
@@ -364,7 +364,7 @@ Instead of `.txt` files, we only search through `.md` files.
 Adjust the glob pattern if you want to include more.
 Remember that the `<leader>` is a backslash by default.
 
-```
+```vim
 " My own version, only searches markdown as well using ripgrep
 " Thus depends on grepprg being set to rg
 command! -nargs=1 Ngrep grep "<args>" -g "*.md" $NOTES_DIR
@@ -395,7 +395,7 @@ For who is into more advanced stuff, you can run commands on each item in the qu
 I was also inspired by the Vimming doctor linked above in the creation of a navigation pane for browsing the search results in the `quickfix` list.
 The following function and mapping allows you to open a sidebar with the results from our custom "note grep" with `\v`:
 
-```
+```vim
 command! Vlist botright vertical copen | vertical resize 50
 nnoremap <leader>v :Vlist<CR>
 ```

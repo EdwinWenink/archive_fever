@@ -53,7 +53,7 @@ Be aware that there are many dialects for writing regex, but that all versions o
 This is how such a reasoning process could look like.
 Let's say we write two tags on one line for example as such:
 
-```
+```text
 @meme-machine @vimlife
 ```
 
@@ -62,7 +62,7 @@ Intuitively, the rule should be something like: find an "@" and then match all w
 
 This simple regex would be expressed as `@(\w+)`:
 
-```markdown
+```text
 @   find a literal "@"
 (   start a "capture group", i.e. the part of the expresion that we are interested in
 \w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
@@ -78,7 +78,7 @@ We could improve on this regex by refining our rule: find an "@" and then match 
 
 This regex could be expressed as `@(\w.*)\s`:
 
-```markdown
+```text
 @   find a literal "@"
 (   start a "capture group", i.e. the part of the expresion that we are interested in
 \w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
@@ -102,7 +102,7 @@ Click away if you want to think about it yourself.
 
 If not, my simple solution is `@(\w\S*)`:
 
-```markdown
+```text
 @   find a literal "@"
 (   start a "capture group", i.e. the part of the expresion that we are interested in
 \w  the "@" should be followed by a "word character" (alphabetic letters and numbers)
@@ -122,7 +122,7 @@ We can exclude these matches by requiring that "@" either occurs at the beginnin
 In other regex dialects you have the special `\b` sign to indicate word boundaries, but not in the ERE POSIX dialect.
 We can however write `(^|[[:space:]])@(\w\S*)`:
 
-```markdown
+```text
 ( open a group
 ^ match the beginning of the line
 | or instead match
@@ -150,7 +150,7 @@ I thought about this for a bit, but long story short, this problem cannot in pri
 So if you for some reason insist on using `Exuberant Ctags` rather than `Universal Ctags` the tagging system strictly requires you to only put one tag on each line.
 If that's the way you want to go, then create a configuration file called `.ctags` in your home directory and write the following specification of our markdown tagging language.
 
-```
+```text
 --langdef=markdowntags
 --langmap=markdowntags:.md
 --regex-markdowntags=/(^|[[:space:]])@(\w\S*)/\2/t,tag,tags/
@@ -183,7 +183,7 @@ This feature can however also be used to find multiple matches within a single l
 Have a look [here](https://docs.ctags.io/en/latest/optlib.html#multiline-pattern-flags) for documentation, if you are interested.
 Otherwise, copy the following configuration to your configuration file in `./.ctags.d/md.ctags`, relative to your project folder.
 
-```
+```text
 --langdef=markdowntags
 --languages=markdowntags
 --langmap=markdowntags:.md
@@ -199,7 +199,7 @@ Almost good to go!
 
 Tags can now be created easily from the command line by changing your directory to your project folder (here, our notes repository), and then running `ctags` recursively on the current folder (recursively indicating that all subfolders will be taken into account as well):
 
-```
+```bash
 ctags -R .
 ```
 
@@ -260,7 +260,7 @@ As said before, Vim has great support for handling `ctags`.
 Vim knows about the location of your tags file.
 If Vim doesn't find your tags, check that you are in the right directory and also make sure that the `tags` variable makes sense with `:set tags?` Alternatively, set tags explicitly in your `.vimrc` or `._vimrc` (Windows) configuration file for example as such:
 
-```
+```vim
 set tags+=./tags;,tags
 ```
 
@@ -274,7 +274,7 @@ You can quickly jump to a file by entering its number.
 Pro tip: make your search case insensitive! This makes autocompletion ignore the case, so that `:ts Work<TAB>` still autocompletes to `:ts workflow`.
 To achieve this, set this in your `.vimrc`:
 
-```
+```vim
 " Ignore case in searches
 set ignorecase
 ```
@@ -307,7 +307,7 @@ Various autocompletion plugins will also be able to suggest and complete tags.
 
 UPDATE 15/4/2020: You probably want to define a quick mapping for this, for example:
 
-```
+```vim
 " Binding for searching tags ("search tag")
 nnoremap <leader>st :CtrlPTag<CR>
 ```
@@ -367,7 +367,7 @@ There are two external dependencies, `Universal Ctags` and `ripgrep`  which howe
 Plug and play.
 For now, I'll provide a quick summary of mentioned Vim bindings and settings (and some not mentioned) as requested [here](https://github.com/EdwinWenink/personal_website/issues/559):
 
-```
+```vim
 " Specify a directory for plugins
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')

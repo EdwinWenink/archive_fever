@@ -36,7 +36,7 @@ To review these questions, just do a quick `vimgrep` on the current file.
 You don't need fancy search tools if you just search the current file.
 I just make a quick mapping `\nq` ( '\\' is the default leader key) with the mnemonic "note quiz".
 
-```
+```vim
 nnoremap <leader>nq :vimgrep /\*\*Q\*\*/ %<CR>
 ```
 
@@ -46,7 +46,7 @@ By default, `vimgrep` populates the `quickfix` window with the search results an
 
 I like that the question is previewed at the bottom of your screen like this:
 
-```
+```text
 (1 of 8): **Q**: Why is the triangle mesh so useful for real-time rasterization?
 ```
 
@@ -96,7 +96,7 @@ ADDITION 2021-03-16:
 
 You can also create a function to paste the contents of the quickfix window in your current buffer.
 
-```
+```vim
 " Paste from quickfix list (handy to collect the questions somewhere)
 nnoremap <leader>pq :execute PasteQuickfix()<CR>
 

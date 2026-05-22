@@ -32,7 +32,7 @@ To learn how the script works, open aforementioned terminal, and run (this assum
 (on Windows the forward slashes are replaced by backward slashes).
 This outputs instructions on the usage of the script:
 
-```
+```text
 usage: kobo_export.py [-h] [-f FILE | -d DIRECTORY] [-o OUTPUT]
 
 Extract KOBO annotations as Markdown files
@@ -57,7 +57,7 @@ If you do not provide an output directory, all files will be written to the curr
 
 Combining the options, running the script looks like this:
 
-```
+```bash
 python ./kobo_export.py --directory "./Dostoyevsky, Fyodor/" --output ./markdown/
 ```
 
@@ -66,7 +66,7 @@ This reads all annotations files from Dostoyevsky and puts the extracted notes i
 On Windows I encountered an annoying situation. If you have a folder name with spaces (Kobo does this), then the backslash separator actually escapes the closing quote...
 If this happens to you on Windows, you can solve this as follows:
 
-```
+```bash
 python .\kobo_export.py -d '.\Dostoyevsky, Fyodor\\' -o .\markdown\
 ```
 
@@ -74,7 +74,7 @@ python .\kobo_export.py -d '.\Dostoyevsky, Fyodor\\' -o .\markdown\
 
 The extracted notes will have a YAML header with meta information.
 
-```
+```yaml
 
 ---
 title: On the Heights of Despair
@@ -93,7 +93,7 @@ By default there's a lot of weird line breaks in the quotes, so I sanitized that
 
 Highlights without annotations look as such:
 
-```
+```markdown
 
 46. "Solitude is the proper milieu for madness." --- *0.280, 2019-12-31*
 
@@ -104,9 +104,9 @@ Highlights without annotations look as such:
 
 And annotations are displayed as such:
 
-```
+```markdown
 
-7. "X insults me. I am about to hit him. Thinking it over, I refrain.  Who am I? which is my real self: the self of the retort or that of the refraining? My first reaction is always energetic; the second one, flabby. What is known as “wisdom” is ultimately only a perpetual “thinking it over,” i.e., non-action as first impulse." --- *0.107, 2020-07-28*
+7. “X insults me. I am about to hit him. Thinking it over, I refrain.  Who am I? which is my real self: the self of the retort or that of the refraining? My first reaction is always energetic; the second one, flabby. What is known as “wisdom” is ultimately only a perpetual “thinking it over,” i.e., non-action as first impulse.” --- *0.107, 2020-07-28*
 
 > > Wisdom as non-action as first impulse
 
@@ -118,7 +118,7 @@ Because the extracted notes are valid Markdown, you can easily convert them to w
 Pandoc is very simple to use.
 The following command is an example of how to convert one of your notes to pdf.
 
-```
+```bash
 pandoc mythoughts.epub.md -o mythoughts.pdf
 ```
 

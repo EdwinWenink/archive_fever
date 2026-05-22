@@ -93,7 +93,7 @@ Luckily, the solution is simple in this case. What turned out to be the issue wa
 
 Just add:
 
-```
+```vim
 let g:vimtex_matchparen_enabled = 0
 ```
 

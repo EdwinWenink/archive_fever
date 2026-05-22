@@ -32,7 +32,7 @@ I summarize the solution here for completeness:
 3. Add the following code, including the newline.
 This section is brand new, so it's probably easiest to just add it at the bottom of the file:
 
-```
+```text
 [FeatureSettings]
 ExportHighlights=true
 ```

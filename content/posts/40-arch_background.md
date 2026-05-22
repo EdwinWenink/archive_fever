@@ -20,7 +20,7 @@ To achieve this, firstly specify the static background in the configuration file
 
 My configuration file looks like this:
 
-```
+```text
 [greeter]
 theme-name = Adwaita-dark
 icon-theme-name = HighContrast

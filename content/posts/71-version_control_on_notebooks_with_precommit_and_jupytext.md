@@ -122,7 +122,7 @@ This also means that when you edit the `.py` file, you can update the notebook s
 
 You can specify a project specific configuration in `jupytext.toml`:
 
-```
+```text
 formats = "ipnb,py:percent"
 ```
 
@@ -146,7 +146,7 @@ We also automate the "clear output cells" step mentioned above using `nbstripout
 
 My `.pre-commit-config.yaml` for syncing notebooks and their script version looks like this:
 
-```
+```yaml
 repos:
 -   repo: https://github.com/kynan/nbstripout
     rev: 0.6.1
@@ -199,7 +199,7 @@ But this is where I've encountered another nasty issue that prevented the Jupyte
 Let's take a hook that removes trailing white spaces as an example.
 This hook works as intended on Python scripts, but the hook does not actually remove trailing white spaces *in the code* because source code of notebook cells are encapsulated in a JSON field as follows:
 
-```
+```json
 {
  "cell_type": "code",
  "execution_count": null,
@@ -241,7 +241,7 @@ I have solved this specific issue by adding all notebooks in the `notebooks` fol
 
 The following is a `.pre-commit-config.yaml` that synchronizes all notebooks with Python scripts under `notebooks` and plays nice with other pre-commit hooks:
 
-```
+```yaml
 # Install the pre-commit hooks below with
 # 'pre-commit install'
 

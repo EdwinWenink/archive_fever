@@ -26,7 +26,7 @@ We now need to give the script some necessary information: a website url of our 
 
 So first we get the data of this 'archives' page with the `requests` module, and then let `BeautifulSoup` index its contents by creating a nice 'soup' of the requested data. From this soup we can extract the ingredients we want, which are in this case all urls from the blog posts. But we have to be precise about what we want. If you go to the archives page yourself and inspect the webpage's html using your browser, you will see that all links to the blog posts are of the class "permalink". Therefore, we can retrieve only the links we want by asking the soup to show us all html data of class "permalink".
 
-```
+```python
 base_url = "https://edwinwenink.xyz/archives/"
 script_dir = os.path.dirname(os.path.abspath(__file__))
 

@@ -28,7 +28,7 @@ As far as the content of this blog section of my site goes: I intend to use it a
 In other words, I can simply write all my content in markdown, and I never have to leave my terminal for maintaining my website.
 
 
-```
+```text
 EOF
 ```
 

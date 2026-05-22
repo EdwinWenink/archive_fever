@@ -22,7 +22,7 @@ Something that throws me off sometimes is that Numpy has a [masked array](https:
 The purpose of this is to be able to use the input array *as is*, but exclude the invalid elements from common computations.
 A simple example from the [documentation](https://numpy.org/doc/stable/reference/maskedarray.generic.html):
 
-```
+```python
 >>> import numpy as np
 >>> import numpy.ma as ma
 >>> x = np.array([1, 2, 3, -1, 5])
@@ -45,14 +45,14 @@ We can use:
 3. create a boolean array based on a logical condition
 4. `numpy.where()`
 
-```
+```python
 arr = np.array([1,2,3])
 mask = np.array([0,1,0])
 ```
 
 Method 1. We essentially want to keep all elements from `arr` in the corresponding places where `mask` is non-zero:
 
-```
+```python
 >>> arr[np.nonzero(mask)]
 array([2])
 ```
@@ -60,7 +60,7 @@ array([2])
 Python interprets `False` as `0` and `True` as `1`.
 E.g. you can do arithmetic on booleans like:
 
-```
+```python
 >>> arr > 1
 array([False,  True,  True])
 >>> np.sum(arr > 1)
@@ -69,7 +69,7 @@ array([False,  True,  True])
 
 This means `nonzero()` can be used to mask an array using arbitrary conditions:
 
-```
+```python
 >>> arr[ np.nonzero(arr>1)]
 array([2, 3])
 ```
@@ -77,14 +77,14 @@ array([2, 3])
 This could be handy if you instead want to select elements of `arr` based on some threshold.
 Although of course, you don't really need to bother with this because you can apply the mask directly:
 
-```
+```python
 >> arr[arr>1]
 array([2, 3])
 ```
 
 Method 2. The same can be achieved with by explicitly casting the mask to a Boolean array:
 
-```
+```python
 >>> arr[mask.astype(bool)]
 array([2])
 ```
@@ -92,14 +92,14 @@ array([2])
 Method 3. But the most straightforward usage to me is creating the Boolean array based on a logical operator.
 Numpy also nicely handles these operations by applying them to each array element:
 
-```
+```python
 >>> arr[mask != 0]
 array([2])
 ```
 
 Method 4. If you use `numpy.where` with a boolean condition, it is equivalent to using `numpy.nonzero()`:
 
-```
+```python
 >>> arr[np.where(mask > 0)]
 array([2])
 ```
@@ -108,7 +108,7 @@ The behavior of `numpy.where()` is more general because it allows you to pick an
 This could simulate a bit of the behavior of the `numpy.maskedarray` class.
 E.g. you use the masking array to keep only certain values and set others to `NaN` and then use `numpy` functions that ignore `NaN` values:
 
-```
+```python
 >>> np.where(mask > 0, arr, np.nan)
 array([nan,  2., nan])
 >>> np.mean(arr_nan)  # This will not give correct results
@@ -122,7 +122,7 @@ Note that the `numpy.where` function expects array-like arguments, but will auto
 
 ## Multi-dimensional case
 
-```
+```python
 >>> arr = np.array([ [1,2,3], [4,5,6] ])
 >>> arr
 array([[1, 2, 3],
@@ -136,14 +136,14 @@ array([[0, 1, 0],
 If you apply the masking strategies 1-3 from above, it is good to know that the shape of the input array is not preserved, like with `numpy.ma`.
 Instead you end up with a list of the preserved elements.
 
-```
+```python
 >>> arr[np.nonzero(mask)]
 array([2, 4, 5])
 ```
 
 If you want to preserve the shape of the input array, you can use `numpy.where`:
 
-```
+```python
 >>> np.where(mask > 0, arr, np.nan)
 array([[nan,  2., nan],
        [ 4.,  5., nan]])
@@ -158,7 +158,7 @@ Let's say we have a short sentence with only two tokens, for which we predict fi
 The first token is actual text, the second token is padding.
 We can remove the padding tokens as follows:
 
-```
+```python
 >>> a = np.array( [ [2,3,4], [5,6,7] ] )
 >>> a.shape
 (2, 3)
@@ -173,7 +173,7 @@ array([[2, 3, 4]])
 
 The output of `np.nonzero` can be a bit hard to read because it's not organized by row indexes, but by dimension:
 
-```
+```python
 >>> np.nonzero(mask)
 (array([0, 1, 1], dtype=int64), array([1, 0, 1], dtype=int64))
 ```
@@ -181,7 +181,7 @@ The output of `np.nonzero` can be a bit hard to read because it's not organized 
 These two arrays have length three because we have three non-zero elements.
 The row index of these three points are [0,1,1] and the column indexes are [1,0,1], which selects the following coordinates:
 
-```
+```python
 >>> np.transpose(np.nonzero(mask))
 array([[0, 1],
        [1, 0],
@@ -190,7 +190,7 @@ array([[0, 1],
 
 Which is (by definition) the output of `np.argwhere`:
 
-```
+```python
 >>> np.argwhere(mask)
 array([[0, 1],
        [1, 0],

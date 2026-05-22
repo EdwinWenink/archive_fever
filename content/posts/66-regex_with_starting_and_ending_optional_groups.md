@@ -28,7 +28,7 @@ In these test cases, the type of TBS is mentioned at the end of the match and is
 
 A fully naive first attempt to tackle this problem could be as follows:
 
-```
+```text
 (terbeschikkingstelling).*(voorwaarden|verpleging)?
 ```
 
@@ -46,7 +46,7 @@ This ensures that the pattern does *not* occur after the position the regex engi
 Let's first apply this idea to only one of the alternatives: `(?!voorwaarden).`.
 We want to repeat this zero or more times, so we wrap this in a non-capturing group and apply the greedy star quantifier:
 
-```
+```text
 (?:(?!voorwaarden).)*
 ```
 
@@ -54,14 +54,14 @@ Now the scope of the star is limited, because it will stop matching once "voorwa
 In this case we actually want to capture "voorwaarden."
 Because we know the star will stop matching right before "voorwaarden", we can safely gobble up "voorwaarden" as a literal match:
 
-```
+```text
 (?:(?!voorwaarden).)*(voorwaarden)
 ```
 
 In this case, "voorwaarden" is still a required match.
 But the crux is that now we can safely make the ending group optional, because we've scoped the greedy quantifier and prevented it from gobbling up our optional group at the end!
 
-```
+```text
 (?:(?!voorwaarden).)*(voorwaarden)?
 ```
 
@@ -70,7 +70,7 @@ Note that with an optional group at the end, we cannot make the star quantifier 
 Now we finish up by including the second alternative.
 The whole regex becomes:
 
-```
+```text
 (terbeschikkingstelling)(?:(?!voorwaarden|verpleging).)*(voorwaarden|verpleging)?
 ```
 
@@ -81,13 +81,13 @@ In my particular problem that's quite bad, because I'm feeding the regex whole p
 We can use a bit of domain knowledge here though, because the further specification of the type of TBS will always occur in a short window after the main punishment is mentioned.
 So an easy solution would be to explicitly specify the window in which we will look for the type specification, let's say within 100 characters:
 
-```
+```text
 (terbeschikkingstelling)(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
 ```
 
 The test cases will now return the following groups:
 
-```
+```text
 "de maatregel van terbeschikkingstelling wordt aan de verdachte opgelegd."
 
 -> group 1: terbeschikkingstelling
@@ -113,7 +113,7 @@ Let's take some actual test cases where TBS is imposed in Dutch law:
 We first recognizes that there are alternative formulations like "ter beschikking is gesteld" and "ter beschikking wordt gesteld," so we adjust the regex for that.
 We also allow "terbeschikkingstelling" to be written as "ter beschikking stelling" and include "TBS" as the relevant abbreviation.
 
-```
+```text
 (TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
 ```
 
@@ -127,13 +127,13 @@ Let's again decompose the problem and solve the case where "verlenging" occurs *
 We again want to design a delimiter, but now one that determines where to *start* matching instead of where to end.
 We can express that we only want to start matching after having seen either "verlenging" or "verlengt" with a *positive lookbehind* on "verleng":
 
-```
+```text
 (?<=verleng).*?
 ```
 
 But since we know where to begin matching and we'd like to also capture "verlenging", we can just anchor the start with a literal match:
 
-```
+```text
 (?P<verlenging>verlengt|verlenging).{0,50}(?P<TBS1>TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))
 ```
 
@@ -141,7 +141,7 @@ Combining everything we get a quite lengthy regex with two alternatives.
 Either we require something like "verlenging" in front of the regex, or something like "veroordeling" or "voorwaarden" after.
 The ending group is now no longer optional:
 
-```
+```text
 (?P<verlenging>verlengt|verlenging).{0,50}(TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))|(TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)
 ```
 
@@ -155,13 +155,13 @@ The only thing we then have to do is filter out matches that have neither of the
 
 The regex with two optional groups, both at the beginning and the end, could look like this:
 
-```
+```text
 (?:(verlengt|verlenging).{0,50})?(TBS|terbeschikkingstelling|ter beschikking (?:wordt |is )?(?:stelling|gesteld))(?:(?!voorwaarden|verpleging).){0,100}(voorwaarden|verpleging)?
 ```
 
 Test case 1: "gelast de terbeschikkingstelling van verdachte, met verpleging van overheidswege" (ECLI:NL:RBZWB:2020:6268).
 
-```
+```text
 match: terbeschikkingstelling van verdachte, met verpleging
 group 2: terbeschikkingstelling
 group 3: verpleging
@@ -169,7 +169,7 @@ group 3: verpleging
 
 Test case 2: "gelast dat de verdachte, voor de feiten 2, 3 en 4, ter beschikking wordt gesteld en stelt daarbij de volgende, het gedrag van de ter beschikking gestelde betreffende, voorwaarden" (ECLI:NL:RBLIM:2020:9778).
 
-```
+```text
 match: ter beschikking wordt gesteld en stelt daarbij de volgende, het gedrag van de ter beschikking gestelde betreffende, vooraarden
 group 2: ter beschikking wordt gesteld
 group 3: voorwaarden
@@ -177,7 +177,7 @@ group 3: voorwaarden
 
 Test case 3: "De rechtbank verlengt de termijn van de terbeschikkingstelling van veroordeelde met één jaar" (ECLI:NL:RBNNE:2020:4558).
 
-```
+```text
 match: verlengt de termijn van de terbeschikkingstelling van veroordeelde met één jaar
 group 1: verlengt
 group 2: terbeschikkingstelling
@@ -185,7 +185,7 @@ group 2: terbeschikkingstelling
 
 Test case 4: "verlengt de termijn gedurende welke [verdachte] ter beschikking is gesteld met verpleging van overheidswege met één jaar" (ECLI:NL:RBLIM:2020:10468).
 
-```
+```text
 match: verlengt de termijn gedurende welke [verdachte] ter beschikking is gesteld met verpleging
 group 1: verlengt
 group 2: ter beschikking is gesteld

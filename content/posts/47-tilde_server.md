@@ -52,7 +52,7 @@ So if we then want a custom script to be run, before these scripts, we could cre
 
 For example, on login, I want to show which other users are online:
 
-```
+```bash
 #!/bin/sh
 
 echo "Who is logged in?\n"
@@ -137,7 +137,7 @@ The next thing we want to do is set up nginx to publish web sites "usedir"-style
 I found [here](https://websiteforstudents.com/configure-nginx-userdir-feature-on-ubuntu-16-04-lts-servers/) how to do that in Nginx.
 Open the default configuration file at `/etc/nginx/sites-available/default` and make sure it matches the following:
 
-```
+```text
 # Default server configuration
 #
 server {
@@ -184,7 +184,7 @@ All this information will be included when people "finger" you.
 
 Output of `finger ejw`:
 
-```
+```text
 Login: ejw                              Name: Edwin Wenin
 Directory: /home/ejw                    Shell: /bin/bash
 Office: Netherlands
@@ -300,7 +300,7 @@ Fun aside, your little community could probably use some handy scripts.
 Another script I enjoyed making was one that finds the most recently updated web pages from all `public_html` directories. I then make a webpage out of those as well, so it's easy to keep track of what others are doing.
 This might be one of the most convoluted oneliners I ever wrote, but it works:
 
-```
+```bash
 find /home/ -path "*public_html*html" -type f -ls -printf "%T@ %p" | sort -k 1nr | head -n 15 | cut -d " " -f 2 | sed "s/\/home\///" | sed "s/\/public_html//"
 ```
 
