@@ -7,7 +7,7 @@
 
   {{ $.Scratch.Set "hasComments" 0 }}
 
-  {{ range $comments := index $.Site.Data.comments $postId }}
+  {{ range $comments := index hugo.Data.comments $postId }}
 		{{ $.Scratch.Add "hasComments" 1 }}
 			{{ if not .reply_to }}
 				<div class="post-comment" >
@@ -20,7 +20,7 @@
 	<a class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')"> Reply to {{ .name }}</a>
 				</div>
 				</div>
-				{{ partial "comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" $.Site.Data.comments "parentId" ._id "parentName" .name "context" .) }}
+				{{ partial "comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" hugo.Data.comments "parentId" ._id "parentName" .name "context" .) }}
 			{{ end }}
 	{{ end }}
 
