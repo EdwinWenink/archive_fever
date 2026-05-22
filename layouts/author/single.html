@@ -65,18 +65,11 @@ window.onload = ready;
   {{ range $pageName := .Site.RegularPages }}
 	  {{ if and (eq .Type "posts") ( or (in .Params.author $guest) (in .Params.authors $guest)) }}
 		<p>
-		<aside>{{ .Date.Format "January 2, 2006"}} 
-			{{ if not (eq .Params.tags nil) }}
-				{{ range first 2 .Params.tags }}
-					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
-				{{ end }}
-				{{ if gt (len .Params.tags) 2 }}
-					...
-				{{ end }}
-			{{ end }}
+		<aside>{{ .Date.Format "January 2, 2006"}}
+			{{ partial "tag-list.html" . }}
 		</aside>
 		
-		<a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>{{ end }}</p>
+		<a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span class="unpublished-label">(unpublished)</span>{{ end }}</p>
 	  {{ end }}
   {{ end }}
   </div>

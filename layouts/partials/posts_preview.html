@@ -18,14 +18,7 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
     {{ if not (in .Params.series "Digest") }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}}
-		{{ if not (eq .Params.tags nil) }}
-			{{ range first 2 $value.Params.tags }}
-				<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
-			{{ end }}
-			{{ if gt (len .Params.tags) 2 }}
-				...
-			{{ end }}
-		{{ end }}
+		{{ partial "tag-list.html" . }}
 	</aside>
 	<!--<div class="unfold"> Use this class to unfold summary on hover-->
 	<a href="{{ .Permalink }}">{{ .Title }}</a>

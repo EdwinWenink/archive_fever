@@ -1,0 +1,8 @@
+{{ if not (eq .Params.tags nil) }}
+  {{ range first 2 .Params.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="no-decoration">#{{ lower . }}</a>
+  {{ end }}
+  {{ if gt (len .Params.tags) 2 }}
+    ...
+  {{ end }}
+{{ end }}
