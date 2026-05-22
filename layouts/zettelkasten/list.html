@@ -5,11 +5,11 @@
     {{ .Content }}
 
     <p>{{ len .Pages }} entries:</p>
-    <div style="font-size: 0px;">
+    <div class="zettel-hidden">
     <div style="display: inline-block; font-size:13pt; max-width: 100%;
         word-wrap: break-word; word-break: break-all; line-height: 1.5em;">
     {{ range .Pages }}
-        <a href="{{ .Page.Permalink }}" style="color: black; border: solid gray 1px; border-radius: 5% / 100%; padding: .5em;">{{ trim (.Page.File.BaseFileName | humanize | lower) "1234567890" }}</a>
+        <a href="{{ .Page.Permalink }}" class="zettel-tag">{{ trim (.Page.File.BaseFileName | humanize | lower) "1234567890" }}</a>
     {{ end}}
     </div>
     </div>

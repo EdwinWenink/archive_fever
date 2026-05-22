@@ -5,9 +5,9 @@
     {{ .Content }}
 
     <!--<p>{{ len .Pages }} entries:</p>-->
-    <div style="display: inline-block;">
+    <div class="inline-block">
     {{ range .Pages }}
-        <a href="{{ .Page.Permalink }}", style="background: none; border: none;">
+        <a href="{{ .Page.Permalink }}" class="records-link">
             <img src="{{ replace .Params.cover "https://i.discogs.com" (printf "%s/discogs" .Site.BaseURL )}}", alt="{{ .Params.title }}", class="records">
         </a>
     {{ end}}

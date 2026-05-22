@@ -20,7 +20,7 @@
         <aside>{{ .Date.Format "January 2, 2006"}}
             {{ if not (eq .Params.tags nil) }}
                 {{ range first 2 $value.Params.tags }}
-                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" style="text-decoration:none">#{{ lower . }}</a>
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="no-decoration">#{{ lower . }}</a>
                 {{ end }}
                 {{ if gt (len .Params.tags) 2 }}
                     ...
@@ -32,19 +32,19 @@
         <span>&#8226;</span>
 
         {{ partial "collab.html" . }}
-        {{ if .Draft }} <span style="color:#FF4136;">(unpublished)</span>
+        {{ if .Draft }} <span class="unpublished-label">(unpublished)</span>
         {{ end }}
     {{ end }}
     {{ end }}
 	</p>
 {{ end }}
 
-<div style="display:inline-block;">
+<div class="inline-block">
 </div>
 
-<div style="display: flex; align-items: center;">
-    <div><p style="flex; 10%; margin-right: 10px;">&#9836;</p></div>
-    <div><p id="now_playing" style="flex: 90%;"></p></div>
+<div class="flex-center">
+    <div class="flex-10 mr-10"><p>&#9836;</p></div>
+    <div class="flex-90"><p id="now_playing"></p></div>
 </div>
 
 <p>Check out my <a href="{{ .Permalink}}/etc/music">music statistics</a> and <a href="{{ .Permalink}}/records">record collection</a>.</p>

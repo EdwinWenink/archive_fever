@@ -4,7 +4,7 @@
       {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }} · {{ .ReadingTime }} minute read
   </aside>
   <aside>
-      <i class="fa fa-home" style="font-size:14px"></i>
+      <i class="fa fa-home" class="icon-sm"></i>
       <a class="u-url" href="{{ .Permalink }}">Published
       {{ if .Params.date }}
         {{ .Params.date }}
@@ -17,7 +17,7 @@
       </a>
   </aside>
   <aside>
-    <i class="fas fa-tools" style="font-size:14px"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
+    <i class="fas fa-tools" class="icon-sm"></i> Last modified on {{ .Lastmod.Format "2 January, 2006"}}.
     {{ $github := .Site.Params.github}}
     {{ with .GitInfo }}
         <a href="{{$github}}commit/{{ .Hash }}" target="_blank">{{.AbbreviatedHash}} {{.Subject}}</a>
