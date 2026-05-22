@@ -10,7 +10,7 @@ This post follows two tips specifically.
 
 > Tip 2: "Reply to public" as post
 >
->  Many of the academics that "don't have time to blog" seem to have plenty of time to write detailed, well-structured replies and flames over email.
+> Many of the academics that "don't have time to blog" seem to have plenty of time to write detailed, well-structured replies and flames over email.
 >
 > Before pressing send, ask yourself, should this answer be, "Reply," "Reply to all," or "Reply to public"?
 >
