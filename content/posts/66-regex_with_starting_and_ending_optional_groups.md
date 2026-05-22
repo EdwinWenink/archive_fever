@@ -13,7 +13,7 @@ One of those punishments is called "TBS", which is assigned in severe cases wher
 There's two types of TBS in the Netherlands: with "verpleging" (mandatory psychiatric treatment) and with "voorwaarden" (several conditions).
 We want to match "terbeschikkingstelling" (TBS), but if the type of TBS is specified, we want to capture that too.
 
-These TBS judgments occur in free natural language texts, but because lawyers and judges tend to use standard formulations with legal jargon -- although... "standard"... who really talks like that? -- we may try to extract information from case decisions using regular expressions. 
+These TBS judgments occur in free natural language texts, but because lawyers and judges tend to use standard formulations with legal jargon -- although... "standard"... who really talks like that? -- we may try to extract information from case decisions using regular expressions.
 Regular expressions are essentially a powerful way to do pattern matching on text.
 
 ## Optional group after greedy quantifier
@@ -41,7 +41,7 @@ I've actually never used regular expressions outside of trivial situations, so I
 Essentially, we want the  "dot star" to expand until we encounter "verpleging" or "voorwaarden", but no further, and then capture "verpleging" or "voorwaarden".
 That is, we want to match any token (`.`) that is *not followed* by "verpleging" or "voorwaarden", making these words essentially function as delimiters that restrict the scope of the greedy quantifier.
 This is done with a *negative lookahead*, which looks like this `(?!)`.
-This ensures that the pattern does *not* occur after the position the regex engine is currently matching. 
+This ensures that the pattern does *not* occur after the position the regex engine is currently matching.
 
 Let's first apply this idea to only one of the alternatives: `(?!voorwaarden).`.
 We want to repeat this zero or more times, so we wrap this in a non-capturing group and apply the greedy star quantifier:
@@ -103,7 +103,7 @@ The test cases will now return the following groups:
 
 ### Diving deeper into the use case
 
-Let's take some actual test cases where TBS is imposed in Dutch law: 
+Let's take some actual test cases where TBS is imposed in Dutch law:
 
 - "gelast de terbeschikkingstelling van verdachte, met verpleging van overheidswege" (ECLI:NL:RBZWB:2020:6268).
 - "gelast dat de verdachte, voor de feiten 2, 3 en 4, ter beschikking wordt gesteld en stelt daarbij de volgende, het gedrag van de ter beschikking gestelde betreffende, voorwaarden" (ECLI:NL:RBLIM:2020:9778).
@@ -118,7 +118,7 @@ We also allow "terbeschikkingstelling" to be written as "ter beschikking stellin
 ```
 
 Now, there is a subtlety: legal jargon related to "ter beschikking stellen" does not necessarily indicate TBS but can also relate e.g. to goods.
-If we really want to make sure these phrases relates to TBS (i.e. avoid false positives) we should probably make the ending group non-optional after all. 
+If we really want to make sure these phrases relates to TBS (i.e. avoid false positives) we should probably make the ending group non-optional after all.
 However, this means we do not match cases where TBS is assigned in the past, but is now prolongated such as in "verlengt de termijn van de terbeschikkingstelling."
 The type of TBS is not specified here because it has already been determined in a previous judgement.
 So our new problem statement could be: we think a TBS-punishment is assigned either when it is preceded by an indication of prolongation such as "verlenging" or when the type of TBS is explicitly specified (with "voorwaarden" or "verpleging").
@@ -192,7 +192,7 @@ group 2: ter beschikking is gesteld
 group 3: verpleging
 ```
 
-Some final notes: 
+Some final notes:
 
 - In this setup, not making `(voorwaarden|verpleging)?` optional leads to large inefficiency if the group is not in the string. It will cause the lookahead to be repeated a lot in an attempt to still find the group.
 - Downstream we may opt to reject the match if neither of the optional groups is matched, because this may be a false positive. The upside is that this gives flexibility in your application without having to redesign the regex. As we see in the last test case, it may also be that *both* groups are present as we see in test case 4.

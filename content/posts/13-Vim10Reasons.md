@@ -7,14 +7,14 @@ tags: [Vim, Workflow, Text editing, Efficiency]
 series: "Workflow"
 ---
 
-Vim is a well-known (and infamous) text editor that is designed in such a handy way that some programmers even use it as their preferred IDE (Integrated Development Environment). 
+Vim is a well-known (and infamous) text editor that is designed in such a handy way that some programmers even use it as their preferred IDE (Integrated Development Environment).
 That is quite remarkable if you think about it for a second: why would people replace proper software solely built for everything related to programming with a *text editor*?
 Apparently, Vim does text editing so well that people are willing to work around the limitations of using a "normal" text editor.
 That is a very interesting fact to me, because as a philosophy student I spent years editing texts. And I regret that I did not know about Vim earlier.
 
-It feels like I lived in the stone age. 
-By starting a second bachelor in Artificial Intelligence, a significant dose of programming entered my daily life. 
-But, being a caveman, I initially followed all my programming courses *without owning a laptop*. 
+It feels like I lived in the stone age.
+By starting a second bachelor in Artificial Intelligence, a significant dose of programming entered my daily life.
+But, being a caveman, I initially followed all my programming courses *without owning a laptop*.
 After a fair bit of working on other people's computers and emailing myself code (ouch...), I bought a second (or 3rd, 4th) hand Thinkpad T420 from a [friend](https://www.alextes.me), with Antergos, an Arch Linux distro, installed on it.
 Over time I increasingly enjoyed customizing my workflow, and soon I saw myself disposing of my desktop environment and getting into the business of terminal multiplexing.
 But one painful remainder in this workflow optimization was my philosophy work: for text editing, MS Word on my Windows desktop was still my go-to program.
@@ -23,7 +23,7 @@ The activity of writing and text-editing was still secretly the thing I liked th
 So I thought: why not also have a programmer's approach to text-editing as well?
 Exploring Vim was my way of mediating between my desire to write and my newfound daily life.
 
-The main goal of this blog post is to convince you that Vim is not only useful for programmers and coding, but also for text editing of all sorts: from making notes, writing proza, to producing papers. 
+The main goal of this blog post is to convince you that Vim is not only useful for programmers and coding, but also for text editing of all sorts: from making notes, writing proza, to producing papers.
 It only requires familiarity with some basic concepts that might be unfamiliar to you, and a willingness to learn.
 
 ## Vim's basic philosophy
@@ -37,11 +37,11 @@ I was one of those people. After having used Vim for a while now, I would summar
 
 In your usual text editor, when you type a letter, the letter appears on the screen.
 As trivial as this may seem, this does not hold for Vim. Vim has different modes to manipulate a text, of which the "Insertion" mode is one among others, and not the default one.
-In order to make letters appear in your text, you first need to enter Insert mode. 
+In order to make letters appear in your text, you first need to enter Insert mode.
 And here is the trouble: in order to exit Vim, you first need to exit this Insert mode, and enter Command mode to give the `q(uit)` command.
 
 <figure>
-	<img align="right" style="width:40%; margin: 10px 20px" src="/images/13-blog/exitvim.jpg" />
+ <img align="right" style="width:40%; margin: 10px 20px" src="/images/13-blog/exitvim.jpg" />
 </figure>
 
 Inserting characters is a very straightforward operation where each keystroke corresponds to the inserting of a character on the screen. But by making this a secondary mode, Vim opens up the whole keyboard for highly efficient text navigation and manipulation. Think about this: when you write a document in MS Word, how much of your time do you actually spend typing, and how much time do you spend clicking, scrolling, dragging, and going through menu's with your mouse? You'd be surprised.
@@ -57,21 +57,21 @@ I will try to give examples of that in a follow-up post.
 **1) Improve efficiency**
 
 The main reason for using Vim is that it enables more efficient text editing due to its numerous commands.
-If you take for granted that Vim does this for a second, you might ask: but at what cost? Do I need to learn a hundred special commands? 
-The answer is yes and no. Vim commands for text navigation and manipulation follow a basic grammar and are mnemonic. 
-This means that if you learn some basic operations and a simple rule how to combine them, the amount of commands at your disposal grows exponentially. 
+If you take for granted that Vim does this for a second, you might ask: but at what cost? Do I need to learn a hundred special commands?
+The answer is yes and no. Vim commands for text navigation and manipulation follow a basic grammar and are mnemonic.
+This means that if you learn some basic operations and a simple rule how to combine them, the amount of commands at your disposal grows exponentially.
 It is not hard to remember those basic operations, because they make sense.
 
 **2) Focus on the content (and think about the view later)**
 
-Vim and its ecosystem of plugins offers practically all the functionality you need, but without unnecessary bells and whistles. 
-Traditional text editors such as MS Word have many menu's, tabs and buttons. 
+Vim and its ecosystem of plugins offers practically all the functionality you need, but without unnecessary bells and whistles.
+Traditional text editors such as MS Word have many menu's, tabs and buttons.
 It usually takes me a while to find what I need exactly, but what annoys me more is that all these menu's are distracting and take up a lot of screen space.
 
 Vim instead helps you focus on what you want to get done without distraction. It provides you with a empty screen, and magic keybindings to perform text wizardry.
 Vanilla Vim only shows some very minimal and crucial information, for example in which mode you currently are. Okay, gVim (Vim's graphical version) has a toolbar, but you can easily delete it completely.
 
-`Q`: Let's say you wrote something in Vim, but the only thing you now have is plain text. In MS Word everything immediately looks "right". I type it, see it, and when I print it, it looks the same (usually) on paper. How do I get nice documents when writing in Vim? 
+`Q`: Let's say you wrote something in Vim, but the only thing you now have is plain text. In MS Word everything immediately looks "right". I type it, see it, and when I print it, it looks the same (usually) on paper. How do I get nice documents when writing in Vim?
 
 `A`: You are used to a [WYSIWYG-editor](https://en.wikipedia.org/wiki/WYSIWYG) where content and view are presented on the same screen. But this is not the only way. Typesetting systems such as LaTeX require you to first define and structure your content, and then later magically compile your text into a really nice looking document. The only thing you have to do is indicate your preferences for how you want your document to look like, but you only have to do so once.
 After that you won't have to spend a second thinking about it, so that you can focus on the content.
@@ -83,20 +83,20 @@ But you can also get the best of both worlds: the simplicity of Markdown, with t
 
 **3) Universally readable file type without compatibility issues**
 
-Did you ever try opening a .docx document with a plain text editor? Everyone uses .docx because everyone uses MS Word. But .docx is only readable as intended through MS Word (let's forget about OpenOffice for now). So everyone keeps using Word (and paying for it). 
+Did you ever try opening a .docx document with a plain text editor? Everyone uses .docx because everyone uses MS Word. But .docx is only readable as intended through MS Word (let's forget about OpenOffice for now). So everyone keeps using Word (and paying for it).
 
-But then Microsoft decides that they are going to update their file format. 
+But then Microsoft decides that they are going to update their file format.
 You don't really know why that would be better, but people around you buy PCs with Windows and Word pre-installed and suddenly they start sending you their documents in this new format. But your old version of MS Word does not support this version, so you have to buy the newest version (be part of the trend or get out).
 
-None of this in Vim. Vim does old school plain text editing. 
+None of this in Vim. Vim does old school plain text editing.
 Everyone can read and edit it with their program of choice, and you will not be bothered by compatibility issues.
 
 And there are some more advantages to this:
 
 **4) Version control on your texts**
 
-Using plain text for your writing opens up the possibility to use adequate version control on your documents, for example using git. 
-You can integrate git in Vim by using plugins, for example [gitgutter](https://github.com/airblade/vim-gitgutter), which indicates all changes in your text. 
+Using plain text for your writing opens up the possibility to use adequate version control on your documents, for example using git.
+You can integrate git in Vim by using plugins, for example [gitgutter](https://github.com/airblade/vim-gitgutter), which indicates all changes in your text.
 On top of that, since you can run shell commands from within vim with the `!` operator, you don't even have to leave vim to run your git commands.
 
 Programmers are already used to using tools like git, but why do people in the social sciences not exploit the amazing tools available nowadays? How most people do version control (if at all) is by simply having various different versions of the same document, and numbering them. Have fun keeping track of which of the numerous versions had all the correct changes in it!
@@ -124,8 +124,8 @@ No hassle. Even if you need to do something on a remote machine terminal: vi wil
 
 **9) Vim is ergonomic**
 
-Vim allows you to do your work without ever having to move your hands away from the keyboard. 
-I spent quite some time behind my computer, and not having my hand on the mouse continuously really helps me reduce stress on my right shoulder. 
+Vim allows you to do your work without ever having to move your hands away from the keyboard.
+I spent quite some time behind my computer, and not having my hand on the mouse continuously really helps me reduce stress on my right shoulder.
 
 **10) Have fun learning**
 

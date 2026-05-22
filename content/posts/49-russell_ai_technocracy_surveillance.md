@@ -17,13 +17,13 @@ In addition to more accurate personalized profiles, AI systems can constantly ad
 
 After discussing new phenomena such as [deep fakes](https://www.edwinwenink.xyz/posts/37-deepfakes/), Russel makes a bit of a leap and contemplates the various ways in which governments (on the less friendly side of the spectrum) may use AI-supported surveillance to directly control its citizens by implementing "rewards and punishments based on behavior".
 In a European context this section may sound slightly unrealistic, but it's not *that* unrealistic if you consider a certain... Asian country using surveillance to experiment with evaluating civilians using point systems.
-If you are not worried about governments in particular, you may think of similar, but less severe and less obvious strategies used by big internet corporations, or the upcoming era of [ health-related apps](https://www.edwinwenink.xyz/posts/46-ai_and_healthcare/).
+If you are not worried about governments in particular, you may think of similar, but less severe and less obvious strategies used by big internet corporations, or the upcoming era of [health-related apps](https://www.edwinwenink.xyz/posts/46-ai_and_healthcare/).
 One example I'm thinking of is insurance companies given you a lower health insurance bounty when you use smart watches to show you are moving enough per day (certainly important, but a very specific, limited, unilateral concept of health).
 
 In any case, what these examples share is that "such a system treats people as *reinforcement learning algorithms*, training them to optimize the objective set by the state" (my emphasis, and again: you could perhaps substitute "state" by your favorite big evil corporation).
 So not only does the technology build up profiles based on behavioral feedback, the humans themselves, Russell suggests, will be evaluated with a scoring function, as if they themselves work like these algorithms.
 
-What I appreciate about the upcoming argument is that Russell specifically targets those states/companies with a "top-down, engineering mind-set", which is at first sight quite reasonable and which I suspect to be pervasive. 
+What I appreciate about the upcoming argument is that Russell specifically targets those states/companies with a "top-down, engineering mind-set", which is at first sight quite reasonable and which I suspect to be pervasive.
 It can also the mindset of techno-optimists with good intentions.
 But then again, however extreme the surveillance, it's always for "the greater good", so good intentions only go so far.
 Technocracy comes into the picture when we ask exactly *who* decides what is good, and how we measure that?
@@ -34,7 +34,7 @@ Russell reconstructs this engineering-style reasoning as follows, with respect t
 - "technology enables measurement of individual behavior, attitudes, and contributions"
 - "therefore, everyone will be better off if we set up a technology-based system of monitoring and control based on rewards and punishments."
 
-Or you can come up with some alternative version, like: it is healthier to not drink alcohol and better to have less alcohol-related violence; we have studied and understood the effects of alcohol; therefore it is better if we monitor everyone, punish those who drink alcohol, and reward superfood-munging yoga hipsters (is that a thing?). 
+Or you can come up with some alternative version, like: it is healthier to not drink alcohol and better to have less alcohol-related violence; we have studied and understood the effects of alcohol; therefore it is better if we monitor everyone, punish those who drink alcohol, and reward superfood-munging yoga hipsters (is that a thing?).
 
 Then Russell provides three arguments against this top-down engineering technocracy mindset:
 
@@ -44,11 +44,11 @@ To stick with Russel's example: I think the issue here is not that there would n
 Under this regime, the only way to "prove" to its recipient that something is in fact an act of kindness under the all-seeing eye of a scoring metric, would be to show 1) that you understand how your actions are evaluated and 2) then act *against* the maxim of score maximization.
 It would not be sufficient to be altruistic and selfless, a kind act would have to be self-destructive (or one might say, extremely altruistic).
 Perhaps only then the receiver would see rationally, without relying on empathy and good faith, that some intrinsic moral and human value is the best explanation for the shown behavior, rather than score optimization.
-That's of course a hypothetical reflection under the assumption of all-pervasive surveillance; otherwise another option would be to communicate covertly. 
+That's of course a hypothetical reflection under the assumption of all-pervasive surveillance; otherwise another option would be to communicate covertly.
 
 The paradox of this extreme example is that by trying to optimize desirable human behavior (e.g. visiting that ailing friend) and by quantifying the human values that they promote (e.g. kindness), you lose the *quality* of what is sought after, similar to the capitalist perversion of friendship or love when they become part of an economy of (monetary) exchange.
-Friendship or love cannot be part of a contract, because that would imply you can *demand* some utility from the other and *enforce* this demand. 
-(I am not denying that friendships and love relationships can have and in fact do have utility. 
+Friendship or love cannot be part of a contract, because that would imply you can *demand* some utility from the other and *enforce* this demand.
+(I am not denying that friendships and love relationships can have and in fact do have utility.
 I am rather saying that only the cynical and the sociopathological would argue they *are about* utility and, as a consequence, can be quantified.
 But hey, perhaps I'm too romantic.)
 

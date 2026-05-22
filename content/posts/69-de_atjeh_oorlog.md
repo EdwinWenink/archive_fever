@@ -28,7 +28,7 @@ Het was nog de tijd van het tentoonstellen van exotische trofeeën, van krissen,
 
 <!--![Kaart van Atjeh](/images/69/atjeh.png)-->
 <figure>
-	<img align="right" alt="Kaart van Atjeh" style="width:50%; margin-left: 20px" src="/images/69/atjeh.png" />
+ <img align="right" alt="Kaart van Atjeh" style="width:50%; margin-left: 20px" src="/images/69/atjeh.png" />
 </figure>
 
 Nog weer later, veel later, ben ik drijvend op die sentimenten zelf terug gegaan, en toen begon de verwondering.
@@ -47,7 +47,7 @@ Anders gezegd: ik laat Van Heutsz, Van Daalen, Sjech Saman di Tiro of Colijn gee
 De echte romanpersonages hebben niet bestaan, maar hun belevenissen spelen zich af in een historische context en zouden echt zo gebeurd kunnen zijn.
 Ik heb me zeer uitgebreid gedocumenteerd.
 In mijn boek, en ook op mijn website, heb ik een lijst van ruim honderd geraadpleegde boeken en artikelen opgenomen.
-Daarnaast heb ik een zeer uitvoerige correspondentie met een militair deskundige en Atjeh-kenner gevoerd. 
+Daarnaast heb ik een zeer uitvoerige correspondentie met een militair deskundige en Atjeh-kenner gevoerd.
 
 **EW: Je hebt dus veel historisch onderzoek gedaan. Waarom heb je dan toch de vorm van een roman gekozen?**
 
@@ -71,7 +71,7 @@ BW: Verwondering en verbazing waren mijn drijfveren om steeds meer over de oorlo
 Pas nadat ik 'm af had kwamen andere, meer rationele vragen.
 Over de lessen die we van de Atjeh-oorlog kunnen leren, over de beschaving die de Nederlanders wilden brengen, over de morele aspecten.
 Mijn blik was – denk ik – niet oordelend, eerder met een zekere compassie voor de militairen, maar zeker niet vergoelijkend.
-De lezer trekt zelf wel zijn conclusies. 
+De lezer trekt zelf wel zijn conclusies.
 
 **EW: De roman neemt inderdaad geen stelling en biedt de lezer ruimte een eigen oordeel te vellen. Toch is het zo dat de roman vanuit het historische perspectief van Nederland is geschreven.
 Is dat iets waar je mee hebt geworsteld tijdens het schrijven?

@@ -10,15 +10,15 @@ For a while now I have been wondering how to share my terminal with others, for 
 First of all, I was intrigued by the idea of remote partner programming.
 For practically all of my study projects I engage in partner programming, which usually means I work with someone on the same machine.
 One small complication however is that I almost exclusively work together with Germans, who inconveniently use a different keyboard layout.
-Most special signs (such as brackets, which are absolutely necessary in programming) are all over the place. 
+Most special signs (such as brackets, which are absolutely necessary in programming) are all over the place.
 Typing on those keyboards is a frustrating experience, but even without taking that into account, is it preferable to work in a familiar environment on your own machine.
 
-So what if we can work together in the same virtual environment while simultaneously having the comfort of looking at our own screens? 
-An obvious drawback of sharing a terminal session is that we are locked in the terminal: no graphical applications, no fancy IDE's. 
+So what if we can work together in the same virtual environment while simultaneously having the comfort of looking at our own screens?
+An obvious drawback of sharing a terminal session is that we are locked in the terminal: no graphical applications, no fancy IDE's.
 However, lately I have been using vim more intensively, and this drawback perhaps motivates me to try and turn vim into a nice IDE that is usable in any terminal.
 The chances that I will actually use this are probably fairly slim, but I like the idea that I *could*.
 
-A second and somewhat trivial reason for me to share my terminal, is that a [friend](https://www.alextes.me/) recommended a game for in the terminal which I wanted to try out. He asked me if he could watch along as I played, to help me get started (the game is called 'cataclysm' by the way). 
+A second and somewhat trivial reason for me to share my terminal, is that a [friend](https://www.alextes.me/) recommended a game for in the terminal which I wanted to try out. He asked me if he could watch along as I played, to help me get started (the game is called 'cataclysm' by the way).
 What follows is a guide how to share a terminal session with minimal means: only tmux is required.
 I am assuming ssh is properly and safely set up.
 Consider reading [this post](https://edwinwenink.xyz/posts/3-ssh+tmux/).
@@ -81,7 +81,7 @@ This creates a user 'pair' on your system. The -m flag creates a home directory 
 passwd pair
 ```
 
-Once we have the user set up as we want to, we have another challenge. When we run a tmux server on our own account, that server is not visible to the new user 'pair' when we check the available sessions with "tmux -ls", because that only shows the sessions running of the current user. 
+Once we have the user set up as we want to, we have another challenge. When we run a tmux server on our own account, that server is not visible to the new user 'pair' when we check the available sessions with "tmux -ls", because that only shows the sessions running of the current user.
 Somehow, we need a way to let tmux communicate between users. We can achieve this by opening a socket:
 
 ```bash
@@ -121,7 +121,7 @@ tmux -S /tmp/socket new-session -t sessionnameorid
 
 ## Making the guest automatically connect to the socket session
 
-Since we made the guest account 'pair' solely for sharing our terminal, it makes sense to let anyone who connects to it over ssh automatically connect to our tmux session through the designated socket. To achieve this, we can edit our /etc/ssh/sshd_config file (solution found [here](http://consileonpl.github.io/2014/04/25/sharing-tmux-sessions)). Add the following for pair programming: 
+Since we made the guest account 'pair' solely for sharing our terminal, it makes sense to let anyone who connects to it over ssh automatically connect to our tmux session through the designated socket. To achieve this, we can edit our /etc/ssh/sshd_config file (solution found [here](http://consileonpl.github.io/2014/04/25/sharing-tmux-sessions)). Add the following for pair programming:
 
 ```bash
 Match User pair

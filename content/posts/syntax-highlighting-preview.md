@@ -13,7 +13,7 @@ Syntax highlighting is a feature of text editors that are used for programming, 
 <script>hljs.initHighlightingOnLoad();</script>
 ```
 
-Theme one uses the github style color theme. 
+Theme one uses the github style color theme.
 
 CSS
 

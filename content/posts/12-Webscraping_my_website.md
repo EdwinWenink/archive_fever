@@ -13,7 +13,7 @@ Required:
 
 A while back I suddenly felt the urge to do some quick programming after having spent the last weeks of my summer break on reading philosophy. Since I had no actual programming work to do, I decided to explore something new to me: web scraping. Web scraping is the (automated) retrieval of data from websites. If done properly, you can gather a large amount of information from a great variety of sources without any manual labour. This is for example essential for websites that compare prices, let's say for hotels or various travel tickets. In my case, despite some fantasizing about fun projects, I do not (yet) have a useful application in mind. Just for practice I decided to start with something simple: extract all blogs from my own website, and organize them nicely in a folder on my computer.
 
-Since I'm absolutely new to this topic myself, this blog post is intended as a starters tutorial of sorts. To get started, we need some Python modules. This script is written for Python 3. 
+Since I'm absolutely new to this topic myself, this blog post is intended as a starters tutorial of sorts. To get started, we need some Python modules. This script is written for Python 3.
 The module `requests` (version 2.19.1) is needed because we need our script to send a request to a website to get its data, without having to open a browser ourselves. Once we have this data it is a huge unreadable mess, so we need something to parse it and recover some of its original structure. The module `BeautifulSoup` (version 4.6.0) does exactly that: it knows its way around HTML and XML, and it will provide us the data we're interested in if we ask it nicely.
 
 ```python

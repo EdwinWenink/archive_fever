@@ -38,7 +38,7 @@ This gives:
 5       3           2  decision
 ```
 
-This dummy example distinguishes three cases: 
+This dummy example distinguishes three cases:
 
 1. the first document contains a single section with a decision, as expected
 2. the second document contains no section with a decision

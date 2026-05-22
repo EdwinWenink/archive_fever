@@ -7,15 +7,15 @@ tags: ['etc']
 
 TLDR: my mother makes paintings and sells some of them.
 
-Over the years she painted in various styles, both abstract and concrete. 
+Over the years she painted in various styles, both abstract and concrete.
 But irregardless of the style, her paintings are usually inspired by nature.
-I particularly like her most recent works in which she developed a recognizable style: very colorful abstractions of natural subjects, mainly trees and some of her favorite animals (but not *too* abstract). 
+I particularly like her most recent works in which she developed a recognizable style: very colorful abstractions of natural subjects, mainly trees and some of her favorite animals (but not *too* abstract).
 
 She also works on commission. If you like what you see and are interested, I can bring you into contact with her, or you can visit [her web site](http://www.groen-art.nl) (Dutch).
 
 Here are some of my personal favorites.
 
-## Colorful and abstract trees:
+## Colorful and abstract trees
 
 <br>
 
@@ -26,9 +26,9 @@ Here are some of my personal favorites.
 ![Boom](/images/groenart/Boom.jpg)
 
 
-## Animals:
+## Animals
 
-<br> 
+<br>
 
 ![](/images/groenart/JJ.jpg)
 

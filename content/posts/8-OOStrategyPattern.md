@@ -86,6 +86,7 @@ public class CheatingStrategy implements Strategy {
     }
 }
 ```
+
 ```java
 public class FairStrategy implements Strategy {
 

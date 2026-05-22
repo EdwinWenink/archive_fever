@@ -15,8 +15,8 @@ I haven't written much for this website recently because it's *that* time of the
 Here's a taster of what's going on in my studies: experimenting with gradient boosting decision-trees for forecasting; writing about Bayesian approaches to inference to the best explanation; developing and testing a podcast app; programming autoencoders, a GAN, and learning about generative modeling; writing an ethics policy brief on an AI-related issue.
 
 This is also the first real stress test of my note-taking system and a chance for me to evaluate if I can pick the fruits of my labour.
-Did consistently putting effort into my note taking system promote comprehension? 
-Retention? 
+Did consistently putting effort into my note taking system promote comprehension?
+Retention?
 Does it help me study more effectively?
 Especially now that the Covid situation resulted in an abundance of take-home exams, perhaps my notes will share in some of the heavy lifting.
 
@@ -33,7 +33,7 @@ I make all my notes in Markdown, so in plain text that looks like `**Q**`.
 
 You will never write `**Q**` in a normal sentence, so this term is really easy to search on without getting "false positives".
 To review these questions, just do a quick `vimgrep` on the current file.
-You don't need fancy search tools if you just search the current file. 
+You don't need fancy search tools if you just search the current file.
 I just make a quick mapping `\nq` ( '\\' is the default leader key) with the mnemonic "note quiz".
 
 ```
@@ -41,7 +41,7 @@ nnoremap <leader>nq :vimgrep /\*\*Q\*\*/ %<CR>
 ```
 
 It looks a bit awkward because the asterix needs to be escaped in order to not be interpreted as a regex wildcard (Update: the plugin version of this code uses a proper escape function for this.).
-This just searches for our pattern in the current file (indicated in Vim with `%`) and does not need our confirmation (`<CR>` "presses" Enter for us). 
+This just searches for our pattern in the current file (indicated in Vim with `%`) and does not need our confirmation (`<CR>` "presses" Enter for us).
 By default, `vimgrep` populates the `quickfix` window with the search results and opens it automatically.
 
 I like that the question is previewed at the bottom of your screen like this:
@@ -57,7 +57,7 @@ Okay, *now forget this again*.
 
 Just install [vim unimpaired](https://github.com/tpope/vim-unimpaired) which maps `:cprevious` and `:cnext` to `[q` and `]q`.
 This is *perfect* for our purpose, because we can read these mappings as "previous question" and "next question".
-The square brackets do not look intuitive, but you get used to them in a few minutes. 
+The square brackets do not look intuitive, but you get used to them in a few minutes.
 Notice that the opening bracket is on the *left* of the closing bracket on an English keyboard, so that "left" corresponds to "previous", and "right" to "next".
 
 If you want to have all questions in a separate file, that's easy enough: just focus on the quickfix window and save it as a file! E.g. `:w study_questions.txt`.
@@ -69,30 +69,30 @@ Of course you can do this better, and you can extend it easily to also search ot
 I currently have no need for that, and I really wanted this to be a ten second hack.
 After all, I'm supposed to be studying now!
 
-### N.B.
+### N.B
 
 You can of course also write a standalone script to collect the questions and dump them in a file.
 On Unix-like systems, you could do something like this:
 
 ```bash
 if [[ -e $1 ]]
-	then
-		filename="Questions $1"
-		count=$(grep -Fc '**Q**' "$1")
-		report="$count Questions extracted from $filename"
-		printf "# $report \n \n" > "./$filename"
-		grep -Fn '**Q**' "$1" | sed -e 's/\*\*Q:*\*\*:*//g' | sed -e 's/^/- /' >> "$filename"
-		echo $report 
-	else 
-		echo Provide a file as an argument
+ then
+  filename="Questions $1"
+  count=$(grep -Fc '**Q**' "$1")
+  report="$count Questions extracted from $filename"
+  printf "# $report \n \n" > "./$filename"
+  grep -Fn '**Q**' "$1" | sed -e 's/\*\*Q:*\*\*:*//g' | sed -e 's/^/- /' >> "$filename"
+  echo $report 
+ else 
+  echo Provide a file as an argument
 fi
 ```
 
-I wrote that script maybe two years ago and didn't bother to check it again, so use at your own discretion. 
+I wrote that script maybe two years ago and didn't bother to check it again, so use at your own discretion.
 
 ### Pasting the collected questions
 
-ADDITION 2021-03-16: 
+ADDITION 2021-03-16:
 
 You can also create a function to paste the contents of the quickfix window in your current buffer.
 
@@ -108,5 +108,5 @@ nnoremap <leader>pq :execute PasteQuickfix()<CR>
 ```
 
 This works well, but one annoying little detail is that this function sends you to the top of the file.
-I don't really know why. 
+I don't really know why.
 If you do, please let me know!

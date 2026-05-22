@@ -8,19 +8,19 @@ series: ['Website', 'Programming']
 ---
 
 I have made progress in my understanding of Go templating, and in particular its scope limitations (see for example [this](https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/)).
-This allowed me to implement some new features that I was struggling with before. 
+This allowed me to implement some new features that I was struggling with before.
 In this post I give an overview of new features, together with their implementation in Hugo.
 Most new features are small tweaks that extend on existing functionality.
-However, [since I joined the IndieWeb](https://www.edwinwenink.xyz/posts/31-indieweb/), I also added a completely new aspect to this website, namely so-called "microposts". 
+However, [since I joined the IndieWeb](https://www.edwinwenink.xyz/posts/31-indieweb/), I also added a completely new aspect to this website, namely so-called "microposts".
 Twittering is not my style, but I did crave for a place to share interesting bookmarks and other blogs in a more dynamic fashion than your classic blogroll (which I [also have](https://www.edwinwenink.xyz/etc/blogroll/) by the way).
 I had to write some code to support [microformats2](http://microformats.org/wiki/microformats-2), which is what my microposts use.
 
-Below I summarize the new features and provide related code snippets. 
+Below I summarize the new features and provide related code snippets.
 Perhaps they are of use to you!
 
 ### Preview of first two tags above each post
 
-On the homepage I display the most recent blog posts (I call them "engrams"). 
+On the homepage I display the most recent blog posts (I call them "engrams").
 For each post I wanted to add a preview of its tags.
 I limited the preview to two tags only, because otherwise the tags overflow on mobile phones.
 If the post has more tags then two, dots will be displayed.
@@ -74,15 +74,15 @@ On my homepage I have an overview of the tags of all posts, so that one can pick
 Previously I looped over all my posts, and then immediately rendered their tags.
 The result of this naive approach is that the tag overview will have many duplicate tags.
 In a normal programming language this is a trivial issue: you would keep track of a list of tags and make sure to not add duplicate tags (or perhaps work with a set), before rendering anything.
-However, Go templating has its own unique way of defining the scope of variables. 
-For example, when you range over tags, the broadest scope you can access from within that loop (`{{ . }}`) is that tag. 
+However, Go templating has its own unique way of defining the scope of variables.
+For example, when you range over tags, the broadest scope you can access from within that loop (`{{ . }}`) is that tag.
 
 This means it is not straightforward to work with variables outside of that scope.
 That is... until I found out about Hugo's scratchpad, which allows you to define custom variables on the scope of the whole page.
 You can add data of interest under a particular key that you define yourself.
-One detail I had to get right in order to make this work, is to ensure that tags are added to a list, rather than replacing the previous value. 
+One detail I had to get right in order to make this work, is to ensure that tags are added to a list, rather than replacing the previous value.
 So rather than using the `.Scratch.Set` method, I used the `.Add` method.
-The `.Add` method assumes we are working with a list though, whereas our tags are strings. 
+The `.Add` method assumes we are working with a list though, whereas our tags are strings.
 So before adding tags, I convert it to a list with the `slice` function.
 
 ```html
@@ -103,13 +103,13 @@ So before adding tags, I convert it to a list with the `slice` function.
   {{ end }}
 {{ end }}
 </div>
-``` 
+```
 
 The only thing that still bothers me is that I did not figure out how to do `{{ $array := $tags.Get "tags" }}` inline.
 
 ### Preview of latest micros
 
-The most important element here is to distinguish pages of the type "micro" from regular posts. 
+The most important element here is to distinguish pages of the type "micro" from regular posts.
 The layout "content_only" calls a partial that I wrote for displaying html using microformats2 (see next section).
 
 ```html
@@ -128,9 +128,9 @@ The layout "content_only" calls a partial that I wrote for displaying html using
 ### Microformats2
 
 I wanted to display different type of micros in different manners.
-For example, I wanted bookmarks to show a book symbol with the URL of the bookmark. 
+For example, I wanted bookmarks to show a book symbol with the URL of the bookmark.
 For events I want to show a calender, and for music events (a subcategory) I want to show a music notes instead.
-For replies, I want to provide the URL of the post I am replying to. 
+For replies, I want to provide the URL of the post I am replying to.
 For likes, I want to show a heart.
 
 This is work in progress, but for now I wrote the following partial:
@@ -187,7 +187,7 @@ This is work in progress, but for now I wrote the following partial:
 ### Links to latest, previous and next post
 
 Hugo makes this feature extremely easy by providing default functions.
-The `with` function is particularly handy, because it knows how to deal with `nils`. 
+The `with` function is particularly handy, because it knows how to deal with `nils`.
 This ensures that when the are at the latest post, we will not cause any errors by trying to find the next post, which does not exist.
 
 ```html
@@ -214,7 +214,7 @@ What would be a cool improvement for the future is also linking to a relevant po
 
 The most recent feature (I started on it today) is a preview of the latest comments on my website.
 The challenge for this feature was that comments are stored in a separate data folder in a nested manner, where each post has its own comment directory.
-Sorting all comments on their date *per post* is trivial, but it is harder to find the latest comment overall, so from *all posts*. 
+Sorting all comments on their date *per post* is trivial, but it is harder to find the latest comment overall, so from *all posts*.
 Again, I could not solve this problem before I figured out how to use Hugo's scratchpad.
 A nice feature I added is that clicking on each preview brings you to the exact location of the comment.
 I also distinguish between comments on the original post, and replies on comments of other people.
@@ -242,8 +242,8 @@ I also distinguish between comments on the original post, and replies on comment
 </div>
 ```
 
-There are still things to do though. 
-I want to display the name of the post in a more pretty manner, rather than showing its url. 
+There are still things to do though.
+I want to display the name of the post in a more pretty manner, rather than showing its url.
 In case of replies, it would also be nice to retrieve the name of the person replied to, but this has low priority and is rather complex due to the way my comment system is set up (see [this post](https://www.edwinwenink.xyz/posts/18-comments/)).
 
 

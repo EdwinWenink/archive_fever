@@ -21,7 +21,7 @@ I have a few ways to make coffee at home:
 
 
 - Simple filter coffee machine
-	* My first machine got so hot it burns the coffee and made my coffee pot explode
+ 	* My first machine got so hot it burns the coffee and made my coffee pot explode
 - Bodum pour over coffee
 - Mokka Express (3 persons)
 - Old Krups Espresso machine
@@ -33,22 +33,22 @@ I grind coffee using the Baratza Encore Esp, because it can grind coffee for esp
 I tend to make filter coffee with medium roasted espresso beans, but then overdo the amount of beans.
 
 <pre>
-				   .
-					`:.
-					  `:.
-			  .:'     ,::
-			 .:'      ;:'
-			 ::      ;:'
-			  :    .:'
-			   `.  :.
-	  _________________________
-	 : _ _ _ _ _ _ _ _ _ _ _ _ :
+       .
+     `:.
+       `:.
+     .:'     ,::
+    .:'      ;:'
+    ::      ;:'
+     :    .:'
+      `.  :.
+   _________________________
+  : _ _ _ _ _ _ _ _ _ _ _ _ :
  ,---:".".".".".".".".".".".".":
 : ,'"`::.:.:.:.:.:.:.:.:.:.:.::'
 `.`.  `:-===-===-===-===-===-:'
   `.`-._:                   :
-	`-.__`.               ,' met.
+ `-.__`.               ,' met.
 ,--------`"`-------------'--------.
  `"--.__                   __.--"'
-		`""-------------""'
+  `""-------------""'
 </pre>

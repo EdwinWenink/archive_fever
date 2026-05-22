@@ -12,7 +12,7 @@ Rather than constantly spamming the subject class to ask whether its information
 
 Let's further assume that although we currently have some classes using this information, there could be more or less other observing classes in the future that we want to add. We could of course directly have the subject class contain instances on all observing classes and call methods on all these observers--a direct coupling between the subject and all its observers--but this makes the subject class more complicated than necessary and harder to maintain, as it needs to know about many different objects. This is where the observer pattern comes in. Rather than using this direct coupling to code the one-to-many dependency, we only require the subject class to inform its observers when a change to it is made, without having to specify what to do based on this change. The latter is best delegated to all the different observing classes themselves. Let's write up a quick and light-hearted example.
 
-As I write this, the Nijmeegse Vierdaagse (the biggest walking event in the world) is going on, and alcohol flows freely through the streets. But of course, not everyone has a healthy relationship with alcohol. After drinking for seven days straight, a not to be specified person realizes he or she might have a problem and decides to see a therapist who starts to observe this person's behavior. 
+As I write this, the Nijmeegse Vierdaagse (the biggest walking event in the world) is going on, and alcohol flows freely through the streets. But of course, not everyone has a healthy relationship with alcohol. After drinking for seven days straight, a not to be specified person realizes he or she might have a problem and decides to see a therapist who starts to observe this person's behavior.
 
 First, we define the alcoholic:
 
@@ -71,12 +71,12 @@ public class Therapist implements Observer {
     }
 
     public int getBeersObserved(){
-	return beersObserved;
+ return beersObserved;
     }
 }
 ```
 
-The therapist can observe multiple alcoholics in parallel and keeps track of the total amount of beers it has observed. Whenever an observed alcoholic drinks a beer and notifies its observer (the therapist in this case), the therapist knows it has to update its knowledge of the observed class. The Observer interface provides the update function that is called whenever the alcoholic calls the `notifyObservers()` function. It is possible that the therapist also observes other kinds of patients that are not alcoholics, so we need to distinguish what the therapist does for what kind of patient. In our case, we only care about alcoholics, but to be complete we still check the class of the object we observe to take the appropriate action. In this case we simply give the alcoholic a small preach every time he or she has a beer (probably not so effective, but hey I'm not a therapist myself). 
+The therapist can observe multiple alcoholics in parallel and keeps track of the total amount of beers it has observed. Whenever an observed alcoholic drinks a beer and notifies its observer (the therapist in this case), the therapist knows it has to update its knowledge of the observed class. The Observer interface provides the update function that is called whenever the alcoholic calls the `notifyObservers()` function. It is possible that the therapist also observes other kinds of patients that are not alcoholics, so we need to distinguish what the therapist does for what kind of patient. In our case, we only care about alcoholics, but to be complete we still check the class of the object we observe to take the appropriate action. In this case we simply give the alcoholic a small preach every time he or she has a beer (probably not so effective, but hey I'm not a therapist myself).
 
 Let's test our code:
 

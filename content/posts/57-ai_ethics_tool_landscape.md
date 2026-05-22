@@ -74,8 +74,8 @@ constructed" [^8].
 This call for concretisation and operationalisation of AI principles
 does not mean, however, that AI principles can always and
 straightforwardly be technically implemented in a tool or computer
-program. 
-This tension between abstract principles and concrete tools requires thoughtful navigation. 
+program.
+This tension between abstract principles and concrete tools requires thoughtful navigation.
 From the perspective of principles, there is a strong call to make them as concrete as possible so that they can
 be used by the professionals actually creating AI applications. In this
 context, Hagendorff calls for a "microethics" [^8]
@@ -91,7 +91,7 @@ given the type of application you are developing?
 
 ## The AI Ethics Tool Landscape
 
-To these ends, I did an explorative study of the available tools and techniques for ethical AI. 
+To these ends, I did an explorative study of the available tools and techniques for ethical AI.
 The target audience that would use these tools are developers, so I
 wanted to tailor the format in which I presented my insights to
 developers. The majority of the tools are technical, but the value
@@ -101,7 +101,7 @@ engage with ethical AI. Instead of writing a large document on these
 tools --- which no developer would ever read --- I decided to program a
 website from scratch in the style of a *wiki*.
 
-The website is called the [AI Ethics Tooling Landscape](https://edwinwenink.github.io/ai-ethics-tool-landscape/) and is set up as an open source project. 
+The website is called the [AI Ethics Tooling Landscape](https://edwinwenink.github.io/ai-ethics-tool-landscape/) and is set up as an open source project.
 The website and corresponding [README](https://github.com/EdwinWenink/ai-ethics-tool-landscape/blob/main/README.md) explains how the website works and how to contribute to it.
 Specifically, because the project content is completely based on simple text files that are automatically parsed, little to no technical know-how is required to contribute content.
 
@@ -139,18 +139,18 @@ At the time of writing, the website project contains 41
 custom-made tool entries. Each of these entries contains metadata to
 categorize the tool, as well as my description of the tool with relevant
 information. All values, stages, explanation types, and fairness types
-have their own guiding descriptions as well. 
+have their own guiding descriptions as well.
 
 
-[^1]: AlgorithmWatch. AI Ethics Guidelines Global Inventory. url: https://inventory.algorithmwatch.org/ (visited on 03/16/2021).
-[^2]: AlgorithmWatch. In the realm of paper tigers - exploring the failings of AI ethics guidelines. Apr. 28, 2020. url: https://algorithmwatch.org/en/ai-ethics-guidelines-inventory-upgrade-2020/ (visited on 08/04/2021)
-[^3]: AlgorithmWatch. Launch of our 'AI Ethics Guidelines Global Inventory'. Apr. 9, 2019. url: https://algorithmwatch.org/en/launch-of-our-ai-ethics-guidelines-global-inventory/ (visited on 08/04/2021).
-[^4]: Alejandro Barredo Arrieta et al. "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI". In: Information Fusion 58 (2020), pp. 82-115. doi: https://doi.
+[^1]: AlgorithmWatch. AI Ethics Guidelines Global Inventory. url: <https://inventory.algorithmwatch.org/> (visited on 03/16/2021).
+[^2]: AlgorithmWatch. In the realm of paper tigers - exploring the failings of AI ethics guidelines. Apr. 28, 2020. url: <https://algorithmwatch.org/en/ai-ethics-guidelines-inventory-upgrade-2020/> (visited on 08/04/2021)
+[^3]: AlgorithmWatch. Launch of our 'AI Ethics Guidelines Global Inventory'. Apr. 9, 2019. url: <https://algorithmwatch.org/en/launch-of-our-ai-ethics-guidelines-global-inventory/> (visited on 08/04/2021).
+[^4]: Alejandro Barredo Arrieta et al. "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI". In: Information Fusion 58 (2020), pp. 82-115. doi: <https://doi>.
 org/10.1016/j.inffus.2019.12.012.
 [^5]: Elettra Bietti. "From Ethics Washing to Ethics Bashing: A View on Tech Ethics from within Moral Philosophy". In: Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency. FAT* '20. Barcelona, Spain: Association for Computing Machinery, Jan. 2020, pp. 210-219. doi: 10.1145/3351095.3372860.
 [^6]: Cansu Canca. "Operationalizing AI Ethics Principles". In: Commun. ACM 63.12 (Nov. 2020), pp. 18-21. doi: 10.1145/3430368.
 [^7]: European Commission. White Paper On Artificial Intelligence - A European approach to excellence and trust. Tech. rep. Brussels: European Commission, 2020, p. 27.
 [^8]: Thilo Hagendorff. "The Ethics of AI Ethics: An Evaluation of Guidelines". In: Minds and Machines 30.1 (2020), pp. 99-120. doi: 10.1007/s11023-020-09517-8.
 [^9]: High-Level Expert Group on Artificial Intelligence. The European Commission's high-level expert group on Artificial Intelligence: Ethics guidelines for trustworthy AI. Tech. rep. European Commission, Apr. 8, 2019, pp. 1-39.
-[^10]: Corinna Machmeier. SAP's Guiding Principles for Artificial Intelligence. Sept. 18, 2018. url: https://news.sap.com/2018/09/sap-guiding-principles-for-artificial-intelligence/ (visited on 08/04/2021).
+[^10]: Corinna Machmeier. SAP's Guiding Principles for Artificial Intelligence. Sept. 18, 2018. url: <https://news.sap.com/2018/09/sap-guiding-principles-for-artificial-intelligence/> (visited on 08/04/2021).
 [^11]: Jessica Morley et al. "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices?. In: Science and Engineering Ethics 26.4 (2020), pp. 2141- 2168. doi: 10.1007/s11948-019-00165-5.

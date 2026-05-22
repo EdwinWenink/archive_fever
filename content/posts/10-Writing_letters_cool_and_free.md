@@ -10,15 +10,15 @@ Markdown and Pandoc are the preferred tools around which I design my workflow. F
 
 Luckily, there are some amazing people on the web with similar workflow ideas, and that are kind enough to share the hard work they put into designing theirs. I came across the [website of Mattia Tezzele](http://mrzool.cc/tex-boilerplates/), who made LaTeX boilerplates for some of those scenarios in which more intricate layout is required, namely for letters, resumes, and invoices. I have seen more similar boilerplates, but these are silky smooth and easily the cleanest I have seen. Most importantly, they fit perfectly with my current workflow. Writing is done in Markdown, and the bits that require special formatting are read in using a YAML header, which is exactly the method I also currently use for these blogposts. On top of all that, everything is well documented, and in case someone is unfamiliar with any of the parts of this workflow, resources for further reading are also provided. Did I mention everything is open source and for free?
 
-Here's a snap of me writing this post: 
+Here's a snap of me writing this post:
 
 ![](/images/10-blog/screen.png)
 
-Let's give it a try. Mattia Tezzele provided a template markdown file for the first letter. Filling in the fields of sender and addressee are straightforward. Personally I only had to change one aspect of the template to make it compile. The boilerplate uses the `fontspec` LaTeX package to select fonts from your own system. In the template 'Courier' was for example mentioned as one of the fonts, but for my specific system (Arch Linux) that naming was not accepted. On top of that, I also don't think I had any of the default fonts installed on my system. I decided to keep it simple and choose a font from the large database of freely available [Google fonts](https://fonts.google.com/). 
+Let's give it a try. Mattia Tezzele provided a template markdown file for the first letter. Filling in the fields of sender and addressee are straightforward. Personally I only had to change one aspect of the template to make it compile. The boilerplate uses the `fontspec` LaTeX package to select fonts from your own system. In the template 'Courier' was for example mentioned as one of the fonts, but for my specific system (Arch Linux) that naming was not accepted. On top of that, I also don't think I had any of the default fonts installed on my system. I decided to keep it simple and choose a font from the large database of freely available [Google fonts](https://fonts.google.com/).
 
 Since the `fontspec` package uses system native fonts, I only needed to find the correct name of the font I wanted in my system. Fonts are saved in `/usr/share/fonts`. We could keep it relatively simple and look for fonts in the `TTF` folder, which contains a human readable list of fonts. Even simpler is to look for fonts on the Google fonts website, but it might occur that after a long search you pick a nice font you did not install on your system after all. I wanted to keep my letter style retro, so I picked the Inconsolata font (which I then also decided to use for this blog). Now all we need to do is find out under which name this font is known in the system. To find out, I ran:
 
-```[Bash] 
+```[Bash]
 fc-list | grep Inconsolata
 
 /usr/share/fonts/TTF/Inconsolata-Bold.ttf: Inconsolata:style=Bold

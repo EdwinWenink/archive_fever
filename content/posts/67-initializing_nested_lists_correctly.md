@@ -92,4 +92,4 @@ Instead, create the sublists in an explicit loop or for example a list comprehen
 [[], [1], []]
 ```
 
-This way each of the sublists is its own object, rather than being a reference to the same list, because we force Python to evaluate `[]` 3 times instead of only once. 
+This way each of the sublists is its own object, rather than being a reference to the same list, because we force Python to evaluate `[]` 3 times instead of only once.

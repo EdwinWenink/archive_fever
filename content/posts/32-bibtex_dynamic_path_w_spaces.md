@@ -5,18 +5,18 @@ date: 2019-06-07
 tags: [LaTeX, BibTeX, bibliography]
 ---
 
-Although LaTeX is amazing in many aspects, I often encounter relatively small issues that somehow take way too long to fix. 
+Although LaTeX is amazing in many aspects, I often encounter relatively small issues that somehow take way too long to fix.
 Today I encountered a very specific use case that gave me a headache, and I want to write up my solution so I never have to think about it again.
 
 ### The scenario
 
 I'm currently working on my bachelor thesis for Artificial Intelligence, which is due in a week, so I have no time to waste.
-My thesis lives in a github repo, so that I always have my latest work available depending on whether I work from my laptop running Arch Linux, or from my desktop running MS Windows. 
+My thesis lives in a github repo, so that I always have my latest work available depending on whether I work from my laptop running Arch Linux, or from my desktop running MS Windows.
 My bibliography file is also saved in that repo, so loading the bibliography file from LaTeX is as trivial as `\bibliography{thesis}`, which loads the file called `thesis.bib`.
 
 **However**...
 
-I'm using Mendeley as my reference manager, and in the past exported a group of references manually to a `bib` file. 
+I'm using Mendeley as my reference manager, and in the past exported a group of references manually to a `bib` file.
 However, currently I'm updating my references very frequently so that manual copying becomes an annoyance.
 It turns out that Mendeley has a BibTeX synchronization option that keeps `bib` files up to date automatically.
 You can either synchronize one `bib` file for your whole bibliography, or create a `bib` file per group of references.
@@ -26,7 +26,7 @@ Instead, all `bib` files will be exported to a single directory.
 It does not make any sense to store all my `bib` files in the repository for my thesis, so I had to put the folder somewhere else on my system.
 
 *This is where the trouble starts*.
-This situation created two issues for me. 
+This situation created two issues for me.
 
 1. Because the bibliography file now lives outside the repository on my desktop, I would not have access to it on my Linux laptop without manually copying files again.
 2. I now have to provide a path, but both my Windows path and the Mendeley export files contain spaces in them.
@@ -37,7 +37,7 @@ This situation created two issues for me.
 In order to solve the first issue, I loaded `\usepackage{ifplatform}`.
 This allows LaTeX to do an operating system check.
 But in order to do so, you need to give the compiler explicit access to your shell through a `shell-escape`.
-I did so with the following command: 
+I did so with the following command:
 `pdflatex -shell-escape -job-name="thesis" master.tex`
 
 The idea is that I will specify the bibliography path both for my Windows and Linux system within a conditional, so that I can work on my `TeX` files from both systems without having to adjust anything.

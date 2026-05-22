@@ -12,5 +12,5 @@ event: false
 category: 'music'
 ---
 
-"Digital gardening is the Domestic Cozy response to the professional personal blog; it’s both intimate and public, weird and welcoming. 
+"Digital gardening is the Domestic Cozy response to the professional personal blog; it’s both intimate and public, weird and welcoming.
 It’s less performative than a blog, but more intentional and thoughtful than a Twitter feed. It wants to build personal knowledge over time, rather than engage in banter and quippy conversations."

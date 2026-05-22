@@ -25,7 +25,7 @@ In Python 3, the zip operator returns a generator instead of a list, so you need
 (2, 4)
 ```
 
-The inverse operation will always return tuples in Python, so if your original input was a list, you also need to convert back the results to a list. 
+The inverse operation will always return tuples in Python, so if your original input was a list, you also need to convert back the results to a list.
 
 This operation is super handy.
 For example, I wrote a class to recommend relevant texts for a query document based on their distance in a vector space.

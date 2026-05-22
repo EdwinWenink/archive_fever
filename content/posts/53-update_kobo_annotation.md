@@ -23,12 +23,12 @@ You can either download the code as a zip, or clone the repository if you know h
 
 DISCLAIMER: the script works fine for my annotation files (Kobo Clara HD), but please note it is not extensively tested.
 
-The script is written in Python 3, so you need that have that installed on your system. 
+The script is written in Python 3, so you need that have that installed on your system.
 You can download Python 3 [here](https://www.python.org/downloads/).
 The script mostly uses default Python modules, but you'll need to install the `BeautifulSoup` module.
 To do that, open a terminal with access to your Python environment and run `pip install beautifulsoup4`.
 
-To learn how the script works, open aforementioned terminal, and run (this assumes the script is in your terminal's current working directory) `python ./kobo_export.py --help` 
+To learn how the script works, open aforementioned terminal, and run (this assumes the script is in your terminal's current working directory) `python ./kobo_export.py --help`
 (on Windows the forward slashes are replaced by backward slashes).
 This outputs instructions on the usage of the script:
 
@@ -46,13 +46,13 @@ optional arguments:
                         location of output folder (default: current folder)
 ```
 
-As you can see, all flags are optional. 
+As you can see, all flags are optional.
 You can either select a single annotation file to be processed with the `--file` flag.
 You need to provide a valid path to that annotation file.
 Alternatively, if you want to process all annotation files in a directory, you can specify that directory instead.
-In both cases, you can also specify a directory where you want the extracted markdown files to be placed. 
+In both cases, you can also specify a directory where you want the extracted markdown files to be placed.
 
-If you do not provide a file nor a directory, the script will recursively look for annotation files in the current folder and its subfolders. 
+If you do not provide a file nor a directory, the script will recursively look for annotation files in the current folder and its subfolders.
 If you do not provide an output directory, all files will be written to the current directory.
 
 Combining the options, running the script looks like this:
@@ -63,7 +63,7 @@ python ./kobo_export.py --directory "./Dostoyevsky, Fyodor/" --output ./markdown
 
 This reads all annotations files from Dostoyevsky and puts the extracted notes in a folder called 'markdown'.
 
-On Windows I encountered an annoying situation. If you have a folder name with spaces (Kobo does this), then the backslash separator actually escapes the closing quote... 
+On Windows I encountered an annoying situation. If you have a folder name with spaces (Kobo does this), then the backslash separator actually escapes the closing quote...
 If this happens to you on Windows, you can solve this as follows:
 
 ```
@@ -85,7 +85,7 @@ publisher: Unspecified
 ```
 
 With respect to the previous post I changed several things.
-Extracted notes are numbered and sorted in order of occurrence. 
+Extracted notes are numbered and sorted in order of occurrence.
 For some reason they weren't sorted before.
 `0.280` is the progress indicator: the note was made at 28% progress in the book.
 I now only display the date, without timestamp to avoid clutter.
@@ -118,7 +118,7 @@ Because the extracted notes are valid Markdown, you can easily convert them to w
 Pandoc is very simple to use.
 The following command is an example of how to convert one of your notes to pdf.
 
-``` 
+```
 pandoc mythoughts.epub.md -o mythoughts.pdf
 ```
 

@@ -6,14 +6,14 @@ draft: false
 tags: [Neomutt, Email, Rice]
 ---
 
-In NeoMutt, which I use for email, I wanted view email conversations (a "thread") as a tree-like representation. 
-This option can be enabled by sorting on threads. 
-However, by default threads are sorted by their oldest message, which is the original email to which others started responding. 
+In NeoMutt, which I use for email, I wanted view email conversations (a "thread") as a tree-like representation.
+This option can be enabled by sorting on threads.
+However, by default threads are sorted by their oldest message, which is the original email to which others started responding.
 This causes the unwanted behavior that new emails that belong to a thread to not show on top of my inbox, but instead are hidden somewhere deeper in my inbox, sorted at the date of the older original post.
 I did not quickly find people with similar wishes (and solution) on the internet, so I considered it potentially helpful to write down my solution here.
 
-To solve this behavior, I defined a secondary sorting method. 
-The primary sorting method is on threads, but I want threads themselves to be sorted based on the date of the newest message. 
+To solve this behavior, I defined a secondary sorting method.
+The primary sorting method is on threads, but I want threads themselves to be sorted based on the date of the newest message.
 Also, I still want to ensure that newest messages show up on top, and not on the bottom (this is the reverse of the default setting in NeoMutt).
 I achieved this by setting these variables in my `neomuttrc`:
 

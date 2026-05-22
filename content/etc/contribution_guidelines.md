@@ -5,7 +5,7 @@ author: Edwin Wenink
 tags: ['etc']
 ---
 
-Here are some guidelines if you are interested in making a guest contribution to this website. 
+Here are some guidelines if you are interested in making a guest contribution to this website.
 
 The basic deal is: you contribute, I edit and provide feedback, and you get your own personal page on this domain where all your contributions are listed.
 Copyright etc. remains with the author and it's perfectly fine if posts are also published somewhere else.
@@ -17,20 +17,21 @@ Copyright etc. remains with the author and it's perfectly fine if posts are also
 - Tutorial on how to solve a practical problem
 - Critically reflect on a book or cultural phenomenon
 - Spark an *informed* discussion
-	* N.B. this website is primarily written from an "intellectual" perspective rather than a political one.
-	* N.B. N.B. that does not exclude political topics necessarily, but requires a critical rather than an ideological perspective.
+ 	* N.B. this website is primarily written from an "intellectual" perspective rather than a political one.
+ 	* N.B. N.B. that does not exclude political topics necessarily, but requires a critical rather than an ideological perspective.
 
 ## Reasons to contribute a post
 
 - Egoistic reasons: promote your ideas, build a portfolio, reach more people
-	* Getting your work published on someone else's site means that at least one person thought it was worthwhile. 
-* More idealistic: if you have spent time anyway on solving some problem or working out some idea, it could be interesting and useful for others.
-	* Chances are that you regularly use insightful writings of others on the internet. Give something back!
+ 	* Getting your work published on someone else's site means that at least one person thought it was worthwhile.
+- More idealistic: if you have spent time anyway on solving some problem or working out some idea, it could be interesting and useful for others.
+ 	* Chances are that you regularly use insightful writings of others on the internet. Give something back!
+
 - Pragmatic: Seek interaction and feedback on ideas in development
 - You like my site and the ideas behind it
 
-Writing a blog post does not have to be a huge time investment. 
-If you think you do not have time to write a blog, I strongly urge you to read Matt Might's [6 blog tips for busy academics](http://matt.might.net/articles/how-to-blog-as-an-academic/). 
+Writing a blog post does not have to be a huge time investment.
+If you think you do not have time to write a blog, I strongly urge you to read Matt Might's [6 blog tips for busy academics](http://matt.might.net/articles/how-to-blog-as-an-academic/).
 The main point is "to make blogging a natural byproduct of all the things that academics already do."
 
 ## What do you write about?
@@ -41,7 +42,7 @@ I do not write a lot about art and culture on this website myself, so this is a 
 What I'm trying to say is that you should not restrict yourself to the topics already discussed on the website.
 Pursue your own interests.
 If I'm interested in your idea, others are probably too.
-You can always send me a message before starting writing to get a feeling if we are a match. 
+You can always send me a message before starting writing to get a feeling if we are a match.
 
 I'm looking forwards to learn from you.
 
@@ -53,20 +54,20 @@ I'm looking forwards to learn from you.
 - Think about whether your title indicates what the post is about
 - Do not end a good post with an anticlimax
 
-## Recommended size 
+## Recommended size
 
-This site does not enforce a particular format due to its broad scope. 
+This site does not enforce a particular format due to its broad scope.
 Diversity both in topics and writing is welcomed.
 A difference in post length should correspond to a particular purpose.
 Depending on the type of post you plan on writing, here are some sensible defaults.
 
 ### Default (+/- 1000 words)
 
-By default a maximum of 1000 words is appropriate for a blog post. 
-This guideline helps you focus on your main point and is particularly appropriate for posts that explain a single idea, be it technical or philosophical. 
+By default a maximum of 1000 words is appropriate for a blog post.
+This guideline helps you focus on your main point and is particularly appropriate for posts that explain a single idea, be it technical or philosophical.
 Many people read blogs from their phone and they will likely be distracted when reading longer posts.
 
-Examples: 
+Examples:
 
 - [Paradoxes of the logical implication](https://www.edwinwenink.xyz/posts/26-paradoxes_of_implication/)
 - [Pick a random background on each boot (Linux)](https://www.edwinwenink.xyz/posts/40-arch_background/)
@@ -77,7 +78,7 @@ Examples:
 
 ### Short (max. 500 words)
 
-Of course, posts can be shorter. 
+Of course, posts can be shorter.
 If the goal of your post is not to explain a topic but to spark discussion, a maximum of 500 words could suffice.
 For example, you may have come across something and want to highlight notable points that may have relevance for others. For example, my shortest post is probably [Two notes on the original Google paper](https://www.edwinwenink.xyz/posts/22-note_on_google_paper/), which is written after a guest lecture at university and simply provides two pointers for further discussion that are somewhat ironic given the current cultural and societal dominance of Google.
 
@@ -89,21 +90,21 @@ The length of a post should be justified by its topic (for example its complexit
 So far I find that the longer posts I wrote are long because they ...
 
 - ... have a more academic style and structure, i.e. that of a paper/article or academic book review
-	* Require table of content
-	* Require references
-	* Headers and subheaders
-	* More classical structure, e.g. introduction, body, conclusion
+ 	* Require table of content
+ 	* Require references
+ 	* Headers and subheaders
+ 	* More classical structure, e.g. introduction, body, conclusion
 
 Examples:
 
-- [Deepfakes and democracy: a case for technological mediation ](https://www.edwinwenink.xyz/posts/37-deepfakes/)
-- [Book review: Van der Heiden - The Truth (and Untruth) of Language ](https://www.edwinwenink.xyz/posts/36-review_vanderheiden2010/)
-- [Friendship, death, and writing in Michel de Montaigne's Essays ](https://www.edwinwenink.xyz/posts/34-friendship_montaigne/)
+- [Deepfakes and democracy: a case for technological mediation](https://www.edwinwenink.xyz/posts/37-deepfakes/)
+- [Book review: Van der Heiden - The Truth (and Untruth) of Language](https://www.edwinwenink.xyz/posts/36-review_vanderheiden2010/)
+- [Friendship, death, and writing in Michel de Montaigne's Essays](https://www.edwinwenink.xyz/posts/34-friendship_montaigne/)
 
 
 [-](-.md) ... explain not a single idea but a project
-	* larger size results from explaining and contextualizing various separate steps
-	* as well as from providing code blocks
+ *larger size results from explaining and contextualizing various separate steps
+ * as well as from providing code blocks
 
 Examples:
 
@@ -112,10 +113,10 @@ Examples:
 
 ### Other
 
-When you find you need more than let's say 4000 words, your idea is probably too big for a blog post. 
-That's not necessarily an issue: try to split up your idea into several smaller ideas. 
-You could write a post on each separate part and develop a small series of posts. 
-Of course, when you encounter this situation there is a good chance it is caused by lack of focus. 
+When you find you need more than let's say 4000 words, your idea is probably too big for a blog post.
+That's not necessarily an issue: try to split up your idea into several smaller ideas.
+You could write a post on each separate part and develop a small series of posts.
+Of course, when you encounter this situation there is a good chance it is caused by lack of focus.
 Requirements for publishing a blog series will likely be stricter for this reason.
 
 ## Writing tips
@@ -131,17 +132,18 @@ This [index note pointing to writing principles](/zettelkasten/index_writing_pri
 ## Formal details for submission
 
 - Ideally submissions are written in Markdown, otherwise I have to convert them
-	* Markdown is EZ, have a look at the [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+ 	* Markdown is EZ, have a look at the [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - The static website is deployed using [Hugo](https://gohugo.io/). If you want to preview the website with your post locally, perform the following steps
-	* [Install Hugo](https://gohugo.io/getting-started/installing)
-	* [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-	* Make sure the `hugo` executable is in your path variable
-	* Run `git clone https://github.com/EdwinWenink/personal_website.git`
-	* Open the `personal_website` folder
-	* run `hugo server` in that folder
-	* Add your post to the `content/posts/` folder 
-	* Preview in your browser on `http://localhost:1313/`
-* Submit your post either by mailing me or by a pull request on GitHub
-	* If you want to make a pull request on GitHub, send me the name of your GitHub account so that you can set up a branch
+ 	* [Install Hugo](https://gohugo.io/getting-started/installing)
+ 	* [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+ 	* Make sure the `hugo` executable is in your path variable
+ 	* Run `git clone https://github.com/EdwinWenink/personal_website.git`
+ 	* Open the `personal_website` folder
+ 	* run `hugo server` in that folder
+ 	* Add your post to the `content/posts/` folder
+ 	* Preview in your browser on `http://localhost:1313/`
+- Submit your post either by mailing me or by a pull request on GitHub
+ 	* If you want to make a pull request on GitHub, send me the name of your GitHub account so that you can set up a branch
+
 - Optional: provide your GitHub account if you want to customize your personal page
 

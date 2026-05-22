@@ -8,18 +8,18 @@ series: ['Programming']
 
 See [here](/posts/53-update_kobo_annotation) for a follow-up.
 
-My personal goal for this summer break was reading more, as I really enjoy it but do not schedule enough time for it during the many hectic days throughout year. 
+My personal goal for this summer break was reading more, as I really enjoy it but do not schedule enough time for it during the many hectic days throughout year.
 I always enjoy reading a book, but somehow the threshold for doing some project behind my pc is lower than simply sitting down in a chair with a good book.
-A complication for reaching my goal was however that I would go backpacking for three weeks throughout Europe. 
-I needed to pack very lightly, and even bringing a single book would be a major compromise to that. 
+A complication for reaching my goal was however that I would go backpacking for three weeks throughout Europe.
+I needed to pack very lightly, and even bringing a single book would be a major compromise to that.
 This is where, despite being a bit of a chauvinistic philosopher that prefers the touch of "real" books, the e-reader comes into play.
 I purchased a Kobo Clara HD, and I have to say that the experience has been great.
-During my travels I finished "Crime and Punishment" from Dostojevski, read "Slaughterhouse Five" from Kurt Vonnegut, and read half of the uncomfortably thick "The Brothers Karamazov", also from Dostojevski. 
-And even now that I am home I notice how much easier it is to pick up the e-reader, compared to a book. 
+During my travels I finished "Crime and Punishment" from Dostojevski, read "Slaughterhouse Five" from Kurt Vonnegut, and read half of the uncomfortably thick "The Brothers Karamazov", also from Dostojevski.
+And even now that I am home I notice how much easier it is to pick up the e-reader, compared to a book.
 
-During reading, I made many annotations and notes on my Kobo. 
+During reading, I made many annotations and notes on my Kobo.
 Now that I am home, I was wondering how to export these notes to my pc, because that would save the trouble of manually finding back citations on the Kobo itself, which is slow, and perhaps typing them over by hand, which is even slower.
-To my surprise, there was no default exporting option for annotations. 
+To my surprise, there was no default exporting option for annotations.
 
 ## Method 1: adjusting the Kobo configuration file
 
@@ -29,7 +29,7 @@ I summarize the solution here for completeness:
 
 1. Connect your Kobo to your computer.
 2. Find and open "Kobo eReader.config" in the Kobo drive. Mine is at /.kobo/Kobo/, relative to the root of your Kobo e-reader.
-3. Add the following code, including the newline. 
+3. Add the following code, including the newline.
 This section is brand new, so it's probably easiest to just add it at the bottom of the file:
 
 ```
@@ -37,28 +37,28 @@ This section is brand new, so it's probably easiest to just add it at the bottom
 ExportHighlights=true
 ```
 
-3. Eject Kobo and boot it up. 
-4. This adds another option in the menu that is available when reading books, namely to "Export highlights" under the "Notes" tab. After entering a filename the annotations will be saved to the root directory of the Kobo.
+1. Eject Kobo and boot it up.
+2. This adds another option in the menu that is available when reading books, namely to "Export highlights" under the "Notes" tab. After entering a filename the annotations will be saved to the root directory of the Kobo.
 
-The export function produces a plain text file, starting with the title of the book, followed by a separate paragraph for each annotation. 
-Notes are displayed in a similar manner, as such: 
+The export function produces a plain text file, starting with the title of the book, followed by a separate paragraph for each annotation.
+Notes are displayed in a similar manner, as such:
 
-	The original citation goes here
-	Note: this is my smart comment 
+ The original citation goes here
+ Note: this is my smart comment 
 
 And voila!
-With this method you have fast access to all your annotations in an open text format, so you can directly use it in an editor of your choice. 
+With this method you have fast access to all your annotations in an open text format, so you can directly use it in an editor of your choice.
 
-## Method 2: customize the exporting to your own needs by parsing the annotation files 
+## Method 2: customize the exporting to your own needs by parsing the annotation files
 
-However, if for some reason you want to export your annotations in a different manner, 
+However, if for some reason you want to export your annotations in a different manner,
 then you can always find the full xhtml markup with all annotations at "/Digital Editions/Annotations/books/".
 If we inspect it, we see that the xhtml does not really contain much more relevant information than we already exported.
-Per annotation, we also have the date at which we made the annotiation, as well as some non-human-readable identifiers. 
+Per annotation, we also have the date at which we made the annotiation, as well as some non-human-readable identifiers.
 Having the date of an annotation is not essential, but if you intend to archive your notes, dates would give insight in your lecture of for example a few years back, and add some flexibility.
-One could for example later sort the notes on date to distinguish notes from a first and a second reading. 
+One could for example later sort the notes on date to distinguish notes from a first and a second reading.
 
-What I would have liked to include in my export was some more structure, for example grouping notes by chapter. 
+What I would have liked to include in my export was some more structure, for example grouping notes by chapter.
 What I also think is weird with the default export, is that the author of the book is never listed, and neither is the publisher of the book, which is handy for later reference.
 Another argument for writing our own "export function" is the possibility of immediately using a specific output format of choice.
 For example, I currently store my notes in Markdown on Github, so we could export the notes immediately using Markdown syntax.
@@ -69,7 +69,7 @@ If someone knows how to parse chapters and pagination from .annot files, please 
 ### Solution with a Python script
 
 The annotation files with the .annot extension are written in xhtml.
-For parsing xhtml we can use the lxml xml parser. 
+For parsing xhtml we can use the lxml xml parser.
 Consider this remark on [their site](https://lxml.de/parsing.html):
 
 > Note that XHTML is best parsed as XML, parsing it with the HTML parser can lead to unexpected results.
@@ -77,13 +77,13 @@ Consider this remark on [their site](https://lxml.de/parsing.html):
 I like using Python, and luckily Python has a nice package called BeautifulSoup that offers a simple interface for using the lxml parser.
 
 The Python script I wrote extracts the title, author, publisher and writes them to a file in the YAML format, which can be used within Markdown files and is supported both by Github Markdown and Pandoc Markdown (the two dialects I use).
-Pandoc's default LaTeX engine for producing pdf files actually knows how to read the YAML entries and display them as a default LaTeX titlepage, which allows you to directly create a smooth pdf without writing any LaTeX. 
+Pandoc's default LaTeX engine for producing pdf files actually knows how to read the YAML entries and display them as a default LaTeX titlepage, which allows you to directly create a smooth pdf without writing any LaTeX.
 
 The script also distinguishes between annotations and notes, and displays them differently.
 All annotations are displayed in a numbered list.
-Notes are indented as block quotes, directly below the annotation to which they belong. 
+Notes are indented as block quotes, directly below the annotation to which they belong.
 Because the list itself is also already indented, I double the indentation as such "> > ".
-In Pandoc Markdown this adds extra indentation, in Github Markdown the extra ">" does not do anything, but is also not necessary since blockquotes receive a different color on Github. 
+In Pandoc Markdown this adds extra indentation, in Github Markdown the extra ">" does not do anything, but is also not necessary since blockquotes receive a different color on Github.
 
 This is the script:
 
@@ -135,16 +135,16 @@ with open(filename + ".md", "w", encoding="utf-8") as output:
     output.writelines(export)
 ```
 
-The result looks good in plain text, on Github as well as a pdf when produced from the Markdown with pandoc. 
-Consider these extracted annotations from Emil Cioran's very gloomy youth work: 
+The result looks good in plain text, on Github as well as a pdf when produced from the Markdown with pandoc.
+Consider these extracted annotations from Emil Cioran's very gloomy youth work:
 
-### Plain text:
+### Plain text
 
 <pre>
 ---
 title: On the Heights of Despair
 author: E. M. Cioran
-publisher: 
+publisher:
 ---
 
 0. "In illness, death is always already in life. Genuine ailment links us to
@@ -158,7 +158,7 @@ the only genuine agonies are those sprung from illness. " (2019-08-26T11:46:10Z)
 6. "The vulgar interpretation of universality calls it a phenomenon of quantitative
 expansion rather than a qualitatively rich containment." (2019-08-23T10:19:09Z)
 
-7. "Each subjective existence is absolute to itself. For this reason each man lives 
+7. "Each subjective existence is absolute to itself. For this reason each man lives
 as if he were the center of the universe or the center of history. Then how could
 his suffering fail to be absolute? I cannot understand another's suffering in
 order to diminish my own. " (2019-08-24T08:21:54Z)
@@ -166,12 +166,12 @@ order to diminish my own. " (2019-08-24T08:21:54Z)
 8. "One of the greatest delusions
 of the average man is to forget that life is death's prisoner." (2019-08-26T11:38:32Z)
 
-... 
+...
 
 36. "The melancholy look is expressionless, without
 perspective. " (2019-08-31T07:28:00Z)
 
-> > De afwezige blik in het oneindige externaliseert de ruimtelijkheid 
+> > De afwezige blik in het oneindige externaliseert de ruimtelijkheid
 die volgens Cioran intern bij de melancholie hoort
 
 37. "The sharper our consciousness of the world's infinity,

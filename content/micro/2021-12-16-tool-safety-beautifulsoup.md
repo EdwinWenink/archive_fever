@@ -20,7 +20,7 @@ From [Koepsell 2010 - On Genies and Bottles: Scientists’ Moral Responsibility 
 
 > The ‘‘eventual’’ fallacy is committed by simple recourse to the truism that over an infinite time-span, all natural truths will be discovered, and all potential uses and misuses of technology will be developed, so present research on any science or application of technology is morally justified (131)
 
-With this type of reasoning *any* research can be justified. 
+With this type of reasoning *any* research can be justified.
 The response to the "eventual" fallacy is contained in the following lines from the zine:
 
 "But I chose to make this tool instead of a different tool.

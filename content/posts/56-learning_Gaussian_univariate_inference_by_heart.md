@@ -22,7 +22,7 @@ Notice that the mean update has the following shape, balancing between the prior
 
 $$\mu_{new} = \lambda \mu_{0} + (1-\lambda) \mu_{MLE}$$
 
-With 
+With
 
 $$ \lambda = \frac{\sigma^2}{N \sigma_{0}^2 + \sigma^2}$$
 
@@ -62,8 +62,8 @@ So if you want to easily remember the parameter update rules, in natural languag
 
 - The posterior precision is the prior precision plus N times the likelihood precision
 - The posterior mean is a mix between the prior mean and the mean of the observed data sample
-    * The mixing coefficient of the prior mean is the *prior precision* divided by the *posterior precision* which we called $\lambda$
-    * $(1-\lambda)$ is the mixing coefficient of the sample mean.
+  * The mixing coefficient of the prior mean is the *prior precision* divided by the *posterior precision* which we called $\lambda$
+  * $(1-\lambda)$ is the mixing coefficient of the sample mean.
 
 ## MLE for the mean
 
@@ -75,7 +75,7 @@ $$= \sum_{n=1}^N ln( \frac{1}{\sqrt{ 2\pi \sigma^2}} exp{ - \frac{(x_n - \mu)^2}
 $$= N ln( \frac{1}{\sqrt{2\pi \sigma^2}}) - \sum_{n=1}^N \frac{(x_n - \mu)^2}{2 \sigma^2}$$
 $$= -\frac{1}{2 \sigma^2} \sum_{n=1}^N (x_n - \mu)^2 - \frac{N}{2} ln(\sigma^2) - \frac{N}{2}ln(2\pi)$$
 
-The next step is to find $\mu_{ML}$ by deriving with respect to $\mu$. 
+The next step is to find $\mu_{ML}$ by deriving with respect to $\mu$.
 The derivative w.r.t. $\mu$ is:
 
 $$\frac{1}{\sigma^2} \sum_{n=1}^N (x_n - \mu)$$

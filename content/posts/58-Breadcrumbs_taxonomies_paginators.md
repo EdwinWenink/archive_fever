@@ -12,7 +12,7 @@ I have just added some new features to this website.
 
 ## Breadcrumb navigation
 
-This took a bit of puzzling. 
+This took a bit of puzzling.
 To get all the breadcrumbs, you essentially want to parse all the URL components of the current URL relate to the base domain.
 The Hugo `split` function returns an empty head and tail, which I needed to filter out.
 
@@ -41,7 +41,7 @@ As a nice twist, I therefore remove a reference from the regular menu if it is a
         {{ end }}
     {{ end }}
     | 
-	<!-- Navigation Pages -->
+ <!-- Navigation Pages -->
     {{ range .Site.Menus.main }}
         {{ if ne $url .URL }}
             <a href="{{ .URL }}">{{ .Name }}</a>&nbsp;&nbsp;
@@ -77,7 +77,7 @@ The next section shows a full example.
 ## Section index pages
 
 Having proper index pages for sections is not hard to do at all and yet, I never had them.
-This is because I did not fully understand how Hugo treats `_index.md` pages in the content organization. 
+This is because I did not fully understand how Hugo treats `_index.md` pages in the content organization.
 But once I did understand, I still didn't get them to work.
 Turns out I had `disableKinds` enabled for sections in my `config.toml`.
 I can't remember at all that I enabled this and it took way too long to figure out this prevented Hugo from generating index pages.

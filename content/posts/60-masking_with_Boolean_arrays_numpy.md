@@ -97,7 +97,7 @@ Numpy also nicely handles these operations by applying them to each array elemen
 array([2])
 ```
 
-Method 4. If you use `numpy.where` with a boolean condition, it is equivalent to using ` numpy.nonzero()`:
+Method 4. If you use `numpy.where` with a boolean condition, it is equivalent to using `numpy.nonzero()`:
 
 ```
 >>> arr[np.where(mask > 0)]
@@ -150,13 +150,13 @@ array([[nan,  2., nan],
 ```
 
 You can also provide a unidimensional mask to a multidimensional input array.
-For example, in the token classification task mentioned above, BERT will output activations or probabilities over classes for each input token. 
+For example, in the token classification task mentioned above, BERT will output activations or probabilities over classes for each input token.
 Each input sequence thus gives an output with shape `(n_tokens, n_classes)`.
 If you do batch processing, many of these tokens will be `[PAD]`, i.e. we want to mask on the first "token" dimension.
 The attention mask in this case will have shape `(n_tokens,)`.
 Let's say we have a short sentence with only two tokens, for which we predict fictitious activations over three output classes.
 The first token is actual text, the second token is padding.
-We can remove the padding tokens as follows: 
+We can remove the padding tokens as follows:
 
 ```
 >>> a = np.array( [ [2,3,4], [5,6,7] ] )

@@ -7,4 +7,4 @@ type: micro
 bookmark: true
 ---
 I do pretty OK on many of these points: 3,4,5,6,7,9,12.
-What I can do better on: 2,13. 
+What I can do better on: 2,13.
