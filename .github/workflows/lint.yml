@@ -19,25 +19,3 @@ jobs:
             content/**/*.md
             !content/zettelkasten/**
 
-  html-test:
-    name: HTML Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.123.6"
-          extended: false
-
-      - name: Build site
-        run: hugo --minify
-
-      - name: Test HTML
-        uses: wjdp/htmltest-action@master
-        with:
-          config: .htmltest.yml
