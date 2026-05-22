@@ -20,9 +20,9 @@
 	<meta name="og:type" content="article">
 	<!-- Open Graph - Article -->
 	<meta name="article:tag" content="{{ range .Params.tags }}{{.}} {{end}}">
-	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style{{ $.Site.Params.style }}.css">
-	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ .Site.BaseURL }}css/dark.css">
-	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/utilities.css">
+	<link rel="stylesheet" type="text/css" href="{{ "css/style" | relURL }}{{ $.Site.Params.style }}.css">
+	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ "css/dark.css" | relURL }}">
+	<link rel="stylesheet" type="text/css" href="{{ "css/utilities.css" | relURL }}">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
