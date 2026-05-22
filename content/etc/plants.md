@@ -149,7 +149,7 @@ The end result: 462 grams of very tasty cherry tomatoes.
 
 # No longer with me
 
-<pre>
+```text
                                   _  /)
                                  mo / )
                                  |/)\)
@@ -172,7 +172,7 @@ The end result: 462 grams of very tasty cherry tomatoes.
                       |                          ||
                       |                          ||
                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-</pre>
+```
 
 As you can see most of these plants are succulents, which are supposed to be easy, but aren't for me.
 I have mediocre light conditions with a northern / slightly eastern window.

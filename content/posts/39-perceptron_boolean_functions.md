@@ -8,12 +8,12 @@ tags: [perceptron, boolean, math]
 Matt Might wrote [6 blog tips for busy academics](http://matt.might.net/articles/how-to-blog-as-an-academic/), and I am intending on following all tips.
 This post follows two tips specifically.
 
-> Tip 2: "Reply to public" as post<br>
-<br>
->  Many of the academics that "don't have time to blog" seem to have plenty of time to write detailed, well-structured replies and flames over email.<br>
-<br>
-> Before pressing send, ask yourself, should this answer be, "Reply," "Reply to all," or "Reply to public"?<br>
-<br>
+> Tip 2: "Reply to public" as post
+>
+>  Many of the academics that "don't have time to blog" seem to have plenty of time to write detailed, well-structured replies and flames over email.
+>
+> Before pressing send, ask yourself, should this answer be, "Reply," "Reply to all," or "Reply to public"?
+>
 > If you put effort into the reply, don't waste it on a lucky few. Share it.
 
 And also a part of tip 3:

@@ -140,7 +140,7 @@ Consider these extracted annotations from Emil Cioran's very gloomy youth work:
 
 ### Plain text
 
-<pre>
+```text
 ---
 title: On the Heights of Despair
 author: E. M. Cioran
@@ -176,8 +176,7 @@ die volgens Cioran intern bij de melancholie hoort
 
 37. "The sharper our consciousness of the world's infinity,
 the more acute our awareness of our own finitude" (2019-08-31T07:29:48Z)
-
-</pre>
+```
 
 ### Github
 
