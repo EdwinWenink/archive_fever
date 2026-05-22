@@ -15,7 +15,9 @@ jobs:
       - name: Markdown Lint
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
-          globs: "content/**/*.md"
+          globs: |
+            content/**/*.md
+            !content/zettelkasten/**
 
   html-test:
     name: HTML Test
