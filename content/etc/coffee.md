@@ -21,7 +21,7 @@ I have a few ways to make coffee at home:
 
 
 - Simple filter coffee machine
- 	* My first machine got so hot it burns the coffee and made my coffee pot explode
+  * My first machine got so hot it burns the coffee and made my coffee pot explode
 - Bodum pour over coffee
 - Mokka Express (3 persons)
 - Old Krups Espresso machine

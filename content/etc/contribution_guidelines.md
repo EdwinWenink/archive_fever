@@ -17,15 +17,15 @@ Copyright etc. remains with the author and it's perfectly fine if posts are also
 - Tutorial on how to solve a practical problem
 - Critically reflect on a book or cultural phenomenon
 - Spark an *informed* discussion
- 	* N.B. this website is primarily written from an "intellectual" perspective rather than a political one.
- 	* N.B. N.B. that does not exclude political topics necessarily, but requires a critical rather than an ideological perspective.
+  * N.B. this website is primarily written from an "intellectual" perspective rather than a political one.
+  * N.B. N.B. that does not exclude political topics necessarily, but requires a critical rather than an ideological perspective.
 
 ## Reasons to contribute a post
 
 - Egoistic reasons: promote your ideas, build a portfolio, reach more people
- 	* Getting your work published on someone else's site means that at least one person thought it was worthwhile.
+  * Getting your work published on someone else's site means that at least one person thought it was worthwhile.
 - More idealistic: if you have spent time anyway on solving some problem or working out some idea, it could be interesting and useful for others.
- 	* Chances are that you regularly use insightful writings of others on the internet. Give something back!
+  * Chances are that you regularly use insightful writings of others on the internet. Give something back!
 
 - Pragmatic: Seek interaction and feedback on ideas in development
 - You like my site and the ideas behind it
@@ -90,10 +90,10 @@ The length of a post should be justified by its topic (for example its complexit
 So far I find that the longer posts I wrote are long because they ...
 
 - ... have a more academic style and structure, i.e. that of a paper/article or academic book review
- 	* Require table of content
- 	* Require references
- 	* Headers and subheaders
- 	* More classical structure, e.g. introduction, body, conclusion
+  * Require table of content
+  * Require references
+  * Headers and subheaders
+  * More classical structure, e.g. introduction, body, conclusion
 
 Examples:
 
@@ -104,7 +104,8 @@ Examples:
 
 [-](-.md) ... explain not a single idea but a project
  *larger size results from explaining and contextualizing various separate steps
- * as well as from providing code blocks
+
+- as well as from providing code blocks
 
 Examples:
 
@@ -132,18 +133,18 @@ This [index note pointing to writing principles](/zettelkasten/index_writing_pri
 ## Formal details for submission
 
 - Ideally submissions are written in Markdown, otherwise I have to convert them
- 	* Markdown is EZ, have a look at the [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  * Markdown is EZ, have a look at the [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - The static website is deployed using [Hugo](https://gohugo.io/). If you want to preview the website with your post locally, perform the following steps
- 	* [Install Hugo](https://gohugo.io/getting-started/installing)
- 	* [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
- 	* Make sure the `hugo` executable is in your path variable
- 	* Run `git clone https://github.com/EdwinWenink/personal_website.git`
- 	* Open the `personal_website` folder
- 	* run `hugo server` in that folder
- 	* Add your post to the `content/posts/` folder
- 	* Preview in your browser on `http://localhost:1313/`
+  * [Install Hugo](https://gohugo.io/getting-started/installing)
+  * [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+  * Make sure the `hugo` executable is in your path variable
+  * Run `git clone https://github.com/EdwinWenink/personal_website.git`
+  * Open the `personal_website` folder
+  * run `hugo server` in that folder
+  * Add your post to the `content/posts/` folder
+  * Preview in your browser on `http://localhost:1313/`
 - Submit your post either by mailing me or by a pull request on GitHub
- 	* If you want to make a pull request on GitHub, send me the name of your GitHub account so that you can set up a branch
+  * If you want to make a pull request on GitHub, send me the name of your GitHub account so that you can set up a branch
 
 - Optional: provide your GitHub account if you want to customize your personal page
 

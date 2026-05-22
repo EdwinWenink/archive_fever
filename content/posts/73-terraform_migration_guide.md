@@ -56,6 +56,7 @@ Module A and B each have their own backend and Terraform state.
 2. Record this removal with a `removed` block (available since Terraform 1.7+ )
 
 - Prior to Terraform 1.7, this requires you to manually run `terraform state rm`
+
 1. Include the resource in the IaC of module B
 2. Record an `import` block that maps the existing resource to the new location
 block that maps the existing resource to the new location

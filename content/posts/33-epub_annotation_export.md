@@ -44,7 +44,7 @@ The export function produces a plain text file, starting with the title of the b
 Notes are displayed in a similar manner, as such:
 
  The original citation goes here
- Note: this is my smart comment 
+ Note: this is my smart comment
 
 And voila!
 With this method you have fast access to all your annotations in an open text format, so you can directly use it in an editor of your choice.

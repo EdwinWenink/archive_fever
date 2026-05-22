@@ -423,9 +423,9 @@ I'm interested in getting tips from you, especially about a potential implementa
 This is my current TODO list:
 
 - Design a tagging system and related search functions
- 	* [UPDATE 19/12/2019: see this post]( /posts/43-notes_tagging  )
+  * [UPDATE 19/12/2019: see this post]( /posts/43-notes_tagging  )
 - Think more about the best file naming convention
- 	* e.g. use timestaming and write a function to search timeframes
+  * e.g. use timestaming and write a function to search timeframes
 - Write a function for quickly adding a new note
 
 - Think more about my folder organization
