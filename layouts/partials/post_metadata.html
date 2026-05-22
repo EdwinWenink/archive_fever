@@ -10,7 +10,13 @@
         {{ .Params.date }}
       {{ end  }}
       {{ if .Params.author }}
-          by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{urlize .Params.author}} ">{{ .Params.author }}</a>
+          by {{ if reflect.IsSlice .Params.author }}
+            {{ range $index, $author := .Params.author }}
+              {{ if $index }}, {{ end }}<a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}author/{{ urlize $author }}">{{ $author }}</a>
+            {{ end }}
+          {{ else }}
+            <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}author/{{ urlize .Params.author }}">{{ .Params.author }}</a>
+          {{ end }}
       {{ else }}
           by <a rel="author" class="p-author h-card" href="{{ .Site.BaseURL }}~ejw">Edwin Wenink</a>
       {{ end }}
