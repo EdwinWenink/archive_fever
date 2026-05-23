@@ -1,6 +1,6 @@
 <div>
 {{ $all_comments := newScratch }}
-{{ range $commented_posts := $.Site.Data.comments }}
+{{ range $commented_posts := hugo.Data.comments }}
 	{{ range . }}
 		{{ $all_comments.Add "comments" (slice . ) }}
 	{{ end}}
