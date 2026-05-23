@@ -4,8 +4,6 @@
 <div class="content">
     <h1>{{ .Title }}</h1>
 
-    <p><a href="{{ .Parent.Permalink }}">← Back to Gallery</a></p>
-
     {{ with .Resources.GetMatch "featured.*" }}
         {{ $original := . }}
         {{ $image := .Fit "1600x1600 q85" }}
