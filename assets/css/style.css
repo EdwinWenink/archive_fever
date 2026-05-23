@@ -1,12 +1,12 @@
 /* System fonts only - no external requests */
 
-/* TODO convert all color styling to use these variables for consistency */
+/* CSS variables for consistent styling */
 :root {
   --headerhighlight: red;
   --hovercolor: yellow;
-  --bordercolor: rgb(255, 0, 0, 0.8);
-  --borderwidth: 3px;
-  --borderstyle: dotted;
+  --bordercolor: black;
+  --borderwidth: 2px;
+  --borderstyle: solid;
   --customgray: #667;
 }
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 h2 {
-  border-bottom: 2px solid black;
+  border-bottom: var(--borderwidth) var(--borderstyle) var(--bordercolor);
   padding-bottom: 0.3em;
   margin-bottom: 0.4em;
   margin-left: 0;
@@ -140,14 +140,14 @@ h1.remove-frame::before {
   content: "┌─[ TABLE OF CONTENTS ]─┐";
   display: block;
   margin-bottom: 0.5em;
-  color: black;
+  color: var(--bordercolor);
 }
 
 #toc::after {
   content: "└─[ TABLE OF CONTENTS ]─┘";
   display: block;
   margin-top: 0.5em;
-  color: black;
+  color: var(--bordercolor);
 }
 
 #TableOfContents {
@@ -815,7 +815,7 @@ code {
 }
 
 pre {
-  border: 2px solid black;
+  border: var(--borderwidth) var(--borderstyle) var(--bordercolor);
   padding: 1em;
   padding-left: 3em;
   background-color: #f5f5f5 !important;
@@ -831,7 +831,7 @@ pre::before {
   left: 1em;
   top: 1em;
   font-weight: bold;
-  color: red;
+  color: var(--headerhighlight);
 }
 
 pre code {
@@ -872,14 +872,14 @@ blockquote::before {
   content: "┌─ QUOTE ─┐";
   display: block;
   margin-bottom: 0.5em;
-  color: black;
+  color: var(--bordercolor);
 }
 
 blockquote::after {
   content: "└───────┘";
   display: block;
   margin-top: 0.5em;
-  color: black;
+  color: var(--bordercolor);
 }
 
 blockquote p {
