@@ -20,9 +20,17 @@
 	<meta name="og:type" content="article">
 	<!-- Open Graph - Article -->
 	<meta name="article:tag" content="{{ range .Params.tags }}{{.}} {{end}}">
-	<link rel="stylesheet" type="text/css" href="{{ "css/style" | relURL }}{{ $.Site.Params.style }}.css">
-	<link rel="alternate stylesheet" type="text/css" title="Dark theme" href="{{ "css/dark.css" | relURL }}">
-	<link rel="stylesheet" type="text/css" href="{{ "css/utilities.css" | relURL }}">
+
+	<!-- CSS via Hugo Pipes: minified + fingerprinted for cache busting -->
+	{{ $styleName := printf "css/style%s.css" (default "" $.Site.Params.style) }}
+	{{ $mainStyle := resources.Get $styleName | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $mainStyle.Permalink }}" integrity="{{ $mainStyle.Data.Integrity }}" crossorigin="anonymous">
+
+	{{ $darkStyle := resources.Get "css/dark.css" | minify | fingerprint }}
+	<link rel="alternate stylesheet" title="Dark theme" href="{{ $darkStyle.Permalink }}" integrity="{{ $darkStyle.Data.Integrity }}" crossorigin="anonymous">
+
+	{{ $utilities := resources.Get "css/utilities.css" | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $utilities.Permalink }}" integrity="{{ $utilities.Data.Integrity }}" crossorigin="anonymous">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

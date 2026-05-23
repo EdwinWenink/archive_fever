@@ -3,3 +3,8 @@ hugo.exe
 public/
 resources/
 .hugo_build.lock
+
+# Local config with secrets (never commit this!)
+config.local.toml
+.env
+.env.local
