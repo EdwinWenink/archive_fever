@@ -2,13 +2,13 @@
 
 <div class="content">
 
-{{ partial "title.html" . }}
+{{ partial "content/title.html" . }}
 
 {{ $preview_n := 15 }}
 {{ range $index, $value := first $preview_n .Data.Pages }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}}
-		{{ partial "tag-list.html" . }}
+		{{ partial "content/tag-list.html" . }}
 	</aside>
 	<!--<div class="unfold"> Use this class to unfold summary on hover-->
 	<a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -27,13 +27,13 @@
 <p> See <a href="{{ .Site.BaseURL }}/archives"> archives</a> for more ... </p>
 </div>
 
-<!-- {{ partial "latest_comments.html" . }} -->
+<!-- {{ partial "comments/latest_comments.html" . }} -->
 
-<!-- {{ partial "tags.html" . }} -->
+<!-- {{ partial "content/tags.html" . }} -->
 
-<!-- {{ partial "micro_preview.html" . }} -->
+<!-- {{ partial "content/micro_preview.html" . }} -->
 
-{{ partial "webring.html" . }}
+{{ partial "footer/webring.html" . }}
 
 </div>
 

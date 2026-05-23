@@ -1,0 +1,48 @@
+<!-- source: https://www.control-alt-del.org/posts/building-an-image-gallery-for-hugo/ -->
+<!-- Some adjustments to original script made -->
+<!-- For further inspiration: https://github.com/mfg92/hugo-shortcode-gallery/blob/master/layouts/shortcodes/gallery.html -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.0/jquery.fancybox.min.css" />
+
+<style>
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+div.gallery a {
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 10px;
+    display: flex;
+}
+
+div.gallery a img {
+    height: 200px;
+    object-fit: cover;
+    flex-grow: 1;
+}
+</style>
+
+<div class="gallery">
+
+{{ $currentPage := . }}
+
+<!-- Sort by .Name, value -->
+
+{{ $dir := string (.Get "gallery_dir") }}
+
+{{ $path := printf "%s/*" $dir }}
+{{ $images := resources.Match $path }}
+
+{{ range $images }}
+
+    {{- $isimg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}
+
+    {{- if $isimg -}}
+    <a data-fancybox="gallery" href="{{ .Permalink }}">
+        <img src="{{ .Permalink }}"><br/>
+    </a>
+    {{- end -}}
+
+{{ end }}

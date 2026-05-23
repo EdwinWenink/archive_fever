@@ -22,10 +22,10 @@
         {{ range .Pages }}
 		  <p>
 		  <aside> {{ .Date.Format "January 2" }}
-			{{ partial "tag-list.html" . }}
+			{{ partial "content/tag-list.html" . }}
 		  </aside>
           <a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
-          {{ partial "collab.html" . }}
+          {{ partial "misc/collab.html" . }}
 		  </p>
         {{ end }}
       </ul>

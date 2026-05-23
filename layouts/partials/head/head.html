@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- COMMON TAGS -->
 	<title>{{ .Title }}</title>
-	{{ $metaImage := partial "meta-image.html" . }}
+	{{ $metaImage := partial "head/meta-image.html" . }}
 	<!-- Search Engine -->
 	<meta name="description" content="{{ .Description }}">
 	<meta name="image" content="{{ $metaImage }}">

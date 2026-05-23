@@ -82,9 +82,9 @@
 
   <hr>
 
-  {{ partial "post_metadata.html" . }}
+  {{ partial "content/post_metadata.html" . }}
 
-  {{ partial "link_posts.html" . }}
+  {{ partial "content/link_posts.html" . }}
 
 </div>
 
@@ -92,12 +92,12 @@
   <p><small><em>Written on {{ .Date.Format "January 2, 2006"}} </em></small></p>
 {{ end }} -->
 
-{{ partial "webmentions.html" . }}
+{{ partial "comments/webmentions.html" . }}
 
-<!-- {{ partial "post-comments" . }} -->
+<!-- {{ partial "comments/post-comments" . }} -->
 
-<!--{{ partial "contribute-post" . }}-->
+<!--{{ partial "comments/contribute-post" . }}-->
 
-{{ partial "footer.html" . }}
+{{ partial "footer/footer.html" . }}
 
 {{ end }}
