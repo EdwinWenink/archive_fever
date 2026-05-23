@@ -20,7 +20,7 @@
 	<a class="btn-info" href="#comment-form" onclick="changeValue('fields[reply_to]', '{{ ._id }}')"> Reply to {{ .name }}</a>
 				</div>
 				</div>
-				{{ partial "comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" hugo.Data.comments "parentId" ._id "parentName" .name "context" .) }}
+				{{ partial "comments/comment-replies" (dict "entryId_parent" $postId "SiteDataComments_parent" hugo.Data.comments "parentId" ._id "parentName" .name "context" .) }}
 			{{ end }}
 	{{ end }}
 

@@ -16,11 +16,11 @@ Edwin Wenink by <a href="https://www.ritsjoosten.nl">Rits Joosten </a>
         {{ if lt $counter $preview_n }}
 	<p>
 	<aside>{{ .Date.Format "January 2, 2006"}}
-		{{ partial "tag-list.html" . }}
+		{{ partial "content/tag-list.html" . }}
 	</aside>
 	<!--<div class="unfold"> Use this class to unfold summary on hover-->
 	<a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ partial "collab.html" . }}
+    {{ partial "misc/collab.html" . }}
 	{{ if .Draft }} <span class="unpublished-label">(unpublished)</span>
 	{{ end }}
 	</p>

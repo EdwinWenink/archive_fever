@@ -22,7 +22,7 @@
 	  {{ if and (eq .Type "posts") ( or (in .Params.author $guest) (in .Params.authors $guest)) }}
 		<p>
 		<aside>{{ .Date.Format "January 2, 2006"}}
-			{{ partial "tag-list.html" . }}
+			{{ partial "content/tag-list.html" . }}
 		</aside>
 		
 		<a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} <span class="unpublished-label">(unpublished)</span>{{ end }}</p>
