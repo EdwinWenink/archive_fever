@@ -1,0 +1,40 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<div class="content">
+    <h1>{{ .Title }}</h1>
+
+    <p><a href="{{ .Parent.Permalink }}">← Back to Gallery</a></p>
+
+    {{ with .Resources.GetMatch "featured.*" }}
+        {{ $original := . }}
+        {{ $image := .Fit "1600x1600 q85" }}
+        {{ $large := .Resize "1200x q90" }}
+        {{ $medium := .Resize "800x q85" }}
+
+        <figure style="text-align: center; margin: 2rem 0;">
+            <a href="{{ $original.Permalink }}" target="_blank" title="View full size image">
+                <picture>
+                    <source srcset="{{ $large.Permalink }}" media="(min-width: 1200px)">
+                    <source srcset="{{ $medium.Permalink }}" media="(min-width: 800px)">
+                    <img src="{{ $image.Permalink }}"
+                         alt="{{ $.Title }}"
+                         style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer;"
+                         loading="lazy">
+                </picture>
+            </a>
+            <figcaption style="margin-top: 1rem; color: #666;">
+                {{ $.Title }} - {{ $.Date.Format "January 2, 2006" }}
+                <br><small>Click image to view full size</small>
+            </figcaption>
+        </figure>
+    {{ end }}
+
+    {{ .Content }}
+
+    <p style="margin-top: 2rem;">
+        <a href="{{ .Parent.Permalink }}">← Back to Gallery</a>
+    </p>
+</div>
+
+{{ partial "footer.html" . }}

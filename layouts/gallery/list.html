@@ -1,0 +1,63 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<div class="content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-title {
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            text-align: center;
+            background: rgba(0,0,0,0.05);
+        }
+    </style>
+
+    <div class="gallery-grid">
+        {{ range .Pages }}
+            {{ $page := . }}
+            {{ with .Resources.GetMatch "featured.*" }}
+                {{ $thumb := .Fill "500x500 q75" }}
+                {{ $full := .Fit "1600x1600 q85" }}
+
+                <div class="gallery-item">
+                    <a href="{{ $page.Permalink }}">
+                        <img src="{{ $thumb.Permalink }}"
+                             alt="{{ $page.Title }}"
+                             width="{{ $thumb.Width }}"
+                             height="{{ $thumb.Height }}"
+                             loading="lazy"
+                             decoding="async">
+                        <div class="gallery-item-title">{{ $page.Title }}</div>
+                    </a>
+                </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
