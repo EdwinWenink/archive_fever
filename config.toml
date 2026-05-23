@@ -19,9 +19,13 @@ paginate = 5
       unsafe = true
 
 [params]
-	recaptcha_sitekey = "6LeIcYQUAAAAAEmaP89swNtAL90F0KwpsCyX-l7i"
-	staticman_api = "http://77.249.145.182:1234/v2/entry/EdwinWenink/personal_website/master/comments"
     github = "https://github.com/EdwinWenink/personal_website/"
+    # Security: recaptcha_sitekey and staticman_api are now loaded from environment variables
+    # See config.local.toml.example for local development setup
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^RECAPTCHA_SITEKEY$', '^STATICMAN_API$']
 
 [menu]
 [[menu.main]]

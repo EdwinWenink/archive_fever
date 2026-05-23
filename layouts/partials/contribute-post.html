@@ -2,7 +2,7 @@
 <br>
 <h2> Leave a comment </h2>
 
-<form class="post-new-comment" id="comment-form" method="POST" action="{{ .Site.Params.staticman_api }}">
+<form class="post-new-comment" id="comment-form" method="POST" action="{{ getenv "STATICMAN_API" | default .Site.Params.staticman_api }}">
   <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#post-submitted">
   <input type="hidden" name="option[redirectError]" value="{{ .Permalink }}#post-error">
   <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name"> 
@@ -13,7 +13,7 @@
   <input name="options[slug]" type="hidden" value="{{ .File.BaseFileName }}">
   <textarea name="fields[body]" class="post-comment-field" placeholder="24-08-2021 CURRENTLY OFFLINE, SUFFERED HARDWARE FAILURE AND DIDN'T FIX IT YET - Write your message here. Feel free to use markdown.
 N.B. the comments are processed by a raspberry pi from my home. If the connection is gone, please send me an email." rows="10"></textarea>
-	<div class="g-recaptcha" data-sitekey="{{ .Site.Params.recaptcha_sitekey }}" data-callback="enableBtn"></div>
+	<div class="g-recaptcha" data-sitekey="{{ getenv "RECAPTCHA_SITEKEY" | default .Site.Params.recaptcha_sitekey }}" data-callback="enableBtn"></div>
 	<input type="submit" class="post-comment-field btn" value="Submit" id="submit_button">
 </form>
 
