@@ -28,16 +28,6 @@ li p {
   margin-bottom: 10px;
 }
 
-/* Optimal line length for readability */
-.content,
-article,
-main {
-  max-width: 75ch;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1em;
-}
-
 h1,
 h2,
 h3,
