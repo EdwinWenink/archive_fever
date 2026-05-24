@@ -8,9 +8,11 @@ tags: ['now']
 
 <div style="text-align:center;">
 
-🏠 [Nijmegen, the Netherlands](https://goo.gl/maps/VpTtZ7fhVdTez5pH8)
+🏠 Moved from Nijmegen to [Westervoort, the Netherlands](https://maps.app.goo.gl/RrodQRUHvtemymMV6).
 
-💼 Working as a <s>data scientist</s> machine learning engineer @NS, building Generative AI solutions with a focus on privacy and retrieval augmented generation.
+👪 Father of two daughters, born in 2025 and 2026. BUSY!
+
+💼 Working an AI engineer @NS, building Generative AI solutions on enterprise scale with a focus on privacy and retrieval augmented generation.
 
 📖 Currently interested in MLOps, Generative AI, and API design.
 
