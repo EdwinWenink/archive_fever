@@ -10,7 +10,7 @@ I recently updated my desktop to a nicer machine with a RTX 3080 and 64GB RAM.
 
 The ThinkPad T420 is loved for being a laptop with a good keyboard.
 On my desktop, I used a tenkeyless Leopold FC 660M keyboard with blue cherry switches, alongside a cheap Verto Ergonomic mouse from Trust.
-Unfortunately, I spilled [coffee](/etc/coffee) on it so a few keys don't work anymore.
+Unfortunately, I spilled coffee on it so a few keys don't work anymore.
 For daily use, I now enjoy a Mistel MD770 split mechanical keyboard with Brown Cherry switches.
 
 On Arch Linux, I used [i3wm](https://i3wm.org/) for several years, but a while back I switched to [dwm](https://dwm.suckless.org/) and I like how simple and fast it is.
