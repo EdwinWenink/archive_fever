@@ -4,63 +4,79 @@ const username = 'EdwinW';
 const user = '&user='+username
 const key = '&api_key='+api_key
 
-$(document).ready(function()  {
+document.addEventListener('DOMContentLoaded', function()  {
   const base_url = url_base+'method=user.getrecenttracks&user='+username+'&api_key='+api_key+'&limit=1&format=json';
-  $.getJSON(base_url, function(data){
-    if(jQuery.type(data.recenttracks.track) === 'array') {
-      var mostRecent = data.recenttracks.track[0];
-    }
-    else {
-      var mostRecent = data.recenttracks.track;
-    }
-    try {
-      // When not playing anything, this attribute is not set to false but is absent altogether 
-      mostRecent["@attr"]["nowplaying"];
-      var listening_text = 'I am currently listening to ';
-    } catch (error) {
-      var listening_text = 'Last listened to ';
-    }
-    var currentTrack = '"'+mostRecent['name'] + '" by ' + mostRecent['artist']['#text'];
-    $('#now_playing').html("<a href="+mostRecent['url']+">" + listening_text + currentTrack + "</a>");
-    try {
-      // 0, 1, 2, 3 are image sizes
-      $('#now_playing_img').html('<img src='+mostRecent['image']['2']['#text']+'/>');
-    } catch (error) {
-      console.log(error)
-    }
-  });
+  fetch(base_url)
+    .then(response => response.json())
+    .then(function(data){
+      const mostRecent = Array.isArray(data.recenttracks.track)
+        ? data.recenttracks.track[0]
+        : data.recenttracks.track;
+
+      const listening_text = mostRecent["@attr"]?.nowplaying
+        ? 'I am currently listening to '
+        : 'Last listened to ';
+
+      const currentTrack = '"'+mostRecent['name'] + '" by ' + mostRecent['artist']['#text'];
+      const nowPlayingEl = document.getElementById('now_playing');
+      if (nowPlayingEl) {
+        nowPlayingEl.innerHTML = "<a href="+mostRecent['url']+">" + listening_text + currentTrack + "</a>";
+      }
+
+      try {
+        const nowPlayingImgEl = document.getElementById('now_playing_img');
+        if (nowPlayingImgEl && mostRecent['image']?.[2]?.['#text']) {
+          nowPlayingImgEl.innerHTML = '<img src='+mostRecent['image']['2']['#text']+'/>';
+        }
+      } catch (error) {
+        console.log(error)
+      }
+    })
+    .catch(error => console.error('Error fetching recent tracks:', error));
 });
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
 	const method = 'method=user.gettopartists'
 	const limit = 20
 	const meta = '&limit='+limit+'&format=json'
 	const url = url_base+method+user+key+meta
 	console.log(url);
-	$.getJSON(url, function(data) {
-		$.each(data.topartists.artist, function(i, artist) {
-			var row = "<tr>" + "<td>" + "<a href="+artist.url+">"+artist.name+"</a>" + "</td>" + "<td>" + artist.playcount +"</td>" + "</tr>";
-			$(row).appendTo("#artists tbody");
-		});
-	});
+
+	fetch(url)
+	  .then(response => response.json())
+	  .then(function(data) {
+	    const artistsTableBody = document.querySelector("#artists tbody");
+	    if (artistsTableBody) {
+	      data.topartists.artist.forEach(function(artist) {
+	        const row = "<tr>" + "<td>" + "<a href="+artist.url+">"+artist.name+"</a>" + "</td>" + "<td>" + artist.playcount +"</td>" + "</tr>";
+	        artistsTableBody.insertAdjacentHTML('beforeend', row);
+	      });
+	    }
+	  })
+	  .catch(error => console.error('Error fetching top artists:', error));
 });
 
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
 	const method = 'method=user.getweeklyartistchart'
-	const limit = 5 
+	const limit = 5
 	const meta = '&format=json'
 	const url = url_base+method+user+key+meta
 	console.log(url);
 
-	$.getJSON(url, function(data) {
-			var artists = ""
-		$.each(data.weeklyartistchart.artist, function(i, artist) {
-			if (i < limit) {
-				var row = "<tr>" + "<td>" + "<a href="+artist.url+">"+artist.name+"</a>" + "</td>" + "<td>" + artist.playcount +"</td>" + "</tr>";
-				$(row).appendTo("#weekly_artists tbody");
-			}
-		});
-	});
+	fetch(url)
+	  .then(response => response.json())
+	  .then(function(data) {
+	    const weeklyArtistsTableBody = document.querySelector("#weekly_artists tbody");
+	    if (weeklyArtistsTableBody) {
+	      data.weeklyartistchart.artist.forEach(function(artist, i) {
+	        if (i < limit) {
+	          const row = "<tr>" + "<td>" + "<a href="+artist.url+">"+artist.name+"</a>" + "</td>" + "<td>" + artist.playcount +"</td>" + "</tr>";
+	          weeklyArtistsTableBody.insertAdjacentHTML('beforeend', row);
+	        }
+	      });
+	    }
+	  })
+	  .catch(error => console.error('Error fetching weekly artists:', error));
 });
 
 /*
