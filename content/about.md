@@ -7,6 +7,10 @@ tags: ['about']
 
 [Short version](/images/deathgeneratormbtt.png)
 
+This is a hacker blog meets digital garden.
+
+But what's... archive fever?
+
 This weblog is a mnemonic device.
 Over the years <a href="/~ejw">I</a> have occupied myself with studying such [diverse topics]({{<baseurl>}}etc/courses), only to realize that I can barely recollect half of it.
 Now I suffer from the nostalgic desire to retrieve what is forgotten and to build a grand archive to preserve everything, such that it will not meet the same fate.
