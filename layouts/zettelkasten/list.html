@@ -1,18 +1,110 @@
 {{ define "main" }}
-  <div>
-  <h1>{{ .Title }}</h1>
+  {{ $zettelStyle := resources.Get "css/zettelkasten-nav.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $zettelStyle.Permalink }}" integrity="{{ $zettelStyle.Data.Integrity }}" crossorigin="anonymous">
 
+  <div>
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
 
-    <p>{{ len .Pages }} entries:</p>
-    <div class="zettel-hidden">
-    <div style="display: inline-block; font-size:13pt; max-width: 100%;
-        word-wrap: break-word; word-break: break-all; line-height: 1.5em;">
-    {{ range .Pages }}
-        <a href="{{ .Page.Permalink }}" class="zettel-tag">{{ trim (.Page.File.BaseFileName | humanize | lower) "1234567890" }}</a>
-    {{ end}}
+    <!-- Navigation Panel -->
+    <div class="zettel-nav-panel">
+      <!-- Search Bar -->
+      <div class="zettel-search-container">
+        <input
+          type="text"
+          id="zettelSearch"
+          placeholder="Search notes by title or filename..."
+          aria-label="Search Zettelkasten notes"
+        />
+        <button id="clearSearch" aria-label="Clear search">✕</button>
+      </div>
+
+      <!-- Control Bar -->
+      <div class="zettel-controls">
+        <div class="zettel-controls-left">
+          <button id="randomNote" aria-label="Random note">🎲 Random</button>
+          <div class="zettel-sort">
+            <label for="sortSelect">Sort:</label>
+            <select id="sortSelect" aria-label="Sort notes">
+              <option value="alpha">A-Z</option>
+              <option value="date-new">Newest First</option>
+              <option value="date-old">Oldest First</option>
+            </select>
+          </div>
+        </div>
+        <div class="zettel-controls-right">
+          <div class="zettel-view-toggle">
+            <button id="listView" aria-label="List view">☰</button>
+            <button id="gridView" class="active" aria-label="Grid view">▦</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alphabet Navigation -->
+      <div class="zettel-alphabet">
+        {{ range $letter := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z" "#") }}
+          <button class="alpha-btn" data-letter="{{ $letter }}">{{ $letter }}</button>
+        {{ end }}
+      </div>
+
+      <!-- Count -->
+      <div class="zettel-count">
+        <span id="visibleCount">{{ len .Pages }}</span> of {{ len .Pages }} entries
+      </div>
     </div>
+
+    <!-- Notes List/Grid -->
+    <div id="zettelContainer" class="zettel-grid">
+      {{ range .Pages }}
+        {{ $filename := .File.BaseFileName }}
+        {{ $filenameClean := trim ($filename | humanize | lower) "1234567890" }}
+
+        {{/* Try to extract H1 title from raw content */}}
+        {{ $title := "" }}
+        {{ with .RawContent }}
+          {{ $lines := split . "\n" }}
+          {{ range $lines }}
+            {{ if hasPrefix . "# " }}
+              {{ $title = trim . "# " }}
+              {{ break }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Fallback to cleaned filename if no H1 found */}}
+        {{ if not $title }}
+          {{ $title = $filenameClean }}
+        {{ end }}
+
+        {{/* Extract date prefix if exists */}}
+        {{ $datePrefix := "" }}
+        {{ $sortLetter := substr ($title | upper) 0 1 }}
+        {{ if in "0123456789" (substr $filename 0 1) }}
+          {{ $datePrefix = substr $filename 0 12 }}
+          {{ $sortLetter = "#" }}
+        {{ end }}
+
+        <div class="zettel-item"
+             data-title="{{ $title | lower }}"
+             data-filename="{{ $filename | lower }}"
+             data-sort-letter="{{ $sortLetter }}"
+             data-date="{{ $datePrefix }}"
+             data-modified="{{ .Lastmod.Format "20060102" }}"
+             data-url="{{ .Permalink }}">
+          <a href="{{ .Permalink }}" class="zettel-link">
+            <div class="zettel-title">{{ $title }}</div>
+            <div class="zettel-meta">
+              <span class="zettel-filename">{{ $filename }}</span>
+              {{ if $datePrefix }}
+                <span class="zettel-date">{{ $datePrefix }}</span>
+              {{ end }}
+            </div>
+          </a>
+        </div>
+      {{ end }}
     </div>
 
   </div>
+
+  <script src="/scripts/zettelkasten-nav.js"></script>
 {{ end }}

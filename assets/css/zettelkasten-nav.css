@@ -1,0 +1,266 @@
+/* Zettelkasten Navigation Styles */
+
+.zettel-nav-panel {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
+  background: #f9f9f9;
+}
+
+/* Search Container */
+.zettel-search-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#zettelSearch {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: monospace;
+  font-size: 16px;
+  border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
+  background: white !important;
+  color: black;
+  box-sizing: border-box;
+}
+
+#zettelSearch:focus {
+  outline: none;
+  border-color: var(--headerhighlight, red);
+}
+
+#clearSearch {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: none;
+}
+
+#clearSearch:hover {
+  color: var(--headerhighlight, red);
+}
+
+/* Control Bar */
+.zettel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.zettel-controls-left,
+.zettel-controls-right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.zettel-sort {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.zettel-sort label {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#sortSelect,
+#randomNote,
+.zettel-view-toggle button {
+  font-family: monospace;
+  padding: 0.5rem 1rem;
+  border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#sortSelect:hover,
+#randomNote:hover,
+.zettel-view-toggle button:hover {
+  background: var(--hovercolor, yellow);
+}
+
+#sortSelect:focus,
+#randomNote:focus,
+.zettel-view-toggle button:focus {
+  outline: none;
+  border-color: var(--headerhighlight, red);
+}
+
+/* View Toggle */
+.zettel-view-toggle {
+  display: flex;
+  gap: 0;
+}
+
+.zettel-view-toggle button {
+  border-radius: 0;
+}
+
+.zettel-view-toggle button:first-child {
+  border-right: none;
+}
+
+.zettel-view-toggle button.active {
+  background: var(--headerhighlight, red);
+  color: white;
+}
+
+/* Alphabet Navigation */
+.zettel-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.alpha-btn {
+  font-family: monospace;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--bordercolor, black);
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+  min-width: 2rem;
+  text-align: center;
+}
+
+.alpha-btn:hover {
+  background: var(--hovercolor, yellow);
+}
+
+/* Count */
+.zettel-count {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#visibleCount {
+  color: var(--headerhighlight, red);
+}
+
+/* Notes Container - List View */
+.zettel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.zettel-list .zettel-item {
+  border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.zettel-list .zettel-item:hover {
+  background: var(--hovercolor, yellow);
+  transform: translateX(5px);
+}
+
+/* Notes Container - Grid View */
+.zettel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.zettel-grid .zettel-item {
+  border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
+  background: white;
+  transition: all 0.2s ease;
+  min-height: 100px;
+}
+
+.zettel-grid .zettel-item:hover {
+  background: var(--hovercolor, yellow);
+  transform: scale(1.02);
+  box-shadow: 4px 4px 0 var(--bordercolor, black);
+}
+
+/* Zettel Item */
+.zettel-link {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.zettel-title {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  color: black !important;
+}
+
+.zettel-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 12px;
+  color: var(--customgray, #555);
+}
+
+.zettel-filename {
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.zettel-date {
+  font-family: monospace;
+  color: var(--headerhighlight, red);
+}
+
+/* Highlight animation for alphabet navigation */
+.zettel-item.highlight {
+  animation: highlight-pulse 1.5s ease-out;
+}
+
+@keyframes highlight-pulse {
+  0%,
+  100% {
+    background: white;
+  }
+  50% {
+    background: var(--hovercolor, yellow);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .zettel-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .zettel-controls-left,
+  .zettel-controls-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .zettel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .alpha-btn {
+    min-width: 1.5rem;
+    padding: 0.25rem;
+    font-size: 11px;
+  }
+}
