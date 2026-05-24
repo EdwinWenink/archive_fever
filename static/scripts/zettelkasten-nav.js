@@ -88,7 +88,10 @@
     const sorted = [...allItems].sort((a, b) => {
       switch (currentSort) {
         case 'alpha':
-          return a.dataset.title.localeCompare(b.dataset.title);
+          // Strip leading non-alphanumeric characters for sorting
+          const titleA = a.dataset.title.replace(/^[^a-z0-9]+/i, '');
+          const titleB = b.dataset.title.replace(/^[^a-z0-9]+/i, '');
+          return titleA.localeCompare(titleB);
         case 'date-new':
           return b.dataset.modified.localeCompare(a.dataset.modified);
         case 'date-old':

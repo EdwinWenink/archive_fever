@@ -57,7 +57,6 @@
     <div id="zettelContainer" class="zettel-grid">
       {{ range .Pages }}
         {{ $filename := .File.BaseFileName }}
-        {{ $filenameClean := trim ($filename | humanize | lower) "1234567890" }}
 
         {{/* Try to extract H1 title from raw content */}}
         {{ $title := "" }}
@@ -73,7 +72,12 @@
 
         {{/* Fallback to cleaned filename if no H1 found */}}
         {{ if not $title }}
-          {{ $title = $filenameClean }}
+          {{ $filenameClean := $filename }}
+          {{/* Strip timestamp prefix if present (YYYYMMDDHHSS-) */}}
+          {{ if in "0123456789" (substr $filename 0 1) }}
+            {{ $filenameClean = substr $filename 13 }}
+          {{ end }}
+          {{ $title = $filenameClean | humanize }}
         {{ end }}
 
         {{/* Extract date prefix if exists and use for sorting */}}
@@ -108,7 +112,6 @@
           <a href="{{ .Permalink }}" class="zettel-link">
             <div class="zettel-title">{{ $title }}</div>
             <div class="zettel-meta">
-              <span class="zettel-filename">{{ $filename }}</span>
               {{ if $datePrefix }}
                 <span class="zettel-date">Created: {{ $displayDate }}</span>
               {{ else if $hasDate }}
