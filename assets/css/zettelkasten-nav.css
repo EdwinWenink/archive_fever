@@ -5,6 +5,8 @@
   padding: 1.5rem;
   border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
   background: #f9f9f9;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* Search Container */
@@ -159,12 +161,16 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .zettel-list .zettel-item {
   border: var(--borderwidth, 2px) var(--borderstyle, solid) var(--bordercolor, black);
   background: white;
   transition: all 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .zettel-list .zettel-item:hover {
@@ -177,6 +183,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .zettel-grid .zettel-item {
@@ -184,6 +192,7 @@
   background: white;
   transition: all 0.2s ease;
   min-height: 100px;
+  box-sizing: border-box;
 }
 
 .zettel-grid .zettel-item:hover {
@@ -249,6 +258,11 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .zettel-nav-panel {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
   .zettel-controls {
     flex-direction: column;
     align-items: stretch;
@@ -262,11 +276,21 @@
 
   .zettel-grid {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 
   .alpha-btn {
     min-width: 1.5rem;
     padding: 0.25rem;
     font-size: 11px;
+  }
+
+  .zettel-list .zettel-item:hover {
+    transform: none;
+  }
+
+  #zettelContainer {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
