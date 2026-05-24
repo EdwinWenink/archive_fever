@@ -226,6 +226,12 @@
   color: var(--headerhighlight, red);
 }
 
+.zettel-modified {
+  font-family: monospace;
+  color: var(--customgray, #555);
+  font-style: italic;
+}
+
 /* Highlight animation for alphabet navigation */
 .zettel-item.highlight {
   animation: highlight-pulse 1.5s ease-out;

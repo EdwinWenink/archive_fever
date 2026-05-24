@@ -76,12 +76,26 @@
           {{ $title = $filenameClean }}
         {{ end }}
 
-        {{/* Extract date prefix if exists */}}
+        {{/* Extract date prefix if exists and use for sorting */}}
         {{ $datePrefix := "" }}
+        {{ $sortDate := "00000000000000" }}
+        {{ $displayDate := "" }}
+        {{ $hasDate := false }}
         {{ $sortLetter := substr ($title | upper) 0 1 }}
+
+        {{/* Use filename date prefix if available */}}
         {{ if in "0123456789" (substr $filename 0 1) }}
           {{ $datePrefix = substr $filename 0 12 }}
+          {{ $sortDate = $datePrefix }}
           {{ $sortLetter = "#" }}
+          {{ $hasDate = true }}
+          {{/* Format as YYYY-MM-DD HH:MM for display */}}
+          {{ $displayDate = printf "%s-%s-%s %s:%s" (substr $datePrefix 0 4) (substr $datePrefix 4 2) (substr $datePrefix 6 2) (substr $datePrefix 8 2) (substr $datePrefix 10 2) }}
+        {{ else if and .Date (ne (.Date.Format "2006-01-02") "0001-01-01") }}
+          {{/* Use Date if it's set (not the zero value) */}}
+          {{ $sortDate = .Date.Format "20060102150405" }}
+          {{ $displayDate = .Date.Format "2006-01-02" }}
+          {{ $hasDate = true }}
         {{ end }}
 
         <div class="zettel-item"
@@ -89,14 +103,18 @@
              data-filename="{{ $filename | lower }}"
              data-sort-letter="{{ $sortLetter }}"
              data-date="{{ $datePrefix }}"
-             data-modified="{{ .Lastmod.Format "20060102" }}"
+             data-modified="{{ $sortDate }}"
              data-url="{{ .Permalink }}">
           <a href="{{ .Permalink }}" class="zettel-link">
             <div class="zettel-title">{{ $title }}</div>
             <div class="zettel-meta">
               <span class="zettel-filename">{{ $filename }}</span>
               {{ if $datePrefix }}
-                <span class="zettel-date">{{ $datePrefix }}</span>
+                <span class="zettel-date">Created: {{ $displayDate }}</span>
+              {{ else if $hasDate }}
+                <span class="zettel-modified">Modified: {{ $displayDate }}</span>
+              {{ else }}
+                <span class="zettel-date">Created: unknown</span>
               {{ end }}
             </div>
           </a>
