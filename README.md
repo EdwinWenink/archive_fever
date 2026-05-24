@@ -1,5 +1,7 @@
 # Archive Fever @ https://www.edwinwenink.xyz
 
+Hacker blog meets digital garden.
+
 - Uses Hugo as a static website generator.
 - Auto-deployed from GitHub through Netlify.
 - Uses staticman for integrating comment functionality
